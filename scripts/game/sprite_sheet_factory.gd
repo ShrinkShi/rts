@@ -12,6 +12,13 @@ const UNIT_LAYOUT = {
     "attack": {"row": 6, "count": 3, "fps": 12.0, "loop": false},
     "death": {"row": 9, "count": 6, "fps": 8.0, "loop": false}
 }
+const HARVEST_LAYOUT = {"row": 15, "count": 4, "fps": 9.0, "loop": true}
+const HARVESTER_DAMAGE_LAYOUT = {
+    "stand": {"row": 19, "count": 1, "fps": 1.0, "loop": true},
+    "idle": {"row": 19, "count": 2, "fps": 2.0, "loop": true},
+    "move": {"row": 21, "count": 4, "fps": 8.0, "loop": true},
+    "harvest": {"row": 25, "count": 4, "fps": 9.0, "loop": true}
+}
 
 const AI_UNIT_FRAME_SIZES = {
     "rifle": Vector2(128, 128),
@@ -86,6 +93,18 @@ static func get_unit_frames(unit_id):
             for frame_index in range(int(layout.get("count", 1))):
                 textures.append(_atlas_frame(atlas_texture, UNIT_FRAME_SIZE, direction, int(layout.get("row", 0)) + frame_index))
             _add_animation(frames, "%s_%d" % [state_name, direction], textures, float(layout.get("fps", 6.0)), bool(layout.get("loop", true)))
+    if unit_id == "harvester":
+        for direction in range(UNIT_DIRECTION_COUNT):
+            var harvest_textures = []
+            for frame_index in range(int(HARVEST_LAYOUT.get("count", 4))):
+                harvest_textures.append(_atlas_frame(atlas_texture, UNIT_FRAME_SIZE, direction, int(HARVEST_LAYOUT.get("row", 15)) + frame_index))
+            _add_animation(frames, "harvest_%d" % direction, harvest_textures, float(HARVEST_LAYOUT.get("fps", 9.0)), true)
+            for state_name in HARVESTER_DAMAGE_LAYOUT:
+                var damage_layout = HARVESTER_DAMAGE_LAYOUT[state_name]
+                var damage_textures = []
+                for frame_index in range(int(damage_layout.get("count", 1))):
+                    damage_textures.append(_atlas_frame(atlas_texture, UNIT_FRAME_SIZE, direction, int(damage_layout.get("row", 19)) + frame_index))
+                _add_animation(frames, "damaged_%s_%d" % [state_name, direction], damage_textures, float(damage_layout.get("fps", 6.0)), bool(damage_layout.get("loop", true)))
     _unit_frame_cache[unit_id] = frames
     return frames
 
@@ -223,5 +242,24 @@ static func get_building_frame(building_id, damage_stage = 0):
         frame_texture = _atlas_frame(atlas_texture, AI_BUILDING_FRAME_SIZE, index % cols, int(index / cols))
     else:
         frame_texture = _atlas_frame(atlas_texture, Vector2(192, 160), clamp(int(damage_stage), 0, 2), 0)
+    _building_frame_cache[key] = frame_texture
+    return frame_texture
+
+static func get_building_destroyed_frame(building_id):
+    var key = "%s:destroyed" % building_id
+    if _building_frame_cache.has(key):
+        return _building_frame_cache[key]
+    var atlas_texture = get_building_texture(building_id)
+    if atlas_texture == null:
+        return null
+    var frame_texture
+    if building_id in AI_BUILDINGS:
+        var index = _ai_frame_index(building_id, "destroyed")
+        var cols = _ai_grid_columns(building_id)
+        frame_texture = _atlas_frame(atlas_texture, AI_BUILDING_FRAME_SIZE, index % cols, int(index / cols))
+    elif building_id in ["command", "war_factory", "repair_bay"]:
+        frame_texture = _atlas_frame(atlas_texture, Vector2(192, 160), 3, 0)
+    else:
+        frame_texture = _atlas_frame(atlas_texture, Vector2(192, 160), 2, 0)
     _building_frame_cache[key] = frame_texture
     return frame_texture

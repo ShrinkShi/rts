@@ -75,9 +75,23 @@ var corpse_lifetime = 7.0
 var damage_smoke
 var idle_action_time = 0.0
 var idle_trigger_time = 2.4
+# Legacy aliases are kept for old saves/data, while the detailed behavior fields
+# below are the runtime source of truth.
 var retaliate_enabled = true
 var support_enabled = true
+var guard_enabled = true
+var guard_range = 250.0
+var auto_attack_enabled = true
+var chase_enabled = true
+var chase_distance = 110.0
+var support_same_owner_enabled = true
+var support_allied_enabled = false
+var support_range = 250.0
 var support_cooldown = 0.0
+var guard_post_position = Vector2.ZERO
+var combat_anchor = Vector2.ZERO
+var returning_to_guard_post = false
+var guard_reacquire_cooldown = 0.0
 var inside_repair_bay = false
 var repair_bay_target
 var repair_entry_position = Vector2.ZERO
@@ -101,10 +115,20 @@ func setup(next_match, next_map, next_unit_id, next_owner, world_position):
     max_shield = float(stats.get("shield", 0.0))
     shield = max_shield
     team_color = match_ref.get_player_color(owner_id)
-    retaliate_enabled = bool(stats.get("retaliate_default", true))
-    support_enabled = bool(stats.get("support_default", true))
-    behavior_cycle_index = 0 if retaliate_enabled and support_enabled else (1 if retaliate_enabled else (2 if support_enabled else 3))
+    auto_attack_enabled = bool(stats.get("retaliate_default", true))
+    guard_enabled = bool(stats.get("guard_default", true))
+    guard_range = max(float(stats.get("range", 0.0)), float(stats.get("guard_range", 250.0)))
+    chase_enabled = bool(stats.get("chase_default", true))
+    chase_distance = max(0.0, float(stats.get("chase_distance", 120.0)))
+    support_same_owner_enabled = bool(stats.get("support_default", true))
+    support_allied_enabled = bool(stats.get("support_allied_default", false))
+    support_range = max(0.0, float(stats.get("support_range", stats.get("guard_range", 250.0))))
+    retaliate_enabled = auto_attack_enabled
+    support_enabled = support_same_owner_enabled or support_allied_enabled
+    behavior_cycle_index = 0
     global_position = world_position
+    guard_post_position = world_position
+    combat_anchor = world_position
     z_index = 0
     _build_collision_shape()
     _build_visual()
@@ -170,7 +194,12 @@ func _play_visual_animation(state_name, restart = false):
                     turret_sprite.play(turret_animation)
         visual_state = state_name
         return
-    var animation_name = "%s_%d" % [state_name, visual_direction]
+    var animation_state = state_name
+    if unit_id == "harvester" and state_name != "death" and max_hp > 0.0 and hp / max_hp <= 0.34:
+        var damaged_name = "damaged_%s_%d" % [state_name, visual_direction]
+        if visual_sprite.sprite_frames.has_animation(damaged_name):
+            animation_state = "damaged_%s" % state_name
+    var animation_name = "%s_%d" % [animation_state, visual_direction]
     if visual_sprite.animation != animation_name or restart:
         visual_sprite.play(animation_name)
     visual_state = state_name
@@ -185,7 +214,11 @@ func _update_visual_state(delta):
         _play_visual_animation("death")
         return
     var next_state = "stand"
-    if attack_animation_time > 0.0:
+    if unit_id == "harvester" and harvester_state == "harvest" and not inside_refinery:
+        next_state = "harvest"
+        if is_instance_valid(harvest_target):
+            facing_direction = global_position.direction_to(harvest_target.global_position)
+    elif attack_animation_time > 0.0:
         next_state = "attack"
     elif velocity.length_squared() > 20.0:
         next_state = "move"
@@ -329,6 +362,7 @@ func _physics_process(delta):
     scan_cooldown = max(0.0, scan_cooldown - delta)
     crush_voice_cooldown = max(0.0, crush_voice_cooldown - delta)
     support_cooldown = max(0.0, support_cooldown - delta)
+    guard_reacquire_cooldown = max(0.0, guard_reacquire_cooldown - delta)
     if inside_repair_bay:
         velocity = Vector2.ZERO
         _update_visual_state(delta)
@@ -361,7 +395,12 @@ func _process_active_order(delta):
         if not is_instance_valid(attack_target):
             _complete_active_order()
         else:
-            _process_attack_target(delta, true)
+            _process_attack_target(delta, true, false)
+    elif order_type == "support_attack":
+        if not is_instance_valid(attack_target):
+            _complete_active_order()
+        else:
+            _process_attack_target(delta, chase_enabled, true)
     elif order_type == "attack_move":
         _process_attack_move(delta)
     elif order_type == "patrol":
@@ -373,34 +412,59 @@ func _process_active_order(delta):
     elif order_type == "repair":
         _process_repair_order(delta)
     elif order_type == "stop":
-        velocity = Vector2.ZERO
+        # Compatibility with old serialized orders: Stop is a one-shot interrupt.
+        _complete_active_order()
     else:
         _complete_active_order()
+
+func _effective_guard_range():
+    var weapon_range = float(stats.get("range", 0.0))
+    if not auto_attack_enabled:
+        return 0.0
+    return max(weapon_range, guard_range) if guard_enabled else weapon_range
+
+func _acquire_guard_target(anchor_position = Vector2.ZERO, scan_override = -1.0):
+    if not auto_attack_enabled or not is_combat_unit() or guard_reacquire_cooldown > 0.0:
+        return false
+    var scan_range = _effective_guard_range() if scan_override < 0.0 else max(0.0, scan_override)
+    if scan_range <= 0.0:
+        return false
+    var next_target = match_ref.find_nearest_enemy(owner_id, global_position, scan_range)
+    if not is_instance_valid(next_target):
+        return false
+    attack_target = next_target
+    combat_anchor = global_position if anchor_position == Vector2.ZERO else anchor_position
+    return true
 
 func _process_idle_combat(delta):
     if not is_combat_unit():
         velocity = Vector2.ZERO
         return
+    if returning_to_guard_post:
+        if global_position.distance_to(guard_post_position) <= 10.0 or _follow_path(delta):
+            returning_to_guard_post = false
+            path = PackedVector2Array()
+            velocity = Vector2.ZERO
+        return
     if is_instance_valid(attack_target):
-        _process_attack_target(delta, true)
+        _process_attack_target(delta, chase_enabled, true)
         return
     if scan_cooldown <= 0.0:
-        scan_cooldown = 0.4
-        attack_target = match_ref.find_nearest_enemy(owner_id, global_position, float(stats.get("range", 0.0)) * 1.18)
+        scan_cooldown = 0.35
+        _acquire_guard_target(guard_post_position)
     if is_instance_valid(attack_target):
-        _process_attack_target(delta, true)
+        _process_attack_target(delta, chase_enabled, true)
     else:
         velocity = Vector2.ZERO
 
 func _process_attack_move(delta):
     var target_position = Vector2(active_order.get("position", global_position))
     if is_instance_valid(attack_target):
-        _process_attack_target(delta, true)
+        _process_attack_target(delta, chase_enabled, true)
         return
     if scan_cooldown <= 0.0:
         scan_cooldown = 0.25
-        var scan_range = max(float(stats.get("range", 0.0)) * 1.35, float(stats.get("sight", 7)) * map_ref.tile_px)
-        attack_target = match_ref.find_nearest_enemy(owner_id, global_position, scan_range)
+        _acquire_guard_target(global_position, max(_effective_guard_range(), float(stats.get("sight", 7)) * map_ref.tile_px))
         if is_instance_valid(attack_target):
             return
     if destination.distance_to(target_position) > 2.0 or path.is_empty():
@@ -410,12 +474,11 @@ func _process_attack_move(delta):
 
 func _process_patrol(delta):
     if is_instance_valid(attack_target):
-        _process_attack_target(delta, true)
+        _process_attack_target(delta, chase_enabled, true)
         return
     if scan_cooldown <= 0.0:
         scan_cooldown = 0.3
-        var scan_range = max(float(stats.get("range", 0.0)) * 1.3, float(stats.get("sight", 7)) * map_ref.tile_px)
-        attack_target = match_ref.find_nearest_enemy(owner_id, global_position, scan_range)
+        _acquire_guard_target(global_position, max(_effective_guard_range(), float(stats.get("sight", 7)) * map_ref.tile_px))
         if is_instance_valid(attack_target):
             return
     if patrol_points.is_empty():
@@ -486,19 +549,30 @@ func _process_repair_order(delta):
 
 func _process_hold(delta):
     velocity = Vector2.ZERO
+    if not auto_attack_enabled or not is_combat_unit():
+        attack_target = null
+        return
     if is_instance_valid(attack_target):
         if global_position.distance_to(attack_target.global_position) <= float(stats.get("range", 0.0)):
-            _process_attack_target(delta, false)
+            _process_attack_target(delta, false, true)
         else:
             attack_target = null
-    elif scan_cooldown <= 0.0 and is_combat_unit():
+    elif scan_cooldown <= 0.0:
         scan_cooldown = 0.25
-        attack_target = match_ref.find_nearest_enemy(owner_id, hold_position, float(stats.get("range", 0.0)))
+        _acquire_guard_target(hold_position, float(stats.get("range", 0.0)))
 
-func _process_attack_target(delta, allow_chase = true):
+func _abandon_guard_chase():
+    attack_target = null
+    guard_reacquire_cooldown = 0.9
+    velocity = Vector2.ZERO
+    if active_order.is_empty() and global_position.distance_to(guard_post_position) > 12.0:
+        _set_path_to(guard_post_position)
+        returning_to_guard_post = not path.is_empty()
+
+func _process_attack_target(delta, allow_chase = true, obey_chase_limit = true):
     if not is_instance_valid(attack_target):
         return
-    if attack_target.owner_id == owner_id or attack_target.hp <= 0:
+    if not match_ref.are_enemies(owner_id, attack_target.owner_id) or attack_target.hp <= 0:
         attack_target = null
         return
     var target_direction = global_position.direction_to(attack_target.global_position)
@@ -513,6 +587,9 @@ func _process_attack_target(delta, allow_chase = true):
         if fire_cooldown <= 0.0:
             _fire_at(attack_target)
     elif allow_chase:
+        if obey_chase_limit and (not chase_enabled or global_position.distance_to(combat_anchor) >= max(0.0, chase_distance)):
+            _abandon_guard_chase()
+            return
         if repath_cooldown <= 0.0:
             _set_path_to(attack_target.global_position)
             repath_cooldown = 0.45
@@ -755,7 +832,7 @@ func command_move(target_position, manual = true, queued = false):
     _submit_order({"type": "move", "position": target_position, "manual": manual}, queued)
 
 func command_attack(target, queued = false):
-    if not is_instance_valid(target) or target.owner_id == owner_id:
+    if not is_instance_valid(target) or not match_ref.are_enemies(owner_id, target.owner_id):
         return
     if target.has_method("is_resource_entity") and target.is_resource_entity():
         return
@@ -828,43 +905,74 @@ func command_repair(repair_bay, queued = false):
         return
     _submit_order({"type": "repair", "target": repair_bay, "position": repair_bay.global_position, "manual": true}, queued)
 
+func get_behavior_settings():
+    return {
+        "guard_enabled": guard_enabled,
+        "guard_range": guard_range,
+        "auto_attack_enabled": auto_attack_enabled,
+        "chase_enabled": chase_enabled,
+        "chase_distance": chase_distance,
+        "support_same_owner_enabled": support_same_owner_enabled,
+        "support_allied_enabled": support_allied_enabled,
+        "support_range": support_range
+    }
+
+func apply_behavior_settings(settings):
+    guard_enabled = bool(settings.get("guard_enabled", guard_enabled))
+    guard_range = clamp(float(settings.get("guard_range", guard_range)), float(stats.get("range", 0.0)), 900.0)
+    auto_attack_enabled = bool(settings.get("auto_attack_enabled", auto_attack_enabled))
+    chase_enabled = bool(settings.get("chase_enabled", chase_enabled))
+    chase_distance = clamp(float(settings.get("chase_distance", chase_distance)), 0.0, 700.0)
+    support_same_owner_enabled = bool(settings.get("support_same_owner_enabled", support_same_owner_enabled))
+    support_allied_enabled = bool(settings.get("support_allied_enabled", support_allied_enabled))
+    support_range = clamp(float(settings.get("support_range", support_range)), 0.0, 900.0)
+    retaliate_enabled = auto_attack_enabled
+    support_enabled = support_same_owner_enabled or support_allied_enabled
+    if not auto_attack_enabled:
+        attack_target = null
+    if not chase_enabled:
+        returning_to_guard_post = false
+    queue_redraw()
+
 func cycle_behavior_policy():
-    behavior_cycle_index = (behavior_cycle_index + 1) % 4
-    match behavior_cycle_index:
-        0:
-            retaliate_enabled = true
-            support_enabled = true
-        1:
-            retaliate_enabled = true
-            support_enabled = false
-        2:
-            retaliate_enabled = false
-            support_enabled = true
-        3:
-            retaliate_enabled = false
-            support_enabled = false
+    # Kept for compatibility with old callers. New UI edits the complete policy.
+    auto_attack_enabled = not auto_attack_enabled
+    retaliate_enabled = auto_attack_enabled
     return get_behavior_policy_name()
 
 func get_behavior_policy_name():
-    if retaliate_enabled and support_enabled:
-        return "反击并支援"
-    if retaliate_enabled:
-        return "仅反击"
-    if support_enabled:
-        return "仅支援"
-    return "被动"
+    var parts = []
+    parts.append("警戒" if guard_enabled else "定点")
+    parts.append("自动攻击" if auto_attack_enabled else "不开火")
+    parts.append("追击%.0f" % chase_distance if chase_enabled else "不追击")
+    if support_same_owner_enabled or support_allied_enabled:
+        parts.append("支援%.0f" % support_range)
+    else:
+        parts.append("不支援")
+    return " / ".join(parts)
+
+func can_support_victim(victim_owner_id):
+    if int(victim_owner_id) == owner_id:
+        return support_same_owner_enabled
+    if match_ref.are_enemies(owner_id, int(victim_owner_id)):
+        return false
+    return support_allied_enabled
 
 func can_receive_support_order():
-    if dying or inside_refinery or inside_repair_bay or not is_combat_unit() or not support_enabled:
+    if dying or inside_refinery or inside_repair_bay or not is_combat_unit():
         return false
-    var order_type = str(active_order.get("type", ""))
-    return active_order.is_empty() or order_type == "stop"
+    return active_order.is_empty() and not returning_to_guard_post
 
-func support_ally_against(enemy):
+func support_ally_against(enemy, victim = null):
     if support_cooldown > 0.0 or not can_receive_support_order() or not is_instance_valid(enemy):
         return false
+    if is_instance_valid(victim) and not can_support_victim(victim.owner_id):
+        return false
+    if is_instance_valid(victim) and global_position.distance_to(victim.global_position) > support_range:
+        return false
     support_cooldown = 1.2
-    command_attack(enemy, false)
+    combat_anchor = guard_post_position
+    _submit_order({"type": "support_attack", "target": enemy, "manual": false}, false)
     return true
 
 func enter_repair_bay(bay):
@@ -908,13 +1016,25 @@ func command_harvest(target = null, queued = false):
     _submit_order(order, queued)
 
 func command_stop():
+    # Stop is a one-shot interrupt: cancel orders and velocity, then return to
+    # normal autonomous guard behavior on the next physics frame.
     order_queue.clear()
     _reset_harvester_assignment()
-    _activate_order({"type": "stop", "manual": true})
+    active_order = {}
+    attack_target = null
+    path = PackedVector2Array()
+    path_index = 0
+    velocity = Vector2.ZERO
+    guard_post_position = global_position
+    combat_anchor = global_position
+    returning_to_guard_post = false
+    guard_reacquire_cooldown = 0.08
 
 func command_hold():
     order_queue.clear()
     _reset_harvester_assignment()
+    guard_post_position = global_position
+    returning_to_guard_post = false
     _activate_order({"type": "hold", "position": global_position, "manual": true})
 
 func _submit_order(order, queued):
@@ -934,6 +1054,7 @@ func _submit_order(order, queued):
 func _activate_order(order):
     active_order = order.duplicate()
     attack_target = null
+    returning_to_guard_post = false
     path = PackedVector2Array()
     path_index = 0
     velocity = Vector2.ZERO
@@ -946,6 +1067,11 @@ func _activate_order(order):
         last_command_marker = target_position
     elif order_type == "attack":
         attack_target = active_order.get("target")
+        combat_anchor = global_position
+        repath_cooldown = 0.0
+    elif order_type == "support_attack":
+        attack_target = active_order.get("target")
+        combat_anchor = guard_post_position
         repath_cooldown = 0.0
     elif order_type == "force_attack":
         repath_cooldown = 0.0
@@ -976,9 +1102,14 @@ func _activate_order(order):
         path = PackedVector2Array()
     elif order_type == "hold":
         hold_position = global_position
+        guard_post_position = global_position
+        combat_anchor = global_position
 
 func _complete_active_order():
     var completed_type = str(active_order.get("type", ""))
+    if completed_type in ["move", "attack_move", "attack", "support_attack", "repair"]:
+        guard_post_position = global_position
+        combat_anchor = global_position
     if completed_type == "harvest":
         _reset_harvester_assignment()
     if completed_type == "patrol":
@@ -1008,7 +1139,8 @@ func get_current_order_name():
         "patrol": "巡逻",
         "harvest": "采集矿石",
         "force_attack": "强制攻击",
-        "repair": "进入维修厂"
+        "repair": "进入维修厂",
+        "support_attack": "支援交战"
     }
     return str(names.get(str(active_order.get("type", "")), "待命"))
 
@@ -1280,8 +1412,14 @@ func take_damage(amount, source = null):
             if is_instance_valid(source) and source != self and source.has_method("take_damage"):
                 match_ref.notify_allies_under_attack(self, source)
                 var current_type = str(active_order.get("type", ""))
-                if retaliate_enabled and is_combat_unit() and (active_order.is_empty() or current_type in ["stop", "hold"]):
-                    command_attack(source, false)
+                if auto_attack_enabled and is_combat_unit():
+                    if current_type == "hold":
+                        if global_position.distance_to(source.global_position) <= float(stats.get("range", 0.0)):
+                            attack_target = source
+                            combat_anchor = hold_position
+                    elif active_order.is_empty():
+                        attack_target = source
+                        combat_anchor = guard_post_position
     queue_redraw()
     _update_damage_smoke()
     if hp <= 0:
@@ -1406,6 +1544,14 @@ func _draw():
             var text_x = -text_width * 0.5
             draw_string_outline(ThemeDB.fallback_font, Vector2(text_x, bar_y - 2), health_text, HORIZONTAL_ALIGNMENT_CENTER, text_width, 10, 2, Color.BLACK)
             draw_string(ThemeDB.fallback_font, Vector2(text_x, bar_y - 2), health_text, HORIZONTAL_ALIGNMENT_CENTER, text_width, 10, Color.WHITE)
+    if not dying and selected and unit_id == "harvester":
+        var capacity = max(1.0, float(stats.get("capacity", 1000)))
+        var cargo_ratio = clamp(float(carrying) / capacity, 0.0, 1.0)
+        var cargo_width = max(54.0, radius * 3.0)
+        var cargo_y = radius + 19.0
+        draw_rect(Rect2(Vector2(-cargo_width * 0.5 - 2.0, cargo_y - 2.0), Vector2(cargo_width + 4.0, 10.0)), Color.BLACK)
+        draw_rect(Rect2(Vector2(-cargo_width * 0.5, cargo_y), Vector2(cargo_width, 6.0)), Color("#3A3017"))
+        draw_rect(Rect2(Vector2(-cargo_width * 0.5, cargo_y), Vector2(cargo_width * cargo_ratio, 6.0)), Color("#F2C744"))
     if not dying and selected and bool(SaveManager.settings.get("show_experience", true)):
         var exp_text = "经验 %d/%d" % [int(experience), int(get_next_experience_requirement())]
         var measured_exp_width = ThemeDB.fallback_font.get_string_size(exp_text, HORIZONTAL_ALIGNMENT_LEFT, -1, 10).x

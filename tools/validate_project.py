@@ -76,7 +76,7 @@ def validate_features(data: dict[str, object]) -> None:
     factory = text("scripts/game/sprite_sheet_factory.gd")
     asset_processor = text("tools/process_ai_assets.py")
 
-    require(project, ['config/version="0.8.4"'], "Project version")
+    require(project, ['config/version="0.9.0"'], "Project version")
     require(match, [
         'structure_jobs = {"primary": {}, "defense": {}}',
         'func repair_entity_step',

@@ -55,6 +55,9 @@ var repair_animation_phase = 0.0
 var repair_active = false
 var turret_facing = Vector2.RIGHT
 var sale_completed = false
+var destroyed = false
+var destruction_elapsed = 0.0
+var destruction_lifetime = 6.5
 var visual_profile
 
 func setup(next_match, next_map, next_building_id, next_owner, cell, animate_construction = false):
@@ -257,6 +260,13 @@ func _build_collision_shape():
     add_child(static_body)
 
 func _process(delta):
+    if destroyed:
+        destruction_elapsed += delta
+        if is_instance_valid(visual_sprite) and destruction_elapsed > destruction_lifetime - 1.4:
+            visual_sprite.modulate.a = clamp((destruction_lifetime - destruction_elapsed) / 1.4, 0.0, 1.0)
+        if destruction_elapsed >= destruction_lifetime:
+            queue_free()
+        return
     fire_cooldown = max(0.0, fire_cooldown - delta)
     repair_animation_phase += delta * (5.0 if repair_active else 1.0)
     if selling:
@@ -529,6 +539,8 @@ func get_order_waypoints():
     return []
 
 func take_damage(amount, source = null):
+    if destroyed:
+        return 0.0
     var remaining = float(amount)
     if shield > 0.0:
         var absorbed = min(shield, remaining)
@@ -546,20 +558,36 @@ func take_damage(amount, source = null):
                 match_ref.notify_allies_under_attack(self, source)
     _update_damage_visual()
     queue_redraw()
-    if hp <= 0:
+    if hp <= 0 and not destroyed:
         hp = 0
+        destroyed = true
+        selected = false
+        target = null
+        forced_attack_active = false
+        forced_attack_target = null
+        production_queue.clear()
         eject_repairing_vehicle()
         if is_instance_valid(source) and source.has_method("gain_experience"):
             source.gain_experience(max_hp)
         if is_instance_valid(damage_smoke):
             damage_smoke.queue_free()
             damage_smoke = null
+        if is_instance_valid(visual_sprite):
+            visual_sprite.texture = SpriteSheetFactory.get_building_destroyed_frame(building_id)
+            visual_sprite.modulate = Color.WHITE
+        if is_instance_valid(turret_sprite):
+            turret_sprite.visible = false
+        if is_instance_valid(static_body):
+            static_body.collision_layer = 0
+            static_body.collision_mask = 0
         _spawn_collapse_effect()
         map_ref.vacate(self)
         died.emit(self)
-        queue_free()
+        queue_redraw()
 
 func heal(amount):
+    if destroyed:
+        return 0.0
     var previous = hp
     hp = min(max_hp, hp + float(amount))
     var healed = hp - previous
@@ -569,7 +597,7 @@ func heal(amount):
     return healed
 
 func set_selected(value):
-    selected = value
+    selected = bool(value) and not destroyed
     queue_redraw()
 
 func set_hover_state(value):
@@ -598,6 +626,8 @@ func _visual_top_y():
     return -footprint.y * map_ref.tile_px * 0.5 - 10.0
 
 func _should_show_health_bar():
+    if destroyed:
+        return false
     var mode = str(SaveManager.settings.get("health_bar_mode", "selected_damaged"))
     if mode == "off":
         return false

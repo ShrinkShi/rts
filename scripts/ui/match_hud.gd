@@ -6,6 +6,7 @@ signal pause_requested
 signal minimap_world_requested(world_position)
 signal minimap_command_requested(world_position)
 signal command_requested(command_id)
+signal behavior_settings_requested(settings)
 
 const UIFactory = preload("res://scripts/ui/ui_factory.gd")
 const Minimap = preload("res://scripts/game/minimap.gd")
@@ -14,11 +15,12 @@ const ProductionTile = preload("res://scripts/ui/production_tile.gd")
 const ProductionCategoryButton = preload("res://scripts/ui/production_category_button.gd")
 const CommandSkillButton = preload("res://scripts/ui/command_skill_button.gd")
 const SidebarToolButton = preload("res://scripts/ui/sidebar_tool_button.gd")
+const BehaviorSettingsPanel = preload("res://scripts/ui/behavior_settings_panel.gd")
 
 const COMMAND_DEFINITIONS = {
     "move": {"name": "移动", "effect": "移动到指定位置；右键仍可快捷移动，按住 Shift 可追加路径点。", "hotkey": "M", "icon": "move"},
     "attack_move": {"name": "攻击移动", "effect": "向目标点推进并攻击沿途发现的敌人。", "hotkey": "A", "icon": "attack"},
-    "stop": {"name": "停止", "effect": "立即停止并清空当前单位的全部命令。", "hotkey": "S", "icon": "stop"},
+    "stop": {"name": "停止", "effect": "立即中断并清空当前命令；下一帧恢复自主警戒与自动攻击。", "hotkey": "S", "icon": "stop"},
     "hold": {"name": "原地不动", "effect": "保持当前位置，只攻击射程内敌人。", "hotkey": "H", "icon": "hold"},
     "patrol": {"name": "巡逻", "effect": "依次设置多个巡逻点；再次点击第一个巡逻点形成闭环。", "hotkey": "P", "icon": "patrol"},
     "harvest": {"name": "采集矿石", "effect": "指定一个仍有储量的矿石格进行采集和返厂卸矿。", "hotkey": "C", "icon": "harvest"},
@@ -27,7 +29,7 @@ const COMMAND_DEFINITIONS = {
     "building_attack": {"name": "攻击", "effect": "命令防御建筑攻击指定敌方目标。", "hotkey": "A", "icon": "attack"},
     "building_stop": {"name": "停止", "effect": "停止防御建筑当前攻击并暂停自动索敌，重新下达攻击命令后恢复。", "hotkey": "S", "icon": "stop"},
     "force_attack": {"name": "强制攻击", "effect": "攻击指定地面、树木、矿石或其他可破坏目标。", "hotkey": "Ctrl+A", "icon": "attack"},
-    "behavior": {"name": "警戒策略", "effect": "循环切换：反击并支援、仅反击、仅支援、完全被动。", "hotkey": "G", "icon": "hold"}
+    "behavior": {"name": "智能逻辑", "effect": "打开单位智能逻辑面板，配置警戒、自动攻击、追击和友军支援。", "hotkey": "G", "icon": "hold"}
 }
 
 const SIDE_WIDTH = 282.0
@@ -62,6 +64,7 @@ var category_buttons = {}
 var category_name_label
 var active_category = "primary"
 var sidebar_tool_buttons = {}
+var behavior_panel
 
 func setup(next_match, map_ref):
     match_ref = next_match
@@ -117,6 +120,9 @@ func _build_ui(map_ref):
     _build_production_sidebar()
     _build_bottom_command_panel(map_ref)
     _build_notification()
+    behavior_panel = BehaviorSettingsPanel.new()
+    root_control.add_child(behavior_panel)
+    behavior_panel.applied.connect(func(settings): behavior_settings_requested.emit(settings))
 
 func _build_top_bar():
     var top_bar = PanelContainer.new()
@@ -739,6 +745,17 @@ func _veterancy_name(rank):
     if rank == 1:
         return "老兵"
     return "新兵"
+
+func open_behavior_panel(units):
+    if is_instance_valid(behavior_panel):
+        behavior_panel.open_for_units(units)
+
+func close_behavior_panel():
+    if is_instance_valid(behavior_panel):
+        behavior_panel.close()
+
+func is_behavior_panel_open():
+    return is_instance_valid(behavior_panel) and behavior_panel.is_open()
 
 func _on_objective_changed(title, detail):
     objective_title.text = title

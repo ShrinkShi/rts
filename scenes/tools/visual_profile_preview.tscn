@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/visual_profile_preview.gd" id="1_script"]
+[ext_resource type="Resource" path="res://resources/visual_profiles/harvester.tres" id="2_profile"]
+
+[node name="VisualProfilePreview" type="Node2D"]
+script = ExtResource("1_script")
+entity_id = "harvester"
+profile = ExtResource("2_profile")
+
+[node name="EditableTransform" type="Node2D" parent="."]

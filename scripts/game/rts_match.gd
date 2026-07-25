@@ -266,6 +266,7 @@ func _build_hud():
     hud.minimap_world_requested.connect(_move_camera_from_minimap)
     hud.minimap_command_requested.connect(_command_from_minimap)
     hud.command_requested.connect(execute_command_from_hud)
+    hud.behavior_settings_requested.connect(_apply_selected_behavior_settings)
     _clamp_camera(true)
 
 func _move_camera_from_minimap(world_position):
@@ -676,7 +677,9 @@ func _finish_selection(screen_position):
 
 func _handle_hotkey(event):
     if event.keycode == KEY_ESCAPE:
-        if command_mode != "":
+        if is_instance_valid(hud) and hud.is_behavior_panel_open():
+            hud.close_behavior_panel()
+        elif command_mode != "":
             _set_command_mode("")
         elif placement_mode:
             placement_mode = false
@@ -729,7 +732,7 @@ func _handle_hotkey(event):
         _set_command_mode("harvest")
         return
     if event.keycode == KEY_G and _selection_has_movable_unit():
-        _cycle_selected_behavior()
+        _open_selected_behavior_panel()
         return
     if event.keycode == KEY_HOME:
         var command = get_nearest_building(0, "command", camera.position)
@@ -1169,7 +1172,7 @@ func execute_command_from_hud(command_id):
     elif command_id == "building_stop":
         _issue_immediate_selection_command("stop")
     elif command_id == "behavior":
-        _cycle_selected_behavior()
+        _open_selected_behavior_panel()
 
 func _issue_targeted_command(target_position, queued):
     var mode = command_mode
@@ -1292,12 +1295,21 @@ func _set_selected_producers_primary():
     if is_instance_valid(hud):
         hud.set_selection(selected_entities)
 
-func _cycle_selected_behavior():
-    var labels = []
+func _open_selected_behavior_panel():
+    var movable = _selected_movable_units()
+    if movable.is_empty():
+        return
+    if is_instance_valid(hud):
+        hud.open_behavior_panel(movable)
+
+func _apply_selected_behavior_settings(settings):
+    var applied_count = 0
     for unit in _selected_movable_units():
-        labels.append(unit.cycle_behavior_policy())
-    if not labels.is_empty():
-        EventBus.notification_requested.emit("单位警戒策略：" + str(labels[0]), "info")
+        if is_instance_valid(unit) and unit.has_method("apply_behavior_settings"):
+            unit.apply_behavior_settings(settings)
+            applied_count += 1
+    if applied_count > 0:
+        EventBus.notification_requested.emit("已更新 %d 个单位的智能逻辑" % applied_count, "info")
         if is_instance_valid(hud):
             hud.set_selection(selected_entities)
 
@@ -1309,13 +1321,12 @@ func notify_allies_under_attack(victim, attacker):
     if now < int(support_broadcast_until.get(victim_key, 0)):
         return
     support_broadcast_until[victim_key] = now + 320
-    var guard_range = 250.0
-    for ally in query_units_in_radius(victim.global_position, 420.0, victim):
-        if not is_instance_valid(ally) or ally.owner_id != victim.owner_id:
+    # Search broadly once, then let each unit enforce its own support range and
+    # same-owner/allied-player policy.
+    for ally in query_units_in_radius(victim.global_position, 920.0, victim):
+        if not is_instance_valid(ally) or are_enemies(ally.owner_id, victim.owner_id):
             continue
-        if ally.global_position.distance_to(victim.global_position) > max(guard_range, float(ally.stats.get("guard_range", guard_range))):
-            continue
-        ally.support_ally_against(attacker)
+        ally.support_ally_against(attacker, victim)
 
 func _queued_marker_label(entities, queued):
     if not queued or entities.is_empty():
@@ -1757,9 +1768,16 @@ func spawn_unit(owner_id, unit_id, world_position):
     entity_layer.add_child(unit)
     unit.setup(self, grid, unit_id, owner_id, spawn_position)
     if owner_id > 0:
-        unit.retaliate_enabled = true
-        unit.support_enabled = true
-        unit.behavior_cycle_index = 0
+        unit.apply_behavior_settings({
+            "guard_enabled": true,
+            "guard_range": max(float(unit.stats.get("range", 0.0)) * 1.35, float(unit.stats.get("guard_range", 250.0))),
+            "auto_attack_enabled": true,
+            "chase_enabled": true,
+            "chase_distance": 180.0,
+            "support_same_owner_enabled": true,
+            "support_allied_enabled": true,
+            "support_range": 360.0
+        })
     unit.died.connect(_on_entity_died)
     unit.fired.connect(_spawn_tracer)
     units.append(unit)
