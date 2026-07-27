@@ -180,7 +180,8 @@ func _remove_invalid_normal_tail(visual, normal_name: String, damaged_name: Stri
 
     var remove_tail: bool = false
     var definition: Dictionary = visual.animations.get(normal_name, {}) as Dictionary
-    var source_indices: Array = definition.get("source_indices", []) as Array
+    var source_variant: Variant = definition.get("source_indices", [])
+    var source_indices: Array = source_variant as Array if source_variant is Array else []
     if not source_indices.is_empty():
         var tail_marker: String = str(source_indices[-1]).to_lower()
         remove_tail = tail_marker.contains("damaged") or tail_marker.contains("rubble")
