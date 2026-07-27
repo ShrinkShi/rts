@@ -45,6 +45,43 @@ func generate(config):
     _clear_spawn_height_metadata()
 
 
+func _build_tileset():
+    super._build_tileset()
+    texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+    if tile_set == null or not tile_set.has_source(source_id):
+        return
+    var atlas_source: TileSetAtlasSource = tile_set.get_source(source_id) as TileSetAtlasSource
+    if atlas_source == null or atlas_source.texture == null:
+        return
+    var repaired: Image = atlas_source.texture.get_image()
+    if repaired == null or repaired.get_width() < tile_px or repaired.get_height() < tile_px:
+        return
+
+    # The bridge atlas was generated from resampled TMP diamonds. Its outermost
+    # pixel rows retained black/transparent padding, which became a continuous
+    # horizontal line at every 32 px TileMap boundary. Extrude each tile's inner
+    # pixels into the one-pixel border so filtering and fractional camera zoom can
+    # never sample black outside the useful tile content.
+    var tile_count: int = mini(40, int(repaired.get_width() / tile_px))
+    for tile_index in range(tile_count):
+        var start_x: int = tile_index * tile_px
+        for offset in range(tile_px):
+            repaired.set_pixel(start_x + offset, 0, repaired.get_pixel(start_x + offset, 1))
+            repaired.set_pixel(
+                start_x + offset,
+                tile_px - 1,
+                repaired.get_pixel(start_x + offset, tile_px - 2)
+            )
+        for offset in range(tile_px):
+            repaired.set_pixel(start_x, offset, repaired.get_pixel(start_x + 1, offset))
+            repaired.set_pixel(
+                start_x + tile_px - 1,
+                offset,
+                repaired.get_pixel(start_x + tile_px - 2, offset)
+            )
+    atlas_source.texture = ImageTexture.create_from_image(repaired)
+
+
 func _generate_terrain():
     # Reuse the existing generator to preserve map seeds and ore placement, then
     # migrate ore out of TILE_ORE into an independent Overlay representation.
