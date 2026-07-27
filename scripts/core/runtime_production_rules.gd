@@ -98,6 +98,10 @@ func _enqueue_units(match_ref, unit_id: String, requested_count: int) -> int:
     var modifier := float(GameConfig.factions.get(faction, {}).get("unit_modifiers", {}).get("cost", 1.0))
     var actual_cost := int(round(float(data.get("cost", 0)) * modifier))
     for _index in range(requested_count):
+        if int(match_ref.get_unit_queue_count(0, unit_id)) >= MAX_PRODUCTION_QUEUE:
+            if added == 0:
+                EventBus.notification_requested.emit("生产队列已满（上限 %d）" % MAX_PRODUCTION_QUEUE, "warning")
+            break
         var producer = _producer_with_capacity(match_ref, 0, unit_id)
         if not is_instance_valid(producer):
             if added == 0:
