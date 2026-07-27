@@ -1,9 +1,9 @@
 {
   "name": "Iron Meridian RTS",
-  "version": "0.15.0",
+  "version": "0.16.0-dev.1",
   "engine": "Godot 4.7.1",
-  "release": "RA2/YR gameplay systems: EVA voices, layered voxel turrets, TMP terrain bridge, GI deployment, shell projectiles and construction-capable AI",
-  "base": "v0.14.0 RA2/YR runtime vertical slice",
+  "release": "RA2 animated cursor integration and ore visibility foundation",
+  "base": "v0.15.0",
   "source_asset_count": 11593,
   "entity_count": 559,
   "preview_entity_count": 177,
@@ -25,7 +25,7 @@
   "official_map_count": 13,
   "missing_preview_error_is_nonfatal": true,
   "godot_binary_validation": false,
-  "validation_note": "Python pipeline compile, JSON, preview manifest, layered-vehicle asset, GDScript structural, runtime-profile and incremental-package checks passed. Godot 4.7.1 is unavailable in the build container; local editor/runtime validation is required.",
+  "validation_note": "Cursor atlas/manifest integrity and Python converter checks passed. Godot 4.7.1 is unavailable in the execution environment; local editor/runtime validation is required.",
   "preview_category_counts": {
     "infantry": 31,
     "vehicle": 78,
@@ -75,5 +75,11 @@
   "runtime_gi_deployment": true,
   "runtime_ai_builds_structures": true,
   "runtime_ai_debug_overlay": true,
-  "runtime_reveal_all_toggle": true
+  "runtime_reveal_all_toggle": true,
+  "runtime_ra2_cursor": true,
+  "runtime_ra2_cursor_source_frame_count": 450,
+  "runtime_ra2_cursor_state_count": 19,
+  "runtime_ore_entity_visibility_fix": true,
+  "runtime_ore_overlay_split": false,
+  "runtime_ra2_cursor_packed_frame_count": 63
 }
