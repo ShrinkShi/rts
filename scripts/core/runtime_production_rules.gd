@@ -57,23 +57,23 @@ func _handle_production_click(event: InputEventMouseButton) -> bool:
     while is_instance_valid(control):
         var script := control.get_script() as Script
         if script != null and script.resource_path == PRODUCTION_TILE_SCRIPT_PATH:
-            if str(control.kind) != "unit" or bool(control.disabled) or not bool(control.visible):
+            if str(control.get("kind")) != "unit" or bool(control.get("disabled")) or not bool(control.get("visible")):
                 return false
             var match_ref = _match_for_hud_control(control)
             if not _match_accepts_input(match_ref):
                 return false
-            _enqueue_units(match_ref, str(control.id_value), 5 if bool(event.shift_pressed) else 1)
+            _enqueue_units(match_ref, str(control.get("id_value")), 5 if bool(event.shift_pressed) else 1)
             return true
         control = control.get_parent() as Control
     return false
 
 
-func _match_for_hud_control(control: Control):
+func _match_for_hud_control(control: Node):
     var node: Node = control
     while is_instance_valid(node):
         var script := node.get_script() as Script
         if script != null and script.resource_path == MATCH_HUD_SCRIPT_PATH:
-            return node.match_ref
+            return node.get("match_ref")
         node = node.get_parent()
     return null
 
