@@ -97,7 +97,16 @@ func _filter_deployed_units_from_right_click() -> bool:
     for match_ref in _matches:
         if not _match_accepts_input(match_ref) or match_ref.selected_entities.is_empty():
             continue
-        if str(match_ref.command_mode) != "" or bool(match_ref.placement_mode):
+        if bool(match_ref.placement_mode):
+            continue
+        var command_mode := str(match_ref.command_mode)
+        var movement_command := command_mode in ["", "move", "attack_move", "patrol", "harvest", "repair", "rally"]
+        if command_mode == "":
+            var world_position: Vector2 = match_ref._screen_to_world(get_viewport().get_mouse_position())
+            var target = match_ref.get_entity_at(world_position, true)
+            if is_instance_valid(target) and int(target.owner_id) >= 0 and match_ref.are_enemies(0, int(target.owner_id)):
+                movement_command = false
+        if not movement_command:
             continue
         var original: Array = match_ref.selected_entities.duplicate()
         var mobile: Array = []
