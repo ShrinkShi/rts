@@ -208,7 +208,7 @@ func _begin_unload_visual(unit, key: int) -> void:
         _unload_visuals[key] = null
         return
     var manifest := RA2RuntimeDatabase.load_manifest(alternate_id)
-    var alternate: Node2D
+    var alternate: Variant = null
     if manifest.has("layered_vehicle"):
         alternate = RA2LayeredVehicleVisual.new()
     else:
