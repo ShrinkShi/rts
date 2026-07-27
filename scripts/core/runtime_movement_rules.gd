@@ -168,7 +168,13 @@ func _process_harvester_unload_visual(unit) -> void:
         _end_unload_visual(unit, key)
         return
     var refinery = unit.unload_refinery
-    var slot: Vector2 = refinery.service_anchor.global_position if is_instance_valid(refinery.service_anchor) else refinery.global_position + Vector2(64.0, 0.0)
+    var service_direction := Vector2.RIGHT
+    if is_instance_valid(refinery.service_anchor):
+        service_direction = refinery.global_position.direction_to(refinery.service_anchor.global_position)
+    if service_direction.length_squared() < 0.01:
+        service_direction = Vector2.RIGHT
+    var inside_distance := maxf(8.0, float(refinery.footprint.x) * float(refinery.map_ref.tile_px) * 0.5 - float(refinery.map_ref.tile_px) * 0.35)
+    var slot: Vector2 = refinery.global_position + service_direction.normalized() * inside_distance
     unit.global_position = slot
     unit.visible = true
     unit.facing_direction = refinery.global_position.direction_to(slot)
