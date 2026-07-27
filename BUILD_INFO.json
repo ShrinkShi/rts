@@ -1,9 +1,9 @@
 {
   "name": "Iron Meridian RTS",
-  "version": "0.16.0-dev.1",
+  "version": "0.16.0-dev.2",
   "engine": "Godot 4.7.1",
-  "release": "RA2 animated cursor integration and ore visibility foundation",
-  "base": "v0.15.0",
+  "release": "RA2 map-layer separation: independent ore overlays, visible fallback and height metadata foundation",
+  "base": "v0.16.0-dev.1",
   "source_asset_count": 11593,
   "entity_count": 559,
   "preview_entity_count": 177,
@@ -25,7 +25,7 @@
   "official_map_count": 13,
   "missing_preview_error_is_nonfatal": true,
   "godot_binary_validation": false,
-  "validation_note": "Cursor atlas/manifest integrity and Python converter checks passed. Godot 4.7.1 is unavailable in the execution environment; local editor/runtime validation is required.",
+  "validation_note": "Python overlay converter compile and functional smoke test, JSON and source-structure checks passed. Godot 4.7.1 editor/runtime validation is still required.",
   "preview_category_counts": {
     "infantry": 31,
     "vehicle": 78,
@@ -80,6 +80,11 @@
   "runtime_ra2_cursor_source_frame_count": 450,
   "runtime_ra2_cursor_state_count": 19,
   "runtime_ore_entity_visibility_fix": true,
-  "runtime_ore_overlay_split": false,
-  "runtime_ra2_cursor_packed_frame_count": 63
+  "runtime_ore_overlay_split": true,
+  "runtime_ore_visible_fallback": true,
+  "runtime_ore_exact_ra2_overlay_assets": false,
+  "runtime_height_metadata": true,
+  "runtime_isometric_height_rendering": false,
+  "runtime_ra2_cursor_packed_frame_count": 63,
+  "runtime_minimap_overlay_resources": true
 }

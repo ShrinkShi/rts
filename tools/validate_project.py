@@ -37,6 +37,10 @@ def validate_json() -> dict[str, object]:
             result[name] = json.loads(path.read_text(encoding="utf-8"))
         except Exception as exc:
             error(f"Invalid JSON {path.name}: {exc}")
+    try:
+        json.loads((ROOT / "BUILD_INFO.json").read_text(encoding="utf-8"))
+    except Exception as exc:
+        error(f"Invalid JSON BUILD_INFO.json: {exc}")
     return result
 
 
@@ -69,14 +73,21 @@ def validate_features(data: dict[str, object]) -> None:
     match = text("scripts/game/rts_match.gd")
     unit = text("scripts/game/unit.gd")
     building = text("scripts/game/building.gd")
-    grid = text("scripts/game/grid_world.gd")
+    # v0.16 keeps the mature rectangular-grid implementation in a compatibility
+    # base and layers Overlay/height metadata in grid_world.gd. Validate both as
+    # one logical GridWorld implementation.
+    grid = (
+        text("scripts/game/grid_world_base.gd")
+        + "\n"
+        + text("scripts/game/grid_world.gd")
+    )
     hud = text("scripts/ui/match_hud.gd")
     tree = text("scripts/game/tree_entity.gd")
     campaign = text("scripts/ui/campaign_menu.gd")
     factory = text("scripts/game/sprite_sheet_factory.gd")
     asset_processor = text("tools/process_ai_assets.py")
 
-    require(project, ['config/version="0.15.0"'], "Project version")
+    require(project, ['config/version="0.16.0-dev.2"'], "Project version")
     require(match, [
         'structure_jobs = {"primary": {}, "defense": {}}',
         'func repair_entity_step',
@@ -127,6 +138,14 @@ def validate_features(data: dict[str, object]) -> None:
         'func get_movement_speed_multiplier',
         'or has_ore(cell)',
         'Generate one quadrant and mirror it across both axes',
+        'overlay_types',
+        'overlay_frames',
+        'height_levels',
+        'slope_types',
+        'land_types',
+        'func get_overlay_asset_id',
+        'func get_cell_snapshot',
+        'func get_ground_height',
     ], "Grid")
     require(hud, [
         'SidebarToolButton',
