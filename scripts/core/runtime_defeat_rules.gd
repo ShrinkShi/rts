@@ -32,6 +32,7 @@ func _register_node(node: Node) -> void:
     if script != null and script.resource_path == MATCH_SCRIPT_PATH and not node in _matches:
         _matches.append(node)
         _defeated_players[int(node.get_instance_id())] = {}
+        _disable_legacy_headquarters_rule(node)
 
 
 func _process(delta: float) -> void:
@@ -47,10 +48,18 @@ func _process(delta: float) -> void:
         _process_structure_defeat(match_ref)
 
 
+func _disable_legacy_headquarters_rule(match_ref) -> void:
+    if not is_instance_valid(match_ref):
+        return
+    if str(match_ref.match_config.get("mode_id", "standard")) == "headquarters":
+        match_ref.match_config["mode_id"] = "standard"
+    match_ref.victory_check_timer = 999999.0
+
+
 func _process_structure_defeat(match_ref) -> void:
     if bool(match_ref.game_over):
         return
-    match_ref.victory_check_timer = 999999.0
+    _disable_legacy_headquarters_rule(match_ref)
     var players: Array = match_ref.match_config.get("players", [])
     if players.is_empty():
         return
