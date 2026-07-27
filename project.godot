@@ -5,7 +5,7 @@ config_version=5
 [application]
 
 config/name="Iron Meridian RTS"
-config/version="0.16.0-dev.3"
+config/version="0.16.0-dev.4"
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 boot_splash/bg_color=Color(0.035, 0.045, 0.055, 1)
@@ -22,6 +22,10 @@ NetworkManager="*res://scripts/core/network_manager.gd"
 RA2AudioService="*res://scripts/ra2/ra2_audio_service.gd"
 RA2RuntimeDatabase="*res://scripts/ra2/ra2_runtime_database.gd"
 RuntimeTuning="*res://scripts/core/runtime_tuning.gd"
+RuntimeMovementRules="*res://scripts/core/runtime_movement_rules.gd"
+RuntimeProductionRules="*res://scripts/core/runtime_production_rules.gd"
+RuntimeDeploymentRules="*res://scripts/core/runtime_deployment_rules.gd"
+RuntimeDefeatRules="*res://scripts/core/runtime_defeat_rules.gd"
 
 [audio]
 
