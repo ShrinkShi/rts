@@ -15,6 +15,10 @@ var current_body_direction: int = 0
 var current_turret_direction: int = 0
 var current_state: String = "stand"
 var _transparent_texture: Texture2D
+var _shadow_center: Vector2 = Vector2.ZERO
+var _shadow_radius: float = 16.0
+var _shadow_alpha: float = 1.0
+
 
 func setup(next_entity_id: String, next_team_color: Color, next_theater: String = "temperate") -> bool:
     entity_id = next_entity_id.to_upper()
@@ -36,7 +40,9 @@ func setup(next_entity_id: String, next_team_color: Color, next_theater: String 
     turret_remap = _make_sprite("TurretRemap", 3, team_color)
     _build_frames()
     play_state("stand", 0, 0, true)
+    queue_redraw()
     return true
+
 
 func _make_sprite(node_name: String, next_z: int, tint: Color) -> AnimatedSprite2D:
     var sprite: AnimatedSprite2D = AnimatedSprite2D.new()
@@ -50,6 +56,7 @@ func _make_sprite(node_name: String, next_z: int, tint: Color) -> AnimatedSprite
     sprite.self_modulate = tint
     add_child(sprite)
     return sprite
+
 
 func _build_frames() -> void:
     var stand: Dictionary = layer_manifest.get("stand", {}) as Dictionary
@@ -90,6 +97,7 @@ func _build_frames() -> void:
                 true
             )
 
+
 func _add_static_pair(
     base_frames: SpriteFrames,
     remap_frames: SpriteFrames,
@@ -103,6 +111,7 @@ func _add_static_pair(
     remap_frames.set_animation_loop(animation_name, true)
     base_frames.add_frame(animation_name, _load_texture(frame_path))
     remap_frames.add_frame(animation_name, _load_texture(mask_path, true))
+
 
 func _add_sequence_pair(
     base_frames: SpriteFrames,
@@ -129,10 +138,12 @@ func _add_sequence_pair(
             mask_texture = _load_texture(base_dir.path_join(str(masks[index])), true)
         remap_frames.add_frame(animation_name, mask_texture)
 
+
 func _load_texture(path: String, transparent_fallback: bool = false) -> Texture2D:
     if path.is_empty():
         return _transparent_texture
     return RA2RuntimeDatabase.load_runtime_texture(path, transparent_fallback)
+
 
 func configure_layout(target_width: float, ground_y: float = 0.0, extra_offset: Vector2 = Vector2.ZERO) -> void:
     var width: float = maxf(1.0, float(content_rect.size.x))
@@ -140,10 +151,17 @@ func configure_layout(target_width: float, ground_y: float = 0.0, extra_offset: 
     scale = Vector2.ONE * scale_value
     var center_x: float = float(content_rect.position.x) + float(content_rect.size.x) * 0.5
     var bottom_y: float = float(content_rect.position.y + content_rect.size.y)
-    position = Vector2(
+    _shadow_center = Vector2(
+        center_x - canvas_size.x * 0.5,
+        bottom_y - canvas_size.y * 0.5 + 1.0
+    )
+    _shadow_radius = maxf(8.0, float(content_rect.size.x) * 0.34)
+    position = (Vector2(
         -(center_x - canvas_size.x * 0.5) * scale_value,
         ground_y - (bottom_y - canvas_size.y * 0.5) * scale_value
-    ) + extra_offset
+    ) + extra_offset).round()
+    queue_redraw()
+
 
 func play_state(
     state_name: String,
@@ -165,6 +183,7 @@ func play_state(
     _play_pair(body_base, body_remap, body_animation, restart)
     _play_pair(turret_base, turret_remap, turret_animation, restart)
 
+
 func _play_pair(base: AnimatedSprite2D, remap: AnimatedSprite2D, animation_name: String, restart: bool) -> void:
     if not base.sprite_frames.has_animation(animation_name):
         return
@@ -172,21 +191,40 @@ func _play_pair(base: AnimatedSprite2D, remap: AnimatedSprite2D, animation_name:
         base.play(animation_name)
         remap.play(animation_name)
 
+
 func set_team_color(color: Color) -> void:
     team_color = color
     body_remap.self_modulate = color
     turret_remap.self_modulate = color
 
+
 func set_alpha(value: float) -> void:
     var alpha: float = clampf(value, 0.0, 1.0)
+    _shadow_alpha = alpha
     for sprite in [body_base, body_remap, turret_base, turret_remap]:
         sprite.modulate.a = alpha
+    queue_redraw()
+
 
 func has_state(state_name: String) -> bool:
     return state_name in ["stand", "move", "attack", "idle"]
 
+
 func visual_top_y() -> float:
     return position.y + (float(content_rect.position.y) - canvas_size.y * 0.5) * scale.y
+
+
+func _draw() -> void:
+    if current_state == "death" or _shadow_alpha <= 0.01:
+        return
+    draw_set_transform(_shadow_center, 0.0, Vector2(1.0, 0.30))
+    draw_circle(
+        Vector2.ZERO,
+        _shadow_radius,
+        Color(0.018, 0.022, 0.018, 0.38 * _shadow_alpha)
+    )
+    draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+
 
 func _make_transparent_texture() -> Texture2D:
     var image: Image = Image.create(1, 1, false, Image.FORMAT_RGBA8)
