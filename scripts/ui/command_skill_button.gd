@@ -102,6 +102,12 @@ func _draw_icon(center, radius, color):
             draw_circle(center + Vector2(-radius * 0.38, radius * 0.38), radius * 0.42, Color("#D4B841"))
             draw_line(center + Vector2(-radius * 0.05, radius * 0.65), center + Vector2(radius * 0.58, -radius * 0.62), color, 2.7)
             draw_line(center + Vector2(radius * 0.15, -radius * 0.65), center + Vector2(radius * 0.92, -radius * 0.34), color, 2.3)
+        "deploy":
+            draw_arc(center, radius * 0.82, PI, TAU, 18, color, 2.1)
+            draw_line(center + Vector2(-radius * 0.86, 0), center + Vector2(radius * 0.86, 0), color, 2.1)
+            for offset in [-0.55, 0.0, 0.55]:
+                draw_rect(Rect2(center + Vector2(radius * offset - radius * 0.16, -radius * 0.05), Vector2(radius * 0.32, radius * 0.42)), color, false, 1.6)
+            draw_line(center + Vector2(0, -radius * 0.15), center + Vector2(0, -radius * 0.92), color, 2.0)
         "rally":
             draw_line(center + Vector2(-radius * 0.58, radius), center + Vector2(-radius * 0.58, -radius), color, 2.2)
             draw_colored_polygon(PackedVector2Array([

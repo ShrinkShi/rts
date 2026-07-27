@@ -1,0 +1,30 @@
+Iron Meridian RTS v0.15.0 validation
+
+Passed:
+- GDScript structural validation: 46 files, 12930 lines
+- Entity prefab validation: 13 scenes
+- SpriteFrames validation: 8 resources
+- Project JSON validation: 5 core datasets
+- RA2 runtime profile validation: 37 mapped entities, 0 warnings, 0 errors
+- RA2 preview database: 177 manifests, 1178 animations, 16998 frame references
+- Audio reference validation: 526 events, 1716 runtime referenced PCM WAV files
+- Layered vehicle validation: MTNK, FV, HTNK, HTK, LTNK, YTNK, HARV, SMIN
+- Each layered vehicle: 8 body facings x 8 turret facings = 64 combinations
+- YTNK static and firing turret state asset validation
+- E1 Deploy, Deployed and DeployedFire validation
+- Original advisor sample validation: CEVA, CSOF and CYUR
+- Terrain atlas validation: 1280x32, 40 RA2 TMP-derived cells
+- Tank ballistic projectile configuration validation
+- Turret and bunker range parity with tank validation
+- Preview manifest referenced-file existence validation
+- Python pipeline compile validation
+
+Not performed:
+- Godot 4.7.1 parser invocation
+- Editor startup/import test
+- F5 gameplay test
+- Long-duration AI economy match
+- Visual comparison inside the user's Windows 150% DPI environment
+
+Reason:
+Godot 4.7.1 executable is unavailable in the build container. Local runtime verification remains mandatory.

@@ -1,0 +1,919 @@
+{
+  "id": "CALA14",
+  "category": "building",
+  "name_token": "Name:CALA01",
+  "art_id": "CALA14",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 1000,
+  "armor": "concrete",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CALA14",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 8818,
+          "pack": "ra2md",
+          "relative_path": "isolunmd/ctla14.shp",
+          "folder": "isolunmd",
+          "filename": "ctla14.shp",
+          "stem": "ctla14",
+          "extension": ".shp",
+          "size": 65320,
+          "sha1": "b5d6ba2135a8b7b05d4a1cc8384d2ce8daea4216"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 8846,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/cala14.shp",
+          "folder": "isosnomd",
+          "filename": "cala14.shp",
+          "stem": "cala14",
+          "extension": ".shp",
+          "size": 65320,
+          "sha1": "48e38b81393f9083f980446a573f8181ec874718"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 10589,
+          "pack": "ra2md",
+          "relative_path": "isourbmd/cula14.shp",
+          "folder": "isourbmd",
+          "filename": "cula14.shp",
+          "stem": "cula14",
+          "extension": ".shp",
+          "size": 65320,
+          "sha1": "64f3120e868d5a4baa7cc4d61e8b8521fc77cd6f"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 8846,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/cala14.shp",
+          "folder": "isosnomd",
+          "filename": "cala14.shp",
+          "stem": "cala14",
+          "extension": ".shp",
+          "size": 65320,
+          "sha1": "48e38b81393f9083f980446a573f8181ec874718"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8846,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/cala14.shp",
+          "folder": "isosnomd",
+          "filename": "cala14.shp",
+          "stem": "cala14",
+          "extension": ".shp",
+          "size": 65320,
+          "sha1": "48e38b81393f9083f980446a573f8181ec874718"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 10485,
+          "pack": "ra2md",
+          "relative_path": "isoubnmd/cnla14.shp",
+          "folder": "isoubnmd",
+          "filename": "cnla14.shp",
+          "stem": "cnla14",
+          "extension": ".shp",
+          "size": 65320,
+          "sha1": "89d8964b09bd45374f2abdce115826bfb811de77"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "3X3",
+    "height": 6,
+    "occupy_height": 3,
+    "damage_fire_offsets": [
+      [
+        76.0,
+        45.0
+      ],
+      [
+        -9.0,
+        -27.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "LA Mini Mall 02",
+      "UIName": "Name:CALA01",
+      "TechLevel": -1,
+      "Strength": 1000,
+      "Insignificant": true,
+      "Nominal": true,
+      "Points": 5,
+      "Armor": "concrete",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "CanBeOccupied": true,
+      "MaxNumberOccupants": 10,
+      "CanOccupyFire": true,
+      "LeaveRubble": true
+    },
+    "raw_values": {
+      "Name": "LA Mini Mall 02",
+      "UIName": "Name:CALA01",
+      "TechLevel": "-1",
+      "Strength": "1000",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "Points": "5",
+      "Armor": "concrete",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "CanBeOccupied": "yes",
+      "MaxNumberOccupants": "10",
+      "CanOccupyFire": "yes",
+      "LeaveRubble": "true"
+    },
+    "provenance": {
+      "Name": {
+        "value": "LA Mini Mall 02",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15651,
+          "section": "CALA14",
+          "key": "Name",
+          "value": "LA Mini Mall 02"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15644,
+            "section": "CALA14",
+            "key": "Name",
+            "value": "LA Mini Mall 02"
+          }
+        ]
+      },
+      "UIName": {
+        "value": "Name:CALA01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15652,
+          "section": "CALA14",
+          "key": "UIName",
+          "value": "Name:CALA01"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15645,
+            "section": "CALA14",
+            "key": "UIName",
+            "value": "Name:CALA01"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15653,
+          "section": "CALA14",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15646,
+            "section": "CALA14",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15654,
+          "section": "CALA14",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15647,
+            "section": "CALA14",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15655,
+          "section": "CALA14",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15648,
+            "section": "CALA14",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15656,
+          "section": "CALA14",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15649,
+            "section": "CALA14",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15658,
+          "section": "CALA14",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15651,
+            "section": "CALA14",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "concrete",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15659,
+          "section": "CALA14",
+          "key": "Armor",
+          "value": "concrete"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15652,
+            "section": "CALA14",
+            "key": "Armor",
+            "value": "concrete"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15660,
+          "section": "CALA14",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15653,
+            "section": "CALA14",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15662,
+          "section": "CALA14",
+          "key": "DebrisAnims",
+          "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15655,
+            "section": "CALA14",
+            "key": "DebrisAnims",
+            "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15663,
+          "section": "CALA14",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15656,
+            "section": "CALA14",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15664,
+          "section": "CALA14",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15657,
+            "section": "CALA14",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15667,
+          "section": "CALA14",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15660,
+            "section": "CALA14",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15668,
+          "section": "CALA14",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15661,
+            "section": "CALA14",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15669,
+          "section": "CALA14",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15662,
+            "section": "CALA14",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanBeOccupied": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15670,
+          "section": "CALA14",
+          "key": "CanBeOccupied",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15663,
+            "section": "CALA14",
+            "key": "CanBeOccupied",
+            "value": "yes"
+          }
+        ]
+      },
+      "MaxNumberOccupants": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15671,
+          "section": "CALA14",
+          "key": "MaxNumberOccupants",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15664,
+            "section": "CALA14",
+            "key": "MaxNumberOccupants",
+            "value": "10"
+          }
+        ]
+      },
+      "CanOccupyFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15672,
+          "section": "CALA14",
+          "key": "CanOccupyFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15665,
+            "section": "CALA14",
+            "key": "CanOccupyFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15673,
+          "section": "CALA14",
+          "key": "LeaveRubble",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15666,
+            "section": "CALA14",
+            "key": "LeaveRubble",
+            "value": "true"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Normalized": true,
+      "Remapable": false,
+      "Foundation": "3X3",
+      "Height": 6,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "MuzzleFlash0": "11,68",
+      "MuzzleFlash1": "-26,57",
+      "MuzzleFlash2": "-71,35",
+      "MuzzleFlash3": "-56,42",
+      "MuzzleFlash4": "-35,53",
+      "MuzzleFlash5": "-71,35",
+      "MuzzleFlash6": "11,68",
+      "MuzzleFlash7": "56,42",
+      "MuzzleFlash8": "-26,57",
+      "MuzzleFlash9": "35,53",
+      "CanBeHidden": false,
+      "OccupyHeight": 3,
+      "DamageFireOffset0": "76,45",
+      "DamageFireOffset1": "-9,-27"
+    },
+    "raw_values": {
+      "Normalized": "yes",
+      "Remapable": "no",
+      "Foundation": "3X3",
+      "Height": "6",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "MuzzleFlash0": "11,68",
+      "MuzzleFlash1": "-26,57",
+      "MuzzleFlash2": "-71,35",
+      "MuzzleFlash3": "-56,42",
+      "MuzzleFlash4": "-35,53",
+      "MuzzleFlash5": "-71,35",
+      "MuzzleFlash6": "11,68",
+      "MuzzleFlash7": "56,42",
+      "MuzzleFlash8": "-26,57",
+      "MuzzleFlash9": "35,53",
+      "CanBeHidden": "False",
+      "OccupyHeight": "3",
+      "DamageFireOffset0": "76,45",
+      "DamageFireOffset1": "-9,-27"
+    },
+    "provenance": {
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11323,
+          "section": "CALA14",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11324,
+          "section": "CALA14",
+          "key": "Remapable",
+          "value": "no"
+        },
+        "history": []
+      },
+      "Foundation": {
+        "value": "3X3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11325,
+          "section": "CALA14",
+          "key": "Foundation",
+          "value": "3X3"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11326,
+          "section": "CALA14",
+          "key": "Height",
+          "value": "6"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11328,
+          "section": "CALA14",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11331,
+          "section": "CALA14",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": []
+      },
+      "MuzzleFlash0": {
+        "value": "11,68",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11332,
+          "section": "CALA14",
+          "key": "MuzzleFlash0",
+          "value": "11,68"
+        },
+        "history": []
+      },
+      "MuzzleFlash1": {
+        "value": "-26,57",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11333,
+          "section": "CALA14",
+          "key": "MuzzleFlash1",
+          "value": "-26,57"
+        },
+        "history": []
+      },
+      "MuzzleFlash2": {
+        "value": "-71,35",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11334,
+          "section": "CALA14",
+          "key": "MuzzleFlash2",
+          "value": "-71,35"
+        },
+        "history": []
+      },
+      "MuzzleFlash3": {
+        "value": "-56,42",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11335,
+          "section": "CALA14",
+          "key": "MuzzleFlash3",
+          "value": "-56,42"
+        },
+        "history": []
+      },
+      "MuzzleFlash4": {
+        "value": "-35,53",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11336,
+          "section": "CALA14",
+          "key": "MuzzleFlash4",
+          "value": "-35,53"
+        },
+        "history": []
+      },
+      "MuzzleFlash5": {
+        "value": "-71,35",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11337,
+          "section": "CALA14",
+          "key": "MuzzleFlash5",
+          "value": "-71,35"
+        },
+        "history": []
+      },
+      "MuzzleFlash6": {
+        "value": "11,68",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11338,
+          "section": "CALA14",
+          "key": "MuzzleFlash6",
+          "value": "11,68"
+        },
+        "history": []
+      },
+      "MuzzleFlash7": {
+        "value": "56,42",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11339,
+          "section": "CALA14",
+          "key": "MuzzleFlash7",
+          "value": "56,42"
+        },
+        "history": []
+      },
+      "MuzzleFlash8": {
+        "value": "-26,57",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11340,
+          "section": "CALA14",
+          "key": "MuzzleFlash8",
+          "value": "-26,57"
+        },
+        "history": []
+      },
+      "MuzzleFlash9": {
+        "value": "35,53",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11341,
+          "section": "CALA14",
+          "key": "MuzzleFlash9",
+          "value": "35,53"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11342,
+          "section": "CALA14",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11343,
+          "section": "CALA14",
+          "key": "OccupyHeight",
+          "value": "3"
+        },
+        "history": []
+      },
+      "DamageFireOffset0": {
+        "value": "76,45",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11344,
+          "section": "CALA14",
+          "key": "DamageFireOffset0",
+          "value": "76,45"
+        },
+        "history": []
+      },
+      "DamageFireOffset1": {
+        "value": "-9,-27",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11345,
+          "section": "CALA14",
+          "key": "DamageFireOffset1",
+          "value": "-9,-27"
+        },
+        "history": []
+      }
+    }
+  }
+}

@@ -3,10 +3,14 @@ extends Node2D
 const SpriteSheetFactory = preload("res://scripts/game/sprite_sheet_factory.gd")
 const CombatEffect = preload("res://scripts/game/combat_effect.gd")
 const VisualProfileStore = preload("res://scripts/core/visual_profile_store.gd")
+const RA2VisualPlayer = preload("res://scripts/ra2/ra2_visual_player.gd")
 
 signal died(entity)
 signal production_ready(unit_id, building)
 signal fired(from_point, to_point, owner_id)
+
+@export_enum("command", "power", "barracks", "refinery", "war_factory", "repair_bay", "turret", "bunker")
+var preset_building_id: String = "command"
 
 const LAYER_INFANTRY = 1
 const LAYER_VEHICLE = 2
@@ -16,6 +20,7 @@ var match_ref
 var map_ref
 var building_id = "command"
 var owner_id = 0
+var faction_id: String = "union"
 var stats = {}
 var hp = 100.0
 var max_hp = 100.0
@@ -38,8 +43,12 @@ var rally_point = Vector2.ZERO
 var static_body
 var primary_producer = false
 var manual_stopped = false
-var visual_sprite
-var turret_sprite
+var visual_root: Node2D
+var visual_sprite: Sprite2D
+var turret_sprite: AnimatedSprite2D
+var damage_smoke_anchor: Marker2D
+var service_anchor: Marker2D
+var prefab_visual_nodes = false
 var turret_visual_direction = 0
 var damage_stage = 0
 var attack_animation_time = 0.0
@@ -59,13 +68,24 @@ var destroyed = false
 var destruction_elapsed = 0.0
 var destruction_lifetime = 6.5
 var visual_profile
+var ra2_profile: Dictionary = {}
+var ra2_entity_id: String = ""
+var ra2_visual
+var ra2_visual_state: String = ""
+var special_active_count: int = 0
 
 func setup(next_match, next_map, next_building_id, next_owner, cell, animate_construction = false):
     match_ref = next_match
     map_ref = next_map
-    building_id = next_building_id
+    building_id = str(next_building_id) if str(next_building_id) != "" else preset_building_id
+    preset_building_id = building_id
     owner_id = next_owner
+    faction_id = str(match_ref.get_player_data(owner_id).get("faction", "union"))
     stats = GameConfig.buildings.get(building_id, {}).duplicate(true)
+    ra2_profile = RA2RuntimeDatabase.get_profile("buildings", faction_id, building_id)
+    ra2_entity_id = str(ra2_profile.get("ra2_id", "")).to_upper()
+    if not ra2_entity_id.is_empty():
+        stats["name"] = RA2RuntimeDatabase.display_name(ra2_entity_id)
     visual_profile = VisualProfileStore.get_profile(building_id)
     max_hp = float(stats.get("hp", 500))
     hp = max_hp
@@ -87,43 +107,97 @@ func setup(next_match, next_map, next_building_id, next_owner, cell, animate_con
 
 
 func _build_visual():
-    visual_sprite = Sprite2D.new()
-    visual_sprite.name = "BuildingVisual"
+    visual_root = get_node_or_null("VisualRoot") as Node2D
+    visual_sprite = get_node_or_null("VisualRoot/Body") as Sprite2D
+    turret_sprite = get_node_or_null("VisualRoot/Weapon") as AnimatedSprite2D
+    damage_smoke_anchor = get_node_or_null("DamageSmokeAnchor") as Marker2D
+    service_anchor = get_node_or_null("ServiceAnchor") as Marker2D
+    prefab_visual_nodes = is_instance_valid(visual_root) and is_instance_valid(visual_sprite)
+
+    if not ra2_entity_id.is_empty():
+        var runtime_visual = RA2VisualPlayer.new()
+        runtime_visual.name = "RA2Visual"
+        add_child(runtime_visual)
+        if runtime_visual.setup(ra2_entity_id, team_color, str(ra2_profile.get("theater", "temperate"))):
+            ra2_visual = runtime_visual
+            if is_instance_valid(visual_root):
+                visual_root.visible = false
+            var runtime_width: float = float(ra2_profile.get(
+                "target_width",
+                maxf(64.0, float(footprint.x) * float(map_ref.tile_px) * 1.42)
+            ))
+            var default_ground_y: float = float(footprint.y) * float(map_ref.tile_px) * 0.34
+            var runtime_ground_y: float = float(ra2_profile.get("ground_y", default_ground_y))
+            var runtime_offset_data: Variant = ra2_profile.get("offset", [0.0, 0.0])
+            var runtime_offset: Vector2 = Vector2.ZERO
+            if runtime_offset_data is Array and (runtime_offset_data as Array).size() >= 2:
+                runtime_offset = Vector2(
+                    float((runtime_offset_data as Array)[0]),
+                    float((runtime_offset_data as Array)[1])
+                )
+            runtime_visual.configure_layout(runtime_width, runtime_ground_y, runtime_offset)
+            runtime_visual.play_state("normal", 0, true)
+            ra2_visual_state = "normal"
+            return
+        runtime_visual.queue_free()
+
+    var frame_size = SpriteSheetFactory.get_building_frame_size(building_id)
+    var target_width = max(64.0, footprint.x * map_ref.tile_px * 1.42)
+    if not prefab_visual_nodes:
+        visual_root = Node2D.new()
+        visual_root.name = "VisualRoot"
+        add_child(visual_root)
+        visual_sprite = Sprite2D.new()
+        visual_sprite.name = "Body"
+        visual_root.add_child(visual_sprite)
+        var scale_value = target_width / frame_size.x
+        if building_id in ["turret", "bunker"]:
+            scale_value *= 1.34
+        visual_root.position = visual_profile.visual_offset if visual_profile != null else Vector2.ZERO
+        visual_root.scale = visual_profile.visual_scale_multiplier if visual_profile != null else Vector2.ONE
+        visual_sprite.scale = Vector2.ONE * scale_value
+        visual_sprite.position = Vector2(0, -max(18.0, footprint.y * map_ref.tile_px * 0.42))
+        if building_id in ["turret", "bunker"]:
+            turret_sprite = AnimatedSprite2D.new()
+            turret_sprite.name = "Weapon"
+            var head_size = SpriteSheetFactory.get_defense_head_frame_size(building_id)
+            var head_scale = target_width / head_size.x * (1.20 if building_id == "bunker" else 1.08)
+            turret_sprite.scale = Vector2.ONE * head_scale * (visual_profile.turret_scale_multiplier if visual_profile != null else Vector2.ONE)
+            turret_sprite.position = visual_sprite.position + Vector2(0, -8 if building_id == "bunker" else -12) + (visual_profile.turret_offset if visual_profile != null else Vector2.ZERO)
+            visual_root.add_child(turret_sprite)
+
     visual_sprite.texture = SpriteSheetFactory.get_building_frame(building_id, 0)
     visual_sprite.centered = true
     visual_sprite.show_behind_parent = true
     visual_sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
-    var frame_size = SpriteSheetFactory.get_building_frame_size(building_id)
-    var target_width = max(64.0, footprint.x * map_ref.tile_px * 1.42)
-    var scale_value = target_width / frame_size.x
-    if building_id in ["turret", "bunker"]:
-        scale_value *= 1.34
-    target_visual_scale = Vector2.ONE * scale_value * visual_profile.visual_scale_multiplier
-    target_visual_position = Vector2(0, -max(18.0, footprint.y * map_ref.tile_px * 0.42)) + visual_profile.visual_offset
-    visual_sprite.scale = target_visual_scale
-    visual_sprite.position = target_visual_position
     visual_sprite.material = SpriteSheetFactory.create_team_material(team_color)
-    add_child(visual_sprite)
+    target_visual_scale = visual_sprite.scale
+    target_visual_position = visual_sprite.position
 
-    if building_id in ["turret", "bunker"]:
-        turret_sprite = AnimatedSprite2D.new()
-        turret_sprite.name = "RotatingWeaponVisual"
-        turret_sprite.sprite_frames = SpriteSheetFactory.get_defense_head_frames(building_id)
+    if building_id in ["turret", "bunker"] and is_instance_valid(turret_sprite):
+        if turret_sprite.sprite_frames == null or not turret_sprite.sprite_frames.has_animation("stand_0"):
+            turret_sprite.sprite_frames = SpriteSheetFactory.get_defense_head_frames(building_id)
         turret_sprite.centered = true
         turret_sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
-        var head_size = SpriteSheetFactory.get_defense_head_frame_size(building_id)
-        var head_scale = target_width / head_size.x * (1.20 if building_id == "bunker" else 1.08)
-        turret_sprite.scale = Vector2.ONE * head_scale * visual_profile.turret_scale_multiplier
-        turret_sprite.position = target_visual_position + Vector2(0, -8 if building_id == "bunker" else -12) + visual_profile.turret_offset
         turret_sprite.z_index = 2
         turret_sprite.material = SpriteSheetFactory.create_team_material(team_color)
-        add_child(turret_sprite)
         turret_sprite.play("stand_0")
 
 func _apply_construction_visual():
+    var p: float = clampf(construction_progress, 0.0, 1.0)
+    if is_instance_valid(ra2_visual):
+        if p < 1.0 or selling:
+            if ra2_visual.has_state("construction"):
+                ra2_visual.set_progress("construction", p)
+            else:
+                ra2_visual.play_state("normal", 0)
+                ra2_visual.set_alpha(0.25 + p * 0.75)
+        else:
+            ra2_visual.set_alpha(1.0)
+            _update_ra2_visual_state(true)
+        return
     if not is_instance_valid(visual_sprite):
         return
-    var p = clamp(construction_progress, 0.0, 1.0)
     var eased = p * p * (3.0 - 2.0 * p)
     if SpriteSheetFactory.has_ai_construction_frames(building_id):
         if p < 1.0 or selling:
@@ -158,7 +232,15 @@ func begin_sell(refund):
 
 func set_repair_active(value):
     repair_active = bool(value)
+    _update_ra2_visual_state()
     queue_redraw()
+
+func set_special_active(value: bool) -> void:
+    if value:
+        special_active_count += 1
+    else:
+        special_active_count = maxi(0, special_active_count - 1)
+    _update_ra2_visual_state()
 
 func is_under_construction():
     return construction_progress < 1.0 and not selling
@@ -167,6 +249,8 @@ func is_repair_facility():
     return building_id == "repair_bay"
 
 func get_service_entry_position(from_position = Vector2.ZERO):
+    if is_instance_valid(service_anchor):
+        return service_anchor.global_position
     var direction = global_position.direction_to(from_position)
     if direction.length_squared() < 0.01:
         direction = Vector2.RIGHT
@@ -229,12 +313,13 @@ func _update_damage_visual():
             visual_sprite.texture = SpriteSheetFactory.get_building_frame(building_id, damage_stage)
         if is_instance_valid(turret_sprite):
             turret_sprite.modulate = Color.WHITE if damage_stage == 0 else (Color(0.86, 0.82, 0.78, 1.0) if damage_stage == 1 else Color(0.68, 0.62, 0.58, 1.0))
+        _update_ra2_visual_state(true)
     var should_smoke = damage_stage >= 2 and hp > 0.0
     if should_smoke and not is_instance_valid(damage_smoke):
         damage_smoke = CombatEffect.new()
         damage_smoke.z_index = 4
         add_child(damage_smoke)
-        damage_smoke.position = Vector2(footprint.x * map_ref.tile_px * 0.12, -footprint.y * map_ref.tile_px * 0.9)
+        damage_smoke.position = damage_smoke_anchor.position if is_instance_valid(damage_smoke_anchor) else Vector2(footprint.x * map_ref.tile_px * 0.12, -footprint.y * map_ref.tile_px * 0.9)
         damage_smoke.setup("smoke", Color("#3A4043"), 1.15, true, get_instance_id())
     elif not should_smoke and is_instance_valid(damage_smoke):
         damage_smoke.queue_free()
@@ -245,25 +330,37 @@ func _spawn_collapse_effect():
         return
     var effect = CombatEffect.new()
     match_ref.effect_layer.add_child(effect)
-    effect.global_position = global_position - Vector2(0, footprint.y * map_ref.tile_px * 0.35)
+    effect.global_position = damage_smoke_anchor.global_position if is_instance_valid(damage_smoke_anchor) else global_position - Vector2(0, footprint.y * map_ref.tile_px * 0.35)
     effect.setup("building_collapse", team_color, 1.4 + footprint.x * 0.12, false, get_instance_id())
 
 func _build_collision_shape():
-    static_body = StaticBody2D.new()
+    static_body = get_node_or_null("StaticBody2D") as StaticBody2D
+    if static_body == null:
+        static_body = StaticBody2D.new()
+        static_body.name = "StaticBody2D"
+        add_child(static_body)
     static_body.collision_layer = LAYER_BUILDING
     static_body.collision_mask = LAYER_INFANTRY | LAYER_VEHICLE
-    var shape_node = CollisionShape2D.new()
-    var rectangle = RectangleShape2D.new()
+    var shape_node = static_body.get_node_or_null("CollisionShape2D") as CollisionShape2D
+    if shape_node == null:
+        shape_node = CollisionShape2D.new()
+        shape_node.name = "CollisionShape2D"
+        static_body.add_child(shape_node)
+    var rectangle = shape_node.shape as RectangleShape2D
+    if rectangle == null:
+        rectangle = RectangleShape2D.new()
+        shape_node.shape = rectangle
     rectangle.size = Vector2(footprint.x * map_ref.tile_px - 8.0, footprint.y * map_ref.tile_px - 8.0)
-    shape_node.shape = rectangle
-    static_body.add_child(shape_node)
-    add_child(static_body)
 
 func _process(delta):
     if destroyed:
         destruction_elapsed += delta
-        if is_instance_valid(visual_sprite) and destruction_elapsed > destruction_lifetime - 1.4:
-            visual_sprite.modulate.a = clamp((destruction_lifetime - destruction_elapsed) / 1.4, 0.0, 1.0)
+        if destruction_elapsed > destruction_lifetime - 1.4:
+            var destruction_alpha: float = clampf((destruction_lifetime - destruction_elapsed) / 1.4, 0.0, 1.0)
+            if is_instance_valid(ra2_visual):
+                ra2_visual.set_alpha(destruction_alpha)
+            elif is_instance_valid(visual_sprite):
+                visual_sprite.modulate.a = destruction_alpha
         if destruction_elapsed >= destruction_lifetime:
             queue_free()
         return
@@ -290,8 +387,29 @@ func _process(delta):
     if is_defense_building() and powered and not manual_stopped:
         _process_turret()
     _update_turret_visual()
+    _update_ra2_visual_state()
     if attack_animation_time > 0.0:
         queue_redraw()
+
+func _update_ra2_visual_state(restart: bool = false) -> void:
+    if not is_instance_valid(ra2_visual) or destroyed or construction_progress < 1.0 or selling:
+        return
+    var next_state: String = "normal"
+    if attack_animation_time > 0.0 and is_defense_building():
+        next_state = "attack"
+    elif damage_stage > 0:
+        next_state = "damaged"
+    elif not powered:
+        next_state = "powered_off"
+    elif repair_active:
+        next_state = "repair"
+    elif special_active_count > 0:
+        next_state = "special"
+    elif not production_queue.is_empty():
+        next_state = "production"
+    if restart or next_state != ra2_visual_state:
+        ra2_visual.play_state(next_state, turret_visual_direction, restart)
+        ra2_visual_state = next_state
 
 func _direction_index(direction):
     if Vector2(direction).length_squared() < 0.001:
@@ -365,6 +483,10 @@ func _process_turret():
     if is_instance_valid(turret_sprite):
         turret_sprite.play("attack_%d" % turret_visual_direction)
     queue_redraw()
+    if is_instance_valid(ra2_visual):
+        ra2_visual.play_state("attack", turret_visual_direction, true)
+    if not ra2_entity_id.is_empty():
+        RA2RuntimeDatabase.play_weapon_report(ra2_entity_id)
     fired.emit(global_position + turret_facing * 18.0 + Vector2(0, -22), attack_point, owner_id)
     match_ref.spawn_muzzle_flash(global_position + turret_facing * 25.0 + Vector2(0, -22), Color("#FFD46B"))
     var shot_damage = float(stats.get("damage", 20))
@@ -572,9 +694,14 @@ func take_damage(amount, source = null):
         if is_instance_valid(damage_smoke):
             damage_smoke.queue_free()
             damage_smoke = null
-        if is_instance_valid(visual_sprite):
+        if is_instance_valid(ra2_visual):
+            ra2_visual.set_alpha(1.0)
+            ra2_visual.play_state("destroyed", turret_visual_direction, true)
+        elif is_instance_valid(visual_sprite):
             visual_sprite.texture = SpriteSheetFactory.get_building_destroyed_frame(building_id)
             visual_sprite.modulate = Color.WHITE
+        if not ra2_entity_id.is_empty():
+            RA2RuntimeDatabase.play_entity_role(ra2_entity_id, "DieSound", 80)
         if is_instance_valid(turret_sprite):
             turret_sprite.visible = false
         if is_instance_valid(static_body):
@@ -620,9 +747,12 @@ func get_power_use():
     return int(stats.get("power_use", 0))
 
 func _visual_top_y():
+    if is_instance_valid(ra2_visual):
+        return ra2_visual.visual_top_y() + 5.0
     if is_instance_valid(visual_sprite):
         var frame_size = SpriteSheetFactory.get_building_frame_size(building_id)
-        return visual_sprite.position.y - frame_size.y * visual_sprite.scale.y * 0.5 + 5.0
+        var top_world = visual_sprite.to_global(Vector2(0, -frame_size.y * 0.5))
+        return to_local(top_world).y + 5.0
     return -footprint.y * map_ref.tile_px * 0.5 - 10.0
 
 func _should_show_health_bar():

@@ -4,6 +4,7 @@ signal skirmish_requested
 signal campaign_requested
 signal settings_requested
 signal lan_requested
+signal ra2_database_requested
 signal quit_requested
 
 const UIFactory = preload("res://scripts/ui/ui_factory.gd")
@@ -35,7 +36,7 @@ func _build_ui():
 
     var menu_panel = PanelContainer.new()
     menu_panel.position = Vector2(74, 272)
-    menu_panel.size = Vector2(360, 330)
+    menu_panel.size = Vector2(360, 390)
     menu_panel.add_theme_stylebox_override("panel", UIFactory.panel_style(Color(0.06, 0.09, 0.12, 0.94), Color("#3C5968"), 5))
     add_child(menu_panel)
 
@@ -64,6 +65,13 @@ func _build_ui():
     UIFactory.style_button(lan)
     lan.pressed.connect(func(): lan_requested.emit())
     menu.add_child(lan)
+
+    var database = Button.new()
+    database.text = "RA2 / YR 资源数据库"
+    database.tooltip_text = "浏览单位、建筑、CSF 文本、声音事件、地图和字段来源"
+    UIFactory.style_button(database)
+    database.pressed.connect(func(): ra2_database_requested.emit())
+    menu.add_child(database)
 
     var settings = Button.new()
     settings.text = "设置"
@@ -108,7 +116,7 @@ func _build_ui():
         row.add_child(UIFactory.muted_label(line, 15))
         feature_box.add_child(row)
 
-    var footer = UIFactory.muted_label("v0.8.4 · 可视化校准 / 矿区通行 / 坦克图集扩边 · Godot 4.7", 13)
+    var footer: Label = UIFactory.muted_label("v0.12.0 · CSF 本地化、音频银行与官方地图索引 · Godot 4.7.1", 13)
     footer.anchor_top = 1.0
     footer.anchor_bottom = 1.0
     footer.offset_left = 74

@@ -1,0 +1,1605 @@
+{
+  "id": "ROBO",
+  "category": "vehicle",
+  "name_token": "Name:Robotank",
+  "art_id": "ROBO",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GAWEAP",
+    "GAROBO"
+  ],
+  "tech_level": 2,
+  "cost": 600,
+  "strength": 180,
+  "armor": "heavy",
+  "speed": 10,
+  "sight": 6,
+  "locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "AmphibiousDestroyer",
+  "weapons": {
+    "Primary": {
+      "id": "Robogun",
+      "projectile": "Cannon",
+      "warhead": "AP",
+      "report": [
+        "RobotTankAttack"
+      ],
+      "values": {
+        "Damage": 65,
+        "ROF": 60,
+        "Range": 5,
+        "Projectile": "Cannon",
+        "Speed": 60,
+        "Warhead": "AP",
+        "Report": "RobotTankAttack",
+        "Anim": "GUNFIRE",
+        "Bright": true
+      },
+      "raw_values": {
+        "Damage": "65",
+        "ROF": "60",
+        "Range": "5",
+        "Projectile": "Cannon",
+        "Speed": "60",
+        "Warhead": "AP",
+        "Report": "RobotTankAttack",
+        "Anim": "GUNFIRE",
+        "Bright": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "65",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23386,
+            "section": "Robogun",
+            "key": "Damage",
+            "value": "65"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23378,
+              "section": "Robogun",
+              "key": "Damage",
+              "value": "65"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23387,
+            "section": "Robogun",
+            "key": "ROF",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23379,
+              "section": "Robogun",
+              "key": "ROF",
+              "value": "60"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23388,
+            "section": "Robogun",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23380,
+              "section": "Robogun",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "Cannon",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23389,
+            "section": "Robogun",
+            "key": "Projectile",
+            "value": "Cannon"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23381,
+              "section": "Robogun",
+              "key": "Projectile",
+              "value": "Cannon"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23390,
+            "section": "Robogun",
+            "key": "Speed",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23382,
+              "section": "Robogun",
+              "key": "Speed",
+              "value": "60"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "AP",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23391,
+            "section": "Robogun",
+            "key": "Warhead",
+            "value": "AP"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23383,
+              "section": "Robogun",
+              "key": "Warhead",
+              "value": "AP"
+            }
+          ]
+        },
+        "Report": {
+          "value": "RobotTankAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23392,
+            "section": "Robogun",
+            "key": "Report",
+            "value": "RobotTankAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23384,
+              "section": "Robogun",
+              "key": "Report",
+              "value": "RobotTankAttack"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23393,
+            "section": "Robogun",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23385,
+              "section": "Robogun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        },
+        "Bright": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23394,
+            "section": "Robogun",
+            "key": "Bright",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23386,
+              "section": "Robogun",
+              "key": "Bright",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "RobotTankSelect"
+    ],
+    "VoiceMove": [
+      "RobotTankMove"
+    ],
+    "VoiceAttack": [
+      "RobotTankAttackCommand"
+    ],
+    "DieSound": [
+      "RobotTankDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ],
+    "MoveSound": [
+      "RobotTankMoveStart"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "ROBO",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 10812,
+      "pack": "ra2md",
+      "relative_path": "localmd/robo.vxl",
+      "folder": "localmd",
+      "filename": "robo.vxl",
+      "stem": "robo",
+      "extension": ".vxl",
+      "size": 14605,
+      "sha1": "bbca295a10db6430153033695ad0910fb5c70752"
+    },
+    "body_hva": {
+      "asset_id": 10811,
+      "pack": "ra2md",
+      "relative_path": "localmd/robo.hva",
+      "folder": "localmd",
+      "filename": "robo.hva",
+      "stem": "robo",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "0e4db2fb0fd617d922abbc33f70a41ea8037640b"
+    },
+    "turret": {
+      "asset_id": 10814,
+      "pack": "ra2md",
+      "relative_path": "localmd/robotur.vxl",
+      "folder": "localmd",
+      "filename": "robotur.vxl",
+      "stem": "robotur",
+      "extension": ".vxl",
+      "size": 6852,
+      "sha1": "c237a306a129b9b73a80a0b17991f75dca41f1b5"
+    },
+    "turret_hva": {
+      "asset_id": 10813,
+      "pack": "ra2md",
+      "relative_path": "localmd/robotur.hva",
+      "folder": "localmd",
+      "filename": "robotur.hva",
+      "stem": "robotur",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "0e4db2fb0fd617d922abbc33f70a41ea8037640b"
+    },
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      150.0,
+      0.0,
+      100.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:Robotank",
+      "Name": "Robot Tank",
+      "Image": "ROBO",
+      "Prerequisite": "GAWEAP,GAROBO",
+      "Primary": "Robogun",
+      "Strength": 180,
+      "Category": "AFV",
+      "Armor": "heavy",
+      "Turret": true,
+      "IsTilter": true,
+      "Crusher": true,
+      "TooBigToFitUnderBridge": true,
+      "TechLevel": 2,
+      "Sight": 6,
+      "Speed": 10,
+      "CrateGoodie": false,
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "Cost": 600,
+      "Soylent": 600,
+      "Points": 25,
+      "ROT": 5,
+      "IsSelectableCombatant": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "RobotTankSelect",
+      "VoiceSelectDeactivated": "RobotTankSelectDeactivated",
+      "VoiceMove": "RobotTankMove",
+      "VoiceAttack": "RobotTankAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "RobotTankDie",
+      "MoveSound": "RobotTankMoveStart",
+      "ActivateSound": "RobotTankOnline",
+      "DeactivateSound": "RobotTankOffline",
+      "CrushSound": "TankCrush",
+      "MaxDebris": 2,
+      "SpeedType": "Hover",
+      "Locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "AmphibiousDestroyer",
+      "ThreatPosed": 15,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Accelerates": false,
+      "ImmuneToVeins": true,
+      "Size": 3,
+      "OpportunityFire": true,
+      "AllowedToStartInMultiplayer": false,
+      "ImmuneToPsionics": true,
+      "ImmuneToRadiation": true,
+      "PoweredUnit": true,
+      "Trainable": false,
+      "BuildTimeMultiplier": 1.3
+    },
+    "raw_values": {
+      "UIName": "Name:Robotank",
+      "Name": "Robot Tank",
+      "Image": "ROBO",
+      "Prerequisite": "GAWEAP,GAROBO",
+      "Primary": "Robogun",
+      "Strength": "180",
+      "Category": "AFV",
+      "Armor": "heavy",
+      "Turret": "yes",
+      "IsTilter": "yes",
+      "Crusher": "yes",
+      "TooBigToFitUnderBridge": "true",
+      "TechLevel": "2",
+      "Sight": "6",
+      "Speed": "10",
+      "CrateGoodie": "no",
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "Cost": "600",
+      "Soylent": "600",
+      "Points": "25",
+      "ROT": "5",
+      "IsSelectableCombatant": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "RobotTankSelect",
+      "VoiceSelectDeactivated": "RobotTankSelectDeactivated",
+      "VoiceMove": "RobotTankMove",
+      "VoiceAttack": "RobotTankAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "RobotTankDie",
+      "MoveSound": "RobotTankMoveStart",
+      "ActivateSound": "RobotTankOnline",
+      "DeactivateSound": "RobotTankOffline",
+      "CrushSound": "TankCrush",
+      "MaxDebris": "2",
+      "SpeedType": "Hover",
+      "Locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "AmphibiousDestroyer",
+      "ThreatPosed": "15",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Accelerates": "false",
+      "ImmuneToVeins": "yes",
+      "Size": "3",
+      "OpportunityFire": "yes",
+      "AllowedToStartInMultiplayer": "no",
+      "ImmuneToPsionics": "yes",
+      "ImmuneToRadiation": "yes",
+      "PoweredUnit": "yes",
+      "Trainable": "no",
+      "BuildTimeMultiplier": "1.3"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:Robotank",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7418,
+          "section": "ROBO",
+          "key": "UIName",
+          "value": "Name:Robotank"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7416,
+            "section": "ROBO",
+            "key": "UIName",
+            "value": "Name:Robotank"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Robot Tank",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7419,
+          "section": "ROBO",
+          "key": "Name",
+          "value": "Robot Tank"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7417,
+            "section": "ROBO",
+            "key": "Name",
+            "value": "Robot Tank"
+          }
+        ]
+      },
+      "Image": {
+        "value": "ROBO",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7420,
+          "section": "ROBO",
+          "key": "Image",
+          "value": "ROBO"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7418,
+            "section": "ROBO",
+            "key": "Image",
+            "value": "ROBO"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GAWEAP,GAROBO",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7421,
+          "section": "ROBO",
+          "key": "Prerequisite",
+          "value": "GAWEAP,GAROBO"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7419,
+            "section": "ROBO",
+            "key": "Prerequisite",
+            "value": "GAWEAP,GAROBO"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "Robogun",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7422,
+          "section": "ROBO",
+          "key": "Primary",
+          "value": "Robogun"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7420,
+            "section": "ROBO",
+            "key": "Primary",
+            "value": "Robogun"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "180",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7423,
+          "section": "ROBO",
+          "key": "Strength",
+          "value": "180"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7421,
+            "section": "ROBO",
+            "key": "Strength",
+            "value": "180"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7424,
+          "section": "ROBO",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7422,
+            "section": "ROBO",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7425,
+          "section": "ROBO",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7423,
+            "section": "ROBO",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7426,
+          "section": "ROBO",
+          "key": "Turret",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7424,
+            "section": "ROBO",
+            "key": "Turret",
+            "value": "yes"
+          }
+        ]
+      },
+      "IsTilter": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7427,
+          "section": "ROBO",
+          "key": "IsTilter",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7425,
+            "section": "ROBO",
+            "key": "IsTilter",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7428,
+          "section": "ROBO",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7426,
+            "section": "ROBO",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7429,
+          "section": "ROBO",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7427,
+            "section": "ROBO",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7430,
+          "section": "ROBO",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7428,
+            "section": "ROBO",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7431,
+          "section": "ROBO",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7429,
+            "section": "ROBO",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7432,
+          "section": "ROBO",
+          "key": "Speed",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7430,
+            "section": "ROBO",
+            "key": "Speed",
+            "value": "10"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7433,
+          "section": "ROBO",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7431,
+            "section": "ROBO",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7434,
+          "section": "ROBO",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7432,
+            "section": "ROBO",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7435,
+          "section": "ROBO",
+          "key": "Cost",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7433,
+            "section": "ROBO",
+            "key": "Cost",
+            "value": "600"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7436,
+          "section": "ROBO",
+          "key": "Soylent",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7434,
+            "section": "ROBO",
+            "key": "Soylent",
+            "value": "600"
+          }
+        ]
+      },
+      "Points": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7437,
+          "section": "ROBO",
+          "key": "Points",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7435,
+            "section": "ROBO",
+            "key": "Points",
+            "value": "25"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7438,
+          "section": "ROBO",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7436,
+            "section": "ROBO",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7439,
+          "section": "ROBO",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7437,
+            "section": "ROBO",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7440,
+          "section": "ROBO",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7438,
+            "section": "ROBO",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "RobotTankSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7441,
+          "section": "ROBO",
+          "key": "VoiceSelect",
+          "value": "RobotTankSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7439,
+            "section": "ROBO",
+            "key": "VoiceSelect",
+            "value": "RobotTankSelect"
+          }
+        ]
+      },
+      "VoiceSelectDeactivated": {
+        "value": "RobotTankSelectDeactivated",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7442,
+          "section": "ROBO",
+          "key": "VoiceSelectDeactivated",
+          "value": "RobotTankSelectDeactivated"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7440,
+            "section": "ROBO",
+            "key": "VoiceSelectDeactivated",
+            "value": "RobotTankSelectDeactivated"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "RobotTankMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7443,
+          "section": "ROBO",
+          "key": "VoiceMove",
+          "value": "RobotTankMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7441,
+            "section": "ROBO",
+            "key": "VoiceMove",
+            "value": "RobotTankMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "RobotTankAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7444,
+          "section": "ROBO",
+          "key": "VoiceAttack",
+          "value": "RobotTankAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7442,
+            "section": "ROBO",
+            "key": "VoiceAttack",
+            "value": "RobotTankAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7445,
+          "section": "ROBO",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7443,
+            "section": "ROBO",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "RobotTankDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7446,
+          "section": "ROBO",
+          "key": "DieSound",
+          "value": "RobotTankDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7444,
+            "section": "ROBO",
+            "key": "DieSound",
+            "value": "RobotTankDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "RobotTankMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7447,
+          "section": "ROBO",
+          "key": "MoveSound",
+          "value": "RobotTankMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7445,
+            "section": "ROBO",
+            "key": "MoveSound",
+            "value": "RobotTankMoveStart"
+          }
+        ]
+      },
+      "ActivateSound": {
+        "value": "RobotTankOnline",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7448,
+          "section": "ROBO",
+          "key": "ActivateSound",
+          "value": "RobotTankOnline"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7446,
+            "section": "ROBO",
+            "key": "ActivateSound",
+            "value": "RobotTankOnline"
+          }
+        ]
+      },
+      "DeactivateSound": {
+        "value": "RobotTankOffline",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7449,
+          "section": "ROBO",
+          "key": "DeactivateSound",
+          "value": "RobotTankOffline"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7447,
+            "section": "ROBO",
+            "key": "DeactivateSound",
+            "value": "RobotTankOffline"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7450,
+          "section": "ROBO",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7448,
+            "section": "ROBO",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7451,
+          "section": "ROBO",
+          "key": "MaxDebris",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7449,
+            "section": "ROBO",
+            "key": "MaxDebris",
+            "value": "2"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Hover",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7452,
+          "section": "ROBO",
+          "key": "SpeedType",
+          "value": "Hover"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7450,
+            "section": "ROBO",
+            "key": "SpeedType",
+            "value": "Hover"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7453,
+          "section": "ROBO",
+          "key": "Locomotor",
+          "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7451,
+            "section": "ROBO",
+            "key": "Locomotor",
+            "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "AmphibiousDestroyer",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7454,
+          "section": "ROBO",
+          "key": "MovementZone",
+          "value": "AmphibiousDestroyer"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7452,
+            "section": "ROBO",
+            "key": "MovementZone",
+            "value": "AmphibiousDestroyer"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7455,
+          "section": "ROBO",
+          "key": "ThreatPosed",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7453,
+            "section": "ROBO",
+            "key": "ThreatPosed",
+            "value": "15"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7456,
+          "section": "ROBO",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7454,
+            "section": "ROBO",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7457,
+          "section": "ROBO",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7455,
+            "section": "ROBO",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7458,
+          "section": "ROBO",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7456,
+            "section": "ROBO",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7459,
+          "section": "ROBO",
+          "key": "Accelerates",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7457,
+            "section": "ROBO",
+            "key": "Accelerates",
+            "value": "false"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7460,
+          "section": "ROBO",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7458,
+            "section": "ROBO",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "Size": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7461,
+          "section": "ROBO",
+          "key": "Size",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7459,
+            "section": "ROBO",
+            "key": "Size",
+            "value": "3"
+          }
+        ]
+      },
+      "OpportunityFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7462,
+          "section": "ROBO",
+          "key": "OpportunityFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7460,
+            "section": "ROBO",
+            "key": "OpportunityFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7463,
+          "section": "ROBO",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7461,
+            "section": "ROBO",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7464,
+          "section": "ROBO",
+          "key": "ImmuneToPsionics",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7462,
+            "section": "ROBO",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7465,
+          "section": "ROBO",
+          "key": "ImmuneToRadiation",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7463,
+            "section": "ROBO",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          }
+        ]
+      },
+      "PoweredUnit": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7466,
+          "section": "ROBO",
+          "key": "PoweredUnit",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7464,
+            "section": "ROBO",
+            "key": "PoweredUnit",
+            "value": "yes"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7467,
+          "section": "ROBO",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7465,
+            "section": "ROBO",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "BuildTimeMultiplier": {
+        "value": "1.3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7468,
+          "section": "ROBO",
+          "key": "BuildTimeMultiplier",
+          "value": "1.3"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7466,
+            "section": "ROBO",
+            "key": "BuildTimeMultiplier",
+            "value": "1.3"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Image": "ROBO",
+      "Voxel": true,
+      "Remapable": true,
+      "Cameo": "ROBOICON",
+      "AltCameo": "ROBOUICO",
+      "PrimaryFireFLH": "150,0,100"
+    },
+    "raw_values": {
+      "Image": "ROBO",
+      "Voxel": "yes",
+      "Remapable": "yes",
+      "Cameo": "ROBOICON",
+      "AltCameo": "ROBOUICO",
+      "PrimaryFireFLH": "150,0,100"
+    },
+    "provenance": {
+      "Image": {
+        "value": "ROBO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 906,
+          "section": "ROBO",
+          "key": "Image",
+          "value": "ROBO"
+        },
+        "history": []
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 907,
+          "section": "ROBO",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 908,
+          "section": "ROBO",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Cameo": {
+        "value": "ROBOICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 909,
+          "section": "ROBO",
+          "key": "Cameo",
+          "value": "ROBOICON"
+        },
+        "history": []
+      },
+      "AltCameo": {
+        "value": "ROBOUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 910,
+          "section": "ROBO",
+          "key": "AltCameo",
+          "value": "ROBOUICO"
+        },
+        "history": []
+      },
+      "PrimaryFireFLH": {
+        "value": "150,0,100",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 911,
+          "section": "ROBO",
+          "key": "PrimaryFireFLH",
+          "value": "150,0,100"
+        },
+        "history": []
+      }
+    }
+  }
+}

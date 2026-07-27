@@ -140,13 +140,13 @@ func _rebuild_slots():
         color.tooltip_text = "所属色"
         row.add_child(color)
 
-        var position = OptionButton.new()
+        var position_option = OptionButton.new()
         for position_index in range(count):
-            position.add_item("位置%d" % (position_index + 1))
-            position.set_item_metadata(position_index, position_index)
-        position.select(index)
-        UIFactory.style_compact_option(position, 76)
-        row.add_child(position)
+            position_option.add_item("位置%d" % (position_index + 1))
+            position_option.set_item_metadata(position_index, position_index)
+        position_option.select(index)
+        UIFactory.style_compact_option(position_option, 76)
+        row.add_child(position_option)
 
         var team = OptionButton.new()
         for team_index in range(1, count + 1):
@@ -169,7 +169,7 @@ func _rebuild_slots():
             "state": state,
             "faction": faction,
             "color": color,
-            "position": position,
+            "position": position_option,
             "team": team,
             "difficulty": difficulty
         }

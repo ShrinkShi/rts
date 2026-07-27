@@ -1,0 +1,1466 @@
+{
+  "id": "SUVB",
+  "category": "vehicle",
+  "name_token": "Name:CAR",
+  "art_id": "SUVB",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAWEAP"
+  ],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 100,
+  "armor": "light",
+  "speed": 8,
+  "sight": 8,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Normal",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "GenCarSelect"
+    ],
+    "VoiceMove": [
+      "MCVMoveStart"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "SUVB",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4365,
+      "pack": "ra2",
+      "relative_path": "local/suvb.vxl",
+      "folder": "local",
+      "filename": "suvb.vxl",
+      "stem": "suvb",
+      "extension": ".vxl",
+      "size": 19452,
+      "sha1": "3a14ff32c500286e9089f828127e81cab303161d"
+    },
+    "body_hva": {
+      "asset_id": 4364,
+      "pack": "ra2",
+      "relative_path": "local/suvb.hva",
+      "folder": "local",
+      "filename": "suvb.hva",
+      "stem": "suvb",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "bf1cb959025f2fe09e085bccac7a8234f9c6b6a0"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CAR",
+      "Name": "SUV Black",
+      "Prerequisite": "NAWEAP",
+      "Strength": 100,
+      "Category": "Transport",
+      "Armor": "light",
+      "DeployTime": 0.022,
+      "TechLevel": -1,
+      "Sight": 8,
+      "PipScale": "Passengers",
+      "Speed": 8,
+      "CrateGoodie": false,
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 0,
+      "Points": 20,
+      "ROT": 5,
+      "Crusher": false,
+      "Turret": false,
+      "IsSelectableCombatant": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenCarSelect",
+      "VoiceMove": "MCVMoveStart",
+      "VoiceAttack": "",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MaxDebris": 3,
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": 6,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": 1,
+      "ZFudgeColumn": 10,
+      "ZFudgeTunnel": 13,
+      "ImmuneToRadiation": false,
+      "ImmuneToPsionics": false,
+      "Size": 6,
+      "SizeLimit": 2,
+      "Insignificant": true,
+      "Trainable": false,
+      "Soylent": 100,
+      "CrushSound": "TankCrush"
+    },
+    "raw_values": {
+      "UIName": "Name:CAR",
+      "Name": "SUV Black",
+      "Prerequisite": "NAWEAP",
+      "Strength": "100",
+      "Category": "Transport",
+      "Armor": "light",
+      "DeployTime": ".022",
+      "TechLevel": "-1",
+      "Sight": "8",
+      "PipScale": "Passengers",
+      "Speed": "8",
+      "CrateGoodie": "no",
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "0",
+      "Points": "20",
+      "ROT": "5",
+      "Crusher": "no",
+      "Turret": "no",
+      "IsSelectableCombatant": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenCarSelect",
+      "VoiceMove": "MCVMoveStart",
+      "VoiceAttack": "",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MaxDebris": "3",
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": "6",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": "1",
+      "ZFudgeColumn": "10",
+      "ZFudgeTunnel": "13",
+      "ImmuneToRadiation": "no",
+      "ImmuneToPsionics": "no",
+      "Size": "6",
+      "SizeLimit": "2",
+      "Insignificant": "yes",
+      "Trainable": "no",
+      "Soylent": "100",
+      "CrushSound": "TankCrush"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CAR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9996,
+          "section": "SUVB",
+          "key": "UIName",
+          "value": "Name:CAR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7442,
+            "section": "SUVB",
+            "key": "UIName",
+            "value": "Name:CAR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9991,
+            "section": "SUVB",
+            "key": "UIName",
+            "value": "Name:CAR"
+          }
+        ]
+      },
+      "Name": {
+        "value": "SUV Black",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9997,
+          "section": "SUVB",
+          "key": "Name",
+          "value": "SUV Black"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7443,
+            "section": "SUVB",
+            "key": "Name",
+            "value": "RA2 SUV Black"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9992,
+            "section": "SUVB",
+            "key": "Name",
+            "value": "SUV Black"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAWEAP",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9998,
+          "section": "SUVB",
+          "key": "Prerequisite",
+          "value": "NAWEAP"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7444,
+            "section": "SUVB",
+            "key": "Prerequisite",
+            "value": "NAWEAP"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9993,
+            "section": "SUVB",
+            "key": "Prerequisite",
+            "value": "NAWEAP"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9999,
+          "section": "SUVB",
+          "key": "Strength",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7445,
+            "section": "SUVB",
+            "key": "Strength",
+            "value": "100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9994,
+            "section": "SUVB",
+            "key": "Strength",
+            "value": "100"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Transport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10000,
+          "section": "SUVB",
+          "key": "Category",
+          "value": "Transport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7446,
+            "section": "SUVB",
+            "key": "Category",
+            "value": "Transport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9995,
+            "section": "SUVB",
+            "key": "Category",
+            "value": "Transport"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10001,
+          "section": "SUVB",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7447,
+            "section": "SUVB",
+            "key": "Armor",
+            "value": "light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9996,
+            "section": "SUVB",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "DeployTime": {
+        "value": ".022",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10002,
+          "section": "SUVB",
+          "key": "DeployTime",
+          "value": ".022"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7448,
+            "section": "SUVB",
+            "key": "DeployTime",
+            "value": ".022"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9997,
+            "section": "SUVB",
+            "key": "DeployTime",
+            "value": ".022"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10003,
+          "section": "SUVB",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7449,
+            "section": "SUVB",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9998,
+            "section": "SUVB",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10004,
+          "section": "SUVB",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7450,
+            "section": "SUVB",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9999,
+            "section": "SUVB",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "PipScale": {
+        "value": "Passengers",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10005,
+          "section": "SUVB",
+          "key": "PipScale",
+          "value": "Passengers"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7451,
+            "section": "SUVB",
+            "key": "PipScale",
+            "value": "Passengers"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10000,
+            "section": "SUVB",
+            "key": "PipScale",
+            "value": "Passengers"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10006,
+          "section": "SUVB",
+          "key": "Speed",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7452,
+            "section": "SUVB",
+            "key": "Speed",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10001,
+            "section": "SUVB",
+            "key": "Speed",
+            "value": "8"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10007,
+          "section": "SUVB",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7453,
+            "section": "SUVB",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10002,
+            "section": "SUVB",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10008,
+          "section": "SUVB",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7454,
+            "section": "SUVB",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10003,
+            "section": "SUVB",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10009,
+          "section": "SUVB",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7455,
+            "section": "SUVB",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10004,
+            "section": "SUVB",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10010,
+          "section": "SUVB",
+          "key": "Cost",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7456,
+            "section": "SUVB",
+            "key": "Cost",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10005,
+            "section": "SUVB",
+            "key": "Cost",
+            "value": "0"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10012,
+          "section": "SUVB",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7457,
+            "section": "SUVB",
+            "key": "Points",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10007,
+            "section": "SUVB",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10013,
+          "section": "SUVB",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7458,
+            "section": "SUVB",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10008,
+            "section": "SUVB",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10014,
+          "section": "SUVB",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7459,
+            "section": "SUVB",
+            "key": "Crusher",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10009,
+            "section": "SUVB",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10015,
+          "section": "SUVB",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7460,
+            "section": "SUVB",
+            "key": "Turret",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10010,
+            "section": "SUVB",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10017,
+          "section": "SUVB",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7462,
+            "section": "SUVB",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10012,
+            "section": "SUVB",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10018,
+          "section": "SUVB",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7463,
+            "section": "SUVB",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10013,
+            "section": "SUVB",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "GenCarSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10019,
+          "section": "SUVB",
+          "key": "VoiceSelect",
+          "value": "GenCarSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7464,
+            "section": "SUVB",
+            "key": "VoiceSelect",
+            "value": "GenCarSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10014,
+            "section": "SUVB",
+            "key": "VoiceSelect",
+            "value": "GenCarSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "MCVMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10020,
+          "section": "SUVB",
+          "key": "VoiceMove",
+          "value": "MCVMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7465,
+            "section": "SUVB",
+            "key": "VoiceMove",
+            "value": "MCVMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10015,
+            "section": "SUVB",
+            "key": "VoiceMove",
+            "value": "MCVMoveStart"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10021,
+          "section": "SUVB",
+          "key": "VoiceAttack",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7466,
+            "section": "SUVB",
+            "key": "VoiceAttack",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10016,
+            "section": "SUVB",
+            "key": "VoiceAttack",
+            "value": ""
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10022,
+          "section": "SUVB",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7467,
+            "section": "SUVB",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10017,
+            "section": "SUVB",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10023,
+          "section": "SUVB",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7468,
+            "section": "SUVB",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10018,
+            "section": "SUVB",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10025,
+          "section": "SUVB",
+          "key": "MaxDebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7469,
+            "section": "SUVB",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10020,
+            "section": "SUVB",
+            "key": "MaxDebris",
+            "value": "3"
+          }
+        ]
+      },
+      "DebrisTypes": {
+        "value": "TIRE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10026,
+          "section": "SUVB",
+          "key": "DebrisTypes",
+          "value": "TIRE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7470,
+            "section": "SUVB",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10021,
+            "section": "SUVB",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          }
+        ]
+      },
+      "DebrisMaximums": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10027,
+          "section": "SUVB",
+          "key": "DebrisMaximums",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7471,
+            "section": "SUVB",
+            "key": "DebrisMaximums",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10022,
+            "section": "SUVB",
+            "key": "DebrisMaximums",
+            "value": "6"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10028,
+          "section": "SUVB",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7472,
+            "section": "SUVB",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10023,
+            "section": "SUVB",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Normal",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10029,
+          "section": "SUVB",
+          "key": "MovementZone",
+          "value": "Normal"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7473,
+            "section": "SUVB",
+            "key": "MovementZone",
+            "value": "Normal"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10024,
+            "section": "SUVB",
+            "key": "MovementZone",
+            "value": "Normal"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10030,
+          "section": "SUVB",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7474,
+            "section": "SUVB",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10025,
+            "section": "SUVB",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10031,
+          "section": "SUVB",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7475,
+            "section": "SUVB",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10026,
+            "section": "SUVB",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10032,
+          "section": "SUVB",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7476,
+            "section": "SUVB",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10027,
+            "section": "SUVB",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10033,
+          "section": "SUVB",
+          "key": "ZFudgeColumn",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7477,
+            "section": "SUVB",
+            "key": "ZFudgeColumn",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10028,
+            "section": "SUVB",
+            "key": "ZFudgeColumn",
+            "value": "10"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10034,
+          "section": "SUVB",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7478,
+            "section": "SUVB",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10029,
+            "section": "SUVB",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10035,
+          "section": "SUVB",
+          "key": "ImmuneToRadiation",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7479,
+            "section": "SUVB",
+            "key": "ImmuneToRadiation",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10030,
+            "section": "SUVB",
+            "key": "ImmuneToRadiation",
+            "value": "no"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10036,
+          "section": "SUVB",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7480,
+            "section": "SUVB",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10031,
+            "section": "SUVB",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Size": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10038,
+          "section": "SUVB",
+          "key": "Size",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7482,
+            "section": "SUVB",
+            "key": "Size",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10033,
+            "section": "SUVB",
+            "key": "Size",
+            "value": "6"
+          }
+        ]
+      },
+      "SizeLimit": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10039,
+          "section": "SUVB",
+          "key": "SizeLimit",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7483,
+            "section": "SUVB",
+            "key": "SizeLimit",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10034,
+            "section": "SUVB",
+            "key": "SizeLimit",
+            "value": "2"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10040,
+          "section": "SUVB",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7484,
+            "section": "SUVB",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10035,
+            "section": "SUVB",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10041,
+          "section": "SUVB",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7485,
+            "section": "SUVB",
+            "key": "Trainable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10036,
+            "section": "SUVB",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10011,
+          "section": "SUVB",
+          "key": "Soylent",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10006,
+            "section": "SUVB",
+            "key": "Soylent",
+            "value": "100"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10024,
+          "section": "SUVB",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10019,
+            "section": "SUVB",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true
+    },
+    "raw_values": {
+      "Voxel": "yes"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1071,
+          "section": "SUVB",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 747,
+            "section": "SUVB",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  }
+}

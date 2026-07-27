@@ -1,0 +1,4481 @@
+{
+  "id": "E1",
+  "category": "infantry",
+  "name_token": "Name:E1",
+  "art_id": "GI",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GAPILE"
+  ],
+  "tech_level": 1,
+  "cost": 200,
+  "strength": 125,
+  "armor": "none",
+  "speed": 4,
+  "sight": 5,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Infantry",
+  "weapons": {
+    "Primary": {
+      "id": "M60",
+      "projectile": "InvisibleLow",
+      "warhead": "SA",
+      "report": [
+        "GIAttack"
+      ],
+      "values": {
+        "Damage": 15,
+        "ROF": 20,
+        "Range": 4,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Warhead": "SA",
+        "Report": "GIAttack",
+        "Anim": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW",
+        "OccupantAnim": "UCFLASH"
+      },
+      "raw_values": {
+        "Damage": "15",
+        "ROF": "20",
+        "Range": "4",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Warhead": "SA",
+        "Report": "GIAttack",
+        "Anim": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW",
+        "OccupantAnim": "UCFLASH"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22923,
+            "section": "M60",
+            "key": "Damage",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16430,
+              "section": "M60",
+              "key": "Damage",
+              "value": "15"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22915,
+              "section": "M60",
+              "key": "Damage",
+              "value": "15"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22924,
+            "section": "M60",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16431,
+              "section": "M60",
+              "key": "ROF",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22916,
+              "section": "M60",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "4",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22925,
+            "section": "M60",
+            "key": "Range",
+            "value": "4"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16432,
+              "section": "M60",
+              "key": "Range",
+              "value": "4"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22917,
+              "section": "M60",
+              "key": "Range",
+              "value": "4"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22926,
+            "section": "M60",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16433,
+              "section": "M60",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22918,
+              "section": "M60",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22927,
+            "section": "M60",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16434,
+              "section": "M60",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22919,
+              "section": "M60",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SA",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22928,
+            "section": "M60",
+            "key": "Warhead",
+            "value": "SA"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16435,
+              "section": "M60",
+              "key": "Warhead",
+              "value": "SA"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22920,
+              "section": "M60",
+              "key": "Warhead",
+              "value": "SA"
+            }
+          ]
+        },
+        "Report": {
+          "value": "GIAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22929,
+            "section": "M60",
+            "key": "Report",
+            "value": "GIAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16436,
+              "section": "M60",
+              "key": "Report",
+              "value": "GIAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22921,
+              "section": "M60",
+              "key": "Report",
+              "value": "GIAttack"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22930,
+            "section": "M60",
+            "key": "Anim",
+            "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16437,
+              "section": "M60",
+              "key": "Anim",
+              "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22922,
+              "section": "M60",
+              "key": "Anim",
+              "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW"
+            }
+          ]
+        },
+        "OccupantAnim": {
+          "value": "UCFLASH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22931,
+            "section": "M60",
+            "key": "OccupantAnim",
+            "value": "UCFLASH"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22923,
+              "section": "M60",
+              "key": "OccupantAnim",
+              "value": "UCFLASH"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "Para",
+      "projectile": "InvisibleLow",
+      "warhead": "SSA",
+      "report": [
+        "GIAttackDeployed"
+      ],
+      "values": {
+        "Damage": 25,
+        "ROF": 15,
+        "Range": 5,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Warhead": "SSA",
+        "Report": "GIAttackDeployed",
+        "Anim": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW",
+        "OccupantAnim": "UCFLASH"
+      },
+      "raw_values": {
+        "Damage": "25",
+        "ROF": "15",
+        "Range": "5",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Warhead": "SSA",
+        "Report": "GIAttackDeployed",
+        "Anim": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW",
+        "OccupantAnim": "UCFLASH"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22934,
+            "section": "Para",
+            "key": "Damage",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16440,
+              "section": "Para",
+              "key": "Damage",
+              "value": "15"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22926,
+              "section": "Para",
+              "key": "Damage",
+              "value": "25"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22935,
+            "section": "Para",
+            "key": "ROF",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16441,
+              "section": "Para",
+              "key": "ROF",
+              "value": "15"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22927,
+              "section": "Para",
+              "key": "ROF",
+              "value": "15"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22936,
+            "section": "Para",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16442,
+              "section": "Para",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22928,
+              "section": "Para",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22937,
+            "section": "Para",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16443,
+              "section": "Para",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22929,
+              "section": "Para",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22938,
+            "section": "Para",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16444,
+              "section": "Para",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22930,
+              "section": "Para",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SSA",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22939,
+            "section": "Para",
+            "key": "Warhead",
+            "value": "SSA"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16445,
+              "section": "Para",
+              "key": "Warhead",
+              "value": "SSA"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22931,
+              "section": "Para",
+              "key": "Warhead",
+              "value": "SSA"
+            }
+          ]
+        },
+        "Report": {
+          "value": "GIAttackDeployed",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22940,
+            "section": "Para",
+            "key": "Report",
+            "value": "GIAttackDeployed"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16446,
+              "section": "Para",
+              "key": "Report",
+              "value": "GIAttackDeployed"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22932,
+              "section": "Para",
+              "key": "Report",
+              "value": "GIAttackDeployed"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22941,
+            "section": "Para",
+            "key": "Anim",
+            "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22933,
+              "section": "Para",
+              "key": "Anim",
+              "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW"
+            }
+          ]
+        },
+        "OccupantAnim": {
+          "value": "UCFLASH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22942,
+            "section": "Para",
+            "key": "OccupantAnim",
+            "value": "UCFLASH"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22934,
+              "section": "Para",
+              "key": "OccupantAnim",
+              "value": "UCFLASH"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "M60E",
+      "projectile": "InvisibleLow",
+      "warhead": "SA",
+      "report": [
+        "GIAttack"
+      ],
+      "values": {
+        "Damage": 25,
+        "ROF": 20,
+        "Range": 4,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Warhead": "SA",
+        "Report": "GIAttack",
+        "Anim": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW",
+        "OccupantAnim": "UCFLASH"
+      },
+      "raw_values": {
+        "Damage": "25",
+        "ROF": "20",
+        "Range": "4",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Warhead": "SA",
+        "Report": "GIAttack",
+        "Anim": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW",
+        "OccupantAnim": "UCFLASH"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25282,
+            "section": "M60E",
+            "key": "Damage",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18128,
+              "section": "M60E",
+              "key": "Damage",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25274,
+              "section": "M60E",
+              "key": "Damage",
+              "value": "25"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25283,
+            "section": "M60E",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18129,
+              "section": "M60E",
+              "key": "ROF",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25275,
+              "section": "M60E",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "4",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25284,
+            "section": "M60E",
+            "key": "Range",
+            "value": "4"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18130,
+              "section": "M60E",
+              "key": "Range",
+              "value": "4"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25276,
+              "section": "M60E",
+              "key": "Range",
+              "value": "4"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25285,
+            "section": "M60E",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18131,
+              "section": "M60E",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25277,
+              "section": "M60E",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25286,
+            "section": "M60E",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18132,
+              "section": "M60E",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25278,
+              "section": "M60E",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SA",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25287,
+            "section": "M60E",
+            "key": "Warhead",
+            "value": "SA"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18133,
+              "section": "M60E",
+              "key": "Warhead",
+              "value": "SA"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25279,
+              "section": "M60E",
+              "key": "Warhead",
+              "value": "SA"
+            }
+          ]
+        },
+        "Report": {
+          "value": "GIAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25288,
+            "section": "M60E",
+            "key": "Report",
+            "value": "GIAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18134,
+              "section": "M60E",
+              "key": "Report",
+              "value": "GIAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25280,
+              "section": "M60E",
+              "key": "Report",
+              "value": "GIAttack"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25289,
+            "section": "M60E",
+            "key": "Anim",
+            "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18135,
+              "section": "M60E",
+              "key": "Anim",
+              "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25281,
+              "section": "M60E",
+              "key": "Anim",
+              "value": "MGUN-N,MGUN-NE,MGUN-E,MGUN-SE,MGUN-S,MGUN-SW,MGUN-W,MGUN-NW"
+            }
+          ]
+        },
+        "OccupantAnim": {
+          "value": "UCFLASH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25290,
+            "section": "M60E",
+            "key": "OccupantAnim",
+            "value": "UCFLASH"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25282,
+              "section": "M60E",
+              "key": "OccupantAnim",
+              "value": "UCFLASH"
+            }
+          ]
+        }
+      }
+    },
+    "EliteSecondary": {
+      "id": "ParaE",
+      "projectile": "InvisibleLow",
+      "warhead": "SSA",
+      "report": [
+        "GIAttackDeployed"
+      ],
+      "values": {
+        "Damage": 25,
+        "ROF": 15,
+        "Range": 6,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Warhead": "SSA",
+        "Report": "GIAttackDeployed"
+      },
+      "raw_values": {
+        "Damage": "25",
+        "ROF": "15",
+        "Range": "6",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Warhead": "SSA",
+        "Report": "GIAttackDeployed"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25294,
+            "section": "ParaE",
+            "key": "Damage",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18138,
+              "section": "ParaE",
+              "key": "Damage",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25286,
+              "section": "ParaE",
+              "key": "Damage",
+              "value": "25"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25295,
+            "section": "ParaE",
+            "key": "ROF",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18139,
+              "section": "ParaE",
+              "key": "ROF",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25287,
+              "section": "ParaE",
+              "key": "ROF",
+              "value": "15"
+            }
+          ]
+        },
+        "Range": {
+          "value": "6",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25296,
+            "section": "ParaE",
+            "key": "Range",
+            "value": "6"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18140,
+              "section": "ParaE",
+              "key": "Range",
+              "value": "7"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25288,
+              "section": "ParaE",
+              "key": "Range",
+              "value": "6"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25297,
+            "section": "ParaE",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18141,
+              "section": "ParaE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25289,
+              "section": "ParaE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25298,
+            "section": "ParaE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18142,
+              "section": "ParaE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25290,
+              "section": "ParaE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SSA",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25299,
+            "section": "ParaE",
+            "key": "Warhead",
+            "value": "SSA"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18143,
+              "section": "ParaE",
+              "key": "Warhead",
+              "value": "SSA"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25291,
+              "section": "ParaE",
+              "key": "Warhead",
+              "value": "SSA"
+            }
+          ]
+        },
+        "Report": {
+          "value": "GIAttackDeployed",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25300,
+            "section": "ParaE",
+            "key": "Report",
+            "value": "GIAttackDeployed"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18144,
+              "section": "ParaE",
+              "key": "Report",
+              "value": "GIAttackDeployed"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25292,
+              "section": "ParaE",
+              "key": "Report",
+              "value": "GIAttackDeployed"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "GISelect"
+    ],
+    "VoiceMove": [
+      "GIMove"
+    ],
+    "VoiceAttack": [
+      "GIAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "GIFear"
+    ],
+    "VoiceSpecialAttack": [
+      "GIMove"
+    ],
+    "DieSound": [
+      "GIDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ],
+    "DeploySound": [
+      "GIDeploy"
+    ],
+    "UndeploySound": [
+      "GIUndeploy"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "GI",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 171,
+          "pack": "ra2",
+          "relative_path": "conquer/gi.shp",
+          "folder": "conquer",
+          "filename": "gi.shp",
+          "stem": "gi",
+          "extension": ".shp",
+          "size": 186032,
+          "sha1": "3baf1364c5589ed2fdb67cb607c730b82415a74b"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 171,
+          "pack": "ra2",
+          "relative_path": "conquer/gi.shp",
+          "folder": "conquer",
+          "filename": "gi.shp",
+          "stem": "gi",
+          "extension": ".shp",
+          "size": 186032,
+          "sha1": "3baf1364c5589ed2fdb67cb607c730b82415a74b"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 171,
+          "pack": "ra2",
+          "relative_path": "conquer/gi.shp",
+          "folder": "conquer",
+          "filename": "gi.shp",
+          "stem": "gi",
+          "extension": ".shp",
+          "size": 186032,
+          "sha1": "3baf1364c5589ed2fdb67cb607c730b82415a74b"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 171,
+          "pack": "ra2",
+          "relative_path": "conquer/gi.shp",
+          "folder": "conquer",
+          "filename": "gi.shp",
+          "stem": "gi",
+          "extension": ".shp",
+          "size": 186032,
+          "sha1": "3baf1364c5589ed2fdb67cb607c730b82415a74b"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 171,
+          "pack": "ra2",
+          "relative_path": "conquer/gi.shp",
+          "folder": "conquer",
+          "filename": "gi.shp",
+          "stem": "gi",
+          "extension": ".shp",
+          "size": 186032,
+          "sha1": "3baf1364c5589ed2fdb67cb607c730b82415a74b"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 171,
+          "pack": "ra2",
+          "relative_path": "conquer/gi.shp",
+          "folder": "conquer",
+          "filename": "gi.shp",
+          "stem": "gi",
+          "extension": ".shp",
+          "size": 186032,
+          "sha1": "3baf1364c5589ed2fdb67cb607c730b82415a74b"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "GISequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 86,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122
+          ],
+          "1": [
+            116
+          ],
+          "2": [
+            110
+          ],
+          "3": [
+            104
+          ],
+          "4": [
+            98
+          ],
+          "5": [
+            92
+          ],
+          "6": [
+            86
+          ],
+          "7": [
+            128
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 164,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205
+          ],
+          "1": [
+            194,
+            195,
+            196,
+            197,
+            198,
+            199
+          ],
+          "2": [
+            188,
+            189,
+            190,
+            191,
+            192,
+            193
+          ],
+          "3": [
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "4": [
+            176,
+            177,
+            178,
+            179,
+            180,
+            181
+          ],
+          "5": [
+            170,
+            171,
+            172,
+            173,
+            174,
+            175
+          ],
+          "6": [
+            164,
+            165,
+            166,
+            167,
+            168,
+            169
+          ],
+          "7": [
+            206,
+            207,
+            208,
+            209,
+            210,
+            211
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 260,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            272,
+            273
+          ],
+          "1": [
+            270,
+            271
+          ],
+          "2": [
+            268,
+            269
+          ],
+          "3": [
+            266,
+            267
+          ],
+          "4": [
+            264,
+            265
+          ],
+          "5": [
+            262,
+            263
+          ],
+          "6": [
+            260,
+            261
+          ],
+          "7": [
+            274,
+            275
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 86,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "1": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "2": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "3": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "4": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "5": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "6": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "7": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 276,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            288,
+            289
+          ],
+          "1": [
+            286,
+            287
+          ],
+          "2": [
+            284,
+            285
+          ],
+          "3": [
+            282,
+            283
+          ],
+          "4": [
+            280,
+            281
+          ],
+          "5": [
+            278,
+            279
+          ],
+          "6": [
+            276,
+            277
+          ],
+          "7": [
+            290,
+            291
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 212,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            248,
+            249,
+            250,
+            251,
+            252,
+            253
+          ],
+          "1": [
+            242,
+            243,
+            244,
+            245,
+            246,
+            247
+          ],
+          "2": [
+            236,
+            237,
+            238,
+            239,
+            240,
+            241
+          ],
+          "3": [
+            230,
+            231,
+            232,
+            233,
+            234,
+            235
+          ],
+          "4": [
+            224,
+            225,
+            226,
+            227,
+            228,
+            229
+          ],
+          "5": [
+            218,
+            219,
+            220,
+            221,
+            222,
+            223
+          ],
+          "6": [
+            212,
+            213,
+            214,
+            215,
+            216,
+            217
+          ],
+          "7": [
+            254,
+            255,
+            256,
+            257,
+            258,
+            259
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 134,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 149,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Deploy": {
+        "name": "Deploy",
+        "start": 300,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307,
+            308,
+            309,
+            310,
+            311,
+            312,
+            313,
+            314
+          ]
+        }
+      },
+      "Deployed": {
+        "name": "Deployed",
+        "start": 292,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            298
+          ],
+          "1": [
+            297
+          ],
+          "2": [
+            296
+          ],
+          "3": [
+            295
+          ],
+          "4": [
+            294
+          ],
+          "5": [
+            293
+          ],
+          "6": [
+            292
+          ],
+          "7": [
+            299
+          ]
+        }
+      },
+      "DeployedFire": {
+        "name": "DeployedFire",
+        "start": 315,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            351,
+            352,
+            353,
+            354,
+            355,
+            356
+          ],
+          "1": [
+            345,
+            346,
+            347,
+            348,
+            349,
+            350
+          ],
+          "2": [
+            339,
+            340,
+            341,
+            342,
+            343,
+            344
+          ],
+          "3": [
+            333,
+            334,
+            335,
+            336,
+            337,
+            338
+          ],
+          "4": [
+            327,
+            328,
+            329,
+            330,
+            331,
+            332
+          ],
+          "5": [
+            321,
+            322,
+            323,
+            324,
+            325,
+            326
+          ],
+          "6": [
+            315,
+            316,
+            317,
+            318,
+            319,
+            320
+          ],
+          "7": [
+            357,
+            358,
+            359,
+            360,
+            361,
+            362
+          ]
+        }
+      },
+      "DeployedIdle": {
+        "name": "DeployedIdle",
+        "start": 0,
+        "frames": 0,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": []
+        }
+      },
+      "Undeploy": {
+        "name": "Undeploy",
+        "start": 276,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            288,
+            289
+          ],
+          "1": [
+            286,
+            287
+          ],
+          "2": [
+            284,
+            285
+          ],
+          "3": [
+            282,
+            283
+          ],
+          "4": [
+            280,
+            281
+          ],
+          "5": [
+            278,
+            279
+          ],
+          "6": [
+            276,
+            277
+          ],
+          "7": [
+            290,
+            291
+          ]
+        }
+      },
+      "Paradrop": {
+        "name": "Paradrop",
+        "start": 363,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            363
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 364,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            364,
+            365,
+            366,
+            367,
+            368,
+            369,
+            370,
+            371
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:E1",
+      "Name": "GI",
+      "Image": "GI",
+      "Category": "Soldier",
+      "Primary": "M60",
+      "Secondary": "Para",
+      "Occupier": true,
+      "Prerequisite": "GAPILE",
+      "CrushSound": "InfantrySquish",
+      "Strength": 125,
+      "Pip": "white",
+      "Armor": "none",
+      "TechLevel": 1,
+      "Sight": 5,
+      "Speed": 4,
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "Cost": 200,
+      "Soylent": 100,
+      "Points": 10,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "GISelect",
+      "VoiceMove": "GIMove",
+      "VoiceAttack": "GIAttackCommand",
+      "VoiceFeedback": "GIFear",
+      "VoiceSpecialAttack": "GIMove",
+      "DieSound": "GIDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "Infantry",
+      "ThreatPosed": 10,
+      "ImmuneToVeins": true,
+      "ImmuneToPsionics": false,
+      "Bombable": true,
+      "Deployer": true,
+      "DeployFire": true,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Size": 1,
+      "Crushable": true,
+      "DeploySound": "GIDeploy",
+      "UndeploySound": "GIUndeploy",
+      "ElitePrimary": "M60E",
+      "EliteSecondary": "ParaE",
+      "IFVMode": 2,
+      "OccupyWeapon": "UCPara",
+      "EliteOccupyWeapon": "UCElitePara",
+      "OpenTransportWeapon": 1,
+      "OccupyPip": "PersonBlue"
+    },
+    "raw_values": {
+      "UIName": "Name:E1",
+      "Name": "GI",
+      "Image": "GI",
+      "Category": "Soldier",
+      "Primary": "M60",
+      "Secondary": "Para",
+      "Occupier": "yes",
+      "Prerequisite": "GAPILE",
+      "CrushSound": "InfantrySquish",
+      "Strength": "125",
+      "Pip": "white",
+      "Armor": "none",
+      "TechLevel": "1",
+      "Sight": "5",
+      "Speed": "4",
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "Cost": "200",
+      "Soylent": "100",
+      "Points": "10",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "GISelect",
+      "VoiceMove": "GIMove",
+      "VoiceAttack": "GIAttackCommand",
+      "VoiceFeedback": "GIFear",
+      "VoiceSpecialAttack": "GIMove",
+      "DieSound": "GIDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "Infantry",
+      "ThreatPosed": "10",
+      "ImmuneToVeins": "yes",
+      "ImmuneToPsionics": "no",
+      "Bombable": "yes",
+      "Deployer": "yes",
+      "DeployFire": "yes",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Size": "1",
+      "Crushable": "yes",
+      "DeploySound": "GIDeploy",
+      "UndeploySound": "GIUndeploy",
+      "ElitePrimary": "M60E",
+      "EliteSecondary": "ParaE",
+      "IFVMode": "2",
+      "OccupyWeapon": "UCPara",
+      "EliteOccupyWeapon": "UCElitePara",
+      "OpenTransportWeapon": "1",
+      "OccupyPip": "PersonBlue"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:E1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3714,
+          "section": "E1",
+          "key": "UIName",
+          "value": "Name:E1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3131,
+            "section": "E1",
+            "key": "UIName",
+            "value": "Name:E1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3714,
+            "section": "E1",
+            "key": "UIName",
+            "value": "Name:E1"
+          }
+        ]
+      },
+      "Name": {
+        "value": "GI",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3715,
+          "section": "E1",
+          "key": "Name",
+          "value": "GI"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3132,
+            "section": "E1",
+            "key": "Name",
+            "value": "GI"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3715,
+            "section": "E1",
+            "key": "Name",
+            "value": "GI"
+          }
+        ]
+      },
+      "Image": {
+        "value": "GI",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3716,
+          "section": "E1",
+          "key": "Image",
+          "value": "GI"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3133,
+            "section": "E1",
+            "key": "Image",
+            "value": "GI"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3716,
+            "section": "E1",
+            "key": "Image",
+            "value": "GI"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3717,
+          "section": "E1",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3134,
+            "section": "E1",
+            "key": "Category",
+            "value": "Soldier"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3717,
+            "section": "E1",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "M60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3718,
+          "section": "E1",
+          "key": "Primary",
+          "value": "M60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3135,
+            "section": "E1",
+            "key": "Primary",
+            "value": "M60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3718,
+            "section": "E1",
+            "key": "Primary",
+            "value": "M60"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "Para",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3719,
+          "section": "E1",
+          "key": "Secondary",
+          "value": "Para"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3136,
+            "section": "E1",
+            "key": "Secondary",
+            "value": "Para"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3719,
+            "section": "E1",
+            "key": "Secondary",
+            "value": "Para"
+          }
+        ]
+      },
+      "Occupier": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3720,
+          "section": "E1",
+          "key": "Occupier",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3137,
+            "section": "E1",
+            "key": "Occupier",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3720,
+            "section": "E1",
+            "key": "Occupier",
+            "value": "yes"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GAPILE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3724,
+          "section": "E1",
+          "key": "Prerequisite",
+          "value": "GAPILE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3138,
+            "section": "E1",
+            "key": "Prerequisite",
+            "value": "GAPILE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3724,
+            "section": "E1",
+            "key": "Prerequisite",
+            "value": "GAPILE"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3725,
+          "section": "E1",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3139,
+            "section": "E1",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3725,
+            "section": "E1",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "125",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3726,
+          "section": "E1",
+          "key": "Strength",
+          "value": "125"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3140,
+            "section": "E1",
+            "key": "Strength",
+            "value": "125"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3726,
+            "section": "E1",
+            "key": "Strength",
+            "value": "125"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "white",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3727,
+          "section": "E1",
+          "key": "Pip",
+          "value": "white"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3141,
+            "section": "E1",
+            "key": "Pip",
+            "value": "white"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3727,
+            "section": "E1",
+            "key": "Pip",
+            "value": "white"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3729,
+          "section": "E1",
+          "key": "Armor",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3142,
+            "section": "E1",
+            "key": "Armor",
+            "value": "none"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3729,
+            "section": "E1",
+            "key": "Armor",
+            "value": "none"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3730,
+          "section": "E1",
+          "key": "TechLevel",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3143,
+            "section": "E1",
+            "key": "TechLevel",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3730,
+            "section": "E1",
+            "key": "TechLevel",
+            "value": "1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3731,
+          "section": "E1",
+          "key": "Sight",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3144,
+            "section": "E1",
+            "key": "Sight",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3731,
+            "section": "E1",
+            "key": "Sight",
+            "value": "5"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3732,
+          "section": "E1",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3145,
+            "section": "E1",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3732,
+            "section": "E1",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3733,
+          "section": "E1",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3146,
+            "section": "E1",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3733,
+            "section": "E1",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3734,
+          "section": "E1",
+          "key": "Cost",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3147,
+            "section": "E1",
+            "key": "Cost",
+            "value": "200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3734,
+            "section": "E1",
+            "key": "Cost",
+            "value": "200"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3735,
+          "section": "E1",
+          "key": "Soylent",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3148,
+            "section": "E1",
+            "key": "Soylent",
+            "value": "150"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3735,
+            "section": "E1",
+            "key": "Soylent",
+            "value": "100"
+          }
+        ]
+      },
+      "Points": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3736,
+          "section": "E1",
+          "key": "Points",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3149,
+            "section": "E1",
+            "key": "Points",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3736,
+            "section": "E1",
+            "key": "Points",
+            "value": "10"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3737,
+          "section": "E1",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3150,
+            "section": "E1",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3737,
+            "section": "E1",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "GISelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3738,
+          "section": "E1",
+          "key": "VoiceSelect",
+          "value": "GISelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3151,
+            "section": "E1",
+            "key": "VoiceSelect",
+            "value": "GISelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3738,
+            "section": "E1",
+            "key": "VoiceSelect",
+            "value": "GISelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "GIMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3739,
+          "section": "E1",
+          "key": "VoiceMove",
+          "value": "GIMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3152,
+            "section": "E1",
+            "key": "VoiceMove",
+            "value": "GIMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3739,
+            "section": "E1",
+            "key": "VoiceMove",
+            "value": "GIMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "GIAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3740,
+          "section": "E1",
+          "key": "VoiceAttack",
+          "value": "GIAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3153,
+            "section": "E1",
+            "key": "VoiceAttack",
+            "value": "GIAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3740,
+            "section": "E1",
+            "key": "VoiceAttack",
+            "value": "GIAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "GIFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3741,
+          "section": "E1",
+          "key": "VoiceFeedback",
+          "value": "GIFear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3154,
+            "section": "E1",
+            "key": "VoiceFeedback",
+            "value": "GIFear"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3741,
+            "section": "E1",
+            "key": "VoiceFeedback",
+            "value": "GIFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "GIMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3742,
+          "section": "E1",
+          "key": "VoiceSpecialAttack",
+          "value": "GIMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3155,
+            "section": "E1",
+            "key": "VoiceSpecialAttack",
+            "value": "GIMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3742,
+            "section": "E1",
+            "key": "VoiceSpecialAttack",
+            "value": "GIMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GIDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3743,
+          "section": "E1",
+          "key": "DieSound",
+          "value": "GIDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3156,
+            "section": "E1",
+            "key": "DieSound",
+            "value": "GIDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3743,
+            "section": "E1",
+            "key": "DieSound",
+            "value": "GIDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3744,
+          "section": "E1",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3157,
+            "section": "E1",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3744,
+            "section": "E1",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3745,
+          "section": "E1",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3158,
+            "section": "E1",
+            "key": "PhysicalSize",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3745,
+            "section": "E1",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3746,
+          "section": "E1",
+          "key": "MovementZone",
+          "value": "Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3159,
+            "section": "E1",
+            "key": "MovementZone",
+            "value": "Infantry"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3746,
+            "section": "E1",
+            "key": "MovementZone",
+            "value": "Infantry"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3747,
+          "section": "E1",
+          "key": "ThreatPosed",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3160,
+            "section": "E1",
+            "key": "ThreatPosed",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3747,
+            "section": "E1",
+            "key": "ThreatPosed",
+            "value": "10"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3748,
+          "section": "E1",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3161,
+            "section": "E1",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3748,
+            "section": "E1",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3749,
+          "section": "E1",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3162,
+            "section": "E1",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3749,
+            "section": "E1",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Bombable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3750,
+          "section": "E1",
+          "key": "Bombable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3163,
+            "section": "E1",
+            "key": "Bombable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3750,
+            "section": "E1",
+            "key": "Bombable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Deployer": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3751,
+          "section": "E1",
+          "key": "Deployer",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3164,
+            "section": "E1",
+            "key": "Deployer",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3751,
+            "section": "E1",
+            "key": "Deployer",
+            "value": "yes"
+          }
+        ]
+      },
+      "DeployFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3752,
+          "section": "E1",
+          "key": "DeployFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3165,
+            "section": "E1",
+            "key": "DeployFire",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3752,
+            "section": "E1",
+            "key": "DeployFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3755,
+          "section": "E1",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3168,
+            "section": "E1",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3755,
+            "section": "E1",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3756,
+          "section": "E1",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3169,
+            "section": "E1",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3756,
+            "section": "E1",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3757,
+          "section": "E1",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3170,
+            "section": "E1",
+            "key": "Size",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3757,
+            "section": "E1",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "Crushable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3758,
+          "section": "E1",
+          "key": "Crushable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3171,
+            "section": "E1",
+            "key": "Crushable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3758,
+            "section": "E1",
+            "key": "Crushable",
+            "value": "yes"
+          }
+        ]
+      },
+      "DeploySound": {
+        "value": "GIDeploy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3759,
+          "section": "E1",
+          "key": "DeploySound",
+          "value": "GIDeploy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3172,
+            "section": "E1",
+            "key": "DeploySound",
+            "value": "GIDeploy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3759,
+            "section": "E1",
+            "key": "DeploySound",
+            "value": "GIDeploy"
+          }
+        ]
+      },
+      "UndeploySound": {
+        "value": "GIUndeploy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3760,
+          "section": "E1",
+          "key": "UndeploySound",
+          "value": "GIUndeploy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3173,
+            "section": "E1",
+            "key": "UndeploySound",
+            "value": "GIUndeploy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3760,
+            "section": "E1",
+            "key": "UndeploySound",
+            "value": "GIUndeploy"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "M60E",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3761,
+          "section": "E1",
+          "key": "ElitePrimary",
+          "value": "M60E"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3174,
+            "section": "E1",
+            "key": "ElitePrimary",
+            "value": "M60E"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3761,
+            "section": "E1",
+            "key": "ElitePrimary",
+            "value": "M60E"
+          }
+        ]
+      },
+      "EliteSecondary": {
+        "value": "ParaE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3762,
+          "section": "E1",
+          "key": "EliteSecondary",
+          "value": "ParaE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3175,
+            "section": "E1",
+            "key": "EliteSecondary",
+            "value": "ParaE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3762,
+            "section": "E1",
+            "key": "EliteSecondary",
+            "value": "ParaE"
+          }
+        ]
+      },
+      "IFVMode": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3763,
+          "section": "E1",
+          "key": "IFVMode",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3176,
+            "section": "E1",
+            "key": "IFVMode",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3763,
+            "section": "E1",
+            "key": "IFVMode",
+            "value": "2"
+          }
+        ]
+      },
+      "OccupyWeapon": {
+        "value": "UCPara",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3721,
+          "section": "E1",
+          "key": "OccupyWeapon",
+          "value": "UCPara"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3721,
+            "section": "E1",
+            "key": "OccupyWeapon",
+            "value": "UCPara"
+          }
+        ]
+      },
+      "EliteOccupyWeapon": {
+        "value": "UCElitePara",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3722,
+          "section": "E1",
+          "key": "EliteOccupyWeapon",
+          "value": "UCElitePara"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3722,
+            "section": "E1",
+            "key": "EliteOccupyWeapon",
+            "value": "UCElitePara"
+          }
+        ]
+      },
+      "OpenTransportWeapon": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3723,
+          "section": "E1",
+          "key": "OpenTransportWeapon",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3723,
+            "section": "E1",
+            "key": "OpenTransportWeapon",
+            "value": "1"
+          }
+        ]
+      },
+      "OccupyPip": {
+        "value": "PersonBlue",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 3728,
+          "section": "E1",
+          "key": "OccupyPip",
+          "value": "PersonBlue"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 3728,
+            "section": "E1",
+            "key": "OccupyPip",
+            "value": "PersonBlue"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "GIICON",
+      "AltCameo": "GIUICO",
+      "Sequence": "GISequence",
+      "Crawls": true,
+      "Remapable": true,
+      "FireUp": 2,
+      "PrimaryFireFLH": "80,0,105",
+      "SecondaryFireFLH": "80,0,90"
+    },
+    "raw_values": {
+      "Cameo": "GIICON",
+      "AltCameo": "GIUICO",
+      "Sequence": "GISequence",
+      "Crawls": "yes",
+      "Remapable": "yes",
+      "FireUp": "2",
+      "PrimaryFireFLH": "80,0,105",
+      "SecondaryFireFLH": "80,0,90"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "GIICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 282,
+          "section": "GI",
+          "key": "Cameo",
+          "value": "GIICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 214,
+            "section": "GI",
+            "key": "Cameo",
+            "value": "GIICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "GIUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 283,
+          "section": "GI",
+          "key": "AltCameo",
+          "value": "GIUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 215,
+            "section": "GI",
+            "key": "AltCameo",
+            "value": "GIUICO"
+          }
+        ]
+      },
+      "Sequence": {
+        "value": "GISequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 284,
+          "section": "GI",
+          "key": "Sequence",
+          "value": "GISequence"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 216,
+            "section": "GI",
+            "key": "Sequence",
+            "value": "GISequence"
+          }
+        ]
+      },
+      "Crawls": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 285,
+          "section": "GI",
+          "key": "Crawls",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 217,
+            "section": "GI",
+            "key": "Crawls",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 286,
+          "section": "GI",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 218,
+            "section": "GI",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "FireUp": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 287,
+          "section": "GI",
+          "key": "FireUp",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 219,
+            "section": "GI",
+            "key": "FireUp",
+            "value": "2"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "80,0,105",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 288,
+          "section": "GI",
+          "key": "PrimaryFireFLH",
+          "value": "80,0,105"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 220,
+            "section": "GI",
+            "key": "PrimaryFireFLH",
+            "value": "80,0,105"
+          }
+        ]
+      },
+      "SecondaryFireFLH": {
+        "value": "80,0,90",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 289,
+          "section": "GI",
+          "key": "SecondaryFireFLH",
+          "value": "80,0,90"
+        },
+        "history": []
+      }
+    }
+  }
+}

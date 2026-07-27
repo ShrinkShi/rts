@@ -1,0 +1,1095 @@
+{
+  "id": "AMBU",
+  "category": "vehicle",
+  "name_token": "Name:AMBU",
+  "art_id": "AMBU",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAWEAP"
+  ],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 100,
+  "armor": "light",
+  "speed": 8,
+  "sight": 8,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Normal",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "GenCarSelect"
+    ],
+    "VoiceMove": [
+      "MCVMoveStart"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "AMBU",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 10691,
+      "pack": "ra2md",
+      "relative_path": "localmd/ambu.vxl",
+      "folder": "localmd",
+      "filename": "ambu.vxl",
+      "stem": "ambu",
+      "extension": ".vxl",
+      "size": 27270,
+      "sha1": "77547d965d1562cfb56feba68b6f01afc346a028"
+    },
+    "body_hva": {
+      "asset_id": 10690,
+      "pack": "ra2md",
+      "relative_path": "localmd/ambu.hva",
+      "folder": "localmd",
+      "filename": "ambu.hva",
+      "stem": "ambu",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "de6468f68f7bd065982266d5cbb7b6311d20edab"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:AMBU",
+      "Name": "Ambulance",
+      "Prerequisite": "NAWEAP",
+      "Strength": 100,
+      "Category": "Transport",
+      "Armor": "light",
+      "DeployTime": 0.022,
+      "TechLevel": -1,
+      "Sight": 8,
+      "PipScale": "Passengers",
+      "Speed": 8,
+      "CrateGoodie": false,
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 0,
+      "Soylent": 100,
+      "Points": 20,
+      "ROT": 5,
+      "Crusher": false,
+      "Turret": false,
+      "IsSelectableCombatant": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenCarSelect",
+      "VoiceMove": "MCVMoveStart",
+      "VoiceAttack": "",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MaxDebris": 3,
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": 6,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": 1,
+      "ZFudgeColumn": 10,
+      "ZFudgeTunnel": 13,
+      "ImmuneToRadiation": false,
+      "ImmuneToPsionics": false,
+      "Size": 4,
+      "SizeLimit": 2,
+      "Insignificant": true,
+      "Trainable": false
+    },
+    "raw_values": {
+      "UIName": "Name:AMBU",
+      "Name": "Ambulance",
+      "Prerequisite": "NAWEAP",
+      "Strength": "100",
+      "Category": "Transport",
+      "Armor": "light",
+      "DeployTime": ".022",
+      "TechLevel": "-1",
+      "Sight": "8",
+      "PipScale": "Passengers",
+      "Speed": "8",
+      "CrateGoodie": "no",
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "0",
+      "Soylent": "100",
+      "Points": "20",
+      "ROT": "5",
+      "Crusher": "no",
+      "Turret": "no",
+      "IsSelectableCombatant": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenCarSelect",
+      "VoiceMove": "MCVMoveStart",
+      "VoiceAttack": "",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MaxDebris": "3",
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": "6",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": "1",
+      "ZFudgeColumn": "10",
+      "ZFudgeTunnel": "13",
+      "ImmuneToRadiation": "no",
+      "ImmuneToPsionics": "no",
+      "Size": "4",
+      "SizeLimit": "2",
+      "Insignificant": "yes",
+      "Trainable": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:AMBU",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11095,
+          "section": "AMBU",
+          "key": "UIName",
+          "value": "Name:AMBU"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11089,
+            "section": "AMBU",
+            "key": "UIName",
+            "value": "Name:AMBU"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Ambulance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11096,
+          "section": "AMBU",
+          "key": "Name",
+          "value": "Ambulance"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11090,
+            "section": "AMBU",
+            "key": "Name",
+            "value": "Ambulance"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAWEAP",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11097,
+          "section": "AMBU",
+          "key": "Prerequisite",
+          "value": "NAWEAP"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11091,
+            "section": "AMBU",
+            "key": "Prerequisite",
+            "value": "NAWEAP"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11099,
+          "section": "AMBU",
+          "key": "Strength",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11093,
+            "section": "AMBU",
+            "key": "Strength",
+            "value": "100"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Transport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11100,
+          "section": "AMBU",
+          "key": "Category",
+          "value": "Transport"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11094,
+            "section": "AMBU",
+            "key": "Category",
+            "value": "Transport"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11101,
+          "section": "AMBU",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11095,
+            "section": "AMBU",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "DeployTime": {
+        "value": ".022",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11102,
+          "section": "AMBU",
+          "key": "DeployTime",
+          "value": ".022"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11096,
+            "section": "AMBU",
+            "key": "DeployTime",
+            "value": ".022"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11103,
+          "section": "AMBU",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11097,
+            "section": "AMBU",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11104,
+          "section": "AMBU",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11098,
+            "section": "AMBU",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "PipScale": {
+        "value": "Passengers",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11105,
+          "section": "AMBU",
+          "key": "PipScale",
+          "value": "Passengers"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11099,
+            "section": "AMBU",
+            "key": "PipScale",
+            "value": "Passengers"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11106,
+          "section": "AMBU",
+          "key": "Speed",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11100,
+            "section": "AMBU",
+            "key": "Speed",
+            "value": "8"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11107,
+          "section": "AMBU",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11101,
+            "section": "AMBU",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11108,
+          "section": "AMBU",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11102,
+            "section": "AMBU",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11109,
+          "section": "AMBU",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11103,
+            "section": "AMBU",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11110,
+          "section": "AMBU",
+          "key": "Cost",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11104,
+            "section": "AMBU",
+            "key": "Cost",
+            "value": "0"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11111,
+          "section": "AMBU",
+          "key": "Soylent",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11105,
+            "section": "AMBU",
+            "key": "Soylent",
+            "value": "100"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11112,
+          "section": "AMBU",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11106,
+            "section": "AMBU",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11113,
+          "section": "AMBU",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11107,
+            "section": "AMBU",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11114,
+          "section": "AMBU",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11108,
+            "section": "AMBU",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11115,
+          "section": "AMBU",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11109,
+            "section": "AMBU",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11117,
+          "section": "AMBU",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11111,
+            "section": "AMBU",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11118,
+          "section": "AMBU",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11112,
+            "section": "AMBU",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "GenCarSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11119,
+          "section": "AMBU",
+          "key": "VoiceSelect",
+          "value": "GenCarSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11113,
+            "section": "AMBU",
+            "key": "VoiceSelect",
+            "value": "GenCarSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "MCVMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11120,
+          "section": "AMBU",
+          "key": "VoiceMove",
+          "value": "MCVMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11114,
+            "section": "AMBU",
+            "key": "VoiceMove",
+            "value": "MCVMoveStart"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11121,
+          "section": "AMBU",
+          "key": "VoiceAttack",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11115,
+            "section": "AMBU",
+            "key": "VoiceAttack",
+            "value": ""
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11122,
+          "section": "AMBU",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11116,
+            "section": "AMBU",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11123,
+          "section": "AMBU",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11117,
+            "section": "AMBU",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11124,
+          "section": "AMBU",
+          "key": "MaxDebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11118,
+            "section": "AMBU",
+            "key": "MaxDebris",
+            "value": "3"
+          }
+        ]
+      },
+      "DebrisTypes": {
+        "value": "TIRE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11125,
+          "section": "AMBU",
+          "key": "DebrisTypes",
+          "value": "TIRE"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11119,
+            "section": "AMBU",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          }
+        ]
+      },
+      "DebrisMaximums": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11126,
+          "section": "AMBU",
+          "key": "DebrisMaximums",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11120,
+            "section": "AMBU",
+            "key": "DebrisMaximums",
+            "value": "6"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11127,
+          "section": "AMBU",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11121,
+            "section": "AMBU",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Normal",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11128,
+          "section": "AMBU",
+          "key": "MovementZone",
+          "value": "Normal"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11122,
+            "section": "AMBU",
+            "key": "MovementZone",
+            "value": "Normal"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11129,
+          "section": "AMBU",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11123,
+            "section": "AMBU",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11130,
+          "section": "AMBU",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11124,
+            "section": "AMBU",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11131,
+          "section": "AMBU",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11125,
+            "section": "AMBU",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11132,
+          "section": "AMBU",
+          "key": "ZFudgeColumn",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11126,
+            "section": "AMBU",
+            "key": "ZFudgeColumn",
+            "value": "10"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11133,
+          "section": "AMBU",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11127,
+            "section": "AMBU",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11134,
+          "section": "AMBU",
+          "key": "ImmuneToRadiation",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11128,
+            "section": "AMBU",
+            "key": "ImmuneToRadiation",
+            "value": "no"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11135,
+          "section": "AMBU",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11129,
+            "section": "AMBU",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Size": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11137,
+          "section": "AMBU",
+          "key": "Size",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11131,
+            "section": "AMBU",
+            "key": "Size",
+            "value": "4"
+          }
+        ]
+      },
+      "SizeLimit": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11138,
+          "section": "AMBU",
+          "key": "SizeLimit",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11132,
+            "section": "AMBU",
+            "key": "SizeLimit",
+            "value": "2"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11139,
+          "section": "AMBU",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11133,
+            "section": "AMBU",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11140,
+          "section": "AMBU",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11134,
+            "section": "AMBU",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true
+    },
+    "raw_values": {
+      "Voxel": "yes"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 14804,
+          "section": "AMBU",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": []
+      }
+    }
+  }
+}

@@ -1,0 +1,2531 @@
+{
+  "id": "CIVSTM",
+  "category": "infantry",
+  "name_token": "Name:CIV3",
+  "art_id": "CIVSTM",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 10,
+  "strength": 50,
+  "armor": "none",
+  "speed": 4,
+  "sight": 2,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Infantry",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "CivSovSelect"
+    ],
+    "VoiceMove": [
+      "CivSovMove"
+    ],
+    "VoiceAttack": [
+      "CivSovAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "CivSovFear"
+    ],
+    "VoiceSpecialAttack": [
+      "CivSovMove"
+    ],
+    "DieSound": [
+      "CivThinDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "CIVSTM",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 92,
+          "pack": "ra2",
+          "relative_path": "conquer/civstm.shp",
+          "folder": "conquer",
+          "filename": "civstm.shp",
+          "stem": "civstm",
+          "extension": ".shp",
+          "size": 99912,
+          "sha1": "0b0cd83ee74d5546afd266feb95be948fc8ecca0"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 92,
+          "pack": "ra2",
+          "relative_path": "conquer/civstm.shp",
+          "folder": "conquer",
+          "filename": "civstm.shp",
+          "stem": "civstm",
+          "extension": ".shp",
+          "size": 99912,
+          "sha1": "0b0cd83ee74d5546afd266feb95be948fc8ecca0"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 92,
+          "pack": "ra2",
+          "relative_path": "conquer/civstm.shp",
+          "folder": "conquer",
+          "filename": "civstm.shp",
+          "stem": "civstm",
+          "extension": ".shp",
+          "size": 99912,
+          "sha1": "0b0cd83ee74d5546afd266feb95be948fc8ecca0"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 92,
+          "pack": "ra2",
+          "relative_path": "conquer/civstm.shp",
+          "folder": "conquer",
+          "filename": "civstm.shp",
+          "stem": "civstm",
+          "extension": ".shp",
+          "size": 99912,
+          "sha1": "0b0cd83ee74d5546afd266feb95be948fc8ecca0"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 92,
+          "pack": "ra2",
+          "relative_path": "conquer/civstm.shp",
+          "folder": "conquer",
+          "filename": "civstm.shp",
+          "stem": "civstm",
+          "extension": ".shp",
+          "size": 99912,
+          "sha1": "0b0cd83ee74d5546afd266feb95be948fc8ecca0"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 92,
+          "pack": "ra2",
+          "relative_path": "conquer/civstm.shp",
+          "folder": "conquer",
+          "filename": "civstm.shp",
+          "stem": "civstm",
+          "extension": ".shp",
+          "size": 99912,
+          "sha1": "0b0cd83ee74d5546afd266feb95be948fc8ecca0"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "CivGunSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 182,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            218
+          ],
+          "1": [
+            212
+          ],
+          "2": [
+            206
+          ],
+          "3": [
+            200
+          ],
+          "4": [
+            194
+          ],
+          "5": [
+            188
+          ],
+          "6": [
+            182
+          ],
+          "7": [
+            224
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 86,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "1": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "2": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "3": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "4": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "5": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "6": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "7": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 182,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            218,
+            219,
+            220,
+            221,
+            222,
+            223
+          ],
+          "1": [
+            212,
+            213,
+            214,
+            215,
+            216,
+            217
+          ],
+          "2": [
+            206,
+            207,
+            208,
+            209,
+            210,
+            211
+          ],
+          "3": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205
+          ],
+          "4": [
+            194,
+            195,
+            196,
+            197,
+            198,
+            199
+          ],
+          "5": [
+            188,
+            189,
+            190,
+            191,
+            192,
+            193
+          ],
+          "6": [
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "7": [
+            224,
+            225,
+            226,
+            227,
+            228,
+            229
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 86,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "1": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "2": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "3": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "4": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "5": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "6": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "7": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Paradrop": {
+        "name": "Paradrop",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 134,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            170,
+            171,
+            172,
+            173,
+            174,
+            175
+          ],
+          "1": [
+            164,
+            165,
+            166,
+            167,
+            168,
+            169
+          ],
+          "2": [
+            158,
+            159,
+            160,
+            161,
+            162,
+            163
+          ],
+          "3": [
+            152,
+            153,
+            154,
+            155,
+            156,
+            157
+          ],
+          "4": [
+            146,
+            147,
+            148,
+            149,
+            150,
+            151
+          ],
+          "5": [
+            140,
+            141,
+            142,
+            143,
+            144,
+            145
+          ],
+          "6": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139
+          ],
+          "7": [
+            176,
+            177,
+            178,
+            179,
+            180,
+            181
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CIV3",
+      "Name": "Civilian Snow Thin Male",
+      "Category": "Civilian",
+      "Strength": 50,
+      "Armor": "none",
+      "TechLevel": -1,
+      "CrushSound": "InfantrySquish",
+      "Insignificant": true,
+      "Sight": 2,
+      "Speed": 4,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 10,
+      "Soylent": 100,
+      "Points": 1,
+      "Fraidycat": true,
+      "Civilian": true,
+      "Nominal": true,
+      "Pip": "yellow",
+      "VoiceSelect": "CivSovSelect",
+      "VoiceMove": "CivSovMove",
+      "VoiceAttack": "CivSovAttackCommand",
+      "VoiceFeedback": "CivSovFear",
+      "VoiceSpecialAttack": "CivSovMove",
+      "DieSound": "CivThinDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "Infantry",
+      "ThreatPosed": 0,
+      "ImmuneToVeins": true,
+      "Size": 1,
+      "Trainable": false
+    },
+    "raw_values": {
+      "UIName": "Name:CIV3",
+      "Name": "Civilian Snow Thin Male",
+      "Category": "Civilian",
+      "Strength": "50",
+      "Armor": "none",
+      "TechLevel": "-1",
+      "CrushSound": "InfantrySquish",
+      "Insignificant": "yes",
+      "Sight": "2",
+      "Speed": "4",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "10",
+      "Soylent": "100",
+      "Points": "1",
+      "Fraidycat": "yes",
+      "Civilian": "yes",
+      "Nominal": "yes",
+      "Pip": "yellow",
+      "VoiceSelect": "CivSovSelect",
+      "VoiceMove": "CivSovMove",
+      "VoiceAttack": "CivSovAttackCommand",
+      "VoiceFeedback": "CivSovFear",
+      "VoiceSpecialAttack": "CivSovMove",
+      "DieSound": "CivThinDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "Infantry",
+      "ThreatPosed": "0",
+      "ImmuneToVeins": "yes",
+      "Size": "1",
+      "Trainable": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CIV3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6058,
+          "section": "CIVSTM",
+          "key": "UIName",
+          "value": "Name:CIV3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4323,
+            "section": "CIVSTM",
+            "key": "UIName",
+            "value": "Name:CIV3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6056,
+            "section": "CIVSTM",
+            "key": "UIName",
+            "value": "Name:CIV3"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Civilian Snow Thin Male",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6059,
+          "section": "CIVSTM",
+          "key": "Name",
+          "value": "Civilian Snow Thin Male"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4324,
+            "section": "CIVSTM",
+            "key": "Name",
+            "value": "Civilian Snow Thin Male"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6057,
+            "section": "CIVSTM",
+            "key": "Name",
+            "value": "Civilian Snow Thin Male"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Civilian",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6060,
+          "section": "CIVSTM",
+          "key": "Category",
+          "value": "Civilian"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4325,
+            "section": "CIVSTM",
+            "key": "Category",
+            "value": "Civilian"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6058,
+            "section": "CIVSTM",
+            "key": "Category",
+            "value": "Civilian"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "50",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6061,
+          "section": "CIVSTM",
+          "key": "Strength",
+          "value": "50"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4326,
+            "section": "CIVSTM",
+            "key": "Strength",
+            "value": "50"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6059,
+            "section": "CIVSTM",
+            "key": "Strength",
+            "value": "50"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6062,
+          "section": "CIVSTM",
+          "key": "Armor",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4327,
+            "section": "CIVSTM",
+            "key": "Armor",
+            "value": "none"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6060,
+            "section": "CIVSTM",
+            "key": "Armor",
+            "value": "none"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6063,
+          "section": "CIVSTM",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4328,
+            "section": "CIVSTM",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6061,
+            "section": "CIVSTM",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6064,
+          "section": "CIVSTM",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4329,
+            "section": "CIVSTM",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6062,
+            "section": "CIVSTM",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6065,
+          "section": "CIVSTM",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4330,
+            "section": "CIVSTM",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6063,
+            "section": "CIVSTM",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6066,
+          "section": "CIVSTM",
+          "key": "Sight",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4331,
+            "section": "CIVSTM",
+            "key": "Sight",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6064,
+            "section": "CIVSTM",
+            "key": "Sight",
+            "value": "2"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6067,
+          "section": "CIVSTM",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4332,
+            "section": "CIVSTM",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6065,
+            "section": "CIVSTM",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6068,
+          "section": "CIVSTM",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4333,
+            "section": "CIVSTM",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6066,
+            "section": "CIVSTM",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6069,
+          "section": "CIVSTM",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4334,
+            "section": "CIVSTM",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6067,
+            "section": "CIVSTM",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6070,
+          "section": "CIVSTM",
+          "key": "Cost",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4335,
+            "section": "CIVSTM",
+            "key": "Cost",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6068,
+            "section": "CIVSTM",
+            "key": "Cost",
+            "value": "10"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6071,
+          "section": "CIVSTM",
+          "key": "Soylent",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4336,
+            "section": "CIVSTM",
+            "key": "Soylent",
+            "value": "100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6069,
+            "section": "CIVSTM",
+            "key": "Soylent",
+            "value": "100"
+          }
+        ]
+      },
+      "Points": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6072,
+          "section": "CIVSTM",
+          "key": "Points",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4337,
+            "section": "CIVSTM",
+            "key": "Points",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6070,
+            "section": "CIVSTM",
+            "key": "Points",
+            "value": "1"
+          }
+        ]
+      },
+      "Fraidycat": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6074,
+          "section": "CIVSTM",
+          "key": "Fraidycat",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4339,
+            "section": "CIVSTM",
+            "key": "Fraidycat",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6072,
+            "section": "CIVSTM",
+            "key": "Fraidycat",
+            "value": "yes"
+          }
+        ]
+      },
+      "Civilian": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6075,
+          "section": "CIVSTM",
+          "key": "Civilian",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4340,
+            "section": "CIVSTM",
+            "key": "Civilian",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6073,
+            "section": "CIVSTM",
+            "key": "Civilian",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6076,
+          "section": "CIVSTM",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4341,
+            "section": "CIVSTM",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6074,
+            "section": "CIVSTM",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "yellow",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6077,
+          "section": "CIVSTM",
+          "key": "Pip",
+          "value": "yellow"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4342,
+            "section": "CIVSTM",
+            "key": "Pip",
+            "value": "yellow"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6075,
+            "section": "CIVSTM",
+            "key": "Pip",
+            "value": "yellow"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "CivSovSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6078,
+          "section": "CIVSTM",
+          "key": "VoiceSelect",
+          "value": "CivSovSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4343,
+            "section": "CIVSTM",
+            "key": "VoiceSelect",
+            "value": "CivSovSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6076,
+            "section": "CIVSTM",
+            "key": "VoiceSelect",
+            "value": "CivSovSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "CivSovMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6079,
+          "section": "CIVSTM",
+          "key": "VoiceMove",
+          "value": "CivSovMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4344,
+            "section": "CIVSTM",
+            "key": "VoiceMove",
+            "value": "CivSovMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6077,
+            "section": "CIVSTM",
+            "key": "VoiceMove",
+            "value": "CivSovMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "CivSovAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6080,
+          "section": "CIVSTM",
+          "key": "VoiceAttack",
+          "value": "CivSovAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4345,
+            "section": "CIVSTM",
+            "key": "VoiceAttack",
+            "value": "CivSovAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6078,
+            "section": "CIVSTM",
+            "key": "VoiceAttack",
+            "value": "CivSovAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "CivSovFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6081,
+          "section": "CIVSTM",
+          "key": "VoiceFeedback",
+          "value": "CivSovFear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4346,
+            "section": "CIVSTM",
+            "key": "VoiceFeedback",
+            "value": "CivSovFear"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6079,
+            "section": "CIVSTM",
+            "key": "VoiceFeedback",
+            "value": "CivSovFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "CivSovMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6082,
+          "section": "CIVSTM",
+          "key": "VoiceSpecialAttack",
+          "value": "CivSovMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4347,
+            "section": "CIVSTM",
+            "key": "VoiceSpecialAttack",
+            "value": "CivSovMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6080,
+            "section": "CIVSTM",
+            "key": "VoiceSpecialAttack",
+            "value": "CivSovMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "CivThinDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6083,
+          "section": "CIVSTM",
+          "key": "DieSound",
+          "value": "CivThinDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4348,
+            "section": "CIVSTM",
+            "key": "DieSound",
+            "value": "CivThinDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6081,
+            "section": "CIVSTM",
+            "key": "DieSound",
+            "value": "CivThinDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6084,
+          "section": "CIVSTM",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4349,
+            "section": "CIVSTM",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6082,
+            "section": "CIVSTM",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6085,
+          "section": "CIVSTM",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4350,
+            "section": "CIVSTM",
+            "key": "PhysicalSize",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6083,
+            "section": "CIVSTM",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6086,
+          "section": "CIVSTM",
+          "key": "MovementZone",
+          "value": "Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4351,
+            "section": "CIVSTM",
+            "key": "MovementZone",
+            "value": "Infantry"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6084,
+            "section": "CIVSTM",
+            "key": "MovementZone",
+            "value": "Infantry"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6087,
+          "section": "CIVSTM",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4352,
+            "section": "CIVSTM",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6085,
+            "section": "CIVSTM",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6088,
+          "section": "CIVSTM",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4353,
+            "section": "CIVSTM",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6086,
+            "section": "CIVSTM",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6089,
+          "section": "CIVSTM",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4354,
+            "section": "CIVSTM",
+            "key": "Size",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6087,
+            "section": "CIVSTM",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6090,
+          "section": "CIVSTM",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4355,
+            "section": "CIVSTM",
+            "key": "Trainable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6088,
+            "section": "CIVSTM",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Sequence": "CivGunSequence",
+      "Crawls": true,
+      "FireUp": 2
+    },
+    "raw_values": {
+      "Sequence": "CivGunSequence",
+      "Crawls": "yes",
+      "FireUp": "2"
+    },
+    "provenance": {
+      "Sequence": {
+        "value": "CivGunSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 599,
+          "section": "CIVSTM",
+          "key": "Sequence",
+          "value": "CivGunSequence"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 431,
+            "section": "CIVSTM",
+            "key": "Sequence",
+            "value": "CivGunSequence"
+          }
+        ]
+      },
+      "Crawls": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 600,
+          "section": "CIVSTM",
+          "key": "Crawls",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 432,
+            "section": "CIVSTM",
+            "key": "Crawls",
+            "value": "yes"
+          }
+        ]
+      },
+      "FireUp": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 601,
+          "section": "CIVSTM",
+          "key": "FireUp",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 433,
+            "section": "CIVSTM",
+            "key": "FireUp",
+            "value": "2"
+          }
+        ]
+      }
+    }
+  }
+}

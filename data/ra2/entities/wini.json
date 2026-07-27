@@ -1,0 +1,1466 @@
+{
+  "id": "WINI",
+  "category": "vehicle",
+  "name_token": "Name:WINI",
+  "art_id": "WINI",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAWEAP"
+  ],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 100,
+  "armor": "light",
+  "speed": 8,
+  "sight": 8,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Normal",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "GenCarSelect"
+    ],
+    "VoiceMove": [
+      "MCVMoveStart"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "WINI",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4442,
+      "pack": "ra2",
+      "relative_path": "local/wini.vxl",
+      "folder": "local",
+      "filename": "wini.vxl",
+      "stem": "wini",
+      "extension": ".vxl",
+      "size": 13627,
+      "sha1": "2b736368a0becb12809bd64f31c960b0f9a52522"
+    },
+    "body_hva": {
+      "asset_id": 4441,
+      "pack": "ra2",
+      "relative_path": "local/wini.hva",
+      "folder": "local",
+      "filename": "wini.hva",
+      "stem": "wini",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "2edf66de2427a1ba608ac327b84e581433a78963"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:WINI",
+      "Name": "Recreational Vehicle",
+      "Prerequisite": "NAWEAP",
+      "Strength": 100,
+      "Category": "Transport",
+      "Armor": "light",
+      "DeployTime": 0.022,
+      "TechLevel": -1,
+      "Sight": 8,
+      "PipScale": "Passengers",
+      "Speed": 8,
+      "CrateGoodie": false,
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 0,
+      "Points": 20,
+      "ROT": 5,
+      "Crusher": false,
+      "Turret": false,
+      "IsSelectableCombatant": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenCarSelect",
+      "VoiceMove": "MCVMoveStart",
+      "VoiceAttack": "",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MaxDebris": 3,
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": 6,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": 1,
+      "ZFudgeColumn": 10,
+      "ZFudgeTunnel": 13,
+      "ImmuneToRadiation": false,
+      "ImmuneToPsionics": false,
+      "Size": 6,
+      "SizeLimit": 2,
+      "Insignificant": true,
+      "Trainable": false,
+      "Soylent": 100,
+      "CrushSound": "TankCrush"
+    },
+    "raw_values": {
+      "UIName": "Name:WINI",
+      "Name": "Recreational Vehicle",
+      "Prerequisite": "NAWEAP",
+      "Strength": "100",
+      "Category": "Transport",
+      "Armor": "light",
+      "DeployTime": ".022",
+      "TechLevel": "-1",
+      "Sight": "8",
+      "PipScale": "Passengers",
+      "Speed": "8",
+      "CrateGoodie": "no",
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "0",
+      "Points": "20",
+      "ROT": "5",
+      "Crusher": "no",
+      "Turret": "no",
+      "IsSelectableCombatant": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenCarSelect",
+      "VoiceMove": "MCVMoveStart",
+      "VoiceAttack": "",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MaxDebris": "3",
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": "6",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": "1",
+      "ZFudgeColumn": "10",
+      "ZFudgeTunnel": "13",
+      "ImmuneToRadiation": "no",
+      "ImmuneToPsionics": "no",
+      "Size": "6",
+      "SizeLimit": "2",
+      "Insignificant": "yes",
+      "Trainable": "no",
+      "Soylent": "100",
+      "CrushSound": "TankCrush"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:WINI",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9605,
+          "section": "WINI",
+          "key": "UIName",
+          "value": "Name:WINI"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6429,
+            "section": "WINI",
+            "key": "UIName",
+            "value": "Name:WINI"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9600,
+            "section": "WINI",
+            "key": "UIName",
+            "value": "Name:WINI"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Recreational Vehicle",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9606,
+          "section": "WINI",
+          "key": "Name",
+          "value": "Recreational Vehicle"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6430,
+            "section": "WINI",
+            "key": "Name",
+            "value": "Recreational Vehicle"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9601,
+            "section": "WINI",
+            "key": "Name",
+            "value": "Recreational Vehicle"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAWEAP",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9607,
+          "section": "WINI",
+          "key": "Prerequisite",
+          "value": "NAWEAP"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6431,
+            "section": "WINI",
+            "key": "Prerequisite",
+            "value": "NAWEAP"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9602,
+            "section": "WINI",
+            "key": "Prerequisite",
+            "value": "NAWEAP"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9608,
+          "section": "WINI",
+          "key": "Strength",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6432,
+            "section": "WINI",
+            "key": "Strength",
+            "value": "100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9603,
+            "section": "WINI",
+            "key": "Strength",
+            "value": "100"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Transport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9609,
+          "section": "WINI",
+          "key": "Category",
+          "value": "Transport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6433,
+            "section": "WINI",
+            "key": "Category",
+            "value": "Transport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9604,
+            "section": "WINI",
+            "key": "Category",
+            "value": "Transport"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9610,
+          "section": "WINI",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6434,
+            "section": "WINI",
+            "key": "Armor",
+            "value": "light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9605,
+            "section": "WINI",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "DeployTime": {
+        "value": ".022",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9611,
+          "section": "WINI",
+          "key": "DeployTime",
+          "value": ".022"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6435,
+            "section": "WINI",
+            "key": "DeployTime",
+            "value": ".022"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9606,
+            "section": "WINI",
+            "key": "DeployTime",
+            "value": ".022"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9612,
+          "section": "WINI",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6436,
+            "section": "WINI",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9607,
+            "section": "WINI",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9613,
+          "section": "WINI",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6437,
+            "section": "WINI",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9608,
+            "section": "WINI",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "PipScale": {
+        "value": "Passengers",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9614,
+          "section": "WINI",
+          "key": "PipScale",
+          "value": "Passengers"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6438,
+            "section": "WINI",
+            "key": "PipScale",
+            "value": "Passengers"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9609,
+            "section": "WINI",
+            "key": "PipScale",
+            "value": "Passengers"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9615,
+          "section": "WINI",
+          "key": "Speed",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6439,
+            "section": "WINI",
+            "key": "Speed",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9610,
+            "section": "WINI",
+            "key": "Speed",
+            "value": "8"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9616,
+          "section": "WINI",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6440,
+            "section": "WINI",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9611,
+            "section": "WINI",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9617,
+          "section": "WINI",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6441,
+            "section": "WINI",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9612,
+            "section": "WINI",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9618,
+          "section": "WINI",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6442,
+            "section": "WINI",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9613,
+            "section": "WINI",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9619,
+          "section": "WINI",
+          "key": "Cost",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6443,
+            "section": "WINI",
+            "key": "Cost",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9614,
+            "section": "WINI",
+            "key": "Cost",
+            "value": "0"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9621,
+          "section": "WINI",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6444,
+            "section": "WINI",
+            "key": "Points",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9616,
+            "section": "WINI",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9622,
+          "section": "WINI",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6445,
+            "section": "WINI",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9617,
+            "section": "WINI",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9623,
+          "section": "WINI",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6446,
+            "section": "WINI",
+            "key": "Crusher",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9618,
+            "section": "WINI",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9624,
+          "section": "WINI",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6447,
+            "section": "WINI",
+            "key": "Turret",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9619,
+            "section": "WINI",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9626,
+          "section": "WINI",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6449,
+            "section": "WINI",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9621,
+            "section": "WINI",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9627,
+          "section": "WINI",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6450,
+            "section": "WINI",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9622,
+            "section": "WINI",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "GenCarSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9628,
+          "section": "WINI",
+          "key": "VoiceSelect",
+          "value": "GenCarSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6451,
+            "section": "WINI",
+            "key": "VoiceSelect",
+            "value": "GenCarSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9623,
+            "section": "WINI",
+            "key": "VoiceSelect",
+            "value": "GenCarSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "MCVMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9629,
+          "section": "WINI",
+          "key": "VoiceMove",
+          "value": "MCVMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6452,
+            "section": "WINI",
+            "key": "VoiceMove",
+            "value": "MCVMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9624,
+            "section": "WINI",
+            "key": "VoiceMove",
+            "value": "MCVMoveStart"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9630,
+          "section": "WINI",
+          "key": "VoiceAttack",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6453,
+            "section": "WINI",
+            "key": "VoiceAttack",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9625,
+            "section": "WINI",
+            "key": "VoiceAttack",
+            "value": ""
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9631,
+          "section": "WINI",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6454,
+            "section": "WINI",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9626,
+            "section": "WINI",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9632,
+          "section": "WINI",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6455,
+            "section": "WINI",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9627,
+            "section": "WINI",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9634,
+          "section": "WINI",
+          "key": "MaxDebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6456,
+            "section": "WINI",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9629,
+            "section": "WINI",
+            "key": "MaxDebris",
+            "value": "3"
+          }
+        ]
+      },
+      "DebrisTypes": {
+        "value": "TIRE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9635,
+          "section": "WINI",
+          "key": "DebrisTypes",
+          "value": "TIRE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6457,
+            "section": "WINI",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9630,
+            "section": "WINI",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          }
+        ]
+      },
+      "DebrisMaximums": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9636,
+          "section": "WINI",
+          "key": "DebrisMaximums",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6458,
+            "section": "WINI",
+            "key": "DebrisMaximums",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9631,
+            "section": "WINI",
+            "key": "DebrisMaximums",
+            "value": "6"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9637,
+          "section": "WINI",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6459,
+            "section": "WINI",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9632,
+            "section": "WINI",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Normal",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9638,
+          "section": "WINI",
+          "key": "MovementZone",
+          "value": "Normal"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6460,
+            "section": "WINI",
+            "key": "MovementZone",
+            "value": "Normal"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9633,
+            "section": "WINI",
+            "key": "MovementZone",
+            "value": "Normal"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9639,
+          "section": "WINI",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6461,
+            "section": "WINI",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9634,
+            "section": "WINI",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9640,
+          "section": "WINI",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6462,
+            "section": "WINI",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9635,
+            "section": "WINI",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9641,
+          "section": "WINI",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6463,
+            "section": "WINI",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9636,
+            "section": "WINI",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9642,
+          "section": "WINI",
+          "key": "ZFudgeColumn",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6464,
+            "section": "WINI",
+            "key": "ZFudgeColumn",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9637,
+            "section": "WINI",
+            "key": "ZFudgeColumn",
+            "value": "10"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9643,
+          "section": "WINI",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6465,
+            "section": "WINI",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9638,
+            "section": "WINI",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9644,
+          "section": "WINI",
+          "key": "ImmuneToRadiation",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6466,
+            "section": "WINI",
+            "key": "ImmuneToRadiation",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9639,
+            "section": "WINI",
+            "key": "ImmuneToRadiation",
+            "value": "no"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9645,
+          "section": "WINI",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6467,
+            "section": "WINI",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9640,
+            "section": "WINI",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Size": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9647,
+          "section": "WINI",
+          "key": "Size",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6469,
+            "section": "WINI",
+            "key": "Size",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9642,
+            "section": "WINI",
+            "key": "Size",
+            "value": "6"
+          }
+        ]
+      },
+      "SizeLimit": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9648,
+          "section": "WINI",
+          "key": "SizeLimit",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6470,
+            "section": "WINI",
+            "key": "SizeLimit",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9643,
+            "section": "WINI",
+            "key": "SizeLimit",
+            "value": "2"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9649,
+          "section": "WINI",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6471,
+            "section": "WINI",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9644,
+            "section": "WINI",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9650,
+          "section": "WINI",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6472,
+            "section": "WINI",
+            "key": "Trainable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9645,
+            "section": "WINI",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9620,
+          "section": "WINI",
+          "key": "Soylent",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9615,
+            "section": "WINI",
+            "key": "Soylent",
+            "value": "100"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9633,
+          "section": "WINI",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9628,
+            "section": "WINI",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true
+    },
+    "raw_values": {
+      "Voxel": "yes"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1050,
+          "section": "WINI",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 726,
+            "section": "WINI",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  }
+}

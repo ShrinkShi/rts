@@ -1,0 +1,2192 @@
+{
+  "id": "TTNK",
+  "category": "vehicle",
+  "name_token": "Name:TTNK",
+  "art_id": "TTNK",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [
+    "Russians"
+  ],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAWEAP",
+    "NARADR"
+  ],
+  "tech_level": 10,
+  "cost": 1200,
+  "strength": 300,
+  "armor": "heavy",
+  "speed": 6,
+  "sight": 8,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Destroyer",
+  "weapons": {
+    "Primary": {
+      "id": "TankBolt",
+      "projectile": "InvisibleLow",
+      "warhead": "Electric",
+      "report": [
+        "TeslaTankAttack"
+      ],
+      "values": {
+        "Damage": 135,
+        "ROF": 75,
+        "Range": 4,
+        "Speed": 100,
+        "Warhead": "Electric",
+        "Report": "TeslaTankAttack",
+        "Projectile": "InvisibleLow",
+        "IsElectricBolt": true
+      },
+      "raw_values": {
+        "Damage": "135",
+        "ROF": "75",
+        "Range": "4",
+        "Speed": "100",
+        "Warhead": "Electric",
+        "Report": "TeslaTankAttack",
+        "Projectile": "InvisibleLow",
+        "IsElectricBolt": "true"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "135",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23869,
+            "section": "TankBolt",
+            "key": "Damage",
+            "value": "135"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17100,
+              "section": "TankBolt",
+              "key": "Damage",
+              "value": "135"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23861,
+              "section": "TankBolt",
+              "key": "Damage",
+              "value": "135"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "75",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23870,
+            "section": "TankBolt",
+            "key": "ROF",
+            "value": "75"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17101,
+              "section": "TankBolt",
+              "key": "ROF",
+              "value": "75"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23862,
+              "section": "TankBolt",
+              "key": "ROF",
+              "value": "75"
+            }
+          ]
+        },
+        "Range": {
+          "value": "4",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23871,
+            "section": "TankBolt",
+            "key": "Range",
+            "value": "4"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17102,
+              "section": "TankBolt",
+              "key": "Range",
+              "value": "4"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23863,
+              "section": "TankBolt",
+              "key": "Range",
+              "value": "4"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23872,
+            "section": "TankBolt",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17103,
+              "section": "TankBolt",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23864,
+              "section": "TankBolt",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Electric",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23873,
+            "section": "TankBolt",
+            "key": "Warhead",
+            "value": "Electric"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17104,
+              "section": "TankBolt",
+              "key": "Warhead",
+              "value": "Electric"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23865,
+              "section": "TankBolt",
+              "key": "Warhead",
+              "value": "Electric"
+            }
+          ]
+        },
+        "Report": {
+          "value": "TeslaTankAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23874,
+            "section": "TankBolt",
+            "key": "Report",
+            "value": "TeslaTankAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17105,
+              "section": "TankBolt",
+              "key": "Report",
+              "value": "TeslaTankAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23866,
+              "section": "TankBolt",
+              "key": "Report",
+              "value": "TeslaTankAttack"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23875,
+            "section": "TankBolt",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17106,
+              "section": "TankBolt",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23867,
+              "section": "TankBolt",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "IsElectricBolt": {
+          "value": "true",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23876,
+            "section": "TankBolt",
+            "key": "IsElectricBolt",
+            "value": "true"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17107,
+              "section": "TankBolt",
+              "key": "IsElectricBolt",
+              "value": "true"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23868,
+              "section": "TankBolt",
+              "key": "IsElectricBolt",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "TankBoltE",
+      "projectile": "Electricbounce",
+      "warhead": "Electric",
+      "report": [
+        "TeslaTankAttack"
+      ],
+      "values": {
+        "Damage": 150,
+        "ROF": 60,
+        "Range": 6,
+        "Speed": 100,
+        "Warhead": "Electric",
+        "Report": "TeslaTankAttack",
+        "Projectile": "Electricbounce",
+        "IsElectricBolt": true
+      },
+      "raw_values": {
+        "Damage": "150",
+        "ROF": "60",
+        "Range": "6",
+        "Speed": "100",
+        "Warhead": "Electric",
+        "Report": "TeslaTankAttack",
+        "Projectile": "Electricbounce",
+        "IsElectricBolt": "true"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "150",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24862,
+            "section": "TankBoltE",
+            "key": "Damage",
+            "value": "150"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17797,
+              "section": "TankBoltE",
+              "key": "Damage",
+              "value": "150"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24854,
+              "section": "TankBoltE",
+              "key": "Damage",
+              "value": "150"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24863,
+            "section": "TankBoltE",
+            "key": "ROF",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17798,
+              "section": "TankBoltE",
+              "key": "ROF",
+              "value": "60"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24855,
+              "section": "TankBoltE",
+              "key": "ROF",
+              "value": "60"
+            }
+          ]
+        },
+        "Range": {
+          "value": "6",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24864,
+            "section": "TankBoltE",
+            "key": "Range",
+            "value": "6"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17799,
+              "section": "TankBoltE",
+              "key": "Range",
+              "value": "6"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24856,
+              "section": "TankBoltE",
+              "key": "Range",
+              "value": "6"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24865,
+            "section": "TankBoltE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17800,
+              "section": "TankBoltE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24857,
+              "section": "TankBoltE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Electric",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24866,
+            "section": "TankBoltE",
+            "key": "Warhead",
+            "value": "Electric"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17801,
+              "section": "TankBoltE",
+              "key": "Warhead",
+              "value": "Electric"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24858,
+              "section": "TankBoltE",
+              "key": "Warhead",
+              "value": "Electric"
+            }
+          ]
+        },
+        "Report": {
+          "value": "TeslaTankAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24867,
+            "section": "TankBoltE",
+            "key": "Report",
+            "value": "TeslaTankAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17802,
+              "section": "TankBoltE",
+              "key": "Report",
+              "value": "TeslaTankAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24859,
+              "section": "TankBoltE",
+              "key": "Report",
+              "value": "TeslaTankAttack"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "Electricbounce",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24868,
+            "section": "TankBoltE",
+            "key": "Projectile",
+            "value": "Electricbounce"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17803,
+              "section": "TankBoltE",
+              "key": "Projectile",
+              "value": "Electricbounce"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24860,
+              "section": "TankBoltE",
+              "key": "Projectile",
+              "value": "Electricbounce"
+            }
+          ]
+        },
+        "IsElectricBolt": {
+          "value": "true",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24869,
+            "section": "TankBoltE",
+            "key": "IsElectricBolt",
+            "value": "true"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17804,
+              "section": "TankBoltE",
+              "key": "IsElectricBolt",
+              "value": "true"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24861,
+              "section": "TankBoltE",
+              "key": "IsElectricBolt",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "TeslaTankSelect"
+    ],
+    "VoiceMove": [
+      "TeslaTankMove"
+    ],
+    "VoiceAttack": [
+      "TeslaTankAttackCommand"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ],
+    "MoveSound": [
+      "TeslaTankMoveStart"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "TTNK",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4415,
+      "pack": "ra2",
+      "relative_path": "local/ttnk.vxl",
+      "folder": "local",
+      "filename": "ttnk.vxl",
+      "stem": "ttnk",
+      "extension": ".vxl",
+      "size": 39873,
+      "sha1": "a2040fb6a8d96c8e3eb593935b371fdc3b99a8dc"
+    },
+    "body_hva": {
+      "asset_id": 4414,
+      "pack": "ra2",
+      "relative_path": "local/ttnk.hva",
+      "folder": "local",
+      "filename": "ttnk.hva",
+      "stem": "ttnk",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "30b6d8e8dbb134c08c8410fd30b722be5905f5fd"
+    },
+    "turret": {
+      "asset_id": 4417,
+      "pack": "ra2",
+      "relative_path": "local/ttnktur.vxl",
+      "folder": "local",
+      "filename": "ttnktur.vxl",
+      "stem": "ttnktur",
+      "extension": ".vxl",
+      "size": 14305,
+      "sha1": "ec12b28925305379df32123a29d5c492a1ccdefb"
+    },
+    "turret_hva": {
+      "asset_id": 4416,
+      "pack": "ra2",
+      "relative_path": "local/ttnktur.hva",
+      "folder": "local",
+      "filename": "ttnktur.hva",
+      "stem": "ttnktur",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "30b6d8e8dbb134c08c8410fd30b722be5905f5fd"
+    },
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      60.0,
+      0.0,
+      100.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:TTNK",
+      "Name": "Tesla Tank",
+      "Prerequisite": "NAWEAP,NARADR",
+      "Primary": "TankBolt",
+      "Strength": 300,
+      "Category": "AFV",
+      "Armor": "heavy",
+      "Turret": true,
+      "IsTilter": true,
+      "TooBigToFitUnderBridge": true,
+      "TechLevel": 10,
+      "Sight": 8,
+      "Speed": 6,
+      "CrateGoodie": true,
+      "Crusher": true,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "RequiredHouses": "Russians",
+      "Cost": 1200,
+      "Points": 25,
+      "ROT": 5,
+      "IsSelectableCombatant": true,
+      "AllowedToStartInMultiplayer": false,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "TeslaTankSelect",
+      "VoiceMove": "TeslaTankMove",
+      "VoiceAttack": "TeslaTankAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "TeslaTankMoveStart",
+      "Maxdebris": 3,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Destroyer",
+      "ThreatPosed": 40,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "DamageSmokeOffset": "100, 100, 275",
+      "Weight": 3.5,
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Accelerates": false,
+      "ZFudgeColumn": 8,
+      "ZFudgeTunnel": 13,
+      "Size": 3,
+      "ElitePrimary": "TankBoltE",
+      "Soylent": 1200,
+      "CrushSound": "TankCrush",
+      "BuildTimeMultiplier": 1.2
+    },
+    "raw_values": {
+      "UIName": "Name:TTNK",
+      "Name": "Tesla Tank",
+      "Prerequisite": "NAWEAP,NARADR",
+      "Primary": "TankBolt",
+      "Strength": "300",
+      "Category": "AFV",
+      "Armor": "heavy",
+      "Turret": "yes",
+      "IsTilter": "yes",
+      "TooBigToFitUnderBridge": "true",
+      "TechLevel": "10",
+      "Sight": "8",
+      "Speed": "6",
+      "CrateGoodie": "yes",
+      "Crusher": "yes",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "RequiredHouses": "Russians",
+      "Cost": "1200",
+      "Points": "25",
+      "ROT": "5",
+      "IsSelectableCombatant": "yes",
+      "AllowedToStartInMultiplayer": "no",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "TeslaTankSelect",
+      "VoiceMove": "TeslaTankMove",
+      "VoiceAttack": "TeslaTankAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "TeslaTankMoveStart",
+      "Maxdebris": "3",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Destroyer",
+      "ThreatPosed": "40",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "DamageSmokeOffset": "100, 100, 275",
+      "Weight": "3.5",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Accelerates": "false",
+      "ZFudgeColumn": "8",
+      "ZFudgeTunnel": "13",
+      "Size": "3",
+      "ElitePrimary": "TankBoltE",
+      "Soylent": "1200",
+      "CrushSound": "TankCrush",
+      "BuildTimeMultiplier": "1.2"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:TTNK",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8331,
+          "section": "TTNK",
+          "key": "UIName",
+          "value": "Name:TTNK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7016,
+            "section": "TTNK",
+            "key": "UIName",
+            "value": "Name:TTNK"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8328,
+            "section": "TTNK",
+            "key": "UIName",
+            "value": "Name:TTNK"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Tesla Tank",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8332,
+          "section": "TTNK",
+          "key": "Name",
+          "value": "Tesla Tank"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7017,
+            "section": "TTNK",
+            "key": "Name",
+            "value": "Tesla Tank"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8329,
+            "section": "TTNK",
+            "key": "Name",
+            "value": "Tesla Tank"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAWEAP,NARADR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8333,
+          "section": "TTNK",
+          "key": "Prerequisite",
+          "value": "NAWEAP,NARADR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7018,
+            "section": "TTNK",
+            "key": "Prerequisite",
+            "value": "NAWEAP,NARADR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8330,
+            "section": "TTNK",
+            "key": "Prerequisite",
+            "value": "NAWEAP,NARADR"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "TankBolt",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8334,
+          "section": "TTNK",
+          "key": "Primary",
+          "value": "TankBolt"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7019,
+            "section": "TTNK",
+            "key": "Primary",
+            "value": "TankBolt"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8331,
+            "section": "TTNK",
+            "key": "Primary",
+            "value": "TankBolt"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "300",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8335,
+          "section": "TTNK",
+          "key": "Strength",
+          "value": "300"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7020,
+            "section": "TTNK",
+            "key": "Strength",
+            "value": "300"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8332,
+            "section": "TTNK",
+            "key": "Strength",
+            "value": "300"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8336,
+          "section": "TTNK",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7021,
+            "section": "TTNK",
+            "key": "Category",
+            "value": "AFV"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8333,
+            "section": "TTNK",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8337,
+          "section": "TTNK",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7022,
+            "section": "TTNK",
+            "key": "Armor",
+            "value": "heavy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8334,
+            "section": "TTNK",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8338,
+          "section": "TTNK",
+          "key": "Turret",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7023,
+            "section": "TTNK",
+            "key": "Turret",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8335,
+            "section": "TTNK",
+            "key": "Turret",
+            "value": "yes"
+          }
+        ]
+      },
+      "IsTilter": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8339,
+          "section": "TTNK",
+          "key": "IsTilter",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7024,
+            "section": "TTNK",
+            "key": "IsTilter",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8336,
+            "section": "TTNK",
+            "key": "IsTilter",
+            "value": "yes"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8340,
+          "section": "TTNK",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7025,
+            "section": "TTNK",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8337,
+            "section": "TTNK",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8341,
+          "section": "TTNK",
+          "key": "TechLevel",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7026,
+            "section": "TTNK",
+            "key": "TechLevel",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8338,
+            "section": "TTNK",
+            "key": "TechLevel",
+            "value": "10"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8342,
+          "section": "TTNK",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7027,
+            "section": "TTNK",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8339,
+            "section": "TTNK",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8343,
+          "section": "TTNK",
+          "key": "Speed",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7028,
+            "section": "TTNK",
+            "key": "Speed",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8340,
+            "section": "TTNK",
+            "key": "Speed",
+            "value": "6"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8344,
+          "section": "TTNK",
+          "key": "CrateGoodie",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7029,
+            "section": "TTNK",
+            "key": "CrateGoodie",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8341,
+            "section": "TTNK",
+            "key": "CrateGoodie",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8345,
+          "section": "TTNK",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7030,
+            "section": "TTNK",
+            "key": "Crusher",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8342,
+            "section": "TTNK",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8346,
+          "section": "TTNK",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7031,
+            "section": "TTNK",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8343,
+            "section": "TTNK",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "RequiredHouses": {
+        "value": "Russians",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8347,
+          "section": "TTNK",
+          "key": "RequiredHouses",
+          "value": "Russians"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7032,
+            "section": "TTNK",
+            "key": "RequiredHouses",
+            "value": "Russians"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8344,
+            "section": "TTNK",
+            "key": "RequiredHouses",
+            "value": "Russians"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8348,
+          "section": "TTNK",
+          "key": "Cost",
+          "value": "1200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7033,
+            "section": "TTNK",
+            "key": "Cost",
+            "value": "1200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8345,
+            "section": "TTNK",
+            "key": "Cost",
+            "value": "1200"
+          }
+        ]
+      },
+      "Points": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8350,
+          "section": "TTNK",
+          "key": "Points",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7034,
+            "section": "TTNK",
+            "key": "Points",
+            "value": "25"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8347,
+            "section": "TTNK",
+            "key": "Points",
+            "value": "25"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8351,
+          "section": "TTNK",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7035,
+            "section": "TTNK",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8348,
+            "section": "TTNK",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8352,
+          "section": "TTNK",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7036,
+            "section": "TTNK",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8349,
+            "section": "TTNK",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8353,
+          "section": "TTNK",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7037,
+            "section": "TTNK",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8350,
+            "section": "TTNK",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8354,
+          "section": "TTNK",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7038,
+            "section": "TTNK",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8351,
+            "section": "TTNK",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "TeslaTankSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8355,
+          "section": "TTNK",
+          "key": "VoiceSelect",
+          "value": "TeslaTankSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7039,
+            "section": "TTNK",
+            "key": "VoiceSelect",
+            "value": "GenSovVehicleSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8352,
+            "section": "TTNK",
+            "key": "VoiceSelect",
+            "value": "TeslaTankSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "TeslaTankMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8356,
+          "section": "TTNK",
+          "key": "VoiceMove",
+          "value": "TeslaTankMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7040,
+            "section": "TTNK",
+            "key": "VoiceMove",
+            "value": "GenSovVehicleMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8353,
+            "section": "TTNK",
+            "key": "VoiceMove",
+            "value": "TeslaTankMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "TeslaTankAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8357,
+          "section": "TTNK",
+          "key": "VoiceAttack",
+          "value": "TeslaTankAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7041,
+            "section": "TTNK",
+            "key": "VoiceAttack",
+            "value": "GenSovVehicleAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8354,
+            "section": "TTNK",
+            "key": "VoiceAttack",
+            "value": "TeslaTankAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8359,
+          "section": "TTNK",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7042,
+            "section": "TTNK",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8356,
+            "section": "TTNK",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8360,
+          "section": "TTNK",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7043,
+            "section": "TTNK",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8357,
+            "section": "TTNK",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "TeslaTankMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8361,
+          "section": "TTNK",
+          "key": "MoveSound",
+          "value": "TeslaTankMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7044,
+            "section": "TTNK",
+            "key": "MoveSound",
+            "value": "TeslaTankMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8358,
+            "section": "TTNK",
+            "key": "MoveSound",
+            "value": "TeslaTankMoveStart"
+          }
+        ]
+      },
+      "Maxdebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8362,
+          "section": "TTNK",
+          "key": "Maxdebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7045,
+            "section": "TTNK",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8359,
+            "section": "TTNK",
+            "key": "Maxdebris",
+            "value": "3"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8363,
+          "section": "TTNK",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7046,
+            "section": "TTNK",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8360,
+            "section": "TTNK",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Destroyer",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8365,
+          "section": "TTNK",
+          "key": "MovementZone",
+          "value": "Destroyer"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7047,
+            "section": "TTNK",
+            "key": "MovementZone",
+            "value": "Destroyer"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8362,
+            "section": "TTNK",
+            "key": "MovementZone",
+            "value": "Destroyer"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "40",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8366,
+          "section": "TTNK",
+          "key": "ThreatPosed",
+          "value": "40"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7048,
+            "section": "TTNK",
+            "key": "ThreatPosed",
+            "value": "40"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8363,
+            "section": "TTNK",
+            "key": "ThreatPosed",
+            "value": "40"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8367,
+          "section": "TTNK",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7049,
+            "section": "TTNK",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8364,
+            "section": "TTNK",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "100, 100, 275",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8368,
+          "section": "TTNK",
+          "key": "DamageSmokeOffset",
+          "value": "100, 100, 275"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7050,
+            "section": "TTNK",
+            "key": "DamageSmokeOffset",
+            "value": "100, 100, 275"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8365,
+            "section": "TTNK",
+            "key": "DamageSmokeOffset",
+            "value": "100, 100, 275"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "3.5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8369,
+          "section": "TTNK",
+          "key": "Weight",
+          "value": "3.5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7051,
+            "section": "TTNK",
+            "key": "Weight",
+            "value": "3.5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8366,
+            "section": "TTNK",
+            "key": "Weight",
+            "value": "3.5"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8370,
+          "section": "TTNK",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7052,
+            "section": "TTNK",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8367,
+            "section": "TTNK",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8371,
+          "section": "TTNK",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7053,
+            "section": "TTNK",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8368,
+            "section": "TTNK",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8372,
+          "section": "TTNK",
+          "key": "Accelerates",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7054,
+            "section": "TTNK",
+            "key": "Accelerates",
+            "value": "false"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8369,
+            "section": "TTNK",
+            "key": "Accelerates",
+            "value": "false"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8373,
+          "section": "TTNK",
+          "key": "ZFudgeColumn",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7055,
+            "section": "TTNK",
+            "key": "ZFudgeColumn",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8370,
+            "section": "TTNK",
+            "key": "ZFudgeColumn",
+            "value": "8"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8374,
+          "section": "TTNK",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7056,
+            "section": "TTNK",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8371,
+            "section": "TTNK",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "Size": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8375,
+          "section": "TTNK",
+          "key": "Size",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7057,
+            "section": "TTNK",
+            "key": "Size",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8372,
+            "section": "TTNK",
+            "key": "Size",
+            "value": "3"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "TankBoltE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8376,
+          "section": "TTNK",
+          "key": "ElitePrimary",
+          "value": "TankBoltE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7058,
+            "section": "TTNK",
+            "key": "ElitePrimary",
+            "value": "TankBoltE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8373,
+            "section": "TTNK",
+            "key": "ElitePrimary",
+            "value": "TankBoltE"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "1200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8349,
+          "section": "TTNK",
+          "key": "Soylent",
+          "value": "1200"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8346,
+            "section": "TTNK",
+            "key": "Soylent",
+            "value": "1200"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8358,
+          "section": "TTNK",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8355,
+            "section": "TTNK",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      },
+      "BuildTimeMultiplier": {
+        "value": "1.2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8377,
+          "section": "TTNK",
+          "key": "BuildTimeMultiplier",
+          "value": "1.2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8374,
+            "section": "TTNK",
+            "key": "BuildTimeMultiplier",
+            "value": "1.3"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true,
+      "Remapable": true,
+      "Cameo": "TTNKICON",
+      "AltCameo": "TTNKUICO",
+      "PrimaryFireFLH": "60,0,100",
+      "ElitePrimaryFireFLH": "60,0,100"
+    },
+    "raw_values": {
+      "Voxel": "yes",
+      "Remapable": "yes",
+      "Cameo": "TTNKICON",
+      "AltCameo": "TTNKUICO",
+      "PrimaryFireFLH": "60,0,100",
+      "ElitePrimaryFireFLH": "60,0,100"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 855,
+          "section": "TTNK",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 616,
+            "section": "TTNK",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 856,
+          "section": "TTNK",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 617,
+            "section": "TTNK",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "TTNKICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 857,
+          "section": "TTNK",
+          "key": "Cameo",
+          "value": "TTNKICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 618,
+            "section": "TTNK",
+            "key": "Cameo",
+            "value": "TTNKICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "TTNKUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 858,
+          "section": "TTNK",
+          "key": "AltCameo",
+          "value": "TTNKUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 619,
+            "section": "TTNK",
+            "key": "AltCameo",
+            "value": "TTNKUICO"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "60,0,100",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 859,
+          "section": "TTNK",
+          "key": "PrimaryFireFLH",
+          "value": "60,0,100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 620,
+            "section": "TTNK",
+            "key": "PrimaryFireFLH",
+            "value": "60,0,100"
+          }
+        ]
+      },
+      "ElitePrimaryFireFLH": {
+        "value": "60,0,100",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 860,
+          "section": "TTNK",
+          "key": "ElitePrimaryFireFLH",
+          "value": "60,0,100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 621,
+            "section": "TTNK",
+            "key": "ElitePrimaryFireFLH",
+            "value": "60,0,100"
+          }
+        ]
+      }
+    }
+  }
+}

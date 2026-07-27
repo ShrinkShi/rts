@@ -29,7 +29,8 @@ const COMMAND_DEFINITIONS = {
     "building_attack": {"name": "攻击", "effect": "命令防御建筑攻击指定敌方目标。", "hotkey": "A", "icon": "attack"},
     "building_stop": {"name": "停止", "effect": "停止防御建筑当前攻击并暂停自动索敌，重新下达攻击命令后恢复。", "hotkey": "S", "icon": "stop"},
     "force_attack": {"name": "强制攻击", "effect": "攻击指定地面、树木、矿石或其他可破坏目标。", "hotkey": "Ctrl+A", "icon": "attack"},
-    "behavior": {"name": "智能逻辑", "effect": "打开单位智能逻辑面板，配置警戒、自动攻击、追击和友军支援。", "hotkey": "G", "icon": "hold"}
+    "behavior": {"name": "智能逻辑", "effect": "打开单位智能逻辑面板，配置警戒、自动攻击、追击和友军支援。", "hotkey": "G", "icon": "hold"},
+    "deploy": {"name": "部署/解除部署", "effect": "美国大兵部署沙袋重机枪阵地，提升射程和射速；再次使用解除部署。", "hotkey": "D", "icon": "deploy"}
 }
 
 const SIDE_WIDTH = 282.0
@@ -65,6 +66,8 @@ var category_name_label
 var active_category = "primary"
 var sidebar_tool_buttons = {}
 var behavior_panel
+var ai_debug_toggle: CheckButton
+var reveal_toggle: CheckButton
 
 func setup(next_match, map_ref):
     match_ref = next_match
@@ -155,11 +158,25 @@ func _build_top_bar():
     top_row.add_child(objective_title)
 
     var controls_hint = Label.new()
-    controls_hint.text = "F2 全选作战单位  ·  Shift 路径点"
+    controls_hint.text = "F2 全选  ·  F8 AI调试  ·  F9 全图"
     controls_hint.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
     controls_hint.add_theme_font_size_override("font_size", 11)
     controls_hint.add_theme_color_override("font_color", Color("#8099A5"))
     top_row.add_child(controls_hint)
+
+    ai_debug_toggle = CheckButton.new()
+    ai_debug_toggle.text = "AI调试"
+    ai_debug_toggle.focus_mode = Control.FOCUS_NONE
+    ai_debug_toggle.tooltip_text = "显示电脑资金、建造和生产状态（F8）"
+    ai_debug_toggle.toggled.connect(func(value): match_ref.toggle_ai_debug(value))
+    top_row.add_child(ai_debug_toggle)
+
+    reveal_toggle = CheckButton.new()
+    reveal_toggle.text = "全图"
+    reveal_toggle.focus_mode = Control.FOCUS_NONE
+    reveal_toggle.tooltip_text = "测试用全图视野（F9）"
+    reveal_toggle.toggled.connect(func(value): match_ref.toggle_reveal_all(value))
+    top_row.add_child(reveal_toggle)
 
     fps_label = Label.new()
     fps_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
@@ -176,6 +193,12 @@ func _build_top_bar():
     pause.add_theme_font_size_override("font_size", 12)
     pause.pressed.connect(func(): pause_requested.emit())
     top_row.add_child(pause)
+
+func set_debug_toggles(ai_debug_enabled: bool, reveal_all_enabled: bool) -> void:
+    if is_instance_valid(ai_debug_toggle):
+        ai_debug_toggle.set_pressed_no_signal(ai_debug_enabled)
+    if is_instance_valid(reveal_toggle):
+        reveal_toggle.set_pressed_no_signal(reveal_all_enabled)
 
 func _build_production_sidebar():
     var side = PanelContainer.new()
@@ -320,7 +343,16 @@ func _add_production_category(page_stack, category_id, ids, kind):
         grid_box.add_child(empty)
         return
     for id_value in ids:
-        var data = GameConfig.buildings.get(id_value, {}) if kind == "structure" else GameConfig.units.get(id_value, {})
+        var source_data: Dictionary = GameConfig.buildings.get(id_value, {}) if kind == "structure" else GameConfig.units.get(id_value, {})
+        var data: Dictionary = source_data.duplicate(true)
+        var faction_id: String = str(match_ref.get_player_data(0).get("faction", "union"))
+        var profile_kind: String = "buildings" if kind == "structure" else "units"
+        var ra2_profile: Dictionary = RA2RuntimeDatabase.get_profile(profile_kind, faction_id, str(id_value))
+        var ra2_id: String = str(ra2_profile.get("ra2_id", "")).to_upper()
+        if not ra2_id.is_empty():
+            data["ra2_id"] = ra2_id
+            data["name"] = RA2RuntimeDatabase.display_name(ra2_id)
+            data["ra2_team_color"] = match_ref.get_player_color(0).to_html(false)
         var tile = ProductionTile.new()
         tile.setup(kind, id_value, data)
         tile.tooltip_text = _production_tooltip(kind, id_value, data)
@@ -480,6 +512,17 @@ func _process(delta):
         info_refresh_timer = 0.12
         _refresh_selection_info()
 
+func _runtime_production_name(kind: String, id_value: String) -> String:
+    if not is_instance_valid(match_ref):
+        return id_value
+    var faction_id: String = str(match_ref.get_player_data(0).get("faction", "union"))
+    var profile_kind: String = "buildings" if kind == "structure" else "units"
+    var ra2_id: String = RA2RuntimeDatabase.resolve_entity_id(profile_kind, faction_id, id_value)
+    if not ra2_id.is_empty():
+        return RA2RuntimeDatabase.display_name(ra2_id)
+    var source: Dictionary = GameConfig.buildings.get(id_value, {}) if kind == "structure" else GameConfig.units.get(id_value, {})
+    return str(source.get("name", id_value))
+
 func _update_build_status():
     var lines = []
     var highlighted = false
@@ -488,11 +531,11 @@ func _update_build_status():
         var job = match_ref.get_structure_job(category)
         var category_name = "主要" if category == "primary" else "防御"
         if ready_id != "":
-            var name_value = str(GameConfig.buildings.get(ready_id, {}).get("name", ready_id))
+            var name_value: String = _runtime_production_name("structure", ready_id)
             lines.append("%s建筑就绪：%s" % [category_name, name_value])
             highlighted = true
         elif not job.is_empty():
-            var name_value = str(GameConfig.buildings.get(str(job.get("id", "")), {}).get("name", job.get("id", "")))
+            var name_value: String = _runtime_production_name("structure", str(job.get("id", "")))
             var progress = int(clamp(float(job.get("progress", 0.0)) / max(0.01, float(job.get("duration", 1.0))), 0.0, 1.0) * 100.0)
             lines.append("%s%s：%s %d%%" % [category_name, "暂停" if bool(job.get("paused", false)) else "建造", name_value, progress])
         else:
@@ -552,6 +595,7 @@ func _selection_command_signature():
     var has_mobile = false
     var has_producer = false
     var has_defense = false
+    var has_deployable = false
     var has_other = false
     for entity in current_selection:
         if not is_instance_valid(entity):
@@ -566,6 +610,8 @@ func _selection_command_signature():
                 has_harvester = true
             elif entity.is_combat_unit():
                 has_combat = true
+                if entity.has_method("can_deploy") and entity.can_deploy():
+                    has_deployable = true
         elif entity.has_method("is_production_building") and entity.is_production_building():
             has_producer = true
         elif entity.has_method("is_defense_building") and entity.is_defense_building():
@@ -576,7 +622,7 @@ func _selection_command_signature():
     # controllable role. Combat takes priority; harvest is shown only for a
     # pure harvester selection, so a mixed group never receives a fake skill.
     if has_combat:
-        return "combat"
+        return "deploy_combat" if has_deployable else "combat"
     if has_mobile and has_harvester and not has_other and not has_producer:
         return "harvester"
     if has_mobile:
@@ -589,6 +635,8 @@ func _selection_command_signature():
 
 func _skills_for_signature(signature):
     match signature:
+        "deploy_combat":
+            return ["move", "attack_move", "stop", "hold", "deploy", "patrol", "force_attack", "behavior"]
         "combat":
             return ["move", "attack_move", "stop", "hold", "patrol", "force_attack", "behavior"]
         "harvester":
@@ -641,7 +689,7 @@ func set_command_mode(mode):
     _update_command_button_states()
 
 func _refresh_selection_info():
-    current_selection = current_selection.filter(func(entity): return is_instance_valid(entity))
+    current_selection = current_selection.filter(func(candidate): return is_instance_valid(candidate))
     if current_selection.is_empty():
         selection_label.text = "未选择单位"
         info_label.text = "选择单位或建筑后显示名称、类型、护甲、武器、移动速度、经验、生命和护盾等资料。"
@@ -656,7 +704,7 @@ func _refresh_selection_info():
             var data = {}
             if entity.has_method("is_movable_unit"):
                 id_value = str(entity.unit_id)
-                data = GameConfig.units.get(id_value, {})
+                data = entity.stats
             elif entity.has_method("is_tree_entity") and entity.is_tree_entity():
                 id_value = "tree"
                 data = entity.stats
@@ -665,7 +713,7 @@ func _refresh_selection_info():
                 data = entity.stats
             else:
                 id_value = str(entity.building_id)
-                data = GameConfig.buildings.get(id_value, {})
+                data = entity.stats
             var name_value = str(data.get("name", id_value))
             counts[name_value] = int(counts.get(name_value, 0)) + 1
             total_hp += float(entity.hp)

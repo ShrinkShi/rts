@@ -1,0 +1,2712 @@
+{
+  "id": "YATECH",
+  "category": "building",
+  "name_token": "Name:Yblab",
+  "art_id": "YATECH",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YAWEAP",
+    "YACNST",
+    "RADAR"
+  ],
+  "tech_level": 8,
+  "cost": 2000,
+  "strength": 500,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "YATECH",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 6041,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygtech.shp",
+          "folder": "genermd",
+          "filename": "ygtech.shp",
+          "stem": "ygtech",
+          "extension": ".shp",
+          "size": 50424,
+          "sha1": "c4f527aedb01d0eab1bf3412ef2b9a68e0aee506"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 11262,
+          "pack": "ra2md",
+          "relative_path": "snowmd/yatech.shp",
+          "folder": "snowmd",
+          "filename": "yatech.shp",
+          "stem": "yatech",
+          "extension": ".shp",
+          "size": 50184,
+          "sha1": "22ab07622e28503f4995e5ca8313653d2f66fe90"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 6041,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygtech.shp",
+          "folder": "genermd",
+          "filename": "ygtech.shp",
+          "stem": "ygtech",
+          "extension": ".shp",
+          "size": 50424,
+          "sha1": "c4f527aedb01d0eab1bf3412ef2b9a68e0aee506"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6041,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygtech.shp",
+          "folder": "genermd",
+          "filename": "ygtech.shp",
+          "stem": "ygtech",
+          "extension": ".shp",
+          "size": 50424,
+          "sha1": "c4f527aedb01d0eab1bf3412ef2b9a68e0aee506"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 6041,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygtech.shp",
+          "folder": "genermd",
+          "filename": "ygtech.shp",
+          "stem": "ygtech",
+          "extension": ".shp",
+          "size": 50424,
+          "sha1": "c4f527aedb01d0eab1bf3412ef2b9a68e0aee506"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 6041,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygtech.shp",
+          "folder": "genermd",
+          "filename": "ygtech.shp",
+          "stem": "ygtech",
+          "extension": ".shp",
+          "size": 50424,
+          "sha1": "c4f527aedb01d0eab1bf3412ef2b9a68e0aee506"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "Buildup": {
+        "temperate": {
+          "art_id": "YATECHMK",
+          "image": "YATECHMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6043,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtechmk.shp",
+            "folder": "genermd",
+            "filename": "ygtechmk.shp",
+            "stem": "ygtechmk",
+            "extension": ".shp",
+            "size": 208128,
+            "sha1": "89cdb7bccbde0f06f57dc2ff7c291c25afd49ca3"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "YATECHMK",
+          "image": "YATECHMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11264,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yatechmk.shp",
+            "folder": "snowmd",
+            "filename": "yatechmk.shp",
+            "stem": "yatechmk",
+            "extension": ".shp",
+            "size": 208128,
+            "sha1": "d559bdc44afa7e6d90a4e58dfa2a04eaf13c0c97"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "YATECHMK",
+          "image": "YATECHMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6043,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtechmk.shp",
+            "folder": "genermd",
+            "filename": "ygtechmk.shp",
+            "stem": "ygtechmk",
+            "extension": ".shp",
+            "size": 208128,
+            "sha1": "89cdb7bccbde0f06f57dc2ff7c291c25afd49ca3"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "YATECHMK",
+          "image": "YATECHMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6043,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtechmk.shp",
+            "folder": "genermd",
+            "filename": "ygtechmk.shp",
+            "stem": "ygtechmk",
+            "extension": ".shp",
+            "size": 208128,
+            "sha1": "89cdb7bccbde0f06f57dc2ff7c291c25afd49ca3"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "YATECHMK",
+          "image": "YATECHMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6043,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtechmk.shp",
+            "folder": "genermd",
+            "filename": "ygtechmk.shp",
+            "stem": "ygtechmk",
+            "extension": ".shp",
+            "size": 208128,
+            "sha1": "89cdb7bccbde0f06f57dc2ff7c291c25afd49ca3"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "YATECHMK",
+          "image": "YATECHMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6043,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtechmk.shp",
+            "folder": "genermd",
+            "filename": "ygtechmk.shp",
+            "stem": "ygtechmk",
+            "extension": ".shp",
+            "size": 208128,
+            "sha1": "89cdb7bccbde0f06f57dc2ff7c291c25afd49ca3"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        }
+      },
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "YATECH_A",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6042,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtech_a.shp",
+            "folder": "genermd",
+            "filename": "ygtech_a.shp",
+            "stem": "ygtech_a",
+            "extension": ".shp",
+            "size": 235616,
+            "sha1": "c0cad4a5bf1a54bd4b36ce97fc20939fd1e56c71"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1194,
+                "section": "YATECH_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1195,
+                "section": "YATECH_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1196,
+                "section": "YATECH_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1197,
+                "section": "YATECH_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1198,
+                "section": "YATECH_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1199,
+                "section": "YATECH_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1200,
+                "section": "YATECH_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50
+        },
+        "snow": {
+          "art_id": "YATECH_A",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11263,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yatech_a.shp",
+            "folder": "snowmd",
+            "filename": "yatech_a.shp",
+            "stem": "yatech_a",
+            "extension": ".shp",
+            "size": 235288,
+            "sha1": "65818bc0dc1f5f0e45401a1e34281ee7b6916407"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1194,
+                "section": "YATECH_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1195,
+                "section": "YATECH_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1196,
+                "section": "YATECH_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1197,
+                "section": "YATECH_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1198,
+                "section": "YATECH_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1199,
+                "section": "YATECH_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1200,
+                "section": "YATECH_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50
+        },
+        "urban": {
+          "art_id": "YATECH_A",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6042,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtech_a.shp",
+            "folder": "genermd",
+            "filename": "ygtech_a.shp",
+            "stem": "ygtech_a",
+            "extension": ".shp",
+            "size": 235616,
+            "sha1": "c0cad4a5bf1a54bd4b36ce97fc20939fd1e56c71"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1194,
+                "section": "YATECH_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1195,
+                "section": "YATECH_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1196,
+                "section": "YATECH_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1197,
+                "section": "YATECH_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1198,
+                "section": "YATECH_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1199,
+                "section": "YATECH_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1200,
+                "section": "YATECH_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50
+        },
+        "desert": {
+          "art_id": "YATECH_A",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6042,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtech_a.shp",
+            "folder": "genermd",
+            "filename": "ygtech_a.shp",
+            "stem": "ygtech_a",
+            "extension": ".shp",
+            "size": 235616,
+            "sha1": "c0cad4a5bf1a54bd4b36ce97fc20939fd1e56c71"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1194,
+                "section": "YATECH_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1195,
+                "section": "YATECH_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1196,
+                "section": "YATECH_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1197,
+                "section": "YATECH_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1198,
+                "section": "YATECH_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1199,
+                "section": "YATECH_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1200,
+                "section": "YATECH_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50
+        },
+        "lunar": {
+          "art_id": "YATECH_A",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6042,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtech_a.shp",
+            "folder": "genermd",
+            "filename": "ygtech_a.shp",
+            "stem": "ygtech_a",
+            "extension": ".shp",
+            "size": 235616,
+            "sha1": "c0cad4a5bf1a54bd4b36ce97fc20939fd1e56c71"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1194,
+                "section": "YATECH_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1195,
+                "section": "YATECH_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1196,
+                "section": "YATECH_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1197,
+                "section": "YATECH_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1198,
+                "section": "YATECH_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1199,
+                "section": "YATECH_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1200,
+                "section": "YATECH_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50
+        },
+        "newurban": {
+          "art_id": "YATECH_A",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6042,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtech_a.shp",
+            "folder": "genermd",
+            "filename": "ygtech_a.shp",
+            "stem": "ygtech_a",
+            "extension": ".shp",
+            "size": 235616,
+            "sha1": "c0cad4a5bf1a54bd4b36ce97fc20939fd1e56c71"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1194,
+                "section": "YATECH_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1195,
+                "section": "YATECH_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1196,
+                "section": "YATECH_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1197,
+                "section": "YATECH_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1198,
+                "section": "YATECH_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1199,
+                "section": "YATECH_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1200,
+                "section": "YATECH_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "YATECH_AD",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6042,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtech_a.shp",
+            "folder": "genermd",
+            "filename": "ygtech_a.shp",
+            "stem": "ygtech_a",
+            "extension": ".shp",
+            "size": 235616,
+            "sha1": "c0cad4a5bf1a54bd4b36ce97fc20939fd1e56c71"
+          },
+          "LoopStart": 33,
+          "LoopEnd": 63,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YATECH_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1204,
+                "section": "YATECH_AD",
+                "key": "Image",
+                "value": "YATECH_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1205,
+                "section": "YATECH_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1206,
+                "section": "YATECH_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1207,
+                "section": "YATECH_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "63",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1208,
+                "section": "YATECH_AD",
+                "key": "LoopEnd",
+                "value": "63"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1209,
+                "section": "YATECH_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1210,
+                "section": "YATECH_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1211,
+                "section": "YATECH_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -50
+        },
+        "snow": {
+          "art_id": "YATECH_AD",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11263,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yatech_a.shp",
+            "folder": "snowmd",
+            "filename": "yatech_a.shp",
+            "stem": "yatech_a",
+            "extension": ".shp",
+            "size": 235288,
+            "sha1": "65818bc0dc1f5f0e45401a1e34281ee7b6916407"
+          },
+          "LoopStart": 33,
+          "LoopEnd": 63,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YATECH_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1204,
+                "section": "YATECH_AD",
+                "key": "Image",
+                "value": "YATECH_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1205,
+                "section": "YATECH_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1206,
+                "section": "YATECH_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1207,
+                "section": "YATECH_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "63",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1208,
+                "section": "YATECH_AD",
+                "key": "LoopEnd",
+                "value": "63"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1209,
+                "section": "YATECH_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1210,
+                "section": "YATECH_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1211,
+                "section": "YATECH_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -50
+        },
+        "urban": {
+          "art_id": "YATECH_AD",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6042,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtech_a.shp",
+            "folder": "genermd",
+            "filename": "ygtech_a.shp",
+            "stem": "ygtech_a",
+            "extension": ".shp",
+            "size": 235616,
+            "sha1": "c0cad4a5bf1a54bd4b36ce97fc20939fd1e56c71"
+          },
+          "LoopStart": 33,
+          "LoopEnd": 63,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YATECH_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1204,
+                "section": "YATECH_AD",
+                "key": "Image",
+                "value": "YATECH_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1205,
+                "section": "YATECH_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1206,
+                "section": "YATECH_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1207,
+                "section": "YATECH_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "63",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1208,
+                "section": "YATECH_AD",
+                "key": "LoopEnd",
+                "value": "63"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1209,
+                "section": "YATECH_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1210,
+                "section": "YATECH_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1211,
+                "section": "YATECH_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -50
+        },
+        "desert": {
+          "art_id": "YATECH_AD",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6042,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtech_a.shp",
+            "folder": "genermd",
+            "filename": "ygtech_a.shp",
+            "stem": "ygtech_a",
+            "extension": ".shp",
+            "size": 235616,
+            "sha1": "c0cad4a5bf1a54bd4b36ce97fc20939fd1e56c71"
+          },
+          "LoopStart": 33,
+          "LoopEnd": 63,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YATECH_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1204,
+                "section": "YATECH_AD",
+                "key": "Image",
+                "value": "YATECH_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1205,
+                "section": "YATECH_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1206,
+                "section": "YATECH_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1207,
+                "section": "YATECH_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "63",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1208,
+                "section": "YATECH_AD",
+                "key": "LoopEnd",
+                "value": "63"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1209,
+                "section": "YATECH_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1210,
+                "section": "YATECH_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1211,
+                "section": "YATECH_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -50
+        },
+        "lunar": {
+          "art_id": "YATECH_AD",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6042,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtech_a.shp",
+            "folder": "genermd",
+            "filename": "ygtech_a.shp",
+            "stem": "ygtech_a",
+            "extension": ".shp",
+            "size": 235616,
+            "sha1": "c0cad4a5bf1a54bd4b36ce97fc20939fd1e56c71"
+          },
+          "LoopStart": 33,
+          "LoopEnd": 63,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YATECH_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1204,
+                "section": "YATECH_AD",
+                "key": "Image",
+                "value": "YATECH_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1205,
+                "section": "YATECH_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1206,
+                "section": "YATECH_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1207,
+                "section": "YATECH_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "63",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1208,
+                "section": "YATECH_AD",
+                "key": "LoopEnd",
+                "value": "63"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1209,
+                "section": "YATECH_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1210,
+                "section": "YATECH_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1211,
+                "section": "YATECH_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -50
+        },
+        "newurban": {
+          "art_id": "YATECH_AD",
+          "image": "YATECH_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6042,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygtech_a.shp",
+            "folder": "genermd",
+            "filename": "ygtech_a.shp",
+            "stem": "ygtech_a",
+            "extension": ".shp",
+            "size": 235616,
+            "sha1": "c0cad4a5bf1a54bd4b36ce97fc20939fd1e56c71"
+          },
+          "LoopStart": 33,
+          "LoopEnd": 63,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YATECH_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1204,
+                "section": "YATECH_AD",
+                "key": "Image",
+                "value": "YATECH_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1205,
+                "section": "YATECH_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1206,
+                "section": "YATECH_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1207,
+                "section": "YATECH_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "63",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1208,
+                "section": "YATECH_AD",
+                "key": "LoopEnd",
+                "value": "63"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1209,
+                "section": "YATECH_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1210,
+                "section": "YATECH_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1211,
+                "section": "YATECH_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -50
+        }
+      }
+    },
+    "foundation": "3x2",
+    "height": 10,
+    "occupy_height": 4,
+    "damage_fire_offsets": [
+      [
+        -9.0,
+        43.0
+      ],
+      [
+        25.0,
+        54.0
+      ],
+      [
+        21.0,
+        -56.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:Yblab",
+      "Name": "Yuri Battle Lab",
+      "BuildCat": "Tech",
+      "Prerequisite": "YAWEAP,YACNST,RADAR",
+      "Strength": 500,
+      "Armor": "wood",
+      "TechLevel": 8,
+      "Adjacent": 2,
+      "Sight": 6,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": 2,
+      "Cost": 2000,
+      "Points": 85,
+      "Power": -100,
+      "Capturable": true,
+      "Crewed": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRS10LG",
+      "MaxDebris": 12,
+      "MinDebris": 6,
+      "ThreatPosed": 0,
+      "DamageSmokeOffset": "1500, 1055, 815",
+      "AIBuildThis": true,
+      "TogglePower": false,
+      "Spyable": true,
+      "ProtectWithWall": true,
+      "ImmuneToPsionics": false,
+      "SuperWeapon": "ForceShieldSpecial"
+    },
+    "raw_values": {
+      "UIName": "Name:Yblab",
+      "Name": "Yuri Battle Lab",
+      "BuildCat": "Tech",
+      "Prerequisite": "YAWEAP,YACNST,RADAR",
+      "Strength": "500",
+      "Armor": "wood",
+      "TechLevel": "8",
+      "Adjacent": "2",
+      "Sight": "6",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": "2",
+      "Cost": "2000",
+      "Points": "85",
+      "Power": "-100",
+      "Capturable": "true",
+      "Crewed": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRS10LG",
+      "MaxDebris": "12",
+      "MinDebris": "6",
+      "ThreatPosed": "0",
+      "DamageSmokeOffset": "1500, 1055, 815",
+      "AIBuildThis": "yes",
+      "TogglePower": "no",
+      "Spyable": "yes",
+      "ProtectWithWall": "yes",
+      "ImmuneToPsionics": "no",
+      "SuperWeapon": "ForceShieldSpecial"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:Yblab",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13463,
+          "section": "YATECH",
+          "key": "UIName",
+          "value": "Name:Yblab"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13456,
+            "section": "YATECH",
+            "key": "UIName",
+            "value": "Name:Yblab"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Yuri Battle Lab",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13464,
+          "section": "YATECH",
+          "key": "Name",
+          "value": "Yuri Battle Lab"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13457,
+            "section": "YATECH",
+            "key": "Name",
+            "value": "Yuri Battle Lab"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Tech",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13466,
+          "section": "YATECH",
+          "key": "BuildCat",
+          "value": "Tech"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13459,
+            "section": "YATECH",
+            "key": "BuildCat",
+            "value": "Tech"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YAWEAP,YACNST,RADAR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13467,
+          "section": "YATECH",
+          "key": "Prerequisite",
+          "value": "YAWEAP,YACNST,RADAR"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13460,
+            "section": "YATECH",
+            "key": "Prerequisite",
+            "value": "YAWEAP,YACNST,RADAR"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13468,
+          "section": "YATECH",
+          "key": "Strength",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13461,
+            "section": "YATECH",
+            "key": "Strength",
+            "value": "500"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13469,
+          "section": "YATECH",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13462,
+            "section": "YATECH",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13470,
+          "section": "YATECH",
+          "key": "TechLevel",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13463,
+            "section": "YATECH",
+            "key": "TechLevel",
+            "value": "8"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13471,
+          "section": "YATECH",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13464,
+            "section": "YATECH",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13472,
+          "section": "YATECH",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13465,
+            "section": "YATECH",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13473,
+          "section": "YATECH",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13466,
+            "section": "YATECH",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AIBasePlanningSide": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13474,
+          "section": "YATECH",
+          "key": "AIBasePlanningSide",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13467,
+            "section": "YATECH",
+            "key": "AIBasePlanningSide",
+            "value": "2"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13475,
+          "section": "YATECH",
+          "key": "Cost",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13468,
+            "section": "YATECH",
+            "key": "Cost",
+            "value": "2000"
+          }
+        ]
+      },
+      "Points": {
+        "value": "85",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13476,
+          "section": "YATECH",
+          "key": "Points",
+          "value": "85"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13469,
+            "section": "YATECH",
+            "key": "Points",
+            "value": "85"
+          }
+        ]
+      },
+      "Power": {
+        "value": "-100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13477,
+          "section": "YATECH",
+          "key": "Power",
+          "value": "-100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13470,
+            "section": "YATECH",
+            "key": "Power",
+            "value": "-100"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13478,
+          "section": "YATECH",
+          "key": "Capturable",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13471,
+            "section": "YATECH",
+            "key": "Capturable",
+            "value": "true"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13479,
+          "section": "YATECH",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13472,
+            "section": "YATECH",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13480,
+          "section": "YATECH",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13473,
+            "section": "YATECH",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRS10LG",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13481,
+          "section": "YATECH",
+          "key": "DebrisAnims",
+          "value": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRS10LG"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13474,
+            "section": "YATECH",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRS10LG"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "12",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13482,
+          "section": "YATECH",
+          "key": "MaxDebris",
+          "value": "12"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13475,
+            "section": "YATECH",
+            "key": "MaxDebris",
+            "value": "12"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13483,
+          "section": "YATECH",
+          "key": "MinDebris",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13476,
+            "section": "YATECH",
+            "key": "MinDebris",
+            "value": "6"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13484,
+          "section": "YATECH",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13477,
+            "section": "YATECH",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "1500, 1055, 815",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13486,
+          "section": "YATECH",
+          "key": "DamageSmokeOffset",
+          "value": "1500, 1055, 815"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13479,
+            "section": "YATECH",
+            "key": "DamageSmokeOffset",
+            "value": "1500, 1055, 815"
+          }
+        ]
+      },
+      "AIBuildThis": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13487,
+          "section": "YATECH",
+          "key": "AIBuildThis",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13480,
+            "section": "YATECH",
+            "key": "AIBuildThis",
+            "value": "yes"
+          }
+        ]
+      },
+      "TogglePower": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13488,
+          "section": "YATECH",
+          "key": "TogglePower",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13481,
+            "section": "YATECH",
+            "key": "TogglePower",
+            "value": "no"
+          }
+        ]
+      },
+      "Spyable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13489,
+          "section": "YATECH",
+          "key": "Spyable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13482,
+            "section": "YATECH",
+            "key": "Spyable",
+            "value": "yes"
+          }
+        ]
+      },
+      "ProtectWithWall": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13490,
+          "section": "YATECH",
+          "key": "ProtectWithWall",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13483,
+            "section": "YATECH",
+            "key": "ProtectWithWall",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13491,
+          "section": "YATECH",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13484,
+            "section": "YATECH",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "SuperWeapon": {
+        "value": "ForceShieldSpecial",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13492,
+          "section": "YATECH",
+          "key": "SuperWeapon",
+          "value": "ForceShieldSpecial"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13485,
+            "section": "YATECH",
+            "key": "SuperWeapon",
+            "value": "ForceShieldSpecial"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Image": "YATECH",
+      "Remapable": true,
+      "Normalized": true,
+      "Cameo": "YTCHICON",
+      "Height": 10,
+      "Foundation": "3x2",
+      "Buildup": "YATECHMK",
+      "DemandLoadBuildup": true,
+      "FreeBuildup": true,
+      "NewTheater": true,
+      "ActiveAnim": "YATECH_A",
+      "ActiveAnimDamaged": "YATECH_AD",
+      "ActiveAnimZAdjust": -50,
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 4,
+      "DamageFireOffset0": "-9,43",
+      "DamageFireOffset1": "25,54",
+      "DamageFireOffset2": "21,-56",
+      "AddOccupy1": "-3,-2",
+      "AddOccupy2": "-3,-3",
+      "AddOccupy3": "-4,-4",
+      "AddOccupy4": "-2,-3"
+    },
+    "raw_values": {
+      "Image": "YATECH",
+      "Remapable": "yes",
+      "Normalized": "yes",
+      "Cameo": "YTCHICON",
+      "Height": "10",
+      "Foundation": "3x2",
+      "Buildup": "YATECHMK",
+      "DemandLoadBuildup": "true",
+      "FreeBuildup": "true",
+      "NewTheater": "yes",
+      "ActiveAnim": "YATECH_A",
+      "ActiveAnimDamaged": "YATECH_AD",
+      "ActiveAnimZAdjust": "-50",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "4",
+      "DamageFireOffset0": "-9,43",
+      "DamageFireOffset1": "25,54",
+      "DamageFireOffset2": "21,-56",
+      "AddOccupy1": "-3,-2",
+      "AddOccupy2": "-3,-3",
+      "AddOccupy3": "-4,-4",
+      "AddOccupy4": "-2,-3"
+    },
+    "provenance": {
+      "Image": {
+        "value": "YATECH",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1169,
+          "section": "YATECH",
+          "key": "Image",
+          "value": "YATECH"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1170,
+          "section": "YATECH",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1171,
+          "section": "YATECH",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Cameo": {
+        "value": "YTCHICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1172,
+          "section": "YATECH",
+          "key": "Cameo",
+          "value": "YTCHICON"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1173,
+          "section": "YATECH",
+          "key": "Height",
+          "value": "10"
+        },
+        "history": []
+      },
+      "Foundation": {
+        "value": "3x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1174,
+          "section": "YATECH",
+          "key": "Foundation",
+          "value": "3x2"
+        },
+        "history": []
+      },
+      "Buildup": {
+        "value": "YATECHMK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1175,
+          "section": "YATECH",
+          "key": "Buildup",
+          "value": "YATECHMK"
+        },
+        "history": []
+      },
+      "DemandLoadBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1176,
+          "section": "YATECH",
+          "key": "DemandLoadBuildup",
+          "value": "true"
+        },
+        "history": []
+      },
+      "FreeBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1177,
+          "section": "YATECH",
+          "key": "FreeBuildup",
+          "value": "true"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1178,
+          "section": "YATECH",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "ActiveAnim": {
+        "value": "YATECH_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1179,
+          "section": "YATECH",
+          "key": "ActiveAnim",
+          "value": "YATECH_A"
+        },
+        "history": []
+      },
+      "ActiveAnimDamaged": {
+        "value": "YATECH_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1180,
+          "section": "YATECH",
+          "key": "ActiveAnimDamaged",
+          "value": "YATECH_AD"
+        },
+        "history": []
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-50",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1181,
+          "section": "YATECH",
+          "key": "ActiveAnimZAdjust",
+          "value": "-50"
+        },
+        "history": []
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1182,
+          "section": "YATECH",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1183,
+          "section": "YATECH",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1184,
+          "section": "YATECH",
+          "key": "OccupyHeight",
+          "value": "4"
+        },
+        "history": []
+      },
+      "DamageFireOffset0": {
+        "value": "-9,43",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1185,
+          "section": "YATECH",
+          "key": "DamageFireOffset0",
+          "value": "-9,43"
+        },
+        "history": []
+      },
+      "DamageFireOffset1": {
+        "value": "25,54",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1186,
+          "section": "YATECH",
+          "key": "DamageFireOffset1",
+          "value": "25,54"
+        },
+        "history": []
+      },
+      "DamageFireOffset2": {
+        "value": "21,-56",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1187,
+          "section": "YATECH",
+          "key": "DamageFireOffset2",
+          "value": "21,-56"
+        },
+        "history": []
+      },
+      "AddOccupy1": {
+        "value": "-3,-2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1188,
+          "section": "YATECH",
+          "key": "AddOccupy1",
+          "value": "-3,-2"
+        },
+        "history": []
+      },
+      "AddOccupy2": {
+        "value": "-3,-3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1189,
+          "section": "YATECH",
+          "key": "AddOccupy2",
+          "value": "-3,-3"
+        },
+        "history": []
+      },
+      "AddOccupy3": {
+        "value": "-4,-4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1190,
+          "section": "YATECH",
+          "key": "AddOccupy3",
+          "value": "-4,-4"
+        },
+        "history": []
+      },
+      "AddOccupy4": {
+        "value": "-2,-3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1191,
+          "section": "YATECH",
+          "key": "AddOccupy4",
+          "value": "-2,-3"
+        },
+        "history": []
+      }
+    }
+  }
+}

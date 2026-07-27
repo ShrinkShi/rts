@@ -1,0 +1,2367 @@
+{
+  "id": "CAPOWR",
+  "category": "building",
+  "name_token": "Name:CAPOWR",
+  "art_id": "CAPOWR",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 800,
+  "armor": "concrete",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAPOWR",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 8052,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgpowr.shp",
+          "folder": "isogenmd",
+          "filename": "cgpowr.shp",
+          "stem": "cgpowr",
+          "extension": ".shp",
+          "size": 29048,
+          "sha1": "b50daab2430508c6ec850bc578a57aa45372ee52"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 8868,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/capowr.shp",
+          "folder": "isosnomd",
+          "filename": "capowr.shp",
+          "stem": "capowr",
+          "extension": ".shp",
+          "size": 30112,
+          "sha1": "347cd95a3b857b25e61de08c7a15a769a2fb3c09"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 10593,
+          "pack": "ra2md",
+          "relative_path": "isourbmd/cupowr.shp",
+          "folder": "isourbmd",
+          "filename": "cupowr.shp",
+          "stem": "cupowr",
+          "extension": ".shp",
+          "size": 29048,
+          "sha1": "9c0e8bd2896bbaaa3615ff25d5dc2be0b13ceb9f"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 8052,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgpowr.shp",
+          "folder": "isogenmd",
+          "filename": "cgpowr.shp",
+          "stem": "cgpowr",
+          "extension": ".shp",
+          "size": 29048,
+          "sha1": "b50daab2430508c6ec850bc578a57aa45372ee52"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8052,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgpowr.shp",
+          "folder": "isogenmd",
+          "filename": "cgpowr.shp",
+          "stem": "cgpowr",
+          "extension": ".shp",
+          "size": 29048,
+          "sha1": "b50daab2430508c6ec850bc578a57aa45372ee52"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 10506,
+          "pack": "ra2md",
+          "relative_path": "isoubnmd/cnpowr.shp",
+          "folder": "isoubnmd",
+          "filename": "cnpowr.shp",
+          "stem": "cnpowr",
+          "extension": ".shp",
+          "size": 29048,
+          "sha1": "785cbde955cb280871a46608f47222ed4dff6dcf"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "CAPOWR_A",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8053,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgpowr_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgpowr_a.shp",
+            "stem": "cgpowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3444,
+                "section": "CAPOWR_A",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3445,
+                "section": "CAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3446,
+                "section": "CAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3447,
+                "section": "CAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3448,
+                "section": "CAPOWR_A",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3449,
+                "section": "CAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3450,
+                "section": "CAPOWR_A",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3451,
+                "section": "CAPOWR_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -40
+        },
+        "snow": {
+          "art_id": "CAPOWR_A",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8869,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/capowr_a.shp",
+            "folder": "isosnomd",
+            "filename": "capowr_a.shp",
+            "stem": "capowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3444,
+                "section": "CAPOWR_A",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3445,
+                "section": "CAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3446,
+                "section": "CAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3447,
+                "section": "CAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3448,
+                "section": "CAPOWR_A",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3449,
+                "section": "CAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3450,
+                "section": "CAPOWR_A",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3451,
+                "section": "CAPOWR_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -40
+        },
+        "urban": {
+          "art_id": "CAPOWR_A",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8053,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgpowr_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgpowr_a.shp",
+            "stem": "cgpowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3444,
+                "section": "CAPOWR_A",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3445,
+                "section": "CAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3446,
+                "section": "CAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3447,
+                "section": "CAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3448,
+                "section": "CAPOWR_A",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3449,
+                "section": "CAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3450,
+                "section": "CAPOWR_A",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3451,
+                "section": "CAPOWR_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -40
+        },
+        "desert": {
+          "art_id": "CAPOWR_A",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8053,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgpowr_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgpowr_a.shp",
+            "stem": "cgpowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3444,
+                "section": "CAPOWR_A",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3445,
+                "section": "CAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3446,
+                "section": "CAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3447,
+                "section": "CAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3448,
+                "section": "CAPOWR_A",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3449,
+                "section": "CAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3450,
+                "section": "CAPOWR_A",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3451,
+                "section": "CAPOWR_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -40
+        },
+        "lunar": {
+          "art_id": "CAPOWR_A",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8053,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgpowr_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgpowr_a.shp",
+            "stem": "cgpowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3444,
+                "section": "CAPOWR_A",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3445,
+                "section": "CAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3446,
+                "section": "CAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3447,
+                "section": "CAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3448,
+                "section": "CAPOWR_A",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3449,
+                "section": "CAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3450,
+                "section": "CAPOWR_A",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3451,
+                "section": "CAPOWR_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -40
+        },
+        "newurban": {
+          "art_id": "CAPOWR_A",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8053,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgpowr_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgpowr_a.shp",
+            "stem": "cgpowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3444,
+                "section": "CAPOWR_A",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3445,
+                "section": "CAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3446,
+                "section": "CAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3447,
+                "section": "CAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3448,
+                "section": "CAPOWR_A",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3449,
+                "section": "CAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3450,
+                "section": "CAPOWR_A",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3451,
+                "section": "CAPOWR_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -40
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "CAPOWR_AD",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8053,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgpowr_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgpowr_a.shp",
+            "stem": "cgpowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3455,
+                "section": "CAPOWR_AD",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3456,
+                "section": "CAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3457,
+                "section": "CAPOWR_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3458,
+                "section": "CAPOWR_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3459,
+                "section": "CAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3460,
+                "section": "CAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3461,
+                "section": "CAPOWR_AD",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3462,
+                "section": "CAPOWR_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -40
+        },
+        "snow": {
+          "art_id": "CAPOWR_AD",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8869,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/capowr_a.shp",
+            "folder": "isosnomd",
+            "filename": "capowr_a.shp",
+            "stem": "capowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3455,
+                "section": "CAPOWR_AD",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3456,
+                "section": "CAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3457,
+                "section": "CAPOWR_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3458,
+                "section": "CAPOWR_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3459,
+                "section": "CAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3460,
+                "section": "CAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3461,
+                "section": "CAPOWR_AD",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3462,
+                "section": "CAPOWR_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -40
+        },
+        "urban": {
+          "art_id": "CAPOWR_AD",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8053,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgpowr_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgpowr_a.shp",
+            "stem": "cgpowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3455,
+                "section": "CAPOWR_AD",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3456,
+                "section": "CAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3457,
+                "section": "CAPOWR_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3458,
+                "section": "CAPOWR_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3459,
+                "section": "CAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3460,
+                "section": "CAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3461,
+                "section": "CAPOWR_AD",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3462,
+                "section": "CAPOWR_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -40
+        },
+        "desert": {
+          "art_id": "CAPOWR_AD",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8053,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgpowr_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgpowr_a.shp",
+            "stem": "cgpowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3455,
+                "section": "CAPOWR_AD",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3456,
+                "section": "CAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3457,
+                "section": "CAPOWR_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3458,
+                "section": "CAPOWR_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3459,
+                "section": "CAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3460,
+                "section": "CAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3461,
+                "section": "CAPOWR_AD",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3462,
+                "section": "CAPOWR_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -40
+        },
+        "lunar": {
+          "art_id": "CAPOWR_AD",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8053,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgpowr_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgpowr_a.shp",
+            "stem": "cgpowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3455,
+                "section": "CAPOWR_AD",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3456,
+                "section": "CAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3457,
+                "section": "CAPOWR_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3458,
+                "section": "CAPOWR_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3459,
+                "section": "CAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3460,
+                "section": "CAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3461,
+                "section": "CAPOWR_AD",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3462,
+                "section": "CAPOWR_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -40
+        },
+        "newurban": {
+          "art_id": "CAPOWR_AD",
+          "image": "CAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8053,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgpowr_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgpowr_a.shp",
+            "stem": "cgpowr_a",
+            "extension": ".shp",
+            "size": 11472,
+            "sha1": "389f7b631bdf839b6b56b2ce305a99334db725bd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3455,
+                "section": "CAPOWR_AD",
+                "key": "Image",
+                "value": "CAPOWR_A"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3456,
+                "section": "CAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3457,
+                "section": "CAPOWR_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3458,
+                "section": "CAPOWR_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3459,
+                "section": "CAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3460,
+                "section": "CAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3461,
+                "section": "CAPOWR_AD",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3462,
+                "section": "CAPOWR_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -40
+        }
+      }
+    },
+    "foundation": "2x2",
+    "height": 6,
+    "occupy_height": 3,
+    "damage_fire_offsets": [
+      [
+        -3.0,
+        5.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CAPOWR",
+      "Name": "Tech Civilian Power Plant",
+      "TechLevel": -1,
+      "Strength": 800,
+      "Insignificant": true,
+      "Nominal": true,
+      "Sight": 6,
+      "Points": 5,
+      "Armor": "concrete",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "DebrisAnim": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg",
+      "DamageParticleSystems": "SmallGreySSys,BigGreySmokeSys",
+      "Capturable": true,
+      "CaptureEvaEvent": "EVA_TechBuildingCaptured",
+      "NeedsEngineer": true,
+      "Unsellable": true,
+      "Ammo": 5,
+      "LeaveRubble": true,
+      "Power": 200,
+      "RadarVisible": true
+    },
+    "raw_values": {
+      "UIName": "Name:CAPOWR",
+      "Name": "Tech Civilian Power Plant",
+      "TechLevel": "-1",
+      "Strength": "800",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "Sight": "6",
+      "Points": "5",
+      "Armor": "concrete",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "DebrisAnim": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg",
+      "DamageParticleSystems": "SmallGreySSys,BigGreySmokeSys",
+      "Capturable": "yes",
+      "CaptureEvaEvent": "EVA_TechBuildingCaptured",
+      "NeedsEngineer": "yes",
+      "Unsellable": "yes",
+      "Ammo": "5",
+      "LeaveRubble": "yes",
+      "Power": "200",
+      "RadarVisible": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CAPOWR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13957,
+          "section": "CAPOWR",
+          "key": "UIName",
+          "value": "Name:CAPOWR"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13950,
+            "section": "CAPOWR",
+            "key": "UIName",
+            "value": "Name:CAPOWR"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Tech Civilian Power Plant",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13958,
+          "section": "CAPOWR",
+          "key": "Name",
+          "value": "Tech Civilian Power Plant"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13951,
+            "section": "CAPOWR",
+            "key": "Name",
+            "value": "Tech Civilian Power Plant"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13959,
+          "section": "CAPOWR",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13952,
+            "section": "CAPOWR",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "800",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13960,
+          "section": "CAPOWR",
+          "key": "Strength",
+          "value": "800"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13953,
+            "section": "CAPOWR",
+            "key": "Strength",
+            "value": "800"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13961,
+          "section": "CAPOWR",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13954,
+            "section": "CAPOWR",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13962,
+          "section": "CAPOWR",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13955,
+            "section": "CAPOWR",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13963,
+          "section": "CAPOWR",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13956,
+            "section": "CAPOWR",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13964,
+          "section": "CAPOWR",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13957,
+            "section": "CAPOWR",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "concrete",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13965,
+          "section": "CAPOWR",
+          "key": "Armor",
+          "value": "concrete"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13958,
+            "section": "CAPOWR",
+            "key": "Armor",
+            "value": "concrete"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13966,
+          "section": "CAPOWR",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13959,
+            "section": "CAPOWR",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13967,
+          "section": "CAPOWR",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13960,
+            "section": "CAPOWR",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13968,
+          "section": "CAPOWR",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13961,
+            "section": "CAPOWR",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "DebrisAnim": {
+        "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13969,
+          "section": "CAPOWR",
+          "key": "DebrisAnim",
+          "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13962,
+            "section": "CAPOWR",
+            "key": "DebrisAnim",
+            "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SmallGreySSys,BigGreySmokeSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13970,
+          "section": "CAPOWR",
+          "key": "DamageParticleSystems",
+          "value": "SmallGreySSys,BigGreySmokeSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13963,
+            "section": "CAPOWR",
+            "key": "DamageParticleSystems",
+            "value": "SmallGreySSys,BigGreySmokeSys"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13971,
+          "section": "CAPOWR",
+          "key": "Capturable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13964,
+            "section": "CAPOWR",
+            "key": "Capturable",
+            "value": "yes"
+          }
+        ]
+      },
+      "CaptureEvaEvent": {
+        "value": "EVA_TechBuildingCaptured",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13972,
+          "section": "CAPOWR",
+          "key": "CaptureEvaEvent",
+          "value": "EVA_TechBuildingCaptured"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13965,
+            "section": "CAPOWR",
+            "key": "CaptureEvaEvent",
+            "value": "EVA_TechBuildingCaptured"
+          }
+        ]
+      },
+      "NeedsEngineer": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13973,
+          "section": "CAPOWR",
+          "key": "NeedsEngineer",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13966,
+            "section": "CAPOWR",
+            "key": "NeedsEngineer",
+            "value": "yes"
+          }
+        ]
+      },
+      "Unsellable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13974,
+          "section": "CAPOWR",
+          "key": "Unsellable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13967,
+            "section": "CAPOWR",
+            "key": "Unsellable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Ammo": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13975,
+          "section": "CAPOWR",
+          "key": "Ammo",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13968,
+            "section": "CAPOWR",
+            "key": "Ammo",
+            "value": "5"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13977,
+          "section": "CAPOWR",
+          "key": "LeaveRubble",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13970,
+            "section": "CAPOWR",
+            "key": "LeaveRubble",
+            "value": "yes"
+          }
+        ]
+      },
+      "Power": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13978,
+          "section": "CAPOWR",
+          "key": "Power",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13971,
+            "section": "CAPOWR",
+            "key": "Power",
+            "value": "200"
+          }
+        ]
+      },
+      "RadarVisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13979,
+          "section": "CAPOWR",
+          "key": "RadarVisible",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13972,
+            "section": "CAPOWR",
+            "key": "RadarVisible",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Normalized": true,
+      "Remapable": false,
+      "Foundation": "2x2",
+      "Height": 6,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "ActiveAnim": "CAPOWR_A",
+      "ActiveAnimZAdjust": -40,
+      "ActiveAnimDamaged": "CAPOWR_AD",
+      "DamageFireOffset0": "-3,5",
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 3
+    },
+    "raw_values": {
+      "Normalized": "yes",
+      "Remapable": "no",
+      "Foundation": "2x2",
+      "Height": "6",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "ActiveAnim": "CAPOWR_A",
+      "ActiveAnimZAdjust": "-40",
+      "ActiveAnimDamaged": "CAPOWR_AD",
+      "DamageFireOffset0": "-3,5",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "3"
+    },
+    "provenance": {
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3422,
+          "section": "CAPOWR",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3423,
+          "section": "CAPOWR",
+          "key": "Remapable",
+          "value": "no"
+        },
+        "history": []
+      },
+      "Foundation": {
+        "value": "2x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3424,
+          "section": "CAPOWR",
+          "key": "Foundation",
+          "value": "2x2"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3425,
+          "section": "CAPOWR",
+          "key": "Height",
+          "value": "6"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3427,
+          "section": "CAPOWR",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3428,
+          "section": "CAPOWR",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": []
+      },
+      "ActiveAnim": {
+        "value": "CAPOWR_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3429,
+          "section": "CAPOWR",
+          "key": "ActiveAnim",
+          "value": "CAPOWR_A"
+        },
+        "history": []
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-40",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3430,
+          "section": "CAPOWR",
+          "key": "ActiveAnimZAdjust",
+          "value": "-40"
+        },
+        "history": []
+      },
+      "ActiveAnimDamaged": {
+        "value": "CAPOWR_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3431,
+          "section": "CAPOWR",
+          "key": "ActiveAnimDamaged",
+          "value": "CAPOWR_AD"
+        },
+        "history": []
+      },
+      "DamageFireOffset0": {
+        "value": "-3,5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3436,
+          "section": "CAPOWR",
+          "key": "DamageFireOffset0",
+          "value": "-3,5"
+        },
+        "history": []
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3438,
+          "section": "CAPOWR",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3439,
+          "section": "CAPOWR",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3440,
+          "section": "CAPOWR",
+          "key": "OccupyHeight",
+          "value": "3"
+        },
+        "history": []
+      }
+    }
+  }
+}

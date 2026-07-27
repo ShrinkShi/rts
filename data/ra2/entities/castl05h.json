@@ -1,0 +1,942 @@
+{
+  "id": "CASTL05H",
+  "category": "building",
+  "name_token": "Name:CASTL05",
+  "art_id": "CASTL05H",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 600,
+  "armor": "concrete",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CASTL05H",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1791,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctstl05h.shp",
+          "folder": "isotemp",
+          "filename": "ctstl05h.shp",
+          "stem": "ctstl05h",
+          "extension": ".shp",
+          "size": 68536,
+          "sha1": "ebcc7b1e9e01448b8a18a940ef23422ab30873e2"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 689,
+          "pack": "ra2",
+          "relative_path": "isosnow/castl05h.shp",
+          "folder": "isosnow",
+          "filename": "castl05h.shp",
+          "stem": "castl05h",
+          "extension": ".shp",
+          "size": 68536,
+          "sha1": "778043741a881bfb28b8cad08d6373e84f7bf6e1"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2878,
+          "pack": "ra2",
+          "relative_path": "isourb/custl05h.shp",
+          "folder": "isourb",
+          "filename": "custl05h.shp",
+          "stem": "custl05h",
+          "extension": ".shp",
+          "size": 68536,
+          "sha1": "3819d0fae94a4a13899ddb8372392abbcbe6acfc"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6259,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdstl05h.shp",
+          "folder": "isodes",
+          "filename": "cdstl05h.shp",
+          "stem": "cdstl05h",
+          "extension": ".shp",
+          "size": 68536,
+          "sha1": "ebcc7b1e9e01448b8a18a940ef23422ab30873e2"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8327,
+          "pack": "ra2md",
+          "relative_path": "isolun/clstl05h.shp",
+          "folder": "isolun",
+          "filename": "clstl05h.shp",
+          "stem": "clstl05h",
+          "extension": ".shp",
+          "size": 68536,
+          "sha1": "ebcc7b1e9e01448b8a18a940ef23422ab30873e2"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9406,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnstl05h.shp",
+          "folder": "isoubn",
+          "filename": "cnstl05h.shp",
+          "stem": "cnstl05h",
+          "extension": ".shp",
+          "size": 68536,
+          "sha1": "2e5cf91dbf49d479af7a7acf3a1618743c77812a"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "4x4",
+    "height": 6,
+    "occupy_height": 4,
+    "damage_fire_offsets": [
+      [
+        -48.0,
+        -4.0
+      ],
+      [
+        86.0,
+        -8.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CASTL05",
+      "Name": "Busch Stadium H",
+      "TechLevel": -1,
+      "Strength": 600,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "concrete",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "DebrisAnim": "Dbris3sm,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg,Dbris2sm,Dbris3lg",
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "LeaveRubble": true
+    },
+    "raw_values": {
+      "UIName": "Name:CASTL05",
+      "Name": "Busch Stadium H",
+      "TechLevel": "-1",
+      "Strength": "600",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "concrete",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "DebrisAnim": "Dbris3sm,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg,Dbris2sm,Dbris3lg",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "LeaveRubble": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CASTL05",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15331,
+          "section": "CASTL05H",
+          "key": "UIName",
+          "value": "Name:CASTL05"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15487,
+            "section": "CASTL05H",
+            "key": "UIName",
+            "value": "Name:CASTL05"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15324,
+            "section": "CASTL05H",
+            "key": "UIName",
+            "value": "Name:CASTL05"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Busch Stadium H",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15332,
+          "section": "CASTL05H",
+          "key": "Name",
+          "value": "Busch Stadium H"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15488,
+            "section": "CASTL05H",
+            "key": "Name",
+            "value": "RA2 Busch Stadium H"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15325,
+            "section": "CASTL05H",
+            "key": "Name",
+            "value": "Busch Stadium H"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15333,
+          "section": "CASTL05H",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15489,
+            "section": "CASTL05H",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15326,
+            "section": "CASTL05H",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15334,
+          "section": "CASTL05H",
+          "key": "Strength",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15490,
+            "section": "CASTL05H",
+            "key": "Strength",
+            "value": "600"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15327,
+            "section": "CASTL05H",
+            "key": "Strength",
+            "value": "600"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15335,
+          "section": "CASTL05H",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15491,
+            "section": "CASTL05H",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15328,
+            "section": "CASTL05H",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15336,
+          "section": "CASTL05H",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15492,
+            "section": "CASTL05H",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15329,
+            "section": "CASTL05H",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 15493,
+          "section": "CASTL05H",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15338,
+          "section": "CASTL05H",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15494,
+            "section": "CASTL05H",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15331,
+            "section": "CASTL05H",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "concrete",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15339,
+          "section": "CASTL05H",
+          "key": "Armor",
+          "value": "concrete"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15495,
+            "section": "CASTL05H",
+            "key": "Armor",
+            "value": "concrete"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15332,
+            "section": "CASTL05H",
+            "key": "Armor",
+            "value": "concrete"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15340,
+          "section": "CASTL05H",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15496,
+            "section": "CASTL05H",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15333,
+            "section": "CASTL05H",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15341,
+          "section": "CASTL05H",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15497,
+            "section": "CASTL05H",
+            "key": "MaxDebris",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15334,
+            "section": "CASTL05H",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15342,
+          "section": "CASTL05H",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15498,
+            "section": "CASTL05H",
+            "key": "MinDebris",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15335,
+            "section": "CASTL05H",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "DebrisAnim": {
+        "value": "Dbris3sm,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg,Dbris2sm,Dbris3lg",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15343,
+          "section": "CASTL05H",
+          "key": "DebrisAnim",
+          "value": "Dbris3sm,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg,Dbris2sm,Dbris3lg"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15499,
+            "section": "CASTL05H",
+            "key": "DebrisAnim",
+            "value": "Dbris3sm,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg,Dbris2sm,Dbris3lg"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15336,
+            "section": "CASTL05H",
+            "key": "DebrisAnim",
+            "value": "Dbris3sm,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg,Dbris2sm,Dbris3lg"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15346,
+          "section": "CASTL05H",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15502,
+            "section": "CASTL05H",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15339,
+            "section": "CASTL05H",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15347,
+          "section": "CASTL05H",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15503,
+            "section": "CASTL05H",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15340,
+            "section": "CASTL05H",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15348,
+          "section": "CASTL05H",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15504,
+            "section": "CASTL05H",
+            "key": "ClickRepairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15341,
+            "section": "CASTL05H",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15349,
+          "section": "CASTL05H",
+          "key": "LeaveRubble",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15505,
+            "section": "CASTL05H",
+            "key": "LeaveRubble",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15342,
+            "section": "CASTL05H",
+            "key": "LeaveRubble",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "4x4",
+      "NewTheater": true,
+      "DemandLoad": true,
+      "Height": 6,
+      "DamageFireOffset0": "-48,-4",
+      "DamageFireOffset1": "86,-8",
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 4,
+      "RemoveOccupy1": "-2,-2"
+    },
+    "raw_values": {
+      "Foundation": "4x4",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "Height": "6",
+      "DamageFireOffset0": "-48,-4",
+      "DamageFireOffset1": "86,-8",
+      "CanHideThings": "true",
+      "CanBeHidden": "false",
+      "OccupyHeight": "4",
+      "RemoveOccupy1": "-2,-2"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "4x4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12492,
+          "section": "CASTL05H",
+          "key": "Foundation",
+          "value": "4x4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8414,
+            "section": "CASTL05H",
+            "key": "Foundation",
+            "value": "4x4"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12493,
+          "section": "CASTL05H",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8415,
+            "section": "CASTL05H",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12494,
+          "section": "CASTL05H",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8416,
+            "section": "CASTL05H",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "Height": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12495,
+          "section": "CASTL05H",
+          "key": "Height",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8417,
+            "section": "CASTL05H",
+            "key": "Height",
+            "value": "6"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-48,-4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12497,
+          "section": "CASTL05H",
+          "key": "DamageFireOffset0",
+          "value": "-48,-4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8419,
+            "section": "CASTL05H",
+            "key": "DamageFireOffset0",
+            "value": "-48,-4"
+          }
+        ]
+      },
+      "DamageFireOffset1": {
+        "value": "86,-8",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12498,
+          "section": "CASTL05H",
+          "key": "DamageFireOffset1",
+          "value": "86,-8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8420,
+            "section": "CASTL05H",
+            "key": "DamageFireOffset1",
+            "value": "86,-8"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12499,
+          "section": "CASTL05H",
+          "key": "CanHideThings",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8421,
+            "section": "CASTL05H",
+            "key": "CanHideThings",
+            "value": "true"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12500,
+          "section": "CASTL05H",
+          "key": "CanBeHidden",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8422,
+            "section": "CASTL05H",
+            "key": "CanBeHidden",
+            "value": "false"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12501,
+          "section": "CASTL05H",
+          "key": "OccupyHeight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8423,
+            "section": "CASTL05H",
+            "key": "OccupyHeight",
+            "value": "4"
+          }
+        ]
+      },
+      "RemoveOccupy1": {
+        "value": "-2,-2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12502,
+          "section": "CASTL05H",
+          "key": "RemoveOccupy1",
+          "value": "-2,-2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8424,
+            "section": "CASTL05H",
+            "key": "RemoveOccupy1",
+            "value": "-2,-2"
+          }
+        ]
+      }
+    }
+  }
+}

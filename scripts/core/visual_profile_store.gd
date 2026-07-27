@@ -1,6 +1,6 @@
 extends RefCounted
 
-const EntityVisualProfile = preload("res://scripts/core/entity_visual_profile.gd")
+const EntityVisualProfileScript = preload("res://scripts/core/entity_visual_profile.gd")
 
 static var _cache := {}
 
@@ -11,7 +11,7 @@ static func get_profile(entity_id):
     var path := "res://resources/visual_profiles/%s.tres" % key
     var profile = ResourceLoader.load(path) if ResourceLoader.exists(path) else null
     if profile == null:
-        profile = EntityVisualProfile.new()
+        profile = EntityVisualProfileScript.new()
     _cache[key] = profile
     return profile
 

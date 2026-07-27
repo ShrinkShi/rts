@@ -1,0 +1,844 @@
+{
+  "id": "GADUMY",
+  "category": "building",
+  "name_token": "Name:GADUMY",
+  "art_id": "NTIRON",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GATECH"
+  ],
+  "tech_level": -1,
+  "cost": 2800,
+  "strength": 1000,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 5,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "NTIRON",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": null,
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": null,
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": null,
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": null,
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": null,
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": null,
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:GADUMY",
+      "Name": "Dummy ChronoSphere",
+      "BuildCat": "Tech",
+      "Image": "NTIRON",
+      "Prerequisite": "GATECH",
+      "TechLevel": -1,
+      "Strength": 1000,
+      "Powered": true,
+      "Adjacent": 2,
+      "Armor": "wood",
+      "Sight": 5,
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "Cost": 2800,
+      "Points": 30,
+      "Power": -150,
+      "Crewed": true,
+      "Capturable": false,
+      "RevealToAll": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "SuperWeapon": "ChronoWarpSpecial",
+      "ThreatPosed": 1,
+      "AIBuildThis": false,
+      "Spyable": true
+    },
+    "raw_values": {
+      "UIName": "Name:GADUMY",
+      "Name": "Dummy ChronoSphere",
+      "BuildCat": "Tech",
+      "Image": "NTIRON",
+      "Prerequisite": "GATECH",
+      "TechLevel": "-1",
+      "Strength": "1000",
+      "Powered": "true",
+      "Adjacent": "2",
+      "Armor": "wood",
+      "Sight": "5",
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "Cost": "2800",
+      "Points": "30",
+      "Power": "-150",
+      "Crewed": "yes",
+      "Capturable": "no",
+      "RevealToAll": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "SuperWeapon": "ChronoWarpSpecial",
+      "ThreatPosed": "1",
+      "AIBuildThis": "no",
+      "Spyable": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:GADUMY",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17798,
+          "section": "GADUMY",
+          "key": "UIName",
+          "value": "Name:GADUMY"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10155,
+            "section": "GADUMY",
+            "key": "UIName",
+            "value": "Name:GADUMY"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17790,
+            "section": "GADUMY",
+            "key": "UIName",
+            "value": "Name:GADUMY"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Dummy ChronoSphere",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17799,
+          "section": "GADUMY",
+          "key": "Name",
+          "value": "Dummy ChronoSphere"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10156,
+            "section": "GADUMY",
+            "key": "Name",
+            "value": "Dummy ChronoSphere"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17791,
+            "section": "GADUMY",
+            "key": "Name",
+            "value": "Dummy ChronoSphere"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Tech",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17800,
+          "section": "GADUMY",
+          "key": "BuildCat",
+          "value": "Tech"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10157,
+            "section": "GADUMY",
+            "key": "BuildCat",
+            "value": "Tech"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17792,
+            "section": "GADUMY",
+            "key": "BuildCat",
+            "value": "Tech"
+          }
+        ]
+      },
+      "Image": {
+        "value": "NTIRON",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17801,
+          "section": "GADUMY",
+          "key": "Image",
+          "value": "NTIRON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10158,
+            "section": "GADUMY",
+            "key": "Image",
+            "value": "NTIRON"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17793,
+            "section": "GADUMY",
+            "key": "Image",
+            "value": "NTIRON"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GATECH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17802,
+          "section": "GADUMY",
+          "key": "Prerequisite",
+          "value": "GATECH"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10159,
+            "section": "GADUMY",
+            "key": "Prerequisite",
+            "value": "GATECH"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17794,
+            "section": "GADUMY",
+            "key": "Prerequisite",
+            "value": "GATECH"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17803,
+          "section": "GADUMY",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10160,
+            "section": "GADUMY",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17795,
+            "section": "GADUMY",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17804,
+          "section": "GADUMY",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10161,
+            "section": "GADUMY",
+            "key": "Strength",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17796,
+            "section": "GADUMY",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Powered": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17805,
+          "section": "GADUMY",
+          "key": "Powered",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10162,
+            "section": "GADUMY",
+            "key": "Powered",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17797,
+            "section": "GADUMY",
+            "key": "Powered",
+            "value": "true"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17806,
+          "section": "GADUMY",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10163,
+            "section": "GADUMY",
+            "key": "Adjacent",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17798,
+            "section": "GADUMY",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17807,
+          "section": "GADUMY",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10164,
+            "section": "GADUMY",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17799,
+            "section": "GADUMY",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17808,
+          "section": "GADUMY",
+          "key": "Sight",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10165,
+            "section": "GADUMY",
+            "key": "Sight",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17800,
+            "section": "GADUMY",
+            "key": "Sight",
+            "value": "5"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17809,
+          "section": "GADUMY",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10166,
+            "section": "GADUMY",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17801,
+            "section": "GADUMY",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "2800",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17810,
+          "section": "GADUMY",
+          "key": "Cost",
+          "value": "2800"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10167,
+            "section": "GADUMY",
+            "key": "Cost",
+            "value": "2800"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17802,
+            "section": "GADUMY",
+            "key": "Cost",
+            "value": "2800"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17811,
+          "section": "GADUMY",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10168,
+            "section": "GADUMY",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17803,
+            "section": "GADUMY",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "Power": {
+        "value": "-150",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17812,
+          "section": "GADUMY",
+          "key": "Power",
+          "value": "-150"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10169,
+            "section": "GADUMY",
+            "key": "Power",
+            "value": "-150"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17804,
+            "section": "GADUMY",
+            "key": "Power",
+            "value": "-150"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17813,
+          "section": "GADUMY",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10170,
+            "section": "GADUMY",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17805,
+            "section": "GADUMY",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17814,
+          "section": "GADUMY",
+          "key": "Capturable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10171,
+            "section": "GADUMY",
+            "key": "Capturable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17806,
+            "section": "GADUMY",
+            "key": "Capturable",
+            "value": "no"
+          }
+        ]
+      },
+      "RevealToAll": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17815,
+          "section": "GADUMY",
+          "key": "RevealToAll",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10172,
+            "section": "GADUMY",
+            "key": "RevealToAll",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17807,
+            "section": "GADUMY",
+            "key": "RevealToAll",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17816,
+          "section": "GADUMY",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10173,
+            "section": "GADUMY",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17808,
+            "section": "GADUMY",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "SuperWeapon": {
+        "value": "ChronoWarpSpecial",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17817,
+          "section": "GADUMY",
+          "key": "SuperWeapon",
+          "value": "ChronoWarpSpecial"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10174,
+            "section": "GADUMY",
+            "key": "SuperWeapon",
+            "value": "ChronoWarpSpecial"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17809,
+            "section": "GADUMY",
+            "key": "SuperWeapon",
+            "value": "ChronoWarpSpecial"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17818,
+          "section": "GADUMY",
+          "key": "ThreatPosed",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10175,
+            "section": "GADUMY",
+            "key": "ThreatPosed",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17810,
+            "section": "GADUMY",
+            "key": "ThreatPosed",
+            "value": "1"
+          }
+        ]
+      },
+      "AIBuildThis": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17819,
+          "section": "GADUMY",
+          "key": "AIBuildThis",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10176,
+            "section": "GADUMY",
+            "key": "AIBuildThis",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17811,
+            "section": "GADUMY",
+            "key": "AIBuildThis",
+            "value": "no"
+          }
+        ]
+      },
+      "Spyable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17820,
+          "section": "GADUMY",
+          "key": "Spyable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10177,
+            "section": "GADUMY",
+            "key": "Spyable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17812,
+            "section": "GADUMY",
+            "key": "Spyable",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {},
+    "provenance": {}
+  }
+}

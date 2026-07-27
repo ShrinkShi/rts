@@ -1,0 +1,1717 @@
+{
+  "id": "CAMACH",
+  "category": "building",
+  "name_token": "Name:CAMACH",
+  "art_id": "CAMACH",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 800,
+  "armor": "concrete",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAMACH",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 8036,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgmach.shp",
+          "folder": "isogenmd",
+          "filename": "cgmach.shp",
+          "stem": "cgmach",
+          "extension": ".shp",
+          "size": 39600,
+          "sha1": "d9032295f28429876d92ff58e7677d560762bd40"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 8857,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/camach.shp",
+          "folder": "isosnomd",
+          "filename": "camach.shp",
+          "stem": "camach",
+          "extension": ".shp",
+          "size": 39600,
+          "sha1": "292b93e4ba813e8e828745e81493b17915344427"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 8036,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgmach.shp",
+          "folder": "isogenmd",
+          "filename": "cgmach.shp",
+          "stem": "cgmach",
+          "extension": ".shp",
+          "size": 39600,
+          "sha1": "d9032295f28429876d92ff58e7677d560762bd40"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 8036,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgmach.shp",
+          "folder": "isogenmd",
+          "filename": "cgmach.shp",
+          "stem": "cgmach",
+          "extension": ".shp",
+          "size": 39600,
+          "sha1": "d9032295f28429876d92ff58e7677d560762bd40"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8036,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgmach.shp",
+          "folder": "isogenmd",
+          "filename": "cgmach.shp",
+          "stem": "cgmach",
+          "extension": ".shp",
+          "size": 39600,
+          "sha1": "d9032295f28429876d92ff58e7677d560762bd40"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 8036,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgmach.shp",
+          "folder": "isogenmd",
+          "filename": "cgmach.shp",
+          "stem": "cgmach",
+          "extension": ".shp",
+          "size": 39600,
+          "sha1": "d9032295f28429876d92ff58e7677d560762bd40"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "CAMACH_F",
+          "image": "CAMACH_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8037,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgmach_f.shp",
+            "folder": "isogenmd",
+            "filename": "cgmach_f.shp",
+            "stem": "cgmach_f",
+            "extension": ".shp",
+            "size": 11928,
+            "sha1": "488b6a436b4308d5ca98a23425dfa1eabd7a0b84"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMACH_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16544,
+                "section": "CAMACH_F",
+                "key": "Image",
+                "value": "CAMACH_F"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16545,
+                "section": "CAMACH_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16546,
+                "section": "CAMACH_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16547,
+                "section": "CAMACH_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16548,
+                "section": "CAMACH_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16549,
+                "section": "CAMACH_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16550,
+                "section": "CAMACH_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16551,
+                "section": "CAMACH_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16552,
+                "section": "CAMACH_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        },
+        "snow": {
+          "art_id": "CAMACH_F",
+          "image": "CAMACH_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8858,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/camach_f.shp",
+            "folder": "isosnomd",
+            "filename": "camach_f.shp",
+            "stem": "camach_f",
+            "extension": ".shp",
+            "size": 11928,
+            "sha1": "488b6a436b4308d5ca98a23425dfa1eabd7a0b84"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMACH_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16544,
+                "section": "CAMACH_F",
+                "key": "Image",
+                "value": "CAMACH_F"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16545,
+                "section": "CAMACH_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16546,
+                "section": "CAMACH_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16547,
+                "section": "CAMACH_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16548,
+                "section": "CAMACH_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16549,
+                "section": "CAMACH_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16550,
+                "section": "CAMACH_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16551,
+                "section": "CAMACH_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16552,
+                "section": "CAMACH_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        },
+        "urban": {
+          "art_id": "CAMACH_F",
+          "image": "CAMACH_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8037,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgmach_f.shp",
+            "folder": "isogenmd",
+            "filename": "cgmach_f.shp",
+            "stem": "cgmach_f",
+            "extension": ".shp",
+            "size": 11928,
+            "sha1": "488b6a436b4308d5ca98a23425dfa1eabd7a0b84"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMACH_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16544,
+                "section": "CAMACH_F",
+                "key": "Image",
+                "value": "CAMACH_F"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16545,
+                "section": "CAMACH_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16546,
+                "section": "CAMACH_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16547,
+                "section": "CAMACH_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16548,
+                "section": "CAMACH_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16549,
+                "section": "CAMACH_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16550,
+                "section": "CAMACH_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16551,
+                "section": "CAMACH_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16552,
+                "section": "CAMACH_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        },
+        "desert": {
+          "art_id": "CAMACH_F",
+          "image": "CAMACH_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8037,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgmach_f.shp",
+            "folder": "isogenmd",
+            "filename": "cgmach_f.shp",
+            "stem": "cgmach_f",
+            "extension": ".shp",
+            "size": 11928,
+            "sha1": "488b6a436b4308d5ca98a23425dfa1eabd7a0b84"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMACH_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16544,
+                "section": "CAMACH_F",
+                "key": "Image",
+                "value": "CAMACH_F"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16545,
+                "section": "CAMACH_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16546,
+                "section": "CAMACH_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16547,
+                "section": "CAMACH_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16548,
+                "section": "CAMACH_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16549,
+                "section": "CAMACH_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16550,
+                "section": "CAMACH_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16551,
+                "section": "CAMACH_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16552,
+                "section": "CAMACH_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        },
+        "lunar": {
+          "art_id": "CAMACH_F",
+          "image": "CAMACH_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8037,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgmach_f.shp",
+            "folder": "isogenmd",
+            "filename": "cgmach_f.shp",
+            "stem": "cgmach_f",
+            "extension": ".shp",
+            "size": 11928,
+            "sha1": "488b6a436b4308d5ca98a23425dfa1eabd7a0b84"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMACH_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16544,
+                "section": "CAMACH_F",
+                "key": "Image",
+                "value": "CAMACH_F"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16545,
+                "section": "CAMACH_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16546,
+                "section": "CAMACH_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16547,
+                "section": "CAMACH_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16548,
+                "section": "CAMACH_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16549,
+                "section": "CAMACH_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16550,
+                "section": "CAMACH_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16551,
+                "section": "CAMACH_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16552,
+                "section": "CAMACH_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        },
+        "newurban": {
+          "art_id": "CAMACH_F",
+          "image": "CAMACH_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8037,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgmach_f.shp",
+            "folder": "isogenmd",
+            "filename": "cgmach_f.shp",
+            "stem": "cgmach_f",
+            "extension": ".shp",
+            "size": 11928,
+            "sha1": "488b6a436b4308d5ca98a23425dfa1eabd7a0b84"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMACH_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16544,
+                "section": "CAMACH_F",
+                "key": "Image",
+                "value": "CAMACH_F"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16545,
+                "section": "CAMACH_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16546,
+                "section": "CAMACH_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16547,
+                "section": "CAMACH_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16548,
+                "section": "CAMACH_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16549,
+                "section": "CAMACH_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16550,
+                "section": "CAMACH_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16551,
+                "section": "CAMACH_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16552,
+                "section": "CAMACH_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        }
+      }
+    },
+    "foundation": "3x3",
+    "height": 5,
+    "occupy_height": 3,
+    "damage_fire_offsets": [
+      [
+        -2.0,
+        34.0
+      ],
+      [
+        29.0,
+        10.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CAMACH",
+      "Name": "Tech Machine Shop",
+      "TechLevel": -1,
+      "Strength": 800,
+      "Insignificant": true,
+      "Nominal": true,
+      "Sight": 6,
+      "Points": 5,
+      "Armor": "concrete",
+      "MaxDebris": 8,
+      "MinDebris": 4,
+      "Capturable": true,
+      "CaptureEvaEvent": "EVA_MachineShopCaptured",
+      "NeedsEngineer": true,
+      "Unsellable": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DamageParticleSystems": "SmallGreySSys,BigGreySmokeSys",
+      "LeaveRubble": true,
+      "UnitsGainSelfHeal": 1,
+      "RadarVisible": true
+    },
+    "raw_values": {
+      "UIName": "Name:CAMACH",
+      "Name": "Tech Machine Shop",
+      "TechLevel": "-1",
+      "Strength": "800",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "Sight": "6",
+      "Points": "5",
+      "Armor": "concrete",
+      "MaxDebris": "8",
+      "MinDebris": "4",
+      "Capturable": "yes",
+      "CaptureEvaEvent": "EVA_MachineShopCaptured",
+      "NeedsEngineer": "yes",
+      "Unsellable": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DamageParticleSystems": "SmallGreySSys,BigGreySmokeSys",
+      "LeaveRubble": "yes",
+      "UnitsGainSelfHeal": "1",
+      "RadarVisible": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CAMACH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13982,
+          "section": "CAMACH",
+          "key": "UIName",
+          "value": "Name:CAMACH"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13975,
+            "section": "CAMACH",
+            "key": "UIName",
+            "value": "Name:CAMACH"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Tech Machine Shop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13983,
+          "section": "CAMACH",
+          "key": "Name",
+          "value": "Tech Machine Shop"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13976,
+            "section": "CAMACH",
+            "key": "Name",
+            "value": "Tech Machine Shop"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13985,
+          "section": "CAMACH",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13978,
+            "section": "CAMACH",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "800",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13986,
+          "section": "CAMACH",
+          "key": "Strength",
+          "value": "800"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13979,
+            "section": "CAMACH",
+            "key": "Strength",
+            "value": "800"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13987,
+          "section": "CAMACH",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13980,
+            "section": "CAMACH",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13988,
+          "section": "CAMACH",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13981,
+            "section": "CAMACH",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13989,
+          "section": "CAMACH",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13982,
+            "section": "CAMACH",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13990,
+          "section": "CAMACH",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13983,
+            "section": "CAMACH",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "concrete",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13991,
+          "section": "CAMACH",
+          "key": "Armor",
+          "value": "concrete"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13984,
+            "section": "CAMACH",
+            "key": "Armor",
+            "value": "concrete"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13993,
+          "section": "CAMACH",
+          "key": "MaxDebris",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13986,
+            "section": "CAMACH",
+            "key": "MaxDebris",
+            "value": "8"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13994,
+          "section": "CAMACH",
+          "key": "MinDebris",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13987,
+            "section": "CAMACH",
+            "key": "MinDebris",
+            "value": "4"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13995,
+          "section": "CAMACH",
+          "key": "Capturable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13988,
+            "section": "CAMACH",
+            "key": "Capturable",
+            "value": "yes"
+          }
+        ]
+      },
+      "CaptureEvaEvent": {
+        "value": "EVA_MachineShopCaptured",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13996,
+          "section": "CAMACH",
+          "key": "CaptureEvaEvent",
+          "value": "EVA_MachineShopCaptured"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13989,
+            "section": "CAMACH",
+            "key": "CaptureEvaEvent",
+            "value": "EVA_MachineShopCaptured"
+          }
+        ]
+      },
+      "NeedsEngineer": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13997,
+          "section": "CAMACH",
+          "key": "NeedsEngineer",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13990,
+            "section": "CAMACH",
+            "key": "NeedsEngineer",
+            "value": "yes"
+          }
+        ]
+      },
+      "Unsellable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13998,
+          "section": "CAMACH",
+          "key": "Unsellable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13991,
+            "section": "CAMACH",
+            "key": "Unsellable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13999,
+          "section": "CAMACH",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13992,
+            "section": "CAMACH",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SmallGreySSys,BigGreySmokeSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14000,
+          "section": "CAMACH",
+          "key": "DamageParticleSystems",
+          "value": "SmallGreySSys,BigGreySmokeSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13993,
+            "section": "CAMACH",
+            "key": "DamageParticleSystems",
+            "value": "SmallGreySSys,BigGreySmokeSys"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14001,
+          "section": "CAMACH",
+          "key": "LeaveRubble",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13994,
+            "section": "CAMACH",
+            "key": "LeaveRubble",
+            "value": "yes"
+          }
+        ]
+      },
+      "UnitsGainSelfHeal": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14002,
+          "section": "CAMACH",
+          "key": "UnitsGainSelfHeal",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13995,
+            "section": "CAMACH",
+            "key": "UnitsGainSelfHeal",
+            "value": "1"
+          }
+        ]
+      },
+      "RadarVisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14003,
+          "section": "CAMACH",
+          "key": "RadarVisible",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13996,
+            "section": "CAMACH",
+            "key": "RadarVisible",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Image": "CAMACH",
+      "Normalized": true,
+      "Remapable": false,
+      "Foundation": "3x3",
+      "Height": 5,
+      "NewTheater": true,
+      "ActiveAnim": "CAMACH_F",
+      "ActiveAnimZAdjust": -50,
+      "ActiveAnimYSort": 362,
+      "ActiveAnimPowered": false,
+      "DemandLoad": true,
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 3,
+      "DamageFireOffset0": "-2,34",
+      "DamageFireOffset1": "29,10"
+    },
+    "raw_values": {
+      "Image": "CAMACH",
+      "Normalized": "yes",
+      "Remapable": "no",
+      "Foundation": "3x3",
+      "Height": "5",
+      "NewTheater": "yes",
+      "ActiveAnim": "CAMACH_F",
+      "ActiveAnimZAdjust": "-50",
+      "ActiveAnimYSort": "362",
+      "ActiveAnimPowered": "no",
+      "DemandLoad": "true",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "3",
+      "DamageFireOffset0": "-2,34",
+      "DamageFireOffset1": "29,10"
+    },
+    "provenance": {
+      "Image": {
+        "value": "CAMACH",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3402,
+          "section": "CAMACH",
+          "key": "Image",
+          "value": "CAMACH"
+        },
+        "history": []
+      },
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3403,
+          "section": "CAMACH",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3404,
+          "section": "CAMACH",
+          "key": "Remapable",
+          "value": "no"
+        },
+        "history": []
+      },
+      "Foundation": {
+        "value": "3x3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3405,
+          "section": "CAMACH",
+          "key": "Foundation",
+          "value": "3x3"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3406,
+          "section": "CAMACH",
+          "key": "Height",
+          "value": "5"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3408,
+          "section": "CAMACH",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "ActiveAnim": {
+        "value": "CAMACH_F",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3409,
+          "section": "CAMACH",
+          "key": "ActiveAnim",
+          "value": "CAMACH_F"
+        },
+        "history": []
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-50",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3410,
+          "section": "CAMACH",
+          "key": "ActiveAnimZAdjust",
+          "value": "-50"
+        },
+        "history": []
+      },
+      "ActiveAnimYSort": {
+        "value": "362",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3411,
+          "section": "CAMACH",
+          "key": "ActiveAnimYSort",
+          "value": "362"
+        },
+        "history": []
+      },
+      "ActiveAnimPowered": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3412,
+          "section": "CAMACH",
+          "key": "ActiveAnimPowered",
+          "value": "no"
+        },
+        "history": []
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3413,
+          "section": "CAMACH",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": []
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3414,
+          "section": "CAMACH",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3415,
+          "section": "CAMACH",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3416,
+          "section": "CAMACH",
+          "key": "OccupyHeight",
+          "value": "3"
+        },
+        "history": []
+      },
+      "DamageFireOffset0": {
+        "value": "-2,34",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3417,
+          "section": "CAMACH",
+          "key": "DamageFireOffset0",
+          "value": "-2,34"
+        },
+        "history": []
+      },
+      "DamageFireOffset1": {
+        "value": "29,10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3419,
+          "section": "CAMACH",
+          "key": "DamageFireOffset1",
+          "value": "29,10"
+        },
+        "history": []
+      }
+    }
+  }
+}

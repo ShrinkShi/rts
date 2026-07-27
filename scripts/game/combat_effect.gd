@@ -73,15 +73,15 @@ func _process_smoke(delta):
 
 func _process_explosion(delta):
     for particle in particles:
-        var position = Vector2(particle.get("position", Vector2.ZERO))
+        var particle_position = Vector2(particle.get("position", Vector2.ZERO))
         var velocity = Vector2(particle.get("velocity", Vector2.ZERO))
         velocity += Vector2(0, 135.0) * delta
-        position += velocity * delta
-        if position.y > 13.0:
-            position.y = 13.0
+        particle_position += velocity * delta
+        if particle_position.y > 13.0:
+            particle_position.y = 13.0
             velocity.y *= -0.26
             velocity.x *= 0.72
-        particle["position"] = position
+        particle["position"] = particle_position
         particle["velocity"] = velocity
         particle["rotation"] = float(particle.get("rotation", 0.0)) + float(particle.get("spin", 0.0)) * delta
         particle["life"] = float(particle.get("life", 0.0)) - delta
@@ -95,17 +95,17 @@ func _draw():
             draw_circle(Vector2(0, -8), (5.0 + 14.0 * (1.0 - burst_ratio)) * intensity, Color(1.0, 0.84, 0.35, 0.88 * burst_ratio))
     for particle in particles:
         var life = clamp(float(particle.get("life", 0.0)), 0.0, 2.0)
-        var position = Vector2(particle.get("position", Vector2.ZERO))
+        var particle_position = Vector2(particle.get("position", Vector2.ZERO))
         var size_value = float(particle.get("size", 4.0))
         if str(particle.get("kind", "debris")) == "smoke":
-            draw_circle(position, size_value, Color(0.16, 0.18, 0.19, min(0.52, life * 0.35)))
+            draw_circle(particle_position, size_value, Color(0.16, 0.18, 0.19, min(0.52, life * 0.35)))
         else:
             var rotation_value = float(particle.get("rotation", 0.0))
             var tangent = Vector2.from_angle(rotation_value) * size_value
             var normal = tangent.orthogonal() * 0.45
             draw_colored_polygon(PackedVector2Array([
-                position - tangent - normal,
-                position + tangent - normal,
-                position + tangent + normal,
-                position - tangent + normal
+                particle_position - tangent - normal,
+                particle_position + tangent - normal,
+                particle_position + tangent + normal,
+                particle_position - tangent + normal
             ]), effect_color.darkened(0.5))

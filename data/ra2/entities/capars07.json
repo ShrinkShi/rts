@@ -1,0 +1,733 @@
+{
+  "id": "CAPARS07",
+  "category": "building",
+  "name_token": "Name:CAPRS07",
+  "art_id": "CAPARS07",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 100,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAPARS07",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1748,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctpars07.shp",
+          "folder": "isotemp",
+          "filename": "ctpars07.shp",
+          "stem": "ctpars07",
+          "extension": ".shp",
+          "size": 2168,
+          "sha1": "f18810fe9eebe16ea0d549d90c296b71d5920222"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 644,
+          "pack": "ra2",
+          "relative_path": "isosnow/capars07.shp",
+          "folder": "isosnow",
+          "filename": "capars07.shp",
+          "stem": "capars07",
+          "extension": ".shp",
+          "size": 2168,
+          "sha1": "4244b1ebdd70abf9da4211759c470ff5565da5a6"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2835,
+          "pack": "ra2",
+          "relative_path": "isourb/cupars07.shp",
+          "folder": "isourb",
+          "filename": "cupars07.shp",
+          "stem": "cupars07",
+          "extension": ".shp",
+          "size": 2168,
+          "sha1": "f18810fe9eebe16ea0d549d90c296b71d5920222"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6216,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdpars07.shp",
+          "folder": "isodes",
+          "filename": "cdpars07.shp",
+          "stem": "cdpars07",
+          "extension": ".shp",
+          "size": 2168,
+          "sha1": "f18810fe9eebe16ea0d549d90c296b71d5920222"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8284,
+          "pack": "ra2md",
+          "relative_path": "isolun/clpars07.shp",
+          "folder": "isolun",
+          "filename": "clpars07.shp",
+          "stem": "clpars07",
+          "extension": ".shp",
+          "size": 2168,
+          "sha1": "f18810fe9eebe16ea0d549d90c296b71d5920222"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9363,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnpars07.shp",
+          "folder": "isoubn",
+          "filename": "cnpars07.shp",
+          "stem": "cnpars07",
+          "extension": ".shp",
+          "size": 2168,
+          "sha1": "f18810fe9eebe16ea0d549d90c296b71d5920222"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 0,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CAPRS07",
+      "Name": "Euro Phone Booth",
+      "TechLevel": -1,
+      "Strength": 100,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 0,
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "CanBeOccupied": false
+    },
+    "raw_values": {
+      "UIName": "Name:CAPRS07",
+      "Name": "Euro Phone Booth",
+      "TechLevel": "-1",
+      "Strength": "100",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "0",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "CanBeOccupied": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CAPRS07",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19197,
+          "section": "CAPARS07",
+          "key": "UIName",
+          "value": "Name:CAPRS07"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12260,
+            "section": "CAPARS07",
+            "key": "UIName",
+            "value": "Name:CAPRS07"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19189,
+            "section": "CAPARS07",
+            "key": "UIName",
+            "value": "Name:CAPRS07"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Euro Phone Booth",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19198,
+          "section": "CAPARS07",
+          "key": "Name",
+          "value": "Euro Phone Booth"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12261,
+            "section": "CAPARS07",
+            "key": "Name",
+            "value": "RA2 Euro Phone Booth"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19190,
+            "section": "CAPARS07",
+            "key": "Name",
+            "value": "Euro Phone Booth"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19199,
+          "section": "CAPARS07",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12262,
+            "section": "CAPARS07",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19191,
+            "section": "CAPARS07",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19200,
+          "section": "CAPARS07",
+          "key": "Strength",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12263,
+            "section": "CAPARS07",
+            "key": "Strength",
+            "value": "100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19192,
+            "section": "CAPARS07",
+            "key": "Strength",
+            "value": "100"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19201,
+          "section": "CAPARS07",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12264,
+            "section": "CAPARS07",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19193,
+            "section": "CAPARS07",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19202,
+          "section": "CAPARS07",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12265,
+            "section": "CAPARS07",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19194,
+            "section": "CAPARS07",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 12266,
+          "section": "CAPARS07",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19204,
+          "section": "CAPARS07",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12267,
+            "section": "CAPARS07",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19196,
+            "section": "CAPARS07",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19205,
+          "section": "CAPARS07",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12268,
+            "section": "CAPARS07",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19197,
+            "section": "CAPARS07",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19206,
+          "section": "CAPARS07",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12269,
+            "section": "CAPARS07",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19198,
+            "section": "CAPARS07",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19207,
+          "section": "CAPARS07",
+          "key": "MaxDebris",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12270,
+            "section": "CAPARS07",
+            "key": "MaxDebris",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19199,
+            "section": "CAPARS07",
+            "key": "MaxDebris",
+            "value": "0"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19210,
+          "section": "CAPARS07",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12273,
+            "section": "CAPARS07",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19202,
+            "section": "CAPARS07",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19211,
+          "section": "CAPARS07",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12274,
+            "section": "CAPARS07",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19203,
+            "section": "CAPARS07",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19212,
+          "section": "CAPARS07",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12275,
+            "section": "CAPARS07",
+            "key": "ClickRepairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19204,
+            "section": "CAPARS07",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanBeOccupied": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 19213,
+          "section": "CAPARS07",
+          "key": "CanBeOccupied",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12276,
+            "section": "CAPARS07",
+            "key": "CanBeOccupied",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 19205,
+            "section": "CAPARS07",
+            "key": "CanBeOccupied",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "1x1",
+      "NewTheater": true,
+      "DemandLoad": true,
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Foundation": "1x1",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "CanBeHidden": "false"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7897,
+          "section": "CAPARS07",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6103,
+            "section": "CAPARS07",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7898,
+          "section": "CAPARS07",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6104,
+            "section": "CAPARS07",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7899,
+          "section": "CAPARS07",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6105,
+            "section": "CAPARS07",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7901,
+          "section": "CAPARS07",
+          "key": "CanBeHidden",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6107,
+            "section": "CAPARS07",
+            "key": "CanBeHidden",
+            "value": "false"
+          }
+        ]
+      }
+    }
+  }
+}

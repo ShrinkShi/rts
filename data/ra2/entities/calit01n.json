@@ -1,0 +1,648 @@
+{
+  "id": "CALIT01N",
+  "category": "building",
+  "name_token": "Name:CALIT01N",
+  "art_id": "CALIT01N",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 50,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CALIT01N",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1660,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctlit01n.shp",
+          "folder": "isotemp",
+          "filename": "ctlit01n.shp",
+          "stem": "ctlit01n",
+          "extension": ".shp",
+          "size": 1128,
+          "sha1": "eaf6ce9560ad1c0355721037911fd0d72018736e"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 556,
+          "pack": "ra2",
+          "relative_path": "isosnow/calit01n.shp",
+          "folder": "isosnow",
+          "filename": "calit01n.shp",
+          "stem": "calit01n",
+          "extension": ".shp",
+          "size": 1128,
+          "sha1": "eaf6ce9560ad1c0355721037911fd0d72018736e"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2747,
+          "pack": "ra2",
+          "relative_path": "isourb/culit01n.shp",
+          "folder": "isourb",
+          "filename": "culit01n.shp",
+          "stem": "culit01n",
+          "extension": ".shp",
+          "size": 1128,
+          "sha1": "eaf6ce9560ad1c0355721037911fd0d72018736e"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6128,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdlit01n.shp",
+          "folder": "isodes",
+          "filename": "cdlit01n.shp",
+          "stem": "cdlit01n",
+          "extension": ".shp",
+          "size": 1128,
+          "sha1": "eaf6ce9560ad1c0355721037911fd0d72018736e"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8196,
+          "pack": "ra2md",
+          "relative_path": "isolun/cllit01n.shp",
+          "folder": "isolun",
+          "filename": "cllit01n.shp",
+          "stem": "cllit01n",
+          "extension": ".shp",
+          "size": 1128,
+          "sha1": "eaf6ce9560ad1c0355721037911fd0d72018736e"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9277,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnlit01n.shp",
+          "folder": "isoubn",
+          "filename": "cnlit01n.shp",
+          "stem": "cnlit01n",
+          "extension": ".shp",
+          "size": 1128,
+          "sha1": "eaf6ce9560ad1c0355721037911fd0d72018736e"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 0,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CALIT01N",
+      "Name": "Light",
+      "TechLevel": -1,
+      "Strength": 50,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 0,
+      "Selectable": false,
+      "BaseNormal": false
+    },
+    "raw_values": {
+      "UIName": "Name:CALIT01N",
+      "Name": "Light",
+      "TechLevel": "-1",
+      "Strength": "50",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "0",
+      "Selectable": "no",
+      "BaseNormal": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CALIT01N",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21264,
+          "section": "CALIT01N",
+          "key": "UIName",
+          "value": "Name:CALIT01N"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14619,
+            "section": "CALIT01N",
+            "key": "UIName",
+            "value": "Name:CALIT01N"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21256,
+            "section": "CALIT01N",
+            "key": "UIName",
+            "value": "Name:CALIT01N"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21265,
+          "section": "CALIT01N",
+          "key": "Name",
+          "value": "Light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14620,
+            "section": "CALIT01N",
+            "key": "Name",
+            "value": "RA2 Light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21257,
+            "section": "CALIT01N",
+            "key": "Name",
+            "value": "Light"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21266,
+          "section": "CALIT01N",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14621,
+            "section": "CALIT01N",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21258,
+            "section": "CALIT01N",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "50",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21267,
+          "section": "CALIT01N",
+          "key": "Strength",
+          "value": "50"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14622,
+            "section": "CALIT01N",
+            "key": "Strength",
+            "value": "50"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21259,
+            "section": "CALIT01N",
+            "key": "Strength",
+            "value": "50"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21268,
+          "section": "CALIT01N",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14623,
+            "section": "CALIT01N",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21260,
+            "section": "CALIT01N",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21269,
+          "section": "CALIT01N",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14624,
+            "section": "CALIT01N",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21261,
+            "section": "CALIT01N",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 14625,
+          "section": "CALIT01N",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21271,
+          "section": "CALIT01N",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14626,
+            "section": "CALIT01N",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21263,
+            "section": "CALIT01N",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21272,
+          "section": "CALIT01N",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14627,
+            "section": "CALIT01N",
+            "key": "Armor",
+            "value": "steel"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21264,
+            "section": "CALIT01N",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21273,
+          "section": "CALIT01N",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14628,
+            "section": "CALIT01N",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21265,
+            "section": "CALIT01N",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21274,
+          "section": "CALIT01N",
+          "key": "MaxDebris",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14629,
+            "section": "CALIT01N",
+            "key": "MaxDebris",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21266,
+            "section": "CALIT01N",
+            "key": "MaxDebris",
+            "value": "0"
+          }
+        ]
+      },
+      "Selectable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21275,
+          "section": "CALIT01N",
+          "key": "Selectable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14630,
+            "section": "CALIT01N",
+            "key": "Selectable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21267,
+            "section": "CALIT01N",
+            "key": "Selectable",
+            "value": "no"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21277,
+          "section": "CALIT01N",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14632,
+            "section": "CALIT01N",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21269,
+            "section": "CALIT01N",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "1x1",
+      "NewTheater": true,
+      "DemandLoad": true
+    },
+    "raw_values": {
+      "Foundation": "1x1",
+      "NewTheater": "yes",
+      "DemandLoad": "true"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6955,
+          "section": "CALIT01N",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5161,
+            "section": "CALIT01N",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6956,
+          "section": "CALIT01N",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5162,
+            "section": "CALIT01N",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6957,
+          "section": "CALIT01N",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5163,
+            "section": "CALIT01N",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      }
+    }
+  }
+}

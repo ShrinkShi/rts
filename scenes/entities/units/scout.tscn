@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/unit.gd" id="1_script"]
+[ext_resource type="SpriteFrames" path="res://resources/sprite_frames/scout.tres" id="2_frames"]
+[ext_resource type="Shader" path="res://shaders/team_tint.gdshader" id="3_shader"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_collision"]
+radius = 15.36
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_preview"]
+shader = ExtResource("3_shader")
+shader_parameter/team_color = Color(0.18, 0.48, 0.92, 1)
+
+[node name="Scout" type="CharacterBody2D"]
+script = ExtResource("1_script")
+preset_unit_id = "scout"
+editor_description = "可视化单位预制场景：直接拖动 VisualRoot、Body、Turret、CollisionShape2D 和各 Marker2D。运行时由 RTSMatch 实例化本场景。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_collision")
+
+[node name="VisualRoot" type="Node2D" parent="."]
+editor_description = "整体视觉根节点。移动或缩放此节点会同时影响车体和炮塔。"
+
+[node name="Body" type="AnimatedSprite2D" parent="VisualRoot"]
+position = Vector2(0, -11)
+scale = Vector2(0.88, 0.88)
+sprite_frames = ExtResource("2_frames")
+animation = &"stand_0"
+autoplay = "stand_0"
+centered = true
+show_behind_parent = true
+texture_filter = 1
+material = SubResource("ShaderMaterial_preview")
+editor_description = "单位主体。可以在 2D 视口直接调整位置、缩放、旋转。"
+
+[node name="DamageSmokeAnchor" type="Marker2D" parent="."]
+position = Vector2(0, -25)
+editor_description = "重度受损烟雾生成点。"
+
+[node name="SelectionAnchor" type="Marker2D" parent="."]
+position = Vector2(0, 7)
+editor_description = "选择圈视觉参考中心。"
+

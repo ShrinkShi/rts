@@ -1,0 +1,1028 @@
+{
+  "id": "SNODUSLAMP",
+  "category": "building",
+  "name_token": "InvisibleSnowDuskLamp",
+  "art_id": "GALITE",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 6000,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "GALITE",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 4914,
+          "pack": "ra2",
+          "relative_path": "snow/galite.shp",
+          "folder": "snow",
+          "filename": "galite.shp",
+          "stem": "galite",
+          "extension": ".shp",
+          "size": 1776,
+          "sha1": "3728a41c19799184d1497173230ec428925b46ff"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 0,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "InvisibleSnowDuskLamp",
+      "Selectable": false,
+      "InvisibleInGame": true,
+      "Insignificant": true,
+      "Image": "GALITE",
+      "Strength": 6000,
+      "Armor": "wood",
+      "TechLevel": -1,
+      "Nominal": true,
+      "Sight": 0,
+      "Points": 30,
+      "Power": 0,
+      "Crewed": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "LightVisibility": 3500,
+      "LightIntensity": 0.005,
+      "LightRedTint": 0.25,
+      "LightGreenTint": 0.35,
+      "LightBlueTint": -0.2,
+      "DamageParticleSystems": "SparkSys,LGSparkSys",
+      "Powered": true
+    },
+    "raw_values": {
+      "Name": "InvisibleSnowDuskLamp",
+      "Selectable": "no",
+      "InvisibleInGame": "yes",
+      "Insignificant": "yes",
+      "Image": "GALITE",
+      "Strength": "6000",
+      "Armor": "wood",
+      "TechLevel": "-1",
+      "Nominal": "yes",
+      "Sight": "0",
+      "Points": "30",
+      "Power": "0",
+      "Crewed": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "LightVisibility": "3500",
+      "LightIntensity": "0.005",
+      "LightRedTint": "0.25",
+      "LightGreenTint": "0.35",
+      "LightBlueTint": "-0.2",
+      "DamageParticleSystems": "SparkSys,LGSparkSys",
+      "Powered": "true"
+    },
+    "provenance": {
+      "Name": {
+        "value": "InvisibleSnowDuskLamp",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17749,
+          "section": "SNODUSLAMP",
+          "key": "Name",
+          "value": "InvisibleSnowDuskLamp"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10002,
+            "section": "SNODUSLAMP",
+            "key": "Name",
+            "value": "InvisibleSnowDuskLamp"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17741,
+            "section": "SNODUSLAMP",
+            "key": "Name",
+            "value": "InvisibleSnowDuskLamp"
+          }
+        ]
+      },
+      "Selectable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17750,
+          "section": "SNODUSLAMP",
+          "key": "Selectable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10003,
+            "section": "SNODUSLAMP",
+            "key": "Selectable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17742,
+            "section": "SNODUSLAMP",
+            "key": "Selectable",
+            "value": "no"
+          }
+        ]
+      },
+      "InvisibleInGame": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17751,
+          "section": "SNODUSLAMP",
+          "key": "InvisibleInGame",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10004,
+            "section": "SNODUSLAMP",
+            "key": "InvisibleInGame",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17743,
+            "section": "SNODUSLAMP",
+            "key": "InvisibleInGame",
+            "value": "yes"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17752,
+          "section": "SNODUSLAMP",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10005,
+            "section": "SNODUSLAMP",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17744,
+            "section": "SNODUSLAMP",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Image": {
+        "value": "GALITE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17753,
+          "section": "SNODUSLAMP",
+          "key": "Image",
+          "value": "GALITE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10006,
+            "section": "SNODUSLAMP",
+            "key": "Image",
+            "value": "GALITE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17745,
+            "section": "SNODUSLAMP",
+            "key": "Image",
+            "value": "GALITE"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "6000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17754,
+          "section": "SNODUSLAMP",
+          "key": "Strength",
+          "value": "6000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10007,
+            "section": "SNODUSLAMP",
+            "key": "Strength",
+            "value": "6000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17746,
+            "section": "SNODUSLAMP",
+            "key": "Strength",
+            "value": "6000"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17755,
+          "section": "SNODUSLAMP",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10008,
+            "section": "SNODUSLAMP",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17747,
+            "section": "SNODUSLAMP",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17756,
+          "section": "SNODUSLAMP",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10009,
+            "section": "SNODUSLAMP",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17748,
+            "section": "SNODUSLAMP",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17757,
+          "section": "SNODUSLAMP",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10010,
+            "section": "SNODUSLAMP",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17749,
+            "section": "SNODUSLAMP",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17758,
+          "section": "SNODUSLAMP",
+          "key": "Sight",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10011,
+            "section": "SNODUSLAMP",
+            "key": "Sight",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17750,
+            "section": "SNODUSLAMP",
+            "key": "Sight",
+            "value": "0"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17759,
+          "section": "SNODUSLAMP",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10012,
+            "section": "SNODUSLAMP",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17751,
+            "section": "SNODUSLAMP",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "Power": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17760,
+          "section": "SNODUSLAMP",
+          "key": "Power",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10013,
+            "section": "SNODUSLAMP",
+            "key": "Power",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17752,
+            "section": "SNODUSLAMP",
+            "key": "Power",
+            "value": "0"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17761,
+          "section": "SNODUSLAMP",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10014,
+            "section": "SNODUSLAMP",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17753,
+            "section": "SNODUSLAMP",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17762,
+          "section": "SNODUSLAMP",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10015,
+            "section": "SNODUSLAMP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17754,
+            "section": "SNODUSLAMP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "LightVisibility": {
+        "value": "3500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17763,
+          "section": "SNODUSLAMP",
+          "key": "LightVisibility",
+          "value": "3500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10016,
+            "section": "SNODUSLAMP",
+            "key": "LightVisibility",
+            "value": "3500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17755,
+            "section": "SNODUSLAMP",
+            "key": "LightVisibility",
+            "value": "3500"
+          }
+        ]
+      },
+      "LightIntensity": {
+        "value": "0.005",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17764,
+          "section": "SNODUSLAMP",
+          "key": "LightIntensity",
+          "value": "0.005"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10017,
+            "section": "SNODUSLAMP",
+            "key": "LightIntensity",
+            "value": "0.005"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17756,
+            "section": "SNODUSLAMP",
+            "key": "LightIntensity",
+            "value": "0.005"
+          }
+        ]
+      },
+      "LightRedTint": {
+        "value": "0.25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17765,
+          "section": "SNODUSLAMP",
+          "key": "LightRedTint",
+          "value": "0.25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10018,
+            "section": "SNODUSLAMP",
+            "key": "LightRedTint",
+            "value": "0.25"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17757,
+            "section": "SNODUSLAMP",
+            "key": "LightRedTint",
+            "value": "0.25"
+          }
+        ]
+      },
+      "LightGreenTint": {
+        "value": "0.35",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17766,
+          "section": "SNODUSLAMP",
+          "key": "LightGreenTint",
+          "value": "0.35"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10019,
+            "section": "SNODUSLAMP",
+            "key": "LightGreenTint",
+            "value": "0.35"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17758,
+            "section": "SNODUSLAMP",
+            "key": "LightGreenTint",
+            "value": "0.35"
+          }
+        ]
+      },
+      "LightBlueTint": {
+        "value": "-0.2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17767,
+          "section": "SNODUSLAMP",
+          "key": "LightBlueTint",
+          "value": "-0.2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10020,
+            "section": "SNODUSLAMP",
+            "key": "LightBlueTint",
+            "value": "-0.2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17759,
+            "section": "SNODUSLAMP",
+            "key": "LightBlueTint",
+            "value": "-0.2"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,LGSparkSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17768,
+          "section": "SNODUSLAMP",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,LGSparkSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10021,
+            "section": "SNODUSLAMP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,LGSparkSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17760,
+            "section": "SNODUSLAMP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,LGSparkSys"
+          }
+        ]
+      },
+      "Powered": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17769,
+          "section": "SNODUSLAMP",
+          "key": "Powered",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10022,
+            "section": "SNODUSLAMP",
+            "key": "Powered",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17761,
+            "section": "SNODUSLAMP",
+            "key": "Powered",
+            "value": "true"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "LITEICON",
+      "Image": "GALITE",
+      "Remapable": true,
+      "Foundation": "1x1",
+      "TerrainPalette": true,
+      "NewTheater": true,
+      "ExtraDamageStage": false,
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Cameo": "LITEICON",
+      "Image": "GALITE",
+      "Remapable": "yes",
+      "Foundation": "1x1",
+      "TerrainPalette": "yes",
+      "NewTheater": "yes",
+      "ExtraDamageStage": "false",
+      "CanBeHidden": "False"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "LITEICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4317,
+          "section": "GALITE",
+          "key": "Cameo",
+          "value": "LITEICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2831,
+            "section": "GALITE",
+            "key": "Cameo",
+            "value": "LITEICON"
+          }
+        ]
+      },
+      "Image": {
+        "value": "GALITE",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4318,
+          "section": "GALITE",
+          "key": "Image",
+          "value": "GALITE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2832,
+            "section": "GALITE",
+            "key": "Image",
+            "value": "GALITE"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4319,
+          "section": "GALITE",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2833,
+            "section": "GALITE",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4320,
+          "section": "GALITE",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2834,
+            "section": "GALITE",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "TerrainPalette": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4321,
+          "section": "GALITE",
+          "key": "TerrainPalette",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2835,
+            "section": "GALITE",
+            "key": "TerrainPalette",
+            "value": "yes"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4322,
+          "section": "GALITE",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2836,
+            "section": "GALITE",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "ExtraDamageStage": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4323,
+          "section": "GALITE",
+          "key": "ExtraDamageStage",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2837,
+            "section": "GALITE",
+            "key": "ExtraDamageStage",
+            "value": "false"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4326,
+          "section": "GALITE",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2840,
+            "section": "GALITE",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      }
+    }
+  }
+}

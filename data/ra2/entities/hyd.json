@@ -1,0 +1,2626 @@
+{
+  "id": "HYD",
+  "category": "vehicle",
+  "name_token": "Name:HYD",
+  "art_id": "HYD",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAYARD",
+    "NARADR"
+  ],
+  "tech_level": 6,
+  "cost": 600,
+  "strength": 400,
+  "armor": "heavy",
+  "speed": 8,
+  "sight": 8,
+  "locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+  "movement_zone": "Water",
+  "weapons": {
+    "Primary": {
+      "id": "FlakTrackGun",
+      "projectile": "FlakTProj",
+      "warhead": "FlakTWH",
+      "report": [
+        "FlakTrackAttackGround"
+      ],
+      "values": {
+        "Damage": 25,
+        "ROF": 25,
+        "Range": 5,
+        "Projectile": "FlakTProj",
+        "Speed": 50,
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE"
+      },
+      "raw_values": {
+        "Damage": "25",
+        "ROF": "25",
+        "Range": "5",
+        "Projectile": "FlakTProj",
+        "Speed": "50",
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24221,
+            "section": "FlakTrackGun",
+            "key": "Damage",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17414,
+              "section": "FlakTrackGun",
+              "key": "Damage",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24213,
+              "section": "FlakTrackGun",
+              "key": "Damage",
+              "value": "25"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24222,
+            "section": "FlakTrackGun",
+            "key": "ROF",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17415,
+              "section": "FlakTrackGun",
+              "key": "ROF",
+              "value": "40"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24214,
+              "section": "FlakTrackGun",
+              "key": "ROF",
+              "value": "25"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24223,
+            "section": "FlakTrackGun",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17416,
+              "section": "FlakTrackGun",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24215,
+              "section": "FlakTrackGun",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakTProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24224,
+            "section": "FlakTrackGun",
+            "key": "Projectile",
+            "value": "FlakTProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17417,
+              "section": "FlakTrackGun",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24216,
+              "section": "FlakTrackGun",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24225,
+            "section": "FlakTrackGun",
+            "key": "Speed",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17418,
+              "section": "FlakTrackGun",
+              "key": "Speed",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24217,
+              "section": "FlakTrackGun",
+              "key": "Speed",
+              "value": "50"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakTrackAttackGround",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24226,
+            "section": "FlakTrackGun",
+            "key": "Report",
+            "value": "FlakTrackAttackGround"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17419,
+              "section": "FlakTrackGun",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24218,
+              "section": "FlakTrackGun",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakTWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24227,
+            "section": "FlakTrackGun",
+            "key": "Warhead",
+            "value": "FlakTWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17420,
+              "section": "FlakTrackGun",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24219,
+              "section": "FlakTrackGun",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24228,
+            "section": "FlakTrackGun",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17421,
+              "section": "FlakTrackGun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24220,
+              "section": "FlakTrackGun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "FlakWeapon",
+      "projectile": "FlakProj",
+      "warhead": "FlakWH",
+      "report": [
+        "FlakCannonAttack"
+      ],
+      "values": {
+        "Damage": 40,
+        "ROF": 20,
+        "Range": 12,
+        "Projectile": "FlakProj",
+        "Speed": 100,
+        "Report": "FlakCannonAttack",
+        "Warhead": "FlakWH",
+        "Anim": "GUNFIRE"
+      },
+      "raw_values": {
+        "Damage": "40",
+        "ROF": "20",
+        "Range": "12",
+        "Projectile": "FlakProj",
+        "Speed": "100",
+        "Report": "FlakCannonAttack",
+        "Warhead": "FlakWH",
+        "Anim": "GUNFIRE"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "40",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24191,
+            "section": "FlakWeapon",
+            "key": "Damage",
+            "value": "40"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17384,
+              "section": "FlakWeapon",
+              "key": "Damage",
+              "value": "40"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24183,
+              "section": "FlakWeapon",
+              "key": "Damage",
+              "value": "40"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24192,
+            "section": "FlakWeapon",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17385,
+              "section": "FlakWeapon",
+              "key": "ROF",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24184,
+              "section": "FlakWeapon",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "12",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24193,
+            "section": "FlakWeapon",
+            "key": "Range",
+            "value": "12"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17386,
+              "section": "FlakWeapon",
+              "key": "Range",
+              "value": "12"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24185,
+              "section": "FlakWeapon",
+              "key": "Range",
+              "value": "12"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24194,
+            "section": "FlakWeapon",
+            "key": "Projectile",
+            "value": "FlakProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17387,
+              "section": "FlakWeapon",
+              "key": "Projectile",
+              "value": "FlakProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24186,
+              "section": "FlakWeapon",
+              "key": "Projectile",
+              "value": "FlakProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24195,
+            "section": "FlakWeapon",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17388,
+              "section": "FlakWeapon",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24187,
+              "section": "FlakWeapon",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakCannonAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24196,
+            "section": "FlakWeapon",
+            "key": "Report",
+            "value": "FlakCannonAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17389,
+              "section": "FlakWeapon",
+              "key": "Report",
+              "value": "FlakCannonAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24188,
+              "section": "FlakWeapon",
+              "key": "Report",
+              "value": "FlakCannonAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24197,
+            "section": "FlakWeapon",
+            "key": "Warhead",
+            "value": "FlakWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17390,
+              "section": "FlakWeapon",
+              "key": "Warhead",
+              "value": "FlakWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24189,
+              "section": "FlakWeapon",
+              "key": "Warhead",
+              "value": "FlakWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24198,
+            "section": "FlakWeapon",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17391,
+              "section": "FlakWeapon",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24190,
+              "section": "FlakWeapon",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "FlakTrackGunE",
+      "projectile": "FlakTProj",
+      "warhead": "FlakTWH",
+      "report": [
+        "FlakTrackAttackGround"
+      ],
+      "values": {
+        "Damage": 25,
+        "ROF": 25,
+        "Range": 5,
+        "Projectile": "FlakTProj",
+        "Speed": 50,
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE",
+        "Burst": 2
+      },
+      "raw_values": {
+        "Damage": "25",
+        "ROF": "25",
+        "Range": "5",
+        "Projectile": "FlakTProj",
+        "Speed": "50",
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE",
+        "Burst": "2"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24722,
+            "section": "FlakTrackGunE",
+            "key": "Damage",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17702,
+              "section": "FlakTrackGunE",
+              "key": "Damage",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24714,
+              "section": "FlakTrackGunE",
+              "key": "Damage",
+              "value": "25"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24723,
+            "section": "FlakTrackGunE",
+            "key": "ROF",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17703,
+              "section": "FlakTrackGunE",
+              "key": "ROF",
+              "value": "40"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24715,
+              "section": "FlakTrackGunE",
+              "key": "ROF",
+              "value": "25"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24724,
+            "section": "FlakTrackGunE",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17704,
+              "section": "FlakTrackGunE",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24716,
+              "section": "FlakTrackGunE",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakTProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24725,
+            "section": "FlakTrackGunE",
+            "key": "Projectile",
+            "value": "FlakTProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17705,
+              "section": "FlakTrackGunE",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24717,
+              "section": "FlakTrackGunE",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24726,
+            "section": "FlakTrackGunE",
+            "key": "Speed",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17706,
+              "section": "FlakTrackGunE",
+              "key": "Speed",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24718,
+              "section": "FlakTrackGunE",
+              "key": "Speed",
+              "value": "50"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakTrackAttackGround",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24727,
+            "section": "FlakTrackGunE",
+            "key": "Report",
+            "value": "FlakTrackAttackGround"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17707,
+              "section": "FlakTrackGunE",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24719,
+              "section": "FlakTrackGunE",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakTWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24728,
+            "section": "FlakTrackGunE",
+            "key": "Warhead",
+            "value": "FlakTWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17708,
+              "section": "FlakTrackGunE",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24720,
+              "section": "FlakTrackGunE",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24729,
+            "section": "FlakTrackGunE",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17709,
+              "section": "FlakTrackGunE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24721,
+              "section": "FlakTrackGunE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24730,
+            "section": "FlakTrackGunE",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17710,
+              "section": "FlakTrackGunE",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24722,
+              "section": "FlakTrackGunE",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        }
+      }
+    },
+    "EliteSecondary": {
+      "id": "FlakWeaponE",
+      "projectile": "FlakProj",
+      "warhead": "FlakWH",
+      "report": [
+        "FlakCannonAttack"
+      ],
+      "values": {
+        "Damage": 35,
+        "ROF": 20,
+        "Range": 10,
+        "Projectile": "FlakProj",
+        "Speed": 100,
+        "Report": "FlakCannonAttack",
+        "Warhead": "FlakWH",
+        "Anim": "GUNFIRE",
+        "Burst": 2
+      },
+      "raw_values": {
+        "Damage": "35",
+        "ROF": "20",
+        "Range": "10",
+        "Projectile": "FlakProj",
+        "Speed": "100",
+        "Report": "FlakCannonAttack",
+        "Warhead": "FlakWH",
+        "Anim": "GUNFIRE",
+        "Burst": "2"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "35",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24700,
+            "section": "FlakWeaponE",
+            "key": "Damage",
+            "value": "35"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17680,
+              "section": "FlakWeaponE",
+              "key": "Damage",
+              "value": "35"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24692,
+              "section": "FlakWeaponE",
+              "key": "Damage",
+              "value": "35"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24701,
+            "section": "FlakWeaponE",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17681,
+              "section": "FlakWeaponE",
+              "key": "ROF",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24693,
+              "section": "FlakWeaponE",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "10",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24702,
+            "section": "FlakWeaponE",
+            "key": "Range",
+            "value": "10"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17682,
+              "section": "FlakWeaponE",
+              "key": "Range",
+              "value": "10"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24694,
+              "section": "FlakWeaponE",
+              "key": "Range",
+              "value": "10"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24703,
+            "section": "FlakWeaponE",
+            "key": "Projectile",
+            "value": "FlakProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17683,
+              "section": "FlakWeaponE",
+              "key": "Projectile",
+              "value": "FlakProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24695,
+              "section": "FlakWeaponE",
+              "key": "Projectile",
+              "value": "FlakProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24704,
+            "section": "FlakWeaponE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17684,
+              "section": "FlakWeaponE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24696,
+              "section": "FlakWeaponE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakCannonAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24705,
+            "section": "FlakWeaponE",
+            "key": "Report",
+            "value": "FlakCannonAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17685,
+              "section": "FlakWeaponE",
+              "key": "Report",
+              "value": "FlakCannonAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24697,
+              "section": "FlakWeaponE",
+              "key": "Report",
+              "value": "FlakCannonAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24706,
+            "section": "FlakWeaponE",
+            "key": "Warhead",
+            "value": "FlakWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17686,
+              "section": "FlakWeaponE",
+              "key": "Warhead",
+              "value": "FlakWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24698,
+              "section": "FlakWeaponE",
+              "key": "Warhead",
+              "value": "FlakWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24707,
+            "section": "FlakWeaponE",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17687,
+              "section": "FlakWeaponE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24699,
+              "section": "FlakWeaponE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24708,
+            "section": "FlakWeaponE",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17688,
+              "section": "FlakWeaponE",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24700,
+              "section": "FlakWeaponE",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "SeaScorpionSelect"
+    ],
+    "VoiceMove": [
+      "SeaScorpionMove"
+    ],
+    "VoiceAttack": [
+      "SeaScorpionAttackCommand"
+    ],
+    "DieSound": [
+      "GenSmallWaterDie"
+    ],
+    "MoveSound": [
+      "SeawolfMoveStart"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "HYD",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4156,
+      "pack": "ra2",
+      "relative_path": "local/hyd.vxl",
+      "folder": "local",
+      "filename": "hyd.vxl",
+      "stem": "hyd",
+      "extension": ".vxl",
+      "size": 25984,
+      "sha1": "0e5e472c37ee0436906e917c001c4ecc281d81f9"
+    },
+    "body_hva": {
+      "asset_id": 4155,
+      "pack": "ra2",
+      "relative_path": "local/hyd.hva",
+      "folder": "local",
+      "filename": "hyd.hva",
+      "stem": "hyd",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "9b9665b643b7bcda4b775c55f599299830a70002"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      65.0,
+      0.0,
+      180.0
+    ],
+    "secondary_fire_flh": [
+      65.0,
+      0.0,
+      180.0
+    ],
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:HYD",
+      "Name": "Sea Scorpion",
+      "Prerequisite": "NAYARD,NARADR",
+      "Primary": "FlakTrackGun",
+      "Secondary": "FlakWeapon",
+      "ToProtect": true,
+      "Category": "AFV",
+      "Strength": 400,
+      "Naval": true,
+      "Armor": "heavy",
+      "TechLevel": 6,
+      "MovementRestrictedTo": "Water",
+      "Sight": 8,
+      "Speed": 8,
+      "CrateGoodie": false,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 600,
+      "Points": 20,
+      "ROT": 6,
+      "Crusher": false,
+      "Crewed": false,
+      "IsSelectableCombatant": true,
+      "Weight": 2,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "SeaScorpionSelect",
+      "VoiceMove": "SeaScorpionMove",
+      "VoiceAttack": "SeaScorpionAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenSmallWaterDie",
+      "MoveSound": "SeawolfMoveStart",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": 25,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ElitePrimary": "FlakTrackGunE",
+      "EliteSecondary": "FlakWeaponE",
+      "Size": 20,
+      "Soylent": 600
+    },
+    "raw_values": {
+      "UIName": "Name:HYD",
+      "Name": "Sea Scorpion",
+      "Prerequisite": "NAYARD,NARADR",
+      "Primary": "FlakTrackGun",
+      "Secondary": "FlakWeapon",
+      "ToProtect": "yes",
+      "Category": "AFV",
+      "Strength": "400",
+      "Naval": "yes",
+      "Armor": "heavy",
+      "TechLevel": "6",
+      "MovementRestrictedTo": "Water",
+      "Sight": "8",
+      "Speed": "8",
+      "CrateGoodie": "no",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "600",
+      "Points": "20",
+      "ROT": "6",
+      "Crusher": "no",
+      "Crewed": "no",
+      "IsSelectableCombatant": "yes",
+      "Weight": "2",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "SeaScorpionSelect",
+      "VoiceMove": "SeaScorpionMove",
+      "VoiceAttack": "SeaScorpionAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenSmallWaterDie",
+      "MoveSound": "SeawolfMoveStart",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": "25",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ElitePrimary": "FlakTrackGunE",
+      "EliteSecondary": "FlakWeaponE",
+      "Size": "20",
+      "Soylent": "600"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:HYD",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7954,
+          "section": "HYD",
+          "key": "UIName",
+          "value": "Name:HYD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5609,
+            "section": "HYD",
+            "key": "UIName",
+            "value": "Name:HYD"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7951,
+            "section": "HYD",
+            "key": "UIName",
+            "value": "Name:HYD"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Sea Scorpion",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7955,
+          "section": "HYD",
+          "key": "Name",
+          "value": "Sea Scorpion"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5610,
+            "section": "HYD",
+            "key": "Name",
+            "value": "Sea Scorpion"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7952,
+            "section": "HYD",
+            "key": "Name",
+            "value": "Sea Scorpion"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAYARD,NARADR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7956,
+          "section": "HYD",
+          "key": "Prerequisite",
+          "value": "NAYARD,NARADR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5611,
+            "section": "HYD",
+            "key": "Prerequisite",
+            "value": "NAYARD,NARADR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7953,
+            "section": "HYD",
+            "key": "Prerequisite",
+            "value": "NAYARD,NARADR"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "FlakTrackGun",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7958,
+          "section": "HYD",
+          "key": "Primary",
+          "value": "FlakTrackGun"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5613,
+            "section": "HYD",
+            "key": "Primary",
+            "value": "FlakTrackGun"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7955,
+            "section": "HYD",
+            "key": "Primary",
+            "value": "FlakTrackGun"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "FlakWeapon",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7959,
+          "section": "HYD",
+          "key": "Secondary",
+          "value": "FlakWeapon"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5614,
+            "section": "HYD",
+            "key": "Secondary",
+            "value": "FlakWeapon"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7956,
+            "section": "HYD",
+            "key": "Secondary",
+            "value": "FlakWeapon"
+          }
+        ]
+      },
+      "ToProtect": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7960,
+          "section": "HYD",
+          "key": "ToProtect",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5616,
+            "section": "HYD",
+            "key": "ToProtect",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7957,
+            "section": "HYD",
+            "key": "ToProtect",
+            "value": "yes"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7961,
+          "section": "HYD",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5617,
+            "section": "HYD",
+            "key": "Category",
+            "value": "AFV"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7958,
+            "section": "HYD",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "400",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7962,
+          "section": "HYD",
+          "key": "Strength",
+          "value": "400"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5618,
+            "section": "HYD",
+            "key": "Strength",
+            "value": "400"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7959,
+            "section": "HYD",
+            "key": "Strength",
+            "value": "400"
+          }
+        ]
+      },
+      "Naval": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7963,
+          "section": "HYD",
+          "key": "Naval",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5619,
+            "section": "HYD",
+            "key": "Naval",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7960,
+            "section": "HYD",
+            "key": "Naval",
+            "value": "yes"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7964,
+          "section": "HYD",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5620,
+            "section": "HYD",
+            "key": "Armor",
+            "value": "heavy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7961,
+            "section": "HYD",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7965,
+          "section": "HYD",
+          "key": "TechLevel",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5621,
+            "section": "HYD",
+            "key": "TechLevel",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7962,
+            "section": "HYD",
+            "key": "TechLevel",
+            "value": "6"
+          }
+        ]
+      },
+      "MovementRestrictedTo": {
+        "value": "Water",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7966,
+          "section": "HYD",
+          "key": "MovementRestrictedTo",
+          "value": "Water"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5622,
+            "section": "HYD",
+            "key": "MovementRestrictedTo",
+            "value": "Water"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7963,
+            "section": "HYD",
+            "key": "MovementRestrictedTo",
+            "value": "Water"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7967,
+          "section": "HYD",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5623,
+            "section": "HYD",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7964,
+            "section": "HYD",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7968,
+          "section": "HYD",
+          "key": "Speed",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5624,
+            "section": "HYD",
+            "key": "Speed",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7965,
+            "section": "HYD",
+            "key": "Speed",
+            "value": "8"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7969,
+          "section": "HYD",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5625,
+            "section": "HYD",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7966,
+            "section": "HYD",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7970,
+          "section": "HYD",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5626,
+            "section": "HYD",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7967,
+            "section": "HYD",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7971,
+          "section": "HYD",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5627,
+            "section": "HYD",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7968,
+            "section": "HYD",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7972,
+          "section": "HYD",
+          "key": "Cost",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5628,
+            "section": "HYD",
+            "key": "Cost",
+            "value": "600"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7969,
+            "section": "HYD",
+            "key": "Cost",
+            "value": "600"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7974,
+          "section": "HYD",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5629,
+            "section": "HYD",
+            "key": "Points",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7971,
+            "section": "HYD",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7975,
+          "section": "HYD",
+          "key": "ROT",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5630,
+            "section": "HYD",
+            "key": "ROT",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7972,
+            "section": "HYD",
+            "key": "ROT",
+            "value": "6"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7976,
+          "section": "HYD",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5631,
+            "section": "HYD",
+            "key": "Crusher",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7973,
+            "section": "HYD",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7977,
+          "section": "HYD",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5632,
+            "section": "HYD",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7974,
+            "section": "HYD",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7978,
+          "section": "HYD",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5633,
+            "section": "HYD",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7975,
+            "section": "HYD",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7979,
+          "section": "HYD",
+          "key": "Weight",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5634,
+            "section": "HYD",
+            "key": "Weight",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7976,
+            "section": "HYD",
+            "key": "Weight",
+            "value": "2"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7980,
+          "section": "HYD",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5635,
+            "section": "HYD",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7977,
+            "section": "HYD",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "SeaScorpionSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7981,
+          "section": "HYD",
+          "key": "VoiceSelect",
+          "value": "SeaScorpionSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5636,
+            "section": "HYD",
+            "key": "VoiceSelect",
+            "value": "GenSovWaterSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7978,
+            "section": "HYD",
+            "key": "VoiceSelect",
+            "value": "SeaScorpionSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "SeaScorpionMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7982,
+          "section": "HYD",
+          "key": "VoiceMove",
+          "value": "SeaScorpionMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5637,
+            "section": "HYD",
+            "key": "VoiceMove",
+            "value": "GenSovWaterMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7979,
+            "section": "HYD",
+            "key": "VoiceMove",
+            "value": "SeaScorpionMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "SeaScorpionAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7983,
+          "section": "HYD",
+          "key": "VoiceAttack",
+          "value": "SeaScorpionAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5638,
+            "section": "HYD",
+            "key": "VoiceAttack",
+            "value": "GenSovWaterAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7980,
+            "section": "HYD",
+            "key": "VoiceAttack",
+            "value": "SeaScorpionAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7984,
+          "section": "HYD",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5639,
+            "section": "HYD",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7981,
+            "section": "HYD",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenSmallWaterDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7985,
+          "section": "HYD",
+          "key": "DieSound",
+          "value": "GenSmallWaterDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5640,
+            "section": "HYD",
+            "key": "DieSound",
+            "value": "GenSmallWaterDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7982,
+            "section": "HYD",
+            "key": "DieSound",
+            "value": "GenSmallWaterDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "SeawolfMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7986,
+          "section": "HYD",
+          "key": "MoveSound",
+          "value": "SeawolfMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5641,
+            "section": "HYD",
+            "key": "MoveSound",
+            "value": "SeawolfMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7983,
+            "section": "HYD",
+            "key": "MoveSound",
+            "value": "SeawolfMoveStart"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7987,
+          "section": "HYD",
+          "key": "Locomotor",
+          "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5642,
+            "section": "HYD",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7984,
+            "section": "HYD",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Float",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7990,
+          "section": "HYD",
+          "key": "SpeedType",
+          "value": "Float"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5645,
+            "section": "HYD",
+            "key": "SpeedType",
+            "value": "Float"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7987,
+            "section": "HYD",
+            "key": "SpeedType",
+            "value": "Float"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Water",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7991,
+          "section": "HYD",
+          "key": "MovementZone",
+          "value": "Water"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5646,
+            "section": "HYD",
+            "key": "MovementZone",
+            "value": "Water"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7988,
+            "section": "HYD",
+            "key": "MovementZone",
+            "value": "Water"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7992,
+          "section": "HYD",
+          "key": "ThreatPosed",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5647,
+            "section": "HYD",
+            "key": "ThreatPosed",
+            "value": "25"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7989,
+            "section": "HYD",
+            "key": "ThreatPosed",
+            "value": "25"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7993,
+          "section": "HYD",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5648,
+            "section": "HYD",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7990,
+            "section": "HYD",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7994,
+          "section": "HYD",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5649,
+            "section": "HYD",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7991,
+            "section": "HYD",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7995,
+          "section": "HYD",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5650,
+            "section": "HYD",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7992,
+            "section": "HYD",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "FlakTrackGunE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7996,
+          "section": "HYD",
+          "key": "ElitePrimary",
+          "value": "FlakTrackGunE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5651,
+            "section": "HYD",
+            "key": "ElitePrimary",
+            "value": "FlakTrackGunE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7993,
+            "section": "HYD",
+            "key": "ElitePrimary",
+            "value": "FlakTrackGunE"
+          }
+        ]
+      },
+      "EliteSecondary": {
+        "value": "FlakWeaponE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7997,
+          "section": "HYD",
+          "key": "EliteSecondary",
+          "value": "FlakWeaponE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5652,
+            "section": "HYD",
+            "key": "EliteSecondary",
+            "value": "FlakWeaponE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7994,
+            "section": "HYD",
+            "key": "EliteSecondary",
+            "value": "FlakWeaponE"
+          }
+        ]
+      },
+      "Size": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7998,
+          "section": "HYD",
+          "key": "Size",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5653,
+            "section": "HYD",
+            "key": "Size",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7995,
+            "section": "HYD",
+            "key": "Size",
+            "value": "20"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7973,
+          "section": "HYD",
+          "key": "Soylent",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7970,
+            "section": "HYD",
+            "key": "Soylent",
+            "value": "600"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "HOVRICON",
+      "Voxel": true,
+      "Remapable": true,
+      "PrimaryFireFLH": "65,0,180",
+      "SecondaryFireFLH": "65,0,180"
+    },
+    "raw_values": {
+      "Cameo": "HOVRICON",
+      "Voxel": "yes",
+      "Remapable": "yes",
+      "PrimaryFireFLH": "65,0,180",
+      "SecondaryFireFLH": "65,0,180"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "HOVRICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 789,
+          "section": "HYD",
+          "key": "Cameo",
+          "value": "HOVRICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 563,
+            "section": "HYD",
+            "key": "Cameo",
+            "value": "HOVRICON"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 790,
+          "section": "HYD",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 564,
+            "section": "HYD",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 791,
+          "section": "HYD",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 565,
+            "section": "HYD",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "65,0,180",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 792,
+          "section": "HYD",
+          "key": "PrimaryFireFLH",
+          "value": "65,0,180"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 566,
+            "section": "HYD",
+            "key": "PrimaryFireFLH",
+            "value": "65,0,180"
+          }
+        ]
+      },
+      "SecondaryFireFLH": {
+        "value": "65,0,180",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 793,
+          "section": "HYD",
+          "key": "SecondaryFireFLH",
+          "value": "65,0,180"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 567,
+            "section": "HYD",
+            "key": "SecondaryFireFLH",
+            "value": "65,0,180"
+          }
+        ]
+      }
+    }
+  }
+}

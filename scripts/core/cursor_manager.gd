@@ -153,7 +153,7 @@ func _draw_line(image, start, finish, color, thickness = 1):
     var dy = -abs(y1 - y0)
     var sy = 1 if y0 < y1 else -1
     var error = dx + dy
-    var half = int(thickness / 2)
+    var half = int(floor(float(thickness) * 0.5))
     while true:
         for oy in range(-half, half + 1):
             for ox in range(-half, half + 1):

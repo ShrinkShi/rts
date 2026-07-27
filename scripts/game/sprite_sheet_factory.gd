@@ -29,10 +29,10 @@ const AI_UNIT_FRAME_SIZES = {
 const AI_BUILDING_FRAME_SIZE = Vector2(256, 224)
 const AI_BUILDINGS = ["power", "barracks", "refinery", "turret", "bunker"]
 
-static var _unit_frame_cache = {}
-static var _special_frame_cache = {}
-static var _building_texture_cache = {}
-static var _building_frame_cache = {}
+static var _unit_frame_cache: Dictionary = {}
+static var _special_frame_cache: Dictionary = {}
+static var _building_texture_cache: Dictionary = {}
+static var _building_frame_cache: Dictionary = {}
 static var _shader = null
 
 static func _atlas_frame(texture, frame_size, column, row):
@@ -74,6 +74,8 @@ static func create_team_material(team_color):
     return material
 
 static func get_unit_frames(unit_id):
+    if _unit_frame_cache == null:
+        _unit_frame_cache = {}
     if unit_id == "rifle":
         return _get_ai_rifle_frames()
     if unit_id == "tank":
@@ -109,6 +111,8 @@ static func get_unit_frames(unit_id):
     return frames
 
 static func _get_ai_rifle_frames():
+    if _special_frame_cache == null:
+        _special_frame_cache = {}
     var key = "ai_rifle"
     if _special_frame_cache.has(key):
         return _special_frame_cache[key]
@@ -129,6 +133,8 @@ static func _get_ai_rifle_frames():
     return frames
 
 static func get_tank_chassis_frames():
+    if _special_frame_cache == null:
+        _special_frame_cache = {}
     var key = "tank_chassis"
     if _special_frame_cache.has(key):
         return _special_frame_cache[key]
@@ -151,6 +157,8 @@ static func get_tank_chassis_frames():
     return frames
 
 static func get_tank_turret_frames():
+    if _special_frame_cache == null:
+        _special_frame_cache = {}
     var key = "tank_turret"
     if _special_frame_cache.has(key):
         return _special_frame_cache[key]
@@ -167,6 +175,8 @@ static func get_tank_turret_frames():
     return frames
 
 static func get_defense_head_frames(building_id):
+    if _special_frame_cache == null:
+        _special_frame_cache = {}
     var key = "defense_head:" + building_id
     if _special_frame_cache.has(key):
         return _special_frame_cache[key]
@@ -195,6 +205,8 @@ static func _ai_building_path(building_id):
     return "res://assets/ai_generated/buildings/%s.png" % building_id
 
 static func get_building_texture(building_id):
+    if _building_texture_cache == null:
+        _building_texture_cache = {}
     if _building_texture_cache.has(building_id):
         return _building_texture_cache[building_id]
     var path = _ai_building_path(building_id) if building_id in AI_BUILDINGS else "res://assets/generated/buildings/%s.png" % building_id
@@ -225,9 +237,11 @@ static func get_building_construction_frame(building_id, progress):
         return get_building_frame(building_id, 0)
     var index = _ai_frame_index(building_id, "construction", progress)
     var cols = _ai_grid_columns(building_id)
-    return _atlas_frame(get_building_texture(building_id), AI_BUILDING_FRAME_SIZE, index % cols, int(index / cols))
+    return _atlas_frame(get_building_texture(building_id), AI_BUILDING_FRAME_SIZE, index % cols, int(floor(float(index) / float(cols))))
 
 static func get_building_frame(building_id, damage_stage = 0):
+    if _building_frame_cache == null:
+        _building_frame_cache = {}
     var key = "%s:%d" % [building_id, clamp(int(damage_stage), 0, 2)]
     if _building_frame_cache.has(key):
         return _building_frame_cache[key]
@@ -239,13 +253,15 @@ static func get_building_frame(building_id, damage_stage = 0):
         var kind = "healthy" if int(damage_stage) == 0 else ("damage_1" if int(damage_stage) == 1 else "damage_2")
         var index = _ai_frame_index(building_id, kind)
         var cols = _ai_grid_columns(building_id)
-        frame_texture = _atlas_frame(atlas_texture, AI_BUILDING_FRAME_SIZE, index % cols, int(index / cols))
+        frame_texture = _atlas_frame(atlas_texture, AI_BUILDING_FRAME_SIZE, index % cols, int(floor(float(index) / float(cols))))
     else:
         frame_texture = _atlas_frame(atlas_texture, Vector2(192, 160), clamp(int(damage_stage), 0, 2), 0)
     _building_frame_cache[key] = frame_texture
     return frame_texture
 
 static func get_building_destroyed_frame(building_id):
+    if _building_frame_cache == null:
+        _building_frame_cache = {}
     var key = "%s:destroyed" % building_id
     if _building_frame_cache.has(key):
         return _building_frame_cache[key]
@@ -256,7 +272,7 @@ static func get_building_destroyed_frame(building_id):
     if building_id in AI_BUILDINGS:
         var index = _ai_frame_index(building_id, "destroyed")
         var cols = _ai_grid_columns(building_id)
-        frame_texture = _atlas_frame(atlas_texture, AI_BUILDING_FRAME_SIZE, index % cols, int(index / cols))
+        frame_texture = _atlas_frame(atlas_texture, AI_BUILDING_FRAME_SIZE, index % cols, int(floor(float(index) / float(cols))))
     elif building_id in ["command", "war_factory", "repair_bay"]:
         frame_texture = _atlas_frame(atlas_texture, Vector2(192, 160), 3, 0)
     else:

@@ -1,0 +1,1738 @@
+{
+  "id": "LCRF",
+  "category": "vehicle",
+  "name_token": "Name:LCRF",
+  "art_id": "LCRF",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GAYARD"
+  ],
+  "tech_level": 4,
+  "cost": 900,
+  "strength": 300,
+  "armor": "light",
+  "speed": 6,
+  "sight": 6,
+  "locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Amphibious",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "HoverAlliedSelect"
+    ],
+    "VoiceMove": [
+      "HoverAlliedMove"
+    ],
+    "VoiceAttack": [
+      "HoverAlliedMove"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "MoveSound": [
+      "LandingCraftMoveStart"
+    ],
+    "EnterTransportSound": [
+      "EnterTransport"
+    ],
+    "LeaveTransportSound": [
+      "ExitTransport"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "LCRF",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4171,
+      "pack": "ra2",
+      "relative_path": "local/lcrf.vxl",
+      "folder": "local",
+      "filename": "lcrf.vxl",
+      "stem": "lcrf",
+      "extension": ".vxl",
+      "size": 88900,
+      "sha1": "f8341ae6743e5c0263fe070cb0fa2eb18ce57cf9"
+    },
+    "body_hva": {
+      "asset_id": 4170,
+      "pack": "ra2",
+      "relative_path": "local/lcrf.hva",
+      "folder": "local",
+      "filename": "lcrf.hva",
+      "stem": "lcrf",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "bc1901bc1e19d32eb8820b208b2510bb2c9d8c13"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:LCRF",
+      "Name": "Landing Craft",
+      "Prerequisite": "GAYARD",
+      "Strength": 300,
+      "MoveToShroud": true,
+      "Category": "Transport",
+      "DeployTime": 0.022,
+      "Armor": "light",
+      "Turret": false,
+      "IsTilter": true,
+      "TechLevel": 4,
+      "Sight": 6,
+      "PipScale": "Passengers",
+      "Speed": 6,
+      "Naval": true,
+      "Weight": 1,
+      "CrateGoodie": false,
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 900,
+      "Points": 15,
+      "ROT": 5,
+      "Crusher": false,
+      "Passengers": 12,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "HoverAlliedSelect",
+      "VoiceMove": "HoverAlliedMove",
+      "VoiceAttack": "HoverAlliedMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "LandingCraftMoveStart",
+      "EnterTransportSound": "EnterTransport",
+      "LeaveTransportSound": "ExitTransport",
+      "Maxdebris": 3,
+      "SpeedType": "Hover",
+      "Locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Amphibious",
+      "ThreatPosed": 3,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": 1,
+      "ZFudgeColumn": 7,
+      "ZFudgeTunnel": 13,
+      "SizeLimit": 6,
+      "Size": 16,
+      "TooBigToFitUnderBridge": true,
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Trainable": false,
+      "StupidHunt": true,
+      "Soylent": 900,
+      "Bunkerable": false
+    },
+    "raw_values": {
+      "UIName": "Name:LCRF",
+      "Name": "Landing Craft",
+      "Prerequisite": "GAYARD",
+      "Strength": "300",
+      "MoveToShroud": "yes",
+      "Category": "Transport",
+      "DeployTime": ".022",
+      "Armor": "light",
+      "Turret": "no",
+      "IsTilter": "yes",
+      "TechLevel": "4",
+      "Sight": "6",
+      "PipScale": "Passengers",
+      "Speed": "6",
+      "Naval": "yes",
+      "Weight": "1",
+      "CrateGoodie": "no",
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "900",
+      "Points": "15",
+      "ROT": "5",
+      "Crusher": "no",
+      "Passengers": "12",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "HoverAlliedSelect",
+      "VoiceMove": "HoverAlliedMove",
+      "VoiceAttack": "HoverAlliedMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "LandingCraftMoveStart",
+      "EnterTransportSound": "EnterTransport",
+      "LeaveTransportSound": "ExitTransport",
+      "Maxdebris": "3",
+      "SpeedType": "Hover",
+      "Locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Amphibious",
+      "ThreatPosed": "3",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": "1",
+      "ZFudgeColumn": "7",
+      "ZFudgeTunnel": "13",
+      "SizeLimit": "6",
+      "Size": "16",
+      "TooBigToFitUnderBridge": "true",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Trainable": "no",
+      "StupidHunt": "yes",
+      "Soylent": "900",
+      "Bunkerable": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:LCRF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7013,
+          "section": "LCRF",
+          "key": "UIName",
+          "value": "Name:LCRF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6168,
+            "section": "LCRF",
+            "key": "UIName",
+            "value": "Name:LCRF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7011,
+            "section": "LCRF",
+            "key": "UIName",
+            "value": "Name:LCRF"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Landing Craft",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7014,
+          "section": "LCRF",
+          "key": "Name",
+          "value": "Landing Craft"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6169,
+            "section": "LCRF",
+            "key": "Name",
+            "value": "Landing Craft"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7012,
+            "section": "LCRF",
+            "key": "Name",
+            "value": "Landing Craft"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GAYARD",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7015,
+          "section": "LCRF",
+          "key": "Prerequisite",
+          "value": "GAYARD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6170,
+            "section": "LCRF",
+            "key": "Prerequisite",
+            "value": "GAYARD"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7013,
+            "section": "LCRF",
+            "key": "Prerequisite",
+            "value": "GAYARD"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "300",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7016,
+          "section": "LCRF",
+          "key": "Strength",
+          "value": "300"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6171,
+            "section": "LCRF",
+            "key": "Strength",
+            "value": "300"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7014,
+            "section": "LCRF",
+            "key": "Strength",
+            "value": "300"
+          }
+        ]
+      },
+      "MoveToShroud": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7017,
+          "section": "LCRF",
+          "key": "MoveToShroud",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6172,
+            "section": "LCRF",
+            "key": "MoveToShroud",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7015,
+            "section": "LCRF",
+            "key": "MoveToShroud",
+            "value": "yes"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Transport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7018,
+          "section": "LCRF",
+          "key": "Category",
+          "value": "Transport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6173,
+            "section": "LCRF",
+            "key": "Category",
+            "value": "Transport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7016,
+            "section": "LCRF",
+            "key": "Category",
+            "value": "Transport"
+          }
+        ]
+      },
+      "DeployTime": {
+        "value": ".022",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7019,
+          "section": "LCRF",
+          "key": "DeployTime",
+          "value": ".022"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6174,
+            "section": "LCRF",
+            "key": "DeployTime",
+            "value": ".022"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7017,
+            "section": "LCRF",
+            "key": "DeployTime",
+            "value": ".022"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7020,
+          "section": "LCRF",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6175,
+            "section": "LCRF",
+            "key": "Armor",
+            "value": "light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7018,
+            "section": "LCRF",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7021,
+          "section": "LCRF",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6176,
+            "section": "LCRF",
+            "key": "Turret",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7019,
+            "section": "LCRF",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "IsTilter": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7022,
+          "section": "LCRF",
+          "key": "IsTilter",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6177,
+            "section": "LCRF",
+            "key": "IsTilter",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7020,
+            "section": "LCRF",
+            "key": "IsTilter",
+            "value": "yes"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7023,
+          "section": "LCRF",
+          "key": "TechLevel",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6178,
+            "section": "LCRF",
+            "key": "TechLevel",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7021,
+            "section": "LCRF",
+            "key": "TechLevel",
+            "value": "4"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7024,
+          "section": "LCRF",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6179,
+            "section": "LCRF",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7022,
+            "section": "LCRF",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "PipScale": {
+        "value": "Passengers",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7025,
+          "section": "LCRF",
+          "key": "PipScale",
+          "value": "Passengers"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6180,
+            "section": "LCRF",
+            "key": "PipScale",
+            "value": "Passengers"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7023,
+            "section": "LCRF",
+            "key": "PipScale",
+            "value": "Passengers"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7026,
+          "section": "LCRF",
+          "key": "Speed",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6181,
+            "section": "LCRF",
+            "key": "Speed",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7024,
+            "section": "LCRF",
+            "key": "Speed",
+            "value": "6"
+          }
+        ]
+      },
+      "Naval": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7028,
+          "section": "LCRF",
+          "key": "Naval",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6183,
+            "section": "LCRF",
+            "key": "Naval",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7026,
+            "section": "LCRF",
+            "key": "Naval",
+            "value": "yes"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7029,
+          "section": "LCRF",
+          "key": "Weight",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6184,
+            "section": "LCRF",
+            "key": "Weight",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7027,
+            "section": "LCRF",
+            "key": "Weight",
+            "value": "1"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7030,
+          "section": "LCRF",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6185,
+            "section": "LCRF",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7028,
+            "section": "LCRF",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7031,
+          "section": "LCRF",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6186,
+            "section": "LCRF",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7029,
+            "section": "LCRF",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7032,
+          "section": "LCRF",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6187,
+            "section": "LCRF",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7030,
+            "section": "LCRF",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "900",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7033,
+          "section": "LCRF",
+          "key": "Cost",
+          "value": "900"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6188,
+            "section": "LCRF",
+            "key": "Cost",
+            "value": "900"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7031,
+            "section": "LCRF",
+            "key": "Cost",
+            "value": "900"
+          }
+        ]
+      },
+      "Points": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7035,
+          "section": "LCRF",
+          "key": "Points",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6189,
+            "section": "LCRF",
+            "key": "Points",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7033,
+            "section": "LCRF",
+            "key": "Points",
+            "value": "15"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7036,
+          "section": "LCRF",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6190,
+            "section": "LCRF",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7034,
+            "section": "LCRF",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7037,
+          "section": "LCRF",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6191,
+            "section": "LCRF",
+            "key": "Crusher",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7035,
+            "section": "LCRF",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Passengers": {
+        "value": "12",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7038,
+          "section": "LCRF",
+          "key": "Passengers",
+          "value": "12"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6192,
+            "section": "LCRF",
+            "key": "Passengers",
+            "value": "12"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7036,
+            "section": "LCRF",
+            "key": "Passengers",
+            "value": "12"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7039,
+          "section": "LCRF",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6193,
+            "section": "LCRF",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7037,
+            "section": "LCRF",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "HoverAlliedSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7040,
+          "section": "LCRF",
+          "key": "VoiceSelect",
+          "value": "HoverAlliedSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6194,
+            "section": "LCRF",
+            "key": "VoiceSelect",
+            "value": "LandingCraftSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7038,
+            "section": "LCRF",
+            "key": "VoiceSelect",
+            "value": "HoverAlliedSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "HoverAlliedMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7041,
+          "section": "LCRF",
+          "key": "VoiceMove",
+          "value": "HoverAlliedMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6195,
+            "section": "LCRF",
+            "key": "VoiceMove",
+            "value": "LandingCraftMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7039,
+            "section": "LCRF",
+            "key": "VoiceMove",
+            "value": "HoverAlliedMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "HoverAlliedMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7042,
+          "section": "LCRF",
+          "key": "VoiceAttack",
+          "value": "HoverAlliedMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6196,
+            "section": "LCRF",
+            "key": "VoiceAttack",
+            "value": "GenAllWaterAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7040,
+            "section": "LCRF",
+            "key": "VoiceAttack",
+            "value": "HoverAlliedMove"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7043,
+          "section": "LCRF",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6197,
+            "section": "LCRF",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7041,
+            "section": "LCRF",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7044,
+          "section": "LCRF",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6198,
+            "section": "LCRF",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7042,
+            "section": "LCRF",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "LandingCraftMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7045,
+          "section": "LCRF",
+          "key": "MoveSound",
+          "value": "LandingCraftMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6199,
+            "section": "LCRF",
+            "key": "MoveSound",
+            "value": "LandingCraftMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7043,
+            "section": "LCRF",
+            "key": "MoveSound",
+            "value": "LandingCraftMoveStart"
+          }
+        ]
+      },
+      "EnterTransportSound": {
+        "value": "EnterTransport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7046,
+          "section": "LCRF",
+          "key": "EnterTransportSound",
+          "value": "EnterTransport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6200,
+            "section": "LCRF",
+            "key": "EnterTransportSound",
+            "value": "EnterTransport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7044,
+            "section": "LCRF",
+            "key": "EnterTransportSound",
+            "value": "EnterTransport"
+          }
+        ]
+      },
+      "LeaveTransportSound": {
+        "value": "ExitTransport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7047,
+          "section": "LCRF",
+          "key": "LeaveTransportSound",
+          "value": "ExitTransport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6201,
+            "section": "LCRF",
+            "key": "LeaveTransportSound",
+            "value": "ExitTransport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7045,
+            "section": "LCRF",
+            "key": "LeaveTransportSound",
+            "value": "ExitTransport"
+          }
+        ]
+      },
+      "Maxdebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7048,
+          "section": "LCRF",
+          "key": "Maxdebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6202,
+            "section": "LCRF",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7046,
+            "section": "LCRF",
+            "key": "Maxdebris",
+            "value": "3"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Hover",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7055,
+          "section": "LCRF",
+          "key": "SpeedType",
+          "value": "Hover"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6212,
+            "section": "LCRF",
+            "key": "SpeedType",
+            "value": "Hover"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7053,
+            "section": "LCRF",
+            "key": "SpeedType",
+            "value": "Hover"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7056,
+          "section": "LCRF",
+          "key": "Locomotor",
+          "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6213,
+            "section": "LCRF",
+            "key": "Locomotor",
+            "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7054,
+            "section": "LCRF",
+            "key": "Locomotor",
+            "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Amphibious",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7057,
+          "section": "LCRF",
+          "key": "MovementZone",
+          "value": "Amphibious"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6214,
+            "section": "LCRF",
+            "key": "MovementZone",
+            "value": "Amphibious"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7055,
+            "section": "LCRF",
+            "key": "MovementZone",
+            "value": "Amphibious"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7058,
+          "section": "LCRF",
+          "key": "ThreatPosed",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6216,
+            "section": "LCRF",
+            "key": "ThreatPosed",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7056,
+            "section": "LCRF",
+            "key": "ThreatPosed",
+            "value": "3"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7059,
+          "section": "LCRF",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6217,
+            "section": "LCRF",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7057,
+            "section": "LCRF",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7060,
+          "section": "LCRF",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6218,
+            "section": "LCRF",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7058,
+            "section": "LCRF",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7061,
+          "section": "LCRF",
+          "key": "ZFudgeColumn",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6219,
+            "section": "LCRF",
+            "key": "ZFudgeColumn",
+            "value": "7"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7059,
+            "section": "LCRF",
+            "key": "ZFudgeColumn",
+            "value": "7"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7062,
+          "section": "LCRF",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6220,
+            "section": "LCRF",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7060,
+            "section": "LCRF",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "SizeLimit": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7063,
+          "section": "LCRF",
+          "key": "SizeLimit",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6221,
+            "section": "LCRF",
+            "key": "SizeLimit",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7061,
+            "section": "LCRF",
+            "key": "SizeLimit",
+            "value": "6"
+          }
+        ]
+      },
+      "Size": {
+        "value": "16",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7064,
+          "section": "LCRF",
+          "key": "Size",
+          "value": "16"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6222,
+            "section": "LCRF",
+            "key": "Size",
+            "value": "16"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7062,
+            "section": "LCRF",
+            "key": "Size",
+            "value": "16"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7065,
+          "section": "LCRF",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6223,
+            "section": "LCRF",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7063,
+            "section": "LCRF",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7066,
+          "section": "LCRF",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6224,
+            "section": "LCRF",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7064,
+            "section": "LCRF",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7067,
+          "section": "LCRF",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6225,
+            "section": "LCRF",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7065,
+            "section": "LCRF",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7069,
+          "section": "LCRF",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6227,
+            "section": "LCRF",
+            "key": "Trainable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7067,
+            "section": "LCRF",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "StupidHunt": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7070,
+          "section": "LCRF",
+          "key": "StupidHunt",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6228,
+            "section": "LCRF",
+            "key": "StupidHunt",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7068,
+            "section": "LCRF",
+            "key": "StupidHunt",
+            "value": "yes"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "900",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7034,
+          "section": "LCRF",
+          "key": "Soylent",
+          "value": "900"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7032,
+            "section": "LCRF",
+            "key": "Soylent",
+            "value": "900"
+          }
+        ]
+      },
+      "Bunkerable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7071,
+          "section": "LCRF",
+          "key": "Bunkerable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7069,
+            "section": "LCRF",
+            "key": "Bunkerable",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "LANDICON",
+      "Voxel": true,
+      "Remapable": true
+    },
+    "raw_values": {
+      "Cameo": "LANDICON",
+      "Voxel": "yes",
+      "Remapable": "yes"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "LANDICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 983,
+          "section": "LCRF",
+          "key": "Cameo",
+          "value": "LANDICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 686,
+            "section": "LCRF",
+            "key": "Cameo",
+            "value": "LANDICON"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 984,
+          "section": "LCRF",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 687,
+            "section": "LCRF",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 985,
+          "section": "LCRF",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 688,
+            "section": "LCRF",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  }
+}

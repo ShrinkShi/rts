@@ -1,0 +1,996 @@
+{
+  "id": "AMMOCRAT",
+  "category": "building",
+  "name_token": "Name:AMMOCRAT",
+  "art_id": "AMMO01",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 1,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "AMMO01",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 11282,
+          "pack": "ra2md",
+          "relative_path": "ubn/ammo01.shp",
+          "folder": "ubn",
+          "filename": "ammo01.shp",
+          "stem": "ammo01",
+          "extension": ".shp",
+          "size": 5480,
+          "sha1": "221ab8fd596ed0852551f60e3b3b984bc6fb48fb"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 11282,
+          "pack": "ra2md",
+          "relative_path": "ubn/ammo01.shp",
+          "folder": "ubn",
+          "filename": "ammo01.shp",
+          "stem": "ammo01",
+          "extension": ".shp",
+          "size": 5480,
+          "sha1": "221ab8fd596ed0852551f60e3b3b984bc6fb48fb"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 11282,
+          "pack": "ra2md",
+          "relative_path": "ubn/ammo01.shp",
+          "folder": "ubn",
+          "filename": "ammo01.shp",
+          "stem": "ammo01",
+          "extension": ".shp",
+          "size": 5480,
+          "sha1": "221ab8fd596ed0852551f60e3b3b984bc6fb48fb"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 11282,
+          "pack": "ra2md",
+          "relative_path": "ubn/ammo01.shp",
+          "folder": "ubn",
+          "filename": "ammo01.shp",
+          "stem": "ammo01",
+          "extension": ".shp",
+          "size": 5480,
+          "sha1": "221ab8fd596ed0852551f60e3b3b984bc6fb48fb"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 11282,
+          "pack": "ra2md",
+          "relative_path": "ubn/ammo01.shp",
+          "folder": "ubn",
+          "filename": "ammo01.shp",
+          "stem": "ammo01",
+          "extension": ".shp",
+          "size": 5480,
+          "sha1": "221ab8fd596ed0852551f60e3b3b984bc6fb48fb"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 11282,
+          "pack": "ra2md",
+          "relative_path": "ubn/ammo01.shp",
+          "folder": "ubn",
+          "filename": "ammo01.shp",
+          "stem": "ammo01",
+          "extension": ".shp",
+          "size": 5480,
+          "sha1": "221ab8fd596ed0852551f60e3b3b984bc6fb48fb"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 1,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:AMMOCRAT",
+      "Name": "Ammo Crates",
+      "Image": "AMMO01",
+      "Selectable": false,
+      "TechLevel": -1,
+      "Strength": 1,
+      "EligibleForDelayKill": true,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 3,
+      "PlaceAnywhere": true,
+      "BaseNormal": false,
+      "ThreatPosed": 10,
+      "SpecialThreatValue": 1,
+      "Explodes": true,
+      "DeathWeapon": "BarrelExplosion",
+      "CanC4": false,
+      "DamageSound": "BuildingMetalDamaged"
+    },
+    "raw_values": {
+      "UIName": "Name:AMMOCRAT",
+      "Name": "Ammo Crates",
+      "Image": "AMMO01",
+      "Selectable": "no",
+      "TechLevel": "-1",
+      "Strength": "1",
+      "EligibleForDelayKill": "yes",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "3",
+      "PlaceAnywhere": "yes",
+      "BaseNormal": "no",
+      "ThreatPosed": "10",
+      "SpecialThreatValue": "1",
+      "Explodes": "yes",
+      "DeathWeapon": "BarrelExplosion",
+      "CanC4": "no",
+      "DamageSound": "BuildingMetalDamaged"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:AMMOCRAT",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22278,
+          "section": "AMMOCRAT",
+          "key": "UIName",
+          "value": "Name:AMMOCRAT"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15921,
+            "section": "AMMOCRAT",
+            "key": "UIName",
+            "value": "Name:AMMOCRAT"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22270,
+            "section": "AMMOCRAT",
+            "key": "UIName",
+            "value": "Name:AMMOCRAT"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Ammo Crates",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22279,
+          "section": "AMMOCRAT",
+          "key": "Name",
+          "value": "Ammo Crates"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15922,
+            "section": "AMMOCRAT",
+            "key": "Name",
+            "value": "Ammo Crates"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22271,
+            "section": "AMMOCRAT",
+            "key": "Name",
+            "value": "Ammo Crates"
+          }
+        ]
+      },
+      "Image": {
+        "value": "AMMO01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22280,
+          "section": "AMMOCRAT",
+          "key": "Image",
+          "value": "AMMO01"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15923,
+            "section": "AMMOCRAT",
+            "key": "Image",
+            "value": "AMMO01"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22272,
+            "section": "AMMOCRAT",
+            "key": "Image",
+            "value": "AMMO01"
+          }
+        ]
+      },
+      "Selectable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22281,
+          "section": "AMMOCRAT",
+          "key": "Selectable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15924,
+            "section": "AMMOCRAT",
+            "key": "Selectable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22273,
+            "section": "AMMOCRAT",
+            "key": "Selectable",
+            "value": "no"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22282,
+          "section": "AMMOCRAT",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15925,
+            "section": "AMMOCRAT",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22274,
+            "section": "AMMOCRAT",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22283,
+          "section": "AMMOCRAT",
+          "key": "Strength",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15926,
+            "section": "AMMOCRAT",
+            "key": "Strength",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22275,
+            "section": "AMMOCRAT",
+            "key": "Strength",
+            "value": "1"
+          }
+        ]
+      },
+      "EligibleForDelayKill": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22284,
+          "section": "AMMOCRAT",
+          "key": "EligibleForDelayKill",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15927,
+            "section": "AMMOCRAT",
+            "key": "EligibleForDelayKill",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22276,
+            "section": "AMMOCRAT",
+            "key": "EligibleForDelayKill",
+            "value": "yes"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22285,
+          "section": "AMMOCRAT",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15928,
+            "section": "AMMOCRAT",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22277,
+            "section": "AMMOCRAT",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22286,
+          "section": "AMMOCRAT",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15929,
+            "section": "AMMOCRAT",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22278,
+            "section": "AMMOCRAT",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 15930,
+          "section": "AMMOCRAT",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22288,
+          "section": "AMMOCRAT",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15931,
+            "section": "AMMOCRAT",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22280,
+            "section": "AMMOCRAT",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22289,
+          "section": "AMMOCRAT",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15932,
+            "section": "AMMOCRAT",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22281,
+            "section": "AMMOCRAT",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22290,
+          "section": "AMMOCRAT",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15933,
+            "section": "AMMOCRAT",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22282,
+            "section": "AMMOCRAT",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22291,
+          "section": "AMMOCRAT",
+          "key": "MaxDebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15934,
+            "section": "AMMOCRAT",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22283,
+            "section": "AMMOCRAT",
+            "key": "MaxDebris",
+            "value": "3"
+          }
+        ]
+      },
+      "PlaceAnywhere": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22292,
+          "section": "AMMOCRAT",
+          "key": "PlaceAnywhere",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15935,
+            "section": "AMMOCRAT",
+            "key": "PlaceAnywhere",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22284,
+            "section": "AMMOCRAT",
+            "key": "PlaceAnywhere",
+            "value": "yes"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22294,
+          "section": "AMMOCRAT",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15937,
+            "section": "AMMOCRAT",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22286,
+            "section": "AMMOCRAT",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22295,
+          "section": "AMMOCRAT",
+          "key": "ThreatPosed",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15938,
+            "section": "AMMOCRAT",
+            "key": "ThreatPosed",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22287,
+            "section": "AMMOCRAT",
+            "key": "ThreatPosed",
+            "value": "10"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22296,
+          "section": "AMMOCRAT",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15939,
+            "section": "AMMOCRAT",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22288,
+            "section": "AMMOCRAT",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "Explodes": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22297,
+          "section": "AMMOCRAT",
+          "key": "Explodes",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15940,
+            "section": "AMMOCRAT",
+            "key": "Explodes",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22289,
+            "section": "AMMOCRAT",
+            "key": "Explodes",
+            "value": "yes"
+          }
+        ]
+      },
+      "DeathWeapon": {
+        "value": "BarrelExplosion",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22298,
+          "section": "AMMOCRAT",
+          "key": "DeathWeapon",
+          "value": "BarrelExplosion"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15941,
+            "section": "AMMOCRAT",
+            "key": "DeathWeapon",
+            "value": "BarrelExplosion"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22290,
+            "section": "AMMOCRAT",
+            "key": "DeathWeapon",
+            "value": "BarrelExplosion"
+          }
+        ]
+      },
+      "CanC4": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22299,
+          "section": "AMMOCRAT",
+          "key": "CanC4",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15942,
+            "section": "AMMOCRAT",
+            "key": "CanC4",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22291,
+            "section": "AMMOCRAT",
+            "key": "CanC4",
+            "value": "no"
+          }
+        ]
+      },
+      "DamageSound": {
+        "value": "BuildingMetalDamaged",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 22300,
+          "section": "AMMOCRAT",
+          "key": "DamageSound",
+          "value": "BuildingMetalDamaged"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15943,
+            "section": "AMMOCRAT",
+            "key": "DamageSound",
+            "value": "BuildingMetalDamaged"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 22292,
+            "section": "AMMOCRAT",
+            "key": "DamageSound",
+            "value": "BuildingMetalDamaged"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "1x1",
+      "TerrainPalette": false,
+      "ExtraDamageStage": false,
+      "DemandLoad": false,
+      "Theater": false,
+      "Height": 1
+    },
+    "raw_values": {
+      "Foundation": "1x1",
+      "TerrainPalette": "no",
+      "ExtraDamageStage": "false",
+      "DemandLoad": "false",
+      "Theater": "no",
+      "Height": "1"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4171,
+          "section": "AMMO01",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2716,
+            "section": "AMMO01",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "TerrainPalette": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4172,
+          "section": "AMMO01",
+          "key": "TerrainPalette",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2717,
+            "section": "AMMO01",
+            "key": "TerrainPalette",
+            "value": "no"
+          }
+        ]
+      },
+      "ExtraDamageStage": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4173,
+          "section": "AMMO01",
+          "key": "ExtraDamageStage",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2718,
+            "section": "AMMO01",
+            "key": "ExtraDamageStage",
+            "value": "false"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4174,
+          "section": "AMMO01",
+          "key": "DemandLoad",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2719,
+            "section": "AMMO01",
+            "key": "DemandLoad",
+            "value": "false"
+          }
+        ]
+      },
+      "Theater": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4175,
+          "section": "AMMO01",
+          "key": "Theater",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2720,
+            "section": "AMMO01",
+            "key": "Theater",
+            "value": "no"
+          }
+        ]
+      },
+      "Height": {
+        "value": "1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4176,
+          "section": "AMMO01",
+          "key": "Height",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2721,
+            "section": "AMMO01",
+            "key": "Height",
+            "value": "1"
+          }
+        ]
+      }
+    }
+  }
+}

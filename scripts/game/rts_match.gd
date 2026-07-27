@@ -5,12 +5,31 @@ signal exit_to_menu
 const GridWorld = preload("res://scripts/game/grid_world.gd")
 const UnitEntity = preload("res://scripts/game/unit.gd")
 const BuildingEntity = preload("res://scripts/game/building.gd")
+
+const UNIT_SCENE_PATHS = {
+    "rifle": "res://scenes/entities/units/rifle.tscn",
+    "rocket": "res://scenes/entities/units/rocket.tscn",
+    "tank": "res://scenes/entities/units/tank.tscn",
+    "scout": "res://scenes/entities/units/scout.tscn",
+    "harvester": "res://scenes/entities/units/harvester.tscn"
+}
+const BUILDING_SCENE_PATHS = {
+    "command": "res://scenes/entities/buildings/command.tscn",
+    "power": "res://scenes/entities/buildings/power.tscn",
+    "barracks": "res://scenes/entities/buildings/barracks.tscn",
+    "refinery": "res://scenes/entities/buildings/refinery.tscn",
+    "war_factory": "res://scenes/entities/buildings/war_factory.tscn",
+    "repair_bay": "res://scenes/entities/buildings/repair_bay.tscn",
+    "turret": "res://scenes/entities/buildings/turret.tscn",
+    "bunker": "res://scenes/entities/buildings/bunker.tscn"
+}
 const OreEntity = preload("res://scripts/game/ore_entity.gd")
 const TreeEntity = preload("res://scripts/game/tree_entity.gd")
 const CombatEffect = preload("res://scripts/game/combat_effect.gd")
 const FogOfWar = preload("res://scripts/game/fog_of_war.gd")
 const WorldOverlay = preload("res://scripts/game/world_overlay.gd")
 const Tracer = preload("res://scripts/game/tracer.gd")
+const Projectile = preload("res://scripts/game/projectile.gd")
 const MatchHUD = preload("res://scripts/ui/match_hud.gd")
 const AIController = preload("res://scripts/game/ai_controller.gd")
 const UIFactory = preload("res://scripts/ui/ui_factory.gd")
@@ -69,6 +88,11 @@ var last_clicked_entity
 var last_click_ms = 0
 var selection_ctrl_pressed = false
 var last_viewport_size = Vector2.ZERO
+var ai_debug_enabled: bool = false
+var reveal_all_enabled: bool = false
+var ai_debug_layer: CanvasLayer
+var ai_debug_label: Label
+var ai_debug_update_timer: float = 0.0
 
 # Lightweight broad-phase cache. Unit steering previously scanned the complete
 # unit array several times per moving unit and per physics frame, producing
@@ -87,6 +111,8 @@ func _ready():
     _build_world()
     _spawn_players()
     _build_hud()
+    VoiceManager.set_adjutant_faction(str(get_player_data(0).get("faction", "union")))
+    _build_ai_debug_overlay()
     get_viewport().size_changed.connect(_on_viewport_size_changed)
     call_deferred("_on_viewport_size_changed")
     _create_ai_controllers()
@@ -174,7 +200,7 @@ func get_nearest_ore_entity(from_position, requester = null):
             best = ore
     return best
 
-func get_harvest_approach_position(ore, harvester = null):
+func get_harvest_approach_position(ore, _harvester = null):
     if not is_instance_valid(ore) or ore.is_depleted():
         return Vector2.ZERO
     # Ore cells are traversable ground. Driving onto the deposit removes the
@@ -216,8 +242,8 @@ func _spawn_starting_force(player_id):
     position_index = clamp(position_index, 0, positions.size() - 1)
     var start_data = positions[position_index]
     var start = Vector2i(int(start_data[0]), int(start_data[1]))
-    var horizontal = 1 if start.x < grid.map_width / 2 else -1
-    var vertical = 1 if start.y < grid.map_height / 2 else -1
+    var horizontal = 1 if float(start.x) < float(grid.map_width) * 0.5 else -1
+    var vertical = 1 if float(start.y) < float(grid.map_height) * 0.5 else -1
 
     var command = spawn_building(player_id, "command", start - Vector2i(1, 1))
     spawn_building(player_id, "power", start + Vector2i(4 * horizontal, -1))
@@ -234,15 +260,10 @@ func _spawn_starting_force(player_id):
             for offset in [Vector2i(5 * horizontal, 2 * vertical), Vector2i(6 * horizontal, 3 * vertical), Vector2i(5 * horizontal, 4 * vertical), Vector2i(6 * horizontal, 5 * vertical)]:
                 spawn_unit(player_id, "rifle", grid.cell_to_world(grid.nearest_walkable_cell(start + offset)))
     else:
-        var refinery = spawn_building(player_id, "refinery", start + Vector2i(-1, 4 * vertical))
-        if player_id > 0:
-            spawn_building(player_id, "barracks", start + Vector2i(5 * horizontal, 3 * vertical))
-            spawn_building(player_id, "war_factory", start + Vector2i(5 * horizontal, -4 * vertical))
-            spawn_building(player_id, "turret", start + Vector2i(2 * horizontal, 5 * vertical))
+        # Skirmish players start from the same minimal base. AI production and
+        # defenses are now earned through its construction/economy plan.
         for offset in [Vector2i(5 * horizontal, 2 * vertical), Vector2i(6 * horizontal, 3 * vertical)]:
             spawn_unit(player_id, "rifle", grid.cell_to_world(grid.nearest_walkable_cell(start + offset)))
-        if player_id > 0:
-            spawn_unit(player_id, "tank", grid.cell_to_world(grid.nearest_walkable_cell(start + Vector2i(7 * horizontal, -2 * vertical))))
 
     if player_id == 0 and is_instance_valid(command):
         camera.position = command.global_position
@@ -392,6 +413,10 @@ func _process(delta):
     if fog_visibility_timer <= 0.0:
         fog_visibility_timer = 0.12
         _update_enemy_visibility()
+    ai_debug_update_timer -= real_delta
+    if ai_debug_enabled and ai_debug_update_timer <= 0.0:
+        ai_debug_update_timer = 0.25
+        _refresh_ai_debug_overlay()
 
 func _update_enemy_visibility():
     if not is_instance_valid(fog) or not fog.enabled:
@@ -701,6 +726,15 @@ func _handle_hotkey(event):
     if event.keycode == KEY_F2:
         _select_all_combat_units()
         return
+    if event.keycode == KEY_F8:
+        toggle_ai_debug()
+        return
+    if event.keycode == KEY_F9:
+        toggle_reveal_all()
+        return
+    if event.keycode == KEY_D and _selection_has_deployable_unit():
+        _issue_immediate_unit_command("deploy")
+        return
     if event.keycode == KEY_A and event.ctrl_pressed and (_selection_has_combat_unit() or _selection_has_defense_building()):
         _set_command_mode("force_attack")
         return
@@ -862,7 +896,8 @@ func _set_selection(next_selection, _additive):
         overlay.set_selected_entities(selected_entities)
     for entity in selected_entities:
         if is_instance_valid(entity) and entity.has_method("command_move"):
-            VoiceManager.speak(entity.unit_id, "select")
+            if not str(entity.ra2_entity_id).is_empty():
+                RA2RuntimeDatabase.play_entity_role(str(entity.ra2_entity_id), "VoiceSelect")
             break
     EventBus.selection_changed.emit(selected_entities)
 
@@ -892,7 +927,7 @@ func _formation_targets(movable, target_position):
     var columns = max(1, int(ceil(sqrt(float(movable.size())))))
     var rows = int(ceil(float(movable.size()) / float(columns)))
     for index in range(movable.size()):
-        var row = int(index / columns)
+        var row = int(floor(float(index) / float(columns)))
         var column = index % columns
         var row_count = min(columns, movable.size() - row * columns)
         var offset_x = (float(column) - (float(row_count) - 1.0) * 0.5) * spacing
@@ -917,7 +952,6 @@ func _issue_move_command(target_position, queued = false):
         movable[index].command_move(targets[index], true, queued)
     if not movable.is_empty():
         overlay.add_command_marker(target_position, Color("#69D889"), _queued_marker_label(movable, queued))
-        VoiceManager.speak(movable[0].unit_id, "move")
 
 func _issue_context_command(target_position, queued = false):
     if selected_entities.is_empty():
@@ -941,12 +975,11 @@ func _issue_context_command(target_position, queued = false):
             harvester.command_harvest(target_entity, queued)
         if not harvesters.is_empty():
             overlay.add_command_marker(target_entity.global_position, Color("#E4C44E"), _queued_marker_label(harvesters, queued))
-            VoiceManager.speak("harvester", "move")
         return
 
     if is_instance_valid(target_entity) and target_entity.owner_id >= 0 and are_enemies(0, target_entity.owner_id) and fog.is_world_visible(target_entity.global_position):
         var attackers = []
-        var speaking_unit
+        var speaking_unit: Node = null
         for entity in selected_entities:
             if not is_instance_valid(entity) or not entity.has_method("command_attack"):
                 continue
@@ -965,8 +998,6 @@ func _issue_context_command(target_position, queued = false):
             if entity.has_method("is_combat_unit") and speaking_unit == null:
                 speaking_unit = entity
         overlay.add_command_marker(target_position, Color("#F06E67"), _queued_marker_label(attackers, queued))
-        if is_instance_valid(speaking_unit):
-            VoiceManager.speak(speaking_unit.unit_id, "attack")
         return
 
     _issue_move_command(target_position, queued)
@@ -1077,16 +1108,16 @@ func _update_cursor_and_hover():
     _set_hover_entity(null, "")
     CursorManager.set_state("move" if _selection_has_movable_unit() else "default")
 
-func _mouse_over_hud(position):
+func _mouse_over_hud(screen_position):
     var viewport_size = get_viewport_rect().size
     var sidebar_width = float(hud.get_sidebar_width()) if is_instance_valid(hud) else 282.0
     var bottom_height = float(hud.get_bottom_height()) if is_instance_valid(hud) else 224.0
     var navigation_height = float(hud.get_navigation_height()) if is_instance_valid(hud) else 38.0
-    if position.y <= navigation_height:
+    if screen_position.y <= navigation_height:
         return true
-    if position.y >= viewport_size.y - bottom_height:
+    if screen_position.y >= viewport_size.y - bottom_height:
         return true
-    if position.x >= viewport_size.x - sidebar_width:
+    if screen_position.x >= viewport_size.x - sidebar_width:
         return true
     return false
 
@@ -1107,6 +1138,12 @@ func _selection_has_combat_unit():
 func _selection_has_movable_unit():
     for entity in selected_entities:
         if is_instance_valid(entity) and entity.has_method("command_move"):
+            return true
+    return false
+
+func _selection_has_deployable_unit() -> bool:
+    for entity in selected_entities:
+        if is_instance_valid(entity) and entity.has_method("can_deploy") and entity.can_deploy():
             return true
     return false
 
@@ -1167,7 +1204,7 @@ func execute_command_from_hud(command_id):
         _set_command_mode("" if command_mode == command_id else command_id)
     elif command_id == "primary":
         _set_selected_producers_primary()
-    elif command_id == "stop" or command_id == "hold":
+    elif command_id in ["stop", "hold", "deploy"]:
         _issue_immediate_unit_command(command_id)
     elif command_id == "building_stop":
         _issue_immediate_selection_command("stop")
@@ -1204,8 +1241,6 @@ func _issue_targeted_command(target_position, queued):
                 forced_buildings.append(building)
         if not forced_units.is_empty() or not forced_buildings.is_empty():
             overlay.add_command_marker(target_position, Color("#F06E67"), "强")
-            if not forced_units.is_empty():
-                VoiceManager.speak(forced_units[0].unit_id, "attack")
     elif mode == "building_attack":
         var target = get_entity_at(target_position, false)
         var defenders = _selected_defense_buildings()
@@ -1233,8 +1268,6 @@ func _issue_targeted_command(target_position, queued):
                 movable[index].command_attack_move(targets[index], queued)
             overlay.add_command_marker(target_position, Color("#F06E67"), _queued_marker_label(movable, queued))
             attackers = movable
-        if not attackers.is_empty():
-            VoiceManager.speak(attackers[0].unit_id, "attack")
     elif mode == "patrol":
         var route_closed = false
         var patrol_targets = _formation_targets(movable, target_position)
@@ -1274,6 +1307,8 @@ func _issue_immediate_unit_command(command_id):
             entity.command_stop()
         elif command_id == "hold":
             entity.command_hold()
+        elif command_id == "deploy" and entity.has_method("command_deploy"):
+            entity.command_deploy()
     overlay.add_command_marker(_selection_center(), Color("#E0D477"))
     _set_command_mode("")
 
@@ -1451,6 +1486,7 @@ func request_structure(building_id):
         "cost": int(data.cost)
     }
     EventBus.notification_requested.emit("开始建造：" + str(data.name), "info")
+    VoiceManager.speak_adjutant("building")
 
 func pause_or_cancel_structure(building_id):
     var category = _structure_category(building_id)
@@ -1497,6 +1533,7 @@ func can_request_structure(building_id, notify = false):
     if int(credits.get(0, 0)) < int(data.cost):
         if notify:
             EventBus.notification_requested.emit("资金不足", "warning")
+            VoiceManager.speak_adjutant("insufficient_funds")
         return false
     return true
 
@@ -1571,7 +1608,7 @@ func _can_place_structure_without_units(cell, footprint):
 
 func _is_in_build_radius(cell, owner_id):
     for building in buildings:
-        if is_instance_valid(building) and building.owner_id == owner_id:
+        if is_instance_valid(building) and building.owner_id == owner_id and not building.destroyed:
             if Vector2(building.origin_cell).distance_to(Vector2(cell)) <= 10.5:
                 return true
     return false
@@ -1636,6 +1673,7 @@ func can_request_unit(owner_id, unit_id, notify = false):
     if int(credits.get(owner_id, 0)) < actual_cost:
         if notify and owner_id == 0:
             EventBus.notification_requested.emit("资金不足", "warning")
+            VoiceManager.speak_adjutant("insufficient_funds")
         return false
     return true
 
@@ -1644,12 +1682,12 @@ func _producer_building_for_unit(owner_id, unit_id):
     var required = "barracks" if category == "infantry" else "war_factory"
     var primary_key = "%d:%s" % [owner_id, required]
     var primary = primary_producers.get(primary_key)
-    if is_instance_valid(primary) and primary.owner_id == owner_id and primary.building_id == required and primary.production_queue.size() < 5:
+    if is_instance_valid(primary) and primary.owner_id == owner_id and primary.building_id == required and not primary.destroyed and primary.production_queue.size() < 5:
         return primary
     var best
     var smallest_queue = INF
     for building in buildings:
-        if is_instance_valid(building) and building.owner_id == owner_id and building.building_id == required:
+        if is_instance_valid(building) and building.owner_id == owner_id and building.building_id == required and not building.destroyed:
             if building.production_queue.size() < smallest_queue:
                 smallest_queue = building.production_queue.size()
                 best = building
@@ -1723,7 +1761,8 @@ func spawn_building(owner_id, building_id, preferred_cell, animate_construction 
     var cell = _find_building_cell(preferred_cell, footprint)
     if cell.x < 0:
         return null
-    var building = BuildingEntity.new()
+    var building_scene = load(str(BUILDING_SCENE_PATHS.get(building_id, ""))) as PackedScene
+    var building = building_scene.instantiate() if building_scene != null else BuildingEntity.new()
     entity_layer.add_child(building)
     building.setup(self, grid, building_id, owner_id, cell, animate_construction)
     building.died.connect(_on_entity_died)
@@ -1744,7 +1783,9 @@ func _grant_unit_from_building(building, unit_id):
         unit.command_move(building.rally_point, false)
         if building.owner_id == 0:
             EventBus.notification_requested.emit("矿石精炼厂附赠一辆采矿车", "info")
-            VoiceManager.speak(unit_id, "ready", true)
+            if not str(unit.ra2_entity_id).is_empty():
+                if not RA2RuntimeDatabase.play_entity_role(str(unit.ra2_entity_id), "CreateSound", 50):
+                    RA2RuntimeDatabase.play_entity_role(str(unit.ra2_entity_id), "VoiceSelect", 50)
 
 func _find_building_cell(preferred, footprint):
     if grid.can_place(preferred, footprint):
@@ -1764,7 +1805,8 @@ func spawn_unit(owner_id, unit_id, world_position):
     var spawn_position = find_clear_unit_position(world_position, float(GameConfig.units[unit_id].get("collision_radius", 12.0)), null, category)
     if spawn_position == Vector2.ZERO:
         return null
-    var unit = UnitEntity.new()
+    var unit_scene = load(str(UNIT_SCENE_PATHS.get(unit_id, ""))) as PackedScene
+    var unit = unit_scene.instantiate() if unit_scene != null else UnitEntity.new()
     entity_layer.add_child(unit)
     unit.setup(self, grid, unit_id, owner_id, spawn_position)
     if owner_id > 0:
@@ -1808,7 +1850,7 @@ func find_clear_unit_position(preferred_position, radius = 12.0, ignore_unit = n
 func get_production_exit_position(building):
     if not is_instance_valid(building):
         return Vector2.ZERO
-    var preferred = building.global_position + building.global_position.direction_to(building.rally_point) * max(building.footprint.x, building.footprint.y) * grid.tile_px
+    var preferred = building.service_anchor.global_position if is_instance_valid(building.service_anchor) else building.global_position + building.global_position.direction_to(building.rally_point) * max(building.footprint.x, building.footprint.y) * grid.tile_px
     if preferred.distance_to(building.global_position) < 4.0:
         preferred = building.global_position + Vector2((building.footprint.x + 1) * grid.tile_px, 0)
     return find_clear_unit_position(preferred, 18.0)
@@ -1823,7 +1865,9 @@ func _on_unit_production_ready(unit_id, producer):
         if producer.owner_id == 0:
             EventBus.notification_requested.emit(str(GameConfig.units[unit_id].name) + " 生产完成", "info")
             VoiceManager.speak_adjutant("unit_ready")
-            VoiceManager.speak(unit_id, "ready", true)
+            if not str(unit.ra2_entity_id).is_empty():
+                if not RA2RuntimeDatabase.play_entity_role(str(unit.ra2_entity_id), "CreateSound", 50):
+                    RA2RuntimeDatabase.play_entity_role(str(unit.ra2_entity_id), "VoiceSelect", 50)
 
 func _spawn_tracer(from_point, to_point, owner_id):
     if active_tracer_count >= MAX_ACTIVE_TRACERS or not is_instance_valid(effect_layer):
@@ -1833,6 +1877,15 @@ func _spawn_tracer(from_point, to_point, owner_id):
     tracer.tree_exited.connect(_on_tracer_exited)
     effect_layer.add_child(tracer)
     tracer.setup(from_point, to_point, get_player_color(owner_id).lightened(0.28))
+
+func spawn_projectile(source, target, target_position: Vector2, damage: float, area_radius: float, projectile_speed: float = 330.0, projectile_arc: float = 44.0):
+    if not is_instance_valid(effect_layer) or not is_instance_valid(source):
+        return null
+    var projectile = Projectile.new()
+    effect_layer.add_child(projectile)
+    projectile.global_position = source.global_position
+    projectile.setup(self, source, target, target_position, damage, area_radius, projectile_speed, projectile_arc)
+    return projectile
 
 func _on_entity_died(entity):
     if hover_entity == entity:
@@ -1918,7 +1971,7 @@ func try_spend_credits(player_id, amount):
     add_credits(player_id, -cost)
     return true
 
-func repair_entity_step(entity, delta, source = null):
+func repair_entity_step(entity, delta, _source = null):
     if not is_instance_valid(entity) or entity.hp >= entity.max_hp:
         return {"complete": true, "healed": 0.0, "cost": 0}
     var original_cost = float(entity.stats.get("cost", 0.0))
@@ -2132,6 +2185,104 @@ func deposit_harvester_cargo(harvester, refinery):
         return false
     return true
 
+func count_buildings(owner_id: int, building_id: String) -> int:
+    var total: int = 0
+    for building in buildings:
+        if is_instance_valid(building) and building.owner_id == owner_id and building.building_id == building_id and not building.destroyed:
+            total += 1
+    return total
+
+func can_ai_construct(owner_id: int, building_id: String) -> bool:
+    if not GameConfig.buildings.has(building_id):
+        return false
+    var data: Dictionary = GameConfig.buildings[building_id]
+    var requirement: String = str(data.get("requires", ""))
+    if not requirement.is_empty() and not has_building(owner_id, requirement):
+        return false
+    return int(credits.get(owner_id, 0)) >= int(data.get("cost", 0))
+
+func place_ai_structure(owner_id: int, building_id: String):
+    var anchor = get_nearest_building(owner_id, "command", Vector2.ZERO)
+    if not is_instance_valid(anchor):
+        return null
+    var data: Dictionary = GameConfig.buildings.get(building_id, {})
+    var footprint_data: Array = data.get("footprint", [1, 1]) as Array
+    var footprint: Vector2i = Vector2i(int(footprint_data[0]), int(footprint_data[1]))
+    var anchor_cell: Vector2i = anchor.origin_cell
+    var seed_offset: int = count_buildings(owner_id, building_id) * 3 + owner_id * 5
+    for radius in range(4, 13):
+        var candidates: Array[Vector2i] = []
+        for x in range(anchor_cell.x - radius, anchor_cell.x + radius + 1):
+            candidates.append(Vector2i(x, anchor_cell.y - radius))
+            candidates.append(Vector2i(x, anchor_cell.y + radius))
+        for y in range(anchor_cell.y - radius + 1, anchor_cell.y + radius):
+            candidates.append(Vector2i(anchor_cell.x - radius, y))
+            candidates.append(Vector2i(anchor_cell.x + radius, y))
+        var rotation: int = seed_offset % maxi(1, candidates.size())
+        for index in range(candidates.size()):
+            var cell: Vector2i = candidates[(index + rotation) % candidates.size()]
+            if _can_place_structure_without_units(cell, footprint) and _is_in_build_radius(cell, owner_id):
+                return spawn_building(owner_id, building_id, cell, true)
+    return null
+
+func _build_ai_debug_overlay() -> void:
+    ai_debug_layer = CanvasLayer.new()
+    ai_debug_layer.layer = 35
+    add_child(ai_debug_layer)
+    var panel: PanelContainer = PanelContainer.new()
+    panel.position = Vector2(12, 48)
+    panel.custom_minimum_size = Vector2(350, 72)
+    var style: StyleBoxFlat = StyleBoxFlat.new()
+    style.bg_color = Color(0.02, 0.035, 0.045, 0.90)
+    style.border_color = Color("#5E899B")
+    style.set_border_width_all(1)
+    style.set_corner_radius_all(3)
+    style.content_margin_left = 8
+    style.content_margin_right = 8
+    style.content_margin_top = 6
+    style.content_margin_bottom = 6
+    panel.add_theme_stylebox_override("panel", style)
+    ai_debug_layer.add_child(panel)
+    ai_debug_label = Label.new()
+    ai_debug_label.add_theme_font_size_override("font_size", 12)
+    ai_debug_label.add_theme_color_override("font_color", Color("#D5EEF5"))
+    panel.add_child(ai_debug_label)
+    ai_debug_layer.visible = false
+
+func toggle_ai_debug(force_value = null) -> void:
+    ai_debug_enabled = not ai_debug_enabled if force_value == null else bool(force_value)
+    if is_instance_valid(ai_debug_layer):
+        ai_debug_layer.visible = ai_debug_enabled
+    if ai_debug_enabled:
+        _refresh_ai_debug_overlay()
+    if is_instance_valid(hud) and hud.has_method("set_debug_toggles"):
+        hud.set_debug_toggles(ai_debug_enabled, reveal_all_enabled)
+    EventBus.notification_requested.emit("AI 调试已%s" % ("开启" if ai_debug_enabled else "关闭"), "info")
+
+func toggle_reveal_all(force_value = null) -> void:
+    reveal_all_enabled = not reveal_all_enabled if force_value == null else bool(force_value)
+    if is_instance_valid(fog):
+        fog.set_debug_reveal_all(reveal_all_enabled)
+    _update_enemy_visibility()
+    if is_instance_valid(hud) and hud.has_method("set_debug_toggles"):
+        hud.set_debug_toggles(ai_debug_enabled, reveal_all_enabled)
+    EventBus.notification_requested.emit("全图视野已%s" % ("开启" if reveal_all_enabled else "关闭"), "info")
+
+func _refresh_ai_debug_overlay() -> void:
+    if not is_instance_valid(ai_debug_label):
+        return
+    var lines: Array[String] = ["AI 调试 [F8]  全图视野 [F9]: %s" % ("开" if reveal_all_enabled else "关")]
+    for controller in ai_controllers:
+        if not is_instance_valid(controller) or not controller.has_method("get_debug_snapshot"):
+            continue
+        var snapshot: Dictionary = controller.get_debug_snapshot()
+        var owner: int = int(snapshot.get("owner_id", -1))
+        var player_name: String = str(get_player_data(owner).get("name", "电脑%d" % owner))
+        lines.append("%s  资金 $%d  军力 %d" % [player_name, int(snapshot.get("credits", 0)), int(snapshot.get("army", 0))])
+        lines.append("  建造：%s %d%% | 生产：%s %d%%" % [str(snapshot.get("building", "无")), int(round(float(snapshot.get("building_progress", 0.0)) * 100.0)), str(snapshot.get("unit", "无")), int(round(float(snapshot.get("unit_progress", 0.0)) * 100.0))])
+        lines.append("  计划：%s" % str(snapshot.get("plan", "")))
+    ai_debug_label.text = "\n".join(lines)
+
 func get_player_data(player_id):
     var player_list = match_config.get("players", [])
     if player_id < 0 or player_id >= player_list.size():
@@ -2146,7 +2297,7 @@ func are_enemies(first_owner, second_owner):
 
 func has_building(owner_id, building_id):
     for building in buildings:
-        if is_instance_valid(building) and building.owner_id == owner_id and building.building_id == building_id:
+        if is_instance_valid(building) and building.owner_id == owner_id and building.building_id == building_id and not building.destroyed:
             return true
     return false
 
@@ -2154,7 +2305,7 @@ func get_nearest_building(owner_id, building_id, from_position):
     var best
     var best_distance = INF
     for building in buildings:
-        if is_instance_valid(building) and building.owner_id == owner_id and building.building_id == building_id:
+        if is_instance_valid(building) and building.owner_id == owner_id and building.building_id == building_id and not building.destroyed:
             var distance = from_position.distance_squared_to(building.global_position)
             if distance < best_distance:
                 best_distance = distance

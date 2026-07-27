@@ -1,0 +1,3856 @@
+{
+  "id": "CAMOV01",
+  "category": "building",
+  "name_token": "Name:CAMOV01",
+  "art_id": "CAMOV01",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 500,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAMOV01",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1688,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctmov01.shp",
+          "folder": "isotemp",
+          "filename": "ctmov01.shp",
+          "stem": "ctmov01",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "01016d148ca3c9c47cd49a169bde7750736bad8b"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 584,
+          "pack": "ra2",
+          "relative_path": "isosnow/camov01.shp",
+          "folder": "isosnow",
+          "filename": "camov01.shp",
+          "stem": "camov01",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "01016d148ca3c9c47cd49a169bde7750736bad8b"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2775,
+          "pack": "ra2",
+          "relative_path": "isourb/cumov01.shp",
+          "folder": "isourb",
+          "filename": "cumov01.shp",
+          "stem": "cumov01",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "01016d148ca3c9c47cd49a169bde7750736bad8b"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6156,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdmov01.shp",
+          "folder": "isodes",
+          "filename": "cdmov01.shp",
+          "stem": "cdmov01",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "01016d148ca3c9c47cd49a169bde7750736bad8b"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8224,
+          "pack": "ra2md",
+          "relative_path": "isolun/clmov01.shp",
+          "folder": "isolun",
+          "filename": "clmov01.shp",
+          "stem": "clmov01",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "01016d148ca3c9c47cd49a169bde7750736bad8b"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9305,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnmov01.shp",
+          "folder": "isoubn",
+          "filename": "cnmov01.shp",
+          "stem": "cnmov01",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "01016d148ca3c9c47cd49a169bde7750736bad8b"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "CAMOV01_A",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1689,
+            "pack": "ra2",
+            "relative_path": "isotemp/ctmov01_a.shp",
+            "folder": "isotemp",
+            "filename": "ctmov01_a.shp",
+            "stem": "ctmov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 30,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7743,
+                "section": "CAMOV01_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5949,
+                  "section": "CAMOV01_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7744,
+                "section": "CAMOV01_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5950,
+                  "section": "CAMOV01_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7745,
+                "section": "CAMOV01_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5951,
+                  "section": "CAMOV01_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "30",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7746,
+                "section": "CAMOV01_A",
+                "key": "LoopEnd",
+                "value": "30"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5952,
+                  "section": "CAMOV01_A",
+                  "key": "LoopEnd",
+                  "value": "30"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7747,
+                "section": "CAMOV01_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5953,
+                  "section": "CAMOV01_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7748,
+                "section": "CAMOV01_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5954,
+                  "section": "CAMOV01_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7749,
+                "section": "CAMOV01_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5955,
+                  "section": "CAMOV01_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7750,
+                "section": "CAMOV01_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5956,
+                  "section": "CAMOV01_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7751,
+                "section": "CAMOV01_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5957,
+                  "section": "CAMOV01_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -60,
+          "YSort": 724
+        },
+        "snow": {
+          "art_id": "CAMOV01_A",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 585,
+            "pack": "ra2",
+            "relative_path": "isosnow/camov01_a.shp",
+            "folder": "isosnow",
+            "filename": "camov01_a.shp",
+            "stem": "camov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 30,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7743,
+                "section": "CAMOV01_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5949,
+                  "section": "CAMOV01_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7744,
+                "section": "CAMOV01_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5950,
+                  "section": "CAMOV01_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7745,
+                "section": "CAMOV01_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5951,
+                  "section": "CAMOV01_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "30",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7746,
+                "section": "CAMOV01_A",
+                "key": "LoopEnd",
+                "value": "30"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5952,
+                  "section": "CAMOV01_A",
+                  "key": "LoopEnd",
+                  "value": "30"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7747,
+                "section": "CAMOV01_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5953,
+                  "section": "CAMOV01_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7748,
+                "section": "CAMOV01_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5954,
+                  "section": "CAMOV01_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7749,
+                "section": "CAMOV01_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5955,
+                  "section": "CAMOV01_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7750,
+                "section": "CAMOV01_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5956,
+                  "section": "CAMOV01_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7751,
+                "section": "CAMOV01_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5957,
+                  "section": "CAMOV01_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -60,
+          "YSort": 724
+        },
+        "urban": {
+          "art_id": "CAMOV01_A",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2776,
+            "pack": "ra2",
+            "relative_path": "isourb/cumov01_a.shp",
+            "folder": "isourb",
+            "filename": "cumov01_a.shp",
+            "stem": "cumov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 30,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7743,
+                "section": "CAMOV01_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5949,
+                  "section": "CAMOV01_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7744,
+                "section": "CAMOV01_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5950,
+                  "section": "CAMOV01_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7745,
+                "section": "CAMOV01_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5951,
+                  "section": "CAMOV01_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "30",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7746,
+                "section": "CAMOV01_A",
+                "key": "LoopEnd",
+                "value": "30"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5952,
+                  "section": "CAMOV01_A",
+                  "key": "LoopEnd",
+                  "value": "30"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7747,
+                "section": "CAMOV01_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5953,
+                  "section": "CAMOV01_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7748,
+                "section": "CAMOV01_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5954,
+                  "section": "CAMOV01_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7749,
+                "section": "CAMOV01_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5955,
+                  "section": "CAMOV01_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7750,
+                "section": "CAMOV01_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5956,
+                  "section": "CAMOV01_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7751,
+                "section": "CAMOV01_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5957,
+                  "section": "CAMOV01_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -60,
+          "YSort": 724
+        },
+        "desert": {
+          "art_id": "CAMOV01_A",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6157,
+            "pack": "ra2md",
+            "relative_path": "isodes/cdmov01_a.shp",
+            "folder": "isodes",
+            "filename": "cdmov01_a.shp",
+            "stem": "cdmov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 30,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7743,
+                "section": "CAMOV01_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5949,
+                  "section": "CAMOV01_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7744,
+                "section": "CAMOV01_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5950,
+                  "section": "CAMOV01_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7745,
+                "section": "CAMOV01_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5951,
+                  "section": "CAMOV01_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "30",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7746,
+                "section": "CAMOV01_A",
+                "key": "LoopEnd",
+                "value": "30"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5952,
+                  "section": "CAMOV01_A",
+                  "key": "LoopEnd",
+                  "value": "30"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7747,
+                "section": "CAMOV01_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5953,
+                  "section": "CAMOV01_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7748,
+                "section": "CAMOV01_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5954,
+                  "section": "CAMOV01_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7749,
+                "section": "CAMOV01_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5955,
+                  "section": "CAMOV01_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7750,
+                "section": "CAMOV01_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5956,
+                  "section": "CAMOV01_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7751,
+                "section": "CAMOV01_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5957,
+                  "section": "CAMOV01_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -60,
+          "YSort": 724
+        },
+        "lunar": {
+          "art_id": "CAMOV01_A",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8225,
+            "pack": "ra2md",
+            "relative_path": "isolun/clmov01_a.shp",
+            "folder": "isolun",
+            "filename": "clmov01_a.shp",
+            "stem": "clmov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 30,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7743,
+                "section": "CAMOV01_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5949,
+                  "section": "CAMOV01_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7744,
+                "section": "CAMOV01_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5950,
+                  "section": "CAMOV01_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7745,
+                "section": "CAMOV01_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5951,
+                  "section": "CAMOV01_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "30",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7746,
+                "section": "CAMOV01_A",
+                "key": "LoopEnd",
+                "value": "30"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5952,
+                  "section": "CAMOV01_A",
+                  "key": "LoopEnd",
+                  "value": "30"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7747,
+                "section": "CAMOV01_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5953,
+                  "section": "CAMOV01_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7748,
+                "section": "CAMOV01_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5954,
+                  "section": "CAMOV01_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7749,
+                "section": "CAMOV01_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5955,
+                  "section": "CAMOV01_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7750,
+                "section": "CAMOV01_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5956,
+                  "section": "CAMOV01_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7751,
+                "section": "CAMOV01_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5957,
+                  "section": "CAMOV01_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -60,
+          "YSort": 724
+        },
+        "newurban": {
+          "art_id": "CAMOV01_A",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9306,
+            "pack": "ra2md",
+            "relative_path": "isoubn/cnmov01_a.shp",
+            "folder": "isoubn",
+            "filename": "cnmov01_a.shp",
+            "stem": "cnmov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 30,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7743,
+                "section": "CAMOV01_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5949,
+                  "section": "CAMOV01_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7744,
+                "section": "CAMOV01_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5950,
+                  "section": "CAMOV01_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7745,
+                "section": "CAMOV01_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5951,
+                  "section": "CAMOV01_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "30",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7746,
+                "section": "CAMOV01_A",
+                "key": "LoopEnd",
+                "value": "30"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5952,
+                  "section": "CAMOV01_A",
+                  "key": "LoopEnd",
+                  "value": "30"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7747,
+                "section": "CAMOV01_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5953,
+                  "section": "CAMOV01_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7748,
+                "section": "CAMOV01_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5954,
+                  "section": "CAMOV01_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7749,
+                "section": "CAMOV01_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5955,
+                  "section": "CAMOV01_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7750,
+                "section": "CAMOV01_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5956,
+                  "section": "CAMOV01_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7751,
+                "section": "CAMOV01_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5957,
+                  "section": "CAMOV01_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -60,
+          "YSort": 724
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "CAMOV01_AD",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1689,
+            "pack": "ra2",
+            "relative_path": "isotemp/ctmov01_a.shp",
+            "folder": "isotemp",
+            "filename": "ctmov01_a.shp",
+            "stem": "ctmov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "Start": 31,
+          "LoopStart": 31,
+          "LoopEnd": 61,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMOV01_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7754,
+                "section": "CAMOV01_AD",
+                "key": "Image",
+                "value": "CAMOV01_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5960,
+                  "section": "CAMOV01_AD",
+                  "key": "Image",
+                  "value": "CAMOV01_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7756,
+                "section": "CAMOV01_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5962,
+                  "section": "CAMOV01_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7757,
+                "section": "CAMOV01_AD",
+                "key": "Start",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5963,
+                  "section": "CAMOV01_AD",
+                  "key": "Start",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7758,
+                "section": "CAMOV01_AD",
+                "key": "LoopStart",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5964,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopStart",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "61",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7759,
+                "section": "CAMOV01_AD",
+                "key": "LoopEnd",
+                "value": "61"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5965,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopEnd",
+                  "value": "61"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7760,
+                "section": "CAMOV01_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5966,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7761,
+                "section": "CAMOV01_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5967,
+                  "section": "CAMOV01_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7762,
+                "section": "CAMOV01_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5968,
+                  "section": "CAMOV01_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7763,
+                "section": "CAMOV01_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5969,
+                  "section": "CAMOV01_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7764,
+                "section": "CAMOV01_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5970,
+                  "section": "CAMOV01_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -60,
+          "YSort": 724
+        },
+        "snow": {
+          "art_id": "CAMOV01_AD",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 585,
+            "pack": "ra2",
+            "relative_path": "isosnow/camov01_a.shp",
+            "folder": "isosnow",
+            "filename": "camov01_a.shp",
+            "stem": "camov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "Start": 31,
+          "LoopStart": 31,
+          "LoopEnd": 61,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMOV01_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7754,
+                "section": "CAMOV01_AD",
+                "key": "Image",
+                "value": "CAMOV01_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5960,
+                  "section": "CAMOV01_AD",
+                  "key": "Image",
+                  "value": "CAMOV01_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7756,
+                "section": "CAMOV01_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5962,
+                  "section": "CAMOV01_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7757,
+                "section": "CAMOV01_AD",
+                "key": "Start",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5963,
+                  "section": "CAMOV01_AD",
+                  "key": "Start",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7758,
+                "section": "CAMOV01_AD",
+                "key": "LoopStart",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5964,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopStart",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "61",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7759,
+                "section": "CAMOV01_AD",
+                "key": "LoopEnd",
+                "value": "61"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5965,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopEnd",
+                  "value": "61"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7760,
+                "section": "CAMOV01_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5966,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7761,
+                "section": "CAMOV01_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5967,
+                  "section": "CAMOV01_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7762,
+                "section": "CAMOV01_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5968,
+                  "section": "CAMOV01_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7763,
+                "section": "CAMOV01_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5969,
+                  "section": "CAMOV01_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7764,
+                "section": "CAMOV01_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5970,
+                  "section": "CAMOV01_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -60,
+          "YSort": 724
+        },
+        "urban": {
+          "art_id": "CAMOV01_AD",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2776,
+            "pack": "ra2",
+            "relative_path": "isourb/cumov01_a.shp",
+            "folder": "isourb",
+            "filename": "cumov01_a.shp",
+            "stem": "cumov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "Start": 31,
+          "LoopStart": 31,
+          "LoopEnd": 61,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMOV01_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7754,
+                "section": "CAMOV01_AD",
+                "key": "Image",
+                "value": "CAMOV01_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5960,
+                  "section": "CAMOV01_AD",
+                  "key": "Image",
+                  "value": "CAMOV01_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7756,
+                "section": "CAMOV01_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5962,
+                  "section": "CAMOV01_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7757,
+                "section": "CAMOV01_AD",
+                "key": "Start",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5963,
+                  "section": "CAMOV01_AD",
+                  "key": "Start",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7758,
+                "section": "CAMOV01_AD",
+                "key": "LoopStart",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5964,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopStart",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "61",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7759,
+                "section": "CAMOV01_AD",
+                "key": "LoopEnd",
+                "value": "61"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5965,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopEnd",
+                  "value": "61"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7760,
+                "section": "CAMOV01_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5966,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7761,
+                "section": "CAMOV01_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5967,
+                  "section": "CAMOV01_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7762,
+                "section": "CAMOV01_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5968,
+                  "section": "CAMOV01_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7763,
+                "section": "CAMOV01_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5969,
+                  "section": "CAMOV01_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7764,
+                "section": "CAMOV01_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5970,
+                  "section": "CAMOV01_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -60,
+          "YSort": 724
+        },
+        "desert": {
+          "art_id": "CAMOV01_AD",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6157,
+            "pack": "ra2md",
+            "relative_path": "isodes/cdmov01_a.shp",
+            "folder": "isodes",
+            "filename": "cdmov01_a.shp",
+            "stem": "cdmov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "Start": 31,
+          "LoopStart": 31,
+          "LoopEnd": 61,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMOV01_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7754,
+                "section": "CAMOV01_AD",
+                "key": "Image",
+                "value": "CAMOV01_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5960,
+                  "section": "CAMOV01_AD",
+                  "key": "Image",
+                  "value": "CAMOV01_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7756,
+                "section": "CAMOV01_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5962,
+                  "section": "CAMOV01_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7757,
+                "section": "CAMOV01_AD",
+                "key": "Start",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5963,
+                  "section": "CAMOV01_AD",
+                  "key": "Start",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7758,
+                "section": "CAMOV01_AD",
+                "key": "LoopStart",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5964,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopStart",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "61",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7759,
+                "section": "CAMOV01_AD",
+                "key": "LoopEnd",
+                "value": "61"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5965,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopEnd",
+                  "value": "61"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7760,
+                "section": "CAMOV01_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5966,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7761,
+                "section": "CAMOV01_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5967,
+                  "section": "CAMOV01_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7762,
+                "section": "CAMOV01_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5968,
+                  "section": "CAMOV01_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7763,
+                "section": "CAMOV01_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5969,
+                  "section": "CAMOV01_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7764,
+                "section": "CAMOV01_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5970,
+                  "section": "CAMOV01_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -60,
+          "YSort": 724
+        },
+        "lunar": {
+          "art_id": "CAMOV01_AD",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8225,
+            "pack": "ra2md",
+            "relative_path": "isolun/clmov01_a.shp",
+            "folder": "isolun",
+            "filename": "clmov01_a.shp",
+            "stem": "clmov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "Start": 31,
+          "LoopStart": 31,
+          "LoopEnd": 61,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMOV01_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7754,
+                "section": "CAMOV01_AD",
+                "key": "Image",
+                "value": "CAMOV01_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5960,
+                  "section": "CAMOV01_AD",
+                  "key": "Image",
+                  "value": "CAMOV01_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7756,
+                "section": "CAMOV01_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5962,
+                  "section": "CAMOV01_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7757,
+                "section": "CAMOV01_AD",
+                "key": "Start",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5963,
+                  "section": "CAMOV01_AD",
+                  "key": "Start",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7758,
+                "section": "CAMOV01_AD",
+                "key": "LoopStart",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5964,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopStart",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "61",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7759,
+                "section": "CAMOV01_AD",
+                "key": "LoopEnd",
+                "value": "61"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5965,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopEnd",
+                  "value": "61"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7760,
+                "section": "CAMOV01_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5966,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7761,
+                "section": "CAMOV01_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5967,
+                  "section": "CAMOV01_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7762,
+                "section": "CAMOV01_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5968,
+                  "section": "CAMOV01_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7763,
+                "section": "CAMOV01_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5969,
+                  "section": "CAMOV01_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7764,
+                "section": "CAMOV01_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5970,
+                  "section": "CAMOV01_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -60,
+          "YSort": 724
+        },
+        "newurban": {
+          "art_id": "CAMOV01_AD",
+          "image": "CAMOV01_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9306,
+            "pack": "ra2md",
+            "relative_path": "isoubn/cnmov01_a.shp",
+            "folder": "isoubn",
+            "filename": "cnmov01_a.shp",
+            "stem": "cnmov01_a",
+            "extension": ".shp",
+            "size": 494272,
+            "sha1": "66e79ba06b491454e7aed9dd0a658d6f08cb2f86"
+          },
+          "Start": 31,
+          "LoopStart": 31,
+          "LoopEnd": 61,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAMOV01_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7754,
+                "section": "CAMOV01_AD",
+                "key": "Image",
+                "value": "CAMOV01_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5960,
+                  "section": "CAMOV01_AD",
+                  "key": "Image",
+                  "value": "CAMOV01_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7756,
+                "section": "CAMOV01_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5962,
+                  "section": "CAMOV01_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7757,
+                "section": "CAMOV01_AD",
+                "key": "Start",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5963,
+                  "section": "CAMOV01_AD",
+                  "key": "Start",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "31",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7758,
+                "section": "CAMOV01_AD",
+                "key": "LoopStart",
+                "value": "31"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5964,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopStart",
+                  "value": "31"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "61",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7759,
+                "section": "CAMOV01_AD",
+                "key": "LoopEnd",
+                "value": "61"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5965,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopEnd",
+                  "value": "61"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7760,
+                "section": "CAMOV01_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5966,
+                  "section": "CAMOV01_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7761,
+                "section": "CAMOV01_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5967,
+                  "section": "CAMOV01_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7762,
+                "section": "CAMOV01_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5968,
+                  "section": "CAMOV01_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7763,
+                "section": "CAMOV01_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5969,
+                  "section": "CAMOV01_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 7764,
+                "section": "CAMOV01_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 5970,
+                  "section": "CAMOV01_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -60,
+          "YSort": 724
+        }
+      }
+    },
+    "foundation": "1x4",
+    "height": 6,
+    "occupy_height": 3,
+    "damage_fire_offsets": [
+      [
+        -85.0,
+        -2.0
+      ],
+      [
+        -4.0,
+        -56.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CAMOV01",
+      "Name": "Drive In Movie Screen",
+      "TechLevel": -1,
+      "Strength": 500,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "DebrisAnim": "Dbris3sm,Dbris2sm,Dbris3lg,Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg",
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "CanBeOccupied": false
+    },
+    "raw_values": {
+      "UIName": "Name:CAMOV01",
+      "Name": "Drive In Movie Screen",
+      "TechLevel": "-1",
+      "Strength": "500",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "DebrisAnim": "Dbris3sm,Dbris2sm,Dbris3lg,Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "CanBeOccupied": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CAMOV01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21676,
+          "section": "CAMOV01",
+          "key": "UIName",
+          "value": "Name:CAMOV01"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15208,
+            "section": "CAMOV01",
+            "key": "UIName",
+            "value": "Name:CAMOV01"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21668,
+            "section": "CAMOV01",
+            "key": "UIName",
+            "value": "Name:CAMOV01"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Drive In Movie Screen",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21677,
+          "section": "CAMOV01",
+          "key": "Name",
+          "value": "Drive In Movie Screen"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15209,
+            "section": "CAMOV01",
+            "key": "Name",
+            "value": "RA2 Drive In Movie Screen"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21669,
+            "section": "CAMOV01",
+            "key": "Name",
+            "value": "Drive In Movie Screen"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21678,
+          "section": "CAMOV01",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15210,
+            "section": "CAMOV01",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21670,
+            "section": "CAMOV01",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21679,
+          "section": "CAMOV01",
+          "key": "Strength",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15211,
+            "section": "CAMOV01",
+            "key": "Strength",
+            "value": "500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21671,
+            "section": "CAMOV01",
+            "key": "Strength",
+            "value": "500"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21680,
+          "section": "CAMOV01",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15212,
+            "section": "CAMOV01",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21672,
+            "section": "CAMOV01",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21681,
+          "section": "CAMOV01",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15213,
+            "section": "CAMOV01",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21673,
+            "section": "CAMOV01",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 15214,
+          "section": "CAMOV01",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21683,
+          "section": "CAMOV01",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15215,
+            "section": "CAMOV01",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21675,
+            "section": "CAMOV01",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21684,
+          "section": "CAMOV01",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15216,
+            "section": "CAMOV01",
+            "key": "Armor",
+            "value": "steel"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21676,
+            "section": "CAMOV01",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21685,
+          "section": "CAMOV01",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15217,
+            "section": "CAMOV01",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21677,
+            "section": "CAMOV01",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21686,
+          "section": "CAMOV01",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15218,
+            "section": "CAMOV01",
+            "key": "MaxDebris",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21678,
+            "section": "CAMOV01",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21687,
+          "section": "CAMOV01",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15219,
+            "section": "CAMOV01",
+            "key": "MinDebris",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21679,
+            "section": "CAMOV01",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "DebrisAnim": {
+        "value": "Dbris3sm,Dbris2sm,Dbris3lg,Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21688,
+          "section": "CAMOV01",
+          "key": "DebrisAnim",
+          "value": "Dbris3sm,Dbris2sm,Dbris3lg,Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15220,
+            "section": "CAMOV01",
+            "key": "DebrisAnim",
+            "value": "Dbris3sm,Dbris2sm,Dbris3lg,Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21680,
+            "section": "CAMOV01",
+            "key": "DebrisAnim",
+            "value": "Dbris3sm,Dbris2sm,Dbris3lg,Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21691,
+          "section": "CAMOV01",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15223,
+            "section": "CAMOV01",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21683,
+            "section": "CAMOV01",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21692,
+          "section": "CAMOV01",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15224,
+            "section": "CAMOV01",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21684,
+            "section": "CAMOV01",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21693,
+          "section": "CAMOV01",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15225,
+            "section": "CAMOV01",
+            "key": "ClickRepairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21685,
+            "section": "CAMOV01",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanBeOccupied": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21694,
+          "section": "CAMOV01",
+          "key": "CanBeOccupied",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15226,
+            "section": "CAMOV01",
+            "key": "CanBeOccupied",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21686,
+            "section": "CAMOV01",
+            "key": "CanBeOccupied",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "1x4",
+      "Height": 6,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "ActiveAnim": "CAMOV01_A",
+      "ActiveAnimDamaged": "CAMOV01_AD",
+      "ActiveAnimZAdjust": -60,
+      "ActiveAnimYSort": 724,
+      "DamageFireOffset0": "-85,-2",
+      "DamageFireOffset1": "-4,-56",
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 3,
+      "AddOccupy1": "-2,0",
+      "AddOccupy2": "-2,1",
+      "AddOccupy3": "-2,-1",
+      "AddOccupy4": "-2,-2"
+    },
+    "raw_values": {
+      "Foundation": "1x4",
+      "Height": "6",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "ActiveAnim": "CAMOV01_A",
+      "ActiveAnimDamaged": "CAMOV01_AD",
+      "ActiveAnimZAdjust": "-60",
+      "ActiveAnimYSort": "724",
+      "DamageFireOffset0": "-85,-2",
+      "DamageFireOffset1": "-4,-56",
+      "CanHideThings": "true",
+      "CanBeHidden": "false",
+      "OccupyHeight": "3",
+      "AddOccupy1": "-2,0",
+      "AddOccupy2": "-2,1",
+      "AddOccupy3": "-2,-1",
+      "AddOccupy4": "-2,-2"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "1x4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7721,
+          "section": "CAMOV01",
+          "key": "Foundation",
+          "value": "1x4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5927,
+            "section": "CAMOV01",
+            "key": "Foundation",
+            "value": "1x4"
+          }
+        ]
+      },
+      "Height": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7722,
+          "section": "CAMOV01",
+          "key": "Height",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5928,
+            "section": "CAMOV01",
+            "key": "Height",
+            "value": "6"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7723,
+          "section": "CAMOV01",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5929,
+            "section": "CAMOV01",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7724,
+          "section": "CAMOV01",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5930,
+            "section": "CAMOV01",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "ActiveAnim": {
+        "value": "CAMOV01_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7726,
+          "section": "CAMOV01",
+          "key": "ActiveAnim",
+          "value": "CAMOV01_A"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5932,
+            "section": "CAMOV01",
+            "key": "ActiveAnim",
+            "value": "CAMOV01_A"
+          }
+        ]
+      },
+      "ActiveAnimDamaged": {
+        "value": "CAMOV01_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7727,
+          "section": "CAMOV01",
+          "key": "ActiveAnimDamaged",
+          "value": "CAMOV01_AD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5933,
+            "section": "CAMOV01",
+            "key": "ActiveAnimDamaged",
+            "value": "CAMOV01_AD"
+          }
+        ]
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-60",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7728,
+          "section": "CAMOV01",
+          "key": "ActiveAnimZAdjust",
+          "value": "-60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5934,
+            "section": "CAMOV01",
+            "key": "ActiveAnimZAdjust",
+            "value": "-60"
+          }
+        ]
+      },
+      "ActiveAnimYSort": {
+        "value": "724",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7729,
+          "section": "CAMOV01",
+          "key": "ActiveAnimYSort",
+          "value": "724"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5935,
+            "section": "CAMOV01",
+            "key": "ActiveAnimYSort",
+            "value": "724"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-85,-2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7731,
+          "section": "CAMOV01",
+          "key": "DamageFireOffset0",
+          "value": "-85,-2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5937,
+            "section": "CAMOV01",
+            "key": "DamageFireOffset0",
+            "value": "-85,-2"
+          }
+        ]
+      },
+      "DamageFireOffset1": {
+        "value": "-4,-56",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7732,
+          "section": "CAMOV01",
+          "key": "DamageFireOffset1",
+          "value": "-4,-56"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5938,
+            "section": "CAMOV01",
+            "key": "DamageFireOffset1",
+            "value": "-4,-56"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7733,
+          "section": "CAMOV01",
+          "key": "CanHideThings",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5939,
+            "section": "CAMOV01",
+            "key": "CanHideThings",
+            "value": "true"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7734,
+          "section": "CAMOV01",
+          "key": "CanBeHidden",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5940,
+            "section": "CAMOV01",
+            "key": "CanBeHidden",
+            "value": "false"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7735,
+          "section": "CAMOV01",
+          "key": "OccupyHeight",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5941,
+            "section": "CAMOV01",
+            "key": "OccupyHeight",
+            "value": "3"
+          }
+        ]
+      },
+      "AddOccupy1": {
+        "value": "-2,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7736,
+          "section": "CAMOV01",
+          "key": "AddOccupy1",
+          "value": "-2,0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5942,
+            "section": "CAMOV01",
+            "key": "AddOccupy1",
+            "value": "-2,0"
+          }
+        ]
+      },
+      "AddOccupy2": {
+        "value": "-2,1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7737,
+          "section": "CAMOV01",
+          "key": "AddOccupy2",
+          "value": "-2,1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5943,
+            "section": "CAMOV01",
+            "key": "AddOccupy2",
+            "value": "-2,1"
+          }
+        ]
+      },
+      "AddOccupy3": {
+        "value": "-2,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7738,
+          "section": "CAMOV01",
+          "key": "AddOccupy3",
+          "value": "-2,-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5944,
+            "section": "CAMOV01",
+            "key": "AddOccupy3",
+            "value": "-2,-1"
+          }
+        ]
+      },
+      "AddOccupy4": {
+        "value": "-2,-2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7739,
+          "section": "CAMOV01",
+          "key": "AddOccupy4",
+          "value": "-2,-2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5945,
+            "section": "CAMOV01",
+            "key": "AddOccupy4",
+            "value": "-2,-2"
+          }
+        ]
+      }
+    }
+  }
+}

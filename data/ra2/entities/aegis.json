@@ -1,0 +1,2201 @@
+{
+  "id": "AEGIS",
+  "category": "vehicle",
+  "name_token": "Name:AEGIS",
+  "art_id": "AEGIS",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GAYARD",
+    "RADAR"
+  ],
+  "tech_level": 7,
+  "cost": 1200,
+  "strength": 800,
+  "armor": "light",
+  "speed": 4,
+  "sight": 8,
+  "locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+  "movement_zone": "Water",
+  "weapons": {
+    "Primary": {
+      "id": "Medusa",
+      "projectile": "MedusaProjectile",
+      "warhead": "SAMWH",
+      "report": [
+        "AegisAttack"
+      ],
+      "values": {
+        "Damage": 100,
+        "ROF": 15,
+        "Range": 12,
+        "Speed": 120,
+        "Projectile": "MedusaProjectile",
+        "Warhead": "SAMWH",
+        "Report": "AegisAttack",
+        "TurboBoost": true,
+        "OmniFire": true
+      },
+      "raw_values": {
+        "Damage": "100",
+        "ROF": "15",
+        "Range": "12",
+        "Speed": "120",
+        "Projectile": "MedusaProjectile",
+        "Warhead": "SAMWH",
+        "Report": "AegisAttack",
+        "TurboBoost": "yes",
+        "OmniFire": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22620,
+            "section": "Medusa",
+            "key": "Damage",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16310,
+              "section": "Medusa",
+              "key": "Damage",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22612,
+              "section": "Medusa",
+              "key": "Damage",
+              "value": "100"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22621,
+            "section": "Medusa",
+            "key": "ROF",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16311,
+              "section": "Medusa",
+              "key": "ROF",
+              "value": "15"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22613,
+              "section": "Medusa",
+              "key": "ROF",
+              "value": "15"
+            }
+          ]
+        },
+        "Range": {
+          "value": "12",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22622,
+            "section": "Medusa",
+            "key": "Range",
+            "value": "12"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16312,
+              "section": "Medusa",
+              "key": "Range",
+              "value": "12"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22614,
+              "section": "Medusa",
+              "key": "Range",
+              "value": "12"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "120",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22623,
+            "section": "Medusa",
+            "key": "Speed",
+            "value": "120"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16313,
+              "section": "Medusa",
+              "key": "Speed",
+              "value": "120"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22615,
+              "section": "Medusa",
+              "key": "Speed",
+              "value": "120"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "MedusaProjectile",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22624,
+            "section": "Medusa",
+            "key": "Projectile",
+            "value": "MedusaProjectile"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16314,
+              "section": "Medusa",
+              "key": "Projectile",
+              "value": "MedusaProjectile"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22616,
+              "section": "Medusa",
+              "key": "Projectile",
+              "value": "MedusaProjectile"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SAMWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22625,
+            "section": "Medusa",
+            "key": "Warhead",
+            "value": "SAMWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16315,
+              "section": "Medusa",
+              "key": "Warhead",
+              "value": "SAMWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22617,
+              "section": "Medusa",
+              "key": "Warhead",
+              "value": "SAMWH"
+            }
+          ]
+        },
+        "Report": {
+          "value": "AegisAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22626,
+            "section": "Medusa",
+            "key": "Report",
+            "value": "AegisAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16316,
+              "section": "Medusa",
+              "key": "Report",
+              "value": "AegisAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22618,
+              "section": "Medusa",
+              "key": "Report",
+              "value": "AegisAttack"
+            }
+          ]
+        },
+        "TurboBoost": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22627,
+            "section": "Medusa",
+            "key": "TurboBoost",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16317,
+              "section": "Medusa",
+              "key": "TurboBoost",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22619,
+              "section": "Medusa",
+              "key": "TurboBoost",
+              "value": "yes"
+            }
+          ]
+        },
+        "OmniFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22628,
+            "section": "Medusa",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16318,
+              "section": "Medusa",
+              "key": "OmniFire",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22620,
+              "section": "Medusa",
+              "key": "OmniFire",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "MedusaE",
+      "projectile": "MedusaProjectile",
+      "warhead": "SAMWH",
+      "report": [
+        "AegisAttack"
+      ],
+      "values": {
+        "Damage": 100,
+        "ROF": 5,
+        "Range": 14,
+        "Speed": 150,
+        "Projectile": "MedusaProjectile",
+        "Warhead": "SAMWH",
+        "Report": "AegisAttack",
+        "TurboBoost": true,
+        "OmniFire": true,
+        "Burst": 2
+      },
+      "raw_values": {
+        "Damage": "100",
+        "ROF": "5",
+        "Range": "14",
+        "Speed": "150",
+        "Projectile": "MedusaProjectile",
+        "Warhead": "SAMWH",
+        "Report": "AegisAttack",
+        "TurboBoost": "yes",
+        "OmniFire": "yes",
+        "Burst": "2"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25224,
+            "section": "MedusaE",
+            "key": "Damage",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18080,
+              "section": "MedusaE",
+              "key": "Damage",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25216,
+              "section": "MedusaE",
+              "key": "Damage",
+              "value": "100"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25225,
+            "section": "MedusaE",
+            "key": "ROF",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18081,
+              "section": "MedusaE",
+              "key": "ROF",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25217,
+              "section": "MedusaE",
+              "key": "ROF",
+              "value": "5"
+            }
+          ]
+        },
+        "Range": {
+          "value": "14",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25226,
+            "section": "MedusaE",
+            "key": "Range",
+            "value": "14"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18082,
+              "section": "MedusaE",
+              "key": "Range",
+              "value": "14"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25218,
+              "section": "MedusaE",
+              "key": "Range",
+              "value": "14"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "150",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25227,
+            "section": "MedusaE",
+            "key": "Speed",
+            "value": "150"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18083,
+              "section": "MedusaE",
+              "key": "Speed",
+              "value": "150"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25219,
+              "section": "MedusaE",
+              "key": "Speed",
+              "value": "150"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "MedusaProjectile",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25228,
+            "section": "MedusaE",
+            "key": "Projectile",
+            "value": "MedusaProjectile"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18084,
+              "section": "MedusaE",
+              "key": "Projectile",
+              "value": "MedusaProjectile"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25220,
+              "section": "MedusaE",
+              "key": "Projectile",
+              "value": "MedusaProjectile"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SAMWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25229,
+            "section": "MedusaE",
+            "key": "Warhead",
+            "value": "SAMWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18085,
+              "section": "MedusaE",
+              "key": "Warhead",
+              "value": "SAMWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25221,
+              "section": "MedusaE",
+              "key": "Warhead",
+              "value": "SAMWH"
+            }
+          ]
+        },
+        "Report": {
+          "value": "AegisAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25230,
+            "section": "MedusaE",
+            "key": "Report",
+            "value": "AegisAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18086,
+              "section": "MedusaE",
+              "key": "Report",
+              "value": "AegisAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25222,
+              "section": "MedusaE",
+              "key": "Report",
+              "value": "AegisAttack"
+            }
+          ]
+        },
+        "TurboBoost": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25231,
+            "section": "MedusaE",
+            "key": "TurboBoost",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18087,
+              "section": "MedusaE",
+              "key": "TurboBoost",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25223,
+              "section": "MedusaE",
+              "key": "TurboBoost",
+              "value": "yes"
+            }
+          ]
+        },
+        "OmniFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25232,
+            "section": "MedusaE",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18088,
+              "section": "MedusaE",
+              "key": "OmniFire",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25224,
+              "section": "MedusaE",
+              "key": "OmniFire",
+              "value": "yes"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25233,
+            "section": "MedusaE",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18089,
+              "section": "MedusaE",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25225,
+              "section": "MedusaE",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "AegisSelect"
+    ],
+    "VoiceMove": [
+      "AegisMove"
+    ],
+    "VoiceAttack": [
+      "AegisAttackCommand"
+    ],
+    "MoveSound": [
+      "AegisMoveStart"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "AEGIS",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 3916,
+      "pack": "ra2",
+      "relative_path": "local/aegis.vxl",
+      "folder": "local",
+      "filename": "aegis.vxl",
+      "stem": "aegis",
+      "extension": ".vxl",
+      "size": 69223,
+      "sha1": "3f3e31071df2eedf72d63de583abeb0688bc6277"
+    },
+    "body_hva": {
+      "asset_id": 3915,
+      "pack": "ra2",
+      "relative_path": "local/aegis.hva",
+      "folder": "local",
+      "filename": "aegis.hva",
+      "stem": "aegis",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "5474514a98e9e8a86ccfe6c506805e231b3ae90a"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:AEGIS",
+      "Name": "Aegis Cruiser",
+      "Prerequisite": "GAYARD,RADAR",
+      "Primary": "Medusa",
+      "NavalTargeting": 6,
+      "LandTargeting": 1,
+      "ToProtect": true,
+      "Category": "AFV",
+      "Strength": 800,
+      "Naval": true,
+      "Armor": "light",
+      "TechLevel": 7,
+      "Sight": 8,
+      "Speed": 4,
+      "CrateGoodie": false,
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 1200,
+      "Points": 35,
+      "ROT": 1,
+      "Crusher": false,
+      "Crewed": false,
+      "IsSelectableCombatant": true,
+      "Weight": 4,
+      "RadialFireSegments": 10,
+      "OpportunityFire": true,
+      "DistributedFire": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "AegisSelect",
+      "VoiceMove": "AegisMove",
+      "VoiceAttack": "AegisAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "",
+      "SinkingSound": "GenLargeWaterDie",
+      "MoveSound": "AegisMoveStart",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": 25,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ElitePrimary": "MedusaE",
+      "Size": 30,
+      "TooBigToFitUnderBridge": true,
+      "Soylent": 1200
+    },
+    "raw_values": {
+      "UIName": "Name:AEGIS",
+      "Name": "Aegis Cruiser",
+      "Prerequisite": "GAYARD,RADAR",
+      "Primary": "Medusa",
+      "NavalTargeting": "6",
+      "LandTargeting": "1",
+      "ToProtect": "yes",
+      "Category": "AFV",
+      "Strength": "800",
+      "Naval": "yes",
+      "Armor": "light",
+      "TechLevel": "7",
+      "Sight": "8",
+      "Speed": "4",
+      "CrateGoodie": "no",
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "1200",
+      "Points": "35",
+      "ROT": "1",
+      "Crusher": "no",
+      "Crewed": "no",
+      "IsSelectableCombatant": "yes",
+      "Weight": "4",
+      "RadialFireSegments": "10",
+      "OpportunityFire": "yes",
+      "DistributedFire": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "AegisSelect",
+      "VoiceMove": "AegisMove",
+      "VoiceAttack": "AegisAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "",
+      "SinkingSound": "GenLargeWaterDie",
+      "MoveSound": "AegisMoveStart",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": "25",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ElitePrimary": "MedusaE",
+      "Size": "30",
+      "TooBigToFitUnderBridge": "true",
+      "Soylent": "1200"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:AEGIS",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7187,
+          "section": "AEGIS",
+          "key": "UIName",
+          "value": "Name:AEGIS"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5286,
+            "section": "AEGIS",
+            "key": "UIName",
+            "value": "Name:AEGIS"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7185,
+            "section": "AEGIS",
+            "key": "UIName",
+            "value": "Name:AEGIS"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Aegis Cruiser",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7188,
+          "section": "AEGIS",
+          "key": "Name",
+          "value": "Aegis Cruiser"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5287,
+            "section": "AEGIS",
+            "key": "Name",
+            "value": "Aegis Cruiser"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7186,
+            "section": "AEGIS",
+            "key": "Name",
+            "value": "Aegis Cruiser"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GAYARD,RADAR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7189,
+          "section": "AEGIS",
+          "key": "Prerequisite",
+          "value": "GAYARD,RADAR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5288,
+            "section": "AEGIS",
+            "key": "Prerequisite",
+            "value": "GAYARD,RADAR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7187,
+            "section": "AEGIS",
+            "key": "Prerequisite",
+            "value": "GAYARD,RADAR"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "Medusa",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7190,
+          "section": "AEGIS",
+          "key": "Primary",
+          "value": "Medusa"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5289,
+            "section": "AEGIS",
+            "key": "Primary",
+            "value": "Medusa"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7188,
+            "section": "AEGIS",
+            "key": "Primary",
+            "value": "Medusa"
+          }
+        ]
+      },
+      "NavalTargeting": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7191,
+          "section": "AEGIS",
+          "key": "NavalTargeting",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5290,
+            "section": "AEGIS",
+            "key": "NavalTargeting",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7189,
+            "section": "AEGIS",
+            "key": "NavalTargeting",
+            "value": "6"
+          }
+        ]
+      },
+      "LandTargeting": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7192,
+          "section": "AEGIS",
+          "key": "LandTargeting",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5291,
+            "section": "AEGIS",
+            "key": "LandTargeting",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7190,
+            "section": "AEGIS",
+            "key": "LandTargeting",
+            "value": "1"
+          }
+        ]
+      },
+      "ToProtect": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7193,
+          "section": "AEGIS",
+          "key": "ToProtect",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5292,
+            "section": "AEGIS",
+            "key": "ToProtect",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7191,
+            "section": "AEGIS",
+            "key": "ToProtect",
+            "value": "yes"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7194,
+          "section": "AEGIS",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5293,
+            "section": "AEGIS",
+            "key": "Category",
+            "value": "AFV"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7192,
+            "section": "AEGIS",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "800",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7195,
+          "section": "AEGIS",
+          "key": "Strength",
+          "value": "800"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5294,
+            "section": "AEGIS",
+            "key": "Strength",
+            "value": "800"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7193,
+            "section": "AEGIS",
+            "key": "Strength",
+            "value": "800"
+          }
+        ]
+      },
+      "Naval": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7196,
+          "section": "AEGIS",
+          "key": "Naval",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5295,
+            "section": "AEGIS",
+            "key": "Naval",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7194,
+            "section": "AEGIS",
+            "key": "Naval",
+            "value": "yes"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7197,
+          "section": "AEGIS",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5296,
+            "section": "AEGIS",
+            "key": "Armor",
+            "value": "light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7195,
+            "section": "AEGIS",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7198,
+          "section": "AEGIS",
+          "key": "TechLevel",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5297,
+            "section": "AEGIS",
+            "key": "TechLevel",
+            "value": "7"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7196,
+            "section": "AEGIS",
+            "key": "TechLevel",
+            "value": "7"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7199,
+          "section": "AEGIS",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5298,
+            "section": "AEGIS",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7197,
+            "section": "AEGIS",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7200,
+          "section": "AEGIS",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5299,
+            "section": "AEGIS",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7198,
+            "section": "AEGIS",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7201,
+          "section": "AEGIS",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5300,
+            "section": "AEGIS",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7199,
+            "section": "AEGIS",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7202,
+          "section": "AEGIS",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5301,
+            "section": "AEGIS",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7200,
+            "section": "AEGIS",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7203,
+          "section": "AEGIS",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5302,
+            "section": "AEGIS",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7201,
+            "section": "AEGIS",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7204,
+          "section": "AEGIS",
+          "key": "Cost",
+          "value": "1200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5303,
+            "section": "AEGIS",
+            "key": "Cost",
+            "value": "1200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7202,
+            "section": "AEGIS",
+            "key": "Cost",
+            "value": "1200"
+          }
+        ]
+      },
+      "Points": {
+        "value": "35",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7206,
+          "section": "AEGIS",
+          "key": "Points",
+          "value": "35"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5304,
+            "section": "AEGIS",
+            "key": "Points",
+            "value": "35"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7204,
+            "section": "AEGIS",
+            "key": "Points",
+            "value": "35"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7207,
+          "section": "AEGIS",
+          "key": "ROT",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5305,
+            "section": "AEGIS",
+            "key": "ROT",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7205,
+            "section": "AEGIS",
+            "key": "ROT",
+            "value": "1"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7208,
+          "section": "AEGIS",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5306,
+            "section": "AEGIS",
+            "key": "Crusher",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7206,
+            "section": "AEGIS",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7209,
+          "section": "AEGIS",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5307,
+            "section": "AEGIS",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7207,
+            "section": "AEGIS",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7210,
+          "section": "AEGIS",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5308,
+            "section": "AEGIS",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7208,
+            "section": "AEGIS",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7214,
+          "section": "AEGIS",
+          "key": "Weight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5312,
+            "section": "AEGIS",
+            "key": "Weight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7212,
+            "section": "AEGIS",
+            "key": "Weight",
+            "value": "4"
+          }
+        ]
+      },
+      "RadialFireSegments": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7216,
+          "section": "AEGIS",
+          "key": "RadialFireSegments",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5314,
+            "section": "AEGIS",
+            "key": "RadialFireSegments",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7214,
+            "section": "AEGIS",
+            "key": "RadialFireSegments",
+            "value": "10"
+          }
+        ]
+      },
+      "OpportunityFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7218,
+          "section": "AEGIS",
+          "key": "OpportunityFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5316,
+            "section": "AEGIS",
+            "key": "OpportunityFire",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7216,
+            "section": "AEGIS",
+            "key": "OpportunityFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "DistributedFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7219,
+          "section": "AEGIS",
+          "key": "DistributedFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5317,
+            "section": "AEGIS",
+            "key": "DistributedFire",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7217,
+            "section": "AEGIS",
+            "key": "DistributedFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7228,
+          "section": "AEGIS",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5326,
+            "section": "AEGIS",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7226,
+            "section": "AEGIS",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "AegisSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7229,
+          "section": "AEGIS",
+          "key": "VoiceSelect",
+          "value": "AegisSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5327,
+            "section": "AEGIS",
+            "key": "VoiceSelect",
+            "value": "GenAllWaterSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7227,
+            "section": "AEGIS",
+            "key": "VoiceSelect",
+            "value": "AegisSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "AegisMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7230,
+          "section": "AEGIS",
+          "key": "VoiceMove",
+          "value": "AegisMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5328,
+            "section": "AEGIS",
+            "key": "VoiceMove",
+            "value": "GenAllWaterMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7228,
+            "section": "AEGIS",
+            "key": "VoiceMove",
+            "value": "AegisMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "AegisAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7231,
+          "section": "AEGIS",
+          "key": "VoiceAttack",
+          "value": "AegisAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5329,
+            "section": "AEGIS",
+            "key": "VoiceAttack",
+            "value": "GenAllWaterAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7229,
+            "section": "AEGIS",
+            "key": "VoiceAttack",
+            "value": "AegisAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7232,
+          "section": "AEGIS",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5330,
+            "section": "AEGIS",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7230,
+            "section": "AEGIS",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7233,
+          "section": "AEGIS",
+          "key": "DieSound",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5331,
+            "section": "AEGIS",
+            "key": "DieSound",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7231,
+            "section": "AEGIS",
+            "key": "DieSound",
+            "value": ""
+          }
+        ]
+      },
+      "SinkingSound": {
+        "value": "GenLargeWaterDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7234,
+          "section": "AEGIS",
+          "key": "SinkingSound",
+          "value": "GenLargeWaterDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5332,
+            "section": "AEGIS",
+            "key": "SinkingSound",
+            "value": "GenLargeWaterDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7232,
+            "section": "AEGIS",
+            "key": "SinkingSound",
+            "value": "GenLargeWaterDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "AegisMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7235,
+          "section": "AEGIS",
+          "key": "MoveSound",
+          "value": "AegisMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5333,
+            "section": "AEGIS",
+            "key": "MoveSound",
+            "value": "AegisMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7233,
+            "section": "AEGIS",
+            "key": "MoveSound",
+            "value": "AegisMoveStart"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7236,
+          "section": "AEGIS",
+          "key": "Locomotor",
+          "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5334,
+            "section": "AEGIS",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7234,
+            "section": "AEGIS",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Float",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7237,
+          "section": "AEGIS",
+          "key": "SpeedType",
+          "value": "Float"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5335,
+            "section": "AEGIS",
+            "key": "SpeedType",
+            "value": "Float"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7235,
+            "section": "AEGIS",
+            "key": "SpeedType",
+            "value": "Float"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Water",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7238,
+          "section": "AEGIS",
+          "key": "MovementZone",
+          "value": "Water"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5336,
+            "section": "AEGIS",
+            "key": "MovementZone",
+            "value": "Water"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7236,
+            "section": "AEGIS",
+            "key": "MovementZone",
+            "value": "Water"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7239,
+          "section": "AEGIS",
+          "key": "ThreatPosed",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5337,
+            "section": "AEGIS",
+            "key": "ThreatPosed",
+            "value": "25"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7237,
+            "section": "AEGIS",
+            "key": "ThreatPosed",
+            "value": "25"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7240,
+          "section": "AEGIS",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5338,
+            "section": "AEGIS",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7238,
+            "section": "AEGIS",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7241,
+          "section": "AEGIS",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5339,
+            "section": "AEGIS",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7239,
+            "section": "AEGIS",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7242,
+          "section": "AEGIS",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5340,
+            "section": "AEGIS",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7240,
+            "section": "AEGIS",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "MedusaE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7244,
+          "section": "AEGIS",
+          "key": "ElitePrimary",
+          "value": "MedusaE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5342,
+            "section": "AEGIS",
+            "key": "ElitePrimary",
+            "value": "MedusaE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7242,
+            "section": "AEGIS",
+            "key": "ElitePrimary",
+            "value": "MedusaE"
+          }
+        ]
+      },
+      "Size": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7245,
+          "section": "AEGIS",
+          "key": "Size",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5343,
+            "section": "AEGIS",
+            "key": "Size",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7243,
+            "section": "AEGIS",
+            "key": "Size",
+            "value": "30"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7246,
+          "section": "AEGIS",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5344,
+            "section": "AEGIS",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7244,
+            "section": "AEGIS",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "1200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7205,
+          "section": "AEGIS",
+          "key": "Soylent",
+          "value": "1200"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7203,
+            "section": "AEGIS",
+            "key": "Soylent",
+            "value": "1200"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "AGISICON",
+      "Voxel": true,
+      "Remapable": true
+    },
+    "raw_values": {
+      "Cameo": "AGISICON",
+      "Voxel": "yes",
+      "Remapable": "yes"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "AGISICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 682,
+          "section": "AEGIS",
+          "key": "Cameo",
+          "value": "AGISICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 487,
+            "section": "AEGIS",
+            "key": "Cameo",
+            "value": "AGISICON"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 684,
+          "section": "AEGIS",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 489,
+            "section": "AEGIS",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 685,
+          "section": "AEGIS",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 490,
+            "section": "AEGIS",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  }
+}

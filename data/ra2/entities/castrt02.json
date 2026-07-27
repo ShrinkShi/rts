@@ -1,0 +1,717 @@
+{
+  "id": "CASTRT02",
+  "category": "building",
+  "name_token": "Traffic Light",
+  "art_id": "CASTRT02",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 1000,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CASTRT02",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 691,
+          "pack": "ra2",
+          "relative_path": "isosnow/castrt02.shp",
+          "folder": "isosnow",
+          "filename": "castrt02.shp",
+          "stem": "castrt02",
+          "extension": ".shp",
+          "size": 4472,
+          "sha1": "c38cbf8aa617a28ab32a0215efc49d29d4650116"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 691,
+          "pack": "ra2",
+          "relative_path": "isosnow/castrt02.shp",
+          "folder": "isosnow",
+          "filename": "castrt02.shp",
+          "stem": "castrt02",
+          "extension": ".shp",
+          "size": 4472,
+          "sha1": "c38cbf8aa617a28ab32a0215efc49d29d4650116"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 691,
+          "pack": "ra2",
+          "relative_path": "isosnow/castrt02.shp",
+          "folder": "isosnow",
+          "filename": "castrt02.shp",
+          "stem": "castrt02",
+          "extension": ".shp",
+          "size": 4472,
+          "sha1": "c38cbf8aa617a28ab32a0215efc49d29d4650116"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 691,
+          "pack": "ra2",
+          "relative_path": "isosnow/castrt02.shp",
+          "folder": "isosnow",
+          "filename": "castrt02.shp",
+          "stem": "castrt02",
+          "extension": ".shp",
+          "size": 4472,
+          "sha1": "c38cbf8aa617a28ab32a0215efc49d29d4650116"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 691,
+          "pack": "ra2",
+          "relative_path": "isosnow/castrt02.shp",
+          "folder": "isosnow",
+          "filename": "castrt02.shp",
+          "stem": "castrt02",
+          "extension": ".shp",
+          "size": 4472,
+          "sha1": "c38cbf8aa617a28ab32a0215efc49d29d4650116"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 691,
+          "pack": "ra2",
+          "relative_path": "isosnow/castrt02.shp",
+          "folder": "isosnow",
+          "filename": "castrt02.shp",
+          "stem": "castrt02",
+          "extension": ".shp",
+          "size": 4472,
+          "sha1": "c38cbf8aa617a28ab32a0215efc49d29d4650116"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 4,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "Traffic Light",
+      "TechLevel": -1,
+      "Strength": 1000,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 0,
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false
+    },
+    "raw_values": {
+      "Name": "Traffic Light",
+      "TechLevel": "-1",
+      "Strength": "1000",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "0",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no"
+    },
+    "provenance": {
+      "Name": {
+        "value": "Traffic Light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20907,
+          "section": "CASTRT02",
+          "key": "Name",
+          "value": "Traffic Light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14232,
+            "section": "CASTRT02",
+            "key": "Name",
+            "value": "RA2 Traffic Light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20899,
+            "section": "CASTRT02",
+            "key": "Name",
+            "value": "Traffic Light"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20908,
+          "section": "CASTRT02",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14233,
+            "section": "CASTRT02",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20900,
+            "section": "CASTRT02",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20909,
+          "section": "CASTRT02",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14234,
+            "section": "CASTRT02",
+            "key": "Strength",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20901,
+            "section": "CASTRT02",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20910,
+          "section": "CASTRT02",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14235,
+            "section": "CASTRT02",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20902,
+            "section": "CASTRT02",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20911,
+          "section": "CASTRT02",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14236,
+            "section": "CASTRT02",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20903,
+            "section": "CASTRT02",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 14237,
+          "section": "CASTRT02",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20913,
+          "section": "CASTRT02",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14238,
+            "section": "CASTRT02",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20905,
+            "section": "CASTRT02",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20914,
+          "section": "CASTRT02",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14239,
+            "section": "CASTRT02",
+            "key": "Armor",
+            "value": "steel"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20906,
+            "section": "CASTRT02",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20915,
+          "section": "CASTRT02",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14240,
+            "section": "CASTRT02",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20907,
+            "section": "CASTRT02",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20916,
+          "section": "CASTRT02",
+          "key": "MaxDebris",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14241,
+            "section": "CASTRT02",
+            "key": "MaxDebris",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20908,
+            "section": "CASTRT02",
+            "key": "MaxDebris",
+            "value": "0"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20919,
+          "section": "CASTRT02",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14244,
+            "section": "CASTRT02",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20911,
+            "section": "CASTRT02",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20920,
+          "section": "CASTRT02",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14245,
+            "section": "CASTRT02",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20912,
+            "section": "CASTRT02",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20921,
+          "section": "CASTRT02",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14246,
+            "section": "CASTRT02",
+            "key": "ClickRepairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20913,
+            "section": "CASTRT02",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "1x1",
+      "Height": 4,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "CanHideThings": false,
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Foundation": "1x1",
+      "Height": "4",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "CanHideThings": "False",
+      "CanBeHidden": "False"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11897,
+          "section": "CASTRT02",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7909,
+            "section": "CASTRT02",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "Height": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11898,
+          "section": "CASTRT02",
+          "key": "Height",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7910,
+            "section": "CASTRT02",
+            "key": "Height",
+            "value": "4"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11899,
+          "section": "CASTRT02",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7911,
+            "section": "CASTRT02",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11900,
+          "section": "CASTRT02",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7912,
+            "section": "CASTRT02",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11902,
+          "section": "CASTRT02",
+          "key": "CanHideThings",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7914,
+            "section": "CASTRT02",
+            "key": "CanHideThings",
+            "value": "False"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11903,
+          "section": "CASTRT02",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7915,
+            "section": "CASTRT02",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      }
+    }
+  }
+}

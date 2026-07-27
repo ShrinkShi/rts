@@ -1,0 +1,1063 @@
+{
+  "id": "PCV",
+  "category": "vehicle",
+  "name_token": "Name:YMCV",
+  "art_id": "PCV",
+  "owners": [
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YAWEAP",
+    "YAGRND"
+  ],
+  "tech_level": 10,
+  "cost": 3000,
+  "strength": 1000,
+  "armor": "heavy",
+  "speed": 4,
+  "sight": 8,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Normal",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "MCVYuriSelect"
+    ],
+    "VoiceMove": [
+      "MCVYuriMove"
+    ],
+    "VoiceAttack": [
+      "MCVYuriMove"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ],
+    "MoveSound": [
+      "MCVMoveStart"
+    ],
+    "DeploySound": [
+      "PlaceBuilding"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "PCV",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 10805,
+      "pack": "ra2md",
+      "relative_path": "localmd/pcv.vxl",
+      "folder": "localmd",
+      "filename": "pcv.vxl",
+      "stem": "pcv",
+      "extension": ".vxl",
+      "size": 112846,
+      "sha1": "6cf42303cdcba4b8252ea94058975705171d4126"
+    },
+    "body_hva": {
+      "asset_id": 10804,
+      "pack": "ra2md",
+      "relative_path": "localmd/pcv.hva",
+      "folder": "localmd",
+      "filename": "pcv.hva",
+      "stem": "pcv",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "5948cf795b43514c66e8f49b7c0069f3856650e0"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:YMCV",
+      "Name": "Yuri Construction Vehicle",
+      "Prerequisite": "YAWEAP,YAGRND",
+      "Strength": 1000,
+      "Category": "Support",
+      "Armor": "heavy",
+      "DeploysInto": "YACNST",
+      "TechLevel": 10,
+      "Sight": 8,
+      "Speed": 4,
+      "Owner": "YuriCountry",
+      "CrateGoodie": true,
+      "Cost": 3000,
+      "Soylent": 3000,
+      "Points": 60,
+      "ROT": 5,
+      "Crewed": true,
+      "Crusher": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "MCVYuriSelect",
+      "VoiceMove": "MCVYuriMove",
+      "VoiceAttack": "MCVYuriMove",
+      "DieSound": "GenVehicleDie",
+      "DeploySound": "PlaceBuilding",
+      "CrushSound": "TankCrush",
+      "VoiceFeedback": "",
+      "MoveSound": "MCVMoveStart",
+      "MaxDebris": 6,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": 3.5,
+      "MovementZone": "Normal",
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": 1,
+      "ZFudgeColumn": 12,
+      "ZFudgeTunnel": 15,
+      "Size": 6,
+      "Trainable": false,
+      "Bunkerable": false,
+      "OmniCrushResistant": true
+    },
+    "raw_values": {
+      "UIName": "Name:YMCV",
+      "Name": "Yuri Construction Vehicle",
+      "Prerequisite": "YAWEAP,YAGRND",
+      "Strength": "1000",
+      "Category": "Support",
+      "Armor": "heavy",
+      "DeploysInto": "YACNST",
+      "TechLevel": "10",
+      "Sight": "8",
+      "Speed": "4",
+      "Owner": "YuriCountry",
+      "CrateGoodie": "yes",
+      "Cost": "3000",
+      "Soylent": "3000",
+      "Points": "60",
+      "ROT": "5",
+      "Crewed": "yes",
+      "Crusher": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "MCVYuriSelect",
+      "VoiceMove": "MCVYuriMove",
+      "VoiceAttack": "MCVYuriMove",
+      "DieSound": "GenVehicleDie",
+      "DeploySound": "PlaceBuilding",
+      "CrushSound": "TankCrush",
+      "VoiceFeedback": "",
+      "MoveSound": "MCVMoveStart",
+      "MaxDebris": "6",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": "3.5",
+      "MovementZone": "Normal",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": "1",
+      "ZFudgeColumn": "12",
+      "ZFudgeTunnel": "15",
+      "Size": "6",
+      "Trainable": "no",
+      "Bunkerable": "no",
+      "OmniCrushResistant": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:YMCV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8827,
+          "section": "PCV",
+          "key": "UIName",
+          "value": "Name:YMCV"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8823,
+            "section": "PCV",
+            "key": "UIName",
+            "value": "Name:YMCV"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Yuri Construction Vehicle",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8828,
+          "section": "PCV",
+          "key": "Name",
+          "value": "Yuri Construction Vehicle"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8824,
+            "section": "PCV",
+            "key": "Name",
+            "value": "Yuri Construction Vehicle"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YAWEAP,YAGRND",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8830,
+          "section": "PCV",
+          "key": "Prerequisite",
+          "value": "YAWEAP,YAGRND"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8826,
+            "section": "PCV",
+            "key": "Prerequisite",
+            "value": "YAWEAP,YAGRND"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8831,
+          "section": "PCV",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8827,
+            "section": "PCV",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Support",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8832,
+          "section": "PCV",
+          "key": "Category",
+          "value": "Support"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8828,
+            "section": "PCV",
+            "key": "Category",
+            "value": "Support"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8833,
+          "section": "PCV",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8829,
+            "section": "PCV",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "DeploysInto": {
+        "value": "YACNST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8834,
+          "section": "PCV",
+          "key": "DeploysInto",
+          "value": "YACNST"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8830,
+            "section": "PCV",
+            "key": "DeploysInto",
+            "value": "YACNST"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8835,
+          "section": "PCV",
+          "key": "TechLevel",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8831,
+            "section": "PCV",
+            "key": "TechLevel",
+            "value": "10"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8836,
+          "section": "PCV",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8832,
+            "section": "PCV",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8837,
+          "section": "PCV",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8833,
+            "section": "PCV",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8838,
+          "section": "PCV",
+          "key": "Owner",
+          "value": "YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8834,
+            "section": "PCV",
+            "key": "Owner",
+            "value": "YuriCountry"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8839,
+          "section": "PCV",
+          "key": "CrateGoodie",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8835,
+            "section": "PCV",
+            "key": "CrateGoodie",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "3000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8840,
+          "section": "PCV",
+          "key": "Cost",
+          "value": "3000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8836,
+            "section": "PCV",
+            "key": "Cost",
+            "value": "3000"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "3000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8841,
+          "section": "PCV",
+          "key": "Soylent",
+          "value": "3000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8837,
+            "section": "PCV",
+            "key": "Soylent",
+            "value": "3000"
+          }
+        ]
+      },
+      "Points": {
+        "value": "60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8842,
+          "section": "PCV",
+          "key": "Points",
+          "value": "60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8838,
+            "section": "PCV",
+            "key": "Points",
+            "value": "60"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8843,
+          "section": "PCV",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8839,
+            "section": "PCV",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8844,
+          "section": "PCV",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8840,
+            "section": "PCV",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8845,
+          "section": "PCV",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8841,
+            "section": "PCV",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8846,
+          "section": "PCV",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8842,
+            "section": "PCV",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "MCVYuriSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8847,
+          "section": "PCV",
+          "key": "VoiceSelect",
+          "value": "MCVYuriSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8843,
+            "section": "PCV",
+            "key": "VoiceSelect",
+            "value": "MCVYuriSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "MCVYuriMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8848,
+          "section": "PCV",
+          "key": "VoiceMove",
+          "value": "MCVYuriMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8844,
+            "section": "PCV",
+            "key": "VoiceMove",
+            "value": "MCVYuriMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "MCVYuriMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8849,
+          "section": "PCV",
+          "key": "VoiceAttack",
+          "value": "MCVYuriMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8845,
+            "section": "PCV",
+            "key": "VoiceAttack",
+            "value": "MCVYuriMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8850,
+          "section": "PCV",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8846,
+            "section": "PCV",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "DeploySound": {
+        "value": "PlaceBuilding",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8851,
+          "section": "PCV",
+          "key": "DeploySound",
+          "value": "PlaceBuilding"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8847,
+            "section": "PCV",
+            "key": "DeploySound",
+            "value": "PlaceBuilding"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8852,
+          "section": "PCV",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8848,
+            "section": "PCV",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8853,
+          "section": "PCV",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8849,
+            "section": "PCV",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "MCVMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8854,
+          "section": "PCV",
+          "key": "MoveSound",
+          "value": "MCVMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8850,
+            "section": "PCV",
+            "key": "MoveSound",
+            "value": "MCVMoveStart"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8855,
+          "section": "PCV",
+          "key": "MaxDebris",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8851,
+            "section": "PCV",
+            "key": "MaxDebris",
+            "value": "6"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8856,
+          "section": "PCV",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8852,
+            "section": "PCV",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "3.5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8857,
+          "section": "PCV",
+          "key": "Weight",
+          "value": "3.5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8853,
+            "section": "PCV",
+            "key": "Weight",
+            "value": "3.5"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Normal",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8858,
+          "section": "PCV",
+          "key": "MovementZone",
+          "value": "Normal"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8854,
+            "section": "PCV",
+            "key": "MovementZone",
+            "value": "Normal"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8859,
+          "section": "PCV",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8855,
+            "section": "PCV",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8860,
+          "section": "PCV",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8856,
+            "section": "PCV",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8861,
+          "section": "PCV",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8857,
+            "section": "PCV",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "12",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8862,
+          "section": "PCV",
+          "key": "ZFudgeColumn",
+          "value": "12"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8858,
+            "section": "PCV",
+            "key": "ZFudgeColumn",
+            "value": "12"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8863,
+          "section": "PCV",
+          "key": "ZFudgeTunnel",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8859,
+            "section": "PCV",
+            "key": "ZFudgeTunnel",
+            "value": "15"
+          }
+        ]
+      },
+      "Size": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8864,
+          "section": "PCV",
+          "key": "Size",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8860,
+            "section": "PCV",
+            "key": "Size",
+            "value": "6"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8865,
+          "section": "PCV",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8861,
+            "section": "PCV",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "Bunkerable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8866,
+          "section": "PCV",
+          "key": "Bunkerable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8862,
+            "section": "PCV",
+            "key": "Bunkerable",
+            "value": "no"
+          }
+        ]
+      },
+      "OmniCrushResistant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8867,
+          "section": "PCV",
+          "key": "OmniCrushResistant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8863,
+            "section": "PCV",
+            "key": "OmniCrushResistant",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "YPCVICON",
+      "Remapable": true,
+      "Voxel": true
+    },
+    "raw_values": {
+      "Cameo": "YPCVICON",
+      "Remapable": "yes",
+      "Voxel": "yes"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "YPCVICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 784,
+          "section": "PCV",
+          "key": "Cameo",
+          "value": "YPCVICON"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 785,
+          "section": "PCV",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 786,
+          "section": "PCV",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": []
+      }
+    }
+  }
+}

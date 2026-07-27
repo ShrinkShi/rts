@@ -41,56 +41,32 @@ func generate(config):
     _build_pathfinding()
 
 func _build_tileset():
-    var atlas = Image.create(tile_px * 5, tile_px, false, Image.FORMAT_RGBA8)
-    var base_colors = [
-        Color("#526D42"), Color("#705F43"), Color("#2F6177"),
-        Color("#9B8738"), Color("#4B5152")
-    ]
-    for tile_index in range(5):
-        var rect = Rect2i(tile_index * tile_px, 0, tile_px, tile_px)
-        atlas.fill_rect(rect, base_colors[tile_index])
-        var rng = RandomNumberGenerator.new()
-        rng.seed = 700 + tile_index * 31
-        for i in range(42):
-            var px = tile_index * tile_px + rng.randi_range(1, tile_px - 2)
-            var py = rng.randi_range(1, tile_px - 2)
-            var variation = rng.randf_range(-0.12, 0.12)
-            var c = base_colors[tile_index].lightened(max(variation, 0.0)).darkened(max(-variation, 0.0))
-            atlas.set_pixel(px, py, c)
-        if tile_index == TILE_WATER:
-            for y in range(5, tile_px, 8):
-                for x in range(tile_index * tile_px + 2, (tile_index + 1) * tile_px - 3):
-                    if (x + y) % 5 < 2:
-                        atlas.set_pixel(x, y, Color("#4B8297"))
-        if tile_index == TILE_ORE:
-            for i in range(12):
-                var ox = tile_index * tile_px + rng.randi_range(4, tile_px - 5)
-                var oy = rng.randi_range(4, tile_px - 5)
-                atlas.fill_rect(Rect2i(ox - 1, oy - 1, 3, 3), Color("#D0B34B"))
-        # A light north-west rim and darker south/east rim make the otherwise
-        # rectangular logical grid read as a raised 2.5D terrain surface.
-        for edge_x in range(tile_index * tile_px, (tile_index + 1) * tile_px):
-            atlas.set_pixel(edge_x, 0, base_colors[tile_index].lightened(0.16))
-            atlas.set_pixel(edge_x, tile_px - 1, base_colors[tile_index].darkened(0.22))
-            if tile_px > 3:
-                atlas.set_pixel(edge_x, tile_px - 2, base_colors[tile_index].darkened(0.1))
-        for edge_y in range(tile_px):
-            atlas.set_pixel(tile_index * tile_px, edge_y, base_colors[tile_index].lightened(0.08))
-            atlas.set_pixel((tile_index + 1) * tile_px - 1, edge_y, base_colors[tile_index].darkened(0.18))
-        for diagonal in range(4, tile_px - 4, 9):
-            var px = tile_index * tile_px + diagonal
-            var py = clamp(int(tile_px * 0.68 - diagonal * 0.18), 2, tile_px - 3)
-            atlas.set_pixel(px, py, base_colors[tile_index].lightened(0.1))
+    var atlas_texture: Texture2D = null
+    var atlas_path: String = "res://assets/ra2_terrain/temperate_atlas.png"
+    if ResourceLoader.exists(atlas_path):
+        atlas_texture = load(atlas_path) as Texture2D
+    if atlas_texture == null:
+        var fallback: Image = Image.create(tile_px * 40, tile_px, false, Image.FORMAT_RGBA8)
+        var fallback_colors: Array[Color] = [
+            Color("#526D42"), Color("#705F43"), Color("#2F6177"),
+            Color("#9B8738"), Color("#4B5152"),
+        ]
+        for terrain_index in range(5):
+            for variant in range(8):
+                fallback.fill_rect(
+                    Rect2i((terrain_index * 8 + variant) * tile_px, 0, tile_px, tile_px),
+                    fallback_colors[terrain_index]
+                )
+        atlas_texture = ImageTexture.create_from_image(fallback)
 
-    var texture = ImageTexture.create_from_image(atlas)
-    var tiles = TileSet.new()
+    var tiles: TileSet = TileSet.new()
     tiles.tile_size = Vector2i(tile_px, tile_px)
-    var source = TileSetAtlasSource.new()
-    source.texture = texture
-    source.texture_region_size = Vector2i(tile_px, tile_px)
-    for i in range(5):
-        source.create_tile(Vector2i(i, 0))
-    source_id = tiles.add_source(source)
+    var atlas_source: TileSetAtlasSource = TileSetAtlasSource.new()
+    atlas_source.texture = atlas_texture
+    atlas_source.texture_region_size = Vector2i(tile_px, tile_px)
+    for tile_index in range(40):
+        atlas_source.create_tile(Vector2i(tile_index, 0))
+    source_id = tiles.add_source(atlas_source)
     tile_set = tiles
 
 func _generate_terrain():
@@ -137,15 +113,17 @@ func _is_ore_cluster(x, y, seed_value, style):
             if Vector2(x, y).distance_to(Vector2(center)) <= 2.65:
                 return true
         return false
+    var center_x = int(floor(float(map_width) * 0.5))
+    var center_y = int(floor(float(map_height) * 0.5))
     var centers = [
-        Vector2i(map_width / 2 - 10, map_height / 2 - 7),
-        Vector2i(map_width / 2 + 11, map_height / 2 + 6),
-        Vector2i(map_width / 2, map_height / 2),
+        Vector2i(center_x - 10, center_y - 7),
+        Vector2i(center_x + 11, center_y + 6),
+        Vector2i(center_x, center_y),
         Vector2i(13 + seed_value % 5, map_height - 13),
         Vector2i(map_width - 14, 12 + seed_value % 4)
     ]
     if style == "open":
-        centers.append(Vector2i(map_width / 2 - 18, map_height / 2 + 8))
+        centers.append(Vector2i(center_x - 18, center_y + 8))
     for center in centers:
         if Vector2(x, y).distance_to(Vector2(center)) <= 3.2:
             return true
@@ -215,7 +193,7 @@ func remove_tree(cell):
         astar_vehicle.set_point_solid(cell, occupied.has(cell) or get_terrain(cell) in [TILE_WATER, TILE_ROCK])
         astar = astar_vehicle
 
-func get_cover_multiplier(world_position, category = "infantry"):
+func get_cover_multiplier(world_position, _category = "infantry"):
     var cell = world_to_cell(world_position)
     if has_tree(cell):
         return 0.75
@@ -240,10 +218,13 @@ func _clear_spawn_areas():
 
 func _rebuild_cells():
     clear()
+    var seed_value: int = int(map_config.get("seed", 1))
     for y in range(map_height):
         for x in range(map_width):
-            var cell = Vector2i(x, y)
-            set_cell(cell, source_id, Vector2i(terrain[_index(cell)], 0), 0)
+            var cell: Vector2i = Vector2i(x, y)
+            var terrain_type: int = int(terrain[_index(cell)])
+            var variant: int = posmod(x * 17 + y * 31 + seed_value * 13, 8)
+            set_cell(cell, source_id, Vector2i(terrain_type * 8 + variant, 0), 0)
 
 func _new_astar_grid():
     var grid = AStarGrid2D.new()

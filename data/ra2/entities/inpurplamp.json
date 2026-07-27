@@ -1,0 +1,1059 @@
+{
+  "id": "INPURPLAMP",
+  "category": "building",
+  "name_token": "Invisible Purple Light Post",
+  "art_id": "GALITE",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 6000,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "GALITE",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 4914,
+          "pack": "ra2",
+          "relative_path": "snow/galite.shp",
+          "folder": "snow",
+          "filename": "galite.shp",
+          "stem": "galite",
+          "extension": ".shp",
+          "size": 1776,
+          "sha1": "3728a41c19799184d1497173230ec428925b46ff"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 0,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "Invisible Purple Light Post",
+      "Image": "GALITE",
+      "Selectable": false,
+      "Insignificant": true,
+      "InvisibleInGame": true,
+      "Strength": 6000,
+      "Armor": "wood",
+      "TechLevel": -1,
+      "Nominal": true,
+      "Sight": 0,
+      "Points": 30,
+      "Power": 0,
+      "Crewed": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "LightVisibility": 3000,
+      "LightIntensity": 0.01,
+      "LightRedTint": 2,
+      "LightGreenTint": 0.01,
+      "LightBlueTint": 2,
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,LGSparkSys",
+      "Powered": true
+    },
+    "raw_values": {
+      "Name": "Invisible Purple Light Post",
+      "Image": "GALITE",
+      "Selectable": "no",
+      "Insignificant": "yes",
+      "InvisibleInGame": "yes",
+      "Strength": "6000",
+      "Armor": "wood",
+      "TechLevel": "-1",
+      "Nominal": "yes",
+      "Sight": "0",
+      "Points": "30",
+      "Power": "0",
+      "Crewed": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "LightVisibility": "3000",
+      "LightIntensity": "0.01",
+      "LightRedTint": "2.0",
+      "LightGreenTint": "0.01",
+      "LightBlueTint": "2.0",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,LGSparkSys",
+      "Powered": "true"
+    },
+    "provenance": {
+      "Name": {
+        "value": "Invisible Purple Light Post",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17484,
+          "section": "INPURPLAMP",
+          "key": "Name",
+          "value": "Invisible Purple Light Post"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9737,
+            "section": "INPURPLAMP",
+            "key": "Name",
+            "value": "Invisible Purple Light Post"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17476,
+            "section": "INPURPLAMP",
+            "key": "Name",
+            "value": "Invisible Purple Light Post"
+          }
+        ]
+      },
+      "Image": {
+        "value": "GALITE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17485,
+          "section": "INPURPLAMP",
+          "key": "Image",
+          "value": "GALITE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9738,
+            "section": "INPURPLAMP",
+            "key": "Image",
+            "value": "GALITE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17477,
+            "section": "INPURPLAMP",
+            "key": "Image",
+            "value": "GALITE"
+          }
+        ]
+      },
+      "Selectable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17486,
+          "section": "INPURPLAMP",
+          "key": "Selectable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9739,
+            "section": "INPURPLAMP",
+            "key": "Selectable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17478,
+            "section": "INPURPLAMP",
+            "key": "Selectable",
+            "value": "no"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17487,
+          "section": "INPURPLAMP",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9740,
+            "section": "INPURPLAMP",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17479,
+            "section": "INPURPLAMP",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "InvisibleInGame": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17488,
+          "section": "INPURPLAMP",
+          "key": "InvisibleInGame",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9741,
+            "section": "INPURPLAMP",
+            "key": "InvisibleInGame",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17480,
+            "section": "INPURPLAMP",
+            "key": "InvisibleInGame",
+            "value": "yes"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "6000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17489,
+          "section": "INPURPLAMP",
+          "key": "Strength",
+          "value": "6000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9742,
+            "section": "INPURPLAMP",
+            "key": "Strength",
+            "value": "6000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17481,
+            "section": "INPURPLAMP",
+            "key": "Strength",
+            "value": "6000"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17490,
+          "section": "INPURPLAMP",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9743,
+            "section": "INPURPLAMP",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17482,
+            "section": "INPURPLAMP",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17491,
+          "section": "INPURPLAMP",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9744,
+            "section": "INPURPLAMP",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17483,
+            "section": "INPURPLAMP",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17492,
+          "section": "INPURPLAMP",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9745,
+            "section": "INPURPLAMP",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17484,
+            "section": "INPURPLAMP",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17493,
+          "section": "INPURPLAMP",
+          "key": "Sight",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9746,
+            "section": "INPURPLAMP",
+            "key": "Sight",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17485,
+            "section": "INPURPLAMP",
+            "key": "Sight",
+            "value": "0"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17494,
+          "section": "INPURPLAMP",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9747,
+            "section": "INPURPLAMP",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17486,
+            "section": "INPURPLAMP",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "Power": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17495,
+          "section": "INPURPLAMP",
+          "key": "Power",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9748,
+            "section": "INPURPLAMP",
+            "key": "Power",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17487,
+            "section": "INPURPLAMP",
+            "key": "Power",
+            "value": "0"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17496,
+          "section": "INPURPLAMP",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9749,
+            "section": "INPURPLAMP",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17488,
+            "section": "INPURPLAMP",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17497,
+          "section": "INPURPLAMP",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9750,
+            "section": "INPURPLAMP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17489,
+            "section": "INPURPLAMP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "LightVisibility": {
+        "value": "3000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17498,
+          "section": "INPURPLAMP",
+          "key": "LightVisibility",
+          "value": "3000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9751,
+            "section": "INPURPLAMP",
+            "key": "LightVisibility",
+            "value": "3000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17490,
+            "section": "INPURPLAMP",
+            "key": "LightVisibility",
+            "value": "3000"
+          }
+        ]
+      },
+      "LightIntensity": {
+        "value": "0.01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17499,
+          "section": "INPURPLAMP",
+          "key": "LightIntensity",
+          "value": "0.01"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9752,
+            "section": "INPURPLAMP",
+            "key": "LightIntensity",
+            "value": "0.01"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17491,
+            "section": "INPURPLAMP",
+            "key": "LightIntensity",
+            "value": "0.01"
+          }
+        ]
+      },
+      "LightRedTint": {
+        "value": "2.0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17500,
+          "section": "INPURPLAMP",
+          "key": "LightRedTint",
+          "value": "2.0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9753,
+            "section": "INPURPLAMP",
+            "key": "LightRedTint",
+            "value": "2.0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17492,
+            "section": "INPURPLAMP",
+            "key": "LightRedTint",
+            "value": "2.0"
+          }
+        ]
+      },
+      "LightGreenTint": {
+        "value": "0.01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17501,
+          "section": "INPURPLAMP",
+          "key": "LightGreenTint",
+          "value": "0.01"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9754,
+            "section": "INPURPLAMP",
+            "key": "LightGreenTint",
+            "value": "0.01"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17493,
+            "section": "INPURPLAMP",
+            "key": "LightGreenTint",
+            "value": "0.01"
+          }
+        ]
+      },
+      "LightBlueTint": {
+        "value": "2.0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17502,
+          "section": "INPURPLAMP",
+          "key": "LightBlueTint",
+          "value": "2.0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9755,
+            "section": "INPURPLAMP",
+            "key": "LightBlueTint",
+            "value": "2.0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17494,
+            "section": "INPURPLAMP",
+            "key": "LightBlueTint",
+            "value": "2.0"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17503,
+          "section": "INPURPLAMP",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9756,
+            "section": "INPURPLAMP",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17495,
+            "section": "INPURPLAMP",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,LGSparkSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17504,
+          "section": "INPURPLAMP",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,LGSparkSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9757,
+            "section": "INPURPLAMP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,LGSparkSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17496,
+            "section": "INPURPLAMP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,LGSparkSys"
+          }
+        ]
+      },
+      "Powered": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17505,
+          "section": "INPURPLAMP",
+          "key": "Powered",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9758,
+            "section": "INPURPLAMP",
+            "key": "Powered",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17497,
+            "section": "INPURPLAMP",
+            "key": "Powered",
+            "value": "true"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "LITEICON",
+      "Image": "GALITE",
+      "Remapable": true,
+      "Foundation": "1x1",
+      "TerrainPalette": true,
+      "NewTheater": true,
+      "ExtraDamageStage": false,
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Cameo": "LITEICON",
+      "Image": "GALITE",
+      "Remapable": "yes",
+      "Foundation": "1x1",
+      "TerrainPalette": "yes",
+      "NewTheater": "yes",
+      "ExtraDamageStage": "false",
+      "CanBeHidden": "False"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "LITEICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4317,
+          "section": "GALITE",
+          "key": "Cameo",
+          "value": "LITEICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2831,
+            "section": "GALITE",
+            "key": "Cameo",
+            "value": "LITEICON"
+          }
+        ]
+      },
+      "Image": {
+        "value": "GALITE",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4318,
+          "section": "GALITE",
+          "key": "Image",
+          "value": "GALITE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2832,
+            "section": "GALITE",
+            "key": "Image",
+            "value": "GALITE"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4319,
+          "section": "GALITE",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2833,
+            "section": "GALITE",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4320,
+          "section": "GALITE",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2834,
+            "section": "GALITE",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "TerrainPalette": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4321,
+          "section": "GALITE",
+          "key": "TerrainPalette",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2835,
+            "section": "GALITE",
+            "key": "TerrainPalette",
+            "value": "yes"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4322,
+          "section": "GALITE",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2836,
+            "section": "GALITE",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "ExtraDamageStage": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4323,
+          "section": "GALITE",
+          "key": "ExtraDamageStage",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2837,
+            "section": "GALITE",
+            "key": "ExtraDamageStage",
+            "value": "false"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4326,
+          "section": "GALITE",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2840,
+            "section": "GALITE",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      }
+    }
+  }
+}

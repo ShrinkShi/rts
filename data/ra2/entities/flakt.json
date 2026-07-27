@@ -1,0 +1,3874 @@
+{
+  "id": "FLAKT",
+  "category": "infantry",
+  "name_token": "Name:FLAKT",
+  "art_id": "FLAKT",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAHAND",
+    "NARADR"
+  ],
+  "tech_level": 1,
+  "cost": 300,
+  "strength": 100,
+  "armor": "none",
+  "speed": 4,
+  "sight": 5,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Infantry",
+  "weapons": {
+    "Primary": {
+      "id": "FlakGuyGun",
+      "projectile": "FlakTProj",
+      "warhead": "FlakTWH",
+      "report": [
+        "FlakTrackAttackGround"
+      ],
+      "values": {
+        "Damage": 20,
+        "ROF": 20,
+        "Range": 5,
+        "Projectile": "FlakTProj",
+        "Speed": 50,
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE"
+      },
+      "raw_values": {
+        "Damage": "20",
+        "ROF": "20",
+        "Range": "5",
+        "Projectile": "FlakTProj",
+        "Speed": "50",
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24231,
+            "section": "FlakGuyGun",
+            "key": "Damage",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17424,
+              "section": "FlakGuyGun",
+              "key": "Damage",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24223,
+              "section": "FlakGuyGun",
+              "key": "Damage",
+              "value": "20"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24232,
+            "section": "FlakGuyGun",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17425,
+              "section": "FlakGuyGun",
+              "key": "ROF",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24224,
+              "section": "FlakGuyGun",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24233,
+            "section": "FlakGuyGun",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17426,
+              "section": "FlakGuyGun",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24225,
+              "section": "FlakGuyGun",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakTProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24234,
+            "section": "FlakGuyGun",
+            "key": "Projectile",
+            "value": "FlakTProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17427,
+              "section": "FlakGuyGun",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24226,
+              "section": "FlakGuyGun",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24235,
+            "section": "FlakGuyGun",
+            "key": "Speed",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17428,
+              "section": "FlakGuyGun",
+              "key": "Speed",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24227,
+              "section": "FlakGuyGun",
+              "key": "Speed",
+              "value": "50"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakTrackAttackGround",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24236,
+            "section": "FlakGuyGun",
+            "key": "Report",
+            "value": "FlakTrackAttackGround"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17429,
+              "section": "FlakGuyGun",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24228,
+              "section": "FlakGuyGun",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakTWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24237,
+            "section": "FlakGuyGun",
+            "key": "Warhead",
+            "value": "FlakTWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17430,
+              "section": "FlakGuyGun",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24229,
+              "section": "FlakGuyGun",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24238,
+            "section": "FlakGuyGun",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17431,
+              "section": "FlakGuyGun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24230,
+              "section": "FlakGuyGun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "FlakGuyAAGun",
+      "projectile": "FlakProj",
+      "warhead": "FlakGuyWH",
+      "report": [
+        "FlakTrackAttackAir"
+      ],
+      "values": {
+        "Damage": 20,
+        "ROF": 25,
+        "Range": 8,
+        "Projectile": "FlakProj",
+        "Speed": 100,
+        "Report": "FlakTrackAttackAir",
+        "Warhead": "FlakGuyWH",
+        "Anim": "GUNFIRE"
+      },
+      "raw_values": {
+        "Damage": "20",
+        "ROF": "25",
+        "Range": "8",
+        "Projectile": "FlakProj",
+        "Speed": "100",
+        "Report": "FlakTrackAttackAir",
+        "Warhead": "FlakGuyWH",
+        "Anim": "GUNFIRE"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24211,
+            "section": "FlakGuyAAGun",
+            "key": "Damage",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17404,
+              "section": "FlakGuyAAGun",
+              "key": "Damage",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24203,
+              "section": "FlakGuyAAGun",
+              "key": "Damage",
+              "value": "20"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24212,
+            "section": "FlakGuyAAGun",
+            "key": "ROF",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17405,
+              "section": "FlakGuyAAGun",
+              "key": "ROF",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24204,
+              "section": "FlakGuyAAGun",
+              "key": "ROF",
+              "value": "25"
+            }
+          ]
+        },
+        "Range": {
+          "value": "8",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24213,
+            "section": "FlakGuyAAGun",
+            "key": "Range",
+            "value": "8"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17406,
+              "section": "FlakGuyAAGun",
+              "key": "Range",
+              "value": "8"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24205,
+              "section": "FlakGuyAAGun",
+              "key": "Range",
+              "value": "8"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24214,
+            "section": "FlakGuyAAGun",
+            "key": "Projectile",
+            "value": "FlakProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17407,
+              "section": "FlakGuyAAGun",
+              "key": "Projectile",
+              "value": "FlakProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24206,
+              "section": "FlakGuyAAGun",
+              "key": "Projectile",
+              "value": "FlakProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24215,
+            "section": "FlakGuyAAGun",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17408,
+              "section": "FlakGuyAAGun",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24207,
+              "section": "FlakGuyAAGun",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakTrackAttackAir",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24216,
+            "section": "FlakGuyAAGun",
+            "key": "Report",
+            "value": "FlakTrackAttackAir"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17409,
+              "section": "FlakGuyAAGun",
+              "key": "Report",
+              "value": "FlakTrackAttackAir"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24208,
+              "section": "FlakGuyAAGun",
+              "key": "Report",
+              "value": "FlakTrackAttackAir"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakGuyWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24217,
+            "section": "FlakGuyAAGun",
+            "key": "Warhead",
+            "value": "FlakGuyWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17410,
+              "section": "FlakGuyAAGun",
+              "key": "Warhead",
+              "value": "FlakGuyWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24209,
+              "section": "FlakGuyAAGun",
+              "key": "Warhead",
+              "value": "FlakGuyWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24218,
+            "section": "FlakGuyAAGun",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17411,
+              "section": "FlakGuyAAGun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24210,
+              "section": "FlakGuyAAGun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "FlakGuyGunE",
+      "projectile": "FlakTProj",
+      "warhead": "FlakTWH",
+      "report": [
+        "FlakTrackAttackGround"
+      ],
+      "values": {
+        "Damage": 20,
+        "ROF": 20,
+        "Range": 5,
+        "Projectile": "FlakTProj",
+        "Speed": 50,
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE",
+        "Burst": 2
+      },
+      "raw_values": {
+        "Damage": "20",
+        "ROF": "20",
+        "Range": "5",
+        "Projectile": "FlakTProj",
+        "Speed": "50",
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE",
+        "Burst": "2"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24733,
+            "section": "FlakGuyGunE",
+            "key": "Damage",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17713,
+              "section": "FlakGuyGunE",
+              "key": "Damage",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24725,
+              "section": "FlakGuyGunE",
+              "key": "Damage",
+              "value": "20"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24734,
+            "section": "FlakGuyGunE",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17714,
+              "section": "FlakGuyGunE",
+              "key": "ROF",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24726,
+              "section": "FlakGuyGunE",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24735,
+            "section": "FlakGuyGunE",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17715,
+              "section": "FlakGuyGunE",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24727,
+              "section": "FlakGuyGunE",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakTProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24736,
+            "section": "FlakGuyGunE",
+            "key": "Projectile",
+            "value": "FlakTProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17716,
+              "section": "FlakGuyGunE",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24728,
+              "section": "FlakGuyGunE",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24737,
+            "section": "FlakGuyGunE",
+            "key": "Speed",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17717,
+              "section": "FlakGuyGunE",
+              "key": "Speed",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24729,
+              "section": "FlakGuyGunE",
+              "key": "Speed",
+              "value": "50"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakTrackAttackGround",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24738,
+            "section": "FlakGuyGunE",
+            "key": "Report",
+            "value": "FlakTrackAttackGround"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17718,
+              "section": "FlakGuyGunE",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24730,
+              "section": "FlakGuyGunE",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakTWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24739,
+            "section": "FlakGuyGunE",
+            "key": "Warhead",
+            "value": "FlakTWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17719,
+              "section": "FlakGuyGunE",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24731,
+              "section": "FlakGuyGunE",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24740,
+            "section": "FlakGuyGunE",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17720,
+              "section": "FlakGuyGunE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24732,
+              "section": "FlakGuyGunE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24741,
+            "section": "FlakGuyGunE",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17721,
+              "section": "FlakGuyGunE",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24733,
+              "section": "FlakGuyGunE",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        }
+      }
+    },
+    "EliteSecondary": {
+      "id": "FlakGuyAAGunE",
+      "projectile": "FlakProj",
+      "warhead": "FlakGuyWH",
+      "report": [
+        "FlakTrackAttackAir"
+      ],
+      "values": {
+        "Damage": 8,
+        "ROF": 25,
+        "Range": 8,
+        "Projectile": "FlakProj",
+        "Speed": 100,
+        "Report": "FlakTrackAttackAir",
+        "Warhead": "FlakGuyWH",
+        "Anim": "GUNFIRE",
+        "Burst": 2
+      },
+      "raw_values": {
+        "Damage": "8",
+        "ROF": "25",
+        "Range": "8",
+        "Projectile": "FlakProj",
+        "Speed": "100",
+        "Report": "FlakTrackAttackAir",
+        "Warhead": "FlakGuyWH",
+        "Anim": "GUNFIRE",
+        "Burst": "2"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "8",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24744,
+            "section": "FlakGuyAAGunE",
+            "key": "Damage",
+            "value": "8"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17724,
+              "section": "FlakGuyAAGunE",
+              "key": "Damage",
+              "value": "8"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24736,
+              "section": "FlakGuyAAGunE",
+              "key": "Damage",
+              "value": "8"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24745,
+            "section": "FlakGuyAAGunE",
+            "key": "ROF",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17725,
+              "section": "FlakGuyAAGunE",
+              "key": "ROF",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24737,
+              "section": "FlakGuyAAGunE",
+              "key": "ROF",
+              "value": "25"
+            }
+          ]
+        },
+        "Range": {
+          "value": "8",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24746,
+            "section": "FlakGuyAAGunE",
+            "key": "Range",
+            "value": "8"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17726,
+              "section": "FlakGuyAAGunE",
+              "key": "Range",
+              "value": "8"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24738,
+              "section": "FlakGuyAAGunE",
+              "key": "Range",
+              "value": "8"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24747,
+            "section": "FlakGuyAAGunE",
+            "key": "Projectile",
+            "value": "FlakProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17727,
+              "section": "FlakGuyAAGunE",
+              "key": "Projectile",
+              "value": "FlakProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24739,
+              "section": "FlakGuyAAGunE",
+              "key": "Projectile",
+              "value": "FlakProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24748,
+            "section": "FlakGuyAAGunE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17728,
+              "section": "FlakGuyAAGunE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24740,
+              "section": "FlakGuyAAGunE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakTrackAttackAir",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24749,
+            "section": "FlakGuyAAGunE",
+            "key": "Report",
+            "value": "FlakTrackAttackAir"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17729,
+              "section": "FlakGuyAAGunE",
+              "key": "Report",
+              "value": "FlakTrackAttackAir"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24741,
+              "section": "FlakGuyAAGunE",
+              "key": "Report",
+              "value": "FlakTrackAttackAir"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakGuyWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24750,
+            "section": "FlakGuyAAGunE",
+            "key": "Warhead",
+            "value": "FlakGuyWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17730,
+              "section": "FlakGuyAAGunE",
+              "key": "Warhead",
+              "value": "FlakGuyWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24742,
+              "section": "FlakGuyAAGunE",
+              "key": "Warhead",
+              "value": "FlakGuyWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24751,
+            "section": "FlakGuyAAGunE",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17731,
+              "section": "FlakGuyAAGunE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24743,
+              "section": "FlakGuyAAGunE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24752,
+            "section": "FlakGuyAAGunE",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17732,
+              "section": "FlakGuyAAGunE",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24744,
+              "section": "FlakGuyAAGunE",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "FlakTroopSelect"
+    ],
+    "VoiceMove": [
+      "FlakTroopMove"
+    ],
+    "VoiceAttack": [
+      "FlakTroopAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "FlakTroopFear"
+    ],
+    "VoiceSpecialAttack": [
+      "FlakTroopMove"
+    ],
+    "DieSound": [
+      "FlakTroopDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "FLAKT",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 165,
+          "pack": "ra2",
+          "relative_path": "conquer/flakt.shp",
+          "folder": "conquer",
+          "filename": "flakt.shp",
+          "stem": "flakt",
+          "extension": ".shp",
+          "size": 189800,
+          "sha1": "fdbc70f78f15f6079b9e39a8462167db48691f27"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 165,
+          "pack": "ra2",
+          "relative_path": "conquer/flakt.shp",
+          "folder": "conquer",
+          "filename": "flakt.shp",
+          "stem": "flakt",
+          "extension": ".shp",
+          "size": 189800,
+          "sha1": "fdbc70f78f15f6079b9e39a8462167db48691f27"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 165,
+          "pack": "ra2",
+          "relative_path": "conquer/flakt.shp",
+          "folder": "conquer",
+          "filename": "flakt.shp",
+          "stem": "flakt",
+          "extension": ".shp",
+          "size": 189800,
+          "sha1": "fdbc70f78f15f6079b9e39a8462167db48691f27"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 165,
+          "pack": "ra2",
+          "relative_path": "conquer/flakt.shp",
+          "folder": "conquer",
+          "filename": "flakt.shp",
+          "stem": "flakt",
+          "extension": ".shp",
+          "size": 189800,
+          "sha1": "fdbc70f78f15f6079b9e39a8462167db48691f27"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 165,
+          "pack": "ra2",
+          "relative_path": "conquer/flakt.shp",
+          "folder": "conquer",
+          "filename": "flakt.shp",
+          "stem": "flakt",
+          "extension": ".shp",
+          "size": 189800,
+          "sha1": "fdbc70f78f15f6079b9e39a8462167db48691f27"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 165,
+          "pack": "ra2",
+          "relative_path": "conquer/flakt.shp",
+          "folder": "conquer",
+          "filename": "flakt.shp",
+          "stem": "flakt",
+          "extension": ".shp",
+          "size": 189800,
+          "sha1": "fdbc70f78f15f6079b9e39a8462167db48691f27"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "FlakSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 165,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            201
+          ],
+          "1": [
+            195
+          ],
+          "2": [
+            189
+          ],
+          "3": [
+            183
+          ],
+          "4": [
+            177
+          ],
+          "5": [
+            171
+          ],
+          "6": [
+            165
+          ],
+          "7": [
+            207
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 116,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            152,
+            153,
+            154,
+            155,
+            156,
+            157
+          ],
+          "1": [
+            146,
+            147,
+            148,
+            149,
+            150,
+            151
+          ],
+          "2": [
+            140,
+            141,
+            142,
+            143,
+            144,
+            145
+          ],
+          "3": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139
+          ],
+          "4": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ],
+          "5": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "6": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "7": [
+            158,
+            159,
+            160,
+            161,
+            162,
+            163
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 213,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            225,
+            226
+          ],
+          "1": [
+            223,
+            224
+          ],
+          "2": [
+            221,
+            222
+          ],
+          "3": [
+            219,
+            220
+          ],
+          "4": [
+            217,
+            218
+          ],
+          "5": [
+            215,
+            216
+          ],
+          "6": [
+            213,
+            214
+          ],
+          "7": [
+            227,
+            228
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 165,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            201,
+            202,
+            203,
+            204,
+            205,
+            206
+          ],
+          "1": [
+            195,
+            196,
+            197,
+            198,
+            199,
+            200
+          ],
+          "2": [
+            189,
+            190,
+            191,
+            192,
+            193,
+            194
+          ],
+          "3": [
+            183,
+            184,
+            185,
+            186,
+            187,
+            188
+          ],
+          "4": [
+            177,
+            178,
+            179,
+            180,
+            181,
+            182
+          ],
+          "5": [
+            171,
+            172,
+            173,
+            174,
+            175,
+            176
+          ],
+          "6": [
+            165,
+            166,
+            167,
+            168,
+            169,
+            170
+          ],
+          "7": [
+            207,
+            208,
+            209,
+            210,
+            211,
+            212
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 229,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            241,
+            242
+          ],
+          "1": [
+            239,
+            240
+          ],
+          "2": [
+            237,
+            238
+          ],
+          "3": [
+            235,
+            236
+          ],
+          "4": [
+            233,
+            234
+          ],
+          "5": [
+            231,
+            232
+          ],
+          "6": [
+            229,
+            230
+          ],
+          "7": [
+            243,
+            244
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 245,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            281,
+            282,
+            283,
+            284,
+            285,
+            286
+          ],
+          "1": [
+            275,
+            276,
+            277,
+            278,
+            279,
+            280
+          ],
+          "2": [
+            269,
+            270,
+            271,
+            272,
+            273,
+            274
+          ],
+          "3": [
+            263,
+            264,
+            265,
+            266,
+            267,
+            268
+          ],
+          "4": [
+            257,
+            258,
+            259,
+            260,
+            261,
+            262
+          ],
+          "5": [
+            251,
+            252,
+            253,
+            254,
+            255,
+            256
+          ],
+          "6": [
+            245,
+            246,
+            247,
+            248,
+            249,
+            250
+          ],
+          "7": [
+            287,
+            288,
+            289,
+            290,
+            291,
+            292
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 86,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 101,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 293,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            293,
+            294,
+            295,
+            296,
+            297,
+            298,
+            299,
+            300
+          ]
+        }
+      },
+      "Paradrop": {
+        "name": "Paradrop",
+        "start": 164,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            164
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:FLAKT",
+      "Name": "Flak Trooper",
+      "Category": "Soldier",
+      "Primary": "FlakGuyGun",
+      "Secondary": "FlakGuyAAGun",
+      "Prerequisite": "NAHAND,NARADR",
+      "CrushSound": "InfantrySquish",
+      "Strength": 100,
+      "Armor": "none",
+      "TechLevel": 1,
+      "Pip": "white",
+      "Sight": 5,
+      "Speed": 4,
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "Cost": 300,
+      "Soylent": 150,
+      "Points": 5,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "FlakTroopSelect",
+      "VoiceMove": "FlakTroopMove",
+      "VoiceAttack": "FlakTroopAttackCommand",
+      "VoiceFeedback": "FlakTroopFear",
+      "VoiceSpecialAttack": "FlakTroopMove",
+      "DieSound": "FlakTroopDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "Infantry",
+      "ThreatPosed": 5,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ImmuneToVeins": true,
+      "Size": 1,
+      "AllowedToStartInMultiplayer": false,
+      "ElitePrimary": "FlakGuyGunE",
+      "EliteSecondary": "FlakGuyAAGunE",
+      "IFVMode": 3
+    },
+    "raw_values": {
+      "UIName": "Name:FLAKT",
+      "Name": "Flak Trooper",
+      "Category": "Soldier",
+      "Primary": "FlakGuyGun",
+      "Secondary": "FlakGuyAAGun",
+      "Prerequisite": "NAHAND,NARADR",
+      "CrushSound": "InfantrySquish",
+      "Strength": "100",
+      "Armor": "none",
+      "TechLevel": "1",
+      "Pip": "white",
+      "Sight": "5",
+      "Speed": "4",
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "Cost": "300",
+      "Soylent": "150",
+      "Points": "5",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "FlakTroopSelect",
+      "VoiceMove": "FlakTroopMove",
+      "VoiceAttack": "FlakTroopAttackCommand",
+      "VoiceFeedback": "FlakTroopFear",
+      "VoiceSpecialAttack": "FlakTroopMove",
+      "DieSound": "FlakTroopDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "Infantry",
+      "ThreatPosed": "5",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ImmuneToVeins": "yes",
+      "Size": "1",
+      "AllowedToStartInMultiplayer": "no",
+      "ElitePrimary": "FlakGuyGunE",
+      "EliteSecondary": "FlakGuyAAGunE",
+      "IFVMode": "3"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:FLAKT",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4421,
+          "section": "FLAKT",
+          "key": "UIName",
+          "value": "Name:FLAKT"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3261,
+            "section": "FLAKT",
+            "key": "UIName",
+            "value": "Name:FLAKT"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4420,
+            "section": "FLAKT",
+            "key": "UIName",
+            "value": "Name:FLAKT"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Flak Trooper",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4422,
+          "section": "FLAKT",
+          "key": "Name",
+          "value": "Flak Trooper"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3262,
+            "section": "FLAKT",
+            "key": "Name",
+            "value": "Flak Trooper"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4421,
+            "section": "FLAKT",
+            "key": "Name",
+            "value": "Flak Trooper"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4424,
+          "section": "FLAKT",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3264,
+            "section": "FLAKT",
+            "key": "Category",
+            "value": "Soldier"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4423,
+            "section": "FLAKT",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "FlakGuyGun",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4425,
+          "section": "FLAKT",
+          "key": "Primary",
+          "value": "FlakGuyGun"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3265,
+            "section": "FLAKT",
+            "key": "Primary",
+            "value": "FlakGuyGun"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4424,
+            "section": "FLAKT",
+            "key": "Primary",
+            "value": "FlakGuyGun"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "FlakGuyAAGun",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4426,
+          "section": "FLAKT",
+          "key": "Secondary",
+          "value": "FlakGuyAAGun"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3266,
+            "section": "FLAKT",
+            "key": "Secondary",
+            "value": "FlakGuyAAGun"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4425,
+            "section": "FLAKT",
+            "key": "Secondary",
+            "value": "FlakGuyAAGun"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAHAND,NARADR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4427,
+          "section": "FLAKT",
+          "key": "Prerequisite",
+          "value": "NAHAND,NARADR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3267,
+            "section": "FLAKT",
+            "key": "Prerequisite",
+            "value": "NAHAND,NARADR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4426,
+            "section": "FLAKT",
+            "key": "Prerequisite",
+            "value": "NAHAND,NARADR"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4428,
+          "section": "FLAKT",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3268,
+            "section": "FLAKT",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4427,
+            "section": "FLAKT",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4429,
+          "section": "FLAKT",
+          "key": "Strength",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3269,
+            "section": "FLAKT",
+            "key": "Strength",
+            "value": "100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4428,
+            "section": "FLAKT",
+            "key": "Strength",
+            "value": "100"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4430,
+          "section": "FLAKT",
+          "key": "Armor",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3270,
+            "section": "FLAKT",
+            "key": "Armor",
+            "value": "none"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4429,
+            "section": "FLAKT",
+            "key": "Armor",
+            "value": "none"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4431,
+          "section": "FLAKT",
+          "key": "TechLevel",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3271,
+            "section": "FLAKT",
+            "key": "TechLevel",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4430,
+            "section": "FLAKT",
+            "key": "TechLevel",
+            "value": "1"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "white",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4432,
+          "section": "FLAKT",
+          "key": "Pip",
+          "value": "white"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3272,
+            "section": "FLAKT",
+            "key": "Pip",
+            "value": "white"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4431,
+            "section": "FLAKT",
+            "key": "Pip",
+            "value": "white"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4433,
+          "section": "FLAKT",
+          "key": "Sight",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3273,
+            "section": "FLAKT",
+            "key": "Sight",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4432,
+            "section": "FLAKT",
+            "key": "Sight",
+            "value": "5"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4434,
+          "section": "FLAKT",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3274,
+            "section": "FLAKT",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4433,
+            "section": "FLAKT",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4435,
+          "section": "FLAKT",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3275,
+            "section": "FLAKT",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4434,
+            "section": "FLAKT",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "300",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4436,
+          "section": "FLAKT",
+          "key": "Cost",
+          "value": "300"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3276,
+            "section": "FLAKT",
+            "key": "Cost",
+            "value": "300"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4435,
+            "section": "FLAKT",
+            "key": "Cost",
+            "value": "300"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "150",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4437,
+          "section": "FLAKT",
+          "key": "Soylent",
+          "value": "150"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3277,
+            "section": "FLAKT",
+            "key": "Soylent",
+            "value": "50"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4436,
+            "section": "FLAKT",
+            "key": "Soylent",
+            "value": "150"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4438,
+          "section": "FLAKT",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3278,
+            "section": "FLAKT",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4437,
+            "section": "FLAKT",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4439,
+          "section": "FLAKT",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3279,
+            "section": "FLAKT",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4438,
+            "section": "FLAKT",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "FlakTroopSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4440,
+          "section": "FLAKT",
+          "key": "VoiceSelect",
+          "value": "FlakTroopSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3280,
+            "section": "FLAKT",
+            "key": "VoiceSelect",
+            "value": "FlakTroopSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4439,
+            "section": "FLAKT",
+            "key": "VoiceSelect",
+            "value": "FlakTroopSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "FlakTroopMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4441,
+          "section": "FLAKT",
+          "key": "VoiceMove",
+          "value": "FlakTroopMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3281,
+            "section": "FLAKT",
+            "key": "VoiceMove",
+            "value": "FlakTroopMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4440,
+            "section": "FLAKT",
+            "key": "VoiceMove",
+            "value": "FlakTroopMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "FlakTroopAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4442,
+          "section": "FLAKT",
+          "key": "VoiceAttack",
+          "value": "FlakTroopAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3282,
+            "section": "FLAKT",
+            "key": "VoiceAttack",
+            "value": "FlakTroopAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4441,
+            "section": "FLAKT",
+            "key": "VoiceAttack",
+            "value": "FlakTroopAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "FlakTroopFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4443,
+          "section": "FLAKT",
+          "key": "VoiceFeedback",
+          "value": "FlakTroopFear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3283,
+            "section": "FLAKT",
+            "key": "VoiceFeedback",
+            "value": "FlakTroopFear"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4442,
+            "section": "FLAKT",
+            "key": "VoiceFeedback",
+            "value": "FlakTroopFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "FlakTroopMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4444,
+          "section": "FLAKT",
+          "key": "VoiceSpecialAttack",
+          "value": "FlakTroopMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3284,
+            "section": "FLAKT",
+            "key": "VoiceSpecialAttack",
+            "value": "FlakTroopMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4443,
+            "section": "FLAKT",
+            "key": "VoiceSpecialAttack",
+            "value": "FlakTroopMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "FlakTroopDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4445,
+          "section": "FLAKT",
+          "key": "DieSound",
+          "value": "FlakTroopDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3285,
+            "section": "FLAKT",
+            "key": "DieSound",
+            "value": "FlakTroopDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4444,
+            "section": "FLAKT",
+            "key": "DieSound",
+            "value": "FlakTroopDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4446,
+          "section": "FLAKT",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3286,
+            "section": "FLAKT",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4445,
+            "section": "FLAKT",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4447,
+          "section": "FLAKT",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3287,
+            "section": "FLAKT",
+            "key": "PhysicalSize",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4446,
+            "section": "FLAKT",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4448,
+          "section": "FLAKT",
+          "key": "MovementZone",
+          "value": "Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3288,
+            "section": "FLAKT",
+            "key": "MovementZone",
+            "value": "Infantry"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4447,
+            "section": "FLAKT",
+            "key": "MovementZone",
+            "value": "Infantry"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4450,
+          "section": "FLAKT",
+          "key": "ThreatPosed",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3290,
+            "section": "FLAKT",
+            "key": "ThreatPosed",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4449,
+            "section": "FLAKT",
+            "key": "ThreatPosed",
+            "value": "5"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4451,
+          "section": "FLAKT",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3291,
+            "section": "FLAKT",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4450,
+            "section": "FLAKT",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4452,
+          "section": "FLAKT",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3292,
+            "section": "FLAKT",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4451,
+            "section": "FLAKT",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4453,
+          "section": "FLAKT",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3293,
+            "section": "FLAKT",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4452,
+            "section": "FLAKT",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4454,
+          "section": "FLAKT",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3294,
+            "section": "FLAKT",
+            "key": "Size",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4453,
+            "section": "FLAKT",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4455,
+          "section": "FLAKT",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3295,
+            "section": "FLAKT",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4454,
+            "section": "FLAKT",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "FlakGuyGunE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4456,
+          "section": "FLAKT",
+          "key": "ElitePrimary",
+          "value": "FlakGuyGunE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3296,
+            "section": "FLAKT",
+            "key": "ElitePrimary",
+            "value": "FlakGuyGunE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4455,
+            "section": "FLAKT",
+            "key": "ElitePrimary",
+            "value": "FlakGuyGunE"
+          }
+        ]
+      },
+      "EliteSecondary": {
+        "value": "FlakGuyAAGunE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4457,
+          "section": "FLAKT",
+          "key": "EliteSecondary",
+          "value": "FlakGuyAAGunE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3297,
+            "section": "FLAKT",
+            "key": "EliteSecondary",
+            "value": "FlakGuyAAGunE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4456,
+            "section": "FLAKT",
+            "key": "EliteSecondary",
+            "value": "FlakGuyAAGunE"
+          }
+        ]
+      },
+      "IFVMode": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4458,
+          "section": "FLAKT",
+          "key": "IFVMode",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3298,
+            "section": "FLAKT",
+            "key": "IFVMode",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4457,
+            "section": "FLAKT",
+            "key": "IFVMode",
+            "value": "3"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "FLKTICON",
+      "AltCameo": "FLKTUICO",
+      "Sequence": "FlakSequence",
+      "Crawls": false,
+      "Remapable": true,
+      "FireUp": 3,
+      "PrimaryFireFLH": "90,0,175",
+      "SecondaryFireFLH": "90,0,175"
+    },
+    "raw_values": {
+      "Cameo": "FLKTICON",
+      "AltCameo": "FLKTUICO",
+      "Sequence": "FlakSequence",
+      "Crawls": "no",
+      "Remapable": "yes",
+      "FireUp": "3",
+      "PrimaryFireFLH": "90,0,175",
+      "SecondaryFireFLH": "90,0,175"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "FLKTICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 166,
+          "section": "FLAKT",
+          "key": "Cameo",
+          "value": "FLKTICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 131,
+            "section": "FLAKT",
+            "key": "Cameo",
+            "value": "FLKTICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "FLKTUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 167,
+          "section": "FLAKT",
+          "key": "AltCameo",
+          "value": "FLKTUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 132,
+            "section": "FLAKT",
+            "key": "AltCameo",
+            "value": "FLKTUICO"
+          }
+        ]
+      },
+      "Sequence": {
+        "value": "FlakSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 168,
+          "section": "FLAKT",
+          "key": "Sequence",
+          "value": "FlakSequence"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 133,
+            "section": "FLAKT",
+            "key": "Sequence",
+            "value": "FlakSequence"
+          }
+        ]
+      },
+      "Crawls": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 170,
+          "section": "FLAKT",
+          "key": "Crawls",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 135,
+            "section": "FLAKT",
+            "key": "Crawls",
+            "value": "no"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 171,
+          "section": "FLAKT",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 136,
+            "section": "FLAKT",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "FireUp": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 172,
+          "section": "FLAKT",
+          "key": "FireUp",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 137,
+            "section": "FLAKT",
+            "key": "FireUp",
+            "value": "3"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "90,0,175",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 173,
+          "section": "FLAKT",
+          "key": "PrimaryFireFLH",
+          "value": "90,0,175"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 138,
+            "section": "FLAKT",
+            "key": "PrimaryFireFLH",
+            "value": "90,0,175"
+          }
+        ]
+      },
+      "SecondaryFireFLH": {
+        "value": "90,0,175",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 174,
+          "section": "FLAKT",
+          "key": "SecondaryFireFLH",
+          "value": "90,0,175"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 139,
+            "section": "FLAKT",
+            "key": "SecondaryFireFLH",
+            "value": "90,0,175"
+          }
+        ]
+      }
+    }
+  }
+}

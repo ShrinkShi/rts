@@ -1,0 +1,1069 @@
+{
+  "id": "CIVP",
+  "category": "vehicle",
+  "name_token": "Name:Civilian_Plane",
+  "art_id": "CIVP",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAWEAP"
+  ],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 100,
+  "armor": "light",
+  "speed": 8,
+  "sight": 8,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Normal",
+  "weapons": {},
+  "sounds": {
+    "VoiceMove": [
+      "MCVMoveStart"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "CIVP",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 10722,
+      "pack": "ra2md",
+      "relative_path": "localmd/civp.vxl",
+      "folder": "localmd",
+      "filename": "civp.vxl",
+      "stem": "civp",
+      "extension": ".vxl",
+      "size": 113455,
+      "sha1": "397d7bdc374d24b929f34076292a157cb196879e"
+    },
+    "body_hva": {
+      "asset_id": 10721,
+      "pack": "ra2md",
+      "relative_path": "localmd/civp.hva",
+      "folder": "localmd",
+      "filename": "civp.hva",
+      "stem": "civp",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "fde5e25b66406a65bde78c08a760379b18b05562"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:Civilian_Plane",
+      "Name": "Civilian Plane",
+      "Prerequisite": "NAWEAP",
+      "Strength": 100,
+      "Category": "Transport",
+      "Armor": "light",
+      "DeployTime": 0.022,
+      "TechLevel": -1,
+      "Sight": 8,
+      "PipScale": "Passengers",
+      "Speed": 8,
+      "CrateGoodie": false,
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 0,
+      "Points": 20,
+      "ROT": 5,
+      "Crusher": false,
+      "Turret": false,
+      "IsSelectableCombatant": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "",
+      "VoiceMove": "MCVMoveStart",
+      "VoiceAttack": "",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MaxDebris": 3,
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": 6,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": 1,
+      "ZFudgeColumn": 10,
+      "ZFudgeTunnel": 13,
+      "ImmuneToRadiation": false,
+      "ImmuneToPsionics": true,
+      "Size": 4,
+      "SizeLimit": 2,
+      "Insignificant": true,
+      "Trainable": false
+    },
+    "raw_values": {
+      "UIName": "Name:Civilian_Plane",
+      "Name": "Civilian Plane",
+      "Prerequisite": "NAWEAP",
+      "Strength": "100",
+      "Category": "Transport",
+      "Armor": "light",
+      "DeployTime": ".022",
+      "TechLevel": "-1",
+      "Sight": "8",
+      "PipScale": "Passengers",
+      "Speed": "8",
+      "CrateGoodie": "no",
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "0",
+      "Points": "20",
+      "ROT": "5",
+      "Crusher": "no",
+      "Turret": "no",
+      "IsSelectableCombatant": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "",
+      "VoiceMove": "MCVMoveStart",
+      "VoiceAttack": "",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MaxDebris": "3",
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": "6",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": "1",
+      "ZFudgeColumn": "10",
+      "ZFudgeTunnel": "13",
+      "ImmuneToRadiation": "no",
+      "ImmuneToPsionics": "yes",
+      "Size": "4",
+      "SizeLimit": "2",
+      "Insignificant": "yes",
+      "Trainable": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:Civilian_Plane",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9408,
+          "section": "CIVP",
+          "key": "UIName",
+          "value": "Name:Civilian_Plane"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9403,
+            "section": "CIVP",
+            "key": "UIName",
+            "value": "Name:Civilian_Plane"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Civilian Plane",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9409,
+          "section": "CIVP",
+          "key": "Name",
+          "value": "Civilian Plane"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9404,
+            "section": "CIVP",
+            "key": "Name",
+            "value": "Civilian Plane"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAWEAP",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9410,
+          "section": "CIVP",
+          "key": "Prerequisite",
+          "value": "NAWEAP"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9405,
+            "section": "CIVP",
+            "key": "Prerequisite",
+            "value": "NAWEAP"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9412,
+          "section": "CIVP",
+          "key": "Strength",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9407,
+            "section": "CIVP",
+            "key": "Strength",
+            "value": "100"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Transport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9413,
+          "section": "CIVP",
+          "key": "Category",
+          "value": "Transport"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9408,
+            "section": "CIVP",
+            "key": "Category",
+            "value": "Transport"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9414,
+          "section": "CIVP",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9409,
+            "section": "CIVP",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "DeployTime": {
+        "value": ".022",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9415,
+          "section": "CIVP",
+          "key": "DeployTime",
+          "value": ".022"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9410,
+            "section": "CIVP",
+            "key": "DeployTime",
+            "value": ".022"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9416,
+          "section": "CIVP",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9411,
+            "section": "CIVP",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9417,
+          "section": "CIVP",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9412,
+            "section": "CIVP",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "PipScale": {
+        "value": "Passengers",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9418,
+          "section": "CIVP",
+          "key": "PipScale",
+          "value": "Passengers"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9413,
+            "section": "CIVP",
+            "key": "PipScale",
+            "value": "Passengers"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9419,
+          "section": "CIVP",
+          "key": "Speed",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9414,
+            "section": "CIVP",
+            "key": "Speed",
+            "value": "8"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9420,
+          "section": "CIVP",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9415,
+            "section": "CIVP",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9421,
+          "section": "CIVP",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9416,
+            "section": "CIVP",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9422,
+          "section": "CIVP",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9417,
+            "section": "CIVP",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9423,
+          "section": "CIVP",
+          "key": "Cost",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9418,
+            "section": "CIVP",
+            "key": "Cost",
+            "value": "0"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9424,
+          "section": "CIVP",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9419,
+            "section": "CIVP",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9425,
+          "section": "CIVP",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9420,
+            "section": "CIVP",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9426,
+          "section": "CIVP",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9421,
+            "section": "CIVP",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9427,
+          "section": "CIVP",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9422,
+            "section": "CIVP",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9429,
+          "section": "CIVP",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9424,
+            "section": "CIVP",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9430,
+          "section": "CIVP",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9425,
+            "section": "CIVP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9431,
+          "section": "CIVP",
+          "key": "VoiceSelect",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9426,
+            "section": "CIVP",
+            "key": "VoiceSelect",
+            "value": ""
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "MCVMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9432,
+          "section": "CIVP",
+          "key": "VoiceMove",
+          "value": "MCVMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9427,
+            "section": "CIVP",
+            "key": "VoiceMove",
+            "value": "MCVMoveStart"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9433,
+          "section": "CIVP",
+          "key": "VoiceAttack",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9428,
+            "section": "CIVP",
+            "key": "VoiceAttack",
+            "value": ""
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9434,
+          "section": "CIVP",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9429,
+            "section": "CIVP",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9435,
+          "section": "CIVP",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9430,
+            "section": "CIVP",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9436,
+          "section": "CIVP",
+          "key": "MaxDebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9431,
+            "section": "CIVP",
+            "key": "MaxDebris",
+            "value": "3"
+          }
+        ]
+      },
+      "DebrisTypes": {
+        "value": "TIRE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9437,
+          "section": "CIVP",
+          "key": "DebrisTypes",
+          "value": "TIRE"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9432,
+            "section": "CIVP",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          }
+        ]
+      },
+      "DebrisMaximums": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9438,
+          "section": "CIVP",
+          "key": "DebrisMaximums",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9433,
+            "section": "CIVP",
+            "key": "DebrisMaximums",
+            "value": "6"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9439,
+          "section": "CIVP",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9434,
+            "section": "CIVP",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Normal",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9440,
+          "section": "CIVP",
+          "key": "MovementZone",
+          "value": "Normal"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9435,
+            "section": "CIVP",
+            "key": "MovementZone",
+            "value": "Normal"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9441,
+          "section": "CIVP",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9436,
+            "section": "CIVP",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9442,
+          "section": "CIVP",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9437,
+            "section": "CIVP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9443,
+          "section": "CIVP",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9438,
+            "section": "CIVP",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9444,
+          "section": "CIVP",
+          "key": "ZFudgeColumn",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9439,
+            "section": "CIVP",
+            "key": "ZFudgeColumn",
+            "value": "10"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9445,
+          "section": "CIVP",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9440,
+            "section": "CIVP",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9446,
+          "section": "CIVP",
+          "key": "ImmuneToRadiation",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9441,
+            "section": "CIVP",
+            "key": "ImmuneToRadiation",
+            "value": "no"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9447,
+          "section": "CIVP",
+          "key": "ImmuneToPsionics",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9442,
+            "section": "CIVP",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          }
+        ]
+      },
+      "Size": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9449,
+          "section": "CIVP",
+          "key": "Size",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9444,
+            "section": "CIVP",
+            "key": "Size",
+            "value": "4"
+          }
+        ]
+      },
+      "SizeLimit": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9450,
+          "section": "CIVP",
+          "key": "SizeLimit",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9445,
+            "section": "CIVP",
+            "key": "SizeLimit",
+            "value": "2"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9451,
+          "section": "CIVP",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9446,
+            "section": "CIVP",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9452,
+          "section": "CIVP",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9447,
+            "section": "CIVP",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true
+    },
+    "raw_values": {
+      "Voxel": "yes"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1029,
+          "section": "CIVP",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": []
+      }
+    }
+  }
+}

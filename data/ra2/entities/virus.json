@@ -1,0 +1,3012 @@
+{
+  "id": "VIRUS",
+  "category": "infantry",
+  "name_token": "Name:Virus",
+  "art_id": "VIRUS",
+  "owners": [
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YABRCK",
+    "RADAR"
+  ],
+  "tech_level": 1,
+  "cost": 700,
+  "strength": 100,
+  "armor": "none",
+  "speed": 4,
+  "sight": 9,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Infantry",
+  "weapons": {
+    "Primary": {
+      "id": "Virusgun",
+      "projectile": "InvisibleLow",
+      "warhead": "Virus",
+      "report": [
+        "VirusAttack"
+      ],
+      "values": {
+        "Damage": 125,
+        "ROF": 100,
+        "Range": 10,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Report": "VirusAttack",
+        "Warhead": "Virus",
+        "RevealOnFire": false,
+        "OpenToppedAnim": "GUNFIRE"
+      },
+      "raw_values": {
+        "Damage": "125",
+        "ROF": "100",
+        "Range": "10",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Report": "VirusAttack",
+        "Warhead": "Virus",
+        "RevealOnFire": "no",
+        "OpenToppedAnim": "GUNFIRE"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "125",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23087,
+            "section": "Virusgun",
+            "key": "Damage",
+            "value": "125"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23079,
+              "section": "Virusgun",
+              "key": "Damage",
+              "value": "125"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23088,
+            "section": "Virusgun",
+            "key": "ROF",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23080,
+              "section": "Virusgun",
+              "key": "ROF",
+              "value": "100"
+            }
+          ]
+        },
+        "Range": {
+          "value": "10",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23089,
+            "section": "Virusgun",
+            "key": "Range",
+            "value": "10"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23081,
+              "section": "Virusgun",
+              "key": "Range",
+              "value": "10"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23090,
+            "section": "Virusgun",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23082,
+              "section": "Virusgun",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23091,
+            "section": "Virusgun",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23083,
+              "section": "Virusgun",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "VirusAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23092,
+            "section": "Virusgun",
+            "key": "Report",
+            "value": "VirusAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23084,
+              "section": "Virusgun",
+              "key": "Report",
+              "value": "VirusAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Virus",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23093,
+            "section": "Virusgun",
+            "key": "Warhead",
+            "value": "Virus"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23085,
+              "section": "Virusgun",
+              "key": "Warhead",
+              "value": "Virus"
+            }
+          ]
+        },
+        "RevealOnFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23094,
+            "section": "Virusgun",
+            "key": "RevealOnFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23086,
+              "section": "Virusgun",
+              "key": "RevealOnFire",
+              "value": "no"
+            }
+          ]
+        },
+        "OpenToppedAnim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23095,
+            "section": "Virusgun",
+            "key": "OpenToppedAnim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23087,
+              "section": "Virusgun",
+              "key": "OpenToppedAnim",
+              "value": "GUNFIRE"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "VirusgunE",
+      "projectile": "InvisibleLow",
+      "warhead": "Virus",
+      "report": [
+        "VirusAttack"
+      ],
+      "values": {
+        "Damage": 125,
+        "ROF": 80,
+        "Range": 16,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Report": "VirusAttack",
+        "Warhead": "Virus",
+        "RevealOnFire": false,
+        "OpenToppedAnim": "GUNFIRE"
+      },
+      "raw_values": {
+        "Damage": "125",
+        "ROF": "80",
+        "Range": "16",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Report": "VirusAttack",
+        "Warhead": "Virus",
+        "RevealOnFire": "no",
+        "OpenToppedAnim": "GUNFIRE"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "125",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23098,
+            "section": "VirusgunE",
+            "key": "Damage",
+            "value": "125"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23090,
+              "section": "VirusgunE",
+              "key": "Damage",
+              "value": "125"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "80",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23099,
+            "section": "VirusgunE",
+            "key": "ROF",
+            "value": "80"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23091,
+              "section": "VirusgunE",
+              "key": "ROF",
+              "value": "80"
+            }
+          ]
+        },
+        "Range": {
+          "value": "16",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23100,
+            "section": "VirusgunE",
+            "key": "Range",
+            "value": "16"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23092,
+              "section": "VirusgunE",
+              "key": "Range",
+              "value": "16"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23101,
+            "section": "VirusgunE",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23093,
+              "section": "VirusgunE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23102,
+            "section": "VirusgunE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23094,
+              "section": "VirusgunE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "VirusAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23103,
+            "section": "VirusgunE",
+            "key": "Report",
+            "value": "VirusAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23095,
+              "section": "VirusgunE",
+              "key": "Report",
+              "value": "VirusAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Virus",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23104,
+            "section": "VirusgunE",
+            "key": "Warhead",
+            "value": "Virus"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23096,
+              "section": "VirusgunE",
+              "key": "Warhead",
+              "value": "Virus"
+            }
+          ]
+        },
+        "RevealOnFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23105,
+            "section": "VirusgunE",
+            "key": "RevealOnFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23097,
+              "section": "VirusgunE",
+              "key": "RevealOnFire",
+              "value": "no"
+            }
+          ]
+        },
+        "OpenToppedAnim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23106,
+            "section": "VirusgunE",
+            "key": "OpenToppedAnim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23098,
+              "section": "VirusgunE",
+              "key": "OpenToppedAnim",
+              "value": "GUNFIRE"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "VirusSelect"
+    ],
+    "VoiceMove": [
+      "VirusMove"
+    ],
+    "VoiceAttack": [
+      "VirusAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "VirusFear"
+    ],
+    "VoiceSpecialAttack": [
+      "VirusMove"
+    ],
+    "DieSound": [
+      "VirusDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "VIRUS",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 5733,
+          "pack": "ra2md",
+          "relative_path": "conqmd/virus.shp",
+          "folder": "conqmd",
+          "filename": "virus.shp",
+          "stem": "virus",
+          "extension": ".shp",
+          "size": 139664,
+          "sha1": "45e5876121231d577a7abf2c33478c179ec9df6e"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 5733,
+          "pack": "ra2md",
+          "relative_path": "conqmd/virus.shp",
+          "folder": "conqmd",
+          "filename": "virus.shp",
+          "stem": "virus",
+          "extension": ".shp",
+          "size": 139664,
+          "sha1": "45e5876121231d577a7abf2c33478c179ec9df6e"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 5733,
+          "pack": "ra2md",
+          "relative_path": "conqmd/virus.shp",
+          "folder": "conqmd",
+          "filename": "virus.shp",
+          "stem": "virus",
+          "extension": ".shp",
+          "size": 139664,
+          "sha1": "45e5876121231d577a7abf2c33478c179ec9df6e"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 5733,
+          "pack": "ra2md",
+          "relative_path": "conqmd/virus.shp",
+          "folder": "conqmd",
+          "filename": "virus.shp",
+          "stem": "virus",
+          "extension": ".shp",
+          "size": 139664,
+          "sha1": "45e5876121231d577a7abf2c33478c179ec9df6e"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 5733,
+          "pack": "ra2md",
+          "relative_path": "conqmd/virus.shp",
+          "folder": "conqmd",
+          "filename": "virus.shp",
+          "stem": "virus",
+          "extension": ".shp",
+          "size": 139664,
+          "sha1": "45e5876121231d577a7abf2c33478c179ec9df6e"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 5733,
+          "pack": "ra2md",
+          "relative_path": "conqmd/virus.shp",
+          "folder": "conqmd",
+          "filename": "virus.shp",
+          "stem": "virus",
+          "extension": ".shp",
+          "size": 139664,
+          "sha1": "45e5876121231d577a7abf2c33478c179ec9df6e"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "GenericMDSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 86,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122
+          ],
+          "1": [
+            116
+          ],
+          "2": [
+            110
+          ],
+          "3": [
+            104
+          ],
+          "4": [
+            98
+          ],
+          "5": [
+            92
+          ],
+          "6": [
+            86
+          ],
+          "7": [
+            128
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 86,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "1": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "2": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "3": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "4": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "5": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "6": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "7": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 134,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 149,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 164,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            176,
+            177
+          ],
+          "1": [
+            174,
+            175
+          ],
+          "2": [
+            172,
+            173
+          ],
+          "3": [
+            170,
+            171
+          ],
+          "4": [
+            168,
+            169
+          ],
+          "5": [
+            166,
+            167
+          ],
+          "6": [
+            164,
+            165
+          ],
+          "7": [
+            178,
+            179
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 180,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            192,
+            193
+          ],
+          "1": [
+            190,
+            191
+          ],
+          "2": [
+            188,
+            189
+          ],
+          "3": [
+            186,
+            187
+          ],
+          "4": [
+            184,
+            185
+          ],
+          "5": [
+            182,
+            183
+          ],
+          "6": [
+            180,
+            181
+          ],
+          "7": [
+            194,
+            195
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 196,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 204,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            240,
+            241,
+            242,
+            243,
+            244,
+            245
+          ],
+          "1": [
+            234,
+            235,
+            236,
+            237,
+            238,
+            239
+          ],
+          "2": [
+            228,
+            229,
+            230,
+            231,
+            232,
+            233
+          ],
+          "3": [
+            222,
+            223,
+            224,
+            225,
+            226,
+            227
+          ],
+          "4": [
+            216,
+            217,
+            218,
+            219,
+            220,
+            221
+          ],
+          "5": [
+            210,
+            211,
+            212,
+            213,
+            214,
+            215
+          ],
+          "6": [
+            204,
+            205,
+            206,
+            207,
+            208,
+            209
+          ],
+          "7": [
+            246,
+            247,
+            248,
+            249,
+            250,
+            251
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 252,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            288,
+            289,
+            290,
+            291,
+            292,
+            293
+          ],
+          "1": [
+            282,
+            283,
+            284,
+            285,
+            286,
+            287
+          ],
+          "2": [
+            276,
+            277,
+            278,
+            279,
+            280,
+            281
+          ],
+          "3": [
+            270,
+            271,
+            272,
+            273,
+            274,
+            275
+          ],
+          "4": [
+            264,
+            265,
+            266,
+            267,
+            268,
+            269
+          ],
+          "5": [
+            258,
+            259,
+            260,
+            261,
+            262,
+            263
+          ],
+          "6": [
+            252,
+            253,
+            254,
+            255,
+            256,
+            257
+          ],
+          "7": [
+            294,
+            295,
+            296,
+            297,
+            298,
+            299
+          ]
+        }
+      },
+      "Paradrop": {
+        "name": "Paradrop",
+        "start": 300,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            300
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:Virus",
+      "Name": "Yuri Virus",
+      "Category": "Soldier",
+      "Primary": "Virusgun",
+      "Prerequisite": "YABRCK,RADAR",
+      "CrushSound": "InfantrySquish",
+      "Strength": 100,
+      "Pip": "red",
+      "Armor": "none",
+      "TechLevel": 1,
+      "Sight": 9,
+      "Speed": 4,
+      "Owner": "YuriCountry",
+      "Cost": 700,
+      "Soylent": 350,
+      "Points": 10,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "VirusSelect",
+      "VoiceMove": "VirusMove",
+      "VoiceAttack": "VirusAttackCommand",
+      "VoiceFeedback": "VirusFear",
+      "VoiceSpecialAttack": "VirusMove",
+      "DieSound": "VirusDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "Infantry",
+      "ThreatPosed": 10,
+      "ImmuneToVeins": true,
+      "ImmuneToPsionics": false,
+      "Bombable": true,
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Size": 1,
+      "AllowedToStartInMultiplayer": false,
+      "ElitePrimary": "VirusgunE",
+      "PreventAttackMove": false,
+      "IFVMode": 14,
+      "ImmuneToPoison": true,
+      "UseOwnName": true,
+      "Verses": "100%,100%,100%,1%,1%,1%,1%,1%,1%,1%,100%",
+      "AnimList": "PIFF",
+      "ProneDamage": 1.0,
+      "Bullets": true,
+      "InfDeath": 8
+    },
+    "raw_values": {
+      "UIName": "Name:Virus",
+      "Name": "Yuri Virus",
+      "Category": "Soldier",
+      "Primary": "Virusgun",
+      "Prerequisite": "YABRCK,RADAR",
+      "CrushSound": "InfantrySquish",
+      "Strength": "100",
+      "Pip": "red",
+      "Armor": "none",
+      "TechLevel": "1",
+      "Sight": "9",
+      "Speed": "4",
+      "Owner": "YuriCountry",
+      "Cost": "700",
+      "Soylent": "350",
+      "Points": "10",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "VirusSelect",
+      "VoiceMove": "VirusMove",
+      "VoiceAttack": "VirusAttackCommand",
+      "VoiceFeedback": "VirusFear",
+      "VoiceSpecialAttack": "VirusMove",
+      "DieSound": "VirusDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "Infantry",
+      "ThreatPosed": "10",
+      "ImmuneToVeins": "yes",
+      "ImmuneToPsionics": "no",
+      "Bombable": "yes",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Size": "1",
+      "AllowedToStartInMultiplayer": "no",
+      "ElitePrimary": "VirusgunE",
+      "PreventAttackMove": "no",
+      "IFVMode": "14",
+      "ImmuneToPoison": "yes",
+      "UseOwnName": "true",
+      "Verses": "100%,100%,100%,1%,1%,1%,1%,1%,1%,1%,100%",
+      "AnimList": "PIFF",
+      "ProneDamage": "100%",
+      "Bullets": "yes",
+      "InfDeath": "8"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:Virus",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5156,
+          "section": "VIRUS",
+          "key": "UIName",
+          "value": "Name:Virus"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5155,
+            "section": "VIRUS",
+            "key": "UIName",
+            "value": "Name:Virus"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Yuri Virus",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5157,
+          "section": "VIRUS",
+          "key": "Name",
+          "value": "Yuri Virus"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5156,
+            "section": "VIRUS",
+            "key": "Name",
+            "value": "Yuri Virus"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5159,
+          "section": "VIRUS",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5158,
+            "section": "VIRUS",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "Virusgun",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5160,
+          "section": "VIRUS",
+          "key": "Primary",
+          "value": "Virusgun"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5159,
+            "section": "VIRUS",
+            "key": "Primary",
+            "value": "Virusgun"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YABRCK,RADAR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5161,
+          "section": "VIRUS",
+          "key": "Prerequisite",
+          "value": "YABRCK,RADAR"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5160,
+            "section": "VIRUS",
+            "key": "Prerequisite",
+            "value": "YABRCK,RADAR"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5162,
+          "section": "VIRUS",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5161,
+            "section": "VIRUS",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5163,
+          "section": "VIRUS",
+          "key": "Strength",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5162,
+            "section": "VIRUS",
+            "key": "Strength",
+            "value": "100"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "red",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5164,
+          "section": "VIRUS",
+          "key": "Pip",
+          "value": "red"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5163,
+            "section": "VIRUS",
+            "key": "Pip",
+            "value": "red"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5165,
+          "section": "VIRUS",
+          "key": "Armor",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5164,
+            "section": "VIRUS",
+            "key": "Armor",
+            "value": "none"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5166,
+          "section": "VIRUS",
+          "key": "TechLevel",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5165,
+            "section": "VIRUS",
+            "key": "TechLevel",
+            "value": "1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "9",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5167,
+          "section": "VIRUS",
+          "key": "Sight",
+          "value": "9"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5166,
+            "section": "VIRUS",
+            "key": "Sight",
+            "value": "9"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5168,
+          "section": "VIRUS",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5167,
+            "section": "VIRUS",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5169,
+          "section": "VIRUS",
+          "key": "Owner",
+          "value": "YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5168,
+            "section": "VIRUS",
+            "key": "Owner",
+            "value": "YuriCountry"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "700",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5170,
+          "section": "VIRUS",
+          "key": "Cost",
+          "value": "700"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5169,
+            "section": "VIRUS",
+            "key": "Cost",
+            "value": "700"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "350",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5171,
+          "section": "VIRUS",
+          "key": "Soylent",
+          "value": "350"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5170,
+            "section": "VIRUS",
+            "key": "Soylent",
+            "value": "350"
+          }
+        ]
+      },
+      "Points": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5172,
+          "section": "VIRUS",
+          "key": "Points",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5171,
+            "section": "VIRUS",
+            "key": "Points",
+            "value": "10"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5173,
+          "section": "VIRUS",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5172,
+            "section": "VIRUS",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "VirusSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5174,
+          "section": "VIRUS",
+          "key": "VoiceSelect",
+          "value": "VirusSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5173,
+            "section": "VIRUS",
+            "key": "VoiceSelect",
+            "value": "VirusSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "VirusMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5175,
+          "section": "VIRUS",
+          "key": "VoiceMove",
+          "value": "VirusMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5174,
+            "section": "VIRUS",
+            "key": "VoiceMove",
+            "value": "VirusMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "VirusAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5176,
+          "section": "VIRUS",
+          "key": "VoiceAttack",
+          "value": "VirusAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5175,
+            "section": "VIRUS",
+            "key": "VoiceAttack",
+            "value": "VirusAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "VirusFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5177,
+          "section": "VIRUS",
+          "key": "VoiceFeedback",
+          "value": "VirusFear"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5176,
+            "section": "VIRUS",
+            "key": "VoiceFeedback",
+            "value": "VirusFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "VirusMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5178,
+          "section": "VIRUS",
+          "key": "VoiceSpecialAttack",
+          "value": "VirusMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5177,
+            "section": "VIRUS",
+            "key": "VoiceSpecialAttack",
+            "value": "VirusMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "VirusDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5179,
+          "section": "VIRUS",
+          "key": "DieSound",
+          "value": "VirusDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5178,
+            "section": "VIRUS",
+            "key": "DieSound",
+            "value": "VirusDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5180,
+          "section": "VIRUS",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5179,
+            "section": "VIRUS",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5181,
+          "section": "VIRUS",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5180,
+            "section": "VIRUS",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5182,
+          "section": "VIRUS",
+          "key": "MovementZone",
+          "value": "Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5181,
+            "section": "VIRUS",
+            "key": "MovementZone",
+            "value": "Infantry"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5183,
+          "section": "VIRUS",
+          "key": "ThreatPosed",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5182,
+            "section": "VIRUS",
+            "key": "ThreatPosed",
+            "value": "10"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5184,
+          "section": "VIRUS",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5183,
+            "section": "VIRUS",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5185,
+          "section": "VIRUS",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5184,
+            "section": "VIRUS",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Bombable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5186,
+          "section": "VIRUS",
+          "key": "Bombable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5185,
+            "section": "VIRUS",
+            "key": "Bombable",
+            "value": "yes"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5187,
+          "section": "VIRUS",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5186,
+            "section": "VIRUS",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5188,
+          "section": "VIRUS",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5187,
+            "section": "VIRUS",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5189,
+          "section": "VIRUS",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5188,
+            "section": "VIRUS",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5190,
+          "section": "VIRUS",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5189,
+            "section": "VIRUS",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "VirusgunE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5191,
+          "section": "VIRUS",
+          "key": "ElitePrimary",
+          "value": "VirusgunE"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5190,
+            "section": "VIRUS",
+            "key": "ElitePrimary",
+            "value": "VirusgunE"
+          }
+        ]
+      },
+      "PreventAttackMove": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5192,
+          "section": "VIRUS",
+          "key": "PreventAttackMove",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5191,
+            "section": "VIRUS",
+            "key": "PreventAttackMove",
+            "value": "no"
+          }
+        ]
+      },
+      "IFVMode": {
+        "value": "14",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5193,
+          "section": "VIRUS",
+          "key": "IFVMode",
+          "value": "14"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5192,
+            "section": "VIRUS",
+            "key": "IFVMode",
+            "value": "14"
+          }
+        ]
+      },
+      "ImmuneToPoison": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5194,
+          "section": "VIRUS",
+          "key": "ImmuneToPoison",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5193,
+            "section": "VIRUS",
+            "key": "ImmuneToPoison",
+            "value": "yes"
+          }
+        ]
+      },
+      "UseOwnName": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5195,
+          "section": "VIRUS",
+          "key": "UseOwnName",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5194,
+            "section": "VIRUS",
+            "key": "UseOwnName",
+            "value": "true"
+          }
+        ]
+      },
+      "Verses": {
+        "value": "100%,100%,100%,1%,1%,1%,1%,1%,1%,1%,100%",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 27086,
+          "section": "VIRUS",
+          "key": "Verses",
+          "value": "100%,100%,100%,1%,1%,1%,1%,1%,1%,1%,100%"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 27077,
+            "section": "VIRUS",
+            "key": "Verses",
+            "value": "100%,100%,100%,1%,1%,1%,1%,1%,1%,1%,100%"
+          }
+        ]
+      },
+      "AnimList": {
+        "value": "PIFF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 27087,
+          "section": "VIRUS",
+          "key": "AnimList",
+          "value": "PIFF"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 27078,
+            "section": "VIRUS",
+            "key": "AnimList",
+            "value": "PIFF"
+          }
+        ]
+      },
+      "ProneDamage": {
+        "value": "100%",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 27088,
+          "section": "VIRUS",
+          "key": "ProneDamage",
+          "value": "100%"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 27079,
+            "section": "VIRUS",
+            "key": "ProneDamage",
+            "value": "100%"
+          }
+        ]
+      },
+      "Bullets": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 27089,
+          "section": "VIRUS",
+          "key": "Bullets",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 27080,
+            "section": "VIRUS",
+            "key": "Bullets",
+            "value": "yes"
+          }
+        ]
+      },
+      "InfDeath": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 27090,
+          "section": "VIRUS",
+          "key": "InfDeath",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 27081,
+            "section": "VIRUS",
+            "key": "InfDeath",
+            "value": "8"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "VRUSICON",
+      "AltCameo": "VRUSUICO",
+      "Sequence": "GenericMDSequence",
+      "Crawls": true,
+      "Remapable": true,
+      "FireUp": 5,
+      "PrimaryFireFLH": "80,0,85"
+    },
+    "raw_values": {
+      "Cameo": "VRUSICON",
+      "AltCameo": "VRUSUICO",
+      "Sequence": "GenericMDSequence",
+      "Crawls": "yes",
+      "Remapable": "yes",
+      "FireUp": "5",
+      "PrimaryFireFLH": "80,0,85"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "VRUSICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 311,
+          "section": "VIRUS",
+          "key": "Cameo",
+          "value": "VRUSICON"
+        },
+        "history": []
+      },
+      "AltCameo": {
+        "value": "VRUSUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 312,
+          "section": "VIRUS",
+          "key": "AltCameo",
+          "value": "VRUSUICO"
+        },
+        "history": []
+      },
+      "Sequence": {
+        "value": "GenericMDSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 313,
+          "section": "VIRUS",
+          "key": "Sequence",
+          "value": "GenericMDSequence"
+        },
+        "history": []
+      },
+      "Crawls": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 314,
+          "section": "VIRUS",
+          "key": "Crawls",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 315,
+          "section": "VIRUS",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "FireUp": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 316,
+          "section": "VIRUS",
+          "key": "FireUp",
+          "value": "5"
+        },
+        "history": []
+      },
+      "PrimaryFireFLH": {
+        "value": "80,0,85",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 317,
+          "section": "VIRUS",
+          "key": "PrimaryFireFLH",
+          "value": "80,0,85"
+        },
+        "history": []
+      }
+    }
+  }
+}

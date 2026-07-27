@@ -1,0 +1,1584 @@
+{
+  "id": "NAHAND",
+  "category": "building",
+  "name_token": "Name:NAHAND",
+  "art_id": "NAHAND",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "POWER",
+    "NACNST"
+  ],
+  "tech_level": 2,
+  "cost": 500,
+  "strength": 500,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "NAHAND",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 420,
+          "pack": "ra2",
+          "relative_path": "generic/nghand.shp",
+          "folder": "generic",
+          "filename": "nghand.shp",
+          "stem": "nghand",
+          "extension": ".shp",
+          "size": 26832,
+          "sha1": "946559d0cd69f99237a1e4ece5abd6bb6ff771f7"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 5040,
+          "pack": "ra2",
+          "relative_path": "snow/nahand.shp",
+          "folder": "snow",
+          "filename": "nahand.shp",
+          "stem": "nahand",
+          "extension": ".shp",
+          "size": 26832,
+          "sha1": "cfebe588e5951fcf5fe615c774f86b8676319e03"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 420,
+          "pack": "ra2",
+          "relative_path": "generic/nghand.shp",
+          "folder": "generic",
+          "filename": "nghand.shp",
+          "stem": "nghand",
+          "extension": ".shp",
+          "size": 26832,
+          "sha1": "946559d0cd69f99237a1e4ece5abd6bb6ff771f7"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 420,
+          "pack": "ra2",
+          "relative_path": "generic/nghand.shp",
+          "folder": "generic",
+          "filename": "nghand.shp",
+          "stem": "nghand",
+          "extension": ".shp",
+          "size": 26832,
+          "sha1": "946559d0cd69f99237a1e4ece5abd6bb6ff771f7"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 420,
+          "pack": "ra2",
+          "relative_path": "generic/nghand.shp",
+          "folder": "generic",
+          "filename": "nghand.shp",
+          "stem": "nghand",
+          "extension": ".shp",
+          "size": 26832,
+          "sha1": "946559d0cd69f99237a1e4ece5abd6bb6ff771f7"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 420,
+          "pack": "ra2",
+          "relative_path": "generic/nghand.shp",
+          "folder": "generic",
+          "filename": "nghand.shp",
+          "stem": "nghand",
+          "extension": ".shp",
+          "size": 26832,
+          "sha1": "946559d0cd69f99237a1e4ece5abd6bb6ff771f7"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "Buildup": {
+        "temperate": {
+          "art_id": "NAHANDMK",
+          "image": "NAHANDMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2087,
+            "pack": "ra2",
+            "relative_path": "isotemp/nthandmk.shp",
+            "folder": "isotemp",
+            "filename": "nthandmk.shp",
+            "stem": "nthandmk",
+            "extension": ".shp",
+            "size": 155064,
+            "sha1": "6b5db1c606fcd02d7f09cf92b7cac7ae80f87216"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "NAHANDMK",
+          "image": "NAHANDMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1055,
+            "pack": "ra2",
+            "relative_path": "isosnow/nahandmk.shp",
+            "folder": "isosnow",
+            "filename": "nahandmk.shp",
+            "stem": "nahandmk",
+            "extension": ".shp",
+            "size": 155064,
+            "sha1": "ed600f874b8675541b01d16601165a08d10ad88e"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "NAHANDMK",
+          "image": "NAHANDMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 3215,
+            "pack": "ra2",
+            "relative_path": "isourb/nuhandmk.shp",
+            "folder": "isourb",
+            "filename": "nuhandmk.shp",
+            "stem": "nuhandmk",
+            "extension": ".shp",
+            "size": 155064,
+            "sha1": "6b5db1c606fcd02d7f09cf92b7cac7ae80f87216"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "NAHANDMK",
+          "image": "NAHANDMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 7475,
+            "pack": "ra2md",
+            "relative_path": "isodes/ndhandmk.shp",
+            "folder": "isodes",
+            "filename": "ndhandmk.shp",
+            "stem": "ndhandmk",
+            "extension": ".shp",
+            "size": 155064,
+            "sha1": "6b5db1c606fcd02d7f09cf92b7cac7ae80f87216"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "NAHANDMK",
+          "image": "NAHANDMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8572,
+            "pack": "ra2md",
+            "relative_path": "isolun/nlhandmk.shp",
+            "folder": "isolun",
+            "filename": "nlhandmk.shp",
+            "stem": "nlhandmk",
+            "extension": ".shp",
+            "size": 155064,
+            "sha1": "6b5db1c606fcd02d7f09cf92b7cac7ae80f87216"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "NAHANDMK",
+          "image": "NAHANDMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9855,
+            "pack": "ra2md",
+            "relative_path": "isoubn/nnhandmk.shp",
+            "folder": "isoubn",
+            "filename": "nnhandmk.shp",
+            "stem": "nnhandmk",
+            "extension": ".shp",
+            "size": 155064,
+            "sha1": "6b5db1c606fcd02d7f09cf92b7cac7ae80f87216"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        }
+      }
+    },
+    "foundation": "2x2",
+    "height": 9,
+    "occupy_height": 4,
+    "damage_fire_offsets": [
+      [
+        -8.0,
+        -7.0
+      ],
+      [
+        17.0,
+        40.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:NAHAND",
+      "Name": "Soviet Barracks",
+      "BuildCat": "Tech",
+      "Prerequisite": "POWER,NACNST",
+      "Strength": 500,
+      "Armor": "steel",
+      "TechLevel": 2,
+      "Adjacent": 2,
+      "Sight": 6,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": 1,
+      "Cost": 500,
+      "Points": 30,
+      "Power": -10,
+      "Factory": "InfantryType",
+      "Crewed": true,
+      "Capturable": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS2SM,DBRIS3LG,DBRIS3SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8LG",
+      "MaxDebris": 8,
+      "MinDebris": 4,
+      "ThreatPosed": 0,
+      "ExitCoord": "0,0,0",
+      "NODBarracks": true,
+      "DamageSmokeOffset": "480,96,125",
+      "AIBuildThis": true,
+      "Spyable": true,
+      "ImmuneToPsionics": false
+    },
+    "raw_values": {
+      "UIName": "Name:NAHAND",
+      "Name": "Soviet Barracks",
+      "BuildCat": "Tech",
+      "Prerequisite": "POWER,NACNST",
+      "Strength": "500",
+      "Armor": "steel",
+      "TechLevel": "2",
+      "Adjacent": "2",
+      "Sight": "6",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": "1",
+      "Cost": "500",
+      "Points": "30",
+      "Power": "-10",
+      "Factory": "InfantryType",
+      "Crewed": "yes",
+      "Capturable": "true",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS2SM,DBRIS3LG,DBRIS3SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8LG",
+      "MaxDebris": "8",
+      "MinDebris": "4",
+      "ThreatPosed": "0",
+      "ExitCoord": "0,0,0",
+      "NODBarracks": "yes",
+      "DamageSmokeOffset": "480,96,125",
+      "AIBuildThis": "yes",
+      "Spyable": "yes",
+      "ImmuneToPsionics": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:NAHAND",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12483,
+          "section": "NAHAND",
+          "key": "UIName",
+          "value": "Name:NAHAND"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8982,
+            "section": "NAHAND",
+            "key": "UIName",
+            "value": "Name:NAHAND"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12477,
+            "section": "NAHAND",
+            "key": "UIName",
+            "value": "Name:NAHAND"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Soviet Barracks",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12484,
+          "section": "NAHAND",
+          "key": "Name",
+          "value": "Soviet Barracks"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8983,
+            "section": "NAHAND",
+            "key": "Name",
+            "value": "Soviet Barracks"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12478,
+            "section": "NAHAND",
+            "key": "Name",
+            "value": "Soviet Barracks"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Tech",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12485,
+          "section": "NAHAND",
+          "key": "BuildCat",
+          "value": "Tech"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8984,
+            "section": "NAHAND",
+            "key": "BuildCat",
+            "value": "Tech"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12479,
+            "section": "NAHAND",
+            "key": "BuildCat",
+            "value": "Tech"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "POWER,NACNST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12486,
+          "section": "NAHAND",
+          "key": "Prerequisite",
+          "value": "POWER,NACNST"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8985,
+            "section": "NAHAND",
+            "key": "Prerequisite",
+            "value": "POWER,NACNST"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12480,
+            "section": "NAHAND",
+            "key": "Prerequisite",
+            "value": "POWER,NACNST"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12487,
+          "section": "NAHAND",
+          "key": "Strength",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8986,
+            "section": "NAHAND",
+            "key": "Strength",
+            "value": "500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12481,
+            "section": "NAHAND",
+            "key": "Strength",
+            "value": "500"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12488,
+          "section": "NAHAND",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8987,
+            "section": "NAHAND",
+            "key": "Armor",
+            "value": "steel"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12482,
+            "section": "NAHAND",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12489,
+          "section": "NAHAND",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8988,
+            "section": "NAHAND",
+            "key": "TechLevel",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12483,
+            "section": "NAHAND",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12490,
+          "section": "NAHAND",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8989,
+            "section": "NAHAND",
+            "key": "Adjacent",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12484,
+            "section": "NAHAND",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12491,
+          "section": "NAHAND",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8990,
+            "section": "NAHAND",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12485,
+            "section": "NAHAND",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12492,
+          "section": "NAHAND",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8991,
+            "section": "NAHAND",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12486,
+            "section": "NAHAND",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AIBasePlanningSide": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12493,
+          "section": "NAHAND",
+          "key": "AIBasePlanningSide",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8992,
+            "section": "NAHAND",
+            "key": "AIBasePlanningSide",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12487,
+            "section": "NAHAND",
+            "key": "AIBasePlanningSide",
+            "value": "1"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12494,
+          "section": "NAHAND",
+          "key": "Cost",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8993,
+            "section": "NAHAND",
+            "key": "Cost",
+            "value": "500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12488,
+            "section": "NAHAND",
+            "key": "Cost",
+            "value": "500"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12495,
+          "section": "NAHAND",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8994,
+            "section": "NAHAND",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12489,
+            "section": "NAHAND",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "Power": {
+        "value": "-10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12496,
+          "section": "NAHAND",
+          "key": "Power",
+          "value": "-10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8995,
+            "section": "NAHAND",
+            "key": "Power",
+            "value": "-10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12490,
+            "section": "NAHAND",
+            "key": "Power",
+            "value": "-10"
+          }
+        ]
+      },
+      "Factory": {
+        "value": "InfantryType",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12497,
+          "section": "NAHAND",
+          "key": "Factory",
+          "value": "InfantryType"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8996,
+            "section": "NAHAND",
+            "key": "Factory",
+            "value": "InfantryType"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12491,
+            "section": "NAHAND",
+            "key": "Factory",
+            "value": "InfantryType"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12498,
+          "section": "NAHAND",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8997,
+            "section": "NAHAND",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12492,
+            "section": "NAHAND",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12499,
+          "section": "NAHAND",
+          "key": "Capturable",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8998,
+            "section": "NAHAND",
+            "key": "Capturable",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12493,
+            "section": "NAHAND",
+            "key": "Capturable",
+            "value": "true"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12500,
+          "section": "NAHAND",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8999,
+            "section": "NAHAND",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12494,
+            "section": "NAHAND",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS2SM,DBRIS3LG,DBRIS3SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8LG",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12501,
+          "section": "NAHAND",
+          "key": "DebrisAnims",
+          "value": "DBRIS2SM,DBRIS3LG,DBRIS3SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8LG"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9000,
+            "section": "NAHAND",
+            "key": "DebrisAnims",
+            "value": "DBRIS2SM,DBRIS3LG,DBRIS3SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8LG"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12495,
+            "section": "NAHAND",
+            "key": "DebrisAnims",
+            "value": "DBRIS2SM,DBRIS3LG,DBRIS3SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8LG"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12502,
+          "section": "NAHAND",
+          "key": "MaxDebris",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9001,
+            "section": "NAHAND",
+            "key": "MaxDebris",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12496,
+            "section": "NAHAND",
+            "key": "MaxDebris",
+            "value": "8"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12503,
+          "section": "NAHAND",
+          "key": "MinDebris",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9002,
+            "section": "NAHAND",
+            "key": "MinDebris",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12497,
+            "section": "NAHAND",
+            "key": "MinDebris",
+            "value": "4"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12504,
+          "section": "NAHAND",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9003,
+            "section": "NAHAND",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12498,
+            "section": "NAHAND",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "ExitCoord": {
+        "value": "0,0,0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12505,
+          "section": "NAHAND",
+          "key": "ExitCoord",
+          "value": "0,0,0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9004,
+            "section": "NAHAND",
+            "key": "ExitCoord",
+            "value": "0,0,0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12499,
+            "section": "NAHAND",
+            "key": "ExitCoord",
+            "value": "0,0,0"
+          }
+        ]
+      },
+      "NODBarracks": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12506,
+          "section": "NAHAND",
+          "key": "NODBarracks",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9005,
+            "section": "NAHAND",
+            "key": "NODBarracks",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12500,
+            "section": "NAHAND",
+            "key": "NODBarracks",
+            "value": "yes"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "480,96,125",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12508,
+          "section": "NAHAND",
+          "key": "DamageSmokeOffset",
+          "value": "480,96,125"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9007,
+            "section": "NAHAND",
+            "key": "DamageSmokeOffset",
+            "value": "480,96,125"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12502,
+            "section": "NAHAND",
+            "key": "DamageSmokeOffset",
+            "value": "480,96,125"
+          }
+        ]
+      },
+      "AIBuildThis": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12509,
+          "section": "NAHAND",
+          "key": "AIBuildThis",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9008,
+            "section": "NAHAND",
+            "key": "AIBuildThis",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12503,
+            "section": "NAHAND",
+            "key": "AIBuildThis",
+            "value": "yes"
+          }
+        ]
+      },
+      "Spyable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12510,
+          "section": "NAHAND",
+          "key": "Spyable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9009,
+            "section": "NAHAND",
+            "key": "Spyable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12504,
+            "section": "NAHAND",
+            "key": "Spyable",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12512,
+          "section": "NAHAND",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12506,
+            "section": "NAHAND",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Remapable": true,
+      "Normalized": true,
+      "Cameo": "HANDICON",
+      "Foundation": "2x2",
+      "Buildup": "NAHANDMK",
+      "Height": 9,
+      "DemandLoadBuildup": true,
+      "FreeBuildup": true,
+      "NewTheater": true,
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 4,
+      "AddOccupy1": "-3,-3",
+      "RemoveOccupy1": "-2,-1",
+      "RemoveOccupy2": "-1,-2",
+      "DamageFireOffset0": "-8,-7",
+      "DamageFireOffset1": "17,40"
+    },
+    "raw_values": {
+      "Remapable": "yes",
+      "Normalized": "yes",
+      "Cameo": "HANDICON",
+      "Foundation": "2x2",
+      "Buildup": "NAHANDMK",
+      "Height": "9",
+      "DemandLoadBuildup": "true",
+      "FreeBuildup": "true",
+      "NewTheater": "yes",
+      "CanHideThings": "true",
+      "CanBeHidden": "false",
+      "OccupyHeight": "4",
+      "AddOccupy1": "-3,-3",
+      "RemoveOccupy1": "-2,-1",
+      "RemoveOccupy2": "-1,-2",
+      "DamageFireOffset0": "-8,-7",
+      "DamageFireOffset1": "17,40"
+    },
+    "provenance": {
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3710,
+          "section": "NAHAND",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2308,
+            "section": "NAHAND",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3711,
+          "section": "NAHAND",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2309,
+            "section": "NAHAND",
+            "key": "Normalized",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "HANDICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3712,
+          "section": "NAHAND",
+          "key": "Cameo",
+          "value": "HANDICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2310,
+            "section": "NAHAND",
+            "key": "Cameo",
+            "value": "HANDICON"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "2x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3713,
+          "section": "NAHAND",
+          "key": "Foundation",
+          "value": "2x2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2311,
+            "section": "NAHAND",
+            "key": "Foundation",
+            "value": "2x2"
+          }
+        ]
+      },
+      "Buildup": {
+        "value": "NAHANDMK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3714,
+          "section": "NAHAND",
+          "key": "Buildup",
+          "value": "NAHANDMK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2312,
+            "section": "NAHAND",
+            "key": "Buildup",
+            "value": "NAHANDMK"
+          }
+        ]
+      },
+      "Height": {
+        "value": "9",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3715,
+          "section": "NAHAND",
+          "key": "Height",
+          "value": "9"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2313,
+            "section": "NAHAND",
+            "key": "Height",
+            "value": "9"
+          }
+        ]
+      },
+      "DemandLoadBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3716,
+          "section": "NAHAND",
+          "key": "DemandLoadBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2314,
+            "section": "NAHAND",
+            "key": "DemandLoadBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "FreeBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3717,
+          "section": "NAHAND",
+          "key": "FreeBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2315,
+            "section": "NAHAND",
+            "key": "FreeBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3718,
+          "section": "NAHAND",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2316,
+            "section": "NAHAND",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3719,
+          "section": "NAHAND",
+          "key": "CanHideThings",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2317,
+            "section": "NAHAND",
+            "key": "CanHideThings",
+            "value": "true"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3720,
+          "section": "NAHAND",
+          "key": "CanBeHidden",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2318,
+            "section": "NAHAND",
+            "key": "CanBeHidden",
+            "value": "false"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3721,
+          "section": "NAHAND",
+          "key": "OccupyHeight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2319,
+            "section": "NAHAND",
+            "key": "OccupyHeight",
+            "value": "4"
+          }
+        ]
+      },
+      "AddOccupy1": {
+        "value": "-3,-3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3722,
+          "section": "NAHAND",
+          "key": "AddOccupy1",
+          "value": "-3,-3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2320,
+            "section": "NAHAND",
+            "key": "AddOccupy1",
+            "value": "-3,-3"
+          }
+        ]
+      },
+      "RemoveOccupy1": {
+        "value": "-2,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3723,
+          "section": "NAHAND",
+          "key": "RemoveOccupy1",
+          "value": "-2,-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2321,
+            "section": "NAHAND",
+            "key": "RemoveOccupy1",
+            "value": "-2,-1"
+          }
+        ]
+      },
+      "RemoveOccupy2": {
+        "value": "-1,-2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3724,
+          "section": "NAHAND",
+          "key": "RemoveOccupy2",
+          "value": "-1,-2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2322,
+            "section": "NAHAND",
+            "key": "RemoveOccupy2",
+            "value": "-1,-2"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-8,-7",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3725,
+          "section": "NAHAND",
+          "key": "DamageFireOffset0",
+          "value": "-8,-7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2323,
+            "section": "NAHAND",
+            "key": "DamageFireOffset0",
+            "value": "-8,-7"
+          }
+        ]
+      },
+      "DamageFireOffset1": {
+        "value": "17,40",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3726,
+          "section": "NAHAND",
+          "key": "DamageFireOffset1",
+          "value": "17,40"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2324,
+            "section": "NAHAND",
+            "key": "DamageFireOffset1",
+            "value": "17,40"
+          }
+        ]
+      }
+    }
+  }
+}

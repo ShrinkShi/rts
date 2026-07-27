@@ -1,0 +1,1529 @@
+{
+  "schema_version": 3,
+  "entity_id": "NADEPT",
+  "category": "building",
+  "visual_kind": "building_shp",
+  "available_theaters": [
+    "temperate",
+    "snow"
+  ],
+  "default_theater": "temperate",
+  "default_animation": "Operational",
+  "foundation": "4x3",
+  "damage_fire_offsets": [],
+  "new_theater": true,
+  "theaters": {
+    "temperate": {
+      "body_source": "ngdept.shp",
+      "palette": "unittem.pal",
+      "canvas": [
+        198,
+        190
+      ],
+      "default_animation": "Operational",
+      "animations": {
+        "BodyStates": {
+          "label": "主体状态",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 500,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "body_normal.png",
+            "body_damaged.png"
+          ],
+          "remap_masks": [
+            "body_normal_remap.png",
+            "body_damaged_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        "Buildup": {
+          "label": "Buildup",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 120,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "buildup_000.png",
+            "buildup_001.png",
+            "buildup_002.png",
+            "buildup_003.png",
+            "buildup_004.png",
+            "buildup_005.png",
+            "buildup_006.png",
+            "buildup_007.png",
+            "buildup_008.png",
+            "buildup_009.png",
+            "buildup_010.png",
+            "buildup_011.png",
+            "buildup_012.png",
+            "buildup_013.png",
+            "buildup_014.png",
+            "buildup_015.png",
+            "buildup_016.png",
+            "buildup_017.png",
+            "buildup_018.png",
+            "buildup_019.png",
+            "buildup_020.png",
+            "buildup_021.png",
+            "buildup_022.png",
+            "buildup_023.png"
+          ],
+          "remap_masks": [
+            "buildup_000_remap.png",
+            "buildup_001_remap.png",
+            "buildup_002_remap.png",
+            "buildup_003_remap.png",
+            "buildup_004_remap.png",
+            "buildup_005_remap.png",
+            "buildup_006_remap.png",
+            "buildup_007_remap.png",
+            "buildup_008_remap.png",
+            "buildup_009_remap.png",
+            "buildup_010_remap.png",
+            "buildup_011_remap.png",
+            "buildup_012_remap.png",
+            "buildup_013_remap.png",
+            "buildup_014_remap.png",
+            "buildup_015_remap.png",
+            "buildup_016_remap.png",
+            "buildup_017_remap.png",
+            "buildup_018_remap.png",
+            "buildup_019_remap.png",
+            "buildup_020_remap.png",
+            "buildup_021_remap.png",
+            "buildup_022_remap.png",
+            "buildup_023_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "source": "ntdeptmk.shp",
+          "art_id": "NADEPTMK",
+          "layer": "",
+          "offset": [
+            0,
+            0
+          ],
+          "z_adjust": 0,
+          "y_sort": 0
+        },
+        "BibShape": {
+          "label": "BibShape",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 120,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "bibshape_000.png"
+          ],
+          "remap_masks": [
+            "bibshape_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ],
+          "source": "ngdeptbb.shp",
+          "art_id": "NADEPTBB",
+          "layer": "",
+          "offset": [
+            0,
+            0
+          ],
+          "z_adjust": 0,
+          "y_sort": 0
+        },
+        "Ready": {
+          "label": "完整主体",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 500,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "ready_normal.png"
+          ],
+          "remap_masks": [
+            "ready_normal_remap.png"
+          ],
+          "source_indices": [
+            "body + persistent components + turret"
+          ]
+        },
+        "DamagedReady": {
+          "label": "受损主体",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 500,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "ready_damaged.png"
+          ],
+          "remap_masks": [
+            "ready_damaged_remap.png"
+          ],
+          "source_indices": [
+            "damaged body + persistent components + turret"
+          ]
+        },
+        "Operational": {
+          "label": "完整工作动画",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 220,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "operational_000.png",
+            "operational_001.png",
+            "operational_002.png",
+            "operational_003.png",
+            "operational_004.png",
+            "operational_005.png",
+            "operational_006.png",
+            "operational_007.png",
+            "operational_008.png"
+          ],
+          "remap_masks": [
+            "operational_000_remap.png",
+            "operational_001_remap.png",
+            "operational_002_remap.png",
+            "operational_003_remap.png",
+            "operational_004_remap.png",
+            "operational_005_remap.png",
+            "operational_006_remap.png",
+            "operational_007_remap.png",
+            "operational_008_remap.png"
+          ],
+          "source_indices": [
+            "IdleAnim:0",
+            "IdleAnim:1",
+            "IdleAnim:2",
+            "IdleAnim:3",
+            "IdleAnim:4",
+            "IdleAnim:5",
+            "IdleAnim:6",
+            "IdleAnim:7",
+            "IdleAnim:8"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "IdleAnim",
+              "slot": "IdleAnim",
+              "source": "ngdept_b.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 220,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": false
+            }
+          ]
+        },
+        "DamagedOperational": {
+          "label": "受损工作动画",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 350,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "damagedoperational_000.png",
+            "damagedoperational_001.png",
+            "damagedoperational_002.png",
+            "damagedoperational_003.png",
+            "damagedoperational_004.png",
+            "damagedoperational_005.png",
+            "damagedoperational_006.png",
+            "damagedoperational_007.png",
+            "damagedoperational_008.png"
+          ],
+          "remap_masks": [
+            "damagedoperational_000_remap.png",
+            "damagedoperational_001_remap.png",
+            "damagedoperational_002_remap.png",
+            "damagedoperational_003_remap.png",
+            "damagedoperational_004_remap.png",
+            "damagedoperational_005_remap.png",
+            "damagedoperational_006_remap.png",
+            "damagedoperational_007_remap.png",
+            "damagedoperational_008_remap.png"
+          ],
+          "source_indices": [
+            "IdleAnimDamaged:10",
+            "IdleAnimDamaged:11",
+            "IdleAnimDamaged:12",
+            "IdleAnimDamaged:13",
+            "IdleAnimDamaged:14",
+            "IdleAnimDamaged:15",
+            "IdleAnimDamaged:16",
+            "IdleAnimDamaged:17",
+            "IdleAnimDamaged:18"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "IdleAnimDamaged",
+              "slot": "IdleAnim",
+              "source": "ngdept_b.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 350,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": false
+            }
+          ]
+        },
+        "SpecialAnim": {
+          "label": "SpecialAnim",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanim_000.png",
+            "specialanim_001.png",
+            "specialanim_002.png",
+            "specialanim_003.png",
+            "specialanim_004.png",
+            "specialanim_005.png",
+            "specialanim_006.png",
+            "specialanim_007.png",
+            "specialanim_008.png",
+            "specialanim_009.png",
+            "specialanim_010.png",
+            "specialanim_011.png",
+            "specialanim_012.png",
+            "specialanim_013.png",
+            "specialanim_014.png",
+            "specialanim_015.png",
+            "specialanim_016.png",
+            "specialanim_017.png",
+            "specialanim_018.png",
+            "specialanim_019.png",
+            "specialanim_020.png",
+            "specialanim_021.png",
+            "specialanim_022.png"
+          ],
+          "remap_masks": [
+            "specialanim_000_remap.png",
+            "specialanim_001_remap.png",
+            "specialanim_002_remap.png",
+            "specialanim_003_remap.png",
+            "specialanim_004_remap.png",
+            "specialanim_005_remap.png",
+            "specialanim_006_remap.png",
+            "specialanim_007_remap.png",
+            "specialanim_008_remap.png",
+            "specialanim_009_remap.png",
+            "specialanim_010_remap.png",
+            "specialanim_011_remap.png",
+            "specialanim_012_remap.png",
+            "specialanim_013_remap.png",
+            "specialanim_014_remap.png",
+            "specialanim_015_remap.png",
+            "specialanim_016_remap.png",
+            "specialanim_017_remap.png",
+            "specialanim_018_remap.png",
+            "specialanim_019_remap.png",
+            "specialanim_020_remap.png",
+            "specialanim_021_remap.png",
+            "specialanim_022_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnim:0",
+            "SpecialAnim:1",
+            "SpecialAnim:2",
+            "SpecialAnim:3",
+            "SpecialAnim:4",
+            "SpecialAnim:5",
+            "SpecialAnim:6",
+            "SpecialAnim:7",
+            "SpecialAnim:8",
+            "SpecialAnim:9",
+            "SpecialAnim:10",
+            "SpecialAnim:11",
+            "SpecialAnim:12",
+            "SpecialAnim:13",
+            "SpecialAnim:14",
+            "SpecialAnim:15",
+            "SpecialAnim:16",
+            "SpecialAnim:17",
+            "SpecialAnim:18",
+            "SpecialAnim:19",
+            "SpecialAnim:20",
+            "SpecialAnim:21",
+            "SpecialAnim:22"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnim",
+              "slot": "SpecialAnim",
+              "source": "ngdept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        },
+        "SpecialAnimDamaged": {
+          "label": "SpecialAnimDamaged",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanimdamaged_000.png",
+            "specialanimdamaged_001.png",
+            "specialanimdamaged_002.png",
+            "specialanimdamaged_003.png",
+            "specialanimdamaged_004.png",
+            "specialanimdamaged_005.png",
+            "specialanimdamaged_006.png",
+            "specialanimdamaged_007.png",
+            "specialanimdamaged_008.png",
+            "specialanimdamaged_009.png",
+            "specialanimdamaged_010.png",
+            "specialanimdamaged_011.png",
+            "specialanimdamaged_012.png",
+            "specialanimdamaged_013.png",
+            "specialanimdamaged_014.png",
+            "specialanimdamaged_015.png",
+            "specialanimdamaged_016.png",
+            "specialanimdamaged_017.png",
+            "specialanimdamaged_018.png",
+            "specialanimdamaged_019.png",
+            "specialanimdamaged_020.png",
+            "specialanimdamaged_021.png",
+            "specialanimdamaged_022.png",
+            "specialanimdamaged_023.png"
+          ],
+          "remap_masks": [
+            "specialanimdamaged_000_remap.png",
+            "specialanimdamaged_001_remap.png",
+            "specialanimdamaged_002_remap.png",
+            "specialanimdamaged_003_remap.png",
+            "specialanimdamaged_004_remap.png",
+            "specialanimdamaged_005_remap.png",
+            "specialanimdamaged_006_remap.png",
+            "specialanimdamaged_007_remap.png",
+            "specialanimdamaged_008_remap.png",
+            "specialanimdamaged_009_remap.png",
+            "specialanimdamaged_010_remap.png",
+            "specialanimdamaged_011_remap.png",
+            "specialanimdamaged_012_remap.png",
+            "specialanimdamaged_013_remap.png",
+            "specialanimdamaged_014_remap.png",
+            "specialanimdamaged_015_remap.png",
+            "specialanimdamaged_016_remap.png",
+            "specialanimdamaged_017_remap.png",
+            "specialanimdamaged_018_remap.png",
+            "specialanimdamaged_019_remap.png",
+            "specialanimdamaged_020_remap.png",
+            "specialanimdamaged_021_remap.png",
+            "specialanimdamaged_022_remap.png",
+            "specialanimdamaged_023_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnimDamaged:22",
+            "SpecialAnimDamaged:23",
+            "SpecialAnimDamaged:24",
+            "SpecialAnimDamaged:26",
+            "SpecialAnimDamaged:27",
+            "SpecialAnimDamaged:28",
+            "SpecialAnimDamaged:29",
+            "SpecialAnimDamaged:31",
+            "SpecialAnimDamaged:32",
+            "SpecialAnimDamaged:33",
+            "SpecialAnimDamaged:34",
+            "SpecialAnimDamaged:35",
+            "SpecialAnimDamaged:37",
+            "SpecialAnimDamaged:38",
+            "SpecialAnimDamaged:39",
+            "SpecialAnimDamaged:40",
+            "SpecialAnimDamaged:41",
+            "SpecialAnimDamaged:43",
+            "SpecialAnimDamaged:44",
+            "SpecialAnimDamaged:45",
+            "SpecialAnimDamaged:46",
+            "SpecialAnimDamaged:48",
+            "SpecialAnimDamaged:49",
+            "SpecialAnimDamaged:50"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnimDamaged",
+              "slot": "SpecialAnim",
+              "source": "ngdept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        },
+        "SpecialAnimThree": {
+          "label": "SpecialAnimThree",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanimthree_000.png",
+            "specialanimthree_001.png",
+            "specialanimthree_002.png",
+            "specialanimthree_003.png",
+            "specialanimthree_004.png",
+            "specialanimthree_005.png",
+            "specialanimthree_006.png",
+            "specialanimthree_007.png",
+            "specialanimthree_008.png"
+          ],
+          "remap_masks": [
+            "specialanimthree_000_remap.png",
+            "specialanimthree_001_remap.png",
+            "specialanimthree_002_remap.png",
+            "specialanimthree_003_remap.png",
+            "specialanimthree_004_remap.png",
+            "specialanimthree_005_remap.png",
+            "specialanimthree_006_remap.png",
+            "specialanimthree_007_remap.png",
+            "specialanimthree_008_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnimThree:21",
+            "SpecialAnimThree:22",
+            "SpecialAnimThree:23",
+            "SpecialAnimThree:24",
+            "SpecialAnimThree:25",
+            "SpecialAnimThree:26",
+            "SpecialAnimThree:27",
+            "SpecialAnimThree:28",
+            "SpecialAnimThree:29"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnimThree",
+              "slot": "SpecialAnimThree",
+              "source": "ngdept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        },
+        "SpecialAnimThreeDamaged": {
+          "label": "SpecialAnimThreeDamaged",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanimthreedamaged_000.png",
+            "specialanimthreedamaged_001.png",
+            "specialanimthreedamaged_002.png",
+            "specialanimthreedamaged_003.png",
+            "specialanimthreedamaged_004.png",
+            "specialanimthreedamaged_005.png",
+            "specialanimthreedamaged_006.png",
+            "specialanimthreedamaged_007.png",
+            "specialanimthreedamaged_008.png",
+            "specialanimthreedamaged_009.png",
+            "specialanimthreedamaged_010.png",
+            "specialanimthreedamaged_011.png",
+            "specialanimthreedamaged_012.png",
+            "specialanimthreedamaged_013.png",
+            "specialanimthreedamaged_014.png",
+            "specialanimthreedamaged_015.png",
+            "specialanimthreedamaged_016.png",
+            "specialanimthreedamaged_017.png",
+            "specialanimthreedamaged_018.png",
+            "specialanimthreedamaged_019.png",
+            "specialanimthreedamaged_020.png",
+            "specialanimthreedamaged_021.png",
+            "specialanimthreedamaged_022.png",
+            "specialanimthreedamaged_023.png"
+          ],
+          "remap_masks": [
+            "specialanimthreedamaged_000_remap.png",
+            "specialanimthreedamaged_001_remap.png",
+            "specialanimthreedamaged_002_remap.png",
+            "specialanimthreedamaged_003_remap.png",
+            "specialanimthreedamaged_004_remap.png",
+            "specialanimthreedamaged_005_remap.png",
+            "specialanimthreedamaged_006_remap.png",
+            "specialanimthreedamaged_007_remap.png",
+            "specialanimthreedamaged_008_remap.png",
+            "specialanimthreedamaged_009_remap.png",
+            "specialanimthreedamaged_010_remap.png",
+            "specialanimthreedamaged_011_remap.png",
+            "specialanimthreedamaged_012_remap.png",
+            "specialanimthreedamaged_013_remap.png",
+            "specialanimthreedamaged_014_remap.png",
+            "specialanimthreedamaged_015_remap.png",
+            "specialanimthreedamaged_016_remap.png",
+            "specialanimthreedamaged_017_remap.png",
+            "specialanimthreedamaged_018_remap.png",
+            "specialanimthreedamaged_019_remap.png",
+            "specialanimthreedamaged_020_remap.png",
+            "specialanimthreedamaged_021_remap.png",
+            "specialanimthreedamaged_022_remap.png",
+            "specialanimthreedamaged_023_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnimThreeDamaged:21",
+            "SpecialAnimThreeDamaged:24",
+            "SpecialAnimThreeDamaged:26",
+            "SpecialAnimThreeDamaged:29",
+            "SpecialAnimThreeDamaged:31",
+            "SpecialAnimThreeDamaged:34",
+            "SpecialAnimThreeDamaged:36",
+            "SpecialAnimThreeDamaged:39",
+            "SpecialAnimThreeDamaged:41",
+            "SpecialAnimThreeDamaged:44",
+            "SpecialAnimThreeDamaged:46",
+            "SpecialAnimThreeDamaged:49",
+            "SpecialAnimThreeDamaged:51",
+            "SpecialAnimThreeDamaged:54",
+            "SpecialAnimThreeDamaged:56",
+            "SpecialAnimThreeDamaged:59",
+            "SpecialAnimThreeDamaged:61",
+            "SpecialAnimThreeDamaged:64",
+            "SpecialAnimThreeDamaged:66",
+            "SpecialAnimThreeDamaged:69",
+            "SpecialAnimThreeDamaged:71",
+            "SpecialAnimThreeDamaged:74",
+            "SpecialAnimThreeDamaged:76",
+            "SpecialAnimThreeDamaged:79"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnimThreeDamaged",
+              "slot": "SpecialAnimThree",
+              "source": "ngdept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        },
+        "SpecialAnimTwo": {
+          "label": "SpecialAnimTwo",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanimtwo_000.png",
+            "specialanimtwo_001.png",
+            "specialanimtwo_002.png",
+            "specialanimtwo_003.png",
+            "specialanimtwo_004.png",
+            "specialanimtwo_005.png"
+          ],
+          "remap_masks": [
+            "specialanimtwo_000_remap.png",
+            "specialanimtwo_001_remap.png",
+            "specialanimtwo_002_remap.png",
+            "specialanimtwo_003_remap.png",
+            "specialanimtwo_004_remap.png",
+            "specialanimtwo_005_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnimTwo:22",
+            "SpecialAnimTwo:23",
+            "SpecialAnimTwo:24",
+            "SpecialAnimTwo:25",
+            "SpecialAnimTwo:26",
+            "SpecialAnimTwo:27"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnimTwo",
+              "slot": "SpecialAnimTwo",
+              "source": "ngdept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        },
+        "SpecialAnimTwoDamaged": {
+          "label": "SpecialAnimTwoDamaged",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanimtwodamaged_000.png",
+            "specialanimtwodamaged_001.png",
+            "specialanimtwodamaged_002.png",
+            "specialanimtwodamaged_003.png",
+            "specialanimtwodamaged_004.png",
+            "specialanimtwodamaged_005.png"
+          ],
+          "remap_masks": [
+            "specialanimtwodamaged_000_remap.png",
+            "specialanimtwodamaged_001_remap.png",
+            "specialanimtwodamaged_002_remap.png",
+            "specialanimtwodamaged_003_remap.png",
+            "specialanimtwodamaged_004_remap.png",
+            "specialanimtwodamaged_005_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnimTwoDamaged:72",
+            "SpecialAnimTwoDamaged:73",
+            "SpecialAnimTwoDamaged:74",
+            "SpecialAnimTwoDamaged:75",
+            "SpecialAnimTwoDamaged:76",
+            "SpecialAnimTwoDamaged:77"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnimTwoDamaged",
+              "slot": "SpecialAnimTwo",
+              "source": "ngdept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        }
+      }
+    },
+    "snow": {
+      "body_source": "nadept.shp",
+      "palette": "unitsno.pal",
+      "canvas": [
+        198,
+        190
+      ],
+      "default_animation": "Operational",
+      "animations": {
+        "BodyStates": {
+          "label": "主体状态",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 500,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "body_normal.png",
+            "body_damaged.png"
+          ],
+          "remap_masks": [
+            "body_normal_remap.png",
+            "body_damaged_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        "Buildup": {
+          "label": "Buildup",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 120,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "buildup_000.png",
+            "buildup_001.png",
+            "buildup_002.png",
+            "buildup_003.png",
+            "buildup_004.png",
+            "buildup_005.png",
+            "buildup_006.png",
+            "buildup_007.png",
+            "buildup_008.png",
+            "buildup_009.png",
+            "buildup_010.png",
+            "buildup_011.png",
+            "buildup_012.png",
+            "buildup_013.png",
+            "buildup_014.png",
+            "buildup_015.png",
+            "buildup_016.png",
+            "buildup_017.png",
+            "buildup_018.png",
+            "buildup_019.png",
+            "buildup_020.png",
+            "buildup_021.png",
+            "buildup_022.png",
+            "buildup_023.png"
+          ],
+          "remap_masks": [
+            "buildup_000_remap.png",
+            "buildup_001_remap.png",
+            "buildup_002_remap.png",
+            "buildup_003_remap.png",
+            "buildup_004_remap.png",
+            "buildup_005_remap.png",
+            "buildup_006_remap.png",
+            "buildup_007_remap.png",
+            "buildup_008_remap.png",
+            "buildup_009_remap.png",
+            "buildup_010_remap.png",
+            "buildup_011_remap.png",
+            "buildup_012_remap.png",
+            "buildup_013_remap.png",
+            "buildup_014_remap.png",
+            "buildup_015_remap.png",
+            "buildup_016_remap.png",
+            "buildup_017_remap.png",
+            "buildup_018_remap.png",
+            "buildup_019_remap.png",
+            "buildup_020_remap.png",
+            "buildup_021_remap.png",
+            "buildup_022_remap.png",
+            "buildup_023_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "source": "nadeptmk.shp",
+          "art_id": "NADEPTMK",
+          "layer": "",
+          "offset": [
+            0,
+            0
+          ],
+          "z_adjust": 0,
+          "y_sort": 0
+        },
+        "BibShape": {
+          "label": "BibShape",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 120,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "bibshape_000.png"
+          ],
+          "remap_masks": [
+            "bibshape_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ],
+          "source": "nadeptbb.shp",
+          "art_id": "NADEPTBB",
+          "layer": "",
+          "offset": [
+            0,
+            0
+          ],
+          "z_adjust": 0,
+          "y_sort": 0
+        },
+        "Ready": {
+          "label": "完整主体",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 500,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "ready_normal.png"
+          ],
+          "remap_masks": [
+            "ready_normal_remap.png"
+          ],
+          "source_indices": [
+            "body + persistent components + turret"
+          ]
+        },
+        "DamagedReady": {
+          "label": "受损主体",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 500,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "ready_damaged.png"
+          ],
+          "remap_masks": [
+            "ready_damaged_remap.png"
+          ],
+          "source_indices": [
+            "damaged body + persistent components + turret"
+          ]
+        },
+        "Operational": {
+          "label": "完整工作动画",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 220,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "operational_000.png",
+            "operational_001.png",
+            "operational_002.png",
+            "operational_003.png",
+            "operational_004.png",
+            "operational_005.png",
+            "operational_006.png",
+            "operational_007.png",
+            "operational_008.png"
+          ],
+          "remap_masks": [
+            "operational_000_remap.png",
+            "operational_001_remap.png",
+            "operational_002_remap.png",
+            "operational_003_remap.png",
+            "operational_004_remap.png",
+            "operational_005_remap.png",
+            "operational_006_remap.png",
+            "operational_007_remap.png",
+            "operational_008_remap.png"
+          ],
+          "source_indices": [
+            "IdleAnim:0",
+            "IdleAnim:1",
+            "IdleAnim:2",
+            "IdleAnim:3",
+            "IdleAnim:4",
+            "IdleAnim:5",
+            "IdleAnim:6",
+            "IdleAnim:7",
+            "IdleAnim:8"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "IdleAnim",
+              "slot": "IdleAnim",
+              "source": "nadept_b.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 220,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": false
+            }
+          ]
+        },
+        "DamagedOperational": {
+          "label": "受损工作动画",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 350,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "damagedoperational_000.png",
+            "damagedoperational_001.png",
+            "damagedoperational_002.png",
+            "damagedoperational_003.png",
+            "damagedoperational_004.png",
+            "damagedoperational_005.png",
+            "damagedoperational_006.png",
+            "damagedoperational_007.png",
+            "damagedoperational_008.png"
+          ],
+          "remap_masks": [
+            "damagedoperational_000_remap.png",
+            "damagedoperational_001_remap.png",
+            "damagedoperational_002_remap.png",
+            "damagedoperational_003_remap.png",
+            "damagedoperational_004_remap.png",
+            "damagedoperational_005_remap.png",
+            "damagedoperational_006_remap.png",
+            "damagedoperational_007_remap.png",
+            "damagedoperational_008_remap.png"
+          ],
+          "source_indices": [
+            "IdleAnimDamaged:10",
+            "IdleAnimDamaged:11",
+            "IdleAnimDamaged:12",
+            "IdleAnimDamaged:13",
+            "IdleAnimDamaged:14",
+            "IdleAnimDamaged:15",
+            "IdleAnimDamaged:16",
+            "IdleAnimDamaged:17",
+            "IdleAnimDamaged:18"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "IdleAnimDamaged",
+              "slot": "IdleAnim",
+              "source": "nadept_b.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 350,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": false
+            }
+          ]
+        },
+        "SpecialAnim": {
+          "label": "SpecialAnim",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanim_000.png",
+            "specialanim_001.png",
+            "specialanim_002.png",
+            "specialanim_003.png",
+            "specialanim_004.png",
+            "specialanim_005.png",
+            "specialanim_006.png",
+            "specialanim_007.png",
+            "specialanim_008.png",
+            "specialanim_009.png",
+            "specialanim_010.png",
+            "specialanim_011.png",
+            "specialanim_012.png",
+            "specialanim_013.png",
+            "specialanim_014.png",
+            "specialanim_015.png",
+            "specialanim_016.png",
+            "specialanim_017.png",
+            "specialanim_018.png",
+            "specialanim_019.png",
+            "specialanim_020.png",
+            "specialanim_021.png",
+            "specialanim_022.png"
+          ],
+          "remap_masks": [
+            "specialanim_000_remap.png",
+            "specialanim_001_remap.png",
+            "specialanim_002_remap.png",
+            "specialanim_003_remap.png",
+            "specialanim_004_remap.png",
+            "specialanim_005_remap.png",
+            "specialanim_006_remap.png",
+            "specialanim_007_remap.png",
+            "specialanim_008_remap.png",
+            "specialanim_009_remap.png",
+            "specialanim_010_remap.png",
+            "specialanim_011_remap.png",
+            "specialanim_012_remap.png",
+            "specialanim_013_remap.png",
+            "specialanim_014_remap.png",
+            "specialanim_015_remap.png",
+            "specialanim_016_remap.png",
+            "specialanim_017_remap.png",
+            "specialanim_018_remap.png",
+            "specialanim_019_remap.png",
+            "specialanim_020_remap.png",
+            "specialanim_021_remap.png",
+            "specialanim_022_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnim:0",
+            "SpecialAnim:1",
+            "SpecialAnim:2",
+            "SpecialAnim:3",
+            "SpecialAnim:4",
+            "SpecialAnim:5",
+            "SpecialAnim:6",
+            "SpecialAnim:7",
+            "SpecialAnim:8",
+            "SpecialAnim:9",
+            "SpecialAnim:10",
+            "SpecialAnim:11",
+            "SpecialAnim:12",
+            "SpecialAnim:13",
+            "SpecialAnim:14",
+            "SpecialAnim:15",
+            "SpecialAnim:16",
+            "SpecialAnim:17",
+            "SpecialAnim:18",
+            "SpecialAnim:19",
+            "SpecialAnim:20",
+            "SpecialAnim:21",
+            "SpecialAnim:22"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnim",
+              "slot": "SpecialAnim",
+              "source": "nadept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        },
+        "SpecialAnimDamaged": {
+          "label": "SpecialAnimDamaged",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanimdamaged_000.png",
+            "specialanimdamaged_001.png",
+            "specialanimdamaged_002.png",
+            "specialanimdamaged_003.png",
+            "specialanimdamaged_004.png",
+            "specialanimdamaged_005.png",
+            "specialanimdamaged_006.png",
+            "specialanimdamaged_007.png",
+            "specialanimdamaged_008.png",
+            "specialanimdamaged_009.png",
+            "specialanimdamaged_010.png",
+            "specialanimdamaged_011.png",
+            "specialanimdamaged_012.png",
+            "specialanimdamaged_013.png",
+            "specialanimdamaged_014.png",
+            "specialanimdamaged_015.png",
+            "specialanimdamaged_016.png",
+            "specialanimdamaged_017.png",
+            "specialanimdamaged_018.png",
+            "specialanimdamaged_019.png",
+            "specialanimdamaged_020.png",
+            "specialanimdamaged_021.png",
+            "specialanimdamaged_022.png",
+            "specialanimdamaged_023.png"
+          ],
+          "remap_masks": [
+            "specialanimdamaged_000_remap.png",
+            "specialanimdamaged_001_remap.png",
+            "specialanimdamaged_002_remap.png",
+            "specialanimdamaged_003_remap.png",
+            "specialanimdamaged_004_remap.png",
+            "specialanimdamaged_005_remap.png",
+            "specialanimdamaged_006_remap.png",
+            "specialanimdamaged_007_remap.png",
+            "specialanimdamaged_008_remap.png",
+            "specialanimdamaged_009_remap.png",
+            "specialanimdamaged_010_remap.png",
+            "specialanimdamaged_011_remap.png",
+            "specialanimdamaged_012_remap.png",
+            "specialanimdamaged_013_remap.png",
+            "specialanimdamaged_014_remap.png",
+            "specialanimdamaged_015_remap.png",
+            "specialanimdamaged_016_remap.png",
+            "specialanimdamaged_017_remap.png",
+            "specialanimdamaged_018_remap.png",
+            "specialanimdamaged_019_remap.png",
+            "specialanimdamaged_020_remap.png",
+            "specialanimdamaged_021_remap.png",
+            "specialanimdamaged_022_remap.png",
+            "specialanimdamaged_023_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnimDamaged:22",
+            "SpecialAnimDamaged:23",
+            "SpecialAnimDamaged:24",
+            "SpecialAnimDamaged:26",
+            "SpecialAnimDamaged:27",
+            "SpecialAnimDamaged:28",
+            "SpecialAnimDamaged:29",
+            "SpecialAnimDamaged:31",
+            "SpecialAnimDamaged:32",
+            "SpecialAnimDamaged:33",
+            "SpecialAnimDamaged:34",
+            "SpecialAnimDamaged:35",
+            "SpecialAnimDamaged:37",
+            "SpecialAnimDamaged:38",
+            "SpecialAnimDamaged:39",
+            "SpecialAnimDamaged:40",
+            "SpecialAnimDamaged:41",
+            "SpecialAnimDamaged:43",
+            "SpecialAnimDamaged:44",
+            "SpecialAnimDamaged:45",
+            "SpecialAnimDamaged:46",
+            "SpecialAnimDamaged:48",
+            "SpecialAnimDamaged:49",
+            "SpecialAnimDamaged:50"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnimDamaged",
+              "slot": "SpecialAnim",
+              "source": "nadept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        },
+        "SpecialAnimThree": {
+          "label": "SpecialAnimThree",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanimthree_000.png",
+            "specialanimthree_001.png",
+            "specialanimthree_002.png",
+            "specialanimthree_003.png",
+            "specialanimthree_004.png",
+            "specialanimthree_005.png",
+            "specialanimthree_006.png",
+            "specialanimthree_007.png",
+            "specialanimthree_008.png"
+          ],
+          "remap_masks": [
+            "specialanimthree_000_remap.png",
+            "specialanimthree_001_remap.png",
+            "specialanimthree_002_remap.png",
+            "specialanimthree_003_remap.png",
+            "specialanimthree_004_remap.png",
+            "specialanimthree_005_remap.png",
+            "specialanimthree_006_remap.png",
+            "specialanimthree_007_remap.png",
+            "specialanimthree_008_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnimThree:21",
+            "SpecialAnimThree:22",
+            "SpecialAnimThree:23",
+            "SpecialAnimThree:24",
+            "SpecialAnimThree:25",
+            "SpecialAnimThree:26",
+            "SpecialAnimThree:27",
+            "SpecialAnimThree:28",
+            "SpecialAnimThree:29"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnimThree",
+              "slot": "SpecialAnimThree",
+              "source": "nadept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        },
+        "SpecialAnimThreeDamaged": {
+          "label": "SpecialAnimThreeDamaged",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanimthreedamaged_000.png",
+            "specialanimthreedamaged_001.png",
+            "specialanimthreedamaged_002.png",
+            "specialanimthreedamaged_003.png",
+            "specialanimthreedamaged_004.png",
+            "specialanimthreedamaged_005.png",
+            "specialanimthreedamaged_006.png",
+            "specialanimthreedamaged_007.png",
+            "specialanimthreedamaged_008.png",
+            "specialanimthreedamaged_009.png",
+            "specialanimthreedamaged_010.png",
+            "specialanimthreedamaged_011.png",
+            "specialanimthreedamaged_012.png",
+            "specialanimthreedamaged_013.png",
+            "specialanimthreedamaged_014.png",
+            "specialanimthreedamaged_015.png",
+            "specialanimthreedamaged_016.png",
+            "specialanimthreedamaged_017.png",
+            "specialanimthreedamaged_018.png",
+            "specialanimthreedamaged_019.png",
+            "specialanimthreedamaged_020.png",
+            "specialanimthreedamaged_021.png",
+            "specialanimthreedamaged_022.png",
+            "specialanimthreedamaged_023.png"
+          ],
+          "remap_masks": [
+            "specialanimthreedamaged_000_remap.png",
+            "specialanimthreedamaged_001_remap.png",
+            "specialanimthreedamaged_002_remap.png",
+            "specialanimthreedamaged_003_remap.png",
+            "specialanimthreedamaged_004_remap.png",
+            "specialanimthreedamaged_005_remap.png",
+            "specialanimthreedamaged_006_remap.png",
+            "specialanimthreedamaged_007_remap.png",
+            "specialanimthreedamaged_008_remap.png",
+            "specialanimthreedamaged_009_remap.png",
+            "specialanimthreedamaged_010_remap.png",
+            "specialanimthreedamaged_011_remap.png",
+            "specialanimthreedamaged_012_remap.png",
+            "specialanimthreedamaged_013_remap.png",
+            "specialanimthreedamaged_014_remap.png",
+            "specialanimthreedamaged_015_remap.png",
+            "specialanimthreedamaged_016_remap.png",
+            "specialanimthreedamaged_017_remap.png",
+            "specialanimthreedamaged_018_remap.png",
+            "specialanimthreedamaged_019_remap.png",
+            "specialanimthreedamaged_020_remap.png",
+            "specialanimthreedamaged_021_remap.png",
+            "specialanimthreedamaged_022_remap.png",
+            "specialanimthreedamaged_023_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnimThreeDamaged:21",
+            "SpecialAnimThreeDamaged:24",
+            "SpecialAnimThreeDamaged:26",
+            "SpecialAnimThreeDamaged:29",
+            "SpecialAnimThreeDamaged:31",
+            "SpecialAnimThreeDamaged:34",
+            "SpecialAnimThreeDamaged:36",
+            "SpecialAnimThreeDamaged:39",
+            "SpecialAnimThreeDamaged:41",
+            "SpecialAnimThreeDamaged:44",
+            "SpecialAnimThreeDamaged:46",
+            "SpecialAnimThreeDamaged:49",
+            "SpecialAnimThreeDamaged:51",
+            "SpecialAnimThreeDamaged:54",
+            "SpecialAnimThreeDamaged:56",
+            "SpecialAnimThreeDamaged:59",
+            "SpecialAnimThreeDamaged:61",
+            "SpecialAnimThreeDamaged:64",
+            "SpecialAnimThreeDamaged:66",
+            "SpecialAnimThreeDamaged:69",
+            "SpecialAnimThreeDamaged:71",
+            "SpecialAnimThreeDamaged:74",
+            "SpecialAnimThreeDamaged:76",
+            "SpecialAnimThreeDamaged:79"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnimThreeDamaged",
+              "slot": "SpecialAnimThree",
+              "source": "nadept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        },
+        "SpecialAnimTwo": {
+          "label": "SpecialAnimTwo",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanimtwo_000.png",
+            "specialanimtwo_001.png",
+            "specialanimtwo_002.png",
+            "specialanimtwo_003.png",
+            "specialanimtwo_004.png",
+            "specialanimtwo_005.png"
+          ],
+          "remap_masks": [
+            "specialanimtwo_000_remap.png",
+            "specialanimtwo_001_remap.png",
+            "specialanimtwo_002_remap.png",
+            "specialanimtwo_003_remap.png",
+            "specialanimtwo_004_remap.png",
+            "specialanimtwo_005_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnimTwo:22",
+            "SpecialAnimTwo:23",
+            "SpecialAnimTwo:24",
+            "SpecialAnimTwo:25",
+            "SpecialAnimTwo:26",
+            "SpecialAnimTwo:27"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnimTwo",
+              "slot": "SpecialAnimTwo",
+              "source": "nadept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        },
+        "SpecialAnimTwoDamaged": {
+          "label": "SpecialAnimTwoDamaged",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 400,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "specialanimtwodamaged_000.png",
+            "specialanimtwodamaged_001.png",
+            "specialanimtwodamaged_002.png",
+            "specialanimtwodamaged_003.png",
+            "specialanimtwodamaged_004.png",
+            "specialanimtwodamaged_005.png"
+          ],
+          "remap_masks": [
+            "specialanimtwodamaged_000_remap.png",
+            "specialanimtwodamaged_001_remap.png",
+            "specialanimtwodamaged_002_remap.png",
+            "specialanimtwodamaged_003_remap.png",
+            "specialanimtwodamaged_004_remap.png",
+            "specialanimtwodamaged_005_remap.png"
+          ],
+          "source_indices": [
+            "SpecialAnimTwoDamaged:72",
+            "SpecialAnimTwoDamaged:73",
+            "SpecialAnimTwoDamaged:74",
+            "SpecialAnimTwoDamaged:75",
+            "SpecialAnimTwoDamaged:76",
+            "SpecialAnimTwoDamaged:77"
+          ],
+          "composite": true,
+          "components": [
+            {
+              "key": "SpecialAnimTwoDamaged",
+              "slot": "SpecialAnimTwo",
+              "source": "nadept_c.shp",
+              "offset": [
+                0,
+                0
+              ],
+              "rate_ms": 400,
+              "z_adjust": -70,
+              "y_sort": 0,
+              "dynamic_region_only": true
+            }
+          ]
+        }
+      }
+    }
+  }
+}

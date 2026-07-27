@@ -1,0 +1,2025 @@
+{
+  "id": "DRED",
+  "category": "vehicle",
+  "name_token": "Name:DRED",
+  "art_id": "DRED",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAYARD",
+    "NATECH"
+  ],
+  "tech_level": 6,
+  "cost": 2000,
+  "strength": 800,
+  "armor": "heavy",
+  "speed": 4,
+  "sight": 7,
+  "locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+  "movement_zone": "Water",
+  "weapons": {
+    "Primary": {
+      "id": "DredLauncher",
+      "projectile": "InvisibleHigh",
+      "warhead": "Special",
+      "report": [],
+      "values": {
+        "Damage": 50,
+        "ROF": 50,
+        "Burst": 2,
+        "Range": 25,
+        "MinimumRange": 8,
+        "Spawner": true,
+        "Projectile": "InvisibleHigh",
+        "Speed": 15,
+        "Warhead": "Special",
+        "OmniFire": true
+      },
+      "raw_values": {
+        "Damage": "50",
+        "ROF": "50",
+        "Burst": "2",
+        "Range": "25",
+        "MinimumRange": "8",
+        "Spawner": "yes",
+        "Projectile": "InvisibleHigh",
+        "Speed": "15",
+        "Warhead": "Special",
+        "OmniFire": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23493,
+            "section": "DredLauncher",
+            "key": "Damage",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16823,
+              "section": "DredLauncher",
+              "key": "Damage",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23485,
+              "section": "DredLauncher",
+              "key": "Damage",
+              "value": "50"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23494,
+            "section": "DredLauncher",
+            "key": "ROF",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16824,
+              "section": "DredLauncher",
+              "key": "ROF",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23486,
+              "section": "DredLauncher",
+              "key": "ROF",
+              "value": "50"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23495,
+            "section": "DredLauncher",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16825,
+              "section": "DredLauncher",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23487,
+              "section": "DredLauncher",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        },
+        "Range": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23496,
+            "section": "DredLauncher",
+            "key": "Range",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16826,
+              "section": "DredLauncher",
+              "key": "Range",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23488,
+              "section": "DredLauncher",
+              "key": "Range",
+              "value": "25"
+            }
+          ]
+        },
+        "MinimumRange": {
+          "value": "8",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23498,
+            "section": "DredLauncher",
+            "key": "MinimumRange",
+            "value": "8"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16828,
+              "section": "DredLauncher",
+              "key": "MinimumRange",
+              "value": "8"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23490,
+              "section": "DredLauncher",
+              "key": "MinimumRange",
+              "value": "8"
+            }
+          ]
+        },
+        "Spawner": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23499,
+            "section": "DredLauncher",
+            "key": "Spawner",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16829,
+              "section": "DredLauncher",
+              "key": "Spawner",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23491,
+              "section": "DredLauncher",
+              "key": "Spawner",
+              "value": "yes"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleHigh",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23500,
+            "section": "DredLauncher",
+            "key": "Projectile",
+            "value": "InvisibleHigh"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16830,
+              "section": "DredLauncher",
+              "key": "Projectile",
+              "value": "InvisibleHigh"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23492,
+              "section": "DredLauncher",
+              "key": "Projectile",
+              "value": "InvisibleHigh"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23501,
+            "section": "DredLauncher",
+            "key": "Speed",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16831,
+              "section": "DredLauncher",
+              "key": "Speed",
+              "value": "15"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23493,
+              "section": "DredLauncher",
+              "key": "Speed",
+              "value": "15"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Special",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23502,
+            "section": "DredLauncher",
+            "key": "Warhead",
+            "value": "Special"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16832,
+              "section": "DredLauncher",
+              "key": "Warhead",
+              "value": "Special"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23494,
+              "section": "DredLauncher",
+              "key": "Warhead",
+              "value": "Special"
+            }
+          ]
+        },
+        "OmniFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23503,
+            "section": "DredLauncher",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16833,
+              "section": "DredLauncher",
+              "key": "OmniFire",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23495,
+              "section": "DredLauncher",
+              "key": "OmniFire",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "GenSovWaterSelect"
+    ],
+    "VoiceMove": [
+      "GenSovWaterMove"
+    ],
+    "VoiceAttack": [
+      "GenSovWaterAttackCommand"
+    ],
+    "MoveSound": [
+      "DreadnoughtMoveStart"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "DRED",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4036,
+      "pack": "ra2",
+      "relative_path": "local/dred.vxl",
+      "folder": "local",
+      "filename": "dred.vxl",
+      "stem": "dred",
+      "extension": ".vxl",
+      "size": 116773,
+      "sha1": "0e25e2c80efc2d09ba253a6947e7acee44298ca5"
+    },
+    "body_hva": {
+      "asset_id": 4035,
+      "pack": "ra2",
+      "relative_path": "local/dred.hva",
+      "folder": "local",
+      "filename": "dred.hva",
+      "stem": "dred",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "b00372008c7de33413bd7bfe600bd3510f5339b3"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      30.0,
+      43.0,
+      92.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:DRED",
+      "Name": "Dreadnought",
+      "Prerequisite": "NAYARD,NATECH",
+      "Primary": "DredLauncher",
+      "CanPassiveAquire": false,
+      "Spawns": "DMISL",
+      "SpawnsNumber": 2,
+      "SpawnRegenRate": 80,
+      "SpawnReloadRate": 0,
+      "NoSpawnAlt": true,
+      "FireAngle": 32,
+      "ToProtect": true,
+      "Category": "Support",
+      "Strength": 800,
+      "Naval": true,
+      "Armor": "heavy",
+      "TechLevel": 6,
+      "Sight": 7,
+      "Speed": 4,
+      "CrateGoodie": false,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 2000,
+      "Turret": false,
+      "Points": 55,
+      "Weight": 4,
+      "ROT": 1,
+      "Crusher": false,
+      "Crewed": false,
+      "IsSelectableCombatant": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenSovWaterSelect",
+      "VoiceMove": "GenSovWaterMove",
+      "VoiceAttack": "GenSovWaterAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "",
+      "SinkingSound": "GenLargeWaterDie",
+      "MoveSound": "DreadnoughtMoveStart",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": 25,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "TooBigToFitUnderBridge": true,
+      "GuardRange": 10,
+      "Size": 50,
+      "Soylent": 2000
+    },
+    "raw_values": {
+      "UIName": "Name:DRED",
+      "Name": "Dreadnought",
+      "Prerequisite": "NAYARD,NATECH",
+      "Primary": "DredLauncher",
+      "CanPassiveAquire": "no",
+      "Spawns": "DMISL",
+      "SpawnsNumber": "2",
+      "SpawnRegenRate": "80",
+      "SpawnReloadRate": "0",
+      "NoSpawnAlt": "yes",
+      "FireAngle": "32",
+      "ToProtect": "yes",
+      "Category": "Support",
+      "Strength": "800",
+      "Naval": "yes",
+      "Armor": "heavy",
+      "TechLevel": "6",
+      "Sight": "7",
+      "Speed": "4",
+      "CrateGoodie": "no",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "2000",
+      "Turret": "no",
+      "Points": "55",
+      "Weight": "4",
+      "ROT": "1",
+      "Crusher": "no",
+      "Crewed": "no",
+      "IsSelectableCombatant": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenSovWaterSelect",
+      "VoiceMove": "GenSovWaterMove",
+      "VoiceAttack": "GenSovWaterAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "",
+      "SinkingSound": "GenLargeWaterDie",
+      "MoveSound": "DreadnoughtMoveStart",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": "25",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "TooBigToFitUnderBridge": "true",
+      "GuardRange": "10",
+      "Size": "50",
+      "Soylent": "2000"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:DRED",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8120,
+          "section": "DRED",
+          "key": "UIName",
+          "value": "Name:DRED"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5451,
+            "section": "DRED",
+            "key": "UIName",
+            "value": "Name:DRED"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8117,
+            "section": "DRED",
+            "key": "UIName",
+            "value": "Name:DRED"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Dreadnought",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8121,
+          "section": "DRED",
+          "key": "Name",
+          "value": "Dreadnought"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5452,
+            "section": "DRED",
+            "key": "Name",
+            "value": "Dreadnought"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8118,
+            "section": "DRED",
+            "key": "Name",
+            "value": "Dreadnought"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAYARD,NATECH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8122,
+          "section": "DRED",
+          "key": "Prerequisite",
+          "value": "NAYARD,NATECH"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5453,
+            "section": "DRED",
+            "key": "Prerequisite",
+            "value": "NAYARD,NATECH"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8119,
+            "section": "DRED",
+            "key": "Prerequisite",
+            "value": "NAYARD,NATECH"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "DredLauncher",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8123,
+          "section": "DRED",
+          "key": "Primary",
+          "value": "DredLauncher"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5454,
+            "section": "DRED",
+            "key": "Primary",
+            "value": "DredLauncher"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8120,
+            "section": "DRED",
+            "key": "Primary",
+            "value": "DredLauncher"
+          }
+        ]
+      },
+      "CanPassiveAquire": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8124,
+          "section": "DRED",
+          "key": "CanPassiveAquire",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5455,
+            "section": "DRED",
+            "key": "CanPassiveAquire",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8121,
+            "section": "DRED",
+            "key": "CanPassiveAquire",
+            "value": "no"
+          }
+        ]
+      },
+      "Spawns": {
+        "value": "DMISL",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8125,
+          "section": "DRED",
+          "key": "Spawns",
+          "value": "DMISL"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5456,
+            "section": "DRED",
+            "key": "Spawns",
+            "value": "DMISL"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8122,
+            "section": "DRED",
+            "key": "Spawns",
+            "value": "DMISL"
+          }
+        ]
+      },
+      "SpawnsNumber": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8126,
+          "section": "DRED",
+          "key": "SpawnsNumber",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5457,
+            "section": "DRED",
+            "key": "SpawnsNumber",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8123,
+            "section": "DRED",
+            "key": "SpawnsNumber",
+            "value": "2"
+          }
+        ]
+      },
+      "SpawnRegenRate": {
+        "value": "80",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8127,
+          "section": "DRED",
+          "key": "SpawnRegenRate",
+          "value": "80"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5458,
+            "section": "DRED",
+            "key": "SpawnRegenRate",
+            "value": "80"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8124,
+            "section": "DRED",
+            "key": "SpawnRegenRate",
+            "value": "80"
+          }
+        ]
+      },
+      "SpawnReloadRate": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8128,
+          "section": "DRED",
+          "key": "SpawnReloadRate",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5459,
+            "section": "DRED",
+            "key": "SpawnReloadRate",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8125,
+            "section": "DRED",
+            "key": "SpawnReloadRate",
+            "value": "0"
+          }
+        ]
+      },
+      "NoSpawnAlt": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8129,
+          "section": "DRED",
+          "key": "NoSpawnAlt",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5460,
+            "section": "DRED",
+            "key": "NoSpawnAlt",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8126,
+            "section": "DRED",
+            "key": "NoSpawnAlt",
+            "value": "yes"
+          }
+        ]
+      },
+      "FireAngle": {
+        "value": "32",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8130,
+          "section": "DRED",
+          "key": "FireAngle",
+          "value": "32"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5461,
+            "section": "DRED",
+            "key": "FireAngle",
+            "value": "32"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8127,
+            "section": "DRED",
+            "key": "FireAngle",
+            "value": "32"
+          }
+        ]
+      },
+      "ToProtect": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8131,
+          "section": "DRED",
+          "key": "ToProtect",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5462,
+            "section": "DRED",
+            "key": "ToProtect",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8128,
+            "section": "DRED",
+            "key": "ToProtect",
+            "value": "yes"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Support",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8132,
+          "section": "DRED",
+          "key": "Category",
+          "value": "Support"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5463,
+            "section": "DRED",
+            "key": "Category",
+            "value": "Support"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8129,
+            "section": "DRED",
+            "key": "Category",
+            "value": "Support"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "800",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8133,
+          "section": "DRED",
+          "key": "Strength",
+          "value": "800"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5464,
+            "section": "DRED",
+            "key": "Strength",
+            "value": "800"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8130,
+            "section": "DRED",
+            "key": "Strength",
+            "value": "800"
+          }
+        ]
+      },
+      "Naval": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8134,
+          "section": "DRED",
+          "key": "Naval",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5465,
+            "section": "DRED",
+            "key": "Naval",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8131,
+            "section": "DRED",
+            "key": "Naval",
+            "value": "yes"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8135,
+          "section": "DRED",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5466,
+            "section": "DRED",
+            "key": "Armor",
+            "value": "heavy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8132,
+            "section": "DRED",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8136,
+          "section": "DRED",
+          "key": "TechLevel",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5467,
+            "section": "DRED",
+            "key": "TechLevel",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8133,
+            "section": "DRED",
+            "key": "TechLevel",
+            "value": "6"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8137,
+          "section": "DRED",
+          "key": "Sight",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5468,
+            "section": "DRED",
+            "key": "Sight",
+            "value": "7"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8134,
+            "section": "DRED",
+            "key": "Sight",
+            "value": "7"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8138,
+          "section": "DRED",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5469,
+            "section": "DRED",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8135,
+            "section": "DRED",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8139,
+          "section": "DRED",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5470,
+            "section": "DRED",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8136,
+            "section": "DRED",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8140,
+          "section": "DRED",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5471,
+            "section": "DRED",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8137,
+            "section": "DRED",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8142,
+          "section": "DRED",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5473,
+            "section": "DRED",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8139,
+            "section": "DRED",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8143,
+          "section": "DRED",
+          "key": "Cost",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5474,
+            "section": "DRED",
+            "key": "Cost",
+            "value": "2000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8140,
+            "section": "DRED",
+            "key": "Cost",
+            "value": "2000"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8145,
+          "section": "DRED",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5475,
+            "section": "DRED",
+            "key": "Turret",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8142,
+            "section": "DRED",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "Points": {
+        "value": "55",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8146,
+          "section": "DRED",
+          "key": "Points",
+          "value": "55"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5476,
+            "section": "DRED",
+            "key": "Points",
+            "value": "55"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8143,
+            "section": "DRED",
+            "key": "Points",
+            "value": "55"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8147,
+          "section": "DRED",
+          "key": "Weight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5477,
+            "section": "DRED",
+            "key": "Weight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8144,
+            "section": "DRED",
+            "key": "Weight",
+            "value": "4"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8148,
+          "section": "DRED",
+          "key": "ROT",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5478,
+            "section": "DRED",
+            "key": "ROT",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8145,
+            "section": "DRED",
+            "key": "ROT",
+            "value": "1"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8149,
+          "section": "DRED",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5479,
+            "section": "DRED",
+            "key": "Crusher",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8146,
+            "section": "DRED",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8150,
+          "section": "DRED",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5480,
+            "section": "DRED",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8147,
+            "section": "DRED",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8152,
+          "section": "DRED",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5482,
+            "section": "DRED",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8149,
+            "section": "DRED",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8153,
+          "section": "DRED",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5483,
+            "section": "DRED",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8150,
+            "section": "DRED",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "GenSovWaterSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8154,
+          "section": "DRED",
+          "key": "VoiceSelect",
+          "value": "GenSovWaterSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5484,
+            "section": "DRED",
+            "key": "VoiceSelect",
+            "value": "GenSovWaterSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8151,
+            "section": "DRED",
+            "key": "VoiceSelect",
+            "value": "GenSovWaterSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "GenSovWaterMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8155,
+          "section": "DRED",
+          "key": "VoiceMove",
+          "value": "GenSovWaterMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5485,
+            "section": "DRED",
+            "key": "VoiceMove",
+            "value": "GenSovWaterMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8152,
+            "section": "DRED",
+            "key": "VoiceMove",
+            "value": "GenSovWaterMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "GenSovWaterAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8156,
+          "section": "DRED",
+          "key": "VoiceAttack",
+          "value": "GenSovWaterAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5486,
+            "section": "DRED",
+            "key": "VoiceAttack",
+            "value": "GenSovWaterAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8153,
+            "section": "DRED",
+            "key": "VoiceAttack",
+            "value": "GenSovWaterAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8157,
+          "section": "DRED",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5487,
+            "section": "DRED",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8154,
+            "section": "DRED",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8158,
+          "section": "DRED",
+          "key": "DieSound",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5488,
+            "section": "DRED",
+            "key": "DieSound",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8155,
+            "section": "DRED",
+            "key": "DieSound",
+            "value": ""
+          }
+        ]
+      },
+      "SinkingSound": {
+        "value": "GenLargeWaterDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8159,
+          "section": "DRED",
+          "key": "SinkingSound",
+          "value": "GenLargeWaterDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5489,
+            "section": "DRED",
+            "key": "SinkingSound",
+            "value": "GenLargeWaterDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8156,
+            "section": "DRED",
+            "key": "SinkingSound",
+            "value": "GenLargeWaterDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "DreadnoughtMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8160,
+          "section": "DRED",
+          "key": "MoveSound",
+          "value": "DreadnoughtMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5490,
+            "section": "DRED",
+            "key": "MoveSound",
+            "value": "DreadnoughtMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8157,
+            "section": "DRED",
+            "key": "MoveSound",
+            "value": "DreadnoughtMoveStart"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8161,
+          "section": "DRED",
+          "key": "Locomotor",
+          "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5491,
+            "section": "DRED",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8158,
+            "section": "DRED",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Float",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8162,
+          "section": "DRED",
+          "key": "SpeedType",
+          "value": "Float"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5492,
+            "section": "DRED",
+            "key": "SpeedType",
+            "value": "Float"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8159,
+            "section": "DRED",
+            "key": "SpeedType",
+            "value": "Float"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Water",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8163,
+          "section": "DRED",
+          "key": "MovementZone",
+          "value": "Water"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5493,
+            "section": "DRED",
+            "key": "MovementZone",
+            "value": "Water"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8160,
+            "section": "DRED",
+            "key": "MovementZone",
+            "value": "Water"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8164,
+          "section": "DRED",
+          "key": "ThreatPosed",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5494,
+            "section": "DRED",
+            "key": "ThreatPosed",
+            "value": "25"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8161,
+            "section": "DRED",
+            "key": "ThreatPosed",
+            "value": "25"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8165,
+          "section": "DRED",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5495,
+            "section": "DRED",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8162,
+            "section": "DRED",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8166,
+          "section": "DRED",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5496,
+            "section": "DRED",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8163,
+            "section": "DRED",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8167,
+          "section": "DRED",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5497,
+            "section": "DRED",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8164,
+            "section": "DRED",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8168,
+          "section": "DRED",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5498,
+            "section": "DRED",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8165,
+            "section": "DRED",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "GuardRange": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8169,
+          "section": "DRED",
+          "key": "GuardRange",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5499,
+            "section": "DRED",
+            "key": "GuardRange",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8166,
+            "section": "DRED",
+            "key": "GuardRange",
+            "value": "10"
+          }
+        ]
+      },
+      "Size": {
+        "value": "50",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8171,
+          "section": "DRED",
+          "key": "Size",
+          "value": "50"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5501,
+            "section": "DRED",
+            "key": "Size",
+            "value": "50"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8168,
+            "section": "DRED",
+            "key": "Size",
+            "value": "50"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8144,
+          "section": "DRED",
+          "key": "Soylent",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8141,
+            "section": "DRED",
+            "key": "Soylent",
+            "value": "2000"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "DREDICON",
+      "Voxel": true,
+      "Remapable": true,
+      "PrimaryFireFLH": "30,43,92"
+    },
+    "raw_values": {
+      "Cameo": "DREDICON",
+      "Voxel": "yes",
+      "Remapable": "yes",
+      "PrimaryFireFLH": "30,43,92"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "DREDICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 694,
+          "section": "DRED",
+          "key": "Cameo",
+          "value": "DREDICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 499,
+            "section": "DRED",
+            "key": "Cameo",
+            "value": "DREDICON"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 695,
+          "section": "DRED",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 500,
+            "section": "DRED",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 696,
+          "section": "DRED",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 501,
+            "section": "DRED",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "30,43,92",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 697,
+          "section": "DRED",
+          "key": "PrimaryFireFLH",
+          "value": "30,43,92"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 502,
+            "section": "DRED",
+            "key": "PrimaryFireFLH",
+            "value": "30,43,92"
+          }
+        ]
+      }
+    }
+  }
+}

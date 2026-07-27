@@ -1,0 +1,979 @@
+{
+  "id": "CATRAN03",
+  "category": "building",
+  "name_token": "Name:CATRAN03",
+  "art_id": "CATRAN03",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 1000,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {
+    "DieSound": [
+      "MonumentCrumble"
+    ]
+  },
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CATRAN03",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 9042,
+          "pack": "ra2md",
+          "relative_path": "isotemmd/cttran03.shp",
+          "folder": "isotemmd",
+          "filename": "cttran03.shp",
+          "stem": "cttran03",
+          "extension": ".shp",
+          "size": 82992,
+          "sha1": "34ac9c5ba9e8b72e78a2ebd91254e98c48fe75a8"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 8904,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/catran03.shp",
+          "folder": "isosnomd",
+          "filename": "catran03.shp",
+          "stem": "catran03",
+          "extension": ".shp",
+          "size": 82992,
+          "sha1": "6fdea775815917466f936d2d8e6512856fa5475f"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 8904,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/catran03.shp",
+          "folder": "isosnomd",
+          "filename": "catran03.shp",
+          "stem": "catran03",
+          "extension": ".shp",
+          "size": 82992,
+          "sha1": "6fdea775815917466f936d2d8e6512856fa5475f"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 7999,
+          "pack": "ra2md",
+          "relative_path": "isodesmd/cdtran03.shp",
+          "folder": "isodesmd",
+          "filename": "cdtran03.shp",
+          "stem": "cdtran03",
+          "extension": ".shp",
+          "size": 202056,
+          "sha1": "d78673f35e4ce47057d4da216b97802eb7b4d2f0"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8811,
+          "pack": "ra2md",
+          "relative_path": "isolunmd/cltran03.shp",
+          "folder": "isolunmd",
+          "filename": "cltran03.shp",
+          "stem": "cltran03",
+          "extension": ".shp",
+          "size": 202056,
+          "sha1": "d78673f35e4ce47057d4da216b97802eb7b4d2f0"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 10545,
+          "pack": "ra2md",
+          "relative_path": "isoubnmd/cntran03.shp",
+          "folder": "isoubnmd",
+          "filename": "cntran03.shp",
+          "stem": "cntran03",
+          "extension": ".shp",
+          "size": 82992,
+          "sha1": "6ce5a2a5f3d71560cbf17ac0a81031cc7f99d5df"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "4x4",
+    "height": 8,
+    "occupy_height": 5,
+    "damage_fire_offsets": [
+      [
+        -29.0,
+        40.0
+      ],
+      [
+        85.0,
+        48.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "TRANS FORTRESS",
+      "UIName": "Name:CATRAN03",
+      "TechLevel": -1,
+      "Strength": 1000,
+      "Insignificant": true,
+      "Nominal": true,
+      "Points": 5,
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DestroyAnim": "CATR03DM",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "CanBeOccupied": false,
+      "LeaveRubble": true,
+      "DieSound": "MonumentCrumble"
+    },
+    "raw_values": {
+      "Name": "TRANS FORTRESS",
+      "UIName": "Name:CATRAN03",
+      "TechLevel": "-1",
+      "Strength": "1000",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "Points": "5",
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DestroyAnim": "CATR03DM",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "CanBeOccupied": "no",
+      "LeaveRubble": "true",
+      "DieSound": "MonumentCrumble"
+    },
+    "provenance": {
+      "Name": {
+        "value": "TRANS FORTRESS",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15151,
+          "section": "CATRAN03",
+          "key": "Name",
+          "value": "TRANS FORTRESS"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15144,
+            "section": "CATRAN03",
+            "key": "Name",
+            "value": "TRANS FORTRESS"
+          }
+        ]
+      },
+      "UIName": {
+        "value": "Name:CATRAN03",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15152,
+          "section": "CATRAN03",
+          "key": "UIName",
+          "value": "Name:CATRAN03"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15145,
+            "section": "CATRAN03",
+            "key": "UIName",
+            "value": "Name:CATRAN03"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15153,
+          "section": "CATRAN03",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15146,
+            "section": "CATRAN03",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15154,
+          "section": "CATRAN03",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15147,
+            "section": "CATRAN03",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15155,
+          "section": "CATRAN03",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15148,
+            "section": "CATRAN03",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15156,
+          "section": "CATRAN03",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15149,
+            "section": "CATRAN03",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15158,
+          "section": "CATRAN03",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15151,
+            "section": "CATRAN03",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15159,
+          "section": "CATRAN03",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15152,
+            "section": "CATRAN03",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15160,
+          "section": "CATRAN03",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15153,
+            "section": "CATRAN03",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DestroyAnim": {
+        "value": "CATR03DM",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15161,
+          "section": "CATRAN03",
+          "key": "DestroyAnim",
+          "value": "CATR03DM"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15154,
+            "section": "CATRAN03",
+            "key": "DestroyAnim",
+            "value": "CATR03DM"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15162,
+          "section": "CATRAN03",
+          "key": "DebrisAnims",
+          "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15155,
+            "section": "CATRAN03",
+            "key": "DebrisAnims",
+            "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15163,
+          "section": "CATRAN03",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15156,
+            "section": "CATRAN03",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15164,
+          "section": "CATRAN03",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15157,
+            "section": "CATRAN03",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15167,
+          "section": "CATRAN03",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15160,
+            "section": "CATRAN03",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15168,
+          "section": "CATRAN03",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15161,
+            "section": "CATRAN03",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15169,
+          "section": "CATRAN03",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15162,
+            "section": "CATRAN03",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanBeOccupied": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15170,
+          "section": "CATRAN03",
+          "key": "CanBeOccupied",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15163,
+            "section": "CATRAN03",
+            "key": "CanBeOccupied",
+            "value": "no"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15171,
+          "section": "CATRAN03",
+          "key": "LeaveRubble",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15164,
+            "section": "CATRAN03",
+            "key": "LeaveRubble",
+            "value": "true"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "MonumentCrumble",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15172,
+          "section": "CATRAN03",
+          "key": "DieSound",
+          "value": "MonumentCrumble"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15165,
+            "section": "CATRAN03",
+            "key": "DieSound",
+            "value": "MonumentCrumble"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Normalized": true,
+      "Remapable": false,
+      "Foundation": "4x4",
+      "Height": 8,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "MuzzleFlash0": "82,-7",
+      "MuzzleFlash1": "-3,41",
+      "MuzzleFlash2": "-27,-34",
+      "MuzzleFlash3": "66,51",
+      "MuzzleFlash4": "29,8",
+      "MuzzleFlash5": "43,68",
+      "MuzzleFlash6": "99,21",
+      "MuzzleFlash7": "-41,6",
+      "MuzzleFlash8": "15,54",
+      "MuzzleFlash9": "5,-19",
+      "CanBeHidden": false,
+      "OccupyHeight": 5,
+      "DamageFireOffset0": "-29,40",
+      "DamageFireOffset1": "85,48",
+      "AddOccupy1": "3,-1",
+      "AddOccupy2": "2,-2",
+      "RemoveOccupy1": "-3,-3",
+      "RemoveOccupy2": "-3,-1"
+    },
+    "raw_values": {
+      "Normalized": "yes",
+      "Remapable": "no",
+      "Foundation": "4x4",
+      "Height": "8",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "MuzzleFlash0": "82,-7",
+      "MuzzleFlash1": "-3,41",
+      "MuzzleFlash2": "-27,-34",
+      "MuzzleFlash3": "66,51",
+      "MuzzleFlash4": "29,8",
+      "MuzzleFlash5": "43,68",
+      "MuzzleFlash6": "99,21",
+      "MuzzleFlash7": "-41,6",
+      "MuzzleFlash8": "15,54",
+      "MuzzleFlash9": "5,-19",
+      "CanBeHidden": "False",
+      "OccupyHeight": "5",
+      "DamageFireOffset0": "-29,40",
+      "DamageFireOffset1": "85,48",
+      "AddOccupy1": "3,-1",
+      "AddOccupy2": "2,-2",
+      "RemoveOccupy1": "-3,-3",
+      "RemoveOccupy2": "-3,-1"
+    },
+    "provenance": {
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9644,
+          "section": "CATRAN03",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9645,
+          "section": "CATRAN03",
+          "key": "Remapable",
+          "value": "no"
+        },
+        "history": []
+      },
+      "Foundation": {
+        "value": "4x4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9646,
+          "section": "CATRAN03",
+          "key": "Foundation",
+          "value": "4x4"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "8",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9647,
+          "section": "CATRAN03",
+          "key": "Height",
+          "value": "8"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9649,
+          "section": "CATRAN03",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9652,
+          "section": "CATRAN03",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": []
+      },
+      "MuzzleFlash0": {
+        "value": "82,-7",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9653,
+          "section": "CATRAN03",
+          "key": "MuzzleFlash0",
+          "value": "82,-7"
+        },
+        "history": []
+      },
+      "MuzzleFlash1": {
+        "value": "-3,41",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9654,
+          "section": "CATRAN03",
+          "key": "MuzzleFlash1",
+          "value": "-3,41"
+        },
+        "history": []
+      },
+      "MuzzleFlash2": {
+        "value": "-27,-34",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9655,
+          "section": "CATRAN03",
+          "key": "MuzzleFlash2",
+          "value": "-27,-34"
+        },
+        "history": []
+      },
+      "MuzzleFlash3": {
+        "value": "66,51",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9656,
+          "section": "CATRAN03",
+          "key": "MuzzleFlash3",
+          "value": "66,51"
+        },
+        "history": []
+      },
+      "MuzzleFlash4": {
+        "value": "29,8",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9657,
+          "section": "CATRAN03",
+          "key": "MuzzleFlash4",
+          "value": "29,8"
+        },
+        "history": []
+      },
+      "MuzzleFlash5": {
+        "value": "43,68",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9658,
+          "section": "CATRAN03",
+          "key": "MuzzleFlash5",
+          "value": "43,68"
+        },
+        "history": []
+      },
+      "MuzzleFlash6": {
+        "value": "99,21",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9659,
+          "section": "CATRAN03",
+          "key": "MuzzleFlash6",
+          "value": "99,21"
+        },
+        "history": []
+      },
+      "MuzzleFlash7": {
+        "value": "-41,6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9660,
+          "section": "CATRAN03",
+          "key": "MuzzleFlash7",
+          "value": "-41,6"
+        },
+        "history": []
+      },
+      "MuzzleFlash8": {
+        "value": "15,54",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9661,
+          "section": "CATRAN03",
+          "key": "MuzzleFlash8",
+          "value": "15,54"
+        },
+        "history": []
+      },
+      "MuzzleFlash9": {
+        "value": "5,-19",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9662,
+          "section": "CATRAN03",
+          "key": "MuzzleFlash9",
+          "value": "5,-19"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9663,
+          "section": "CATRAN03",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9664,
+          "section": "CATRAN03",
+          "key": "OccupyHeight",
+          "value": "5"
+        },
+        "history": []
+      },
+      "DamageFireOffset0": {
+        "value": "-29,40",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9665,
+          "section": "CATRAN03",
+          "key": "DamageFireOffset0",
+          "value": "-29,40"
+        },
+        "history": []
+      },
+      "DamageFireOffset1": {
+        "value": "85,48",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9666,
+          "section": "CATRAN03",
+          "key": "DamageFireOffset1",
+          "value": "85,48"
+        },
+        "history": []
+      },
+      "AddOccupy1": {
+        "value": "3,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9667,
+          "section": "CATRAN03",
+          "key": "AddOccupy1",
+          "value": "3,-1"
+        },
+        "history": []
+      },
+      "AddOccupy2": {
+        "value": "2,-2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9668,
+          "section": "CATRAN03",
+          "key": "AddOccupy2",
+          "value": "2,-2"
+        },
+        "history": []
+      },
+      "RemoveOccupy1": {
+        "value": "-3,-3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9669,
+          "section": "CATRAN03",
+          "key": "RemoveOccupy1",
+          "value": "-3,-3"
+        },
+        "history": []
+      },
+      "RemoveOccupy2": {
+        "value": "-3,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9670,
+          "section": "CATRAN03",
+          "key": "RemoveOccupy2",
+          "value": "-3,-1"
+        },
+        "history": []
+      }
+    }
+  }
+}

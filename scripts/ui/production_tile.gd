@@ -11,6 +11,10 @@ var data = {}
 var status_text = ""
 var progress = 0.0
 var queue_count = 0
+var ra2_base_texture: Texture2D
+var ra2_mask_texture: Texture2D
+var ra2_source_size: Vector2 = Vector2.ZERO
+var ra2_team_color: Color = Color.WHITE
 
 func setup(next_kind, next_id, next_data):
     kind = next_kind
@@ -24,7 +28,42 @@ func setup(next_kind, next_id, next_data):
     size_flags_horizontal = Control.SIZE_EXPAND_FILL
     mouse_entered.connect(func(): preview_requested.emit(kind, id_value, data))
     mouse_exited.connect(func(): preview_cleared.emit())
+    _load_ra2_icon()
     queue_redraw()
+
+func _load_ra2_icon() -> void:
+    ra2_base_texture = null
+    ra2_mask_texture = null
+    ra2_source_size = Vector2.ZERO
+    var ra2_id: String = str(data.get("ra2_id", "")).to_upper()
+    if ra2_id.is_empty():
+        return
+    ra2_team_color = Color.from_string(str(data.get("ra2_team_color", "FFFFFF")), Color.WHITE)
+    var bundle: Dictionary = RA2RuntimeDatabase.get_visual_bundle(ra2_id, "temperate")
+    if bundle.is_empty():
+        return
+    var base_frames: SpriteFrames = bundle.get("base_frames") as SpriteFrames
+    var remap_frames: SpriteFrames = bundle.get("remap_frames") as SpriteFrames
+    if base_frames == null:
+        return
+    var candidates: Array[String] = []
+    if kind == "structure":
+        candidates = ["Operational", "Ready", "__body_normal"]
+    else:
+        candidates = ["Stand_1", "Ready_1", "Guard_1", "HVA_1", "Walk_1", "Stand_0", "Ready_0"]
+    var animation_name: String = ""
+    for candidate: String in candidates:
+        if base_frames.has_animation(candidate) and base_frames.get_frame_count(candidate) > 0:
+            animation_name = candidate
+            break
+    if animation_name.is_empty():
+        return
+    ra2_base_texture = base_frames.get_frame_texture(animation_name, 0)
+    if remap_frames != null and remap_frames.has_animation(animation_name):
+        if remap_frames.get_frame_count(animation_name) > 0:
+            ra2_mask_texture = remap_frames.get_frame_texture(animation_name, 0)
+    if ra2_base_texture != null:
+        ra2_source_size = ra2_base_texture.get_size()
 
 func set_runtime_state(next_status, next_progress = 0.0, next_count = 0):
     status_text = str(next_status)
@@ -68,6 +107,12 @@ func _draw_texture_layer(texture, source_size, rect, scale_multiplier = 1.0, off
     return target_rect
 
 func _draw_icon(rect):
+    if ra2_base_texture != null and ra2_source_size.x > 0.0 and ra2_source_size.y > 0.0:
+        var ra2_rect: Rect2 = _fit_texture_rect(ra2_source_size, rect, 1.0)
+        draw_texture_rect(ra2_base_texture, ra2_rect, false, Color.WHITE)
+        if ra2_mask_texture != null:
+            draw_texture_rect(ra2_mask_texture, ra2_rect, false, ra2_team_color)
+        return
     # Composite icons mirror the actual runtime hierarchy. Tanks show chassis +
     # independent turret; defensive buildings show fixed base + rotating weapon.
     if kind == "unit" and id_value == "tank":

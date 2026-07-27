@@ -1,0 +1,65 @@
+Iron Meridian RTS v0.14.0 Validation Report
+===========================================
+
+Build scope
+-----------
+- Base: v0.13.2 resource browser
+- Target: RA2/YR runtime vertical slice in the existing skirmish game
+- Factions mapped: 3
+- Generic unit slots mapped: 15
+- Generic building slots mapped: 24
+- Unique RA2/YR entity IDs mapped: 37
+
+Preview/database validation
+---------------------------
+- Preview catalog entries: 177
+- Animation definitions: 1178
+- Frame references: 16998
+- Infantry previews: 31
+- Vehicle previews: 78
+- Aircraft previews: 11
+- Building previews: 57
+- DLPH and SQD east/west direction regression: passed
+- YTNK Stand / Fire separation regression: passed
+- Missing preview paths in runtime profile: 0
+- Runtime mapping warnings: 0
+- Runtime mapping errors: 0
+
+Project validation
+------------------
+- GDScript structural validation: 44 files passed
+- GDScript lines checked: 12158
+- Prefab validation: 13 entity scenes passed
+- SpriteFrames validation: 8 resources passed
+- Core JSON datasets: 5 passed
+- RA2/YR runtime profile JSON: passed
+- Python pipeline compile: passed
+- Preview regression validation: passed
+- Resource browser validation: passed
+
+Runtime integration checks
+--------------------------
+- RA2RuntimeDatabase autoload configured
+- SHP/VXL preview PNG loading is demand-driven
+- Remap mask overlay is enabled
+- Unit state mapping: stand, idle, move, attack, harvest, death
+- Building state mapping: construction, normal, damaged, destroyed,
+  production, special, repair, powered_off
+- Infantry death and building buildup runtime animations are one-shot
+- Entity selection/move/attack/death voice hooks are connected
+- Weapon Report audio hooks are connected
+- Production tile and selected portrait use RA2/YR runtime art
+- CSF localized names are used in browser and gameplay HUD
+
+Limitations
+-----------
+- No Godot 4.7.1 executable is installed in this build container, so this
+  report does not claim an editor F5 or headless engine parse/run test.
+- VXL movement usually has no frame animation in the source format; runtime
+  movement currently changes direction while using the rendered Stand frame.
+- VXL vehicle death currently uses the existing explosion/fade fallback.
+- Independent runtime turret rotation is not yet separated from the baked
+  VXL composite preview for every vehicle.
+- Current gameplay remains the existing Iron Meridian ruleset with RA2/YR
+  visuals/audio mapped onto its playable slots. Full RulesMD mechanics are
+  not claimed in this release.

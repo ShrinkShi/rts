@@ -1,0 +1,2675 @@
+{
+  "id": "CATIME01",
+  "category": "building",
+  "name_token": "Name:CATIME02",
+  "art_id": "CATIME01",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 1000,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CATIME01",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 8072,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgtime01.shp",
+          "folder": "isogenmd",
+          "filename": "cgtime01.shp",
+          "stem": "cgtime01",
+          "extension": ".shp",
+          "size": 35032,
+          "sha1": "fa4f1c4bc9d28e6ebd3cc9991389a939074d7ff2"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 8898,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/catime01.shp",
+          "folder": "isosnomd",
+          "filename": "catime01.shp",
+          "stem": "catime01",
+          "extension": ".shp",
+          "size": 35032,
+          "sha1": "fa4f1c4bc9d28e6ebd3cc9991389a939074d7ff2"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 8072,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgtime01.shp",
+          "folder": "isogenmd",
+          "filename": "cgtime01.shp",
+          "stem": "cgtime01",
+          "extension": ".shp",
+          "size": 35032,
+          "sha1": "fa4f1c4bc9d28e6ebd3cc9991389a939074d7ff2"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 8072,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgtime01.shp",
+          "folder": "isogenmd",
+          "filename": "cgtime01.shp",
+          "stem": "cgtime01",
+          "extension": ".shp",
+          "size": 35032,
+          "sha1": "fa4f1c4bc9d28e6ebd3cc9991389a939074d7ff2"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8072,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgtime01.shp",
+          "folder": "isogenmd",
+          "filename": "cgtime01.shp",
+          "stem": "cgtime01",
+          "extension": ".shp",
+          "size": 35032,
+          "sha1": "fa4f1c4bc9d28e6ebd3cc9991389a939074d7ff2"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 8072,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgtime01.shp",
+          "folder": "isogenmd",
+          "filename": "cgtime01.shp",
+          "stem": "cgtime01",
+          "extension": ".shp",
+          "size": 35032,
+          "sha1": "fa4f1c4bc9d28e6ebd3cc9991389a939074d7ff2"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "CATIME_A",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8074,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgtime_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgtime_a.shp",
+            "stem": "cgtime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 1,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16359,
+                "section": "CATIME_A",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16360,
+                "section": "CATIME_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16361,
+                "section": "CATIME_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16362,
+                "section": "CATIME_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16363,
+                "section": "CATIME_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16364,
+                "section": "CATIME_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16365,
+                "section": "CATIME_A",
+                "key": "LoopEnd",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16366,
+                "section": "CATIME_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16367,
+                "section": "CATIME_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16368,
+                "section": "CATIME_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "snow": {
+          "art_id": "CATIME_A",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8900,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/catime_a.shp",
+            "folder": "isosnomd",
+            "filename": "catime_a.shp",
+            "stem": "catime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 1,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16359,
+                "section": "CATIME_A",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16360,
+                "section": "CATIME_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16361,
+                "section": "CATIME_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16362,
+                "section": "CATIME_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16363,
+                "section": "CATIME_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16364,
+                "section": "CATIME_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16365,
+                "section": "CATIME_A",
+                "key": "LoopEnd",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16366,
+                "section": "CATIME_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16367,
+                "section": "CATIME_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16368,
+                "section": "CATIME_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "urban": {
+          "art_id": "CATIME_A",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8074,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgtime_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgtime_a.shp",
+            "stem": "cgtime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 1,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16359,
+                "section": "CATIME_A",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16360,
+                "section": "CATIME_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16361,
+                "section": "CATIME_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16362,
+                "section": "CATIME_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16363,
+                "section": "CATIME_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16364,
+                "section": "CATIME_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16365,
+                "section": "CATIME_A",
+                "key": "LoopEnd",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16366,
+                "section": "CATIME_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16367,
+                "section": "CATIME_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16368,
+                "section": "CATIME_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "desert": {
+          "art_id": "CATIME_A",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8074,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgtime_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgtime_a.shp",
+            "stem": "cgtime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 1,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16359,
+                "section": "CATIME_A",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16360,
+                "section": "CATIME_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16361,
+                "section": "CATIME_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16362,
+                "section": "CATIME_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16363,
+                "section": "CATIME_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16364,
+                "section": "CATIME_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16365,
+                "section": "CATIME_A",
+                "key": "LoopEnd",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16366,
+                "section": "CATIME_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16367,
+                "section": "CATIME_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16368,
+                "section": "CATIME_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "lunar": {
+          "art_id": "CATIME_A",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8074,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgtime_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgtime_a.shp",
+            "stem": "cgtime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 1,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16359,
+                "section": "CATIME_A",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16360,
+                "section": "CATIME_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16361,
+                "section": "CATIME_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16362,
+                "section": "CATIME_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16363,
+                "section": "CATIME_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16364,
+                "section": "CATIME_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16365,
+                "section": "CATIME_A",
+                "key": "LoopEnd",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16366,
+                "section": "CATIME_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16367,
+                "section": "CATIME_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16368,
+                "section": "CATIME_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "newurban": {
+          "art_id": "CATIME_A",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8074,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgtime_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgtime_a.shp",
+            "stem": "cgtime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 1,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16359,
+                "section": "CATIME_A",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16360,
+                "section": "CATIME_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16361,
+                "section": "CATIME_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16362,
+                "section": "CATIME_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16363,
+                "section": "CATIME_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16364,
+                "section": "CATIME_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16365,
+                "section": "CATIME_A",
+                "key": "LoopEnd",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16366,
+                "section": "CATIME_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16367,
+                "section": "CATIME_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16368,
+                "section": "CATIME_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "CATIME_AD",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8074,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgtime_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgtime_a.shp",
+            "stem": "cgtime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 1,
+          "LoopStart": 1,
+          "LoopEnd": 2,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16372,
+                "section": "CATIME_AD",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16373,
+                "section": "CATIME_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16374,
+                "section": "CATIME_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16375,
+                "section": "CATIME_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16376,
+                "section": "CATIME_AD",
+                "key": "Start",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16377,
+                "section": "CATIME_AD",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16378,
+                "section": "CATIME_AD",
+                "key": "LoopEnd",
+                "value": "2"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16379,
+                "section": "CATIME_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16380,
+                "section": "CATIME_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16381,
+                "section": "CATIME_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "snow": {
+          "art_id": "CATIME_AD",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8900,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/catime_a.shp",
+            "folder": "isosnomd",
+            "filename": "catime_a.shp",
+            "stem": "catime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 1,
+          "LoopStart": 1,
+          "LoopEnd": 2,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16372,
+                "section": "CATIME_AD",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16373,
+                "section": "CATIME_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16374,
+                "section": "CATIME_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16375,
+                "section": "CATIME_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16376,
+                "section": "CATIME_AD",
+                "key": "Start",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16377,
+                "section": "CATIME_AD",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16378,
+                "section": "CATIME_AD",
+                "key": "LoopEnd",
+                "value": "2"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16379,
+                "section": "CATIME_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16380,
+                "section": "CATIME_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16381,
+                "section": "CATIME_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "urban": {
+          "art_id": "CATIME_AD",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8074,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgtime_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgtime_a.shp",
+            "stem": "cgtime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 1,
+          "LoopStart": 1,
+          "LoopEnd": 2,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16372,
+                "section": "CATIME_AD",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16373,
+                "section": "CATIME_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16374,
+                "section": "CATIME_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16375,
+                "section": "CATIME_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16376,
+                "section": "CATIME_AD",
+                "key": "Start",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16377,
+                "section": "CATIME_AD",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16378,
+                "section": "CATIME_AD",
+                "key": "LoopEnd",
+                "value": "2"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16379,
+                "section": "CATIME_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16380,
+                "section": "CATIME_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16381,
+                "section": "CATIME_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "desert": {
+          "art_id": "CATIME_AD",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8074,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgtime_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgtime_a.shp",
+            "stem": "cgtime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 1,
+          "LoopStart": 1,
+          "LoopEnd": 2,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16372,
+                "section": "CATIME_AD",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16373,
+                "section": "CATIME_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16374,
+                "section": "CATIME_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16375,
+                "section": "CATIME_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16376,
+                "section": "CATIME_AD",
+                "key": "Start",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16377,
+                "section": "CATIME_AD",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16378,
+                "section": "CATIME_AD",
+                "key": "LoopEnd",
+                "value": "2"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16379,
+                "section": "CATIME_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16380,
+                "section": "CATIME_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16381,
+                "section": "CATIME_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "lunar": {
+          "art_id": "CATIME_AD",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8074,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgtime_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgtime_a.shp",
+            "stem": "cgtime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 1,
+          "LoopStart": 1,
+          "LoopEnd": 2,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16372,
+                "section": "CATIME_AD",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16373,
+                "section": "CATIME_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16374,
+                "section": "CATIME_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16375,
+                "section": "CATIME_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16376,
+                "section": "CATIME_AD",
+                "key": "Start",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16377,
+                "section": "CATIME_AD",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16378,
+                "section": "CATIME_AD",
+                "key": "LoopEnd",
+                "value": "2"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16379,
+                "section": "CATIME_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16380,
+                "section": "CATIME_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16381,
+                "section": "CATIME_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "newurban": {
+          "art_id": "CATIME_AD",
+          "image": "CATIME_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8074,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgtime_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgtime_a.shp",
+            "stem": "cgtime_a",
+            "extension": ".shp",
+            "size": 23384,
+            "sha1": "f7230924a159e430f61ee52f48d1e7b56b902766"
+          },
+          "Start": 1,
+          "LoopStart": 1,
+          "LoopEnd": 2,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "CATIME_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16372,
+                "section": "CATIME_AD",
+                "key": "Image",
+                "value": "CATIME_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16373,
+                "section": "CATIME_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16374,
+                "section": "CATIME_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16375,
+                "section": "CATIME_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Start": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16376,
+                "section": "CATIME_AD",
+                "key": "Start",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16377,
+                "section": "CATIME_AD",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16378,
+                "section": "CATIME_AD",
+                "key": "LoopEnd",
+                "value": "2"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16379,
+                "section": "CATIME_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16380,
+                "section": "CATIME_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": []
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16381,
+                "section": "CATIME_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        }
+      }
+    },
+    "foundation": "4x3",
+    "height": 6,
+    "occupy_height": 4,
+    "damage_fire_offsets": [
+      [
+        -11.0,
+        10.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CATIME02",
+      "Name": "Time Machine",
+      "TechLevel": -1,
+      "Strength": 1000,
+      "Insignificant": true,
+      "Nominal": true,
+      "Points": 5,
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 0,
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": true,
+      "LeaveRubble": true
+    },
+    "raw_values": {
+      "UIName": "Name:CATIME02",
+      "Name": "Time Machine",
+      "TechLevel": "-1",
+      "Strength": "1000",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "Points": "5",
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "0",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "yes",
+      "LeaveRubble": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CATIME02",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15001,
+          "section": "CATIME01",
+          "key": "UIName",
+          "value": "Name:CATIME02"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14994,
+            "section": "CATIME01",
+            "key": "UIName",
+            "value": "Name:CATIME02"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Time Machine",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15002,
+          "section": "CATIME01",
+          "key": "Name",
+          "value": "Time Machine"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14995,
+            "section": "CATIME01",
+            "key": "Name",
+            "value": "Time Machine"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15004,
+          "section": "CATIME01",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14997,
+            "section": "CATIME01",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15005,
+          "section": "CATIME01",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14998,
+            "section": "CATIME01",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15006,
+          "section": "CATIME01",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14999,
+            "section": "CATIME01",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15007,
+          "section": "CATIME01",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15000,
+            "section": "CATIME01",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15009,
+          "section": "CATIME01",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15002,
+            "section": "CATIME01",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15010,
+          "section": "CATIME01",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15003,
+            "section": "CATIME01",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15011,
+          "section": "CATIME01",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15004,
+            "section": "CATIME01",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15012,
+          "section": "CATIME01",
+          "key": "MaxDebris",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15005,
+            "section": "CATIME01",
+            "key": "MaxDebris",
+            "value": "0"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15015,
+          "section": "CATIME01",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15008,
+            "section": "CATIME01",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15016,
+          "section": "CATIME01",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15009,
+            "section": "CATIME01",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15017,
+          "section": "CATIME01",
+          "key": "ClickRepairable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15010,
+            "section": "CATIME01",
+            "key": "ClickRepairable",
+            "value": "yes"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15022,
+          "section": "CATIME01",
+          "key": "LeaveRubble",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15015,
+            "section": "CATIME01",
+            "key": "LeaveRubble",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "4x3",
+      "NewTheater": true,
+      "ActiveAnim": "CATIME_A",
+      "ActiveAnimDamaged": "CATIME_AD",
+      "ActiveAnimZAdjust": 0,
+      "ActiveAnimYSort": 362,
+      "DemandLoad": true,
+      "Height": 6,
+      "MuzzleFlash0": "22,-25",
+      "MuzzleFlash1": "5,-28",
+      "MuzzleFlash2": "42,47",
+      "MuzzleFlash3": "29,17",
+      "MuzzleFlash4": "-12,-25",
+      "MuzzleFlash5": "-14,-33",
+      "MuzzleFlash6": "30,-29",
+      "MuzzleFlash7": "-10,-23",
+      "MuzzleFlash8": "32,5",
+      "MuzzleFlash9": "46,37",
+      "DamageFireOffset0": "-11,10",
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 4,
+      "RemoveOccupy1": "-2,0",
+      "RemoveOccupy2": "-2,-1",
+      "RemoveOccupy3": "-2,1"
+    },
+    "raw_values": {
+      "Foundation": "4x3",
+      "NewTheater": "yes",
+      "ActiveAnim": "CATIME_A",
+      "ActiveAnimDamaged": "CATIME_AD",
+      "ActiveAnimZAdjust": "0",
+      "ActiveAnimYSort": "362",
+      "DemandLoad": "true",
+      "Height": "6",
+      "MuzzleFlash0": "22,-25",
+      "MuzzleFlash1": "5,-28",
+      "MuzzleFlash2": "42,47",
+      "MuzzleFlash3": "29,17",
+      "MuzzleFlash4": "-12,-25",
+      "MuzzleFlash5": "-14,-33",
+      "MuzzleFlash6": "30,-29",
+      "MuzzleFlash7": "-10,-23",
+      "MuzzleFlash8": "32,5",
+      "MuzzleFlash9": "46,37",
+      "DamageFireOffset0": "-11,10",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "4",
+      "RemoveOccupy1": "-2,0",
+      "RemoveOccupy2": "-2,-1",
+      "RemoveOccupy3": "-2,1"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "4x3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12292,
+          "section": "CATIME01",
+          "key": "Foundation",
+          "value": "4x3"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12293,
+          "section": "CATIME01",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "ActiveAnim": {
+        "value": "CATIME_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12294,
+          "section": "CATIME01",
+          "key": "ActiveAnim",
+          "value": "CATIME_A"
+        },
+        "history": []
+      },
+      "ActiveAnimDamaged": {
+        "value": "CATIME_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12295,
+          "section": "CATIME01",
+          "key": "ActiveAnimDamaged",
+          "value": "CATIME_AD"
+        },
+        "history": []
+      },
+      "ActiveAnimZAdjust": {
+        "value": "0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12296,
+          "section": "CATIME01",
+          "key": "ActiveAnimZAdjust",
+          "value": "0"
+        },
+        "history": []
+      },
+      "ActiveAnimYSort": {
+        "value": "362",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12297,
+          "section": "CATIME01",
+          "key": "ActiveAnimYSort",
+          "value": "362"
+        },
+        "history": []
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12298,
+          "section": "CATIME01",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12299,
+          "section": "CATIME01",
+          "key": "Height",
+          "value": "6"
+        },
+        "history": []
+      },
+      "MuzzleFlash0": {
+        "value": "22,-25",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12301,
+          "section": "CATIME01",
+          "key": "MuzzleFlash0",
+          "value": "22,-25"
+        },
+        "history": []
+      },
+      "MuzzleFlash1": {
+        "value": "5,-28",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12302,
+          "section": "CATIME01",
+          "key": "MuzzleFlash1",
+          "value": "5,-28"
+        },
+        "history": []
+      },
+      "MuzzleFlash2": {
+        "value": "42,47",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12303,
+          "section": "CATIME01",
+          "key": "MuzzleFlash2",
+          "value": "42,47"
+        },
+        "history": []
+      },
+      "MuzzleFlash3": {
+        "value": "29,17",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12304,
+          "section": "CATIME01",
+          "key": "MuzzleFlash3",
+          "value": "29,17"
+        },
+        "history": []
+      },
+      "MuzzleFlash4": {
+        "value": "-12,-25",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12305,
+          "section": "CATIME01",
+          "key": "MuzzleFlash4",
+          "value": "-12,-25"
+        },
+        "history": []
+      },
+      "MuzzleFlash5": {
+        "value": "-14,-33",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12306,
+          "section": "CATIME01",
+          "key": "MuzzleFlash5",
+          "value": "-14,-33"
+        },
+        "history": []
+      },
+      "MuzzleFlash6": {
+        "value": "30,-29",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12307,
+          "section": "CATIME01",
+          "key": "MuzzleFlash6",
+          "value": "30,-29"
+        },
+        "history": []
+      },
+      "MuzzleFlash7": {
+        "value": "-10,-23",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12308,
+          "section": "CATIME01",
+          "key": "MuzzleFlash7",
+          "value": "-10,-23"
+        },
+        "history": []
+      },
+      "MuzzleFlash8": {
+        "value": "32,5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12309,
+          "section": "CATIME01",
+          "key": "MuzzleFlash8",
+          "value": "32,5"
+        },
+        "history": []
+      },
+      "MuzzleFlash9": {
+        "value": "46,37",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12310,
+          "section": "CATIME01",
+          "key": "MuzzleFlash9",
+          "value": "46,37"
+        },
+        "history": []
+      },
+      "DamageFireOffset0": {
+        "value": "-11,10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12311,
+          "section": "CATIME01",
+          "key": "DamageFireOffset0",
+          "value": "-11,10"
+        },
+        "history": []
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12312,
+          "section": "CATIME01",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12313,
+          "section": "CATIME01",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12314,
+          "section": "CATIME01",
+          "key": "OccupyHeight",
+          "value": "4"
+        },
+        "history": []
+      },
+      "RemoveOccupy1": {
+        "value": "-2,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12315,
+          "section": "CATIME01",
+          "key": "RemoveOccupy1",
+          "value": "-2,0"
+        },
+        "history": []
+      },
+      "RemoveOccupy2": {
+        "value": "-2,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12316,
+          "section": "CATIME01",
+          "key": "RemoveOccupy2",
+          "value": "-2,-1"
+        },
+        "history": []
+      },
+      "RemoveOccupy3": {
+        "value": "-2,1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12317,
+          "section": "CATIME01",
+          "key": "RemoveOccupy3",
+          "value": "-2,1"
+        },
+        "history": []
+      }
+    }
+  }
+}

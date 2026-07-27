@@ -1,0 +1,2191 @@
+{
+  "id": "NAFLAK",
+  "category": "building",
+  "name_token": "Name:NAFLAK",
+  "art_id": "NAFLAK",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "BARRACKS",
+    "NACNST"
+  ],
+  "tech_level": 4,
+  "cost": 1000,
+  "strength": 900,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 5,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {
+    "Primary": {
+      "id": "FlakWeapon",
+      "projectile": "FlakProj",
+      "warhead": "FlakWH",
+      "report": [
+        "FlakCannonAttack"
+      ],
+      "values": {
+        "Damage": 40,
+        "ROF": 20,
+        "Range": 12,
+        "Projectile": "FlakProj",
+        "Speed": 100,
+        "Report": "FlakCannonAttack",
+        "Warhead": "FlakWH",
+        "Anim": "GUNFIRE"
+      },
+      "raw_values": {
+        "Damage": "40",
+        "ROF": "20",
+        "Range": "12",
+        "Projectile": "FlakProj",
+        "Speed": "100",
+        "Report": "FlakCannonAttack",
+        "Warhead": "FlakWH",
+        "Anim": "GUNFIRE"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "40",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24191,
+            "section": "FlakWeapon",
+            "key": "Damage",
+            "value": "40"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17384,
+              "section": "FlakWeapon",
+              "key": "Damage",
+              "value": "40"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24183,
+              "section": "FlakWeapon",
+              "key": "Damage",
+              "value": "40"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24192,
+            "section": "FlakWeapon",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17385,
+              "section": "FlakWeapon",
+              "key": "ROF",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24184,
+              "section": "FlakWeapon",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "12",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24193,
+            "section": "FlakWeapon",
+            "key": "Range",
+            "value": "12"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17386,
+              "section": "FlakWeapon",
+              "key": "Range",
+              "value": "12"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24185,
+              "section": "FlakWeapon",
+              "key": "Range",
+              "value": "12"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24194,
+            "section": "FlakWeapon",
+            "key": "Projectile",
+            "value": "FlakProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17387,
+              "section": "FlakWeapon",
+              "key": "Projectile",
+              "value": "FlakProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24186,
+              "section": "FlakWeapon",
+              "key": "Projectile",
+              "value": "FlakProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24195,
+            "section": "FlakWeapon",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17388,
+              "section": "FlakWeapon",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24187,
+              "section": "FlakWeapon",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakCannonAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24196,
+            "section": "FlakWeapon",
+            "key": "Report",
+            "value": "FlakCannonAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17389,
+              "section": "FlakWeapon",
+              "key": "Report",
+              "value": "FlakCannonAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24188,
+              "section": "FlakWeapon",
+              "key": "Report",
+              "value": "FlakCannonAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24197,
+            "section": "FlakWeapon",
+            "key": "Warhead",
+            "value": "FlakWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17390,
+              "section": "FlakWeapon",
+              "key": "Warhead",
+              "value": "FlakWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24189,
+              "section": "FlakWeapon",
+              "key": "Warhead",
+              "value": "FlakWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24198,
+            "section": "FlakWeapon",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17391,
+              "section": "FlakWeapon",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24190,
+              "section": "FlakWeapon",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "WorkingSound": [
+      "PowerOn"
+    ],
+    "NotWorkingSound": [
+      "PowerOff"
+    ]
+  },
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "NAFLAK",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 419,
+          "pack": "ra2",
+          "relative_path": "generic/ngflak.shp",
+          "folder": "generic",
+          "filename": "ngflak.shp",
+          "stem": "ngflak",
+          "extension": ".shp",
+          "size": 2736,
+          "sha1": "adf5068685f3a3ec13db3c5afd780a23d8fd2274"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 5039,
+          "pack": "ra2",
+          "relative_path": "snow/naflak.shp",
+          "folder": "snow",
+          "filename": "naflak.shp",
+          "stem": "naflak",
+          "extension": ".shp",
+          "size": 2736,
+          "sha1": "43ed5bd7bb61ce420f5ad316f43a502b9c786b5b"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 419,
+          "pack": "ra2",
+          "relative_path": "generic/ngflak.shp",
+          "folder": "generic",
+          "filename": "ngflak.shp",
+          "stem": "ngflak",
+          "extension": ".shp",
+          "size": 2736,
+          "sha1": "adf5068685f3a3ec13db3c5afd780a23d8fd2274"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 419,
+          "pack": "ra2",
+          "relative_path": "generic/ngflak.shp",
+          "folder": "generic",
+          "filename": "ngflak.shp",
+          "stem": "ngflak",
+          "extension": ".shp",
+          "size": 2736,
+          "sha1": "adf5068685f3a3ec13db3c5afd780a23d8fd2274"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 419,
+          "pack": "ra2",
+          "relative_path": "generic/ngflak.shp",
+          "folder": "generic",
+          "filename": "ngflak.shp",
+          "stem": "ngflak",
+          "extension": ".shp",
+          "size": 2736,
+          "sha1": "adf5068685f3a3ec13db3c5afd780a23d8fd2274"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 419,
+          "pack": "ra2",
+          "relative_path": "generic/ngflak.shp",
+          "folder": "generic",
+          "filename": "ngflak.shp",
+          "stem": "ngflak",
+          "extension": ".shp",
+          "size": 2736,
+          "sha1": "adf5068685f3a3ec13db3c5afd780a23d8fd2274"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "Buildup": {
+        "temperate": {
+          "art_id": "NAFLAKMK",
+          "image": "NAFLAKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2086,
+            "pack": "ra2",
+            "relative_path": "isotemp/ntflakmk.shp",
+            "folder": "isotemp",
+            "filename": "ntflakmk.shp",
+            "stem": "ntflakmk",
+            "extension": ".shp",
+            "size": 14208,
+            "sha1": "ebc5cbfb6569df1fcec59137c232ff4c6707da3c"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "NAFLAKMK",
+          "image": "NAFLAKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1054,
+            "pack": "ra2",
+            "relative_path": "isosnow/naflakmk.shp",
+            "folder": "isosnow",
+            "filename": "naflakmk.shp",
+            "stem": "naflakmk",
+            "extension": ".shp",
+            "size": 14208,
+            "sha1": "09189e5cb843530af8b6314503a63a71287f1cc1"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "NAFLAKMK",
+          "image": "NAFLAKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 3214,
+            "pack": "ra2",
+            "relative_path": "isourb/nuflakmk.shp",
+            "folder": "isourb",
+            "filename": "nuflakmk.shp",
+            "stem": "nuflakmk",
+            "extension": ".shp",
+            "size": 14208,
+            "sha1": "ebc5cbfb6569df1fcec59137c232ff4c6707da3c"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "NAFLAKMK",
+          "image": "NAFLAKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 7474,
+            "pack": "ra2md",
+            "relative_path": "isodes/ndflakmk.shp",
+            "folder": "isodes",
+            "filename": "ndflakmk.shp",
+            "stem": "ndflakmk",
+            "extension": ".shp",
+            "size": 14208,
+            "sha1": "ebc5cbfb6569df1fcec59137c232ff4c6707da3c"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "NAFLAKMK",
+          "image": "NAFLAKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8571,
+            "pack": "ra2md",
+            "relative_path": "isolun/nlflakmk.shp",
+            "folder": "isolun",
+            "filename": "nlflakmk.shp",
+            "stem": "nlflakmk",
+            "extension": ".shp",
+            "size": 14208,
+            "sha1": "ebc5cbfb6569df1fcec59137c232ff4c6707da3c"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "NAFLAKMK",
+          "image": "NAFLAKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9854,
+            "pack": "ra2md",
+            "relative_path": "isoubn/nnflakmk.shp",
+            "folder": "isoubn",
+            "filename": "nnflakmk.shp",
+            "stem": "nnflakmk",
+            "extension": ".shp",
+            "size": 14208,
+            "sha1": "ebc5cbfb6569df1fcec59137c232ff4c6707da3c"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        }
+      }
+    },
+    "foundation": "1x1",
+    "height": 4,
+    "occupy_height": 2,
+    "damage_fire_offsets": [
+      [
+        -5.0,
+        13.0
+      ]
+    ],
+    "zshape_point_move": null,
+    "building_turret": {
+      "id": "FLAKTUR",
+      "is_voxel": true,
+      "x": 0,
+      "y": 2,
+      "z_adjust": -40,
+      "model": {
+        "asset_id": 4053,
+        "pack": "ra2",
+        "relative_path": "local/flaktur.vxl",
+        "folder": "local",
+        "filename": "flaktur.vxl",
+        "stem": "flaktur",
+        "extension": ".vxl",
+        "size": 14781,
+        "sha1": "05db74881ad7d62924ff67d0b689d3549b903ea9"
+      },
+      "hva": {
+        "asset_id": 4052,
+        "pack": "ra2",
+        "relative_path": "local/flaktur.hva",
+        "folder": "local",
+        "filename": "flaktur.hva",
+        "stem": "flaktur",
+        "extension": ".hva",
+        "size": 88,
+        "sha1": "b00372008c7de33413bd7bfe600bd3510f5339b3"
+      },
+      "barrel": null,
+      "barrel_hva": null
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:NAFLAK",
+      "Name": "Soviet Flak Cannon",
+      "BuildCat": "Combat",
+      "Strength": 900,
+      "Armor": "steel",
+      "TechLevel": 4,
+      "Prerequisite": "BARRACKS,NACNST",
+      "Adjacent": 2,
+      "Sight": 5,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": 1,
+      "Cost": 1000,
+      "BaseNormal": false,
+      "Points": 30,
+      "Power": -50,
+      "Crewed": false,
+      "Primary": "FlakWeapon",
+      "LandTargeting": 1,
+      "NavalTargeting": 6,
+      "Capturable": false,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS4LG,DBRIS4SM,DBRIS6LG",
+      "MaxDebris": 3,
+      "MinDebris": 2,
+      "ThreatPosed": 0,
+      "IsBaseDefense": true,
+      "Powered": true,
+      "ROT": 8,
+      "Turret": true,
+      "TurretAnim": "FLAKTUR",
+      "TurretAnimIsVoxel": true,
+      "TurretAnimX": 0,
+      "TurretAnimY": 2,
+      "TurretAnimZAdjust": -40,
+      "HasStupidGuardMode": false,
+      "WorkingSound": "PowerOn",
+      "NotWorkingSound": "PowerOff",
+      "ImmuneToPsionics": false,
+      "Drainable": true,
+      "AntiInfantryValue": 0,
+      "AntiArmorValue": 0,
+      "AntiAirValue": 25
+    },
+    "raw_values": {
+      "UIName": "Name:NAFLAK",
+      "Name": "Soviet Flak Cannon",
+      "BuildCat": "Combat",
+      "Strength": "900",
+      "Armor": "steel",
+      "TechLevel": "4",
+      "Prerequisite": "BARRACKS,NACNST",
+      "Adjacent": "2",
+      "Sight": "5",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": "1",
+      "Cost": "1000",
+      "BaseNormal": "no",
+      "Points": "30",
+      "Power": "-50",
+      "Crewed": "no",
+      "Primary": "FlakWeapon",
+      "LandTargeting": "1",
+      "NavalTargeting": "6",
+      "Capturable": "false",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS4LG,DBRIS4SM,DBRIS6LG",
+      "MaxDebris": "3",
+      "MinDebris": "2",
+      "ThreatPosed": "0",
+      "IsBaseDefense": "yes",
+      "Powered": "yes",
+      "ROT": "8",
+      "Turret": "yes",
+      "TurretAnim": "FLAKTUR",
+      "TurretAnimIsVoxel": "true",
+      "TurretAnimX": "0",
+      "TurretAnimY": "2",
+      "TurretAnimZAdjust": "-40",
+      "HasStupidGuardMode": "false",
+      "WorkingSound": "PowerOn",
+      "NotWorkingSound": "PowerOff",
+      "ImmuneToPsionics": "no",
+      "Drainable": "yes",
+      "AntiInfantryValue": "0",
+      "AntiArmorValue": "0",
+      "AntiAirValue": "25"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:NAFLAK",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12887,
+          "section": "NAFLAK",
+          "key": "UIName",
+          "value": "Name:NAFLAK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16020,
+            "section": "NAFLAK",
+            "key": "UIName",
+            "value": "Name:NAFLAK"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12881,
+            "section": "NAFLAK",
+            "key": "UIName",
+            "value": "Name:NAFLAK"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Soviet Flak Cannon",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12888,
+          "section": "NAFLAK",
+          "key": "Name",
+          "value": "Soviet Flak Cannon"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16021,
+            "section": "NAFLAK",
+            "key": "Name",
+            "value": "Flak Cannon"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12882,
+            "section": "NAFLAK",
+            "key": "Name",
+            "value": "Soviet Flak Cannon"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Combat",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12889,
+          "section": "NAFLAK",
+          "key": "BuildCat",
+          "value": "Combat"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16022,
+            "section": "NAFLAK",
+            "key": "BuildCat",
+            "value": "Combat"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12883,
+            "section": "NAFLAK",
+            "key": "BuildCat",
+            "value": "Combat"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "900",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12890,
+          "section": "NAFLAK",
+          "key": "Strength",
+          "value": "900"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16023,
+            "section": "NAFLAK",
+            "key": "Strength",
+            "value": "900"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12884,
+            "section": "NAFLAK",
+            "key": "Strength",
+            "value": "900"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12891,
+          "section": "NAFLAK",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16024,
+            "section": "NAFLAK",
+            "key": "Armor",
+            "value": "steel"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12885,
+            "section": "NAFLAK",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12892,
+          "section": "NAFLAK",
+          "key": "TechLevel",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16025,
+            "section": "NAFLAK",
+            "key": "TechLevel",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12886,
+            "section": "NAFLAK",
+            "key": "TechLevel",
+            "value": "4"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "BARRACKS,NACNST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12893,
+          "section": "NAFLAK",
+          "key": "Prerequisite",
+          "value": "BARRACKS,NACNST"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16026,
+            "section": "NAFLAK",
+            "key": "Prerequisite",
+            "value": "BARRACKS,NACNST"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12887,
+            "section": "NAFLAK",
+            "key": "Prerequisite",
+            "value": "BARRACKS,NACNST"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12894,
+          "section": "NAFLAK",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16027,
+            "section": "NAFLAK",
+            "key": "Adjacent",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12888,
+            "section": "NAFLAK",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12895,
+          "section": "NAFLAK",
+          "key": "Sight",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16028,
+            "section": "NAFLAK",
+            "key": "Sight",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12889,
+            "section": "NAFLAK",
+            "key": "Sight",
+            "value": "5"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12896,
+          "section": "NAFLAK",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16029,
+            "section": "NAFLAK",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12890,
+            "section": "NAFLAK",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AIBasePlanningSide": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12897,
+          "section": "NAFLAK",
+          "key": "AIBasePlanningSide",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16030,
+            "section": "NAFLAK",
+            "key": "AIBasePlanningSide",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12891,
+            "section": "NAFLAK",
+            "key": "AIBasePlanningSide",
+            "value": "1"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12898,
+          "section": "NAFLAK",
+          "key": "Cost",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16031,
+            "section": "NAFLAK",
+            "key": "Cost",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12892,
+            "section": "NAFLAK",
+            "key": "Cost",
+            "value": "1000"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12899,
+          "section": "NAFLAK",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16032,
+            "section": "NAFLAK",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12893,
+            "section": "NAFLAK",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12900,
+          "section": "NAFLAK",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16033,
+            "section": "NAFLAK",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12894,
+            "section": "NAFLAK",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "Power": {
+        "value": "-50",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12901,
+          "section": "NAFLAK",
+          "key": "Power",
+          "value": "-50"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16034,
+            "section": "NAFLAK",
+            "key": "Power",
+            "value": "-50"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12895,
+            "section": "NAFLAK",
+            "key": "Power",
+            "value": "-50"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12902,
+          "section": "NAFLAK",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16035,
+            "section": "NAFLAK",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12896,
+            "section": "NAFLAK",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "FlakWeapon",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12903,
+          "section": "NAFLAK",
+          "key": "Primary",
+          "value": "FlakWeapon"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16036,
+            "section": "NAFLAK",
+            "key": "Primary",
+            "value": "FlakWeapon"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12897,
+            "section": "NAFLAK",
+            "key": "Primary",
+            "value": "FlakWeapon"
+          }
+        ]
+      },
+      "LandTargeting": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12904,
+          "section": "NAFLAK",
+          "key": "LandTargeting",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16037,
+            "section": "NAFLAK",
+            "key": "LandTargeting",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12898,
+            "section": "NAFLAK",
+            "key": "LandTargeting",
+            "value": "1"
+          }
+        ]
+      },
+      "NavalTargeting": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12905,
+          "section": "NAFLAK",
+          "key": "NavalTargeting",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16038,
+            "section": "NAFLAK",
+            "key": "NavalTargeting",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12899,
+            "section": "NAFLAK",
+            "key": "NavalTargeting",
+            "value": "6"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12906,
+          "section": "NAFLAK",
+          "key": "Capturable",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16039,
+            "section": "NAFLAK",
+            "key": "Capturable",
+            "value": "false"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12900,
+            "section": "NAFLAK",
+            "key": "Capturable",
+            "value": "false"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12907,
+          "section": "NAFLAK",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16040,
+            "section": "NAFLAK",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12901,
+            "section": "NAFLAK",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS4LG,DBRIS4SM,DBRIS6LG",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12908,
+          "section": "NAFLAK",
+          "key": "DebrisAnims",
+          "value": "DBRIS4LG,DBRIS4SM,DBRIS6LG"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16041,
+            "section": "NAFLAK",
+            "key": "DebrisAnims",
+            "value": "DBRIS4LG,DBRIS4SM,DBRIS6LG"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12902,
+            "section": "NAFLAK",
+            "key": "DebrisAnims",
+            "value": "DBRIS4LG,DBRIS4SM,DBRIS6LG"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12909,
+          "section": "NAFLAK",
+          "key": "MaxDebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16042,
+            "section": "NAFLAK",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12903,
+            "section": "NAFLAK",
+            "key": "MaxDebris",
+            "value": "3"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12910,
+          "section": "NAFLAK",
+          "key": "MinDebris",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16043,
+            "section": "NAFLAK",
+            "key": "MinDebris",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12904,
+            "section": "NAFLAK",
+            "key": "MinDebris",
+            "value": "2"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12911,
+          "section": "NAFLAK",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16044,
+            "section": "NAFLAK",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12905,
+            "section": "NAFLAK",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "IsBaseDefense": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12913,
+          "section": "NAFLAK",
+          "key": "IsBaseDefense",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16046,
+            "section": "NAFLAK",
+            "key": "IsBaseDefense",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12907,
+            "section": "NAFLAK",
+            "key": "IsBaseDefense",
+            "value": "yes"
+          }
+        ]
+      },
+      "Powered": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12914,
+          "section": "NAFLAK",
+          "key": "Powered",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16047,
+            "section": "NAFLAK",
+            "key": "Powered",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12908,
+            "section": "NAFLAK",
+            "key": "Powered",
+            "value": "yes"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12915,
+          "section": "NAFLAK",
+          "key": "ROT",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16048,
+            "section": "NAFLAK",
+            "key": "ROT",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12909,
+            "section": "NAFLAK",
+            "key": "ROT",
+            "value": "8"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12916,
+          "section": "NAFLAK",
+          "key": "Turret",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16049,
+            "section": "NAFLAK",
+            "key": "Turret",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12910,
+            "section": "NAFLAK",
+            "key": "Turret",
+            "value": "yes"
+          }
+        ]
+      },
+      "TurretAnim": {
+        "value": "FLAKTUR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12917,
+          "section": "NAFLAK",
+          "key": "TurretAnim",
+          "value": "FLAKTUR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16050,
+            "section": "NAFLAK",
+            "key": "TurretAnim",
+            "value": "FLAKTUR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12911,
+            "section": "NAFLAK",
+            "key": "TurretAnim",
+            "value": "FLAKTUR"
+          }
+        ]
+      },
+      "TurretAnimIsVoxel": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12918,
+          "section": "NAFLAK",
+          "key": "TurretAnimIsVoxel",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16051,
+            "section": "NAFLAK",
+            "key": "TurretAnimIsVoxel",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12912,
+            "section": "NAFLAK",
+            "key": "TurretAnimIsVoxel",
+            "value": "true"
+          }
+        ]
+      },
+      "TurretAnimX": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12919,
+          "section": "NAFLAK",
+          "key": "TurretAnimX",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16052,
+            "section": "NAFLAK",
+            "key": "TurretAnimX",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12913,
+            "section": "NAFLAK",
+            "key": "TurretAnimX",
+            "value": "0"
+          }
+        ]
+      },
+      "TurretAnimY": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12920,
+          "section": "NAFLAK",
+          "key": "TurretAnimY",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16053,
+            "section": "NAFLAK",
+            "key": "TurretAnimY",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12914,
+            "section": "NAFLAK",
+            "key": "TurretAnimY",
+            "value": "2"
+          }
+        ]
+      },
+      "TurretAnimZAdjust": {
+        "value": "-40",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12921,
+          "section": "NAFLAK",
+          "key": "TurretAnimZAdjust",
+          "value": "-40"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16054,
+            "section": "NAFLAK",
+            "key": "TurretAnimZAdjust",
+            "value": "-40"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12915,
+            "section": "NAFLAK",
+            "key": "TurretAnimZAdjust",
+            "value": "-40"
+          }
+        ]
+      },
+      "HasStupidGuardMode": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12922,
+          "section": "NAFLAK",
+          "key": "HasStupidGuardMode",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16055,
+            "section": "NAFLAK",
+            "key": "HasStupidGuardMode",
+            "value": "false"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12916,
+            "section": "NAFLAK",
+            "key": "HasStupidGuardMode",
+            "value": "false"
+          }
+        ]
+      },
+      "WorkingSound": {
+        "value": "PowerOn",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12924,
+          "section": "NAFLAK",
+          "key": "WorkingSound",
+          "value": "PowerOn"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16057,
+            "section": "NAFLAK",
+            "key": "WorkingSound",
+            "value": "PowerOn"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12918,
+            "section": "NAFLAK",
+            "key": "WorkingSound",
+            "value": "PowerOn"
+          }
+        ]
+      },
+      "NotWorkingSound": {
+        "value": "PowerOff",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12925,
+          "section": "NAFLAK",
+          "key": "NotWorkingSound",
+          "value": "PowerOff"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16058,
+            "section": "NAFLAK",
+            "key": "NotWorkingSound",
+            "value": "PowerOff"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12919,
+            "section": "NAFLAK",
+            "key": "NotWorkingSound",
+            "value": "PowerOff"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12926,
+          "section": "NAFLAK",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12920,
+            "section": "NAFLAK",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Drainable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12927,
+          "section": "NAFLAK",
+          "key": "Drainable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12921,
+            "section": "NAFLAK",
+            "key": "Drainable",
+            "value": "yes"
+          }
+        ]
+      },
+      "AntiInfantryValue": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12928,
+          "section": "NAFLAK",
+          "key": "AntiInfantryValue",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12922,
+            "section": "NAFLAK",
+            "key": "AntiInfantryValue",
+            "value": "0"
+          }
+        ]
+      },
+      "AntiArmorValue": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12929,
+          "section": "NAFLAK",
+          "key": "AntiArmorValue",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12923,
+            "section": "NAFLAK",
+            "key": "AntiArmorValue",
+            "value": "0"
+          }
+        ]
+      },
+      "AntiAirValue": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12930,
+          "section": "NAFLAK",
+          "key": "AntiAirValue",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12924,
+            "section": "NAFLAK",
+            "key": "AntiAirValue",
+            "value": "25"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "FLAKICON",
+      "Remapable": true,
+      "NewTheater": true,
+      "Foundation": "1x1",
+      "PrimaryFireFLH": "130,0,185",
+      "Buildup": "NAFLAKMK",
+      "Height": 4,
+      "DemandLoadBuildup": true,
+      "FreeBuildup": true,
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 2,
+      "DamageFireOffset0": "-5,13"
+    },
+    "raw_values": {
+      "Cameo": "FLAKICON",
+      "Remapable": "yes",
+      "NewTheater": "yes",
+      "Foundation": "1x1",
+      "PrimaryFireFLH": "130,0,185",
+      "Buildup": "NAFLAKMK",
+      "Height": "4",
+      "DemandLoadBuildup": "true",
+      "FreeBuildup": "true",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "2",
+      "DamageFireOffset0": "-5,13"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "FLAKICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19383,
+          "section": "NAFLAK",
+          "key": "Cameo",
+          "value": "FLAKICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14455,
+            "section": "NAFLAK",
+            "key": "Cameo",
+            "value": "FLAKICON"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19384,
+          "section": "NAFLAK",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14456,
+            "section": "NAFLAK",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19385,
+          "section": "NAFLAK",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14457,
+            "section": "NAFLAK",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19386,
+          "section": "NAFLAK",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14458,
+            "section": "NAFLAK",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "130,0,185",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19387,
+          "section": "NAFLAK",
+          "key": "PrimaryFireFLH",
+          "value": "130,0,185"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14459,
+            "section": "NAFLAK",
+            "key": "PrimaryFireFLH",
+            "value": "130,0,185"
+          }
+        ]
+      },
+      "Buildup": {
+        "value": "NAFLAKMK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19388,
+          "section": "NAFLAK",
+          "key": "Buildup",
+          "value": "NAFLAKMK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14460,
+            "section": "NAFLAK",
+            "key": "Buildup",
+            "value": "NAFLAKMK"
+          }
+        ]
+      },
+      "Height": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19389,
+          "section": "NAFLAK",
+          "key": "Height",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14461,
+            "section": "NAFLAK",
+            "key": "Height",
+            "value": "4"
+          }
+        ]
+      },
+      "DemandLoadBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19390,
+          "section": "NAFLAK",
+          "key": "DemandLoadBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14462,
+            "section": "NAFLAK",
+            "key": "DemandLoadBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "FreeBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19391,
+          "section": "NAFLAK",
+          "key": "FreeBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14463,
+            "section": "NAFLAK",
+            "key": "FreeBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19392,
+          "section": "NAFLAK",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14464,
+            "section": "NAFLAK",
+            "key": "CanHideThings",
+            "value": "True"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19393,
+          "section": "NAFLAK",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14465,
+            "section": "NAFLAK",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19394,
+          "section": "NAFLAK",
+          "key": "OccupyHeight",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14466,
+            "section": "NAFLAK",
+            "key": "OccupyHeight",
+            "value": "2"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-5,13",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19395,
+          "section": "NAFLAK",
+          "key": "DamageFireOffset0",
+          "value": "-5,13"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14467,
+            "section": "NAFLAK",
+            "key": "DamageFireOffset0",
+            "value": "-5,13"
+          }
+        ]
+      }
+    }
+  }
+}

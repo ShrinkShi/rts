@@ -92,7 +92,7 @@ func _draw_selected_waypoints():
         var previous = entity.global_position
         for index in range(points.size()):
             var item = points[index]
-            var position = Vector2(item.get("position", previous))
+            var waypoint_position = Vector2(item.get("position", previous))
             var order_type = str(item.get("type", "move"))
             var color = Color("#63D879")
             if order_type in ["attack", "attack_move", "force_attack"]:
@@ -101,11 +101,11 @@ func _draw_selected_waypoints():
                 color = Color("#E5C34F")
             elif order_type == "repair":
                 color = Color("#69D889")
-            draw_dashed_line(previous, position, Color(color, 0.82), 1.7, 8.0)
-            draw_circle(position, 8.0, Color(0.03, 0.05, 0.06, 0.88))
-            draw_arc(position, 9.0, 0, TAU, 20, color, 1.7)
-            draw_string(ThemeDB.fallback_font, position + Vector2(-8, 4), str(index + 1), HORIZONTAL_ALIGNMENT_CENTER, 16, 11, color)
-            previous = position
+            draw_dashed_line(previous, waypoint_position, Color(color, 0.82), 1.7, 8.0)
+            draw_circle(waypoint_position, 8.0, Color(0.03, 0.05, 0.06, 0.88))
+            draw_arc(waypoint_position, 9.0, 0, TAU, 20, color, 1.7)
+            draw_string(ThemeDB.fallback_font, waypoint_position + Vector2(-8, 4), str(index + 1), HORIZONTAL_ALIGNMENT_CENTER, 16, 11, color)
+            previous = waypoint_position
 
 func _draw_patrol_route(entity, patrol):
     var points = patrol.get("points", [])
@@ -114,12 +114,12 @@ func _draw_patrol_route(entity, patrol):
     var blue = Color("#55AFFF")
     var previous = entity.global_position
     for index in range(points.size()):
-        var position = Vector2(points[index])
-        draw_dashed_line(previous, position, Color(blue, 0.9), 2.0, 7.0)
-        draw_circle(position, 8.5, Color(0.025, 0.055, 0.09, 0.9))
-        draw_arc(position, 9.5, 0, TAU, 22, blue, 2.0)
-        draw_string(ThemeDB.fallback_font, position + Vector2(-8, 4), str(index + 1), HORIZONTAL_ALIGNMENT_CENTER, 16, 11, blue)
-        previous = position
+        var patrol_position = Vector2(points[index])
+        draw_dashed_line(previous, patrol_position, Color(blue, 0.9), 2.0, 7.0)
+        draw_circle(patrol_position, 8.5, Color(0.025, 0.055, 0.09, 0.9))
+        draw_arc(patrol_position, 9.5, 0, TAU, 22, blue, 2.0)
+        draw_string(ThemeDB.fallback_font, patrol_position + Vector2(-8, 4), str(index + 1), HORIZONTAL_ALIGNMENT_CENTER, 16, 11, blue)
+        previous = patrol_position
     if bool(patrol.get("closed", false)) and points.size() >= 2:
         draw_dashed_line(Vector2(points[-1]), Vector2(points[0]), Color(blue, 0.95), 2.2, 7.0)
         draw_circle(Vector2(points[0]), 13.0, Color(blue, 0.12))

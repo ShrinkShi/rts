@@ -1,0 +1,3991 @@
+{
+  "id": "DESO",
+  "category": "infantry",
+  "name_token": "Name:DESO",
+  "art_id": "DESO",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [
+    "Arabs"
+  ],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAHAND",
+    "RADAR"
+  ],
+  "tech_level": 8,
+  "cost": 600,
+  "strength": 150,
+  "armor": "plate",
+  "speed": 4,
+  "sight": 6,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Infantry",
+  "weapons": {
+    "Primary": {
+      "id": "RadBeamWeapon",
+      "projectile": "InvisibleLow",
+      "warhead": "RadBeamWarhead",
+      "report": [
+        "DesolatorAttack"
+      ],
+      "values": {
+        "Damage": 125,
+        "ROF": 50,
+        "Range": 6,
+        "Speed": 100,
+        "Projectile": "InvisibleLow",
+        "Warhead": "RadBeamWarhead",
+        "IsRadBeam": true,
+        "Report": "DesolatorAttack"
+      },
+      "raw_values": {
+        "Damage": "125",
+        "ROF": "50",
+        "Range": "6",
+        "Speed": "100",
+        "Projectile": "InvisibleLow",
+        "Warhead": "RadBeamWarhead",
+        "IsRadBeam": "yes",
+        "Report": "DesolatorAttack"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "125",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23770,
+            "section": "RadBeamWeapon",
+            "key": "Damage",
+            "value": "125"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17014,
+              "section": "RadBeamWeapon",
+              "key": "Damage",
+              "value": "125"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23762,
+              "section": "RadBeamWeapon",
+              "key": "Damage",
+              "value": "125"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23771,
+            "section": "RadBeamWeapon",
+            "key": "ROF",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17015,
+              "section": "RadBeamWeapon",
+              "key": "ROF",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23763,
+              "section": "RadBeamWeapon",
+              "key": "ROF",
+              "value": "50"
+            }
+          ]
+        },
+        "Range": {
+          "value": "6",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23772,
+            "section": "RadBeamWeapon",
+            "key": "Range",
+            "value": "6"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17016,
+              "section": "RadBeamWeapon",
+              "key": "Range",
+              "value": "6"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23764,
+              "section": "RadBeamWeapon",
+              "key": "Range",
+              "value": "6"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23773,
+            "section": "RadBeamWeapon",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17017,
+              "section": "RadBeamWeapon",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23765,
+              "section": "RadBeamWeapon",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23774,
+            "section": "RadBeamWeapon",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17018,
+              "section": "RadBeamWeapon",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23766,
+              "section": "RadBeamWeapon",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "RadBeamWarhead",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23775,
+            "section": "RadBeamWeapon",
+            "key": "Warhead",
+            "value": "RadBeamWarhead"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17019,
+              "section": "RadBeamWeapon",
+              "key": "Warhead",
+              "value": "RadBeamWarhead"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23767,
+              "section": "RadBeamWeapon",
+              "key": "Warhead",
+              "value": "RadBeamWarhead"
+            }
+          ]
+        },
+        "IsRadBeam": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23776,
+            "section": "RadBeamWeapon",
+            "key": "IsRadBeam",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17020,
+              "section": "RadBeamWeapon",
+              "key": "IsRadBeam",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23768,
+              "section": "RadBeamWeapon",
+              "key": "IsRadBeam",
+              "value": "yes"
+            }
+          ]
+        },
+        "Report": {
+          "value": "DesolatorAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23777,
+            "section": "RadBeamWeapon",
+            "key": "Report",
+            "value": "DesolatorAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17021,
+              "section": "RadBeamWeapon",
+              "key": "Report",
+              "value": "DesolatorAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23769,
+              "section": "RadBeamWeapon",
+              "key": "Report",
+              "value": "DesolatorAttack"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "RadEruptionWeapon",
+      "projectile": "InvisibleLow",
+      "warhead": "RadEruptionWarhead",
+      "report": [
+        "DesolatorDeploy"
+      ],
+      "values": {
+        "Damage": 1,
+        "ROF": 60,
+        "Range": 4,
+        "Speed": 1,
+        "AreaFire": true,
+        "FireOnce": false,
+        "Projectile": "InvisibleLow",
+        "Warhead": "RadEruptionWarhead",
+        "IsRadEruption": false,
+        "RadLevel": 500,
+        "Report": "DesolatorDeploy"
+      },
+      "raw_values": {
+        "Damage": "1",
+        "ROF": "60",
+        "Range": "4",
+        "Speed": "1",
+        "AreaFire": "yes",
+        "FireOnce": "no",
+        "Projectile": "InvisibleLow",
+        "Warhead": "RadEruptionWarhead",
+        "IsRadEruption": "no",
+        "RadLevel": "500",
+        "Report": "DesolatorDeploy"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23781,
+            "section": "RadEruptionWeapon",
+            "key": "Damage",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17025,
+              "section": "RadEruptionWeapon",
+              "key": "Damage",
+              "value": "1"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23773,
+              "section": "RadEruptionWeapon",
+              "key": "Damage",
+              "value": "1"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23782,
+            "section": "RadEruptionWeapon",
+            "key": "ROF",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17026,
+              "section": "RadEruptionWeapon",
+              "key": "ROF",
+              "value": "60"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23774,
+              "section": "RadEruptionWeapon",
+              "key": "ROF",
+              "value": "60"
+            }
+          ]
+        },
+        "Range": {
+          "value": "4",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23783,
+            "section": "RadEruptionWeapon",
+            "key": "Range",
+            "value": "4"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17027,
+              "section": "RadEruptionWeapon",
+              "key": "Range",
+              "value": "4"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23775,
+              "section": "RadEruptionWeapon",
+              "key": "Range",
+              "value": "4"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23784,
+            "section": "RadEruptionWeapon",
+            "key": "Speed",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17028,
+              "section": "RadEruptionWeapon",
+              "key": "Speed",
+              "value": "1"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23776,
+              "section": "RadEruptionWeapon",
+              "key": "Speed",
+              "value": "1"
+            }
+          ]
+        },
+        "AreaFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23785,
+            "section": "RadEruptionWeapon",
+            "key": "AreaFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17029,
+              "section": "RadEruptionWeapon",
+              "key": "AreaFire",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23777,
+              "section": "RadEruptionWeapon",
+              "key": "AreaFire",
+              "value": "yes"
+            }
+          ]
+        },
+        "FireOnce": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23786,
+            "section": "RadEruptionWeapon",
+            "key": "FireOnce",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17030,
+              "section": "RadEruptionWeapon",
+              "key": "FireOnce",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23778,
+              "section": "RadEruptionWeapon",
+              "key": "FireOnce",
+              "value": "no"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23787,
+            "section": "RadEruptionWeapon",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17031,
+              "section": "RadEruptionWeapon",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23779,
+              "section": "RadEruptionWeapon",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "RadEruptionWarhead",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23788,
+            "section": "RadEruptionWeapon",
+            "key": "Warhead",
+            "value": "RadEruptionWarhead"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17032,
+              "section": "RadEruptionWeapon",
+              "key": "Warhead",
+              "value": "RadEruptionWarhead"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23780,
+              "section": "RadEruptionWeapon",
+              "key": "Warhead",
+              "value": "RadEruptionWarhead"
+            }
+          ]
+        },
+        "IsRadEruption": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23789,
+            "section": "RadEruptionWeapon",
+            "key": "IsRadEruption",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17033,
+              "section": "RadEruptionWeapon",
+              "key": "IsRadEruption",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23781,
+              "section": "RadEruptionWeapon",
+              "key": "IsRadEruption",
+              "value": "no"
+            }
+          ]
+        },
+        "RadLevel": {
+          "value": "500",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23790,
+            "section": "RadEruptionWeapon",
+            "key": "RadLevel",
+            "value": "500"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17034,
+              "section": "RadEruptionWeapon",
+              "key": "RadLevel",
+              "value": "500"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23782,
+              "section": "RadEruptionWeapon",
+              "key": "RadLevel",
+              "value": "500"
+            }
+          ]
+        },
+        "Report": {
+          "value": "DesolatorDeploy",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23791,
+            "section": "RadEruptionWeapon",
+            "key": "Report",
+            "value": "DesolatorDeploy"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17035,
+              "section": "RadEruptionWeapon",
+              "key": "Report",
+              "value": "DesolatorDeploy"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23783,
+              "section": "RadEruptionWeapon",
+              "key": "Report",
+              "value": "DesolatorDeploy"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "RadBeamWeaponE",
+      "projectile": "InvisibleLow",
+      "warhead": "RadBeamWarhead",
+      "report": [
+        "DesolatorAttack"
+      ],
+      "values": {
+        "Damage": 200,
+        "ROF": 50,
+        "Range": 8,
+        "Speed": 100,
+        "Projectile": "InvisibleLow",
+        "Warhead": "RadBeamWarhead",
+        "IsRadBeam": true,
+        "Report": "DesolatorAttack"
+      },
+      "raw_values": {
+        "Damage": "200",
+        "ROF": "50",
+        "Range": "8",
+        "Speed": "100",
+        "Projectile": "InvisibleLow",
+        "Warhead": "RadBeamWarhead",
+        "IsRadBeam": "yes",
+        "Report": "DesolatorAttack"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "200",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25065,
+            "section": "RadBeamWeaponE",
+            "key": "Damage",
+            "value": "200"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17954,
+              "section": "RadBeamWeaponE",
+              "key": "Damage",
+              "value": "200"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25057,
+              "section": "RadBeamWeaponE",
+              "key": "Damage",
+              "value": "200"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25066,
+            "section": "RadBeamWeaponE",
+            "key": "ROF",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17955,
+              "section": "RadBeamWeaponE",
+              "key": "ROF",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25058,
+              "section": "RadBeamWeaponE",
+              "key": "ROF",
+              "value": "50"
+            }
+          ]
+        },
+        "Range": {
+          "value": "8",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25067,
+            "section": "RadBeamWeaponE",
+            "key": "Range",
+            "value": "8"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17956,
+              "section": "RadBeamWeaponE",
+              "key": "Range",
+              "value": "8"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25059,
+              "section": "RadBeamWeaponE",
+              "key": "Range",
+              "value": "8"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25068,
+            "section": "RadBeamWeaponE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17957,
+              "section": "RadBeamWeaponE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25060,
+              "section": "RadBeamWeaponE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25069,
+            "section": "RadBeamWeaponE",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17958,
+              "section": "RadBeamWeaponE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25061,
+              "section": "RadBeamWeaponE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "RadBeamWarhead",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25070,
+            "section": "RadBeamWeaponE",
+            "key": "Warhead",
+            "value": "RadBeamWarhead"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17959,
+              "section": "RadBeamWeaponE",
+              "key": "Warhead",
+              "value": "RadBeamWarhead"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25062,
+              "section": "RadBeamWeaponE",
+              "key": "Warhead",
+              "value": "RadBeamWarhead"
+            }
+          ]
+        },
+        "IsRadBeam": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25071,
+            "section": "RadBeamWeaponE",
+            "key": "IsRadBeam",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17960,
+              "section": "RadBeamWeaponE",
+              "key": "IsRadBeam",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25063,
+              "section": "RadBeamWeaponE",
+              "key": "IsRadBeam",
+              "value": "yes"
+            }
+          ]
+        },
+        "Report": {
+          "value": "DesolatorAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25072,
+            "section": "RadBeamWeaponE",
+            "key": "Report",
+            "value": "DesolatorAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17961,
+              "section": "RadBeamWeaponE",
+              "key": "Report",
+              "value": "DesolatorAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25064,
+              "section": "RadBeamWeaponE",
+              "key": "Report",
+              "value": "DesolatorAttack"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "DesolatorSelect"
+    ],
+    "VoiceMove": [
+      "DesolatorMove"
+    ],
+    "VoiceAttack": [
+      "DesolatorAttackCommand"
+    ],
+    "VoiceSpecialAttack": [
+      "DesolatorMove"
+    ],
+    "DieSound": [
+      "DesolatorDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "DESO",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 136,
+          "pack": "ra2",
+          "relative_path": "conquer/deso.shp",
+          "folder": "conquer",
+          "filename": "deso.shp",
+          "stem": "deso",
+          "extension": ".shp",
+          "size": 189904,
+          "sha1": "47cbf44b69bdcb674deb0e3d33e64e32906f83f6"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 136,
+          "pack": "ra2",
+          "relative_path": "conquer/deso.shp",
+          "folder": "conquer",
+          "filename": "deso.shp",
+          "stem": "deso",
+          "extension": ".shp",
+          "size": 189904,
+          "sha1": "47cbf44b69bdcb674deb0e3d33e64e32906f83f6"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 136,
+          "pack": "ra2",
+          "relative_path": "conquer/deso.shp",
+          "folder": "conquer",
+          "filename": "deso.shp",
+          "stem": "deso",
+          "extension": ".shp",
+          "size": 189904,
+          "sha1": "47cbf44b69bdcb674deb0e3d33e64e32906f83f6"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 136,
+          "pack": "ra2",
+          "relative_path": "conquer/deso.shp",
+          "folder": "conquer",
+          "filename": "deso.shp",
+          "stem": "deso",
+          "extension": ".shp",
+          "size": 189904,
+          "sha1": "47cbf44b69bdcb674deb0e3d33e64e32906f83f6"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 136,
+          "pack": "ra2",
+          "relative_path": "conquer/deso.shp",
+          "folder": "conquer",
+          "filename": "deso.shp",
+          "stem": "deso",
+          "extension": ".shp",
+          "size": 189904,
+          "sha1": "47cbf44b69bdcb674deb0e3d33e64e32906f83f6"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 136,
+          "pack": "ra2",
+          "relative_path": "conquer/deso.shp",
+          "folder": "conquer",
+          "filename": "deso.shp",
+          "stem": "deso",
+          "extension": ".shp",
+          "size": 189904,
+          "sha1": "47cbf44b69bdcb674deb0e3d33e64e32906f83f6"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "DesoSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 86,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122
+          ],
+          "1": [
+            116
+          ],
+          "2": [
+            110
+          ],
+          "3": [
+            104
+          ],
+          "4": [
+            98
+          ],
+          "5": [
+            92
+          ],
+          "6": [
+            86
+          ],
+          "7": [
+            128
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 86,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "1": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "2": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "3": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "4": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "5": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "6": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "7": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 134,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 149,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 164,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205
+          ],
+          "1": [
+            194,
+            195,
+            196,
+            197,
+            198,
+            199
+          ],
+          "2": [
+            188,
+            189,
+            190,
+            191,
+            192,
+            193
+          ],
+          "3": [
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "4": [
+            176,
+            177,
+            178,
+            179,
+            180,
+            181
+          ],
+          "5": [
+            170,
+            171,
+            172,
+            173,
+            174,
+            175
+          ],
+          "6": [
+            164,
+            165,
+            166,
+            167,
+            168,
+            169
+          ],
+          "7": [
+            206,
+            207,
+            208,
+            209,
+            210,
+            211
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 212,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            248,
+            249,
+            250,
+            251,
+            252,
+            253
+          ],
+          "1": [
+            242,
+            243,
+            244,
+            245,
+            246,
+            247
+          ],
+          "2": [
+            236,
+            237,
+            238,
+            239,
+            240,
+            241
+          ],
+          "3": [
+            230,
+            231,
+            232,
+            233,
+            234,
+            235
+          ],
+          "4": [
+            224,
+            225,
+            226,
+            227,
+            228,
+            229
+          ],
+          "5": [
+            218,
+            219,
+            220,
+            221,
+            222,
+            223
+          ],
+          "6": [
+            212,
+            213,
+            214,
+            215,
+            216,
+            217
+          ],
+          "7": [
+            254,
+            255,
+            256,
+            257,
+            258,
+            259
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 260,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            272,
+            273
+          ],
+          "1": [
+            270,
+            271
+          ],
+          "2": [
+            268,
+            269
+          ],
+          "3": [
+            266,
+            267
+          ],
+          "4": [
+            264,
+            265
+          ],
+          "5": [
+            262,
+            263
+          ],
+          "6": [
+            260,
+            261
+          ],
+          "7": [
+            274,
+            275
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 276,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            288,
+            289
+          ],
+          "1": [
+            286,
+            287
+          ],
+          "2": [
+            284,
+            285
+          ],
+          "3": [
+            282,
+            283
+          ],
+          "4": [
+            280,
+            281
+          ],
+          "5": [
+            278,
+            279
+          ],
+          "6": [
+            276,
+            277
+          ],
+          "7": [
+            290,
+            291
+          ]
+        }
+      },
+      "Deploy": {
+        "name": "Deploy",
+        "start": 299,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            299,
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307,
+            308,
+            309,
+            310,
+            311,
+            312,
+            313
+          ]
+        }
+      },
+      "Deployed": {
+        "name": "Deployed",
+        "start": 298,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            298
+          ]
+        }
+      },
+      "DeployedFire": {
+        "name": "DeployedFire",
+        "start": 292,
+        "frames": 7,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            292,
+            293,
+            294,
+            295,
+            296,
+            297,
+            298
+          ]
+        }
+      },
+      "Undeploy": {
+        "name": "Undeploy",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:DESO",
+      "Name": "Desolater",
+      "Category": "Soldier",
+      "Primary": "RadBeamWeapon",
+      "Secondary": "RadEruptionWeapon",
+      "Prerequisite": "NAHAND,RADAR",
+      "CrushSound": "InfantrySquish",
+      "Strength": 150,
+      "Armor": "plate",
+      "TechLevel": 8,
+      "Pip": "red",
+      "Sight": 6,
+      "Speed": 4,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "RequiredHouses": "Arabs",
+      "Cost": 600,
+      "Soylent": 300,
+      "Points": 30,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "DesolatorSelect",
+      "VoiceMove": "DesolatorMove",
+      "VoiceAttack": "DesolatorAttackCommand",
+      "VoiceFeedback": "",
+      "VoiceSpecialAttack": "DesolatorMove",
+      "DieSound": "DesolatorDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "Infantry",
+      "ThreatPosed": 20,
+      "Deployer": true,
+      "DeployFire": true,
+      "ImmuneToRadiation": true,
+      "ImmuneToPsionics": false,
+      "Bombable": true,
+      "AllowedToStartInMultiplayer": false,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Size": 1,
+      "Fearless": true,
+      "SelfHealing": true,
+      "Crushable": false,
+      "ElitePrimary": "RadBeamWeaponE",
+      "IFVMode": 9
+    },
+    "raw_values": {
+      "UIName": "Name:DESO",
+      "Name": "Desolater",
+      "Category": "Soldier",
+      "Primary": "RadBeamWeapon",
+      "Secondary": "RadEruptionWeapon",
+      "Prerequisite": "NAHAND,RADAR",
+      "CrushSound": "InfantrySquish",
+      "Strength": "150",
+      "Armor": "plate",
+      "TechLevel": "8",
+      "Pip": "red",
+      "Sight": "6",
+      "Speed": "4",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "RequiredHouses": "Arabs",
+      "Cost": "600",
+      "Soylent": "300",
+      "Points": "30",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "DesolatorSelect",
+      "VoiceMove": "DesolatorMove",
+      "VoiceAttack": "DesolatorAttackCommand",
+      "VoiceFeedback": "",
+      "VoiceSpecialAttack": "DesolatorMove",
+      "DieSound": "DesolatorDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "Infantry",
+      "ThreatPosed": "20",
+      "Deployer": "yes",
+      "DeployFire": "yes",
+      "ImmuneToRadiation": "yes",
+      "ImmuneToPsionics": "no",
+      "Bombable": "yes",
+      "AllowedToStartInMultiplayer": "no",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Size": "1",
+      "Fearless": "yes",
+      "SelfHealing": "yes",
+      "Crushable": "no",
+      "ElitePrimary": "RadBeamWeaponE",
+      "IFVMode": "9"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:DESO",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4817,
+          "section": "DESO",
+          "key": "UIName",
+          "value": "Name:DESO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3685,
+            "section": "DESO",
+            "key": "UIName",
+            "value": "Name:DESO"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4816,
+            "section": "DESO",
+            "key": "UIName",
+            "value": "Name:DESO"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Desolater",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4818,
+          "section": "DESO",
+          "key": "Name",
+          "value": "Desolater"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3686,
+            "section": "DESO",
+            "key": "Name",
+            "value": "Desolater"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4817,
+            "section": "DESO",
+            "key": "Name",
+            "value": "Desolater"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4819,
+          "section": "DESO",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3687,
+            "section": "DESO",
+            "key": "Category",
+            "value": "Soldier"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4818,
+            "section": "DESO",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "RadBeamWeapon",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4820,
+          "section": "DESO",
+          "key": "Primary",
+          "value": "RadBeamWeapon"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3688,
+            "section": "DESO",
+            "key": "Primary",
+            "value": "RadBeamWeapon"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4819,
+            "section": "DESO",
+            "key": "Primary",
+            "value": "RadBeamWeapon"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "RadEruptionWeapon",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4821,
+          "section": "DESO",
+          "key": "Secondary",
+          "value": "RadEruptionWeapon"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3689,
+            "section": "DESO",
+            "key": "Secondary",
+            "value": "RadEruptionWeapon"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4820,
+            "section": "DESO",
+            "key": "Secondary",
+            "value": "RadEruptionWeapon"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAHAND,RADAR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4822,
+          "section": "DESO",
+          "key": "Prerequisite",
+          "value": "NAHAND,RADAR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3690,
+            "section": "DESO",
+            "key": "Prerequisite",
+            "value": "NAHAND,RADAR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4821,
+            "section": "DESO",
+            "key": "Prerequisite",
+            "value": "NAHAND,RADAR"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4823,
+          "section": "DESO",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3691,
+            "section": "DESO",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4822,
+            "section": "DESO",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "150",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4824,
+          "section": "DESO",
+          "key": "Strength",
+          "value": "150"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3692,
+            "section": "DESO",
+            "key": "Strength",
+            "value": "150"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4823,
+            "section": "DESO",
+            "key": "Strength",
+            "value": "150"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "plate",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4825,
+          "section": "DESO",
+          "key": "Armor",
+          "value": "plate"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3693,
+            "section": "DESO",
+            "key": "Armor",
+            "value": "plate"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4824,
+            "section": "DESO",
+            "key": "Armor",
+            "value": "plate"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4826,
+          "section": "DESO",
+          "key": "TechLevel",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3694,
+            "section": "DESO",
+            "key": "TechLevel",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4825,
+            "section": "DESO",
+            "key": "TechLevel",
+            "value": "8"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "red",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4827,
+          "section": "DESO",
+          "key": "Pip",
+          "value": "red"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3695,
+            "section": "DESO",
+            "key": "Pip",
+            "value": "red"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4826,
+            "section": "DESO",
+            "key": "Pip",
+            "value": "red"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4828,
+          "section": "DESO",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3696,
+            "section": "DESO",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4827,
+            "section": "DESO",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4829,
+          "section": "DESO",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3697,
+            "section": "DESO",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4828,
+            "section": "DESO",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4830,
+          "section": "DESO",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3698,
+            "section": "DESO",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4829,
+            "section": "DESO",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "RequiredHouses": {
+        "value": "Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4831,
+          "section": "DESO",
+          "key": "RequiredHouses",
+          "value": "Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3699,
+            "section": "DESO",
+            "key": "RequiredHouses",
+            "value": "Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4830,
+            "section": "DESO",
+            "key": "RequiredHouses",
+            "value": "Arabs"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4832,
+          "section": "DESO",
+          "key": "Cost",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3700,
+            "section": "DESO",
+            "key": "Cost",
+            "value": "600"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4831,
+            "section": "DESO",
+            "key": "Cost",
+            "value": "600"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "300",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4833,
+          "section": "DESO",
+          "key": "Soylent",
+          "value": "300"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3701,
+            "section": "DESO",
+            "key": "Soylent",
+            "value": "300"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4832,
+            "section": "DESO",
+            "key": "Soylent",
+            "value": "300"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4834,
+          "section": "DESO",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3702,
+            "section": "DESO",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4833,
+            "section": "DESO",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4835,
+          "section": "DESO",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3703,
+            "section": "DESO",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4834,
+            "section": "DESO",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "DesolatorSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4836,
+          "section": "DESO",
+          "key": "VoiceSelect",
+          "value": "DesolatorSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3704,
+            "section": "DESO",
+            "key": "VoiceSelect",
+            "value": "DesolatorSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4835,
+            "section": "DESO",
+            "key": "VoiceSelect",
+            "value": "DesolatorSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "DesolatorMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4837,
+          "section": "DESO",
+          "key": "VoiceMove",
+          "value": "DesolatorMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3705,
+            "section": "DESO",
+            "key": "VoiceMove",
+            "value": "DesolatorMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4836,
+            "section": "DESO",
+            "key": "VoiceMove",
+            "value": "DesolatorMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "DesolatorAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4838,
+          "section": "DESO",
+          "key": "VoiceAttack",
+          "value": "DesolatorAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3706,
+            "section": "DESO",
+            "key": "VoiceAttack",
+            "value": "DesolatorAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4837,
+            "section": "DESO",
+            "key": "VoiceAttack",
+            "value": "DesolatorAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4839,
+          "section": "DESO",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3707,
+            "section": "DESO",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4838,
+            "section": "DESO",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "DesolatorMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4840,
+          "section": "DESO",
+          "key": "VoiceSpecialAttack",
+          "value": "DesolatorMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3708,
+            "section": "DESO",
+            "key": "VoiceSpecialAttack",
+            "value": "DesolatorMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4839,
+            "section": "DESO",
+            "key": "VoiceSpecialAttack",
+            "value": "DesolatorMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "DesolatorDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4841,
+          "section": "DESO",
+          "key": "DieSound",
+          "value": "DesolatorDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3709,
+            "section": "DESO",
+            "key": "DieSound",
+            "value": "DesolatorDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4840,
+            "section": "DESO",
+            "key": "DieSound",
+            "value": "DesolatorDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4842,
+          "section": "DESO",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3710,
+            "section": "DESO",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4841,
+            "section": "DESO",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4843,
+          "section": "DESO",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3711,
+            "section": "DESO",
+            "key": "PhysicalSize",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4842,
+            "section": "DESO",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4844,
+          "section": "DESO",
+          "key": "MovementZone",
+          "value": "Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3712,
+            "section": "DESO",
+            "key": "MovementZone",
+            "value": "Infantry"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4843,
+            "section": "DESO",
+            "key": "MovementZone",
+            "value": "Infantry"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4846,
+          "section": "DESO",
+          "key": "ThreatPosed",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3714,
+            "section": "DESO",
+            "key": "ThreatPosed",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4845,
+            "section": "DESO",
+            "key": "ThreatPosed",
+            "value": "20"
+          }
+        ]
+      },
+      "Deployer": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4847,
+          "section": "DESO",
+          "key": "Deployer",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3715,
+            "section": "DESO",
+            "key": "Deployer",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4846,
+            "section": "DESO",
+            "key": "Deployer",
+            "value": "yes"
+          }
+        ]
+      },
+      "DeployFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4848,
+          "section": "DESO",
+          "key": "DeployFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3716,
+            "section": "DESO",
+            "key": "DeployFire",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4847,
+            "section": "DESO",
+            "key": "DeployFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4851,
+          "section": "DESO",
+          "key": "ImmuneToRadiation",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3719,
+            "section": "DESO",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4850,
+            "section": "DESO",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4852,
+          "section": "DESO",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3720,
+            "section": "DESO",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4851,
+            "section": "DESO",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Bombable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4853,
+          "section": "DESO",
+          "key": "Bombable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3721,
+            "section": "DESO",
+            "key": "Bombable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4852,
+            "section": "DESO",
+            "key": "Bombable",
+            "value": "yes"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4854,
+          "section": "DESO",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3722,
+            "section": "DESO",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4853,
+            "section": "DESO",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4855,
+          "section": "DESO",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3723,
+            "section": "DESO",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4854,
+            "section": "DESO",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4856,
+          "section": "DESO",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3724,
+            "section": "DESO",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4855,
+            "section": "DESO",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4857,
+          "section": "DESO",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3725,
+            "section": "DESO",
+            "key": "Size",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4856,
+            "section": "DESO",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "Fearless": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4858,
+          "section": "DESO",
+          "key": "Fearless",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3726,
+            "section": "DESO",
+            "key": "Fearless",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4857,
+            "section": "DESO",
+            "key": "Fearless",
+            "value": "yes"
+          }
+        ]
+      },
+      "SelfHealing": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4859,
+          "section": "DESO",
+          "key": "SelfHealing",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3727,
+            "section": "DESO",
+            "key": "SelfHealing",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4858,
+            "section": "DESO",
+            "key": "SelfHealing",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crushable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4860,
+          "section": "DESO",
+          "key": "Crushable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3728,
+            "section": "DESO",
+            "key": "Crushable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4859,
+            "section": "DESO",
+            "key": "Crushable",
+            "value": "no"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "RadBeamWeaponE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4861,
+          "section": "DESO",
+          "key": "ElitePrimary",
+          "value": "RadBeamWeaponE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3729,
+            "section": "DESO",
+            "key": "ElitePrimary",
+            "value": "RadBeamWeaponE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4860,
+            "section": "DESO",
+            "key": "ElitePrimary",
+            "value": "RadBeamWeaponE"
+          }
+        ]
+      },
+      "IFVMode": {
+        "value": "9",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4862,
+          "section": "DESO",
+          "key": "IFVMode",
+          "value": "9"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3730,
+            "section": "DESO",
+            "key": "IFVMode",
+            "value": "9"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4861,
+            "section": "DESO",
+            "key": "IFVMode",
+            "value": "9"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "DESOICON",
+      "AltCameo": "DESOUICO",
+      "Sequence": "DesoSequence",
+      "Crawls": true,
+      "Remapable": true,
+      "FireUp": 2,
+      "PrimaryFireFLH": "100,-25,135"
+    },
+    "raw_values": {
+      "Cameo": "DESOICON",
+      "AltCameo": "DESOUICO",
+      "Sequence": "DesoSequence",
+      "Crawls": "yes",
+      "Remapable": "yes",
+      "FireUp": "2",
+      "PrimaryFireFLH": "100,-25,135"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "DESOICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 215,
+          "section": "DESO",
+          "key": "Cameo",
+          "value": "DESOICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 169,
+            "section": "DESO",
+            "key": "Cameo",
+            "value": "DESOICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "DESOUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 216,
+          "section": "DESO",
+          "key": "AltCameo",
+          "value": "DESOUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 170,
+            "section": "DESO",
+            "key": "AltCameo",
+            "value": "DESOUICO"
+          }
+        ]
+      },
+      "Sequence": {
+        "value": "DesoSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 217,
+          "section": "DESO",
+          "key": "Sequence",
+          "value": "DesoSequence"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 171,
+            "section": "DESO",
+            "key": "Sequence",
+            "value": "DesoSequence"
+          }
+        ]
+      },
+      "Crawls": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 218,
+          "section": "DESO",
+          "key": "Crawls",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 172,
+            "section": "DESO",
+            "key": "Crawls",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 219,
+          "section": "DESO",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 173,
+            "section": "DESO",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "FireUp": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 220,
+          "section": "DESO",
+          "key": "FireUp",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 174,
+            "section": "DESO",
+            "key": "FireUp",
+            "value": "2"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "100,-25,135",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 221,
+          "section": "DESO",
+          "key": "PrimaryFireFLH",
+          "value": "100,-25,135"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 175,
+            "section": "DESO",
+            "key": "PrimaryFireFLH",
+            "value": "100,-25,135"
+          }
+        ]
+      }
+    }
+  }
+}

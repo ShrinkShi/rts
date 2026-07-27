@@ -1,0 +1,2302 @@
+{
+  "id": "GTGCAN",
+  "category": "building",
+  "name_token": "Name:GTGCAN",
+  "art_id": "GTGCAN",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [
+    "French"
+  ],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "RADAR",
+    "GACNST"
+  ],
+  "tech_level": 7,
+  "cost": 2000,
+  "strength": 900,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 10,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {
+    "Primary": {
+      "id": "GrandCannonWeapon",
+      "projectile": "GrandCannonBall",
+      "warhead": "GrandCannonWH",
+      "report": [
+        "GrandCannonAttack"
+      ],
+      "values": {
+        "Damage": 150,
+        "ROF": 120,
+        "Range": 15,
+        "MinimumRange": 3,
+        "Projectile": "GrandCannonBall",
+        "Speed": 1,
+        "Report": "GrandCannonAttack",
+        "Bright": true,
+        "Warhead": "GrandCannonWH",
+        "Anim": "GCMUZZLE"
+      },
+      "raw_values": {
+        "Damage": "150",
+        "ROF": "120",
+        "Range": "15",
+        "MinimumRange": "3",
+        "Projectile": "GrandCannonBall",
+        "Speed": "1",
+        "Report": "GrandCannonAttack",
+        "Bright": "yes",
+        "Warhead": "GrandCannonWH",
+        "Anim": "GCMUZZLE"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "150",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24179,
+            "section": "GrandCannonWeapon",
+            "key": "Damage",
+            "value": "150"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17372,
+              "section": "GrandCannonWeapon",
+              "key": "Damage",
+              "value": "150"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24171,
+              "section": "GrandCannonWeapon",
+              "key": "Damage",
+              "value": "150"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "120",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24180,
+            "section": "GrandCannonWeapon",
+            "key": "ROF",
+            "value": "120"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17373,
+              "section": "GrandCannonWeapon",
+              "key": "ROF",
+              "value": "120"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24172,
+              "section": "GrandCannonWeapon",
+              "key": "ROF",
+              "value": "120"
+            }
+          ]
+        },
+        "Range": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24181,
+            "section": "GrandCannonWeapon",
+            "key": "Range",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17374,
+              "section": "GrandCannonWeapon",
+              "key": "Range",
+              "value": "15"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24173,
+              "section": "GrandCannonWeapon",
+              "key": "Range",
+              "value": "15"
+            }
+          ]
+        },
+        "MinimumRange": {
+          "value": "3",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24182,
+            "section": "GrandCannonWeapon",
+            "key": "MinimumRange",
+            "value": "3"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17375,
+              "section": "GrandCannonWeapon",
+              "key": "MinimumRange",
+              "value": "3"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24174,
+              "section": "GrandCannonWeapon",
+              "key": "MinimumRange",
+              "value": "3"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "GrandCannonBall",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24183,
+            "section": "GrandCannonWeapon",
+            "key": "Projectile",
+            "value": "GrandCannonBall"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17376,
+              "section": "GrandCannonWeapon",
+              "key": "Projectile",
+              "value": "GrandCannonBall"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24175,
+              "section": "GrandCannonWeapon",
+              "key": "Projectile",
+              "value": "GrandCannonBall"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24184,
+            "section": "GrandCannonWeapon",
+            "key": "Speed",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17377,
+              "section": "GrandCannonWeapon",
+              "key": "Speed",
+              "value": "1"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24176,
+              "section": "GrandCannonWeapon",
+              "key": "Speed",
+              "value": "1"
+            }
+          ]
+        },
+        "Report": {
+          "value": "GrandCannonAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24185,
+            "section": "GrandCannonWeapon",
+            "key": "Report",
+            "value": "GrandCannonAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17378,
+              "section": "GrandCannonWeapon",
+              "key": "Report",
+              "value": "GrandCannonAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24177,
+              "section": "GrandCannonWeapon",
+              "key": "Report",
+              "value": "GrandCannonAttack"
+            }
+          ]
+        },
+        "Bright": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24186,
+            "section": "GrandCannonWeapon",
+            "key": "Bright",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17379,
+              "section": "GrandCannonWeapon",
+              "key": "Bright",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24178,
+              "section": "GrandCannonWeapon",
+              "key": "Bright",
+              "value": "yes"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "GrandCannonWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24187,
+            "section": "GrandCannonWeapon",
+            "key": "Warhead",
+            "value": "GrandCannonWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17380,
+              "section": "GrandCannonWeapon",
+              "key": "Warhead",
+              "value": "GrandCannonWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24179,
+              "section": "GrandCannonWeapon",
+              "key": "Warhead",
+              "value": "GrandCannonWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GCMUZZLE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24188,
+            "section": "GrandCannonWeapon",
+            "key": "Anim",
+            "value": "GCMUZZLE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17381,
+              "section": "GrandCannonWeapon",
+              "key": "Anim",
+              "value": "GCMUZZLE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24180,
+              "section": "GrandCannonWeapon",
+              "key": "Anim",
+              "value": "GCMUZZLE"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "TurretRotateSound": [
+      "GrandCannonRotate"
+    ],
+    "WorkingSound": [
+      "PowerOn"
+    ],
+    "NotWorkingSound": [
+      "PowerOff"
+    ]
+  },
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "GTGCAN",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 360,
+          "pack": "ra2",
+          "relative_path": "generic/gggcan.shp",
+          "folder": "generic",
+          "filename": "gggcan.shp",
+          "stem": "gggcan",
+          "extension": ".shp",
+          "size": 11440,
+          "sha1": "3a472cd3ecf5c77df86baf5fa65eb266bb2991a2"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 4913,
+          "pack": "ra2",
+          "relative_path": "snow/gagcan.shp",
+          "folder": "snow",
+          "filename": "gagcan.shp",
+          "stem": "gagcan",
+          "extension": ".shp",
+          "size": 11440,
+          "sha1": "51c0f07787112dde5b0ef5f5d2715f09df0313bd"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 360,
+          "pack": "ra2",
+          "relative_path": "generic/gggcan.shp",
+          "folder": "generic",
+          "filename": "gggcan.shp",
+          "stem": "gggcan",
+          "extension": ".shp",
+          "size": 11440,
+          "sha1": "3a472cd3ecf5c77df86baf5fa65eb266bb2991a2"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 360,
+          "pack": "ra2",
+          "relative_path": "generic/gggcan.shp",
+          "folder": "generic",
+          "filename": "gggcan.shp",
+          "stem": "gggcan",
+          "extension": ".shp",
+          "size": 11440,
+          "sha1": "3a472cd3ecf5c77df86baf5fa65eb266bb2991a2"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 360,
+          "pack": "ra2",
+          "relative_path": "generic/gggcan.shp",
+          "folder": "generic",
+          "filename": "gggcan.shp",
+          "stem": "gggcan",
+          "extension": ".shp",
+          "size": 11440,
+          "sha1": "3a472cd3ecf5c77df86baf5fa65eb266bb2991a2"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 360,
+          "pack": "ra2",
+          "relative_path": "generic/gggcan.shp",
+          "folder": "generic",
+          "filename": "gggcan.shp",
+          "stem": "gggcan",
+          "extension": ".shp",
+          "size": 11440,
+          "sha1": "3a472cd3ecf5c77df86baf5fa65eb266bb2991a2"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "Buildup": {
+        "temperate": {
+          "art_id": "GTGCANMK",
+          "image": "GTGCANMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2032,
+            "pack": "ra2",
+            "relative_path": "isotemp/gtgcanmk.shp",
+            "folder": "isotemp",
+            "filename": "gtgcanmk.shp",
+            "stem": "gtgcanmk",
+            "extension": ".shp",
+            "size": 69016,
+            "sha1": "6375c4da67b49d96ce6231b3c85c43e376d6ec26"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "GTGCANMK",
+          "image": "GTGCANMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 967,
+            "pack": "ra2",
+            "relative_path": "isosnow/gagcanmk.shp",
+            "folder": "isosnow",
+            "filename": "gagcanmk.shp",
+            "stem": "gagcanmk",
+            "extension": ".shp",
+            "size": 69016,
+            "sha1": "7819d7a274f12505a82229c5ae4d0622955ed482"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "GTGCANMK",
+          "image": "GTGCANMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 3132,
+            "pack": "ra2",
+            "relative_path": "isourb/gugcanmk.shp",
+            "folder": "isourb",
+            "filename": "gugcanmk.shp",
+            "stem": "gugcanmk",
+            "extension": ".shp",
+            "size": 69016,
+            "sha1": "6375c4da67b49d96ce6231b3c85c43e376d6ec26"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "GTGCANMK",
+          "image": "GTGCANMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6669,
+            "pack": "ra2md",
+            "relative_path": "isodes/gdgcanmk.shp",
+            "folder": "isodes",
+            "filename": "gdgcanmk.shp",
+            "stem": "gdgcanmk",
+            "extension": ".shp",
+            "size": 69016,
+            "sha1": "6375c4da67b49d96ce6231b3c85c43e376d6ec26"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "GTGCANMK",
+          "image": "GTGCANMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8445,
+            "pack": "ra2md",
+            "relative_path": "isolun/glgcanmk.shp",
+            "folder": "isolun",
+            "filename": "glgcanmk.shp",
+            "stem": "glgcanmk",
+            "extension": ".shp",
+            "size": 69016,
+            "sha1": "6375c4da67b49d96ce6231b3c85c43e376d6ec26"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "GTGCANMK",
+          "image": "GTGCANMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9639,
+            "pack": "ra2md",
+            "relative_path": "isoubn/gngcanmk.shp",
+            "folder": "isoubn",
+            "filename": "gngcanmk.shp",
+            "stem": "gngcanmk",
+            "extension": ".shp",
+            "size": 69016,
+            "sha1": "6375c4da67b49d96ce6231b3c85c43e376d6ec26"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        }
+      }
+    },
+    "foundation": "2x2",
+    "height": 3,
+    "occupy_height": 2,
+    "damage_fire_offsets": [
+      [
+        -1.0,
+        28.0
+      ]
+    ],
+    "zshape_point_move": null,
+    "building_turret": {
+      "id": "GTGCANTUR",
+      "is_voxel": true,
+      "x": 3,
+      "y": 28,
+      "z_adjust": -60,
+      "model": {
+        "asset_id": 4113,
+        "pack": "ra2",
+        "relative_path": "local/gtgcantur.vxl",
+        "folder": "local",
+        "filename": "gtgcantur.vxl",
+        "stem": "gtgcantur",
+        "extension": ".vxl",
+        "size": 89541,
+        "sha1": "ea0ae42da0bc40280cf17dfa46882f86efdfe0c4"
+      },
+      "hva": {
+        "asset_id": 4112,
+        "pack": "ra2",
+        "relative_path": "local/gtgcantur.hva",
+        "folder": "local",
+        "filename": "gtgcantur.hva",
+        "stem": "gtgcantur",
+        "extension": ".hva",
+        "size": 88,
+        "sha1": "31ce69771d01a73bae80d81c29f9cc85e64ba88f"
+      },
+      "barrel": {
+        "asset_id": 4111,
+        "pack": "ra2",
+        "relative_path": "local/gtgcanbarl.vxl",
+        "folder": "local",
+        "filename": "gtgcanbarl.vxl",
+        "stem": "gtgcanbarl",
+        "extension": ".vxl",
+        "size": 21417,
+        "sha1": "2dd86f4f2b8e0f4b85041f397170ea7d919d0229"
+      },
+      "barrel_hva": {
+        "asset_id": 4110,
+        "pack": "ra2",
+        "relative_path": "local/gtgcanbarl.hva",
+        "folder": "local",
+        "filename": "gtgcanbarl.hva",
+        "stem": "gtgcanbarl",
+        "extension": ".hva",
+        "size": 88,
+        "sha1": "31ce69771d01a73bae80d81c29f9cc85e64ba88f"
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:GTGCAN",
+      "Name": "Allied Grand Cannon",
+      "BuildCat": "Combat",
+      "Strength": 900,
+      "Armor": "steel",
+      "TechLevel": 7,
+      "Prerequisite": "RADAR,GACNST",
+      "Adjacent": 2,
+      "Sight": 10,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "Cost": 2000,
+      "RequiredHouses": "French",
+      "Points": 30,
+      "Power": -100,
+      "Crewed": false,
+      "ROT": 1,
+      "Primary": "GrandCannonWeapon",
+      "Capturable": false,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM",
+      "MaxDebris": 8,
+      "MinDebris": 4,
+      "Powered": true,
+      "Turret": true,
+      "TurretAnim": "GTGCANTUR",
+      "TurretAnimIsVoxel": true,
+      "TurretAnimX": 3,
+      "TurretAnimY": 28,
+      "TurretAnimZAdjust": -60,
+      "TurretRecoil": true,
+      "TurretTravel": 0,
+      "BarrelTravel": 8,
+      "BarrelCompressFrames": 3,
+      "BarrelHoldFrames": 3,
+      "BarrelRecoverFrames": 40,
+      "TurretRotateSound": "GrandCannonRotate",
+      "WorkingSound": "PowerOn",
+      "NotWorkingSound": "PowerOff",
+      "BaseNormal": false,
+      "AIBuildThis": true,
+      "ImmuneToPsionics": false,
+      "Drainable": true
+    },
+    "raw_values": {
+      "UIName": "Name:GTGCAN",
+      "Name": "Allied Grand Cannon",
+      "BuildCat": "Combat",
+      "Strength": "900",
+      "Armor": "steel",
+      "TechLevel": "7",
+      "Prerequisite": "RADAR,GACNST",
+      "Adjacent": "2",
+      "Sight": "10",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "Cost": "2000",
+      "RequiredHouses": "French",
+      "Points": "30",
+      "Power": "-100",
+      "Crewed": "no",
+      "ROT": "1",
+      "Primary": "GrandCannonWeapon",
+      "Capturable": "false",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM",
+      "MaxDebris": "8",
+      "MinDebris": "4",
+      "Powered": "yes",
+      "Turret": "yes",
+      "TurretAnim": "GTGCANTUR",
+      "TurretAnimIsVoxel": "true",
+      "TurretAnimX": "3",
+      "TurretAnimY": "28",
+      "TurretAnimZAdjust": "-60",
+      "TurretRecoil": "yes",
+      "TurretTravel": "0",
+      "BarrelTravel": "8",
+      "BarrelCompressFrames": "3",
+      "BarrelHoldFrames": "3",
+      "BarrelRecoverFrames": "40",
+      "TurretRotateSound": "GrandCannonRotate",
+      "WorkingSound": "PowerOn",
+      "NotWorkingSound": "PowerOff",
+      "BaseNormal": "no",
+      "AIBuildThis": "yes",
+      "ImmuneToPsionics": "no",
+      "Drainable": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:GTGCAN",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12367,
+          "section": "GTGCAN",
+          "key": "UIName",
+          "value": "Name:GTGCAN"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15946,
+            "section": "GTGCAN",
+            "key": "UIName",
+            "value": "Name:GTGCAN"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12361,
+            "section": "GTGCAN",
+            "key": "UIName",
+            "value": "Name:GTGCAN"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Allied Grand Cannon",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12368,
+          "section": "GTGCAN",
+          "key": "Name",
+          "value": "Allied Grand Cannon"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15947,
+            "section": "GTGCAN",
+            "key": "Name",
+            "value": "Grand Cannon"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12362,
+            "section": "GTGCAN",
+            "key": "Name",
+            "value": "Allied Grand Cannon"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Combat",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12369,
+          "section": "GTGCAN",
+          "key": "BuildCat",
+          "value": "Combat"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15948,
+            "section": "GTGCAN",
+            "key": "BuildCat",
+            "value": "Combat"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12363,
+            "section": "GTGCAN",
+            "key": "BuildCat",
+            "value": "Combat"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "900",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12370,
+          "section": "GTGCAN",
+          "key": "Strength",
+          "value": "900"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15949,
+            "section": "GTGCAN",
+            "key": "Strength",
+            "value": "900"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12364,
+            "section": "GTGCAN",
+            "key": "Strength",
+            "value": "900"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12371,
+          "section": "GTGCAN",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15950,
+            "section": "GTGCAN",
+            "key": "Armor",
+            "value": "steel"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12365,
+            "section": "GTGCAN",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12372,
+          "section": "GTGCAN",
+          "key": "TechLevel",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15951,
+            "section": "GTGCAN",
+            "key": "TechLevel",
+            "value": "7"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12366,
+            "section": "GTGCAN",
+            "key": "TechLevel",
+            "value": "7"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "RADAR,GACNST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12373,
+          "section": "GTGCAN",
+          "key": "Prerequisite",
+          "value": "RADAR,GACNST"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15952,
+            "section": "GTGCAN",
+            "key": "Prerequisite",
+            "value": "RADAR,GACNST"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12367,
+            "section": "GTGCAN",
+            "key": "Prerequisite",
+            "value": "RADAR,GACNST"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12374,
+          "section": "GTGCAN",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15953,
+            "section": "GTGCAN",
+            "key": "Adjacent",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12368,
+            "section": "GTGCAN",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12375,
+          "section": "GTGCAN",
+          "key": "Sight",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15954,
+            "section": "GTGCAN",
+            "key": "Sight",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12369,
+            "section": "GTGCAN",
+            "key": "Sight",
+            "value": "10"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12376,
+          "section": "GTGCAN",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15955,
+            "section": "GTGCAN",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12370,
+            "section": "GTGCAN",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12377,
+          "section": "GTGCAN",
+          "key": "Cost",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15956,
+            "section": "GTGCAN",
+            "key": "Cost",
+            "value": "2000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12371,
+            "section": "GTGCAN",
+            "key": "Cost",
+            "value": "2000"
+          }
+        ]
+      },
+      "RequiredHouses": {
+        "value": "French",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12378,
+          "section": "GTGCAN",
+          "key": "RequiredHouses",
+          "value": "French"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15957,
+            "section": "GTGCAN",
+            "key": "RequiredHouses",
+            "value": "French"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12372,
+            "section": "GTGCAN",
+            "key": "RequiredHouses",
+            "value": "French"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12379,
+          "section": "GTGCAN",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15958,
+            "section": "GTGCAN",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12373,
+            "section": "GTGCAN",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "Power": {
+        "value": "-100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12380,
+          "section": "GTGCAN",
+          "key": "Power",
+          "value": "-100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15959,
+            "section": "GTGCAN",
+            "key": "Power",
+            "value": "-100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12374,
+            "section": "GTGCAN",
+            "key": "Power",
+            "value": "-100"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12381,
+          "section": "GTGCAN",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15960,
+            "section": "GTGCAN",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12375,
+            "section": "GTGCAN",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12382,
+          "section": "GTGCAN",
+          "key": "ROT",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15961,
+            "section": "GTGCAN",
+            "key": "ROT",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12376,
+            "section": "GTGCAN",
+            "key": "ROT",
+            "value": "1"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "GrandCannonWeapon",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12383,
+          "section": "GTGCAN",
+          "key": "Primary",
+          "value": "GrandCannonWeapon"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15962,
+            "section": "GTGCAN",
+            "key": "Primary",
+            "value": "GrandCannonWeapon"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12377,
+            "section": "GTGCAN",
+            "key": "Primary",
+            "value": "GrandCannonWeapon"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12384,
+          "section": "GTGCAN",
+          "key": "Capturable",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15963,
+            "section": "GTGCAN",
+            "key": "Capturable",
+            "value": "false"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12378,
+            "section": "GTGCAN",
+            "key": "Capturable",
+            "value": "false"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12385,
+          "section": "GTGCAN",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15964,
+            "section": "GTGCAN",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12379,
+            "section": "GTGCAN",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12386,
+          "section": "GTGCAN",
+          "key": "DebrisAnims",
+          "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15965,
+            "section": "GTGCAN",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12380,
+            "section": "GTGCAN",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12387,
+          "section": "GTGCAN",
+          "key": "MaxDebris",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15966,
+            "section": "GTGCAN",
+            "key": "MaxDebris",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12381,
+            "section": "GTGCAN",
+            "key": "MaxDebris",
+            "value": "8"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12388,
+          "section": "GTGCAN",
+          "key": "MinDebris",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15967,
+            "section": "GTGCAN",
+            "key": "MinDebris",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12382,
+            "section": "GTGCAN",
+            "key": "MinDebris",
+            "value": "4"
+          }
+        ]
+      },
+      "Powered": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12390,
+          "section": "GTGCAN",
+          "key": "Powered",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15969,
+            "section": "GTGCAN",
+            "key": "Powered",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12384,
+            "section": "GTGCAN",
+            "key": "Powered",
+            "value": "yes"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12391,
+          "section": "GTGCAN",
+          "key": "Turret",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15970,
+            "section": "GTGCAN",
+            "key": "Turret",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12385,
+            "section": "GTGCAN",
+            "key": "Turret",
+            "value": "yes"
+          }
+        ]
+      },
+      "TurretAnim": {
+        "value": "GTGCANTUR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12392,
+          "section": "GTGCAN",
+          "key": "TurretAnim",
+          "value": "GTGCANTUR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15971,
+            "section": "GTGCAN",
+            "key": "TurretAnim",
+            "value": "GTGCANTUR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12386,
+            "section": "GTGCAN",
+            "key": "TurretAnim",
+            "value": "GTGCANTUR"
+          }
+        ]
+      },
+      "TurretAnimIsVoxel": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12393,
+          "section": "GTGCAN",
+          "key": "TurretAnimIsVoxel",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15972,
+            "section": "GTGCAN",
+            "key": "TurretAnimIsVoxel",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12387,
+            "section": "GTGCAN",
+            "key": "TurretAnimIsVoxel",
+            "value": "true"
+          }
+        ]
+      },
+      "TurretAnimX": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12394,
+          "section": "GTGCAN",
+          "key": "TurretAnimX",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15973,
+            "section": "GTGCAN",
+            "key": "TurretAnimX",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12388,
+            "section": "GTGCAN",
+            "key": "TurretAnimX",
+            "value": "3"
+          }
+        ]
+      },
+      "TurretAnimY": {
+        "value": "28",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12395,
+          "section": "GTGCAN",
+          "key": "TurretAnimY",
+          "value": "28"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15974,
+            "section": "GTGCAN",
+            "key": "TurretAnimY",
+            "value": "28"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12389,
+            "section": "GTGCAN",
+            "key": "TurretAnimY",
+            "value": "28"
+          }
+        ]
+      },
+      "TurretAnimZAdjust": {
+        "value": "-60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12396,
+          "section": "GTGCAN",
+          "key": "TurretAnimZAdjust",
+          "value": "-60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15975,
+            "section": "GTGCAN",
+            "key": "TurretAnimZAdjust",
+            "value": "-60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12390,
+            "section": "GTGCAN",
+            "key": "TurretAnimZAdjust",
+            "value": "-60"
+          }
+        ]
+      },
+      "TurretRecoil": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12397,
+          "section": "GTGCAN",
+          "key": "TurretRecoil",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15976,
+            "section": "GTGCAN",
+            "key": "TurretRecoil",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12391,
+            "section": "GTGCAN",
+            "key": "TurretRecoil",
+            "value": "yes"
+          }
+        ]
+      },
+      "TurretTravel": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12398,
+          "section": "GTGCAN",
+          "key": "TurretTravel",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15977,
+            "section": "GTGCAN",
+            "key": "TurretTravel",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12392,
+            "section": "GTGCAN",
+            "key": "TurretTravel",
+            "value": "0"
+          }
+        ]
+      },
+      "BarrelTravel": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12399,
+          "section": "GTGCAN",
+          "key": "BarrelTravel",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15978,
+            "section": "GTGCAN",
+            "key": "BarrelTravel",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12393,
+            "section": "GTGCAN",
+            "key": "BarrelTravel",
+            "value": "8"
+          }
+        ]
+      },
+      "BarrelCompressFrames": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12400,
+          "section": "GTGCAN",
+          "key": "BarrelCompressFrames",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15979,
+            "section": "GTGCAN",
+            "key": "BarrelCompressFrames",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12394,
+            "section": "GTGCAN",
+            "key": "BarrelCompressFrames",
+            "value": "3"
+          }
+        ]
+      },
+      "BarrelHoldFrames": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12401,
+          "section": "GTGCAN",
+          "key": "BarrelHoldFrames",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15980,
+            "section": "GTGCAN",
+            "key": "BarrelHoldFrames",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12395,
+            "section": "GTGCAN",
+            "key": "BarrelHoldFrames",
+            "value": "3"
+          }
+        ]
+      },
+      "BarrelRecoverFrames": {
+        "value": "40",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12402,
+          "section": "GTGCAN",
+          "key": "BarrelRecoverFrames",
+          "value": "40"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15981,
+            "section": "GTGCAN",
+            "key": "BarrelRecoverFrames",
+            "value": "40"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12396,
+            "section": "GTGCAN",
+            "key": "BarrelRecoverFrames",
+            "value": "40"
+          }
+        ]
+      },
+      "TurretRotateSound": {
+        "value": "GrandCannonRotate",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12403,
+          "section": "GTGCAN",
+          "key": "TurretRotateSound",
+          "value": "GrandCannonRotate"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15982,
+            "section": "GTGCAN",
+            "key": "TurretRotateSound",
+            "value": "GrandCannonRotate"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12397,
+            "section": "GTGCAN",
+            "key": "TurretRotateSound",
+            "value": "GrandCannonRotate"
+          }
+        ]
+      },
+      "WorkingSound": {
+        "value": "PowerOn",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12404,
+          "section": "GTGCAN",
+          "key": "WorkingSound",
+          "value": "PowerOn"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15983,
+            "section": "GTGCAN",
+            "key": "WorkingSound",
+            "value": "PowerOn"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12398,
+            "section": "GTGCAN",
+            "key": "WorkingSound",
+            "value": "PowerOn"
+          }
+        ]
+      },
+      "NotWorkingSound": {
+        "value": "PowerOff",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12405,
+          "section": "GTGCAN",
+          "key": "NotWorkingSound",
+          "value": "PowerOff"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15984,
+            "section": "GTGCAN",
+            "key": "NotWorkingSound",
+            "value": "PowerOff"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12399,
+            "section": "GTGCAN",
+            "key": "NotWorkingSound",
+            "value": "PowerOff"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12406,
+          "section": "GTGCAN",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15985,
+            "section": "GTGCAN",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12400,
+            "section": "GTGCAN",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "AIBuildThis": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12407,
+          "section": "GTGCAN",
+          "key": "AIBuildThis",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15986,
+            "section": "GTGCAN",
+            "key": "AIBuildThis",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12401,
+            "section": "GTGCAN",
+            "key": "AIBuildThis",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12408,
+          "section": "GTGCAN",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12402,
+            "section": "GTGCAN",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Drainable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12409,
+          "section": "GTGCAN",
+          "key": "Drainable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12403,
+            "section": "GTGCAN",
+            "key": "Drainable",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Remapable": true,
+      "NewTheater": true,
+      "Cameo": "GCANICON",
+      "Foundation": "2x2",
+      "Height": 3,
+      "Buildup": "GTGCANMK",
+      "DemandLoadBuildup": true,
+      "FreeBuildup": true,
+      "PrimaryFireFLH": "250,0,230",
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 2,
+      "DamageFireOffset0": "-1,28"
+    },
+    "raw_values": {
+      "Remapable": "yes",
+      "NewTheater": "yes",
+      "Cameo": "GCANICON",
+      "Foundation": "2x2",
+      "Height": "3",
+      "Buildup": "GTGCANMK",
+      "DemandLoadBuildup": "true",
+      "FreeBuildup": "true",
+      "PrimaryFireFLH": "250,0,230",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "2",
+      "DamageFireOffset0": "-1,28"
+    },
+    "provenance": {
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19368,
+          "section": "GTGCAN",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14440,
+            "section": "GTGCAN",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19369,
+          "section": "GTGCAN",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14441,
+            "section": "GTGCAN",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "GCANICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19370,
+          "section": "GTGCAN",
+          "key": "Cameo",
+          "value": "GCANICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14442,
+            "section": "GTGCAN",
+            "key": "Cameo",
+            "value": "GCANICON"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "2x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19371,
+          "section": "GTGCAN",
+          "key": "Foundation",
+          "value": "2x2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14443,
+            "section": "GTGCAN",
+            "key": "Foundation",
+            "value": "2x2"
+          }
+        ]
+      },
+      "Height": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19372,
+          "section": "GTGCAN",
+          "key": "Height",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14444,
+            "section": "GTGCAN",
+            "key": "Height",
+            "value": "3"
+          }
+        ]
+      },
+      "Buildup": {
+        "value": "GTGCANMK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19373,
+          "section": "GTGCAN",
+          "key": "Buildup",
+          "value": "GTGCANMK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14445,
+            "section": "GTGCAN",
+            "key": "Buildup",
+            "value": "GTGCANMK"
+          }
+        ]
+      },
+      "DemandLoadBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19374,
+          "section": "GTGCAN",
+          "key": "DemandLoadBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14446,
+            "section": "GTGCAN",
+            "key": "DemandLoadBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "FreeBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19375,
+          "section": "GTGCAN",
+          "key": "FreeBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14447,
+            "section": "GTGCAN",
+            "key": "FreeBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "250,0,230",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19376,
+          "section": "GTGCAN",
+          "key": "PrimaryFireFLH",
+          "value": "250,0,230"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14448,
+            "section": "GTGCAN",
+            "key": "PrimaryFireFLH",
+            "value": "250,0,230"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19377,
+          "section": "GTGCAN",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14449,
+            "section": "GTGCAN",
+            "key": "CanHideThings",
+            "value": "True"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19378,
+          "section": "GTGCAN",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14450,
+            "section": "GTGCAN",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19379,
+          "section": "GTGCAN",
+          "key": "OccupyHeight",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14451,
+            "section": "GTGCAN",
+            "key": "OccupyHeight",
+            "value": "2"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-1,28",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 19380,
+          "section": "GTGCAN",
+          "key": "DamageFireOffset0",
+          "value": "-1,28"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 14452,
+            "section": "GTGCAN",
+            "key": "DamageFireOffset0",
+            "value": "-1,28"
+          }
+        ]
+      }
+    }
+  }
+}

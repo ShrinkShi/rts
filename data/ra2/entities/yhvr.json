@@ -1,0 +1,1313 @@
+{
+  "id": "YHVR",
+  "category": "vehicle",
+  "name_token": "Name:SAPC",
+  "art_id": "YHVR",
+  "owners": [
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YAYARD"
+  ],
+  "tech_level": 2,
+  "cost": 900,
+  "strength": 300,
+  "armor": "heavy",
+  "speed": 6,
+  "sight": 6,
+  "locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Amphibious",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "HoverYuriSelect"
+    ],
+    "VoiceMove": [
+      "HoverYuriMove"
+    ],
+    "VoiceAttack": [
+      "HoverYuriMove"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ],
+    "MoveSound": [
+      "LandingCraftMoveStart"
+    ],
+    "EnterTransportSound": [
+      "EnterTransport"
+    ],
+    "LeaveTransportSound": [
+      "ExitTransport"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "YHVR",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 10868,
+      "pack": "ra2md",
+      "relative_path": "localmd/yhvr.vxl",
+      "folder": "localmd",
+      "filename": "yhvr.vxl",
+      "stem": "yhvr",
+      "extension": ".vxl",
+      "size": 87377,
+      "sha1": "7438f519836e20b6783aa0b2cfc6cafc59385ae9"
+    },
+    "body_hva": {
+      "asset_id": 10867,
+      "pack": "ra2md",
+      "relative_path": "localmd/yhvr.hva",
+      "folder": "localmd",
+      "filename": "yhvr.hva",
+      "stem": "yhvr",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "028af279cbe8c2a60a35982d0d9f40b0169f42fa"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      80.0,
+      0.0,
+      120.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:SAPC",
+      "Name": "Hover Transport Yuri",
+      "Prerequisite": "YAYARD",
+      "Strength": 300,
+      "MoveToShroud": true,
+      "Category": "Transport",
+      "DeployTime": 0.022,
+      "Armor": "heavy",
+      "Turret": false,
+      "IsTilter": true,
+      "TechLevel": 2,
+      "Sight": 6,
+      "PipScale": "Passengers",
+      "Speed": 6,
+      "Naval": true,
+      "Weight": 1,
+      "CrateGoodie": false,
+      "Owner": "YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 900,
+      "Soylent": 900,
+      "Points": 25,
+      "ROT": 5,
+      "Crusher": true,
+      "Passengers": 12,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "HoverYuriSelect",
+      "VoiceMove": "HoverYuriMove",
+      "VoiceAttack": "HoverYuriMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "LandingCraftMoveStart",
+      "EnterTransportSound": "EnterTransport",
+      "LeaveTransportSound": "ExitTransport",
+      "CrushSound": "TankCrush",
+      "MaxDebris": 3,
+      "SpeedType": "Hover",
+      "Locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Amphibious",
+      "ThreatPosed": 10,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": 1,
+      "ZFudgeColumn": 7,
+      "ZFudgeTunnel": 13,
+      "SizeLimit": 6,
+      "Size": 15,
+      "TooBigToFitUnderBridge": true,
+      "Trainable": false,
+      "StupidHunt": true,
+      "Bunkerable": false
+    },
+    "raw_values": {
+      "UIName": "Name:SAPC",
+      "Name": "Hover Transport Yuri",
+      "Prerequisite": "YAYARD",
+      "Strength": "300",
+      "MoveToShroud": "yes",
+      "Category": "Transport",
+      "DeployTime": ".022",
+      "Armor": "heavy",
+      "Turret": "no",
+      "IsTilter": "yes",
+      "TechLevel": "2",
+      "Sight": "6",
+      "PipScale": "Passengers",
+      "Speed": "6",
+      "Naval": "yes",
+      "Weight": "1",
+      "CrateGoodie": "no",
+      "Owner": "YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "900",
+      "Soylent": "900",
+      "Points": "25",
+      "ROT": "5",
+      "Crusher": "yes",
+      "Passengers": "12",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "HoverYuriSelect",
+      "VoiceMove": "HoverYuriMove",
+      "VoiceAttack": "HoverYuriMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "LandingCraftMoveStart",
+      "EnterTransportSound": "EnterTransport",
+      "LeaveTransportSound": "ExitTransport",
+      "CrushSound": "TankCrush",
+      "MaxDebris": "3",
+      "SpeedType": "Hover",
+      "Locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Amphibious",
+      "ThreatPosed": "10",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": "1",
+      "ZFudgeColumn": "7",
+      "ZFudgeTunnel": "13",
+      "SizeLimit": "6",
+      "Size": "15",
+      "TooBigToFitUnderBridge": "true",
+      "Trainable": "no",
+      "StupidHunt": "yes",
+      "Bunkerable": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:SAPC",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8871,
+          "section": "YHVR",
+          "key": "UIName",
+          "value": "Name:SAPC"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8867,
+            "section": "YHVR",
+            "key": "UIName",
+            "value": "Name:SAPC"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Hover Transport Yuri",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8872,
+          "section": "YHVR",
+          "key": "Name",
+          "value": "Hover Transport Yuri"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8868,
+            "section": "YHVR",
+            "key": "Name",
+            "value": "Hover Transport Yuri"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YAYARD",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8873,
+          "section": "YHVR",
+          "key": "Prerequisite",
+          "value": "YAYARD"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8869,
+            "section": "YHVR",
+            "key": "Prerequisite",
+            "value": "YAYARD"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "300",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8875,
+          "section": "YHVR",
+          "key": "Strength",
+          "value": "300"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8871,
+            "section": "YHVR",
+            "key": "Strength",
+            "value": "300"
+          }
+        ]
+      },
+      "MoveToShroud": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8877,
+          "section": "YHVR",
+          "key": "MoveToShroud",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8873,
+            "section": "YHVR",
+            "key": "MoveToShroud",
+            "value": "yes"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Transport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8878,
+          "section": "YHVR",
+          "key": "Category",
+          "value": "Transport"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8874,
+            "section": "YHVR",
+            "key": "Category",
+            "value": "Transport"
+          }
+        ]
+      },
+      "DeployTime": {
+        "value": ".022",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8879,
+          "section": "YHVR",
+          "key": "DeployTime",
+          "value": ".022"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8875,
+            "section": "YHVR",
+            "key": "DeployTime",
+            "value": ".022"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8880,
+          "section": "YHVR",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8876,
+            "section": "YHVR",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8881,
+          "section": "YHVR",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8877,
+            "section": "YHVR",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "IsTilter": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8882,
+          "section": "YHVR",
+          "key": "IsTilter",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8878,
+            "section": "YHVR",
+            "key": "IsTilter",
+            "value": "yes"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8883,
+          "section": "YHVR",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8879,
+            "section": "YHVR",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8884,
+          "section": "YHVR",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8880,
+            "section": "YHVR",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "PipScale": {
+        "value": "Passengers",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8885,
+          "section": "YHVR",
+          "key": "PipScale",
+          "value": "Passengers"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8881,
+            "section": "YHVR",
+            "key": "PipScale",
+            "value": "Passengers"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8886,
+          "section": "YHVR",
+          "key": "Speed",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8882,
+            "section": "YHVR",
+            "key": "Speed",
+            "value": "6"
+          }
+        ]
+      },
+      "Naval": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8889,
+          "section": "YHVR",
+          "key": "Naval",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8885,
+            "section": "YHVR",
+            "key": "Naval",
+            "value": "yes"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8890,
+          "section": "YHVR",
+          "key": "Weight",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8886,
+            "section": "YHVR",
+            "key": "Weight",
+            "value": "1"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8891,
+          "section": "YHVR",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8887,
+            "section": "YHVR",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8892,
+          "section": "YHVR",
+          "key": "Owner",
+          "value": "YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8888,
+            "section": "YHVR",
+            "key": "Owner",
+            "value": "YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8893,
+          "section": "YHVR",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8889,
+            "section": "YHVR",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "900",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8894,
+          "section": "YHVR",
+          "key": "Cost",
+          "value": "900"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8890,
+            "section": "YHVR",
+            "key": "Cost",
+            "value": "900"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "900",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8895,
+          "section": "YHVR",
+          "key": "Soylent",
+          "value": "900"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8891,
+            "section": "YHVR",
+            "key": "Soylent",
+            "value": "900"
+          }
+        ]
+      },
+      "Points": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8896,
+          "section": "YHVR",
+          "key": "Points",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8892,
+            "section": "YHVR",
+            "key": "Points",
+            "value": "25"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8897,
+          "section": "YHVR",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8893,
+            "section": "YHVR",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8898,
+          "section": "YHVR",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8894,
+            "section": "YHVR",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "Passengers": {
+        "value": "12",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8899,
+          "section": "YHVR",
+          "key": "Passengers",
+          "value": "12"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8895,
+            "section": "YHVR",
+            "key": "Passengers",
+            "value": "12"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8900,
+          "section": "YHVR",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8896,
+            "section": "YHVR",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "HoverYuriSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8901,
+          "section": "YHVR",
+          "key": "VoiceSelect",
+          "value": "HoverYuriSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8897,
+            "section": "YHVR",
+            "key": "VoiceSelect",
+            "value": "HoverYuriSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "HoverYuriMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8902,
+          "section": "YHVR",
+          "key": "VoiceMove",
+          "value": "HoverYuriMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8898,
+            "section": "YHVR",
+            "key": "VoiceMove",
+            "value": "HoverYuriMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "HoverYuriMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8903,
+          "section": "YHVR",
+          "key": "VoiceAttack",
+          "value": "HoverYuriMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8899,
+            "section": "YHVR",
+            "key": "VoiceAttack",
+            "value": "HoverYuriMove"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8904,
+          "section": "YHVR",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8900,
+            "section": "YHVR",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8905,
+          "section": "YHVR",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8901,
+            "section": "YHVR",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "LandingCraftMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8906,
+          "section": "YHVR",
+          "key": "MoveSound",
+          "value": "LandingCraftMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8902,
+            "section": "YHVR",
+            "key": "MoveSound",
+            "value": "LandingCraftMoveStart"
+          }
+        ]
+      },
+      "EnterTransportSound": {
+        "value": "EnterTransport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8907,
+          "section": "YHVR",
+          "key": "EnterTransportSound",
+          "value": "EnterTransport"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8903,
+            "section": "YHVR",
+            "key": "EnterTransportSound",
+            "value": "EnterTransport"
+          }
+        ]
+      },
+      "LeaveTransportSound": {
+        "value": "ExitTransport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8908,
+          "section": "YHVR",
+          "key": "LeaveTransportSound",
+          "value": "ExitTransport"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8904,
+            "section": "YHVR",
+            "key": "LeaveTransportSound",
+            "value": "ExitTransport"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8909,
+          "section": "YHVR",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8905,
+            "section": "YHVR",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8910,
+          "section": "YHVR",
+          "key": "MaxDebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8906,
+            "section": "YHVR",
+            "key": "MaxDebris",
+            "value": "3"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Hover",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8917,
+          "section": "YHVR",
+          "key": "SpeedType",
+          "value": "Hover"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8913,
+            "section": "YHVR",
+            "key": "SpeedType",
+            "value": "Hover"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8918,
+          "section": "YHVR",
+          "key": "Locomotor",
+          "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8914,
+            "section": "YHVR",
+            "key": "Locomotor",
+            "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Amphibious",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8919,
+          "section": "YHVR",
+          "key": "MovementZone",
+          "value": "Amphibious"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8915,
+            "section": "YHVR",
+            "key": "MovementZone",
+            "value": "Amphibious"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8922,
+          "section": "YHVR",
+          "key": "ThreatPosed",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8918,
+            "section": "YHVR",
+            "key": "ThreatPosed",
+            "value": "10"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8923,
+          "section": "YHVR",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8919,
+            "section": "YHVR",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8924,
+          "section": "YHVR",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8920,
+            "section": "YHVR",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8925,
+          "section": "YHVR",
+          "key": "ZFudgeColumn",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8921,
+            "section": "YHVR",
+            "key": "ZFudgeColumn",
+            "value": "7"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8926,
+          "section": "YHVR",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8922,
+            "section": "YHVR",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "SizeLimit": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8927,
+          "section": "YHVR",
+          "key": "SizeLimit",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8923,
+            "section": "YHVR",
+            "key": "SizeLimit",
+            "value": "6"
+          }
+        ]
+      },
+      "Size": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8928,
+          "section": "YHVR",
+          "key": "Size",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8924,
+            "section": "YHVR",
+            "key": "Size",
+            "value": "15"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8929,
+          "section": "YHVR",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8925,
+            "section": "YHVR",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8931,
+          "section": "YHVR",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8927,
+            "section": "YHVR",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "StupidHunt": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8932,
+          "section": "YHVR",
+          "key": "StupidHunt",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8928,
+            "section": "YHVR",
+            "key": "StupidHunt",
+            "value": "yes"
+          }
+        ]
+      },
+      "Bunkerable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8933,
+          "section": "YHVR",
+          "key": "Bunkerable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8929,
+            "section": "YHVR",
+            "key": "Bunkerable",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "YHVRICON",
+      "Voxel": true,
+      "Remapable": true,
+      "PrimaryFireFLH": "80,0,120"
+    },
+    "raw_values": {
+      "Cameo": "YHVRICON",
+      "Voxel": "yes",
+      "Remapable": "yes",
+      "PrimaryFireFLH": "80,0,120"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "YHVRICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 977,
+          "section": "YHVR",
+          "key": "Cameo",
+          "value": "YHVRICON"
+        },
+        "history": []
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 978,
+          "section": "YHVR",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 979,
+          "section": "YHVR",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "PrimaryFireFLH": {
+        "value": "80,0,120",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 980,
+          "section": "YHVR",
+          "key": "PrimaryFireFLH",
+          "value": "80,0,120"
+        },
+        "history": []
+      }
+    }
+  }
+}

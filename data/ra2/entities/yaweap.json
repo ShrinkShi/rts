@@ -1,0 +1,5667 @@
+{
+  "id": "YAWEAP",
+  "category": "building",
+  "name_token": "Name:YWarfactory",
+  "art_id": "YAWEAP",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "PROC",
+    "YABRCK",
+    "YACNST"
+  ],
+  "tech_level": 2,
+  "cost": 2000,
+  "strength": 1000,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 4,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "YAWEAP",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 6045,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygweap.shp",
+          "folder": "genermd",
+          "filename": "ygweap.shp",
+          "stem": "ygweap",
+          "extension": ".shp",
+          "size": 42456,
+          "sha1": "7bbb6899175018a8262055e1b0b398ff56aa1efb"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 11266,
+          "pack": "ra2md",
+          "relative_path": "snowmd/yaweap.shp",
+          "folder": "snowmd",
+          "filename": "yaweap.shp",
+          "stem": "yaweap",
+          "extension": ".shp",
+          "size": 42488,
+          "sha1": "e734216fc278a29e54638a139728c5cf7d9c06c5"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 6045,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygweap.shp",
+          "folder": "genermd",
+          "filename": "ygweap.shp",
+          "stem": "ygweap",
+          "extension": ".shp",
+          "size": 42456,
+          "sha1": "7bbb6899175018a8262055e1b0b398ff56aa1efb"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6045,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygweap.shp",
+          "folder": "genermd",
+          "filename": "ygweap.shp",
+          "stem": "ygweap",
+          "extension": ".shp",
+          "size": 42456,
+          "sha1": "7bbb6899175018a8262055e1b0b398ff56aa1efb"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 6045,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygweap.shp",
+          "folder": "genermd",
+          "filename": "ygweap.shp",
+          "stem": "ygweap",
+          "extension": ".shp",
+          "size": 42456,
+          "sha1": "7bbb6899175018a8262055e1b0b398ff56aa1efb"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 6045,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygweap.shp",
+          "folder": "genermd",
+          "filename": "ygweap.shp",
+          "stem": "ygweap",
+          "extension": ".shp",
+          "size": 42456,
+          "sha1": "7bbb6899175018a8262055e1b0b398ff56aa1efb"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "Buildup": {
+        "temperate": {
+          "art_id": "YAWEAPMK",
+          "image": "YAWEAPMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6054,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweapmk.shp",
+            "folder": "genermd",
+            "filename": "ygweapmk.shp",
+            "stem": "ygweapmk",
+            "extension": ".shp",
+            "size": 253144,
+            "sha1": "5c8cd3cb3550e243fc59a9fb3fd3b712fa9eba53"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "YAWEAPMK",
+          "image": "YAWEAPMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11275,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yaweapmk.shp",
+            "folder": "snowmd",
+            "filename": "yaweapmk.shp",
+            "stem": "yaweapmk",
+            "extension": ".shp",
+            "size": 253160,
+            "sha1": "ac0b7ea771914e3860bef3e0e916e020c238a049"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "YAWEAPMK",
+          "image": "YAWEAPMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6054,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweapmk.shp",
+            "folder": "genermd",
+            "filename": "ygweapmk.shp",
+            "stem": "ygweapmk",
+            "extension": ".shp",
+            "size": 253144,
+            "sha1": "5c8cd3cb3550e243fc59a9fb3fd3b712fa9eba53"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "YAWEAPMK",
+          "image": "YAWEAPMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6054,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweapmk.shp",
+            "folder": "genermd",
+            "filename": "ygweapmk.shp",
+            "stem": "ygweapmk",
+            "extension": ".shp",
+            "size": 253144,
+            "sha1": "5c8cd3cb3550e243fc59a9fb3fd3b712fa9eba53"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "YAWEAPMK",
+          "image": "YAWEAPMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6054,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweapmk.shp",
+            "folder": "genermd",
+            "filename": "ygweapmk.shp",
+            "stem": "ygweapmk",
+            "extension": ".shp",
+            "size": 253144,
+            "sha1": "5c8cd3cb3550e243fc59a9fb3fd3b712fa9eba53"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "YAWEAPMK",
+          "image": "YAWEAPMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6054,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweapmk.shp",
+            "folder": "genermd",
+            "filename": "ygweapmk.shp",
+            "stem": "ygweapmk",
+            "extension": ".shp",
+            "size": 253144,
+            "sha1": "5c8cd3cb3550e243fc59a9fb3fd3b712fa9eba53"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        }
+      },
+      "BibShape": {
+        "temperate": {
+          "art_id": "YAWEAPBB",
+          "image": "YAWEAPBB",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6053,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweapbb.shp",
+            "folder": "genermd",
+            "filename": "ygweapbb.shp",
+            "stem": "ygweapbb",
+            "extension": ".shp",
+            "size": 5120,
+            "sha1": "0e0199de0306cd2b5faf4d9a24c3fb2ae46cddaa"
+          },
+          "component_key": "BibShape",
+          "slot": "BibShape",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "YAWEAPBB",
+          "image": "YAWEAPBB",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11274,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yaweapbb.shp",
+            "folder": "snowmd",
+            "filename": "yaweapbb.shp",
+            "stem": "yaweapbb",
+            "extension": ".shp",
+            "size": 5120,
+            "sha1": "302c10f5666af9b7764170a634817ce84f42fe73"
+          },
+          "component_key": "BibShape",
+          "slot": "BibShape",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "YAWEAPBB",
+          "image": "YAWEAPBB",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6053,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweapbb.shp",
+            "folder": "genermd",
+            "filename": "ygweapbb.shp",
+            "stem": "ygweapbb",
+            "extension": ".shp",
+            "size": 5120,
+            "sha1": "0e0199de0306cd2b5faf4d9a24c3fb2ae46cddaa"
+          },
+          "component_key": "BibShape",
+          "slot": "BibShape",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "YAWEAPBB",
+          "image": "YAWEAPBB",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6053,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweapbb.shp",
+            "folder": "genermd",
+            "filename": "ygweapbb.shp",
+            "stem": "ygweapbb",
+            "extension": ".shp",
+            "size": 5120,
+            "sha1": "0e0199de0306cd2b5faf4d9a24c3fb2ae46cddaa"
+          },
+          "component_key": "BibShape",
+          "slot": "BibShape",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "YAWEAPBB",
+          "image": "YAWEAPBB",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6053,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweapbb.shp",
+            "folder": "genermd",
+            "filename": "ygweapbb.shp",
+            "stem": "ygweapbb",
+            "extension": ".shp",
+            "size": 5120,
+            "sha1": "0e0199de0306cd2b5faf4d9a24c3fb2ae46cddaa"
+          },
+          "component_key": "BibShape",
+          "slot": "BibShape",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "YAWEAPBB",
+          "image": "YAWEAPBB",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6053,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweapbb.shp",
+            "folder": "genermd",
+            "filename": "ygweapbb.shp",
+            "stem": "ygweapbb",
+            "extension": ".shp",
+            "size": 5120,
+            "sha1": "0e0199de0306cd2b5faf4d9a24c3fb2ae46cddaa"
+          },
+          "component_key": "BibShape",
+          "slot": "BibShape",
+          "damaged": false
+        }
+      },
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "YAWEAP_A",
+          "image": "YAWEAP_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6050,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_a.shp",
+            "folder": "genermd",
+            "filename": "ygweap_a.shp",
+            "stem": "ygweap_a",
+            "extension": ".shp",
+            "size": 30976,
+            "sha1": "b306f814988d57082a662f4d5f78c1534781d39e"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1300,
+                "section": "YAWEAP_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1301,
+                "section": "YAWEAP_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1302,
+                "section": "YAWEAP_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1303,
+                "section": "YAWEAP_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1304,
+                "section": "YAWEAP_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1305,
+                "section": "YAWEAP_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1306,
+                "section": "YAWEAP_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -15,
+          "YSort": 10
+        },
+        "snow": {
+          "art_id": "YAWEAP_A",
+          "image": "YAWEAP_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11271,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yaweap_a.shp",
+            "folder": "snowmd",
+            "filename": "yaweap_a.shp",
+            "stem": "yaweap_a",
+            "extension": ".shp",
+            "size": 62000,
+            "sha1": "357d8e2e1e1178a7e43bc61dae9f5b77a4262115"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1300,
+                "section": "YAWEAP_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1301,
+                "section": "YAWEAP_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1302,
+                "section": "YAWEAP_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1303,
+                "section": "YAWEAP_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1304,
+                "section": "YAWEAP_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1305,
+                "section": "YAWEAP_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1306,
+                "section": "YAWEAP_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -15,
+          "YSort": 10
+        },
+        "urban": {
+          "art_id": "YAWEAP_A",
+          "image": "YAWEAP_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6050,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_a.shp",
+            "folder": "genermd",
+            "filename": "ygweap_a.shp",
+            "stem": "ygweap_a",
+            "extension": ".shp",
+            "size": 30976,
+            "sha1": "b306f814988d57082a662f4d5f78c1534781d39e"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1300,
+                "section": "YAWEAP_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1301,
+                "section": "YAWEAP_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1302,
+                "section": "YAWEAP_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1303,
+                "section": "YAWEAP_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1304,
+                "section": "YAWEAP_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1305,
+                "section": "YAWEAP_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1306,
+                "section": "YAWEAP_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -15,
+          "YSort": 10
+        },
+        "desert": {
+          "art_id": "YAWEAP_A",
+          "image": "YAWEAP_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6050,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_a.shp",
+            "folder": "genermd",
+            "filename": "ygweap_a.shp",
+            "stem": "ygweap_a",
+            "extension": ".shp",
+            "size": 30976,
+            "sha1": "b306f814988d57082a662f4d5f78c1534781d39e"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1300,
+                "section": "YAWEAP_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1301,
+                "section": "YAWEAP_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1302,
+                "section": "YAWEAP_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1303,
+                "section": "YAWEAP_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1304,
+                "section": "YAWEAP_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1305,
+                "section": "YAWEAP_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1306,
+                "section": "YAWEAP_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -15,
+          "YSort": 10
+        },
+        "lunar": {
+          "art_id": "YAWEAP_A",
+          "image": "YAWEAP_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6050,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_a.shp",
+            "folder": "genermd",
+            "filename": "ygweap_a.shp",
+            "stem": "ygweap_a",
+            "extension": ".shp",
+            "size": 30976,
+            "sha1": "b306f814988d57082a662f4d5f78c1534781d39e"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1300,
+                "section": "YAWEAP_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1301,
+                "section": "YAWEAP_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1302,
+                "section": "YAWEAP_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1303,
+                "section": "YAWEAP_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1304,
+                "section": "YAWEAP_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1305,
+                "section": "YAWEAP_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1306,
+                "section": "YAWEAP_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -15,
+          "YSort": 10
+        },
+        "newurban": {
+          "art_id": "YAWEAP_A",
+          "image": "YAWEAP_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6050,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_a.shp",
+            "folder": "genermd",
+            "filename": "ygweap_a.shp",
+            "stem": "ygweap_a",
+            "extension": ".shp",
+            "size": 30976,
+            "sha1": "b306f814988d57082a662f4d5f78c1534781d39e"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1300,
+                "section": "YAWEAP_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1301,
+                "section": "YAWEAP_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1302,
+                "section": "YAWEAP_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1303,
+                "section": "YAWEAP_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1304,
+                "section": "YAWEAP_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1305,
+                "section": "YAWEAP_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1306,
+                "section": "YAWEAP_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -15,
+          "YSort": 10
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "YAWEAP_AD",
+          "image": "YAWEAP_AD",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6051,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_ad.shp",
+            "folder": "genermd",
+            "filename": "ygweap_ad.shp",
+            "stem": "ygweap_ad",
+            "extension": ".shp",
+            "size": 31152,
+            "sha1": "ef6ed74a45e5e6d7a8f0dfc79b95ecc7075f0107"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YAWEAP_AD",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1310,
+                "section": "YAWEAP_AD",
+                "key": "Image",
+                "value": "YAWEAP_AD"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1311,
+                "section": "YAWEAP_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1312,
+                "section": "YAWEAP_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1313,
+                "section": "YAWEAP_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1314,
+                "section": "YAWEAP_AD",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1315,
+                "section": "YAWEAP_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1316,
+                "section": "YAWEAP_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1317,
+                "section": "YAWEAP_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -15,
+          "YSort": 10
+        },
+        "snow": {
+          "art_id": "YAWEAP_AD",
+          "image": "YAWEAP_AD",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11272,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yaweap_ad.shp",
+            "folder": "snowmd",
+            "filename": "yaweap_ad.shp",
+            "stem": "yaweap_ad",
+            "extension": ".shp",
+            "size": 31152,
+            "sha1": "ef6ed74a45e5e6d7a8f0dfc79b95ecc7075f0107"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YAWEAP_AD",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1310,
+                "section": "YAWEAP_AD",
+                "key": "Image",
+                "value": "YAWEAP_AD"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1311,
+                "section": "YAWEAP_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1312,
+                "section": "YAWEAP_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1313,
+                "section": "YAWEAP_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1314,
+                "section": "YAWEAP_AD",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1315,
+                "section": "YAWEAP_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1316,
+                "section": "YAWEAP_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1317,
+                "section": "YAWEAP_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -15,
+          "YSort": 10
+        },
+        "urban": {
+          "art_id": "YAWEAP_AD",
+          "image": "YAWEAP_AD",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6051,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_ad.shp",
+            "folder": "genermd",
+            "filename": "ygweap_ad.shp",
+            "stem": "ygweap_ad",
+            "extension": ".shp",
+            "size": 31152,
+            "sha1": "ef6ed74a45e5e6d7a8f0dfc79b95ecc7075f0107"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YAWEAP_AD",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1310,
+                "section": "YAWEAP_AD",
+                "key": "Image",
+                "value": "YAWEAP_AD"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1311,
+                "section": "YAWEAP_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1312,
+                "section": "YAWEAP_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1313,
+                "section": "YAWEAP_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1314,
+                "section": "YAWEAP_AD",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1315,
+                "section": "YAWEAP_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1316,
+                "section": "YAWEAP_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1317,
+                "section": "YAWEAP_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -15,
+          "YSort": 10
+        },
+        "desert": {
+          "art_id": "YAWEAP_AD",
+          "image": "YAWEAP_AD",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6051,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_ad.shp",
+            "folder": "genermd",
+            "filename": "ygweap_ad.shp",
+            "stem": "ygweap_ad",
+            "extension": ".shp",
+            "size": 31152,
+            "sha1": "ef6ed74a45e5e6d7a8f0dfc79b95ecc7075f0107"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YAWEAP_AD",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1310,
+                "section": "YAWEAP_AD",
+                "key": "Image",
+                "value": "YAWEAP_AD"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1311,
+                "section": "YAWEAP_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1312,
+                "section": "YAWEAP_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1313,
+                "section": "YAWEAP_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1314,
+                "section": "YAWEAP_AD",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1315,
+                "section": "YAWEAP_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1316,
+                "section": "YAWEAP_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1317,
+                "section": "YAWEAP_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -15,
+          "YSort": 10
+        },
+        "lunar": {
+          "art_id": "YAWEAP_AD",
+          "image": "YAWEAP_AD",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6051,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_ad.shp",
+            "folder": "genermd",
+            "filename": "ygweap_ad.shp",
+            "stem": "ygweap_ad",
+            "extension": ".shp",
+            "size": 31152,
+            "sha1": "ef6ed74a45e5e6d7a8f0dfc79b95ecc7075f0107"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YAWEAP_AD",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1310,
+                "section": "YAWEAP_AD",
+                "key": "Image",
+                "value": "YAWEAP_AD"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1311,
+                "section": "YAWEAP_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1312,
+                "section": "YAWEAP_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1313,
+                "section": "YAWEAP_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1314,
+                "section": "YAWEAP_AD",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1315,
+                "section": "YAWEAP_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1316,
+                "section": "YAWEAP_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1317,
+                "section": "YAWEAP_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -15,
+          "YSort": 10
+        },
+        "newurban": {
+          "art_id": "YAWEAP_AD",
+          "image": "YAWEAP_AD",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6051,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_ad.shp",
+            "folder": "genermd",
+            "filename": "ygweap_ad.shp",
+            "stem": "ygweap_ad",
+            "extension": ".shp",
+            "size": 31152,
+            "sha1": "ef6ed74a45e5e6d7a8f0dfc79b95ecc7075f0107"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YAWEAP_AD",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1310,
+                "section": "YAWEAP_AD",
+                "key": "Image",
+                "value": "YAWEAP_AD"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1311,
+                "section": "YAWEAP_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1312,
+                "section": "YAWEAP_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1313,
+                "section": "YAWEAP_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1314,
+                "section": "YAWEAP_AD",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1315,
+                "section": "YAWEAP_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1316,
+                "section": "YAWEAP_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1317,
+                "section": "YAWEAP_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -15,
+          "YSort": 10
+        }
+      },
+      "DeployingAnim": {
+        "temperate": {
+          "art_id": "YAWEAP_2",
+          "image": "YAWEAP_2",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6047,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_2.shp",
+            "folder": "genermd",
+            "filename": "ygweap_2.shp",
+            "stem": "ygweap_2",
+            "extension": ".shp",
+            "size": 17968,
+            "sha1": "95eb51d28bb4bdf3aa86d31c84aaca7358513f4e"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1343,
+                "section": "YAWEAP_2",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1344,
+                "section": "YAWEAP_2",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1345,
+                "section": "YAWEAP_2",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1346,
+                "section": "YAWEAP_2",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1347,
+                "section": "YAWEAP_2",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1348,
+                "section": "YAWEAP_2",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1349,
+                "section": "YAWEAP_2",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "DeployingAnim",
+          "slot": "DeployingAnim",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "YAWEAP_2",
+          "image": "YAWEAP_2",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11268,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yaweap_2.shp",
+            "folder": "snowmd",
+            "filename": "yaweap_2.shp",
+            "stem": "yaweap_2",
+            "extension": ".shp",
+            "size": 17968,
+            "sha1": "bc059a7abfe4e62675dabf0559be1b953f44bb7c"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1343,
+                "section": "YAWEAP_2",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1344,
+                "section": "YAWEAP_2",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1345,
+                "section": "YAWEAP_2",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1346,
+                "section": "YAWEAP_2",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1347,
+                "section": "YAWEAP_2",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1348,
+                "section": "YAWEAP_2",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1349,
+                "section": "YAWEAP_2",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "DeployingAnim",
+          "slot": "DeployingAnim",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "YAWEAP_2",
+          "image": "YAWEAP_2",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6047,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_2.shp",
+            "folder": "genermd",
+            "filename": "ygweap_2.shp",
+            "stem": "ygweap_2",
+            "extension": ".shp",
+            "size": 17968,
+            "sha1": "95eb51d28bb4bdf3aa86d31c84aaca7358513f4e"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1343,
+                "section": "YAWEAP_2",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1344,
+                "section": "YAWEAP_2",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1345,
+                "section": "YAWEAP_2",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1346,
+                "section": "YAWEAP_2",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1347,
+                "section": "YAWEAP_2",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1348,
+                "section": "YAWEAP_2",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1349,
+                "section": "YAWEAP_2",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "DeployingAnim",
+          "slot": "DeployingAnim",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "YAWEAP_2",
+          "image": "YAWEAP_2",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6047,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_2.shp",
+            "folder": "genermd",
+            "filename": "ygweap_2.shp",
+            "stem": "ygweap_2",
+            "extension": ".shp",
+            "size": 17968,
+            "sha1": "95eb51d28bb4bdf3aa86d31c84aaca7358513f4e"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1343,
+                "section": "YAWEAP_2",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1344,
+                "section": "YAWEAP_2",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1345,
+                "section": "YAWEAP_2",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1346,
+                "section": "YAWEAP_2",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1347,
+                "section": "YAWEAP_2",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1348,
+                "section": "YAWEAP_2",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1349,
+                "section": "YAWEAP_2",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "DeployingAnim",
+          "slot": "DeployingAnim",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "YAWEAP_2",
+          "image": "YAWEAP_2",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6047,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_2.shp",
+            "folder": "genermd",
+            "filename": "ygweap_2.shp",
+            "stem": "ygweap_2",
+            "extension": ".shp",
+            "size": 17968,
+            "sha1": "95eb51d28bb4bdf3aa86d31c84aaca7358513f4e"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1343,
+                "section": "YAWEAP_2",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1344,
+                "section": "YAWEAP_2",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1345,
+                "section": "YAWEAP_2",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1346,
+                "section": "YAWEAP_2",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1347,
+                "section": "YAWEAP_2",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1348,
+                "section": "YAWEAP_2",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1349,
+                "section": "YAWEAP_2",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "DeployingAnim",
+          "slot": "DeployingAnim",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "YAWEAP_2",
+          "image": "YAWEAP_2",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6047,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_2.shp",
+            "folder": "genermd",
+            "filename": "ygweap_2.shp",
+            "stem": "ygweap_2",
+            "extension": ".shp",
+            "size": 17968,
+            "sha1": "95eb51d28bb4bdf3aa86d31c84aaca7358513f4e"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1343,
+                "section": "YAWEAP_2",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1344,
+                "section": "YAWEAP_2",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1345,
+                "section": "YAWEAP_2",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1346,
+                "section": "YAWEAP_2",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1347,
+                "section": "YAWEAP_2",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1348,
+                "section": "YAWEAP_2",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1349,
+                "section": "YAWEAP_2",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "DeployingAnim",
+          "slot": "DeployingAnim",
+          "damaged": false
+        }
+      },
+      "RoofDeployingAnim": {
+        "temperate": {
+          "art_id": "YAWEAP_3",
+          "image": "YAWEAP_3",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6048,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_3.shp",
+            "folder": "genermd",
+            "filename": "ygweap_3.shp",
+            "stem": "ygweap_3",
+            "extension": ".shp",
+            "size": 14336,
+            "sha1": "a665d5c8b805bddb4136915364b7e304031a18bf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1365,
+                "section": "YAWEAP_3",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1366,
+                "section": "YAWEAP_3",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1367,
+                "section": "YAWEAP_3",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1368,
+                "section": "YAWEAP_3",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1369,
+                "section": "YAWEAP_3",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1370,
+                "section": "YAWEAP_3",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1371,
+                "section": "YAWEAP_3",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "RoofDeployingAnim",
+          "slot": "RoofDeployingAnim",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "YAWEAP_3",
+          "image": "YAWEAP_3",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11269,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yaweap_3.shp",
+            "folder": "snowmd",
+            "filename": "yaweap_3.shp",
+            "stem": "yaweap_3",
+            "extension": ".shp",
+            "size": 14344,
+            "sha1": "696899e944d793b5834fe60b84d386972b98a1bf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1365,
+                "section": "YAWEAP_3",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1366,
+                "section": "YAWEAP_3",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1367,
+                "section": "YAWEAP_3",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1368,
+                "section": "YAWEAP_3",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1369,
+                "section": "YAWEAP_3",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1370,
+                "section": "YAWEAP_3",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1371,
+                "section": "YAWEAP_3",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "RoofDeployingAnim",
+          "slot": "RoofDeployingAnim",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "YAWEAP_3",
+          "image": "YAWEAP_3",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6048,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_3.shp",
+            "folder": "genermd",
+            "filename": "ygweap_3.shp",
+            "stem": "ygweap_3",
+            "extension": ".shp",
+            "size": 14336,
+            "sha1": "a665d5c8b805bddb4136915364b7e304031a18bf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1365,
+                "section": "YAWEAP_3",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1366,
+                "section": "YAWEAP_3",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1367,
+                "section": "YAWEAP_3",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1368,
+                "section": "YAWEAP_3",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1369,
+                "section": "YAWEAP_3",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1370,
+                "section": "YAWEAP_3",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1371,
+                "section": "YAWEAP_3",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "RoofDeployingAnim",
+          "slot": "RoofDeployingAnim",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "YAWEAP_3",
+          "image": "YAWEAP_3",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6048,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_3.shp",
+            "folder": "genermd",
+            "filename": "ygweap_3.shp",
+            "stem": "ygweap_3",
+            "extension": ".shp",
+            "size": 14336,
+            "sha1": "a665d5c8b805bddb4136915364b7e304031a18bf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1365,
+                "section": "YAWEAP_3",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1366,
+                "section": "YAWEAP_3",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1367,
+                "section": "YAWEAP_3",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1368,
+                "section": "YAWEAP_3",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1369,
+                "section": "YAWEAP_3",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1370,
+                "section": "YAWEAP_3",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1371,
+                "section": "YAWEAP_3",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "RoofDeployingAnim",
+          "slot": "RoofDeployingAnim",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "YAWEAP_3",
+          "image": "YAWEAP_3",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6048,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_3.shp",
+            "folder": "genermd",
+            "filename": "ygweap_3.shp",
+            "stem": "ygweap_3",
+            "extension": ".shp",
+            "size": 14336,
+            "sha1": "a665d5c8b805bddb4136915364b7e304031a18bf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1365,
+                "section": "YAWEAP_3",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1366,
+                "section": "YAWEAP_3",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1367,
+                "section": "YAWEAP_3",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1368,
+                "section": "YAWEAP_3",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1369,
+                "section": "YAWEAP_3",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1370,
+                "section": "YAWEAP_3",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1371,
+                "section": "YAWEAP_3",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "RoofDeployingAnim",
+          "slot": "RoofDeployingAnim",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "YAWEAP_3",
+          "image": "YAWEAP_3",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6048,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_3.shp",
+            "folder": "genermd",
+            "filename": "ygweap_3.shp",
+            "stem": "ygweap_3",
+            "extension": ".shp",
+            "size": 14336,
+            "sha1": "a665d5c8b805bddb4136915364b7e304031a18bf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1365,
+                "section": "YAWEAP_3",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1366,
+                "section": "YAWEAP_3",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1367,
+                "section": "YAWEAP_3",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1368,
+                "section": "YAWEAP_3",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1369,
+                "section": "YAWEAP_3",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1370,
+                "section": "YAWEAP_3",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1371,
+                "section": "YAWEAP_3",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "RoofDeployingAnim",
+          "slot": "RoofDeployingAnim",
+          "damaged": false
+        }
+      },
+      "UnderDoorAnim": {
+        "temperate": {
+          "art_id": "YAWEAP_1",
+          "image": "YAWEAP_1",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6046,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_1.shp",
+            "folder": "genermd",
+            "filename": "ygweap_1.shp",
+            "stem": "ygweap_1",
+            "extension": ".shp",
+            "size": 5080,
+            "sha1": "62ffd55f55c75a2b6d64dc2fdf7ffd99fb8e59a8"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1321,
+                "section": "YAWEAP_1",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1322,
+                "section": "YAWEAP_1",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1323,
+                "section": "YAWEAP_1",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1324,
+                "section": "YAWEAP_1",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1325,
+                "section": "YAWEAP_1",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1326,
+                "section": "YAWEAP_1",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1327,
+                "section": "YAWEAP_1",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderDoorAnim",
+          "slot": "UnderDoorAnim",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "YAWEAP_1",
+          "image": "YAWEAP_1",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11267,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yaweap_1.shp",
+            "folder": "snowmd",
+            "filename": "yaweap_1.shp",
+            "stem": "yaweap_1",
+            "extension": ".shp",
+            "size": 5080,
+            "sha1": "ff7b718b931165e5e1bf6b04430e0b8ab02a2873"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1321,
+                "section": "YAWEAP_1",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1322,
+                "section": "YAWEAP_1",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1323,
+                "section": "YAWEAP_1",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1324,
+                "section": "YAWEAP_1",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1325,
+                "section": "YAWEAP_1",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1326,
+                "section": "YAWEAP_1",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1327,
+                "section": "YAWEAP_1",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderDoorAnim",
+          "slot": "UnderDoorAnim",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "YAWEAP_1",
+          "image": "YAWEAP_1",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6046,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_1.shp",
+            "folder": "genermd",
+            "filename": "ygweap_1.shp",
+            "stem": "ygweap_1",
+            "extension": ".shp",
+            "size": 5080,
+            "sha1": "62ffd55f55c75a2b6d64dc2fdf7ffd99fb8e59a8"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1321,
+                "section": "YAWEAP_1",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1322,
+                "section": "YAWEAP_1",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1323,
+                "section": "YAWEAP_1",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1324,
+                "section": "YAWEAP_1",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1325,
+                "section": "YAWEAP_1",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1326,
+                "section": "YAWEAP_1",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1327,
+                "section": "YAWEAP_1",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderDoorAnim",
+          "slot": "UnderDoorAnim",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "YAWEAP_1",
+          "image": "YAWEAP_1",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6046,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_1.shp",
+            "folder": "genermd",
+            "filename": "ygweap_1.shp",
+            "stem": "ygweap_1",
+            "extension": ".shp",
+            "size": 5080,
+            "sha1": "62ffd55f55c75a2b6d64dc2fdf7ffd99fb8e59a8"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1321,
+                "section": "YAWEAP_1",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1322,
+                "section": "YAWEAP_1",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1323,
+                "section": "YAWEAP_1",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1324,
+                "section": "YAWEAP_1",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1325,
+                "section": "YAWEAP_1",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1326,
+                "section": "YAWEAP_1",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1327,
+                "section": "YAWEAP_1",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderDoorAnim",
+          "slot": "UnderDoorAnim",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "YAWEAP_1",
+          "image": "YAWEAP_1",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6046,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_1.shp",
+            "folder": "genermd",
+            "filename": "ygweap_1.shp",
+            "stem": "ygweap_1",
+            "extension": ".shp",
+            "size": 5080,
+            "sha1": "62ffd55f55c75a2b6d64dc2fdf7ffd99fb8e59a8"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1321,
+                "section": "YAWEAP_1",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1322,
+                "section": "YAWEAP_1",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1323,
+                "section": "YAWEAP_1",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1324,
+                "section": "YAWEAP_1",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1325,
+                "section": "YAWEAP_1",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1326,
+                "section": "YAWEAP_1",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1327,
+                "section": "YAWEAP_1",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderDoorAnim",
+          "slot": "UnderDoorAnim",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "YAWEAP_1",
+          "image": "YAWEAP_1",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6046,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_1.shp",
+            "folder": "genermd",
+            "filename": "ygweap_1.shp",
+            "stem": "ygweap_1",
+            "extension": ".shp",
+            "size": 5080,
+            "sha1": "62ffd55f55c75a2b6d64dc2fdf7ffd99fb8e59a8"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1321,
+                "section": "YAWEAP_1",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1322,
+                "section": "YAWEAP_1",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1323,
+                "section": "YAWEAP_1",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1324,
+                "section": "YAWEAP_1",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1325,
+                "section": "YAWEAP_1",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1326,
+                "section": "YAWEAP_1",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1327,
+                "section": "YAWEAP_1",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderDoorAnim",
+          "slot": "UnderDoorAnim",
+          "damaged": false
+        }
+      },
+      "UnderRoofDoorAnim": {
+        "temperate": {
+          "art_id": "YAWEAP_4",
+          "image": "YAWEAP_4",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6049,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_4.shp",
+            "folder": "genermd",
+            "filename": "ygweap_4.shp",
+            "stem": "ygweap_4",
+            "extension": ".shp",
+            "size": 13264,
+            "sha1": "d79d3d03a35db9b88f8e319ea68fd4485889002c"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1387,
+                "section": "YAWEAP_4",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1388,
+                "section": "YAWEAP_4",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1389,
+                "section": "YAWEAP_4",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1390,
+                "section": "YAWEAP_4",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1391,
+                "section": "YAWEAP_4",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1392,
+                "section": "YAWEAP_4",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1393,
+                "section": "YAWEAP_4",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderRoofDoorAnim",
+          "slot": "UnderRoofDoorAnim",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "YAWEAP_4",
+          "image": "YAWEAP_4",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11270,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yaweap_4.shp",
+            "folder": "snowmd",
+            "filename": "yaweap_4.shp",
+            "stem": "yaweap_4",
+            "extension": ".shp",
+            "size": 13280,
+            "sha1": "370acf65bff65f4387553405ba47f39f1c5cd5d9"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1387,
+                "section": "YAWEAP_4",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1388,
+                "section": "YAWEAP_4",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1389,
+                "section": "YAWEAP_4",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1390,
+                "section": "YAWEAP_4",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1391,
+                "section": "YAWEAP_4",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1392,
+                "section": "YAWEAP_4",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1393,
+                "section": "YAWEAP_4",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderRoofDoorAnim",
+          "slot": "UnderRoofDoorAnim",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "YAWEAP_4",
+          "image": "YAWEAP_4",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6049,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_4.shp",
+            "folder": "genermd",
+            "filename": "ygweap_4.shp",
+            "stem": "ygweap_4",
+            "extension": ".shp",
+            "size": 13264,
+            "sha1": "d79d3d03a35db9b88f8e319ea68fd4485889002c"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1387,
+                "section": "YAWEAP_4",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1388,
+                "section": "YAWEAP_4",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1389,
+                "section": "YAWEAP_4",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1390,
+                "section": "YAWEAP_4",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1391,
+                "section": "YAWEAP_4",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1392,
+                "section": "YAWEAP_4",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1393,
+                "section": "YAWEAP_4",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderRoofDoorAnim",
+          "slot": "UnderRoofDoorAnim",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "YAWEAP_4",
+          "image": "YAWEAP_4",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6049,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_4.shp",
+            "folder": "genermd",
+            "filename": "ygweap_4.shp",
+            "stem": "ygweap_4",
+            "extension": ".shp",
+            "size": 13264,
+            "sha1": "d79d3d03a35db9b88f8e319ea68fd4485889002c"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1387,
+                "section": "YAWEAP_4",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1388,
+                "section": "YAWEAP_4",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1389,
+                "section": "YAWEAP_4",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1390,
+                "section": "YAWEAP_4",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1391,
+                "section": "YAWEAP_4",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1392,
+                "section": "YAWEAP_4",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1393,
+                "section": "YAWEAP_4",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderRoofDoorAnim",
+          "slot": "UnderRoofDoorAnim",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "YAWEAP_4",
+          "image": "YAWEAP_4",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6049,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_4.shp",
+            "folder": "genermd",
+            "filename": "ygweap_4.shp",
+            "stem": "ygweap_4",
+            "extension": ".shp",
+            "size": 13264,
+            "sha1": "d79d3d03a35db9b88f8e319ea68fd4485889002c"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1387,
+                "section": "YAWEAP_4",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1388,
+                "section": "YAWEAP_4",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1389,
+                "section": "YAWEAP_4",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1390,
+                "section": "YAWEAP_4",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1391,
+                "section": "YAWEAP_4",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1392,
+                "section": "YAWEAP_4",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1393,
+                "section": "YAWEAP_4",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderRoofDoorAnim",
+          "slot": "UnderRoofDoorAnim",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "YAWEAP_4",
+          "image": "YAWEAP_4",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6049,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygweap_4.shp",
+            "folder": "genermd",
+            "filename": "ygweap_4.shp",
+            "stem": "ygweap_4",
+            "extension": ".shp",
+            "size": 13264,
+            "sha1": "d79d3d03a35db9b88f8e319ea68fd4485889002c"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 0,
+          "LoopCount": -1,
+          "Rate": 400,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1387,
+                "section": "YAWEAP_4",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1388,
+                "section": "YAWEAP_4",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1389,
+                "section": "YAWEAP_4",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1390,
+                "section": "YAWEAP_4",
+                "key": "LoopEnd",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1391,
+                "section": "YAWEAP_4",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "400",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1392,
+                "section": "YAWEAP_4",
+                "key": "Rate",
+                "value": "400"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 1393,
+                "section": "YAWEAP_4",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "UnderRoofDoorAnim",
+          "slot": "UnderRoofDoorAnim",
+          "damaged": false
+        }
+      }
+    },
+    "foundation": "5x3",
+    "height": 5,
+    "occupy_height": 0,
+    "damage_fire_offsets": [
+      [
+        20.0,
+        35.0
+      ],
+      [
+        50.0,
+        101.0
+      ],
+      [
+        111.0,
+        64.0
+      ]
+    ],
+    "zshape_point_move": [
+      30.0,
+      15.0
+    ]
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:YWarfactory",
+      "Name": "Yuri War Factory",
+      "BuildCat": "Tech",
+      "WeaponsFactory": true,
+      "Prerequisite": "PROC,YABRCK,YACNST",
+      "Factory": "UnitType",
+      "DeployTime": 0.044,
+      "Strength": 1000,
+      "Armor": "wood",
+      "TechLevel": 2,
+      "Sight": 4,
+      "Adjacent": 2,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": 2,
+      "Cost": 2000,
+      "Points": 80,
+      "Power": -25,
+      "Capturable": true,
+      "Crewed": true,
+      "Bib": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+      "DamageSmokeOffset": "408,880,435",
+      "AIBuildThis": true,
+      "ExitCoord": "512,256,0",
+      "Spyable": true,
+      "ImmuneToPsionics": false,
+      "NumberImpassableRows": 1
+    },
+    "raw_values": {
+      "UIName": "Name:YWarfactory",
+      "Name": "Yuri War Factory",
+      "BuildCat": "Tech",
+      "WeaponsFactory": "yes",
+      "Prerequisite": "PROC,YABRCK,YACNST",
+      "Factory": "UnitType",
+      "DeployTime": ".044",
+      "Strength": "1000",
+      "Armor": "wood",
+      "TechLevel": "2",
+      "Sight": "4",
+      "Adjacent": "2",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": "2",
+      "Cost": "2000",
+      "Points": "80",
+      "Power": "-25",
+      "Capturable": "true",
+      "Crewed": "yes",
+      "Bib": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+      "DamageSmokeOffset": "408,880,435",
+      "AIBuildThis": "yes",
+      "ExitCoord": "512,256,0",
+      "Spyable": "yes",
+      "ImmuneToPsionics": "no",
+      "NumberImpassableRows": "1"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:YWarfactory",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13306,
+          "section": "YAWEAP",
+          "key": "UIName",
+          "value": "Name:YWarfactory"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13299,
+            "section": "YAWEAP",
+            "key": "UIName",
+            "value": "Name:YWarfactory"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Yuri War Factory",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13307,
+          "section": "YAWEAP",
+          "key": "Name",
+          "value": "Yuri War Factory"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13300,
+            "section": "YAWEAP",
+            "key": "Name",
+            "value": "Yuri War Factory"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Tech",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13308,
+          "section": "YAWEAP",
+          "key": "BuildCat",
+          "value": "Tech"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13301,
+            "section": "YAWEAP",
+            "key": "BuildCat",
+            "value": "Tech"
+          }
+        ]
+      },
+      "WeaponsFactory": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13309,
+          "section": "YAWEAP",
+          "key": "WeaponsFactory",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13302,
+            "section": "YAWEAP",
+            "key": "WeaponsFactory",
+            "value": "yes"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "PROC,YABRCK,YACNST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13310,
+          "section": "YAWEAP",
+          "key": "Prerequisite",
+          "value": "PROC,YABRCK,YACNST"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13303,
+            "section": "YAWEAP",
+            "key": "Prerequisite",
+            "value": "PROC,YABRCK,YACNST"
+          }
+        ]
+      },
+      "Factory": {
+        "value": "UnitType",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13311,
+          "section": "YAWEAP",
+          "key": "Factory",
+          "value": "UnitType"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13304,
+            "section": "YAWEAP",
+            "key": "Factory",
+            "value": "UnitType"
+          }
+        ]
+      },
+      "DeployTime": {
+        "value": ".044",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13312,
+          "section": "YAWEAP",
+          "key": "DeployTime",
+          "value": ".044"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13305,
+            "section": "YAWEAP",
+            "key": "DeployTime",
+            "value": ".044"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13313,
+          "section": "YAWEAP",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13306,
+            "section": "YAWEAP",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13314,
+          "section": "YAWEAP",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13307,
+            "section": "YAWEAP",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13315,
+          "section": "YAWEAP",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13308,
+            "section": "YAWEAP",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13316,
+          "section": "YAWEAP",
+          "key": "Sight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13309,
+            "section": "YAWEAP",
+            "key": "Sight",
+            "value": "4"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13317,
+          "section": "YAWEAP",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13310,
+            "section": "YAWEAP",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13318,
+          "section": "YAWEAP",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13311,
+            "section": "YAWEAP",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AIBasePlanningSide": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13319,
+          "section": "YAWEAP",
+          "key": "AIBasePlanningSide",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13312,
+            "section": "YAWEAP",
+            "key": "AIBasePlanningSide",
+            "value": "2"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13320,
+          "section": "YAWEAP",
+          "key": "Cost",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13313,
+            "section": "YAWEAP",
+            "key": "Cost",
+            "value": "2000"
+          }
+        ]
+      },
+      "Points": {
+        "value": "80",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13321,
+          "section": "YAWEAP",
+          "key": "Points",
+          "value": "80"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13314,
+            "section": "YAWEAP",
+            "key": "Points",
+            "value": "80"
+          }
+        ]
+      },
+      "Power": {
+        "value": "-25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13322,
+          "section": "YAWEAP",
+          "key": "Power",
+          "value": "-25"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13315,
+            "section": "YAWEAP",
+            "key": "Power",
+            "value": "-25"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13323,
+          "section": "YAWEAP",
+          "key": "Capturable",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13316,
+            "section": "YAWEAP",
+            "key": "Capturable",
+            "value": "true"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13324,
+          "section": "YAWEAP",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13317,
+            "section": "YAWEAP",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Bib": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13325,
+          "section": "YAWEAP",
+          "key": "Bib",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13318,
+            "section": "YAWEAP",
+            "key": "Bib",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13326,
+          "section": "YAWEAP",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13319,
+            "section": "YAWEAP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13327,
+          "section": "YAWEAP",
+          "key": "DebrisAnims",
+          "value": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13320,
+            "section": "YAWEAP",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13328,
+          "section": "YAWEAP",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13321,
+            "section": "YAWEAP",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13329,
+          "section": "YAWEAP",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13322,
+            "section": "YAWEAP",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13330,
+          "section": "YAWEAP",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13323,
+            "section": "YAWEAP",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13331,
+          "section": "YAWEAP",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys,BigGreySmokeSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13324,
+            "section": "YAWEAP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys,BigGreySmokeSys"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "408,880,435",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13332,
+          "section": "YAWEAP",
+          "key": "DamageSmokeOffset",
+          "value": "408,880,435"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13325,
+            "section": "YAWEAP",
+            "key": "DamageSmokeOffset",
+            "value": "408,880,435"
+          }
+        ]
+      },
+      "AIBuildThis": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13333,
+          "section": "YAWEAP",
+          "key": "AIBuildThis",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13326,
+            "section": "YAWEAP",
+            "key": "AIBuildThis",
+            "value": "yes"
+          }
+        ]
+      },
+      "ExitCoord": {
+        "value": "512,256,0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13335,
+          "section": "YAWEAP",
+          "key": "ExitCoord",
+          "value": "512,256,0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13328,
+            "section": "YAWEAP",
+            "key": "ExitCoord",
+            "value": "512,256,0"
+          }
+        ]
+      },
+      "Spyable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13336,
+          "section": "YAWEAP",
+          "key": "Spyable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13329,
+            "section": "YAWEAP",
+            "key": "Spyable",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13338,
+          "section": "YAWEAP",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13331,
+            "section": "YAWEAP",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "NumberImpassableRows": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13339,
+          "section": "YAWEAP",
+          "key": "NumberImpassableRows",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13332,
+            "section": "YAWEAP",
+            "key": "NumberImpassableRows",
+            "value": "1"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Image": "YAWEAP",
+      "Remapable": true,
+      "Cameo": "YWEPICON",
+      "Foundation": "5x3",
+      "Height": 5,
+      "AnimActive": "0,1,0",
+      "ZShapePointMove": "30,15",
+      "Buildup": "YAWEAPMK",
+      "DemandLoadBuildup": true,
+      "FreeBuildup": true,
+      "DeployingAnim": "YAWEAP_2",
+      "ActiveAnim": "YAWEAP_A",
+      "ActiveAnimDamaged": "YAWEAP_AD",
+      "ActiveAnimZAdjust": -15,
+      "ActiveAnimYSort": 10,
+      "UnderDoorAnim": "YAWEAP_1",
+      "NewTheater": true,
+      "BibShape": "YAWEAPBB",
+      "RoofDeployingAnim": "YAWEAP_3",
+      "UnderRoofDoorAnim": "YAWEAP_4",
+      "DamageFireOffset0": "20,35",
+      "DamageFireOffset1": "50,101",
+      "DamageFireOffset2": "111,64",
+      "OccupyHeight": 0,
+      "AddOccupy1": "-1,0",
+      "AddOccupy2": "-1,1",
+      "AddOccupy3": "-2,-1",
+      "AddOccupy4": "0,-1",
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Image": "YAWEAP",
+      "Remapable": "yes",
+      "Cameo": "YWEPICON",
+      "Foundation": "5x3",
+      "Height": "5",
+      "AnimActive": "0,1,0",
+      "ZShapePointMove": "30,15",
+      "Buildup": "YAWEAPMK",
+      "DemandLoadBuildup": "true",
+      "FreeBuildup": "true",
+      "DeployingAnim": "YAWEAP_2",
+      "ActiveAnim": "YAWEAP_A",
+      "ActiveAnimDamaged": "YAWEAP_AD",
+      "ActiveAnimZAdjust": "-15",
+      "ActiveAnimYSort": "10",
+      "UnderDoorAnim": "YAWEAP_1",
+      "NewTheater": "yes",
+      "BibShape": "YAWEAPBB",
+      "RoofDeployingAnim": "YAWEAP_3",
+      "UnderRoofDoorAnim": "YAWEAP_4",
+      "DamageFireOffset0": "20,35",
+      "DamageFireOffset1": "50,101",
+      "DamageFireOffset2": "111,64",
+      "OccupyHeight": "0",
+      "AddOccupy1": "-1,0",
+      "AddOccupy2": "-1,1",
+      "AddOccupy3": "-2,-1",
+      "AddOccupy4": "0,-1",
+      "CanBeHidden": "False"
+    },
+    "provenance": {
+      "Image": {
+        "value": "YAWEAP",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1259,
+          "section": "YAWEAP",
+          "key": "Image",
+          "value": "YAWEAP"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1260,
+          "section": "YAWEAP",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Cameo": {
+        "value": "YWEPICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1261,
+          "section": "YAWEAP",
+          "key": "Cameo",
+          "value": "YWEPICON"
+        },
+        "history": []
+      },
+      "Foundation": {
+        "value": "5x3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1263,
+          "section": "YAWEAP",
+          "key": "Foundation",
+          "value": "5x3"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1264,
+          "section": "YAWEAP",
+          "key": "Height",
+          "value": "5"
+        },
+        "history": []
+      },
+      "AnimActive": {
+        "value": "0,1,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1265,
+          "section": "YAWEAP",
+          "key": "AnimActive",
+          "value": "0,1,0"
+        },
+        "history": []
+      },
+      "ZShapePointMove": {
+        "value": "30,15",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1266,
+          "section": "YAWEAP",
+          "key": "ZShapePointMove",
+          "value": "30,15"
+        },
+        "history": []
+      },
+      "Buildup": {
+        "value": "YAWEAPMK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1267,
+          "section": "YAWEAP",
+          "key": "Buildup",
+          "value": "YAWEAPMK"
+        },
+        "history": []
+      },
+      "DemandLoadBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1268,
+          "section": "YAWEAP",
+          "key": "DemandLoadBuildup",
+          "value": "true"
+        },
+        "history": []
+      },
+      "FreeBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1269,
+          "section": "YAWEAP",
+          "key": "FreeBuildup",
+          "value": "true"
+        },
+        "history": []
+      },
+      "DeployingAnim": {
+        "value": "YAWEAP_2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1270,
+          "section": "YAWEAP",
+          "key": "DeployingAnim",
+          "value": "YAWEAP_2"
+        },
+        "history": []
+      },
+      "ActiveAnim": {
+        "value": "YAWEAP_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1271,
+          "section": "YAWEAP",
+          "key": "ActiveAnim",
+          "value": "YAWEAP_A"
+        },
+        "history": []
+      },
+      "ActiveAnimDamaged": {
+        "value": "YAWEAP_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1272,
+          "section": "YAWEAP",
+          "key": "ActiveAnimDamaged",
+          "value": "YAWEAP_AD"
+        },
+        "history": []
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-15",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1273,
+          "section": "YAWEAP",
+          "key": "ActiveAnimZAdjust",
+          "value": "-15"
+        },
+        "history": []
+      },
+      "ActiveAnimYSort": {
+        "value": "10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1274,
+          "section": "YAWEAP",
+          "key": "ActiveAnimYSort",
+          "value": "10"
+        },
+        "history": []
+      },
+      "UnderDoorAnim": {
+        "value": "YAWEAP_1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1278,
+          "section": "YAWEAP",
+          "key": "UnderDoorAnim",
+          "value": "YAWEAP_1"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1279,
+          "section": "YAWEAP",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "BibShape": {
+        "value": "YAWEAPBB",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1280,
+          "section": "YAWEAP",
+          "key": "BibShape",
+          "value": "YAWEAPBB"
+        },
+        "history": []
+      },
+      "RoofDeployingAnim": {
+        "value": "YAWEAP_3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1287,
+          "section": "YAWEAP",
+          "key": "RoofDeployingAnim",
+          "value": "YAWEAP_3"
+        },
+        "history": []
+      },
+      "UnderRoofDoorAnim": {
+        "value": "YAWEAP_4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1288,
+          "section": "YAWEAP",
+          "key": "UnderRoofDoorAnim",
+          "value": "YAWEAP_4"
+        },
+        "history": []
+      },
+      "DamageFireOffset0": {
+        "value": "20,35",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1289,
+          "section": "YAWEAP",
+          "key": "DamageFireOffset0",
+          "value": "20,35"
+        },
+        "history": []
+      },
+      "DamageFireOffset1": {
+        "value": "50,101",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1290,
+          "section": "YAWEAP",
+          "key": "DamageFireOffset1",
+          "value": "50,101"
+        },
+        "history": []
+      },
+      "DamageFireOffset2": {
+        "value": "111,64",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1291,
+          "section": "YAWEAP",
+          "key": "DamageFireOffset2",
+          "value": "111,64"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1292,
+          "section": "YAWEAP",
+          "key": "OccupyHeight",
+          "value": "0"
+        },
+        "history": []
+      },
+      "AddOccupy1": {
+        "value": "-1,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1293,
+          "section": "YAWEAP",
+          "key": "AddOccupy1",
+          "value": "-1,0"
+        },
+        "history": []
+      },
+      "AddOccupy2": {
+        "value": "-1,1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1294,
+          "section": "YAWEAP",
+          "key": "AddOccupy2",
+          "value": "-1,1"
+        },
+        "history": []
+      },
+      "AddOccupy3": {
+        "value": "-2,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1295,
+          "section": "YAWEAP",
+          "key": "AddOccupy3",
+          "value": "-2,-1"
+        },
+        "history": []
+      },
+      "AddOccupy4": {
+        "value": "0,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1296,
+          "section": "YAWEAP",
+          "key": "AddOccupy4",
+          "value": "0,-1"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1297,
+          "section": "YAWEAP",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      }
+    }
+  }
+}

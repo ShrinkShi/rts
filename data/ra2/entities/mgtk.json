@@ -1,0 +1,2382 @@
+{
+  "id": "MGTK",
+  "category": "vehicle",
+  "name_token": "Name:MGTK",
+  "art_id": "RTNK",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GAWEAP",
+    "GATECH"
+  ],
+  "tech_level": 9,
+  "cost": 1000,
+  "strength": 200,
+  "armor": "light",
+  "speed": 7,
+  "sight": 9,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Normal",
+  "weapons": {
+    "Primary": {
+      "id": "MirageGun",
+      "projectile": "InvisibleLow",
+      "warhead": "MirageWH",
+      "report": [
+        "MirageTankAttack"
+      ],
+      "values": {
+        "Damage": 100,
+        "ROF": 70,
+        "Range": 7,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Warhead": "MirageWH",
+        "DisguiseFireOnly": false,
+        "Report": "MirageTankAttack",
+        "Bright": true,
+        "Anim": "VTMUZZLE",
+        "DisguiseFakeBlinkTime": 15,
+        "RevealOnFire": false
+      },
+      "raw_values": {
+        "Damage": "100",
+        "ROF": "70",
+        "Range": "7",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Warhead": "MirageWH",
+        "DisguiseFireOnly": "no",
+        "Report": "MirageTankAttack",
+        "Bright": "yes",
+        "Anim": "VTMUZZLE",
+        "DisguiseFakeBlinkTime": "15",
+        "RevealOnFire": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24165,
+            "section": "MirageGun",
+            "key": "Damage",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17358,
+              "section": "MirageGun",
+              "key": "Damage",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24157,
+              "section": "MirageGun",
+              "key": "Damage",
+              "value": "100"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "70",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24166,
+            "section": "MirageGun",
+            "key": "ROF",
+            "value": "70"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17359,
+              "section": "MirageGun",
+              "key": "ROF",
+              "value": "70"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24158,
+              "section": "MirageGun",
+              "key": "ROF",
+              "value": "70"
+            }
+          ]
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24167,
+            "section": "MirageGun",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17360,
+              "section": "MirageGun",
+              "key": "Range",
+              "value": "7"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24159,
+              "section": "MirageGun",
+              "key": "Range",
+              "value": "7"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24168,
+            "section": "MirageGun",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17361,
+              "section": "MirageGun",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24160,
+              "section": "MirageGun",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24169,
+            "section": "MirageGun",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17362,
+              "section": "MirageGun",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24161,
+              "section": "MirageGun",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "MirageWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24170,
+            "section": "MirageGun",
+            "key": "Warhead",
+            "value": "MirageWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17363,
+              "section": "MirageGun",
+              "key": "Warhead",
+              "value": "MirageWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24162,
+              "section": "MirageGun",
+              "key": "Warhead",
+              "value": "MirageWH"
+            }
+          ]
+        },
+        "DisguiseFireOnly": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24171,
+            "section": "MirageGun",
+            "key": "DisguiseFireOnly",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17364,
+              "section": "MirageGun",
+              "key": "DisguiseFireOnly",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24163,
+              "section": "MirageGun",
+              "key": "DisguiseFireOnly",
+              "value": "no"
+            }
+          ]
+        },
+        "Report": {
+          "value": "MirageTankAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24172,
+            "section": "MirageGun",
+            "key": "Report",
+            "value": "MirageTankAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17365,
+              "section": "MirageGun",
+              "key": "Report",
+              "value": "MirageTankAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24164,
+              "section": "MirageGun",
+              "key": "Report",
+              "value": "MirageTankAttack"
+            }
+          ]
+        },
+        "Bright": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24173,
+            "section": "MirageGun",
+            "key": "Bright",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17366,
+              "section": "MirageGun",
+              "key": "Bright",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24165,
+              "section": "MirageGun",
+              "key": "Bright",
+              "value": "yes"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "VTMUZZLE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24174,
+            "section": "MirageGun",
+            "key": "Anim",
+            "value": "VTMUZZLE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17367,
+              "section": "MirageGun",
+              "key": "Anim",
+              "value": "VTMUZZLE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24166,
+              "section": "MirageGun",
+              "key": "Anim",
+              "value": "VTMUZZLE"
+            }
+          ]
+        },
+        "DisguiseFakeBlinkTime": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24175,
+            "section": "MirageGun",
+            "key": "DisguiseFakeBlinkTime",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17368,
+              "section": "MirageGun",
+              "key": "DisguiseFakeBlinkTime",
+              "value": "15"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24167,
+              "section": "MirageGun",
+              "key": "DisguiseFakeBlinkTime",
+              "value": "15"
+            }
+          ]
+        },
+        "RevealOnFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24176,
+            "section": "MirageGun",
+            "key": "RevealOnFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17369,
+              "section": "MirageGun",
+              "key": "RevealOnFire",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24168,
+              "section": "MirageGun",
+              "key": "RevealOnFire",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    },
+    "EliteSecondary": {
+      "id": "MirageGunE",
+      "projectile": "InvisibleLow",
+      "warhead": "MirageWH",
+      "report": [
+        "MirageTankAttack"
+      ],
+      "values": {
+        "Damage": 150,
+        "ROF": 80,
+        "Range": 9,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Warhead": "MirageWH",
+        "DisguiseFireOnly": false,
+        "Report": "MirageTankAttack",
+        "Bright": true,
+        "DisguiseFakeBlinkTime": 5,
+        "RevealOnFire": false
+      },
+      "raw_values": {
+        "Damage": "150",
+        "ROF": "80",
+        "Range": "9",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Warhead": "MirageWH",
+        "DisguiseFireOnly": "no",
+        "Report": "MirageTankAttack",
+        "Bright": "yes",
+        "DisguiseFakeBlinkTime": "5",
+        "RevealOnFire": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "150",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24928,
+            "section": "MirageGunE",
+            "key": "Damage",
+            "value": "150"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17863,
+              "section": "MirageGunE",
+              "key": "Damage",
+              "value": "150"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24920,
+              "section": "MirageGunE",
+              "key": "Damage",
+              "value": "150"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "80",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24929,
+            "section": "MirageGunE",
+            "key": "ROF",
+            "value": "80"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17864,
+              "section": "MirageGunE",
+              "key": "ROF",
+              "value": "80"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24921,
+              "section": "MirageGunE",
+              "key": "ROF",
+              "value": "80"
+            }
+          ]
+        },
+        "Range": {
+          "value": "9",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24930,
+            "section": "MirageGunE",
+            "key": "Range",
+            "value": "9"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17865,
+              "section": "MirageGunE",
+              "key": "Range",
+              "value": "9"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24922,
+              "section": "MirageGunE",
+              "key": "Range",
+              "value": "9"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24931,
+            "section": "MirageGunE",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17866,
+              "section": "MirageGunE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24923,
+              "section": "MirageGunE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24932,
+            "section": "MirageGunE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17867,
+              "section": "MirageGunE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24924,
+              "section": "MirageGunE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "MirageWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24933,
+            "section": "MirageGunE",
+            "key": "Warhead",
+            "value": "MirageWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17868,
+              "section": "MirageGunE",
+              "key": "Warhead",
+              "value": "MirageWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24925,
+              "section": "MirageGunE",
+              "key": "Warhead",
+              "value": "MirageWH"
+            }
+          ]
+        },
+        "DisguiseFireOnly": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24934,
+            "section": "MirageGunE",
+            "key": "DisguiseFireOnly",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17869,
+              "section": "MirageGunE",
+              "key": "DisguiseFireOnly",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24926,
+              "section": "MirageGunE",
+              "key": "DisguiseFireOnly",
+              "value": "no"
+            }
+          ]
+        },
+        "Report": {
+          "value": "MirageTankAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24935,
+            "section": "MirageGunE",
+            "key": "Report",
+            "value": "MirageTankAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17870,
+              "section": "MirageGunE",
+              "key": "Report",
+              "value": "MirageTankAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24927,
+              "section": "MirageGunE",
+              "key": "Report",
+              "value": "MirageTankAttack"
+            }
+          ]
+        },
+        "Bright": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24936,
+            "section": "MirageGunE",
+            "key": "Bright",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17871,
+              "section": "MirageGunE",
+              "key": "Bright",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24928,
+              "section": "MirageGunE",
+              "key": "Bright",
+              "value": "yes"
+            }
+          ]
+        },
+        "DisguiseFakeBlinkTime": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24937,
+            "section": "MirageGunE",
+            "key": "DisguiseFakeBlinkTime",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17872,
+              "section": "MirageGunE",
+              "key": "DisguiseFakeBlinkTime",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24929,
+              "section": "MirageGunE",
+              "key": "DisguiseFakeBlinkTime",
+              "value": "5"
+            }
+          ]
+        },
+        "RevealOnFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24938,
+            "section": "MirageGunE",
+            "key": "RevealOnFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17873,
+              "section": "MirageGunE",
+              "key": "RevealOnFire",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24930,
+              "section": "MirageGunE",
+              "key": "RevealOnFire",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "MirageTankSelect"
+    ],
+    "VoiceMove": [
+      "MirageTankMove"
+    ],
+    "VoiceAttack": [
+      "MirageTankAttackCommand"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ],
+    "MoveSound": [
+      "MirageTankMoveStart"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "RTNK",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4315,
+      "pack": "ra2",
+      "relative_path": "local/rtnk.vxl",
+      "folder": "local",
+      "filename": "rtnk.vxl",
+      "stem": "rtnk",
+      "extension": ".vxl",
+      "size": 53459,
+      "sha1": "1524544ace02aa8db9716ddf1d8436894fdb68cb"
+    },
+    "body_hva": {
+      "asset_id": 4314,
+      "pack": "ra2",
+      "relative_path": "local/rtnk.hva",
+      "folder": "local",
+      "filename": "rtnk.hva",
+      "stem": "rtnk",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "f2139793aeb6f6a378f2cf83f01b1afc10b17191"
+    },
+    "turret": {
+      "asset_id": 4319,
+      "pack": "ra2",
+      "relative_path": "local/rtnktur.vxl",
+      "folder": "local",
+      "filename": "rtnktur.vxl",
+      "stem": "rtnktur",
+      "extension": ".vxl",
+      "size": 18161,
+      "sha1": "80237e8b732df04299e3b1a0749a120477c0e4f5"
+    },
+    "turret_hva": {
+      "asset_id": 4318,
+      "pack": "ra2",
+      "relative_path": "local/rtnktur.hva",
+      "folder": "local",
+      "filename": "rtnktur.hva",
+      "stem": "rtnktur",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "f2139793aeb6f6a378f2cf83f01b1afc10b17191"
+    },
+    "barrel": {
+      "asset_id": 4317,
+      "pack": "ra2",
+      "relative_path": "local/rtnkbarl.vxl",
+      "folder": "local",
+      "filename": "rtnkbarl.vxl",
+      "stem": "rtnkbarl",
+      "extension": ".vxl",
+      "size": 2316,
+      "sha1": "4cb98b1299357987217d6d384b22ea985c609445"
+    },
+    "barrel_hva": {
+      "asset_id": 4316,
+      "pack": "ra2",
+      "relative_path": "local/rtnkbarl.hva",
+      "folder": "local",
+      "filename": "rtnkbarl.hva",
+      "stem": "rtnkbarl",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "f2139793aeb6f6a378f2cf83f01b1afc10b17191"
+    },
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      130.0,
+      0.0,
+      80.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:MGTK",
+      "Name": "Mirage Tank",
+      "Image": "RTNK",
+      "Prerequisite": "GAWEAP,GATECH",
+      "Primary": "MirageGun",
+      "DisguiseWhenStill": true,
+      "Strength": 200,
+      "Category": "AFV",
+      "Armor": "light",
+      "Turret": false,
+      "IsTilter": true,
+      "Crusher": true,
+      "TooBigToFitUnderBridge": true,
+      "TechLevel": 9,
+      "Sight": 9,
+      "Speed": 7,
+      "CrateGoodie": true,
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "Cost": 1000,
+      "Points": 25,
+      "ROT": 5,
+      "IsSelectableCombatant": true,
+      "CanDisguise": true,
+      "CanApproachTarget": false,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "MirageTankSelect",
+      "VoiceMove": "MirageTankMove",
+      "VoiceAttack": "MirageTankAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "MirageTankMoveStart",
+      "MaxDebris": 2,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": 15,
+      "DamageParticleSystems": "SparkSys",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Accelerates": false,
+      "ImmuneToVeins": true,
+      "Size": 3,
+      "AllowedToStartInMultiplayer": false,
+      "EliteSecondary": "MirageGunE",
+      "Soylent": 1000,
+      "CrushSound": "TankCrush"
+    },
+    "raw_values": {
+      "UIName": "Name:MGTK",
+      "Name": "Mirage Tank",
+      "Image": "RTNK",
+      "Prerequisite": "GAWEAP,GATECH",
+      "Primary": "MirageGun",
+      "DisguiseWhenStill": "yes",
+      "Strength": "200",
+      "Category": "AFV",
+      "Armor": "light",
+      "Turret": "no",
+      "IsTilter": "yes",
+      "Crusher": "yes",
+      "TooBigToFitUnderBridge": "true",
+      "TechLevel": "9",
+      "Sight": "9",
+      "Speed": "7",
+      "CrateGoodie": "yes",
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "Cost": "1000",
+      "Points": "25",
+      "ROT": "5",
+      "IsSelectableCombatant": "yes",
+      "CanDisguise": "yes",
+      "CanApproachTarget": "no",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "MirageTankSelect",
+      "VoiceMove": "MirageTankMove",
+      "VoiceAttack": "MirageTankAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "MirageTankMoveStart",
+      "MaxDebris": "2",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": "15",
+      "DamageParticleSystems": "SparkSys",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Accelerates": "false",
+      "ImmuneToVeins": "yes",
+      "Size": "3",
+      "AllowedToStartInMultiplayer": "no",
+      "EliteSecondary": "MirageGunE",
+      "Soylent": "1000",
+      "CrushSound": "TankCrush"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:MGTK",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6808,
+          "section": "MGTK",
+          "key": "UIName",
+          "value": "Name:MGTK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6615,
+            "section": "MGTK",
+            "key": "UIName",
+            "value": "Name:MGTK"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6806,
+            "section": "MGTK",
+            "key": "UIName",
+            "value": "Name:MGTK"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Mirage Tank",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6809,
+          "section": "MGTK",
+          "key": "Name",
+          "value": "Mirage Tank"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6616,
+            "section": "MGTK",
+            "key": "Name",
+            "value": "Mirage Tank"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6807,
+            "section": "MGTK",
+            "key": "Name",
+            "value": "Mirage Tank"
+          }
+        ]
+      },
+      "Image": {
+        "value": "RTNK",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6810,
+          "section": "MGTK",
+          "key": "Image",
+          "value": "RTNK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6617,
+            "section": "MGTK",
+            "key": "Image",
+            "value": "RTNK"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6808,
+            "section": "MGTK",
+            "key": "Image",
+            "value": "RTNK"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GAWEAP,GATECH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6811,
+          "section": "MGTK",
+          "key": "Prerequisite",
+          "value": "GAWEAP,GATECH"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6618,
+            "section": "MGTK",
+            "key": "Prerequisite",
+            "value": "GAWEAP,GATECH"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6809,
+            "section": "MGTK",
+            "key": "Prerequisite",
+            "value": "GAWEAP,GATECH"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "MirageGun",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6812,
+          "section": "MGTK",
+          "key": "Primary",
+          "value": "MirageGun"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6619,
+            "section": "MGTK",
+            "key": "Primary",
+            "value": "MirageGun"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6810,
+            "section": "MGTK",
+            "key": "Primary",
+            "value": "MirageGun"
+          }
+        ]
+      },
+      "DisguiseWhenStill": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6813,
+          "section": "MGTK",
+          "key": "DisguiseWhenStill",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6620,
+            "section": "MGTK",
+            "key": "DisguiseWhenStill",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6811,
+            "section": "MGTK",
+            "key": "DisguiseWhenStill",
+            "value": "yes"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6818,
+          "section": "MGTK",
+          "key": "Strength",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6625,
+            "section": "MGTK",
+            "key": "Strength",
+            "value": "200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6816,
+            "section": "MGTK",
+            "key": "Strength",
+            "value": "200"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6819,
+          "section": "MGTK",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6626,
+            "section": "MGTK",
+            "key": "Category",
+            "value": "AFV"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6817,
+            "section": "MGTK",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6820,
+          "section": "MGTK",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6627,
+            "section": "MGTK",
+            "key": "Armor",
+            "value": "light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6818,
+            "section": "MGTK",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6821,
+          "section": "MGTK",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6628,
+            "section": "MGTK",
+            "key": "Turret",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6819,
+            "section": "MGTK",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "IsTilter": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6822,
+          "section": "MGTK",
+          "key": "IsTilter",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6629,
+            "section": "MGTK",
+            "key": "IsTilter",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6820,
+            "section": "MGTK",
+            "key": "IsTilter",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6823,
+          "section": "MGTK",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6630,
+            "section": "MGTK",
+            "key": "Crusher",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6821,
+            "section": "MGTK",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6824,
+          "section": "MGTK",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6631,
+            "section": "MGTK",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6822,
+            "section": "MGTK",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "9",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6825,
+          "section": "MGTK",
+          "key": "TechLevel",
+          "value": "9"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6632,
+            "section": "MGTK",
+            "key": "TechLevel",
+            "value": "9"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6823,
+            "section": "MGTK",
+            "key": "TechLevel",
+            "value": "9"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "9",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6826,
+          "section": "MGTK",
+          "key": "Sight",
+          "value": "9"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6633,
+            "section": "MGTK",
+            "key": "Sight",
+            "value": "9"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6824,
+            "section": "MGTK",
+            "key": "Sight",
+            "value": "9"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6827,
+          "section": "MGTK",
+          "key": "Speed",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6634,
+            "section": "MGTK",
+            "key": "Speed",
+            "value": "7"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6825,
+            "section": "MGTK",
+            "key": "Speed",
+            "value": "7"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6828,
+          "section": "MGTK",
+          "key": "CrateGoodie",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6635,
+            "section": "MGTK",
+            "key": "CrateGoodie",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6826,
+            "section": "MGTK",
+            "key": "CrateGoodie",
+            "value": "yes"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6829,
+          "section": "MGTK",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6636,
+            "section": "MGTK",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6827,
+            "section": "MGTK",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6830,
+          "section": "MGTK",
+          "key": "Cost",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6637,
+            "section": "MGTK",
+            "key": "Cost",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6828,
+            "section": "MGTK",
+            "key": "Cost",
+            "value": "1000"
+          }
+        ]
+      },
+      "Points": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6832,
+          "section": "MGTK",
+          "key": "Points",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6638,
+            "section": "MGTK",
+            "key": "Points",
+            "value": "25"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6830,
+            "section": "MGTK",
+            "key": "Points",
+            "value": "25"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6833,
+          "section": "MGTK",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6639,
+            "section": "MGTK",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6831,
+            "section": "MGTK",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6834,
+          "section": "MGTK",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6640,
+            "section": "MGTK",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6832,
+            "section": "MGTK",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "CanDisguise": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6835,
+          "section": "MGTK",
+          "key": "CanDisguise",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6641,
+            "section": "MGTK",
+            "key": "CanDisguise",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6833,
+            "section": "MGTK",
+            "key": "CanDisguise",
+            "value": "yes"
+          }
+        ]
+      },
+      "CanApproachTarget": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6836,
+          "section": "MGTK",
+          "key": "CanApproachTarget",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6642,
+            "section": "MGTK",
+            "key": "CanApproachTarget",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6834,
+            "section": "MGTK",
+            "key": "CanApproachTarget",
+            "value": "no"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6839,
+          "section": "MGTK",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6645,
+            "section": "MGTK",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6837,
+            "section": "MGTK",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "MirageTankSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6840,
+          "section": "MGTK",
+          "key": "VoiceSelect",
+          "value": "MirageTankSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6646,
+            "section": "MGTK",
+            "key": "VoiceSelect",
+            "value": "GenAllVehicleSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6838,
+            "section": "MGTK",
+            "key": "VoiceSelect",
+            "value": "MirageTankSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "MirageTankMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6841,
+          "section": "MGTK",
+          "key": "VoiceMove",
+          "value": "MirageTankMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6647,
+            "section": "MGTK",
+            "key": "VoiceMove",
+            "value": "GenAllVehicleMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6839,
+            "section": "MGTK",
+            "key": "VoiceMove",
+            "value": "MirageTankMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "MirageTankAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6842,
+          "section": "MGTK",
+          "key": "VoiceAttack",
+          "value": "MirageTankAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6648,
+            "section": "MGTK",
+            "key": "VoiceAttack",
+            "value": "GenAllVehicleAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6840,
+            "section": "MGTK",
+            "key": "VoiceAttack",
+            "value": "MirageTankAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6843,
+          "section": "MGTK",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6649,
+            "section": "MGTK",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6841,
+            "section": "MGTK",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6844,
+          "section": "MGTK",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6650,
+            "section": "MGTK",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6842,
+            "section": "MGTK",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "MirageTankMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6845,
+          "section": "MGTK",
+          "key": "MoveSound",
+          "value": "MirageTankMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6651,
+            "section": "MGTK",
+            "key": "MoveSound",
+            "value": "MirageTankMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6843,
+            "section": "MGTK",
+            "key": "MoveSound",
+            "value": "MirageTankMoveStart"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6846,
+          "section": "MGTK",
+          "key": "MaxDebris",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6652,
+            "section": "MGTK",
+            "key": "MaxDebris",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6844,
+            "section": "MGTK",
+            "key": "MaxDebris",
+            "value": "2"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6847,
+          "section": "MGTK",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6653,
+            "section": "MGTK",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6845,
+            "section": "MGTK",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Normal",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6848,
+          "section": "MGTK",
+          "key": "MovementZone",
+          "value": "Normal"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6654,
+            "section": "MGTK",
+            "key": "MovementZone",
+            "value": "Normal"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6846,
+            "section": "MGTK",
+            "key": "MovementZone",
+            "value": "Normal"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6849,
+          "section": "MGTK",
+          "key": "ThreatPosed",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6655,
+            "section": "MGTK",
+            "key": "ThreatPosed",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6847,
+            "section": "MGTK",
+            "key": "ThreatPosed",
+            "value": "15"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6850,
+          "section": "MGTK",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6656,
+            "section": "MGTK",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6848,
+            "section": "MGTK",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6851,
+          "section": "MGTK",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6657,
+            "section": "MGTK",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6849,
+            "section": "MGTK",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6852,
+          "section": "MGTK",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6658,
+            "section": "MGTK",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6850,
+            "section": "MGTK",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6853,
+          "section": "MGTK",
+          "key": "Accelerates",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6659,
+            "section": "MGTK",
+            "key": "Accelerates",
+            "value": "false"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6851,
+            "section": "MGTK",
+            "key": "Accelerates",
+            "value": "false"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6854,
+          "section": "MGTK",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6660,
+            "section": "MGTK",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6852,
+            "section": "MGTK",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "Size": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6855,
+          "section": "MGTK",
+          "key": "Size",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6661,
+            "section": "MGTK",
+            "key": "Size",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6853,
+            "section": "MGTK",
+            "key": "Size",
+            "value": "3"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6856,
+          "section": "MGTK",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6662,
+            "section": "MGTK",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6854,
+            "section": "MGTK",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "EliteSecondary": {
+        "value": "MirageGunE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6857,
+          "section": "MGTK",
+          "key": "EliteSecondary",
+          "value": "MirageGunE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6663,
+            "section": "MGTK",
+            "key": "EliteSecondary",
+            "value": "MirageGunE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6855,
+            "section": "MGTK",
+            "key": "EliteSecondary",
+            "value": "MirageGunE"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6831,
+          "section": "MGTK",
+          "key": "Soylent",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6829,
+            "section": "MGTK",
+            "key": "Soylent",
+            "value": "1000"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6858,
+          "section": "MGTK",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6856,
+            "section": "MGTK",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true,
+      "Remapable": true,
+      "Cameo": "RTNKICON",
+      "AltCameo": "RTNKUICO",
+      "PrimaryFireFLH": "130,0,80"
+    },
+    "raw_values": {
+      "Voxel": "yes",
+      "Remapable": "yes",
+      "Cameo": "RTNKICON",
+      "AltCameo": "RTNKUICO",
+      "PrimaryFireFLH": "130,0,80"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 921,
+          "section": "RTNK",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 649,
+            "section": "RTNK",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 922,
+          "section": "RTNK",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 650,
+            "section": "RTNK",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "RTNKICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 925,
+          "section": "RTNK",
+          "key": "Cameo",
+          "value": "RTNKICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 653,
+            "section": "RTNK",
+            "key": "Cameo",
+            "value": "RTNKICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "RTNKUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 926,
+          "section": "RTNK",
+          "key": "AltCameo",
+          "value": "RTNKUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 654,
+            "section": "RTNK",
+            "key": "AltCameo",
+            "value": "RTNKUICO"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "130,0,80",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 927,
+          "section": "RTNK",
+          "key": "PrimaryFireFLH",
+          "value": "130,0,80"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 655,
+            "section": "RTNK",
+            "key": "PrimaryFireFLH",
+            "value": "130,0,80"
+          }
+        ]
+      }
+    }
+  }
+}

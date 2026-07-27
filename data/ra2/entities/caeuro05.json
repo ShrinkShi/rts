@@ -1,0 +1,915 @@
+{
+  "id": "CAEURO05",
+  "category": "building",
+  "name_token": "Name:CAEURO05",
+  "art_id": "CAEURO05",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 400,
+  "armor": "concrete",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAEURO05",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1625,
+          "pack": "ra2",
+          "relative_path": "isotemp/cteuro05.shp",
+          "folder": "isotemp",
+          "filename": "cteuro05.shp",
+          "stem": "cteuro05",
+          "extension": ".shp",
+          "size": 11928,
+          "sha1": "a6abbfc2991b2e138637154bd5e02524612b2061"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 521,
+          "pack": "ra2",
+          "relative_path": "isosnow/caeuro05.shp",
+          "folder": "isosnow",
+          "filename": "caeuro05.shp",
+          "stem": "caeuro05",
+          "extension": ".shp",
+          "size": 12272,
+          "sha1": "46c1704ae990bef05d310ca80a01e8dba19cac8e"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2712,
+          "pack": "ra2",
+          "relative_path": "isourb/cueuro05.shp",
+          "folder": "isourb",
+          "filename": "cueuro05.shp",
+          "stem": "cueuro05",
+          "extension": ".shp",
+          "size": 11928,
+          "sha1": "a6abbfc2991b2e138637154bd5e02524612b2061"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6093,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdeuro05.shp",
+          "folder": "isodes",
+          "filename": "cdeuro05.shp",
+          "stem": "cdeuro05",
+          "extension": ".shp",
+          "size": 11928,
+          "sha1": "a6abbfc2991b2e138637154bd5e02524612b2061"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8161,
+          "pack": "ra2md",
+          "relative_path": "isolun/cleuro05.shp",
+          "folder": "isolun",
+          "filename": "cleuro05.shp",
+          "stem": "cleuro05",
+          "extension": ".shp",
+          "size": 11928,
+          "sha1": "a6abbfc2991b2e138637154bd5e02524612b2061"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9242,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cneuro05.shp",
+          "folder": "isoubn",
+          "filename": "cneuro05.shp",
+          "stem": "cneuro05",
+          "extension": ".shp",
+          "size": 11928,
+          "sha1": "a6abbfc2991b2e138637154bd5e02524612b2061"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "2x2",
+    "height": 5,
+    "occupy_height": 2,
+    "damage_fire_offsets": [
+      [
+        4.0,
+        13.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CAEURO05",
+      "Name": "Statue",
+      "TechLevel": -1,
+      "Strength": 400,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "concrete",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS2SM,DBRIS3LG,DBRIS5SM,DBRS10LG",
+      "MaxDebris": 8,
+      "MinDebris": 4,
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "LeaveRubble": true
+    },
+    "raw_values": {
+      "UIName": "Name:CAEURO05",
+      "Name": "Statue",
+      "TechLevel": "-1",
+      "Strength": "400",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "concrete",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS2SM,DBRIS3LG,DBRIS5SM,DBRS10LG",
+      "MaxDebris": "8",
+      "MinDebris": "4",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "LeaveRubble": "Yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CAEURO05",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20362,
+          "section": "CAEURO05",
+          "key": "UIName",
+          "value": "Name:CAEURO05"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13767,
+            "section": "CAEURO05",
+            "key": "UIName",
+            "value": "Name:CAEURO05"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20354,
+            "section": "CAEURO05",
+            "key": "UIName",
+            "value": "Name:CAEURO05"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Statue",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20363,
+          "section": "CAEURO05",
+          "key": "Name",
+          "value": "Statue"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13768,
+            "section": "CAEURO05",
+            "key": "Name",
+            "value": "RA2 European Statue"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20355,
+            "section": "CAEURO05",
+            "key": "Name",
+            "value": "Statue"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20364,
+          "section": "CAEURO05",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13769,
+            "section": "CAEURO05",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20356,
+            "section": "CAEURO05",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "400",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20365,
+          "section": "CAEURO05",
+          "key": "Strength",
+          "value": "400"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13770,
+            "section": "CAEURO05",
+            "key": "Strength",
+            "value": "400"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20357,
+            "section": "CAEURO05",
+            "key": "Strength",
+            "value": "400"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20366,
+          "section": "CAEURO05",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13771,
+            "section": "CAEURO05",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20358,
+            "section": "CAEURO05",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20367,
+          "section": "CAEURO05",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13772,
+            "section": "CAEURO05",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20359,
+            "section": "CAEURO05",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 13773,
+          "section": "CAEURO05",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20369,
+          "section": "CAEURO05",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13774,
+            "section": "CAEURO05",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20361,
+            "section": "CAEURO05",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "concrete",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20370,
+          "section": "CAEURO05",
+          "key": "Armor",
+          "value": "concrete"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13775,
+            "section": "CAEURO05",
+            "key": "Armor",
+            "value": "concrete"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20362,
+            "section": "CAEURO05",
+            "key": "Armor",
+            "value": "concrete"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20371,
+          "section": "CAEURO05",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13776,
+            "section": "CAEURO05",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20363,
+            "section": "CAEURO05",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS1LG,DBRIS1SM,DBRIS2SM,DBRIS3LG,DBRIS5SM,DBRS10LG",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20372,
+          "section": "CAEURO05",
+          "key": "DebrisAnims",
+          "value": "DBRIS1LG,DBRIS1SM,DBRIS2SM,DBRIS3LG,DBRIS5SM,DBRS10LG"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13777,
+            "section": "CAEURO05",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS2SM,DBRIS3LG,DBRIS5SM,DBRS10LG"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20364,
+            "section": "CAEURO05",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS2SM,DBRIS3LG,DBRIS5SM,DBRS10LG"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20373,
+          "section": "CAEURO05",
+          "key": "MaxDebris",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13778,
+            "section": "CAEURO05",
+            "key": "MaxDebris",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20365,
+            "section": "CAEURO05",
+            "key": "MaxDebris",
+            "value": "8"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20374,
+          "section": "CAEURO05",
+          "key": "MinDebris",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13779,
+            "section": "CAEURO05",
+            "key": "MinDebris",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20366,
+            "section": "CAEURO05",
+            "key": "MinDebris",
+            "value": "4"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20375,
+          "section": "CAEURO05",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13780,
+            "section": "CAEURO05",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20367,
+            "section": "CAEURO05",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20376,
+          "section": "CAEURO05",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13781,
+            "section": "CAEURO05",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20368,
+            "section": "CAEURO05",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20377,
+          "section": "CAEURO05",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13782,
+            "section": "CAEURO05",
+            "key": "ClickRepairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20369,
+            "section": "CAEURO05",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "Yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20383,
+          "section": "CAEURO05",
+          "key": "LeaveRubble",
+          "value": "Yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13788,
+            "section": "CAEURO05",
+            "key": "LeaveRubble",
+            "value": "Yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20375,
+            "section": "CAEURO05",
+            "key": "LeaveRubble",
+            "value": "Yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "2x2",
+      "Height": 5,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 2,
+      "AddOccupy1": "-1,-1",
+      "DamageFireOffset0": "4,13"
+    },
+    "raw_values": {
+      "Foundation": "2x2",
+      "Height": "5",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "2",
+      "AddOccupy1": "-1,-1",
+      "DamageFireOffset0": "4,13"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "2x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9415,
+          "section": "CAEURO05",
+          "key": "Foundation",
+          "value": "2x2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7581,
+            "section": "CAEURO05",
+            "key": "Foundation",
+            "value": "2x2"
+          }
+        ]
+      },
+      "Height": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9416,
+          "section": "CAEURO05",
+          "key": "Height",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7582,
+            "section": "CAEURO05",
+            "key": "Height",
+            "value": "5"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9417,
+          "section": "CAEURO05",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7583,
+            "section": "CAEURO05",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9418,
+          "section": "CAEURO05",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7584,
+            "section": "CAEURO05",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9420,
+          "section": "CAEURO05",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7586,
+            "section": "CAEURO05",
+            "key": "CanHideThings",
+            "value": "True"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9421,
+          "section": "CAEURO05",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7587,
+            "section": "CAEURO05",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9422,
+          "section": "CAEURO05",
+          "key": "OccupyHeight",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7588,
+            "section": "CAEURO05",
+            "key": "OccupyHeight",
+            "value": "2"
+          }
+        ]
+      },
+      "AddOccupy1": {
+        "value": "-1,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9423,
+          "section": "CAEURO05",
+          "key": "AddOccupy1",
+          "value": "-1,-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7589,
+            "section": "CAEURO05",
+            "key": "AddOccupy1",
+            "value": "-1,-1"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "4,13",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9424,
+          "section": "CAEURO05",
+          "key": "DamageFireOffset0",
+          "value": "4,13"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7590,
+            "section": "CAEURO05",
+            "key": "DamageFireOffset0",
+            "value": "4,13"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,3352 @@
+{
+  "id": "SNIPE",
+  "category": "infantry",
+  "name_token": "Name:SNIPE",
+  "art_id": "SNIPE",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance"
+  ],
+  "required_houses": [
+    "British"
+  ],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GAPILE",
+    "RADAR"
+  ],
+  "tech_level": 1,
+  "cost": 600,
+  "strength": 125,
+  "armor": "none",
+  "speed": 4,
+  "sight": 8,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Infantry",
+  "weapons": {
+    "Primary": {
+      "id": "AWP",
+      "projectile": "InvisibleLow",
+      "warhead": "HollowPoint",
+      "report": [
+        "SniperAttack"
+      ],
+      "values": {
+        "Damage": 125,
+        "ROF": 150,
+        "Range": 14,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Report": "SniperAttack",
+        "Warhead": "HollowPoint",
+        "RevealOnFire": false
+      },
+      "raw_values": {
+        "Damage": "125",
+        "ROF": "150",
+        "Range": "14",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Report": "SniperAttack",
+        "Warhead": "HollowPoint",
+        "RevealOnFire": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "125",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23077,
+            "section": "AWP",
+            "key": "Damage",
+            "value": "125"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16508,
+              "section": "AWP",
+              "key": "Damage",
+              "value": "125"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23069,
+              "section": "AWP",
+              "key": "Damage",
+              "value": "125"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "150",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23078,
+            "section": "AWP",
+            "key": "ROF",
+            "value": "150"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16509,
+              "section": "AWP",
+              "key": "ROF",
+              "value": "150"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23070,
+              "section": "AWP",
+              "key": "ROF",
+              "value": "150"
+            }
+          ]
+        },
+        "Range": {
+          "value": "14",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23079,
+            "section": "AWP",
+            "key": "Range",
+            "value": "14"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16510,
+              "section": "AWP",
+              "key": "Range",
+              "value": "14"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23071,
+              "section": "AWP",
+              "key": "Range",
+              "value": "14"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23080,
+            "section": "AWP",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16511,
+              "section": "AWP",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23072,
+              "section": "AWP",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23081,
+            "section": "AWP",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16512,
+              "section": "AWP",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23073,
+              "section": "AWP",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "SniperAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23082,
+            "section": "AWP",
+            "key": "Report",
+            "value": "SniperAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16513,
+              "section": "AWP",
+              "key": "Report",
+              "value": "SniperAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23074,
+              "section": "AWP",
+              "key": "Report",
+              "value": "SniperAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "HollowPoint",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23083,
+            "section": "AWP",
+            "key": "Warhead",
+            "value": "HollowPoint"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16514,
+              "section": "AWP",
+              "key": "Warhead",
+              "value": "HollowPoint"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23075,
+              "section": "AWP",
+              "key": "Warhead",
+              "value": "HollowPoint"
+            }
+          ]
+        },
+        "RevealOnFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23084,
+            "section": "AWP",
+            "key": "RevealOnFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16515,
+              "section": "AWP",
+              "key": "RevealOnFire",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23076,
+              "section": "AWP",
+              "key": "RevealOnFire",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "AWPE",
+      "projectile": "InvisibleLow",
+      "warhead": "HollowPoint",
+      "report": [
+        "SniperAttack"
+      ],
+      "values": {
+        "Damage": 125,
+        "ROF": 60,
+        "Range": 14,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Report": "SniperAttack",
+        "Warhead": "HollowPoint",
+        "RevealOnFire": false
+      },
+      "raw_values": {
+        "Damage": "125",
+        "ROF": "60",
+        "Range": "14",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Report": "SniperAttack",
+        "Warhead": "HollowPoint",
+        "RevealOnFire": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "125",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25147,
+            "section": "AWPE",
+            "key": "Damage",
+            "value": "125"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18015,
+              "section": "AWPE",
+              "key": "Damage",
+              "value": "125"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25139,
+              "section": "AWPE",
+              "key": "Damage",
+              "value": "125"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25148,
+            "section": "AWPE",
+            "key": "ROF",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18016,
+              "section": "AWPE",
+              "key": "ROF",
+              "value": "60"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25140,
+              "section": "AWPE",
+              "key": "ROF",
+              "value": "60"
+            }
+          ]
+        },
+        "Range": {
+          "value": "14",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25149,
+            "section": "AWPE",
+            "key": "Range",
+            "value": "14"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18017,
+              "section": "AWPE",
+              "key": "Range",
+              "value": "14"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25141,
+              "section": "AWPE",
+              "key": "Range",
+              "value": "14"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25150,
+            "section": "AWPE",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18018,
+              "section": "AWPE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25142,
+              "section": "AWPE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25151,
+            "section": "AWPE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18019,
+              "section": "AWPE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25143,
+              "section": "AWPE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "SniperAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25152,
+            "section": "AWPE",
+            "key": "Report",
+            "value": "SniperAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18020,
+              "section": "AWPE",
+              "key": "Report",
+              "value": "SniperAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25144,
+              "section": "AWPE",
+              "key": "Report",
+              "value": "SniperAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "HollowPoint",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25153,
+            "section": "AWPE",
+            "key": "Warhead",
+            "value": "HollowPoint"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18021,
+              "section": "AWPE",
+              "key": "Warhead",
+              "value": "HollowPoint"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25145,
+              "section": "AWPE",
+              "key": "Warhead",
+              "value": "HollowPoint"
+            }
+          ]
+        },
+        "RevealOnFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25154,
+            "section": "AWPE",
+            "key": "RevealOnFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 18022,
+              "section": "AWPE",
+              "key": "RevealOnFire",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25146,
+              "section": "AWPE",
+              "key": "RevealOnFire",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "SniperSelect"
+    ],
+    "VoiceMove": [
+      "SniperMove"
+    ],
+    "VoiceAttack": [
+      "SniperAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "SniperFear"
+    ],
+    "VoiceSpecialAttack": [
+      "SniperMove"
+    ],
+    "DieSound": [
+      "SniperDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "SNIPE",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 274,
+          "pack": "ra2",
+          "relative_path": "conquer/snipe.shp",
+          "folder": "conquer",
+          "filename": "snipe.shp",
+          "stem": "snipe",
+          "extension": ".shp",
+          "size": 144856,
+          "sha1": "118eea423f52dde34822f0a8686ac1b1bd09c91c"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 274,
+          "pack": "ra2",
+          "relative_path": "conquer/snipe.shp",
+          "folder": "conquer",
+          "filename": "snipe.shp",
+          "stem": "snipe",
+          "extension": ".shp",
+          "size": 144856,
+          "sha1": "118eea423f52dde34822f0a8686ac1b1bd09c91c"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 274,
+          "pack": "ra2",
+          "relative_path": "conquer/snipe.shp",
+          "folder": "conquer",
+          "filename": "snipe.shp",
+          "stem": "snipe",
+          "extension": ".shp",
+          "size": 144856,
+          "sha1": "118eea423f52dde34822f0a8686ac1b1bd09c91c"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 274,
+          "pack": "ra2",
+          "relative_path": "conquer/snipe.shp",
+          "folder": "conquer",
+          "filename": "snipe.shp",
+          "stem": "snipe",
+          "extension": ".shp",
+          "size": 144856,
+          "sha1": "118eea423f52dde34822f0a8686ac1b1bd09c91c"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 274,
+          "pack": "ra2",
+          "relative_path": "conquer/snipe.shp",
+          "folder": "conquer",
+          "filename": "snipe.shp",
+          "stem": "snipe",
+          "extension": ".shp",
+          "size": 144856,
+          "sha1": "118eea423f52dde34822f0a8686ac1b1bd09c91c"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 274,
+          "pack": "ra2",
+          "relative_path": "conquer/snipe.shp",
+          "folder": "conquer",
+          "filename": "snipe.shp",
+          "stem": "snipe",
+          "extension": ".shp",
+          "size": 144856,
+          "sha1": "118eea423f52dde34822f0a8686ac1b1bd09c91c"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "ConSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 86,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122
+          ],
+          "1": [
+            116
+          ],
+          "2": [
+            110
+          ],
+          "3": [
+            104
+          ],
+          "4": [
+            98
+          ],
+          "5": [
+            92
+          ],
+          "6": [
+            86
+          ],
+          "7": [
+            128
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 164,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205
+          ],
+          "1": [
+            194,
+            195,
+            196,
+            197,
+            198,
+            199
+          ],
+          "2": [
+            188,
+            189,
+            190,
+            191,
+            192,
+            193
+          ],
+          "3": [
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "4": [
+            176,
+            177,
+            178,
+            179,
+            180,
+            181
+          ],
+          "5": [
+            170,
+            171,
+            172,
+            173,
+            174,
+            175
+          ],
+          "6": [
+            164,
+            165,
+            166,
+            167,
+            168,
+            169
+          ],
+          "7": [
+            206,
+            207,
+            208,
+            209,
+            210,
+            211
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 260,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            272,
+            273
+          ],
+          "1": [
+            270,
+            271
+          ],
+          "2": [
+            268,
+            269
+          ],
+          "3": [
+            266,
+            267
+          ],
+          "4": [
+            264,
+            265
+          ],
+          "5": [
+            262,
+            263
+          ],
+          "6": [
+            260,
+            261
+          ],
+          "7": [
+            274,
+            275
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 86,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "1": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "2": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "3": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "4": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "5": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "6": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "7": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 276,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            288,
+            289
+          ],
+          "1": [
+            286,
+            287
+          ],
+          "2": [
+            284,
+            285
+          ],
+          "3": [
+            282,
+            283
+          ],
+          "4": [
+            280,
+            281
+          ],
+          "5": [
+            278,
+            279
+          ],
+          "6": [
+            276,
+            277
+          ],
+          "7": [
+            290,
+            291
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 212,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            248,
+            249,
+            250,
+            251,
+            252,
+            253
+          ],
+          "1": [
+            242,
+            243,
+            244,
+            245,
+            246,
+            247
+          ],
+          "2": [
+            236,
+            237,
+            238,
+            239,
+            240,
+            241
+          ],
+          "3": [
+            230,
+            231,
+            232,
+            233,
+            234,
+            235
+          ],
+          "4": [
+            224,
+            225,
+            226,
+            227,
+            228,
+            229
+          ],
+          "5": [
+            218,
+            219,
+            220,
+            221,
+            222,
+            223
+          ],
+          "6": [
+            212,
+            213,
+            214,
+            215,
+            216,
+            217
+          ],
+          "7": [
+            254,
+            255,
+            256,
+            257,
+            258,
+            259
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 134,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 149,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 293,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            293,
+            294,
+            295,
+            296,
+            297,
+            298,
+            299,
+            300
+          ]
+        }
+      },
+      "Paradrop": {
+        "name": "Paradrop",
+        "start": 292,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            292
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:SNIPE",
+      "Name": "Sniper",
+      "Category": "Soldier",
+      "Primary": "AWP",
+      "Prerequisite": "GAPILE,RADAR",
+      "CrushSound": "InfantrySquish",
+      "Strength": 125,
+      "Pip": "red",
+      "Armor": "none",
+      "TechLevel": 1,
+      "Sight": 8,
+      "Speed": 4,
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "RequiredHouses": "British",
+      "Cost": 600,
+      "Soylent": 300,
+      "Points": 10,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "SniperSelect",
+      "VoiceMove": "SniperMove",
+      "VoiceAttack": "SniperAttackCommand",
+      "VoiceFeedback": "SniperFear",
+      "VoiceSpecialAttack": "SniperMove",
+      "DieSound": "SniperDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "Infantry",
+      "ThreatPosed": 10,
+      "ImmuneToVeins": true,
+      "ImmuneToPsionics": false,
+      "Bombable": true,
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Size": 1,
+      "AllowedToStartInMultiplayer": false,
+      "ElitePrimary": "AWPE",
+      "PreventAttackMove": false,
+      "IFVMode": 5,
+      "UseOwnName": true
+    },
+    "raw_values": {
+      "UIName": "Name:SNIPE",
+      "Name": "Sniper",
+      "Category": "Soldier",
+      "Primary": "AWP",
+      "Prerequisite": "GAPILE,RADAR",
+      "CrushSound": "InfantrySquish",
+      "Strength": "125",
+      "Pip": "red",
+      "Armor": "none",
+      "TechLevel": "1",
+      "Sight": "8",
+      "Speed": "4",
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "RequiredHouses": "British",
+      "Cost": "600",
+      "Soylent": "300",
+      "Points": "10",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "SniperSelect",
+      "VoiceMove": "SniperMove",
+      "VoiceAttack": "SniperAttackCommand",
+      "VoiceFeedback": "SniperFear",
+      "VoiceSpecialAttack": "SniperMove",
+      "DieSound": "SniperDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "Infantry",
+      "ThreatPosed": "10",
+      "ImmuneToVeins": "yes",
+      "ImmuneToPsionics": "no",
+      "Bombable": "yes",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Size": "1",
+      "AllowedToStartInMultiplayer": "no",
+      "ElitePrimary": "AWPE",
+      "PreventAttackMove": "no",
+      "IFVMode": "5",
+      "UseOwnName": "true"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:SNIPE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4279,
+          "section": "SNIPE",
+          "key": "UIName",
+          "value": "Name:SNIPE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3180,
+            "section": "SNIPE",
+            "key": "UIName",
+            "value": "Name:SNIPE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4278,
+            "section": "SNIPE",
+            "key": "UIName",
+            "value": "Name:SNIPE"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Sniper",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4280,
+          "section": "SNIPE",
+          "key": "Name",
+          "value": "Sniper"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3181,
+            "section": "SNIPE",
+            "key": "Name",
+            "value": "Sniper"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4279,
+            "section": "SNIPE",
+            "key": "Name",
+            "value": "Sniper"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4281,
+          "section": "SNIPE",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3182,
+            "section": "SNIPE",
+            "key": "Category",
+            "value": "Soldier"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4280,
+            "section": "SNIPE",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "AWP",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4282,
+          "section": "SNIPE",
+          "key": "Primary",
+          "value": "AWP"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3183,
+            "section": "SNIPE",
+            "key": "Primary",
+            "value": "AWP"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4281,
+            "section": "SNIPE",
+            "key": "Primary",
+            "value": "AWP"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GAPILE,RADAR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4284,
+          "section": "SNIPE",
+          "key": "Prerequisite",
+          "value": "GAPILE,RADAR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3185,
+            "section": "SNIPE",
+            "key": "Prerequisite",
+            "value": "GAPILE,RADAR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4283,
+            "section": "SNIPE",
+            "key": "Prerequisite",
+            "value": "GAPILE,RADAR"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4285,
+          "section": "SNIPE",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3186,
+            "section": "SNIPE",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4284,
+            "section": "SNIPE",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "125",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4286,
+          "section": "SNIPE",
+          "key": "Strength",
+          "value": "125"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3187,
+            "section": "SNIPE",
+            "key": "Strength",
+            "value": "125"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4285,
+            "section": "SNIPE",
+            "key": "Strength",
+            "value": "125"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "red",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4287,
+          "section": "SNIPE",
+          "key": "Pip",
+          "value": "red"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3188,
+            "section": "SNIPE",
+            "key": "Pip",
+            "value": "red"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4286,
+            "section": "SNIPE",
+            "key": "Pip",
+            "value": "red"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4288,
+          "section": "SNIPE",
+          "key": "Armor",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3189,
+            "section": "SNIPE",
+            "key": "Armor",
+            "value": "none"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4287,
+            "section": "SNIPE",
+            "key": "Armor",
+            "value": "none"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4289,
+          "section": "SNIPE",
+          "key": "TechLevel",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3190,
+            "section": "SNIPE",
+            "key": "TechLevel",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4288,
+            "section": "SNIPE",
+            "key": "TechLevel",
+            "value": "1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4290,
+          "section": "SNIPE",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3191,
+            "section": "SNIPE",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4289,
+            "section": "SNIPE",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4291,
+          "section": "SNIPE",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3192,
+            "section": "SNIPE",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4290,
+            "section": "SNIPE",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4292,
+          "section": "SNIPE",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3193,
+            "section": "SNIPE",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4291,
+            "section": "SNIPE",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          }
+        ]
+      },
+      "RequiredHouses": {
+        "value": "British",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4293,
+          "section": "SNIPE",
+          "key": "RequiredHouses",
+          "value": "British"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3194,
+            "section": "SNIPE",
+            "key": "RequiredHouses",
+            "value": "British"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4292,
+            "section": "SNIPE",
+            "key": "RequiredHouses",
+            "value": "British"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4294,
+          "section": "SNIPE",
+          "key": "Cost",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3195,
+            "section": "SNIPE",
+            "key": "Cost",
+            "value": "600"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4293,
+            "section": "SNIPE",
+            "key": "Cost",
+            "value": "600"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "300",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4295,
+          "section": "SNIPE",
+          "key": "Soylent",
+          "value": "300"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3196,
+            "section": "SNIPE",
+            "key": "Soylent",
+            "value": "600"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4294,
+            "section": "SNIPE",
+            "key": "Soylent",
+            "value": "300"
+          }
+        ]
+      },
+      "Points": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4296,
+          "section": "SNIPE",
+          "key": "Points",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3197,
+            "section": "SNIPE",
+            "key": "Points",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4295,
+            "section": "SNIPE",
+            "key": "Points",
+            "value": "10"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4297,
+          "section": "SNIPE",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3198,
+            "section": "SNIPE",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4296,
+            "section": "SNIPE",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "SniperSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4298,
+          "section": "SNIPE",
+          "key": "VoiceSelect",
+          "value": "SniperSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3199,
+            "section": "SNIPE",
+            "key": "VoiceSelect",
+            "value": "SniperSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4297,
+            "section": "SNIPE",
+            "key": "VoiceSelect",
+            "value": "SniperSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "SniperMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4299,
+          "section": "SNIPE",
+          "key": "VoiceMove",
+          "value": "SniperMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3200,
+            "section": "SNIPE",
+            "key": "VoiceMove",
+            "value": "SniperMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4298,
+            "section": "SNIPE",
+            "key": "VoiceMove",
+            "value": "SniperMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "SniperAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4300,
+          "section": "SNIPE",
+          "key": "VoiceAttack",
+          "value": "SniperAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3201,
+            "section": "SNIPE",
+            "key": "VoiceAttack",
+            "value": "SniperAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4299,
+            "section": "SNIPE",
+            "key": "VoiceAttack",
+            "value": "SniperAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "SniperFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4301,
+          "section": "SNIPE",
+          "key": "VoiceFeedback",
+          "value": "SniperFear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3202,
+            "section": "SNIPE",
+            "key": "VoiceFeedback",
+            "value": "SniperFear"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4300,
+            "section": "SNIPE",
+            "key": "VoiceFeedback",
+            "value": "SniperFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "SniperMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4302,
+          "section": "SNIPE",
+          "key": "VoiceSpecialAttack",
+          "value": "SniperMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3203,
+            "section": "SNIPE",
+            "key": "VoiceSpecialAttack",
+            "value": "SniperMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4301,
+            "section": "SNIPE",
+            "key": "VoiceSpecialAttack",
+            "value": "SniperMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "SniperDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4303,
+          "section": "SNIPE",
+          "key": "DieSound",
+          "value": "SniperDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3204,
+            "section": "SNIPE",
+            "key": "DieSound",
+            "value": "SniperDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4302,
+            "section": "SNIPE",
+            "key": "DieSound",
+            "value": "SniperDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4304,
+          "section": "SNIPE",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3205,
+            "section": "SNIPE",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4303,
+            "section": "SNIPE",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4305,
+          "section": "SNIPE",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3206,
+            "section": "SNIPE",
+            "key": "PhysicalSize",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4304,
+            "section": "SNIPE",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4306,
+          "section": "SNIPE",
+          "key": "MovementZone",
+          "value": "Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3207,
+            "section": "SNIPE",
+            "key": "MovementZone",
+            "value": "Infantry"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4305,
+            "section": "SNIPE",
+            "key": "MovementZone",
+            "value": "Infantry"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4307,
+          "section": "SNIPE",
+          "key": "ThreatPosed",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3208,
+            "section": "SNIPE",
+            "key": "ThreatPosed",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4306,
+            "section": "SNIPE",
+            "key": "ThreatPosed",
+            "value": "10"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4308,
+          "section": "SNIPE",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3209,
+            "section": "SNIPE",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4307,
+            "section": "SNIPE",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4309,
+          "section": "SNIPE",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3210,
+            "section": "SNIPE",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4308,
+            "section": "SNIPE",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Bombable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4310,
+          "section": "SNIPE",
+          "key": "Bombable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3211,
+            "section": "SNIPE",
+            "key": "Bombable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4309,
+            "section": "SNIPE",
+            "key": "Bombable",
+            "value": "yes"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4311,
+          "section": "SNIPE",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3212,
+            "section": "SNIPE",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4310,
+            "section": "SNIPE",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4312,
+          "section": "SNIPE",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3213,
+            "section": "SNIPE",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4311,
+            "section": "SNIPE",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4313,
+          "section": "SNIPE",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3214,
+            "section": "SNIPE",
+            "key": "Size",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4312,
+            "section": "SNIPE",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4314,
+          "section": "SNIPE",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3215,
+            "section": "SNIPE",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4313,
+            "section": "SNIPE",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "AWPE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4315,
+          "section": "SNIPE",
+          "key": "ElitePrimary",
+          "value": "AWPE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3216,
+            "section": "SNIPE",
+            "key": "ElitePrimary",
+            "value": "AWPE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4314,
+            "section": "SNIPE",
+            "key": "ElitePrimary",
+            "value": "AWPE"
+          }
+        ]
+      },
+      "PreventAttackMove": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4316,
+          "section": "SNIPE",
+          "key": "PreventAttackMove",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3217,
+            "section": "SNIPE",
+            "key": "PreventAttackMove",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4315,
+            "section": "SNIPE",
+            "key": "PreventAttackMove",
+            "value": "no"
+          }
+        ]
+      },
+      "IFVMode": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4317,
+          "section": "SNIPE",
+          "key": "IFVMode",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3218,
+            "section": "SNIPE",
+            "key": "IFVMode",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4316,
+            "section": "SNIPE",
+            "key": "IFVMode",
+            "value": "5"
+          }
+        ]
+      },
+      "UseOwnName": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4318,
+          "section": "SNIPE",
+          "key": "UseOwnName",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4317,
+            "section": "SNIPE",
+            "key": "UseOwnName",
+            "value": "true"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "SNIPICON",
+      "AltCameo": "SNIPUICO",
+      "Sequence": "ConSequence",
+      "Crawls": true,
+      "Remapable": true,
+      "FireUp": 5,
+      "PrimaryFireFLH": "80,0,85"
+    },
+    "raw_values": {
+      "Cameo": "SNIPICON",
+      "AltCameo": "SNIPUICO",
+      "Sequence": "ConSequence",
+      "Crawls": "yes",
+      "Remapable": "yes",
+      "FireUp": "5",
+      "PrimaryFireFLH": "80,0,85"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "SNIPICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 302,
+          "section": "SNIPE",
+          "key": "Cameo",
+          "value": "SNIPICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 223,
+            "section": "SNIPE",
+            "key": "Cameo",
+            "value": "SNIPICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "SNIPUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 303,
+          "section": "SNIPE",
+          "key": "AltCameo",
+          "value": "SNIPUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 224,
+            "section": "SNIPE",
+            "key": "AltCameo",
+            "value": "SNIPUICO"
+          }
+        ]
+      },
+      "Sequence": {
+        "value": "ConSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 304,
+          "section": "SNIPE",
+          "key": "Sequence",
+          "value": "ConSequence"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 225,
+            "section": "SNIPE",
+            "key": "Sequence",
+            "value": "ConSequence"
+          }
+        ]
+      },
+      "Crawls": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 305,
+          "section": "SNIPE",
+          "key": "Crawls",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 226,
+            "section": "SNIPE",
+            "key": "Crawls",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 306,
+          "section": "SNIPE",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 227,
+            "section": "SNIPE",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "FireUp": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 307,
+          "section": "SNIPE",
+          "key": "FireUp",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 228,
+            "section": "SNIPE",
+            "key": "FireUp",
+            "value": "5"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "80,0,85",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 308,
+          "section": "SNIPE",
+          "key": "PrimaryFireFLH",
+          "value": "80,0,85"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 229,
+            "section": "SNIPE",
+            "key": "PrimaryFireFLH",
+            "value": "80,0,85"
+          }
+        ]
+      }
+    }
+  }
+}

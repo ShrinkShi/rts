@@ -1,0 +1,24 @@
+﻿Iron Meridian RTS v0.15.0 Parser Hotfix 1
+
+修复问题：
+scripts/game/unit.gd 第 197 行：
+Too many arguments for "play_state()" call. Expected at most 3 but received 4.
+
+根因：
+RA2LayeredVehicleVisual.play_state() 需要 4 个参数，
+RA2VisualPlayer.play_state() 最多接收 3 个参数。
+旧代码使用三元表达式创建两种不同脚本类型，Godot 将局部变量错误地静态推断为
+RA2VisualPlayer，因此在解析分层载具的四参数调用时直接报错。
+
+修复方式：
+将普通视觉和分层载具视觉拆分为两个明确分支，各自调用正确的方法签名。
+
+安装步骤：
+1. 完全关闭 Godot。
+2. 将本 ZIP 解压到已安装 v0.15.0 的工程根目录。
+3. 同名文件选择覆盖。
+4. 删除工程根目录下的 .godot 文件夹。
+5. 重新打开 project.godot。
+
+本补丁只覆盖：
+scripts/game/unit.gd

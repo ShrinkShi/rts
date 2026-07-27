@@ -1,0 +1,2142 @@
+{
+  "id": "BSUB",
+  "category": "vehicle",
+  "name_token": "Name:Boomer",
+  "art_id": "BSUB",
+  "owners": [
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YAYARD",
+    "RADAR"
+  ],
+  "tech_level": 2,
+  "cost": 2000,
+  "strength": 1200,
+  "armor": "heavy",
+  "speed": 5,
+  "sight": 8,
+  "locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+  "movement_zone": "Water",
+  "weapons": {
+    "Primary": {
+      "id": "BoomerTorpedo",
+      "projectile": "Torpedo",
+      "warhead": "APSplash2",
+      "report": [
+        "BoomerAttack2"
+      ],
+      "values": {
+        "Damage": 60,
+        "ROF": 120,
+        "Range": 7,
+        "Projectile": "Torpedo",
+        "Speed": 25,
+        "Report": "BoomerAttack2",
+        "Warhead": "APSplash2",
+        "DecloakToFire": false,
+        "Burst": 2
+      },
+      "raw_values": {
+        "Damage": "60",
+        "ROF": "120",
+        "Range": "7",
+        "Projectile": "Torpedo",
+        "Speed": "25",
+        "Report": "BoomerAttack2",
+        "Warhead": "APSplash2",
+        "DecloakToFire": "no",
+        "Burst": "2"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22525,
+            "section": "BoomerTorpedo",
+            "key": "Damage",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22517,
+              "section": "BoomerTorpedo",
+              "key": "Damage",
+              "value": "60"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "120",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22526,
+            "section": "BoomerTorpedo",
+            "key": "ROF",
+            "value": "120"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22518,
+              "section": "BoomerTorpedo",
+              "key": "ROF",
+              "value": "120"
+            }
+          ]
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22527,
+            "section": "BoomerTorpedo",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22519,
+              "section": "BoomerTorpedo",
+              "key": "Range",
+              "value": "7"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "Torpedo",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22528,
+            "section": "BoomerTorpedo",
+            "key": "Projectile",
+            "value": "Torpedo"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22520,
+              "section": "BoomerTorpedo",
+              "key": "Projectile",
+              "value": "Torpedo"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22529,
+            "section": "BoomerTorpedo",
+            "key": "Speed",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22521,
+              "section": "BoomerTorpedo",
+              "key": "Speed",
+              "value": "25"
+            }
+          ]
+        },
+        "Report": {
+          "value": "BoomerAttack2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22530,
+            "section": "BoomerTorpedo",
+            "key": "Report",
+            "value": "BoomerAttack2"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22522,
+              "section": "BoomerTorpedo",
+              "key": "Report",
+              "value": "BoomerAttack2"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "APSplash2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22531,
+            "section": "BoomerTorpedo",
+            "key": "Warhead",
+            "value": "APSplash2"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22523,
+              "section": "BoomerTorpedo",
+              "key": "Warhead",
+              "value": "APSplash2"
+            }
+          ]
+        },
+        "DecloakToFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22532,
+            "section": "BoomerTorpedo",
+            "key": "DecloakToFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22524,
+              "section": "BoomerTorpedo",
+              "key": "DecloakToFire",
+              "value": "no"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22533,
+            "section": "BoomerTorpedo",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22525,
+              "section": "BoomerTorpedo",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "CruiseLauncher",
+      "projectile": "InvisibleHigh",
+      "warhead": "Special",
+      "report": [
+        "BoomerAttack1"
+      ],
+      "values": {
+        "Damage": 25,
+        "ROF": 50,
+        "Burst": 2,
+        "Range": 20,
+        "MinimumRange": 8,
+        "Spawner": true,
+        "Projectile": "InvisibleHigh",
+        "Speed": 15,
+        "Warhead": "Special",
+        "OmniFire": true,
+        "Report": "BoomerAttack1"
+      },
+      "raw_values": {
+        "Damage": "25",
+        "ROF": "50",
+        "Burst": "2",
+        "Range": "20",
+        "MinimumRange": "8",
+        "Spawner": "yes",
+        "Projectile": "InvisibleHigh",
+        "Speed": "15",
+        "Warhead": "Special",
+        "OmniFire": "yes",
+        "Report": "BoomerAttack1"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22594,
+            "section": "CruiseLauncher",
+            "key": "Damage",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22586,
+              "section": "CruiseLauncher",
+              "key": "Damage",
+              "value": "25"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22595,
+            "section": "CruiseLauncher",
+            "key": "ROF",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22587,
+              "section": "CruiseLauncher",
+              "key": "ROF",
+              "value": "50"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22596,
+            "section": "CruiseLauncher",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22588,
+              "section": "CruiseLauncher",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        },
+        "Range": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22597,
+            "section": "CruiseLauncher",
+            "key": "Range",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22589,
+              "section": "CruiseLauncher",
+              "key": "Range",
+              "value": "20"
+            }
+          ]
+        },
+        "MinimumRange": {
+          "value": "8",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22598,
+            "section": "CruiseLauncher",
+            "key": "MinimumRange",
+            "value": "8"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22590,
+              "section": "CruiseLauncher",
+              "key": "MinimumRange",
+              "value": "8"
+            }
+          ]
+        },
+        "Spawner": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22599,
+            "section": "CruiseLauncher",
+            "key": "Spawner",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22591,
+              "section": "CruiseLauncher",
+              "key": "Spawner",
+              "value": "yes"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleHigh",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22600,
+            "section": "CruiseLauncher",
+            "key": "Projectile",
+            "value": "InvisibleHigh"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22592,
+              "section": "CruiseLauncher",
+              "key": "Projectile",
+              "value": "InvisibleHigh"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22601,
+            "section": "CruiseLauncher",
+            "key": "Speed",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22593,
+              "section": "CruiseLauncher",
+              "key": "Speed",
+              "value": "15"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Special",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22602,
+            "section": "CruiseLauncher",
+            "key": "Warhead",
+            "value": "Special"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22594,
+              "section": "CruiseLauncher",
+              "key": "Warhead",
+              "value": "Special"
+            }
+          ]
+        },
+        "OmniFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22603,
+            "section": "CruiseLauncher",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22595,
+              "section": "CruiseLauncher",
+              "key": "OmniFire",
+              "value": "yes"
+            }
+          ]
+        },
+        "Report": {
+          "value": "BoomerAttack1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22604,
+            "section": "CruiseLauncher",
+            "key": "Report",
+            "value": "BoomerAttack1"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22596,
+              "section": "CruiseLauncher",
+              "key": "Report",
+              "value": "BoomerAttack1"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "BoomerTorpedoE",
+      "projectile": "Torpedo",
+      "warhead": "APSplash2",
+      "report": [
+        "BoomerAttack2"
+      ],
+      "values": {
+        "Damage": 60,
+        "ROF": 120,
+        "Range": 7,
+        "Projectile": "Torpedo",
+        "Speed": 18,
+        "Report": "BoomerAttack2",
+        "Warhead": "APSplash2",
+        "DecloakToFire": false,
+        "Burst": 4
+      },
+      "raw_values": {
+        "Damage": "60",
+        "ROF": "120",
+        "Range": "7",
+        "Projectile": "Torpedo",
+        "Speed": "18",
+        "Report": "BoomerAttack2",
+        "Warhead": "APSplash2",
+        "DecloakToFire": "no",
+        "Burst": "4"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25086,
+            "section": "BoomerTorpedoE",
+            "key": "Damage",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25078,
+              "section": "BoomerTorpedoE",
+              "key": "Damage",
+              "value": "60"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "120",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25087,
+            "section": "BoomerTorpedoE",
+            "key": "ROF",
+            "value": "120"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25079,
+              "section": "BoomerTorpedoE",
+              "key": "ROF",
+              "value": "120"
+            }
+          ]
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25088,
+            "section": "BoomerTorpedoE",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25080,
+              "section": "BoomerTorpedoE",
+              "key": "Range",
+              "value": "7"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "Torpedo",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25089,
+            "section": "BoomerTorpedoE",
+            "key": "Projectile",
+            "value": "Torpedo"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25081,
+              "section": "BoomerTorpedoE",
+              "key": "Projectile",
+              "value": "Torpedo"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "18",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25090,
+            "section": "BoomerTorpedoE",
+            "key": "Speed",
+            "value": "18"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25082,
+              "section": "BoomerTorpedoE",
+              "key": "Speed",
+              "value": "18"
+            }
+          ]
+        },
+        "Report": {
+          "value": "BoomerAttack2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25091,
+            "section": "BoomerTorpedoE",
+            "key": "Report",
+            "value": "BoomerAttack2"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25083,
+              "section": "BoomerTorpedoE",
+              "key": "Report",
+              "value": "BoomerAttack2"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "APSplash2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25092,
+            "section": "BoomerTorpedoE",
+            "key": "Warhead",
+            "value": "APSplash2"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25084,
+              "section": "BoomerTorpedoE",
+              "key": "Warhead",
+              "value": "APSplash2"
+            }
+          ]
+        },
+        "DecloakToFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25093,
+            "section": "BoomerTorpedoE",
+            "key": "DecloakToFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25085,
+              "section": "BoomerTorpedoE",
+              "key": "DecloakToFire",
+              "value": "no"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "4",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25094,
+            "section": "BoomerTorpedoE",
+            "key": "Burst",
+            "value": "4"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25086,
+              "section": "BoomerTorpedoE",
+              "key": "Burst",
+              "value": "4"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "BoomerSelect"
+    ],
+    "VoiceMove": [
+      "BoomerMove"
+    ],
+    "VoiceAttack": [
+      "BoomerAttackWaterCommand"
+    ],
+    "VoiceFeedback": [
+      "SubFear"
+    ],
+    "DieSound": [
+      "GenSmallWaterDie"
+    ],
+    "MoveSound": [
+      "BoomerMoveStart"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "BSUB",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 10706,
+      "pack": "ra2md",
+      "relative_path": "localmd/bsub.vxl",
+      "folder": "localmd",
+      "filename": "bsub.vxl",
+      "stem": "bsub",
+      "extension": ".vxl",
+      "size": 64432,
+      "sha1": "908818e334dbd25ab834c647ba9fa7f547693e44"
+    },
+    "body_hva": {
+      "asset_id": 10705,
+      "pack": "ra2md",
+      "relative_path": "localmd/bsub.hva",
+      "folder": "localmd",
+      "filename": "bsub.hva",
+      "stem": "bsub",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "7fb344e7ef17faee09c39e72bf95395ceae363a8"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      225.0,
+      65.0,
+      0.0
+    ],
+    "secondary_fire_flh": [
+      0.0,
+      0.0,
+      -40.0
+    ],
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:Boomer",
+      "Name": "Yuri Boomer",
+      "Prerequisite": "YAYARD,RADAR",
+      "Primary": "BoomerTorpedo",
+      "Secondary": "CruiseLauncher",
+      "NavalTargeting": 7,
+      "LandTargeting": 2,
+      "FireAngle": 64,
+      "Category": "AFV",
+      "Strength": 1200,
+      "Naval": true,
+      "Armor": "heavy",
+      "TechLevel": 2,
+      "Underwater": true,
+      "Sight": 8,
+      "Sensors": true,
+      "SensorsSight": 8,
+      "Speed": 5,
+      "CrateGoodie": false,
+      "Owner": "YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 2000,
+      "Soylent": 2000,
+      "Turret": false,
+      "Points": 30,
+      "ROT": 2,
+      "Crusher": false,
+      "Crewed": false,
+      "Weight": 4,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "BoomerSelect",
+      "VoiceMove": "BoomerMove",
+      "VoiceAttack": "BoomerAttackWaterCommand",
+      "VoiceSecondaryWeaponAttack": "BoomerAttackLandCommand",
+      "VoiceFeedback": "SubFear",
+      "DieSound": "GenSmallWaterDie",
+      "MoveSound": "BoomerMoveStart",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": 20,
+      "Accelerates": true,
+      "Cloakable": true,
+      "CloakingSpeed": 1,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "TooBigToFitUnderBridge": true,
+      "ElitePrimary": "BoomerTorpedoE",
+      "Size": 20,
+      "Spawns": "CMISL",
+      "SpawnsNumber": 2,
+      "SpawnRegenRate": 80,
+      "SpawnReloadRate": 0,
+      "Unnatural": true
+    },
+    "raw_values": {
+      "UIName": "Name:Boomer",
+      "Name": "Yuri Boomer",
+      "Prerequisite": "YAYARD,RADAR",
+      "Primary": "BoomerTorpedo",
+      "Secondary": "CruiseLauncher",
+      "NavalTargeting": "7",
+      "LandTargeting": "2",
+      "FireAngle": "64",
+      "Category": "AFV",
+      "Strength": "1200",
+      "Naval": "yes",
+      "Armor": "heavy",
+      "TechLevel": "2",
+      "Underwater": "yes",
+      "Sight": "8",
+      "Sensors": "yes",
+      "SensorsSight": "8",
+      "Speed": "5",
+      "CrateGoodie": "no",
+      "Owner": "YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "2000",
+      "Soylent": "2000",
+      "Turret": "no",
+      "Points": "30",
+      "ROT": "2",
+      "Crusher": "no",
+      "Crewed": "no",
+      "Weight": "4",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "BoomerSelect",
+      "VoiceMove": "BoomerMove",
+      "VoiceAttack": "BoomerAttackWaterCommand",
+      "VoiceSecondaryWeaponAttack": "BoomerAttackLandCommand",
+      "VoiceFeedback": "SubFear",
+      "DieSound": "GenSmallWaterDie",
+      "MoveSound": "BoomerMoveStart",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": "20",
+      "Accelerates": "true",
+      "Cloakable": "yes",
+      "CloakingSpeed": "1",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "TooBigToFitUnderBridge": "true",
+      "ElitePrimary": "BoomerTorpedoE",
+      "Size": "20",
+      "Spawns": "CMISL",
+      "SpawnsNumber": "2",
+      "SpawnRegenRate": "80",
+      "SpawnReloadRate": "0",
+      "Unnatural": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:Boomer",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8937,
+          "section": "BSUB",
+          "key": "UIName",
+          "value": "Name:Boomer"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8933,
+            "section": "BSUB",
+            "key": "UIName",
+            "value": "Name:Boomer"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Yuri Boomer",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8938,
+          "section": "BSUB",
+          "key": "Name",
+          "value": "Yuri Boomer"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8934,
+            "section": "BSUB",
+            "key": "Name",
+            "value": "Yuri Boomer"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YAYARD,RADAR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8940,
+          "section": "BSUB",
+          "key": "Prerequisite",
+          "value": "YAYARD,RADAR"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8936,
+            "section": "BSUB",
+            "key": "Prerequisite",
+            "value": "YAYARD,RADAR"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "BoomerTorpedo",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8941,
+          "section": "BSUB",
+          "key": "Primary",
+          "value": "BoomerTorpedo"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8937,
+            "section": "BSUB",
+            "key": "Primary",
+            "value": "BoomerTorpedo"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "CruiseLauncher",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8942,
+          "section": "BSUB",
+          "key": "Secondary",
+          "value": "CruiseLauncher"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8938,
+            "section": "BSUB",
+            "key": "Secondary",
+            "value": "CruiseLauncher"
+          }
+        ]
+      },
+      "NavalTargeting": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8943,
+          "section": "BSUB",
+          "key": "NavalTargeting",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8939,
+            "section": "BSUB",
+            "key": "NavalTargeting",
+            "value": "7"
+          }
+        ]
+      },
+      "LandTargeting": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8944,
+          "section": "BSUB",
+          "key": "LandTargeting",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8940,
+            "section": "BSUB",
+            "key": "LandTargeting",
+            "value": "2"
+          }
+        ]
+      },
+      "FireAngle": {
+        "value": "64",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8945,
+          "section": "BSUB",
+          "key": "FireAngle",
+          "value": "64"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8941,
+            "section": "BSUB",
+            "key": "FireAngle",
+            "value": "64"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8946,
+          "section": "BSUB",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8942,
+            "section": "BSUB",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8947,
+          "section": "BSUB",
+          "key": "Strength",
+          "value": "1200"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8943,
+            "section": "BSUB",
+            "key": "Strength",
+            "value": "1200"
+          }
+        ]
+      },
+      "Naval": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8948,
+          "section": "BSUB",
+          "key": "Naval",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8944,
+            "section": "BSUB",
+            "key": "Naval",
+            "value": "yes"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8949,
+          "section": "BSUB",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8945,
+            "section": "BSUB",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8950,
+          "section": "BSUB",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8946,
+            "section": "BSUB",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Underwater": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8951,
+          "section": "BSUB",
+          "key": "Underwater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8947,
+            "section": "BSUB",
+            "key": "Underwater",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8952,
+          "section": "BSUB",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8948,
+            "section": "BSUB",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "Sensors": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8953,
+          "section": "BSUB",
+          "key": "Sensors",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8949,
+            "section": "BSUB",
+            "key": "Sensors",
+            "value": "yes"
+          }
+        ]
+      },
+      "SensorsSight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8954,
+          "section": "BSUB",
+          "key": "SensorsSight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8950,
+            "section": "BSUB",
+            "key": "SensorsSight",
+            "value": "8"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8955,
+          "section": "BSUB",
+          "key": "Speed",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8951,
+            "section": "BSUB",
+            "key": "Speed",
+            "value": "5"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8956,
+          "section": "BSUB",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8952,
+            "section": "BSUB",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8957,
+          "section": "BSUB",
+          "key": "Owner",
+          "value": "YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8953,
+            "section": "BSUB",
+            "key": "Owner",
+            "value": "YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8958,
+          "section": "BSUB",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8954,
+            "section": "BSUB",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8959,
+          "section": "BSUB",
+          "key": "Cost",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8955,
+            "section": "BSUB",
+            "key": "Cost",
+            "value": "2000"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8960,
+          "section": "BSUB",
+          "key": "Soylent",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8956,
+            "section": "BSUB",
+            "key": "Soylent",
+            "value": "2000"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8961,
+          "section": "BSUB",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8957,
+            "section": "BSUB",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8962,
+          "section": "BSUB",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8958,
+            "section": "BSUB",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8963,
+          "section": "BSUB",
+          "key": "ROT",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8959,
+            "section": "BSUB",
+            "key": "ROT",
+            "value": "2"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8964,
+          "section": "BSUB",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8960,
+            "section": "BSUB",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8965,
+          "section": "BSUB",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8961,
+            "section": "BSUB",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8966,
+          "section": "BSUB",
+          "key": "Weight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8962,
+            "section": "BSUB",
+            "key": "Weight",
+            "value": "4"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8967,
+          "section": "BSUB",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8963,
+            "section": "BSUB",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "BoomerSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8968,
+          "section": "BSUB",
+          "key": "VoiceSelect",
+          "value": "BoomerSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8964,
+            "section": "BSUB",
+            "key": "VoiceSelect",
+            "value": "BoomerSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "BoomerMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8969,
+          "section": "BSUB",
+          "key": "VoiceMove",
+          "value": "BoomerMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8965,
+            "section": "BSUB",
+            "key": "VoiceMove",
+            "value": "BoomerMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "BoomerAttackWaterCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8970,
+          "section": "BSUB",
+          "key": "VoiceAttack",
+          "value": "BoomerAttackWaterCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8966,
+            "section": "BSUB",
+            "key": "VoiceAttack",
+            "value": "BoomerAttackWaterCommand"
+          }
+        ]
+      },
+      "VoiceSecondaryWeaponAttack": {
+        "value": "BoomerAttackLandCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8971,
+          "section": "BSUB",
+          "key": "VoiceSecondaryWeaponAttack",
+          "value": "BoomerAttackLandCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8967,
+            "section": "BSUB",
+            "key": "VoiceSecondaryWeaponAttack",
+            "value": "BoomerAttackLandCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "SubFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8972,
+          "section": "BSUB",
+          "key": "VoiceFeedback",
+          "value": "SubFear"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8968,
+            "section": "BSUB",
+            "key": "VoiceFeedback",
+            "value": "SubFear"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenSmallWaterDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8973,
+          "section": "BSUB",
+          "key": "DieSound",
+          "value": "GenSmallWaterDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8969,
+            "section": "BSUB",
+            "key": "DieSound",
+            "value": "GenSmallWaterDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "BoomerMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8974,
+          "section": "BSUB",
+          "key": "MoveSound",
+          "value": "BoomerMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8970,
+            "section": "BSUB",
+            "key": "MoveSound",
+            "value": "BoomerMoveStart"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8975,
+          "section": "BSUB",
+          "key": "Locomotor",
+          "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8971,
+            "section": "BSUB",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Float",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8976,
+          "section": "BSUB",
+          "key": "SpeedType",
+          "value": "Float"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8972,
+            "section": "BSUB",
+            "key": "SpeedType",
+            "value": "Float"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Water",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8977,
+          "section": "BSUB",
+          "key": "MovementZone",
+          "value": "Water"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8973,
+            "section": "BSUB",
+            "key": "MovementZone",
+            "value": "Water"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8978,
+          "section": "BSUB",
+          "key": "ThreatPosed",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8974,
+            "section": "BSUB",
+            "key": "ThreatPosed",
+            "value": "20"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8979,
+          "section": "BSUB",
+          "key": "Accelerates",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8975,
+            "section": "BSUB",
+            "key": "Accelerates",
+            "value": "true"
+          }
+        ]
+      },
+      "Cloakable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8980,
+          "section": "BSUB",
+          "key": "Cloakable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8976,
+            "section": "BSUB",
+            "key": "Cloakable",
+            "value": "yes"
+          }
+        ]
+      },
+      "CloakingSpeed": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8981,
+          "section": "BSUB",
+          "key": "CloakingSpeed",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8977,
+            "section": "BSUB",
+            "key": "CloakingSpeed",
+            "value": "1"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8982,
+          "section": "BSUB",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8978,
+            "section": "BSUB",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8983,
+          "section": "BSUB",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8979,
+            "section": "BSUB",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8984,
+          "section": "BSUB",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8980,
+            "section": "BSUB",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "BoomerTorpedoE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8985,
+          "section": "BSUB",
+          "key": "ElitePrimary",
+          "value": "BoomerTorpedoE"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8981,
+            "section": "BSUB",
+            "key": "ElitePrimary",
+            "value": "BoomerTorpedoE"
+          }
+        ]
+      },
+      "Size": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8986,
+          "section": "BSUB",
+          "key": "Size",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8982,
+            "section": "BSUB",
+            "key": "Size",
+            "value": "20"
+          }
+        ]
+      },
+      "Spawns": {
+        "value": "CMISL",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8987,
+          "section": "BSUB",
+          "key": "Spawns",
+          "value": "CMISL"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8983,
+            "section": "BSUB",
+            "key": "Spawns",
+            "value": "CMISL"
+          }
+        ]
+      },
+      "SpawnsNumber": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8988,
+          "section": "BSUB",
+          "key": "SpawnsNumber",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8984,
+            "section": "BSUB",
+            "key": "SpawnsNumber",
+            "value": "2"
+          }
+        ]
+      },
+      "SpawnRegenRate": {
+        "value": "80",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8989,
+          "section": "BSUB",
+          "key": "SpawnRegenRate",
+          "value": "80"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8985,
+            "section": "BSUB",
+            "key": "SpawnRegenRate",
+            "value": "80"
+          }
+        ]
+      },
+      "SpawnReloadRate": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8990,
+          "section": "BSUB",
+          "key": "SpawnReloadRate",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8986,
+            "section": "BSUB",
+            "key": "SpawnReloadRate",
+            "value": "0"
+          }
+        ]
+      },
+      "Unnatural": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8992,
+          "section": "BSUB",
+          "key": "Unnatural",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8988,
+            "section": "BSUB",
+            "key": "Unnatural",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "BSUBICON",
+      "Voxel": true,
+      "Remapable": true,
+      "PrimaryFireFLH": "225,65,0",
+      "SecondaryFireFLH": "0,0,-40",
+      "SecondSpawnOffset": "-70,0,0"
+    },
+    "raw_values": {
+      "Cameo": "BSUBICON",
+      "Voxel": "yes",
+      "Remapable": "yes",
+      "PrimaryFireFLH": "225,65,0",
+      "SecondaryFireFLH": "0,0,-40",
+      "SecondSpawnOffset": "-70,0,0"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "BSUBICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 667,
+          "section": "BSUB",
+          "key": "Cameo",
+          "value": "BSUBICON"
+        },
+        "history": []
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 668,
+          "section": "BSUB",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 669,
+          "section": "BSUB",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "PrimaryFireFLH": {
+        "value": "225,65,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 670,
+          "section": "BSUB",
+          "key": "PrimaryFireFLH",
+          "value": "225,65,0"
+        },
+        "history": []
+      },
+      "SecondaryFireFLH": {
+        "value": "0,0,-40",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 671,
+          "section": "BSUB",
+          "key": "SecondaryFireFLH",
+          "value": "0,0,-40"
+        },
+        "history": []
+      },
+      "SecondSpawnOffset": {
+        "value": "-70,0,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 672,
+          "section": "BSUB",
+          "key": "SecondSpawnOffset",
+          "value": "-70,0,0"
+        },
+        "history": []
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "default_palette": "unit_fallback.pal",
+  "fallback_palette_vxl": "htk.vxl",
+  "shp": {
+    "ggi.shp": {
+      "palette": "unit_fallback.pal",
+      "animations": {
+        "all_fps": 10.0,
+        "states": {
+          "stand": {"start": 0, "facings": 8, "frames_per_facing": 1, "fps": 1.0, "loop": true},
+          "move": {"start": 8, "facings": 8, "frames_per_facing": 6, "fps": 10.0, "loop": true},
+          "idle": {"start": 0, "facings": 8, "frames_per_facing": 1, "fps": 1.0, "loop": true},
+          "attack": {"start": 56, "facings": 8, "frames_per_facing": 6, "fps": 12.0, "loop": false},
+          "death": {"start": 120, "facings": 8, "frames_per_facing": 1, "fps": 1.0, "loop": false}
+        }
+      }
+    },
+    "ygpowr.shp": {
+      "palette": "unit_fallback.pal"
+    }
+  },
+  "vxl_groups": {
+    "htk": {
+      "body": "htk.vxl",
+      "body_hva": "htk.hva",
+      "turret": "htktur.vxl",
+      "turret_hva": "htktur.hva",
+      "barrel": "htkbarl.vxl",
+      "barrel_hva": "htkbarl.hva",
+      "facings": 8,
+      "render": {
+        "canvas_width": 160,
+        "canvas_height": 120,
+        "pixel_size": 2,
+        "horizontal_scale": 0.9,
+        "vertical_scale": 0.45,
+        "height_scale": 0.9,
+        "anchor_x": 0.5,
+        "anchor_y": 0.64,
+        "yaw_offset_degrees": 0.0
+      }
+    }
+  }
+}

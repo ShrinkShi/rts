@@ -1,0 +1,1078 @@
+{
+  "id": "SMON",
+  "category": "vehicle",
+  "name_token": "Name:CMON",
+  "art_id": "CMON",
+  "owners": [
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 1400,
+  "strength": 1000,
+  "armor": "medium",
+  "speed": 4,
+  "sight": 4,
+  "locomotor": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Crusher",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "GenAllVehicleSelect"
+    ],
+    "VoiceMove": [
+      "ChronoMinerMove"
+    ],
+    "VoiceAttack": [
+      "ChronoMinerMove"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "CMON",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4005,
+      "pack": "ra2",
+      "relative_path": "local/cmon.vxl",
+      "folder": "local",
+      "filename": "cmon.vxl",
+      "stem": "cmon",
+      "extension": ".vxl",
+      "size": 56110,
+      "sha1": "778c25380fd224b6a72f750eaa506770d68c921d"
+    },
+    "body_hva": {
+      "asset_id": 4004,
+      "pack": "ra2",
+      "relative_path": "local/cmon.hva",
+      "folder": "local",
+      "filename": "cmon.hva",
+      "stem": "cmon",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "b00372008c7de33413bd7bfe600bd3510f5339b3"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CMON",
+      "Name": "ZZZ Useless",
+      "Image": "CMON",
+      "Nominal": true,
+      "ToProtect": true,
+      "Category": "Support",
+      "Strength": 1000,
+      "Armor": "medium",
+      "Dock": "NAREFN,GAREFN",
+      "Harvester": true,
+      "ChronoInSound": "ChronoMinerTeleport",
+      "ChronoOutSound": "ChronoMinerTeleport",
+      "TechLevel": -1,
+      "Sight": 4,
+      "Speed": 4,
+      "Owner": "YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 1400,
+      "Points": 20,
+      "ROT": 5,
+      "Crusher": true,
+      "Crewed": false,
+      "SelfHealing": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenAllVehicleSelect",
+      "VoiceMove": "ChronoMinerMove",
+      "VoiceAttack": "ChronoMinerMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MaxDebris": 3,
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": 4,
+      "Locomotor": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": 3.5,
+      "MovementZone": "Crusher",
+      "ThreatPosed": 0,
+      "ThreatAvoidanceCoefficient": 1,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "ImmuneToRadiation": true,
+      "Trainable": false,
+      "Unsellable": true
+    },
+    "raw_values": {
+      "UIName": "Name:CMON",
+      "Name": "ZZZ Useless",
+      "Image": "CMON",
+      "Nominal": "yes",
+      "ToProtect": "yes",
+      "Category": "Support",
+      "Strength": "1000",
+      "Armor": "medium",
+      "Dock": "NAREFN,GAREFN",
+      "Harvester": "yes",
+      "ChronoInSound": "ChronoMinerTeleport",
+      "ChronoOutSound": "ChronoMinerTeleport",
+      "TechLevel": "-1",
+      "Sight": "4",
+      "Speed": "4",
+      "Owner": "YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "1400",
+      "Points": "20",
+      "ROT": "5",
+      "Crusher": "yes",
+      "Crewed": "no",
+      "SelfHealing": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenAllVehicleSelect",
+      "VoiceMove": "ChronoMinerMove",
+      "VoiceAttack": "ChronoMinerMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MaxDebris": "3",
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": "4",
+      "Locomotor": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": "3.5",
+      "MovementZone": "Crusher",
+      "ThreatPosed": "0",
+      "ThreatAvoidanceCoefficient": "1",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "ImmuneToRadiation": "yes",
+      "Trainable": "no",
+      "Unsellable": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CMON",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8996,
+          "section": "SMON",
+          "key": "UIName",
+          "value": "Name:CMON"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8992,
+            "section": "SMON",
+            "key": "UIName",
+            "value": "Name:CMON"
+          }
+        ]
+      },
+      "Name": {
+        "value": "ZZZ Useless",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8997,
+          "section": "SMON",
+          "key": "Name",
+          "value": "ZZZ Useless"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8993,
+            "section": "SMON",
+            "key": "Name",
+            "value": "ZZZ Useless"
+          }
+        ]
+      },
+      "Image": {
+        "value": "CMON",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8998,
+          "section": "SMON",
+          "key": "Image",
+          "value": "CMON"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8994,
+            "section": "SMON",
+            "key": "Image",
+            "value": "CMON"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8999,
+          "section": "SMON",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8995,
+            "section": "SMON",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "ToProtect": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9000,
+          "section": "SMON",
+          "key": "ToProtect",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8996,
+            "section": "SMON",
+            "key": "ToProtect",
+            "value": "yes"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Support",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9001,
+          "section": "SMON",
+          "key": "Category",
+          "value": "Support"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8997,
+            "section": "SMON",
+            "key": "Category",
+            "value": "Support"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9002,
+          "section": "SMON",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8998,
+            "section": "SMON",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "medium",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9003,
+          "section": "SMON",
+          "key": "Armor",
+          "value": "medium"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8999,
+            "section": "SMON",
+            "key": "Armor",
+            "value": "medium"
+          }
+        ]
+      },
+      "Dock": {
+        "value": "NAREFN,GAREFN",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9005,
+          "section": "SMON",
+          "key": "Dock",
+          "value": "NAREFN,GAREFN"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9001,
+            "section": "SMON",
+            "key": "Dock",
+            "value": "NAREFN,GAREFN"
+          }
+        ]
+      },
+      "Harvester": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9006,
+          "section": "SMON",
+          "key": "Harvester",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9002,
+            "section": "SMON",
+            "key": "Harvester",
+            "value": "yes"
+          }
+        ]
+      },
+      "ChronoInSound": {
+        "value": "ChronoMinerTeleport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9007,
+          "section": "SMON",
+          "key": "ChronoInSound",
+          "value": "ChronoMinerTeleport"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9003,
+            "section": "SMON",
+            "key": "ChronoInSound",
+            "value": "ChronoMinerTeleport"
+          }
+        ]
+      },
+      "ChronoOutSound": {
+        "value": "ChronoMinerTeleport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9008,
+          "section": "SMON",
+          "key": "ChronoOutSound",
+          "value": "ChronoMinerTeleport"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9004,
+            "section": "SMON",
+            "key": "ChronoOutSound",
+            "value": "ChronoMinerTeleport"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9009,
+          "section": "SMON",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9005,
+            "section": "SMON",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9010,
+          "section": "SMON",
+          "key": "Sight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9006,
+            "section": "SMON",
+            "key": "Sight",
+            "value": "4"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9011,
+          "section": "SMON",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9007,
+            "section": "SMON",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9012,
+          "section": "SMON",
+          "key": "Owner",
+          "value": "YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9008,
+            "section": "SMON",
+            "key": "Owner",
+            "value": "YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9013,
+          "section": "SMON",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9009,
+            "section": "SMON",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1400",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9014,
+          "section": "SMON",
+          "key": "Cost",
+          "value": "1400"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9010,
+            "section": "SMON",
+            "key": "Cost",
+            "value": "1400"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9015,
+          "section": "SMON",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9011,
+            "section": "SMON",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9016,
+          "section": "SMON",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9012,
+            "section": "SMON",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9017,
+          "section": "SMON",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9013,
+            "section": "SMON",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9018,
+          "section": "SMON",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9014,
+            "section": "SMON",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "SelfHealing": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9019,
+          "section": "SMON",
+          "key": "SelfHealing",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9015,
+            "section": "SMON",
+            "key": "SelfHealing",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9020,
+          "section": "SMON",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9016,
+            "section": "SMON",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "GenAllVehicleSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9021,
+          "section": "SMON",
+          "key": "VoiceSelect",
+          "value": "GenAllVehicleSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9017,
+            "section": "SMON",
+            "key": "VoiceSelect",
+            "value": "GenAllVehicleSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "ChronoMinerMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9022,
+          "section": "SMON",
+          "key": "VoiceMove",
+          "value": "ChronoMinerMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9018,
+            "section": "SMON",
+            "key": "VoiceMove",
+            "value": "ChronoMinerMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "ChronoMinerMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9023,
+          "section": "SMON",
+          "key": "VoiceAttack",
+          "value": "ChronoMinerMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9019,
+            "section": "SMON",
+            "key": "VoiceAttack",
+            "value": "ChronoMinerMove"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9024,
+          "section": "SMON",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9020,
+            "section": "SMON",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9025,
+          "section": "SMON",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9021,
+            "section": "SMON",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9026,
+          "section": "SMON",
+          "key": "MaxDebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9022,
+            "section": "SMON",
+            "key": "MaxDebris",
+            "value": "3"
+          }
+        ]
+      },
+      "DebrisTypes": {
+        "value": "TIRE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9027,
+          "section": "SMON",
+          "key": "DebrisTypes",
+          "value": "TIRE"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9023,
+            "section": "SMON",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          }
+        ]
+      },
+      "DebrisMaximums": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9028,
+          "section": "SMON",
+          "key": "DebrisMaximums",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9024,
+            "section": "SMON",
+            "key": "DebrisMaximums",
+            "value": "4"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9030,
+          "section": "SMON",
+          "key": "Locomotor",
+          "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9026,
+            "section": "SMON",
+            "key": "Locomotor",
+            "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "3.5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9031,
+          "section": "SMON",
+          "key": "Weight",
+          "value": "3.5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9027,
+            "section": "SMON",
+            "key": "Weight",
+            "value": "3.5"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Crusher",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9032,
+          "section": "SMON",
+          "key": "MovementZone",
+          "value": "Crusher"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9028,
+            "section": "SMON",
+            "key": "MovementZone",
+            "value": "Crusher"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9033,
+          "section": "SMON",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9029,
+            "section": "SMON",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "ThreatAvoidanceCoefficient": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9034,
+          "section": "SMON",
+          "key": "ThreatAvoidanceCoefficient",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9030,
+            "section": "SMON",
+            "key": "ThreatAvoidanceCoefficient",
+            "value": "1"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9035,
+          "section": "SMON",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9031,
+            "section": "SMON",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9036,
+          "section": "SMON",
+          "key": "ImmuneToRadiation",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9032,
+            "section": "SMON",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9037,
+          "section": "SMON",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9033,
+            "section": "SMON",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "Unsellable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9038,
+          "section": "SMON",
+          "key": "Unsellable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9034,
+            "section": "SMON",
+            "key": "Unsellable",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true,
+      "Remapable": true
+    },
+    "raw_values": {
+      "Voxel": "yes",
+      "Remapable": "yes"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 649,
+          "section": "CMON",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 470,
+            "section": "CMON",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 650,
+          "section": "CMON",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 471,
+            "section": "CMON",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  }
+}

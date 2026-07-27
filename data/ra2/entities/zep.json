@@ -1,0 +1,2631 @@
+{
+  "id": "ZEP",
+  "category": "vehicle",
+  "name_token": "Name:ZEP",
+  "art_id": "ZEP",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAWEAP",
+    "NATECH"
+  ],
+  "tech_level": 10,
+  "cost": 2000,
+  "strength": 2000,
+  "armor": "medium",
+  "speed": 5,
+  "sight": 8,
+  "locomotor": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+  "movement_zone": "Fly",
+  "weapons": {
+    "Primary": {
+      "id": "BlimpBomb",
+      "projectile": "BlimpBombP",
+      "warhead": "BlimpHE",
+      "report": [
+        "KirovAttack"
+      ],
+      "values": {
+        "Damage": 250,
+        "Burst": 1,
+        "ROF": 50,
+        "Range": 1.5,
+        "CellRangefinding": true,
+        "Projectile": "BlimpBombP",
+        "Speed": 20,
+        "Warhead": "BlimpHE",
+        "Report": "KirovAttack",
+        "OmniFire": true
+      },
+      "raw_values": {
+        "Damage": "250",
+        "Burst": "1",
+        "ROF": "50",
+        "Range": "1.5",
+        "CellRangefinding": "yes",
+        "Projectile": "BlimpBombP",
+        "Speed": "20",
+        "Warhead": "BlimpHE",
+        "Report": "KirovAttack",
+        "OmniFire": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "250",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22413,
+            "section": "BlimpBomb",
+            "key": "Damage",
+            "value": "250"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16164,
+              "section": "BlimpBomb",
+              "key": "Damage",
+              "value": "250"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22405,
+              "section": "BlimpBomb",
+              "key": "Damage",
+              "value": "250"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22414,
+            "section": "BlimpBomb",
+            "key": "Burst",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16165,
+              "section": "BlimpBomb",
+              "key": "Burst",
+              "value": "1"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22406,
+              "section": "BlimpBomb",
+              "key": "Burst",
+              "value": "1"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22415,
+            "section": "BlimpBomb",
+            "key": "ROF",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16166,
+              "section": "BlimpBomb",
+              "key": "ROF",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22407,
+              "section": "BlimpBomb",
+              "key": "ROF",
+              "value": "50"
+            }
+          ]
+        },
+        "Range": {
+          "value": "1.5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22416,
+            "section": "BlimpBomb",
+            "key": "Range",
+            "value": "1.5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16167,
+              "section": "BlimpBomb",
+              "key": "Range",
+              "value": "1.5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22408,
+              "section": "BlimpBomb",
+              "key": "Range",
+              "value": "1.5"
+            }
+          ]
+        },
+        "CellRangefinding": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22417,
+            "section": "BlimpBomb",
+            "key": "CellRangefinding",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16168,
+              "section": "BlimpBomb",
+              "key": "CellRangefinding",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22409,
+              "section": "BlimpBomb",
+              "key": "CellRangefinding",
+              "value": "yes"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "BlimpBombP",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22418,
+            "section": "BlimpBomb",
+            "key": "Projectile",
+            "value": "BlimpBombP"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16169,
+              "section": "BlimpBomb",
+              "key": "Projectile",
+              "value": "BlimpBombP"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22410,
+              "section": "BlimpBomb",
+              "key": "Projectile",
+              "value": "BlimpBombP"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22419,
+            "section": "BlimpBomb",
+            "key": "Speed",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16170,
+              "section": "BlimpBomb",
+              "key": "Speed",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22411,
+              "section": "BlimpBomb",
+              "key": "Speed",
+              "value": "20"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "BlimpHE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22420,
+            "section": "BlimpBomb",
+            "key": "Warhead",
+            "value": "BlimpHE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16171,
+              "section": "BlimpBomb",
+              "key": "Warhead",
+              "value": "BlimpHE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22412,
+              "section": "BlimpBomb",
+              "key": "Warhead",
+              "value": "BlimpHE"
+            }
+          ]
+        },
+        "Report": {
+          "value": "KirovAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22421,
+            "section": "BlimpBomb",
+            "key": "Report",
+            "value": "KirovAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16172,
+              "section": "BlimpBomb",
+              "key": "Report",
+              "value": "KirovAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22413,
+              "section": "BlimpBomb",
+              "key": "Report",
+              "value": "KirovAttack"
+            }
+          ]
+        },
+        "OmniFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22422,
+            "section": "BlimpBomb",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16173,
+              "section": "BlimpBomb",
+              "key": "OmniFire",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22414,
+              "section": "BlimpBomb",
+              "key": "OmniFire",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "BlimpBombE",
+      "projectile": "BlimpBombP",
+      "warhead": "KTSTLEXP",
+      "report": [
+        "KirovAttack"
+      ],
+      "values": {
+        "Damage": 250,
+        "Burst": 1,
+        "ROF": 50,
+        "Range": 1.5,
+        "CellRangefinding": true,
+        "Projectile": "BlimpBombP",
+        "Speed": 20,
+        "Warhead": "KTSTLEXP",
+        "Report": "KirovAttack",
+        "OmniFire": true
+      },
+      "raw_values": {
+        "Damage": "250",
+        "Burst": "1",
+        "ROF": "50",
+        "Range": "1.5",
+        "CellRangefinding": "yes",
+        "Projectile": "BlimpBombP",
+        "Speed": "20",
+        "Warhead": "KTSTLEXP",
+        "Report": "KirovAttack",
+        "OmniFire": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "250",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24941,
+            "section": "BlimpBombE",
+            "key": "Damage",
+            "value": "250"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17876,
+              "section": "BlimpBombE",
+              "key": "Damage",
+              "value": "250"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24933,
+              "section": "BlimpBombE",
+              "key": "Damage",
+              "value": "250"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24942,
+            "section": "BlimpBombE",
+            "key": "Burst",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17877,
+              "section": "BlimpBombE",
+              "key": "Burst",
+              "value": "1"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24934,
+              "section": "BlimpBombE",
+              "key": "Burst",
+              "value": "1"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24943,
+            "section": "BlimpBombE",
+            "key": "ROF",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17878,
+              "section": "BlimpBombE",
+              "key": "ROF",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24935,
+              "section": "BlimpBombE",
+              "key": "ROF",
+              "value": "50"
+            }
+          ]
+        },
+        "Range": {
+          "value": "1.5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24944,
+            "section": "BlimpBombE",
+            "key": "Range",
+            "value": "1.5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17879,
+              "section": "BlimpBombE",
+              "key": "Range",
+              "value": "1.5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24936,
+              "section": "BlimpBombE",
+              "key": "Range",
+              "value": "1.5"
+            }
+          ]
+        },
+        "CellRangefinding": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24945,
+            "section": "BlimpBombE",
+            "key": "CellRangefinding",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17880,
+              "section": "BlimpBombE",
+              "key": "CellRangefinding",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24937,
+              "section": "BlimpBombE",
+              "key": "CellRangefinding",
+              "value": "yes"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "BlimpBombP",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24946,
+            "section": "BlimpBombE",
+            "key": "Projectile",
+            "value": "BlimpBombP"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17881,
+              "section": "BlimpBombE",
+              "key": "Projectile",
+              "value": "BlimpBombP"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24938,
+              "section": "BlimpBombE",
+              "key": "Projectile",
+              "value": "BlimpBombP"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24947,
+            "section": "BlimpBombE",
+            "key": "Speed",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17882,
+              "section": "BlimpBombE",
+              "key": "Speed",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24939,
+              "section": "BlimpBombE",
+              "key": "Speed",
+              "value": "20"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "KTSTLEXP",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24948,
+            "section": "BlimpBombE",
+            "key": "Warhead",
+            "value": "KTSTLEXP"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17883,
+              "section": "BlimpBombE",
+              "key": "Warhead",
+              "value": "KTSTLEXP"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24940,
+              "section": "BlimpBombE",
+              "key": "Warhead",
+              "value": "KTSTLEXP"
+            }
+          ]
+        },
+        "Report": {
+          "value": "KirovAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24949,
+            "section": "BlimpBombE",
+            "key": "Report",
+            "value": "KirovAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17884,
+              "section": "BlimpBombE",
+              "key": "Report",
+              "value": "KirovAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24941,
+              "section": "BlimpBombE",
+              "key": "Report",
+              "value": "KirovAttack"
+            }
+          ]
+        },
+        "OmniFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24950,
+            "section": "BlimpBombE",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17885,
+              "section": "BlimpBombE",
+              "key": "OmniFire",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24942,
+              "section": "BlimpBombE",
+              "key": "OmniFire",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "KirovSelect"
+    ],
+    "VoiceMove": [
+      "KirovMove"
+    ],
+    "VoiceAttack": [
+      "KirovAttackCommand"
+    ],
+    "MoveSound": [
+      "KirovMoveLoop"
+    ],
+    "CreateSound": [
+      "KirovCreated"
+    ],
+    "AuxSound1": [
+      "Dummy"
+    ],
+    "AuxSound2": [
+      "Dummy"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "ZEP",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4488,
+      "pack": "ra2",
+      "relative_path": "local/zep.vxl",
+      "folder": "local",
+      "filename": "zep.vxl",
+      "stem": "zep",
+      "extension": ".vxl",
+      "size": 177637,
+      "sha1": "4a9ad7e18ef002f2b4e6c07e5750c0fcfa6355dd"
+    },
+    "body_hva": {
+      "asset_id": 4487,
+      "pack": "ra2",
+      "relative_path": "local/zep.hva",
+      "folder": "local",
+      "filename": "zep.hva",
+      "stem": "zep",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "29096adcbac2e3a2524bbba50a44f387cfc96f62"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      -50.0,
+      0.0,
+      -140.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:ZEP",
+      "Name": "Kirov Airship",
+      "Prerequisite": "NAWEAP,NATECH",
+      "Primary": "BlimpBomb",
+      "Strength": 2000,
+      "Category": "AirPower",
+      "Armor": "medium",
+      "TechLevel": 10,
+      "Sight": 8,
+      "RadarInvisible": false,
+      "MoveToShroud": true,
+      "BalloonHover": true,
+      "Speed": 5,
+      "JumpjetSpeed": 5,
+      "JumpjetClimb": 6,
+      "JumpjetCrash": 12,
+      "JumpJetAccel": 10,
+      "JumpJetTurnRate": 2,
+      "JumpjetHeight": 750,
+      "JumpjetNoWobbles": true,
+      "Crashable": true,
+      "PitchSpeed": 0.9,
+      "PitchAngle": 0,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "Cost": 2000,
+      "Points": 100,
+      "ROT": 10,
+      "SpeedType": "Hover",
+      "Crewed": false,
+      "ConsideredAircraft": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 14,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "KirovSelect",
+      "VoiceMove": "KirovMove",
+      "VoiceAttack": "KirovAttackCommand",
+      "VoiceFeedback": "",
+      "VoiceCrashing": "KirovVoiceDie",
+      "DieSound": "",
+      "CreateSound": "KirovCreated",
+      "CrashingSound": "KirovDie",
+      "ImpactLandSound": "KirovCrash",
+      "Locomotor": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+      "MovementZone": "Fly",
+      "ThreatPosed": 30,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "AuxSound1": "Dummy",
+      "AuxSound2": "Dummy",
+      "AllowedToStartInMultiplayer": false,
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "SelfHealing": true,
+      "MoveSound": "KirovMoveLoop",
+      "ElitePrimary": "BlimpBombE",
+      "Parasiteable": false,
+      "Size": 50,
+      "Soylent": 2000,
+      "Bunkerable": false
+    },
+    "raw_values": {
+      "UIName": "Name:ZEP",
+      "Name": "Kirov Airship",
+      "Prerequisite": "NAWEAP,NATECH",
+      "Primary": "BlimpBomb",
+      "Strength": "2000",
+      "Category": "AirPower",
+      "Armor": "medium",
+      "TechLevel": "10",
+      "Sight": "8",
+      "RadarInvisible": "no",
+      "MoveToShroud": "yes",
+      "BalloonHover": "yes",
+      "Speed": "5",
+      "JumpjetSpeed": "5",
+      "JumpjetClimb": "6",
+      "JumpjetCrash": "12",
+      "JumpJetAccel": "10",
+      "JumpJetTurnRate": "2",
+      "JumpjetHeight": "750",
+      "JumpjetNoWobbles": "yes",
+      "Crashable": "yes",
+      "PitchSpeed": ".9",
+      "PitchAngle": "0",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "Cost": "2000",
+      "Points": "100",
+      "ROT": "10",
+      "SpeedType": "Hover",
+      "Crewed": "no",
+      "ConsideredAircraft": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "14",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "KirovSelect",
+      "VoiceMove": "KirovMove",
+      "VoiceAttack": "KirovAttackCommand",
+      "VoiceFeedback": "",
+      "VoiceCrashing": "KirovVoiceDie",
+      "DieSound": "",
+      "CreateSound": "KirovCreated",
+      "CrashingSound": "KirovDie",
+      "ImpactLandSound": "KirovCrash",
+      "Locomotor": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+      "MovementZone": "Fly",
+      "ThreatPosed": "30",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "AuxSound1": "Dummy",
+      "AuxSound2": "Dummy",
+      "AllowedToStartInMultiplayer": "no",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "SelfHealing": "Yes",
+      "MoveSound": "KirovMoveLoop",
+      "ElitePrimary": "BlimpBombE",
+      "Parasiteable": "no",
+      "Size": "50",
+      "Soylent": "2000",
+      "Bunkerable": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:ZEP",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11213,
+          "section": "ZEP",
+          "key": "UIName",
+          "value": "Name:ZEP"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7982,
+            "section": "ZEP",
+            "key": "UIName",
+            "value": "Name:ZEP"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11207,
+            "section": "ZEP",
+            "key": "UIName",
+            "value": "Name:ZEP"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Kirov Airship",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11214,
+          "section": "ZEP",
+          "key": "Name",
+          "value": "Kirov Airship"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7983,
+            "section": "ZEP",
+            "key": "Name",
+            "value": "Kirov Airship"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11208,
+            "section": "ZEP",
+            "key": "Name",
+            "value": "Kirov Airship"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAWEAP,NATECH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11215,
+          "section": "ZEP",
+          "key": "Prerequisite",
+          "value": "NAWEAP,NATECH"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7984,
+            "section": "ZEP",
+            "key": "Prerequisite",
+            "value": "NAWEAP,NATECH"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11209,
+            "section": "ZEP",
+            "key": "Prerequisite",
+            "value": "NAWEAP,NATECH"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "BlimpBomb",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11216,
+          "section": "ZEP",
+          "key": "Primary",
+          "value": "BlimpBomb"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7985,
+            "section": "ZEP",
+            "key": "Primary",
+            "value": "BlimpBomb"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11210,
+            "section": "ZEP",
+            "key": "Primary",
+            "value": "BlimpBomb"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11217,
+          "section": "ZEP",
+          "key": "Strength",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7986,
+            "section": "ZEP",
+            "key": "Strength",
+            "value": "2000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11211,
+            "section": "ZEP",
+            "key": "Strength",
+            "value": "2000"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AirPower",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11218,
+          "section": "ZEP",
+          "key": "Category",
+          "value": "AirPower"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7987,
+            "section": "ZEP",
+            "key": "Category",
+            "value": "AirPower"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11212,
+            "section": "ZEP",
+            "key": "Category",
+            "value": "AirPower"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "medium",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11219,
+          "section": "ZEP",
+          "key": "Armor",
+          "value": "medium"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7988,
+            "section": "ZEP",
+            "key": "Armor",
+            "value": "light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11213,
+            "section": "ZEP",
+            "key": "Armor",
+            "value": "medium"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11220,
+          "section": "ZEP",
+          "key": "TechLevel",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7989,
+            "section": "ZEP",
+            "key": "TechLevel",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11214,
+            "section": "ZEP",
+            "key": "TechLevel",
+            "value": "10"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11221,
+          "section": "ZEP",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7990,
+            "section": "ZEP",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11215,
+            "section": "ZEP",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11222,
+          "section": "ZEP",
+          "key": "RadarInvisible",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7991,
+            "section": "ZEP",
+            "key": "RadarInvisible",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11216,
+            "section": "ZEP",
+            "key": "RadarInvisible",
+            "value": "no"
+          }
+        ]
+      },
+      "MoveToShroud": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11223,
+          "section": "ZEP",
+          "key": "MoveToShroud",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7992,
+            "section": "ZEP",
+            "key": "MoveToShroud",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11217,
+            "section": "ZEP",
+            "key": "MoveToShroud",
+            "value": "yes"
+          }
+        ]
+      },
+      "BalloonHover": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11224,
+          "section": "ZEP",
+          "key": "BalloonHover",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7993,
+            "section": "ZEP",
+            "key": "BalloonHover",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11218,
+            "section": "ZEP",
+            "key": "BalloonHover",
+            "value": "yes"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11226,
+          "section": "ZEP",
+          "key": "Speed",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7995,
+            "section": "ZEP",
+            "key": "Speed",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11220,
+            "section": "ZEP",
+            "key": "Speed",
+            "value": "5"
+          }
+        ]
+      },
+      "JumpjetSpeed": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11227,
+          "section": "ZEP",
+          "key": "JumpjetSpeed",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7996,
+            "section": "ZEP",
+            "key": "JumpjetSpeed",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11221,
+            "section": "ZEP",
+            "key": "JumpjetSpeed",
+            "value": "5"
+          }
+        ]
+      },
+      "JumpjetClimb": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11228,
+          "section": "ZEP",
+          "key": "JumpjetClimb",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7997,
+            "section": "ZEP",
+            "key": "JumpjetClimb",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11222,
+            "section": "ZEP",
+            "key": "JumpjetClimb",
+            "value": "6"
+          }
+        ]
+      },
+      "JumpjetCrash": {
+        "value": "12",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11229,
+          "section": "ZEP",
+          "key": "JumpjetCrash",
+          "value": "12"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7998,
+            "section": "ZEP",
+            "key": "JumpjetCrash",
+            "value": "12"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11223,
+            "section": "ZEP",
+            "key": "JumpjetCrash",
+            "value": "12"
+          }
+        ]
+      },
+      "JumpJetAccel": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11230,
+          "section": "ZEP",
+          "key": "JumpJetAccel",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7999,
+            "section": "ZEP",
+            "key": "JumpJetAccel",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11224,
+            "section": "ZEP",
+            "key": "JumpJetAccel",
+            "value": "10"
+          }
+        ]
+      },
+      "JumpJetTurnRate": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11231,
+          "section": "ZEP",
+          "key": "JumpJetTurnRate",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8000,
+            "section": "ZEP",
+            "key": "JumpJetTurnRate",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11225,
+            "section": "ZEP",
+            "key": "JumpJetTurnRate",
+            "value": "2"
+          }
+        ]
+      },
+      "JumpjetHeight": {
+        "value": "750",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11232,
+          "section": "ZEP",
+          "key": "JumpjetHeight",
+          "value": "750"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8001,
+            "section": "ZEP",
+            "key": "JumpjetHeight",
+            "value": "750"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11226,
+            "section": "ZEP",
+            "key": "JumpjetHeight",
+            "value": "750"
+          }
+        ]
+      },
+      "JumpjetNoWobbles": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11235,
+          "section": "ZEP",
+          "key": "JumpjetNoWobbles",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8004,
+            "section": "ZEP",
+            "key": "JumpjetNoWobbles",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11229,
+            "section": "ZEP",
+            "key": "JumpjetNoWobbles",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crashable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11236,
+          "section": "ZEP",
+          "key": "Crashable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8005,
+            "section": "ZEP",
+            "key": "Crashable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11230,
+            "section": "ZEP",
+            "key": "Crashable",
+            "value": "yes"
+          }
+        ]
+      },
+      "PitchSpeed": {
+        "value": ".9",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11237,
+          "section": "ZEP",
+          "key": "PitchSpeed",
+          "value": ".9"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8006,
+            "section": "ZEP",
+            "key": "PitchSpeed",
+            "value": ".9"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11231,
+            "section": "ZEP",
+            "key": "PitchSpeed",
+            "value": ".9"
+          }
+        ]
+      },
+      "PitchAngle": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11238,
+          "section": "ZEP",
+          "key": "PitchAngle",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8007,
+            "section": "ZEP",
+            "key": "PitchAngle",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11232,
+            "section": "ZEP",
+            "key": "PitchAngle",
+            "value": "0"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11239,
+          "section": "ZEP",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8008,
+            "section": "ZEP",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11233,
+            "section": "ZEP",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11240,
+          "section": "ZEP",
+          "key": "Cost",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8009,
+            "section": "ZEP",
+            "key": "Cost",
+            "value": "2000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11234,
+            "section": "ZEP",
+            "key": "Cost",
+            "value": "2000"
+          }
+        ]
+      },
+      "Points": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11242,
+          "section": "ZEP",
+          "key": "Points",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8010,
+            "section": "ZEP",
+            "key": "Points",
+            "value": "100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11236,
+            "section": "ZEP",
+            "key": "Points",
+            "value": "100"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11243,
+          "section": "ZEP",
+          "key": "ROT",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8011,
+            "section": "ZEP",
+            "key": "ROT",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11237,
+            "section": "ZEP",
+            "key": "ROT",
+            "value": "10"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Hover",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11244,
+          "section": "ZEP",
+          "key": "SpeedType",
+          "value": "Hover"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8012,
+            "section": "ZEP",
+            "key": "SpeedType",
+            "value": "Hover"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11238,
+            "section": "ZEP",
+            "key": "SpeedType",
+            "value": "Hover"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11245,
+          "section": "ZEP",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8013,
+            "section": "ZEP",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11239,
+            "section": "ZEP",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "ConsideredAircraft": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11246,
+          "section": "ZEP",
+          "key": "ConsideredAircraft",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8014,
+            "section": "ZEP",
+            "key": "ConsideredAircraft",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11240,
+            "section": "ZEP",
+            "key": "ConsideredAircraft",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11247,
+          "section": "ZEP",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8015,
+            "section": "ZEP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11241,
+            "section": "ZEP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "14",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11248,
+          "section": "ZEP",
+          "key": "MaxDebris",
+          "value": "14"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8016,
+            "section": "ZEP",
+            "key": "MaxDebris",
+            "value": "14"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11242,
+            "section": "ZEP",
+            "key": "MaxDebris",
+            "value": "14"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11249,
+          "section": "ZEP",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8017,
+            "section": "ZEP",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11243,
+            "section": "ZEP",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "KirovSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11250,
+          "section": "ZEP",
+          "key": "VoiceSelect",
+          "value": "KirovSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8018,
+            "section": "ZEP",
+            "key": "VoiceSelect",
+            "value": "KirovSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11244,
+            "section": "ZEP",
+            "key": "VoiceSelect",
+            "value": "KirovSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "KirovMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11251,
+          "section": "ZEP",
+          "key": "VoiceMove",
+          "value": "KirovMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8019,
+            "section": "ZEP",
+            "key": "VoiceMove",
+            "value": "KirovMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11245,
+            "section": "ZEP",
+            "key": "VoiceMove",
+            "value": "KirovMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "KirovAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11252,
+          "section": "ZEP",
+          "key": "VoiceAttack",
+          "value": "KirovAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8020,
+            "section": "ZEP",
+            "key": "VoiceAttack",
+            "value": "KirovAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11246,
+            "section": "ZEP",
+            "key": "VoiceAttack",
+            "value": "KirovAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11253,
+          "section": "ZEP",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8021,
+            "section": "ZEP",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11247,
+            "section": "ZEP",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "VoiceCrashing": {
+        "value": "KirovVoiceDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11254,
+          "section": "ZEP",
+          "key": "VoiceCrashing",
+          "value": "KirovVoiceDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8022,
+            "section": "ZEP",
+            "key": "VoiceCrashing",
+            "value": "KirovVoiceDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11248,
+            "section": "ZEP",
+            "key": "VoiceCrashing",
+            "value": "KirovVoiceDie"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11255,
+          "section": "ZEP",
+          "key": "DieSound",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8023,
+            "section": "ZEP",
+            "key": "DieSound",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11249,
+            "section": "ZEP",
+            "key": "DieSound",
+            "value": ""
+          }
+        ]
+      },
+      "CreateSound": {
+        "value": "KirovCreated",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11256,
+          "section": "ZEP",
+          "key": "CreateSound",
+          "value": "KirovCreated"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8024,
+            "section": "ZEP",
+            "key": "CreateSound",
+            "value": "KirovCreated"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11250,
+            "section": "ZEP",
+            "key": "CreateSound",
+            "value": "KirovCreated"
+          }
+        ]
+      },
+      "CrashingSound": {
+        "value": "KirovDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11257,
+          "section": "ZEP",
+          "key": "CrashingSound",
+          "value": "KirovDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8025,
+            "section": "ZEP",
+            "key": "CrashingSound",
+            "value": "KirovDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11251,
+            "section": "ZEP",
+            "key": "CrashingSound",
+            "value": "KirovDie"
+          }
+        ]
+      },
+      "ImpactLandSound": {
+        "value": "KirovCrash",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11258,
+          "section": "ZEP",
+          "key": "ImpactLandSound",
+          "value": "KirovCrash"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8026,
+            "section": "ZEP",
+            "key": "ImpactLandSound",
+            "value": "KirovCrash"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11252,
+            "section": "ZEP",
+            "key": "ImpactLandSound",
+            "value": "KirovCrash"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11259,
+          "section": "ZEP",
+          "key": "Locomotor",
+          "value": "{92612C46-F71F-11d1-AC9F-006008055BB5}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8027,
+            "section": "ZEP",
+            "key": "Locomotor",
+            "value": "{92612C46-F71F-11d1-AC9F-006008055BB5}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11253,
+            "section": "ZEP",
+            "key": "Locomotor",
+            "value": "{92612C46-F71F-11d1-AC9F-006008055BB5}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Fly",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11260,
+          "section": "ZEP",
+          "key": "MovementZone",
+          "value": "Fly"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8028,
+            "section": "ZEP",
+            "key": "MovementZone",
+            "value": "Fly"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11254,
+            "section": "ZEP",
+            "key": "MovementZone",
+            "value": "Fly"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11261,
+          "section": "ZEP",
+          "key": "ThreatPosed",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8029,
+            "section": "ZEP",
+            "key": "ThreatPosed",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11255,
+            "section": "ZEP",
+            "key": "ThreatPosed",
+            "value": "30"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11262,
+          "section": "ZEP",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8030,
+            "section": "ZEP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11256,
+            "section": "ZEP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "AuxSound1": {
+        "value": "Dummy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11263,
+          "section": "ZEP",
+          "key": "AuxSound1",
+          "value": "Dummy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8031,
+            "section": "ZEP",
+            "key": "AuxSound1",
+            "value": "Dummy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11257,
+            "section": "ZEP",
+            "key": "AuxSound1",
+            "value": "Dummy"
+          }
+        ]
+      },
+      "AuxSound2": {
+        "value": "Dummy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11264,
+          "section": "ZEP",
+          "key": "AuxSound2",
+          "value": "Dummy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8032,
+            "section": "ZEP",
+            "key": "AuxSound2",
+            "value": "Dummy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11258,
+            "section": "ZEP",
+            "key": "AuxSound2",
+            "value": "Dummy"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11265,
+          "section": "ZEP",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8033,
+            "section": "ZEP",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11259,
+            "section": "ZEP",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11266,
+          "section": "ZEP",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8034,
+            "section": "ZEP",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11260,
+            "section": "ZEP",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11267,
+          "section": "ZEP",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8035,
+            "section": "ZEP",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11261,
+            "section": "ZEP",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "SelfHealing": {
+        "value": "Yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11268,
+          "section": "ZEP",
+          "key": "SelfHealing",
+          "value": "Yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8036,
+            "section": "ZEP",
+            "key": "SelfHealing",
+            "value": "Yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11262,
+            "section": "ZEP",
+            "key": "SelfHealing",
+            "value": "Yes"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "KirovMoveLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11269,
+          "section": "ZEP",
+          "key": "MoveSound",
+          "value": "KirovMoveLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8037,
+            "section": "ZEP",
+            "key": "MoveSound",
+            "value": "KirovMoveLoop"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11263,
+            "section": "ZEP",
+            "key": "MoveSound",
+            "value": "KirovMoveLoop"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "BlimpBombE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11270,
+          "section": "ZEP",
+          "key": "ElitePrimary",
+          "value": "BlimpBombE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8038,
+            "section": "ZEP",
+            "key": "ElitePrimary",
+            "value": "BlimpBombE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11264,
+            "section": "ZEP",
+            "key": "ElitePrimary",
+            "value": "BlimpBombE"
+          }
+        ]
+      },
+      "Parasiteable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11271,
+          "section": "ZEP",
+          "key": "Parasiteable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8039,
+            "section": "ZEP",
+            "key": "Parasiteable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11265,
+            "section": "ZEP",
+            "key": "Parasiteable",
+            "value": "no"
+          }
+        ]
+      },
+      "Size": {
+        "value": "50",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11272,
+          "section": "ZEP",
+          "key": "Size",
+          "value": "50"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8040,
+            "section": "ZEP",
+            "key": "Size",
+            "value": "50"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11266,
+            "section": "ZEP",
+            "key": "Size",
+            "value": "50"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11241,
+          "section": "ZEP",
+          "key": "Soylent",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11235,
+            "section": "ZEP",
+            "key": "Soylent",
+            "value": "2000"
+          }
+        ]
+      },
+      "Bunkerable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11273,
+          "section": "ZEP",
+          "key": "Bunkerable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11267,
+            "section": "ZEP",
+            "key": "Bunkerable",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "ZEPICON",
+      "AltCameo": "ZEPUICO",
+      "Voxel": true,
+      "PrimaryFireFLH": "-50,0,-140"
+    },
+    "raw_values": {
+      "Cameo": "ZEPICON",
+      "AltCameo": "ZEPUICO",
+      "Voxel": "yes",
+      "PrimaryFireFLH": "-50,0,-140"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "ZEPICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1119,
+          "section": "ZEP",
+          "key": "Cameo",
+          "value": "ZEPICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 780,
+            "section": "ZEP",
+            "key": "Cameo",
+            "value": "ZEPICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "ZEPUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1120,
+          "section": "ZEP",
+          "key": "AltCameo",
+          "value": "ZEPUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 781,
+            "section": "ZEP",
+            "key": "AltCameo",
+            "value": "ZEPUICO"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1121,
+          "section": "ZEP",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 782,
+            "section": "ZEP",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "-50,0,-140",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1122,
+          "section": "ZEP",
+          "key": "PrimaryFireFLH",
+          "value": "-50,0,-140"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 783,
+            "section": "ZEP",
+            "key": "PrimaryFireFLH",
+            "value": "-50,0,-140"
+          }
+        ]
+      }
+    }
+  }
+}

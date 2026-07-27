@@ -5,6 +5,9 @@ const SpriteSheetFactory = preload("res://scripts/game/sprite_sheet_factory.gd")
 var entity
 var entity_id = ""
 var team_color = Color("#6CA8C4")
+var ra2_base_texture: Texture2D
+var ra2_mask_texture: Texture2D
+var ra2_source_size: Vector2 = Vector2.ZERO
 
 func _ready():
     if custom_minimum_size == Vector2.ZERO:
@@ -15,6 +18,9 @@ func _ready():
 func set_entity(next_entity):
     entity = next_entity
     entity_id = ""
+    ra2_base_texture = null
+    ra2_mask_texture = null
+    ra2_source_size = Vector2.ZERO
     if is_instance_valid(entity):
         if entity.has_method("is_tree_entity") and entity.is_tree_entity():
             entity_id = "tree_dense" if bool(entity.dense) else "tree_sparse"
@@ -25,7 +31,40 @@ func set_entity(next_entity):
         else:
             entity_id = str(entity.unit_id) if entity.has_method("is_combat_unit") else str(entity.building_id)
             team_color = entity.team_color
+            _load_ra2_portrait()
     queue_redraw()
+
+func _load_ra2_portrait() -> void:
+    if not is_instance_valid(entity):
+        return
+    var ra2_id: String = str(entity.get("ra2_entity_id")).to_upper()
+    if ra2_id.is_empty():
+        return
+    var bundle: Dictionary = RA2RuntimeDatabase.get_visual_bundle(ra2_id, "temperate")
+    if bundle.is_empty():
+        return
+    var base_frames: SpriteFrames = bundle.get("base_frames") as SpriteFrames
+    var remap_frames: SpriteFrames = bundle.get("remap_frames") as SpriteFrames
+    if base_frames == null:
+        return
+    var candidates: Array[String] = []
+    if entity.has_method("is_combat_unit"):
+        candidates = ["Stand_1", "Ready_1", "Guard_1", "HVA_1", "Walk_1", "Stand_0", "Ready_0"]
+    else:
+        candidates = ["Operational", "Ready", "__body_normal"]
+    var animation_name: String = ""
+    for candidate: String in candidates:
+        if base_frames.has_animation(candidate) and base_frames.get_frame_count(candidate) > 0:
+            animation_name = candidate
+            break
+    if animation_name.is_empty():
+        return
+    ra2_base_texture = base_frames.get_frame_texture(animation_name, 0)
+    if remap_frames != null and remap_frames.has_animation(animation_name):
+        if remap_frames.get_frame_count(animation_name) > 0:
+            ra2_mask_texture = remap_frames.get_frame_texture(animation_name, 0)
+    if ra2_base_texture != null:
+        ra2_source_size = ra2_base_texture.get_size()
 
 func _draw():
     draw_rect(Rect2(Vector2.ZERO, size), Color("#0E171D"))
@@ -45,11 +84,26 @@ func _display_name():
         return "矿石资源"
     if entity_id.begins_with("tree_"):
         return "茂密树林" if entity_id == "tree_dense" else "稀疏树木"
+    if is_instance_valid(entity):
+        var entity_stats: Variant = entity.get("stats")
+        if entity_stats is Dictionary:
+            var runtime_name: String = str((entity_stats as Dictionary).get("name", ""))
+            if not runtime_name.is_empty():
+                return runtime_name
     if GameConfig.units.has(entity_id):
         return str(GameConfig.units[entity_id].get("name", entity_id))
     return str(GameConfig.buildings.get(entity_id, {}).get("name", entity_id))
 
 func _draw_entity_icon(center, s):
+    if ra2_base_texture != null and ra2_source_size.x > 0.0 and ra2_source_size.y > 0.0:
+        var max_size: Vector2 = Vector2(size.x * 0.78, size.y * 0.62)
+        var scale_factor: float = minf(max_size.x / ra2_source_size.x, max_size.y / ra2_source_size.y)
+        var target_size: Vector2 = ra2_source_size * scale_factor
+        var target_rect: Rect2 = Rect2(center - target_size * 0.5 + Vector2(0, 3), target_size)
+        draw_texture_rect(ra2_base_texture, target_rect, false, Color.WHITE)
+        if ra2_mask_texture != null:
+            draw_texture_rect(ra2_mask_texture, target_rect, false, team_color)
+        return
     if entity_id.begins_with("tree_"):
         var dense = entity_id == "tree_dense"
         draw_rect(Rect2(center + Vector2(-3, -6) * s, Vector2(6, 36) * s), Color("#5A3E29"))

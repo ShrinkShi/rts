@@ -1,0 +1,1759 @@
+{
+  "id": "SAPC",
+  "category": "vehicle",
+  "name_token": "Name:SAPC",
+  "art_id": "TRS",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAYARD"
+  ],
+  "tech_level": 2,
+  "cost": 900,
+  "strength": 300,
+  "armor": "heavy",
+  "speed": 6,
+  "sight": 6,
+  "locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Amphibious",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "HoverSovietSelect"
+    ],
+    "VoiceMove": [
+      "HoverSovietMove"
+    ],
+    "VoiceAttack": [
+      "HoverSovietMove"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ],
+    "MoveSound": [
+      "LandingCraftMoveStart"
+    ],
+    "EnterTransportSound": [
+      "EnterTransport"
+    ],
+    "LeaveTransportSound": [
+      "ExitTransport"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "TRS",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4405,
+      "pack": "ra2",
+      "relative_path": "local/trs.vxl",
+      "folder": "local",
+      "filename": "trs.vxl",
+      "stem": "trs",
+      "extension": ".vxl",
+      "size": 117003,
+      "sha1": "9fca555288d502baf5962affb8fedc1ec22c1ae2"
+    },
+    "body_hva": {
+      "asset_id": 4404,
+      "pack": "ra2",
+      "relative_path": "local/trs.hva",
+      "folder": "local",
+      "filename": "trs.hva",
+      "stem": "trs",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "f2139793aeb6f6a378f2cf83f01b1afc10b17191"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      80.0,
+      0.0,
+      120.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:SAPC",
+      "Name": "Armored Transport",
+      "Prerequisite": "NAYARD",
+      "Image": "TRS",
+      "Strength": 300,
+      "MoveToShroud": true,
+      "Category": "Transport",
+      "DeployTime": 0.022,
+      "Armor": "heavy",
+      "Turret": false,
+      "IsTilter": true,
+      "TechLevel": 2,
+      "Sight": 6,
+      "PipScale": "Passengers",
+      "Speed": 6,
+      "Naval": true,
+      "Weight": 1,
+      "CrateGoodie": false,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 900,
+      "Points": 25,
+      "ROT": 5,
+      "Crusher": true,
+      "Passengers": 12,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "HoverSovietSelect",
+      "VoiceMove": "HoverSovietMove",
+      "VoiceAttack": "HoverSovietMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "LandingCraftMoveStart",
+      "EnterTransportSound": "EnterTransport",
+      "LeaveTransportSound": "ExitTransport",
+      "Maxdebris": 3,
+      "SpeedType": "Hover",
+      "Locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Amphibious",
+      "ThreatPosed": 10,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": 1,
+      "ZFudgeColumn": 7,
+      "ZFudgeTunnel": 13,
+      "SizeLimit": 6,
+      "Size": 15,
+      "TooBigToFitUnderBridge": true,
+      "Trainable": false,
+      "StupidHunt": true,
+      "Soylent": 900,
+      "CrushSound": "TankCrush",
+      "Bunkerable": false
+    },
+    "raw_values": {
+      "UIName": "Name:SAPC",
+      "Name": "Armored Transport",
+      "Prerequisite": "NAYARD",
+      "Image": "TRS",
+      "Strength": "300",
+      "MoveToShroud": "yes",
+      "Category": "Transport",
+      "DeployTime": ".022",
+      "Armor": "heavy",
+      "Turret": "no",
+      "IsTilter": "yes",
+      "TechLevel": "2",
+      "Sight": "6",
+      "PipScale": "Passengers",
+      "Speed": "6",
+      "Naval": "yes",
+      "Weight": "1",
+      "CrateGoodie": "no",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "900",
+      "Points": "25",
+      "ROT": "5",
+      "Crusher": "yes",
+      "Passengers": "12",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "HoverSovietSelect",
+      "VoiceMove": "HoverSovietMove",
+      "VoiceAttack": "HoverSovietMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "LandingCraftMoveStart",
+      "EnterTransportSound": "EnterTransport",
+      "LeaveTransportSound": "ExitTransport",
+      "Maxdebris": "3",
+      "SpeedType": "Hover",
+      "Locomotor": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Amphibious",
+      "ThreatPosed": "10",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": "1",
+      "ZFudgeColumn": "7",
+      "ZFudgeTunnel": "13",
+      "SizeLimit": "6",
+      "Size": "15",
+      "TooBigToFitUnderBridge": "true",
+      "Trainable": "no",
+      "StupidHunt": "yes",
+      "Soylent": "900",
+      "CrushSound": "TankCrush",
+      "Bunkerable": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:SAPC",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7882,
+          "section": "SAPC",
+          "key": "UIName",
+          "value": "Name:SAPC"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6947,
+            "section": "SAPC",
+            "key": "UIName",
+            "value": "Name:SAPC"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7879,
+            "section": "SAPC",
+            "key": "UIName",
+            "value": "Name:SAPC"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Armored Transport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7883,
+          "section": "SAPC",
+          "key": "Name",
+          "value": "Armored Transport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6948,
+            "section": "SAPC",
+            "key": "Name",
+            "value": "Armored Transport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7880,
+            "section": "SAPC",
+            "key": "Name",
+            "value": "Armored Transport"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAYARD",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7884,
+          "section": "SAPC",
+          "key": "Prerequisite",
+          "value": "NAYARD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6949,
+            "section": "SAPC",
+            "key": "Prerequisite",
+            "value": "NAYARD"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7881,
+            "section": "SAPC",
+            "key": "Prerequisite",
+            "value": "NAYARD"
+          }
+        ]
+      },
+      "Image": {
+        "value": "TRS",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7885,
+          "section": "SAPC",
+          "key": "Image",
+          "value": "TRS"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6950,
+            "section": "SAPC",
+            "key": "Image",
+            "value": "TRS"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7882,
+            "section": "SAPC",
+            "key": "Image",
+            "value": "TRS"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "300",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7886,
+          "section": "SAPC",
+          "key": "Strength",
+          "value": "300"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6951,
+            "section": "SAPC",
+            "key": "Strength",
+            "value": "300"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7883,
+            "section": "SAPC",
+            "key": "Strength",
+            "value": "300"
+          }
+        ]
+      },
+      "MoveToShroud": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7888,
+          "section": "SAPC",
+          "key": "MoveToShroud",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6953,
+            "section": "SAPC",
+            "key": "MoveToShroud",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7885,
+            "section": "SAPC",
+            "key": "MoveToShroud",
+            "value": "yes"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Transport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7889,
+          "section": "SAPC",
+          "key": "Category",
+          "value": "Transport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6954,
+            "section": "SAPC",
+            "key": "Category",
+            "value": "Transport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7886,
+            "section": "SAPC",
+            "key": "Category",
+            "value": "Transport"
+          }
+        ]
+      },
+      "DeployTime": {
+        "value": ".022",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7890,
+          "section": "SAPC",
+          "key": "DeployTime",
+          "value": ".022"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6955,
+            "section": "SAPC",
+            "key": "DeployTime",
+            "value": ".022"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7887,
+            "section": "SAPC",
+            "key": "DeployTime",
+            "value": ".022"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7891,
+          "section": "SAPC",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6956,
+            "section": "SAPC",
+            "key": "Armor",
+            "value": "heavy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7888,
+            "section": "SAPC",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7892,
+          "section": "SAPC",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6957,
+            "section": "SAPC",
+            "key": "Turret",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7889,
+            "section": "SAPC",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "IsTilter": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7893,
+          "section": "SAPC",
+          "key": "IsTilter",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6958,
+            "section": "SAPC",
+            "key": "IsTilter",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7890,
+            "section": "SAPC",
+            "key": "IsTilter",
+            "value": "yes"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7894,
+          "section": "SAPC",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6959,
+            "section": "SAPC",
+            "key": "TechLevel",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7891,
+            "section": "SAPC",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7895,
+          "section": "SAPC",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6960,
+            "section": "SAPC",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7892,
+            "section": "SAPC",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "PipScale": {
+        "value": "Passengers",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7896,
+          "section": "SAPC",
+          "key": "PipScale",
+          "value": "Passengers"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6961,
+            "section": "SAPC",
+            "key": "PipScale",
+            "value": "Passengers"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7893,
+            "section": "SAPC",
+            "key": "PipScale",
+            "value": "Passengers"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7897,
+          "section": "SAPC",
+          "key": "Speed",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6962,
+            "section": "SAPC",
+            "key": "Speed",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7894,
+            "section": "SAPC",
+            "key": "Speed",
+            "value": "6"
+          }
+        ]
+      },
+      "Naval": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7901,
+          "section": "SAPC",
+          "key": "Naval",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6966,
+            "section": "SAPC",
+            "key": "Naval",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7898,
+            "section": "SAPC",
+            "key": "Naval",
+            "value": "yes"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7902,
+          "section": "SAPC",
+          "key": "Weight",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6967,
+            "section": "SAPC",
+            "key": "Weight",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7899,
+            "section": "SAPC",
+            "key": "Weight",
+            "value": "1"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7904,
+          "section": "SAPC",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6969,
+            "section": "SAPC",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7901,
+            "section": "SAPC",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7905,
+          "section": "SAPC",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6970,
+            "section": "SAPC",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7902,
+            "section": "SAPC",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7906,
+          "section": "SAPC",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6971,
+            "section": "SAPC",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7903,
+            "section": "SAPC",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "900",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7907,
+          "section": "SAPC",
+          "key": "Cost",
+          "value": "900"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6972,
+            "section": "SAPC",
+            "key": "Cost",
+            "value": "900"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7904,
+            "section": "SAPC",
+            "key": "Cost",
+            "value": "900"
+          }
+        ]
+      },
+      "Points": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7909,
+          "section": "SAPC",
+          "key": "Points",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6973,
+            "section": "SAPC",
+            "key": "Points",
+            "value": "25"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7906,
+            "section": "SAPC",
+            "key": "Points",
+            "value": "25"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7910,
+          "section": "SAPC",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6974,
+            "section": "SAPC",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7907,
+            "section": "SAPC",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7911,
+          "section": "SAPC",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6975,
+            "section": "SAPC",
+            "key": "Crusher",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7908,
+            "section": "SAPC",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "Passengers": {
+        "value": "12",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7912,
+          "section": "SAPC",
+          "key": "Passengers",
+          "value": "12"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6976,
+            "section": "SAPC",
+            "key": "Passengers",
+            "value": "12"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7909,
+            "section": "SAPC",
+            "key": "Passengers",
+            "value": "12"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7913,
+          "section": "SAPC",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6977,
+            "section": "SAPC",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7910,
+            "section": "SAPC",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "HoverSovietSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7914,
+          "section": "SAPC",
+          "key": "VoiceSelect",
+          "value": "HoverSovietSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6978,
+            "section": "SAPC",
+            "key": "VoiceSelect",
+            "value": "GenSovWaterSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7911,
+            "section": "SAPC",
+            "key": "VoiceSelect",
+            "value": "HoverSovietSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "HoverSovietMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7915,
+          "section": "SAPC",
+          "key": "VoiceMove",
+          "value": "HoverSovietMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6979,
+            "section": "SAPC",
+            "key": "VoiceMove",
+            "value": "GenSovWaterMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7912,
+            "section": "SAPC",
+            "key": "VoiceMove",
+            "value": "HoverSovietMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "HoverSovietMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7916,
+          "section": "SAPC",
+          "key": "VoiceAttack",
+          "value": "HoverSovietMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6980,
+            "section": "SAPC",
+            "key": "VoiceAttack",
+            "value": "GenSovWaterAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7913,
+            "section": "SAPC",
+            "key": "VoiceAttack",
+            "value": "HoverSovietMove"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7917,
+          "section": "SAPC",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6981,
+            "section": "SAPC",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7914,
+            "section": "SAPC",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7918,
+          "section": "SAPC",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6982,
+            "section": "SAPC",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7915,
+            "section": "SAPC",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "LandingCraftMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7919,
+          "section": "SAPC",
+          "key": "MoveSound",
+          "value": "LandingCraftMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6983,
+            "section": "SAPC",
+            "key": "MoveSound",
+            "value": "LandingCraftMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7916,
+            "section": "SAPC",
+            "key": "MoveSound",
+            "value": "LandingCraftMoveStart"
+          }
+        ]
+      },
+      "EnterTransportSound": {
+        "value": "EnterTransport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7921,
+          "section": "SAPC",
+          "key": "EnterTransportSound",
+          "value": "EnterTransport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6984,
+            "section": "SAPC",
+            "key": "EnterTransportSound",
+            "value": "EnterTransport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7918,
+            "section": "SAPC",
+            "key": "EnterTransportSound",
+            "value": "EnterTransport"
+          }
+        ]
+      },
+      "LeaveTransportSound": {
+        "value": "ExitTransport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7922,
+          "section": "SAPC",
+          "key": "LeaveTransportSound",
+          "value": "ExitTransport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6985,
+            "section": "SAPC",
+            "key": "LeaveTransportSound",
+            "value": "ExitTransport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7919,
+            "section": "SAPC",
+            "key": "LeaveTransportSound",
+            "value": "ExitTransport"
+          }
+        ]
+      },
+      "Maxdebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7923,
+          "section": "SAPC",
+          "key": "Maxdebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6986,
+            "section": "SAPC",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7920,
+            "section": "SAPC",
+            "key": "Maxdebris",
+            "value": "3"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Hover",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7932,
+          "section": "SAPC",
+          "key": "SpeedType",
+          "value": "Hover"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6995,
+            "section": "SAPC",
+            "key": "SpeedType",
+            "value": "Hover"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7929,
+            "section": "SAPC",
+            "key": "SpeedType",
+            "value": "Hover"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7933,
+          "section": "SAPC",
+          "key": "Locomotor",
+          "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6996,
+            "section": "SAPC",
+            "key": "Locomotor",
+            "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7930,
+            "section": "SAPC",
+            "key": "Locomotor",
+            "value": "{4A582742-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Amphibious",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7934,
+          "section": "SAPC",
+          "key": "MovementZone",
+          "value": "Amphibious"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6997,
+            "section": "SAPC",
+            "key": "MovementZone",
+            "value": "Amphibious"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7931,
+            "section": "SAPC",
+            "key": "MovementZone",
+            "value": "Amphibious"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7938,
+          "section": "SAPC",
+          "key": "ThreatPosed",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7001,
+            "section": "SAPC",
+            "key": "ThreatPosed",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7935,
+            "section": "SAPC",
+            "key": "ThreatPosed",
+            "value": "10"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7939,
+          "section": "SAPC",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7002,
+            "section": "SAPC",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7936,
+            "section": "SAPC",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7940,
+          "section": "SAPC",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7003,
+            "section": "SAPC",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7937,
+            "section": "SAPC",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7941,
+          "section": "SAPC",
+          "key": "ZFudgeColumn",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7004,
+            "section": "SAPC",
+            "key": "ZFudgeColumn",
+            "value": "7"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7938,
+            "section": "SAPC",
+            "key": "ZFudgeColumn",
+            "value": "7"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7942,
+          "section": "SAPC",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7005,
+            "section": "SAPC",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7939,
+            "section": "SAPC",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "SizeLimit": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7943,
+          "section": "SAPC",
+          "key": "SizeLimit",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7006,
+            "section": "SAPC",
+            "key": "SizeLimit",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7940,
+            "section": "SAPC",
+            "key": "SizeLimit",
+            "value": "6"
+          }
+        ]
+      },
+      "Size": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7944,
+          "section": "SAPC",
+          "key": "Size",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7007,
+            "section": "SAPC",
+            "key": "Size",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7941,
+            "section": "SAPC",
+            "key": "Size",
+            "value": "15"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7945,
+          "section": "SAPC",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7008,
+            "section": "SAPC",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7942,
+            "section": "SAPC",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7947,
+          "section": "SAPC",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7010,
+            "section": "SAPC",
+            "key": "Trainable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7944,
+            "section": "SAPC",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "StupidHunt": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7948,
+          "section": "SAPC",
+          "key": "StupidHunt",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7011,
+            "section": "SAPC",
+            "key": "StupidHunt",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7945,
+            "section": "SAPC",
+            "key": "StupidHunt",
+            "value": "yes"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "900",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7908,
+          "section": "SAPC",
+          "key": "Soylent",
+          "value": "900"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7905,
+            "section": "SAPC",
+            "key": "Soylent",
+            "value": "900"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7920,
+          "section": "SAPC",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7917,
+            "section": "SAPC",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      },
+      "Bunkerable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7949,
+          "section": "SAPC",
+          "key": "Bunkerable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7946,
+            "section": "SAPC",
+            "key": "Bunkerable",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "SAPCICON",
+      "Voxel": true,
+      "Remapable": true,
+      "PrimaryFireFLH": "80,0,120"
+    },
+    "raw_values": {
+      "Cameo": "SAPCICON",
+      "Voxel": "yes",
+      "Remapable": "yes",
+      "PrimaryFireFLH": "80,0,120"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "SAPCICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 971,
+          "section": "TRS",
+          "key": "Cameo",
+          "value": "SAPCICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 680,
+            "section": "TRS",
+            "key": "Cameo",
+            "value": "SAPCICON"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 972,
+          "section": "TRS",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 681,
+            "section": "TRS",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 973,
+          "section": "TRS",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 682,
+            "section": "TRS",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "80,0,120",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 974,
+          "section": "TRS",
+          "key": "PrimaryFireFLH",
+          "value": "80,0,120"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 683,
+            "section": "TRS",
+            "key": "PrimaryFireFLH",
+            "value": "80,0,120"
+          }
+        ]
+      }
+    }
+  }
+}

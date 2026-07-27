@@ -1,0 +1,2823 @@
+{
+  "id": "YABRCK",
+  "category": "building",
+  "name_token": "Name:Ybarracks",
+  "art_id": "YABRCK",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "POWER",
+    "YACNST"
+  ],
+  "tech_level": 2,
+  "cost": 500,
+  "strength": 500,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 5,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "YABRCK",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 5999,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygbrck.shp",
+          "folder": "genermd",
+          "filename": "ygbrck.shp",
+          "stem": "ygbrck",
+          "extension": ".shp",
+          "size": 36216,
+          "sha1": "e4a1e728db54baf69f01f43519146b85f2eed3a1"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 11220,
+          "pack": "ra2md",
+          "relative_path": "snowmd/yabrck.shp",
+          "folder": "snowmd",
+          "filename": "yabrck.shp",
+          "stem": "yabrck",
+          "extension": ".shp",
+          "size": 36224,
+          "sha1": "37ad210074a0b2e84b78f89e94e97ab950bdc41f"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 5999,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygbrck.shp",
+          "folder": "genermd",
+          "filename": "ygbrck.shp",
+          "stem": "ygbrck",
+          "extension": ".shp",
+          "size": 36216,
+          "sha1": "e4a1e728db54baf69f01f43519146b85f2eed3a1"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 5999,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygbrck.shp",
+          "folder": "genermd",
+          "filename": "ygbrck.shp",
+          "stem": "ygbrck",
+          "extension": ".shp",
+          "size": 36216,
+          "sha1": "e4a1e728db54baf69f01f43519146b85f2eed3a1"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 5999,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygbrck.shp",
+          "folder": "genermd",
+          "filename": "ygbrck.shp",
+          "stem": "ygbrck",
+          "extension": ".shp",
+          "size": 36216,
+          "sha1": "e4a1e728db54baf69f01f43519146b85f2eed3a1"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 5999,
+          "pack": "ra2md",
+          "relative_path": "genermd/ygbrck.shp",
+          "folder": "genermd",
+          "filename": "ygbrck.shp",
+          "stem": "ygbrck",
+          "extension": ".shp",
+          "size": 36216,
+          "sha1": "e4a1e728db54baf69f01f43519146b85f2eed3a1"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "Buildup": {
+        "temperate": {
+          "art_id": "YABRCKMK",
+          "image": "YABRCKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6001,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrckmk.shp",
+            "folder": "genermd",
+            "filename": "ygbrckmk.shp",
+            "stem": "ygbrckmk",
+            "extension": ".shp",
+            "size": 203296,
+            "sha1": "f822afaffb5a20dba36eb31fa0ab7dd9e91c2084"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "YABRCKMK",
+          "image": "YABRCKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11222,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yabrckmk.shp",
+            "folder": "snowmd",
+            "filename": "yabrckmk.shp",
+            "stem": "yabrckmk",
+            "extension": ".shp",
+            "size": 203960,
+            "sha1": "84e3b276cece6a87e51b01678c73cf74d811a5c1"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "YABRCKMK",
+          "image": "YABRCKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6001,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrckmk.shp",
+            "folder": "genermd",
+            "filename": "ygbrckmk.shp",
+            "stem": "ygbrckmk",
+            "extension": ".shp",
+            "size": 203296,
+            "sha1": "f822afaffb5a20dba36eb31fa0ab7dd9e91c2084"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "YABRCKMK",
+          "image": "YABRCKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6001,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrckmk.shp",
+            "folder": "genermd",
+            "filename": "ygbrckmk.shp",
+            "stem": "ygbrckmk",
+            "extension": ".shp",
+            "size": 203296,
+            "sha1": "f822afaffb5a20dba36eb31fa0ab7dd9e91c2084"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "YABRCKMK",
+          "image": "YABRCKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6001,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrckmk.shp",
+            "folder": "genermd",
+            "filename": "ygbrckmk.shp",
+            "stem": "ygbrckmk",
+            "extension": ".shp",
+            "size": 203296,
+            "sha1": "f822afaffb5a20dba36eb31fa0ab7dd9e91c2084"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "YABRCKMK",
+          "image": "YABRCKMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6001,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrckmk.shp",
+            "folder": "genermd",
+            "filename": "ygbrckmk.shp",
+            "stem": "ygbrckmk",
+            "extension": ".shp",
+            "size": 203296,
+            "sha1": "f822afaffb5a20dba36eb31fa0ab7dd9e91c2084"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        }
+      },
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "YABRCK_A",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6000,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrck_a.shp",
+            "folder": "genermd",
+            "filename": "ygbrck_a.shp",
+            "stem": "ygbrck_a",
+            "extension": ".shp",
+            "size": 69248,
+            "sha1": "f19064b6d02d59737952f8044cc35d2a9fc68f85"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3817,
+                "section": "YABRCK_A",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3818,
+                "section": "YABRCK_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3819,
+                "section": "YABRCK_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3820,
+                "section": "YABRCK_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3821,
+                "section": "YABRCK_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3822,
+                "section": "YABRCK_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3823,
+                "section": "YABRCK_A",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3824,
+                "section": "YABRCK_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -35,
+          "Powered": false
+        },
+        "snow": {
+          "art_id": "YABRCK_A",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11221,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yabrck_a.shp",
+            "folder": "snowmd",
+            "filename": "yabrck_a.shp",
+            "stem": "yabrck_a",
+            "extension": ".shp",
+            "size": 69288,
+            "sha1": "d903b5decd3599413ff83b9ad5c17785cc0bd0cd"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3817,
+                "section": "YABRCK_A",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3818,
+                "section": "YABRCK_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3819,
+                "section": "YABRCK_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3820,
+                "section": "YABRCK_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3821,
+                "section": "YABRCK_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3822,
+                "section": "YABRCK_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3823,
+                "section": "YABRCK_A",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3824,
+                "section": "YABRCK_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -35,
+          "Powered": false
+        },
+        "urban": {
+          "art_id": "YABRCK_A",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6000,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrck_a.shp",
+            "folder": "genermd",
+            "filename": "ygbrck_a.shp",
+            "stem": "ygbrck_a",
+            "extension": ".shp",
+            "size": 69248,
+            "sha1": "f19064b6d02d59737952f8044cc35d2a9fc68f85"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3817,
+                "section": "YABRCK_A",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3818,
+                "section": "YABRCK_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3819,
+                "section": "YABRCK_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3820,
+                "section": "YABRCK_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3821,
+                "section": "YABRCK_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3822,
+                "section": "YABRCK_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3823,
+                "section": "YABRCK_A",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3824,
+                "section": "YABRCK_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -35,
+          "Powered": false
+        },
+        "desert": {
+          "art_id": "YABRCK_A",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6000,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrck_a.shp",
+            "folder": "genermd",
+            "filename": "ygbrck_a.shp",
+            "stem": "ygbrck_a",
+            "extension": ".shp",
+            "size": 69248,
+            "sha1": "f19064b6d02d59737952f8044cc35d2a9fc68f85"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3817,
+                "section": "YABRCK_A",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3818,
+                "section": "YABRCK_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3819,
+                "section": "YABRCK_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3820,
+                "section": "YABRCK_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3821,
+                "section": "YABRCK_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3822,
+                "section": "YABRCK_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3823,
+                "section": "YABRCK_A",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3824,
+                "section": "YABRCK_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -35,
+          "Powered": false
+        },
+        "lunar": {
+          "art_id": "YABRCK_A",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6000,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrck_a.shp",
+            "folder": "genermd",
+            "filename": "ygbrck_a.shp",
+            "stem": "ygbrck_a",
+            "extension": ".shp",
+            "size": 69248,
+            "sha1": "f19064b6d02d59737952f8044cc35d2a9fc68f85"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3817,
+                "section": "YABRCK_A",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3818,
+                "section": "YABRCK_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3819,
+                "section": "YABRCK_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3820,
+                "section": "YABRCK_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3821,
+                "section": "YABRCK_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3822,
+                "section": "YABRCK_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3823,
+                "section": "YABRCK_A",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3824,
+                "section": "YABRCK_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -35,
+          "Powered": false
+        },
+        "newurban": {
+          "art_id": "YABRCK_A",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6000,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrck_a.shp",
+            "folder": "genermd",
+            "filename": "ygbrck_a.shp",
+            "stem": "ygbrck_a",
+            "extension": ".shp",
+            "size": 69248,
+            "sha1": "f19064b6d02d59737952f8044cc35d2a9fc68f85"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 7,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3817,
+                "section": "YABRCK_A",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3818,
+                "section": "YABRCK_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3819,
+                "section": "YABRCK_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3820,
+                "section": "YABRCK_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "7",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3821,
+                "section": "YABRCK_A",
+                "key": "LoopEnd",
+                "value": "7"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3822,
+                "section": "YABRCK_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3823,
+                "section": "YABRCK_A",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3824,
+                "section": "YABRCK_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -35,
+          "Powered": false
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "YABRCK_AD",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6000,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrck_a.shp",
+            "folder": "genermd",
+            "filename": "ygbrck_a.shp",
+            "stem": "ygbrck_a",
+            "extension": ".shp",
+            "size": 69248,
+            "sha1": "f19064b6d02d59737952f8044cc35d2a9fc68f85"
+          },
+          "LoopStart": 8,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3828,
+                "section": "YABRCK_AD",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3829,
+                "section": "YABRCK_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3830,
+                "section": "YABRCK_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3831,
+                "section": "YABRCK_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3832,
+                "section": "YABRCK_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3833,
+                "section": "YABRCK_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3834,
+                "section": "YABRCK_AD",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3835,
+                "section": "YABRCK_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -35,
+          "Powered": false
+        },
+        "snow": {
+          "art_id": "YABRCK_AD",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 11221,
+            "pack": "ra2md",
+            "relative_path": "snowmd/yabrck_a.shp",
+            "folder": "snowmd",
+            "filename": "yabrck_a.shp",
+            "stem": "yabrck_a",
+            "extension": ".shp",
+            "size": 69288,
+            "sha1": "d903b5decd3599413ff83b9ad5c17785cc0bd0cd"
+          },
+          "LoopStart": 8,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3828,
+                "section": "YABRCK_AD",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3829,
+                "section": "YABRCK_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3830,
+                "section": "YABRCK_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3831,
+                "section": "YABRCK_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3832,
+                "section": "YABRCK_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3833,
+                "section": "YABRCK_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3834,
+                "section": "YABRCK_AD",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3835,
+                "section": "YABRCK_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -35,
+          "Powered": false
+        },
+        "urban": {
+          "art_id": "YABRCK_AD",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6000,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrck_a.shp",
+            "folder": "genermd",
+            "filename": "ygbrck_a.shp",
+            "stem": "ygbrck_a",
+            "extension": ".shp",
+            "size": 69248,
+            "sha1": "f19064b6d02d59737952f8044cc35d2a9fc68f85"
+          },
+          "LoopStart": 8,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3828,
+                "section": "YABRCK_AD",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3829,
+                "section": "YABRCK_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3830,
+                "section": "YABRCK_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3831,
+                "section": "YABRCK_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3832,
+                "section": "YABRCK_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3833,
+                "section": "YABRCK_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3834,
+                "section": "YABRCK_AD",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3835,
+                "section": "YABRCK_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -35,
+          "Powered": false
+        },
+        "desert": {
+          "art_id": "YABRCK_AD",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6000,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrck_a.shp",
+            "folder": "genermd",
+            "filename": "ygbrck_a.shp",
+            "stem": "ygbrck_a",
+            "extension": ".shp",
+            "size": 69248,
+            "sha1": "f19064b6d02d59737952f8044cc35d2a9fc68f85"
+          },
+          "LoopStart": 8,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3828,
+                "section": "YABRCK_AD",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3829,
+                "section": "YABRCK_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3830,
+                "section": "YABRCK_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3831,
+                "section": "YABRCK_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3832,
+                "section": "YABRCK_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3833,
+                "section": "YABRCK_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3834,
+                "section": "YABRCK_AD",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3835,
+                "section": "YABRCK_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -35,
+          "Powered": false
+        },
+        "lunar": {
+          "art_id": "YABRCK_AD",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6000,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrck_a.shp",
+            "folder": "genermd",
+            "filename": "ygbrck_a.shp",
+            "stem": "ygbrck_a",
+            "extension": ".shp",
+            "size": 69248,
+            "sha1": "f19064b6d02d59737952f8044cc35d2a9fc68f85"
+          },
+          "LoopStart": 8,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3828,
+                "section": "YABRCK_AD",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3829,
+                "section": "YABRCK_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3830,
+                "section": "YABRCK_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3831,
+                "section": "YABRCK_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3832,
+                "section": "YABRCK_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3833,
+                "section": "YABRCK_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3834,
+                "section": "YABRCK_AD",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3835,
+                "section": "YABRCK_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -35,
+          "Powered": false
+        },
+        "newurban": {
+          "art_id": "YABRCK_AD",
+          "image": "YABRCK_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6000,
+            "pack": "ra2md",
+            "relative_path": "genermd/ygbrck_a.shp",
+            "folder": "genermd",
+            "filename": "ygbrck_a.shp",
+            "stem": "ygbrck_a",
+            "extension": ".shp",
+            "size": 69248,
+            "sha1": "f19064b6d02d59737952f8044cc35d2a9fc68f85"
+          },
+          "LoopStart": 8,
+          "LoopEnd": 15,
+          "LoopCount": -1,
+          "Rate": 150,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "YABRCK_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3828,
+                "section": "YABRCK_AD",
+                "key": "Image",
+                "value": "YABRCK_A"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3829,
+                "section": "YABRCK_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3830,
+                "section": "YABRCK_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3831,
+                "section": "YABRCK_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3832,
+                "section": "YABRCK_AD",
+                "key": "LoopEnd",
+                "value": "15"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3833,
+                "section": "YABRCK_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "150",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3834,
+                "section": "YABRCK_AD",
+                "key": "Rate",
+                "value": "150"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 3835,
+                "section": "YABRCK_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -35,
+          "Powered": false
+        }
+      }
+    },
+    "foundation": "2x3",
+    "height": 7,
+    "occupy_height": 2,
+    "damage_fire_offsets": [
+      [
+        -36.0,
+        -33.0
+      ],
+      [
+        -16.0,
+        52.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:Ybarracks",
+      "Name": "Yuri Barracks",
+      "Image": "YABRCK",
+      "BuildCat": "Tech",
+      "Prerequisite": "POWER,YACNST",
+      "Strength": 500,
+      "Armor": "steel",
+      "Factory": "InfantryType",
+      "Adjacent": 2,
+      "TechLevel": 2,
+      "Sight": 5,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": 2,
+      "Cost": 500,
+      "Points": 30,
+      "Power": -10,
+      "Crewed": true,
+      "Capturable": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM",
+      "ThreatPosed": 0,
+      "ExitCoord": "-64,64,0",
+      "YuriBarracks": true,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+      "DamageSmokeOffset": "215,395,200",
+      "AIBuildThis": true,
+      "Spyable": true,
+      "ImmuneToPsionics": false
+    },
+    "raw_values": {
+      "UIName": "Name:Ybarracks",
+      "Name": "Yuri Barracks",
+      "Image": "YABRCK",
+      "BuildCat": "Tech",
+      "Prerequisite": "POWER,YACNST",
+      "Strength": "500",
+      "Armor": "steel",
+      "Factory": "InfantryType",
+      "Adjacent": "2",
+      "TechLevel": "2",
+      "Sight": "5",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": "2",
+      "Cost": "500",
+      "Points": "30",
+      "Power": "-10",
+      "Crewed": "yes",
+      "Capturable": "true",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM",
+      "ThreatPosed": "0",
+      "ExitCoord": "-64,64,0",
+      "YuriBarracks": "yes",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+      "DamageSmokeOffset": "215,395,200",
+      "AIBuildThis": "yes",
+      "Spyable": "yes",
+      "ImmuneToPsionics": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:Ybarracks",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13168,
+          "section": "YABRCK",
+          "key": "UIName",
+          "value": "Name:Ybarracks"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13162,
+            "section": "YABRCK",
+            "key": "UIName",
+            "value": "Name:Ybarracks"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Yuri Barracks",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13169,
+          "section": "YABRCK",
+          "key": "Name",
+          "value": "Yuri Barracks"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13163,
+            "section": "YABRCK",
+            "key": "Name",
+            "value": "Yuri Barracks"
+          }
+        ]
+      },
+      "Image": {
+        "value": "YABRCK",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13170,
+          "section": "YABRCK",
+          "key": "Image",
+          "value": "YABRCK"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13164,
+            "section": "YABRCK",
+            "key": "Image",
+            "value": "YABRCK"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Tech",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13171,
+          "section": "YABRCK",
+          "key": "BuildCat",
+          "value": "Tech"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13165,
+            "section": "YABRCK",
+            "key": "BuildCat",
+            "value": "Tech"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "POWER,YACNST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13172,
+          "section": "YABRCK",
+          "key": "Prerequisite",
+          "value": "POWER,YACNST"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13166,
+            "section": "YABRCK",
+            "key": "Prerequisite",
+            "value": "POWER,YACNST"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13173,
+          "section": "YABRCK",
+          "key": "Strength",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13167,
+            "section": "YABRCK",
+            "key": "Strength",
+            "value": "500"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13174,
+          "section": "YABRCK",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13168,
+            "section": "YABRCK",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "Factory": {
+        "value": "InfantryType",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13175,
+          "section": "YABRCK",
+          "key": "Factory",
+          "value": "InfantryType"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13169,
+            "section": "YABRCK",
+            "key": "Factory",
+            "value": "InfantryType"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13176,
+          "section": "YABRCK",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13170,
+            "section": "YABRCK",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13177,
+          "section": "YABRCK",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13171,
+            "section": "YABRCK",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13178,
+          "section": "YABRCK",
+          "key": "Sight",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13172,
+            "section": "YABRCK",
+            "key": "Sight",
+            "value": "5"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13179,
+          "section": "YABRCK",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13173,
+            "section": "YABRCK",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AIBasePlanningSide": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13180,
+          "section": "YABRCK",
+          "key": "AIBasePlanningSide",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13174,
+            "section": "YABRCK",
+            "key": "AIBasePlanningSide",
+            "value": "2"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13181,
+          "section": "YABRCK",
+          "key": "Cost",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13175,
+            "section": "YABRCK",
+            "key": "Cost",
+            "value": "500"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13182,
+          "section": "YABRCK",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13176,
+            "section": "YABRCK",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "Power": {
+        "value": "-10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13183,
+          "section": "YABRCK",
+          "key": "Power",
+          "value": "-10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13177,
+            "section": "YABRCK",
+            "key": "Power",
+            "value": "-10"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13184,
+          "section": "YABRCK",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13178,
+            "section": "YABRCK",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13185,
+          "section": "YABRCK",
+          "key": "Capturable",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13179,
+            "section": "YABRCK",
+            "key": "Capturable",
+            "value": "true"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13186,
+          "section": "YABRCK",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13180,
+            "section": "YABRCK",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13188,
+          "section": "YABRCK",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13182,
+            "section": "YABRCK",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13189,
+          "section": "YABRCK",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13183,
+            "section": "YABRCK",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13190,
+          "section": "YABRCK",
+          "key": "DebrisAnims",
+          "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13184,
+            "section": "YABRCK",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13191,
+          "section": "YABRCK",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13185,
+            "section": "YABRCK",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "ExitCoord": {
+        "value": "-64,64,0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13192,
+          "section": "YABRCK",
+          "key": "ExitCoord",
+          "value": "-64,64,0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13186,
+            "section": "YABRCK",
+            "key": "ExitCoord",
+            "value": "-64,64,0"
+          }
+        ]
+      },
+      "YuriBarracks": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13193,
+          "section": "YABRCK",
+          "key": "YuriBarracks",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13187,
+            "section": "YABRCK",
+            "key": "YuriBarracks",
+            "value": "yes"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13194,
+          "section": "YABRCK",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys,BigGreySmokeSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13188,
+            "section": "YABRCK",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys,BigGreySmokeSys"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "215,395,200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13195,
+          "section": "YABRCK",
+          "key": "DamageSmokeOffset",
+          "value": "215,395,200"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13189,
+            "section": "YABRCK",
+            "key": "DamageSmokeOffset",
+            "value": "215,395,200"
+          }
+        ]
+      },
+      "AIBuildThis": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13196,
+          "section": "YABRCK",
+          "key": "AIBuildThis",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13190,
+            "section": "YABRCK",
+            "key": "AIBuildThis",
+            "value": "yes"
+          }
+        ]
+      },
+      "Spyable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13197,
+          "section": "YABRCK",
+          "key": "Spyable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13191,
+            "section": "YABRCK",
+            "key": "Spyable",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13199,
+          "section": "YABRCK",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13193,
+            "section": "YABRCK",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Image": "YABRCK",
+      "Remapable": true,
+      "Normalized": true,
+      "Cameo": "BRCKICON",
+      "Foundation": "2x3",
+      "Buildup": "YABRCKMK",
+      "DemandLoadBuildup": true,
+      "FreeBuildup": true,
+      "NewTheater": true,
+      "Height": 7,
+      "ActiveAnim": "YABRCK_A",
+      "ActiveAnimDamaged": "YABRCK_AD",
+      "ActiveAnimZAdjust": -35,
+      "ActiveAnimPowered": false,
+      "OccupyHeight": 2,
+      "AddOccupy1": "-1,0",
+      "AddOccupy2": "-2,0",
+      "AddOccupy3": "-2,-1",
+      "AddOccupy4": "-1,1",
+      "DamageFireOffset0": "-36,-33",
+      "DamageFireOffset1": "-16,52",
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Image": "YABRCK",
+      "Remapable": "yes",
+      "Normalized": "yes",
+      "Cameo": "BRCKICON",
+      "Foundation": "2x3",
+      "Buildup": "YABRCKMK",
+      "DemandLoadBuildup": "true",
+      "FreeBuildup": "true",
+      "NewTheater": "yes",
+      "Height": "7",
+      "ActiveAnim": "YABRCK_A",
+      "ActiveAnimDamaged": "YABRCK_AD",
+      "ActiveAnimZAdjust": "-35",
+      "ActiveAnimPowered": "no",
+      "OccupyHeight": "2",
+      "AddOccupy1": "-1,0",
+      "AddOccupy2": "-2,0",
+      "AddOccupy3": "-2,-1",
+      "AddOccupy4": "-1,1",
+      "DamageFireOffset0": "-36,-33",
+      "DamageFireOffset1": "-16,52",
+      "CanBeHidden": "False"
+    },
+    "provenance": {
+      "Image": {
+        "value": "YABRCK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3788,
+          "section": "YABRCK",
+          "key": "Image",
+          "value": "YABRCK"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3789,
+          "section": "YABRCK",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3790,
+          "section": "YABRCK",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Cameo": {
+        "value": "BRCKICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3791,
+          "section": "YABRCK",
+          "key": "Cameo",
+          "value": "BRCKICON"
+        },
+        "history": []
+      },
+      "Foundation": {
+        "value": "2x3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3792,
+          "section": "YABRCK",
+          "key": "Foundation",
+          "value": "2x3"
+        },
+        "history": []
+      },
+      "Buildup": {
+        "value": "YABRCKMK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3793,
+          "section": "YABRCK",
+          "key": "Buildup",
+          "value": "YABRCKMK"
+        },
+        "history": []
+      },
+      "DemandLoadBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3794,
+          "section": "YABRCK",
+          "key": "DemandLoadBuildup",
+          "value": "true"
+        },
+        "history": []
+      },
+      "FreeBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3795,
+          "section": "YABRCK",
+          "key": "FreeBuildup",
+          "value": "true"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3796,
+          "section": "YABRCK",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "7",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3797,
+          "section": "YABRCK",
+          "key": "Height",
+          "value": "7"
+        },
+        "history": []
+      },
+      "ActiveAnim": {
+        "value": "YABRCK_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3798,
+          "section": "YABRCK",
+          "key": "ActiveAnim",
+          "value": "YABRCK_A"
+        },
+        "history": []
+      },
+      "ActiveAnimDamaged": {
+        "value": "YABRCK_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3799,
+          "section": "YABRCK",
+          "key": "ActiveAnimDamaged",
+          "value": "YABRCK_AD"
+        },
+        "history": []
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-35",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3800,
+          "section": "YABRCK",
+          "key": "ActiveAnimZAdjust",
+          "value": "-35"
+        },
+        "history": []
+      },
+      "ActiveAnimPowered": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3801,
+          "section": "YABRCK",
+          "key": "ActiveAnimPowered",
+          "value": "no"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3806,
+          "section": "YABRCK",
+          "key": "OccupyHeight",
+          "value": "2"
+        },
+        "history": []
+      },
+      "AddOccupy1": {
+        "value": "-1,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3807,
+          "section": "YABRCK",
+          "key": "AddOccupy1",
+          "value": "-1,0"
+        },
+        "history": []
+      },
+      "AddOccupy2": {
+        "value": "-2,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3808,
+          "section": "YABRCK",
+          "key": "AddOccupy2",
+          "value": "-2,0"
+        },
+        "history": []
+      },
+      "AddOccupy3": {
+        "value": "-2,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3809,
+          "section": "YABRCK",
+          "key": "AddOccupy3",
+          "value": "-2,-1"
+        },
+        "history": []
+      },
+      "AddOccupy4": {
+        "value": "-1,1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3810,
+          "section": "YABRCK",
+          "key": "AddOccupy4",
+          "value": "-1,1"
+        },
+        "history": []
+      },
+      "DamageFireOffset0": {
+        "value": "-36,-33",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3811,
+          "section": "YABRCK",
+          "key": "DamageFireOffset0",
+          "value": "-36,-33"
+        },
+        "history": []
+      },
+      "DamageFireOffset1": {
+        "value": "-16,52",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3812,
+          "section": "YABRCK",
+          "key": "DamageFireOffset1",
+          "value": "-16,52"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3813,
+          "section": "YABRCK",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      }
+    }
+  }
+}

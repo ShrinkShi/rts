@@ -1,0 +1,2424 @@
+{
+  "id": "ORCA",
+  "category": "aircraft",
+  "name_token": "Name:ORCA",
+  "art_id": "FALC",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [
+    "Alliance"
+  ],
+  "prerequisite": [
+    "RADAR"
+  ],
+  "tech_level": 3,
+  "cost": 1200,
+  "strength": 150,
+  "armor": "light",
+  "speed": 14,
+  "sight": 8,
+  "locomotor": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Fly",
+  "weapons": {
+    "Primary": {
+      "id": "Maverick",
+      "projectile": "AirToGroundMissile",
+      "warhead": "ORCAAP",
+      "report": [
+        "IntruderAttack"
+      ],
+      "values": {
+        "Damage": 150,
+        "ROF": 10,
+        "Range": 6,
+        "Projectile": "AirToGroundMissile",
+        "Speed": 70,
+        "Warhead": "ORCAAP",
+        "Report": "IntruderAttack",
+        "Burst": 1
+      },
+      "raw_values": {
+        "Damage": "150",
+        "ROF": "10",
+        "Range": "6",
+        "Projectile": "AirToGroundMissile",
+        "Speed": "70",
+        "Warhead": "ORCAAP",
+        "Report": "IntruderAttack",
+        "Burst": "1"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "150",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23155,
+            "section": "Maverick",
+            "key": "Damage",
+            "value": "150"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16564,
+              "section": "Maverick",
+              "key": "Damage",
+              "value": "150"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23147,
+              "section": "Maverick",
+              "key": "Damage",
+              "value": "150"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "10",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23156,
+            "section": "Maverick",
+            "key": "ROF",
+            "value": "10"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16565,
+              "section": "Maverick",
+              "key": "ROF",
+              "value": "10"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23148,
+              "section": "Maverick",
+              "key": "ROF",
+              "value": "10"
+            }
+          ]
+        },
+        "Range": {
+          "value": "6",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23157,
+            "section": "Maverick",
+            "key": "Range",
+            "value": "6"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16566,
+              "section": "Maverick",
+              "key": "Range",
+              "value": "6"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23149,
+              "section": "Maverick",
+              "key": "Range",
+              "value": "6"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "AirToGroundMissile",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23158,
+            "section": "Maverick",
+            "key": "Projectile",
+            "value": "AirToGroundMissile"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16567,
+              "section": "Maverick",
+              "key": "Projectile",
+              "value": "AirToGroundMissile"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23150,
+              "section": "Maverick",
+              "key": "Projectile",
+              "value": "AirToGroundMissile"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "70",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23159,
+            "section": "Maverick",
+            "key": "Speed",
+            "value": "70"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16568,
+              "section": "Maverick",
+              "key": "Speed",
+              "value": "70"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23151,
+              "section": "Maverick",
+              "key": "Speed",
+              "value": "70"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "ORCAAP",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23160,
+            "section": "Maverick",
+            "key": "Warhead",
+            "value": "ORCAAP"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16569,
+              "section": "Maverick",
+              "key": "Warhead",
+              "value": "ORCAAP"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23152,
+              "section": "Maverick",
+              "key": "Warhead",
+              "value": "ORCAAP"
+            }
+          ]
+        },
+        "Report": {
+          "value": "IntruderAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23161,
+            "section": "Maverick",
+            "key": "Report",
+            "value": "IntruderAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16570,
+              "section": "Maverick",
+              "key": "Report",
+              "value": "IntruderAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23153,
+              "section": "Maverick",
+              "key": "Report",
+              "value": "IntruderAttack"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23162,
+            "section": "Maverick",
+            "key": "Burst",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16571,
+              "section": "Maverick",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23154,
+              "section": "Maverick",
+              "key": "Burst",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "MaverickE",
+      "projectile": "AirToGroundMissile",
+      "warhead": "ORCAAP",
+      "report": [
+        "IntruderAttack"
+      ],
+      "values": {
+        "Damage": 300,
+        "ROF": 10,
+        "Range": 9,
+        "Projectile": "AirToGroundMissile",
+        "Speed": 70,
+        "Warhead": "ORCAAP",
+        "Report": "IntruderAttack",
+        "Burst": 1
+      },
+      "raw_values": {
+        "Damage": "300",
+        "ROF": "10",
+        "Range": "9",
+        "Projectile": "AirToGroundMissile",
+        "Speed": "70",
+        "Warhead": "ORCAAP",
+        "Report": "IntruderAttack",
+        "Burst": "1"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "300",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25002,
+            "section": "MaverickE",
+            "key": "Damage",
+            "value": "300"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17900,
+              "section": "MaverickE",
+              "key": "Damage",
+              "value": "300"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24994,
+              "section": "MaverickE",
+              "key": "Damage",
+              "value": "300"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "10",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25003,
+            "section": "MaverickE",
+            "key": "ROF",
+            "value": "10"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17901,
+              "section": "MaverickE",
+              "key": "ROF",
+              "value": "10"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24995,
+              "section": "MaverickE",
+              "key": "ROF",
+              "value": "10"
+            }
+          ]
+        },
+        "Range": {
+          "value": "9",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25004,
+            "section": "MaverickE",
+            "key": "Range",
+            "value": "9"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17902,
+              "section": "MaverickE",
+              "key": "Range",
+              "value": "9"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24996,
+              "section": "MaverickE",
+              "key": "Range",
+              "value": "9"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "AirToGroundMissile",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25005,
+            "section": "MaverickE",
+            "key": "Projectile",
+            "value": "AirToGroundMissile"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17903,
+              "section": "MaverickE",
+              "key": "Projectile",
+              "value": "AirToGroundMissile"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24997,
+              "section": "MaverickE",
+              "key": "Projectile",
+              "value": "AirToGroundMissile"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "70",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25006,
+            "section": "MaverickE",
+            "key": "Speed",
+            "value": "70"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17904,
+              "section": "MaverickE",
+              "key": "Speed",
+              "value": "70"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24998,
+              "section": "MaverickE",
+              "key": "Speed",
+              "value": "70"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "ORCAAP",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25007,
+            "section": "MaverickE",
+            "key": "Warhead",
+            "value": "ORCAAP"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17905,
+              "section": "MaverickE",
+              "key": "Warhead",
+              "value": "ORCAAP"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24999,
+              "section": "MaverickE",
+              "key": "Warhead",
+              "value": "ORCAAP"
+            }
+          ]
+        },
+        "Report": {
+          "value": "IntruderAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25008,
+            "section": "MaverickE",
+            "key": "Report",
+            "value": "IntruderAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17906,
+              "section": "MaverickE",
+              "key": "Report",
+              "value": "IntruderAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25000,
+              "section": "MaverickE",
+              "key": "Report",
+              "value": "IntruderAttack"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25009,
+            "section": "MaverickE",
+            "key": "Burst",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17907,
+              "section": "MaverickE",
+              "key": "Burst",
+              "value": "4"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25001,
+              "section": "MaverickE",
+              "key": "Burst",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "IntruderSelect"
+    ],
+    "VoiceMove": [
+      "IntruderMove"
+    ],
+    "VoiceAttack": [
+      "IntruderAttackCommand"
+    ],
+    "MoveSound": [
+      "IntruderMoveLoop"
+    ],
+    "AuxSound1": [
+      "IntruderTakeOff"
+    ],
+    "AuxSound2": [
+      "IntruderLanding"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "FALC",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4049,
+      "pack": "ra2",
+      "relative_path": "local/falc.vxl",
+      "folder": "local",
+      "filename": "falc.vxl",
+      "stem": "falc",
+      "extension": ".vxl",
+      "size": 29033,
+      "sha1": "1eeaae08ddbc75acb4125c54c0da37297bdbddb4"
+    },
+    "body_hva": {
+      "asset_id": 4048,
+      "pack": "ra2",
+      "relative_path": "local/falc.hva",
+      "folder": "local",
+      "filename": "falc.hva",
+      "stem": "falc",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "d37ca4dedeedd2afb63c7e6d494493be5a93a1ca"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:ORCA",
+      "Name": "Intruder",
+      "Image": "FALC",
+      "Prerequisite": "RADAR",
+      "Primary": "Maverick",
+      "CanPassiveAquire": false,
+      "CanRetaliate": false,
+      "Strength": 150,
+      "Category": "AirPower",
+      "Armor": "light",
+      "TechLevel": 3,
+      "Sight": 8,
+      "RadarInvisible": false,
+      "Landable": true,
+      "MoveToShroud": true,
+      "Dock": "GAAIRC,AMRADR",
+      "PipScale": "Ammo",
+      "Speed": 14,
+      "PitchSpeed": 1.1,
+      "PitchAngle": 0,
+      "OmniFire": true,
+      "Owner": "British,French,Germans,Americans",
+      "ForbiddenHouses": "Alliance",
+      "Cost": 1200,
+      "Points": 20,
+      "ROT": 3,
+      "Ammo": 1,
+      "Crewed": true,
+      "ConsideredAircraft": true,
+      "AirportBound": true,
+      "GuardRange": 30,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 3,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "IntruderSelect",
+      "VoiceMove": "IntruderMove",
+      "VoiceAttack": "IntruderAttackCommand",
+      "VoiceCrashing": "IntruderVoiceDie",
+      "DieSound": "",
+      "MoveSound": "IntruderMoveLoop",
+      "CrashingSound": "IntruderDie",
+      "ImpactLandSound": "GenAircraftCrash",
+      "Locomotor": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Fly",
+      "ThreatPosed": 20,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "AuxSound1": "IntruderTakeOff",
+      "AuxSound2": "IntruderLanding",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "STRONGER,FIREPOWER,ROF",
+      "Fighter": true,
+      "AllowedToStartInMultiplayer": false,
+      "ImmuneToPsionics": true,
+      "ElitePrimary": "MaverickE",
+      "PreventAttackMove": true
+    },
+    "raw_values": {
+      "UIName": "Name:ORCA",
+      "Name": "Intruder",
+      "Image": "FALC",
+      "Prerequisite": "RADAR",
+      "Primary": "Maverick",
+      "CanPassiveAquire": "no",
+      "CanRetaliate": "no",
+      "Strength": "150",
+      "Category": "AirPower",
+      "Armor": "light",
+      "TechLevel": "3",
+      "Sight": "8",
+      "RadarInvisible": "no",
+      "Landable": "yes",
+      "MoveToShroud": "yes",
+      "Dock": "GAAIRC,AMRADR",
+      "PipScale": "Ammo",
+      "Speed": "14",
+      "PitchSpeed": "1.1",
+      "PitchAngle": "0",
+      "OmniFire": "yes",
+      "Owner": "British,French,Germans,Americans",
+      "ForbiddenHouses": "Alliance",
+      "Cost": "1200",
+      "Points": "20",
+      "ROT": "3",
+      "Ammo": "1",
+      "Crewed": "yes",
+      "ConsideredAircraft": "yes",
+      "AirportBound": "yes",
+      "GuardRange": "30",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "3",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "IntruderSelect",
+      "VoiceMove": "IntruderMove",
+      "VoiceAttack": "IntruderAttackCommand",
+      "VoiceCrashing": "IntruderVoiceDie",
+      "DieSound": "",
+      "MoveSound": "IntruderMoveLoop",
+      "CrashingSound": "IntruderDie",
+      "ImpactLandSound": "GenAircraftCrash",
+      "Locomotor": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Fly",
+      "ThreatPosed": "20",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "AuxSound1": "IntruderTakeOff",
+      "AuxSound2": "IntruderLanding",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "STRONGER,FIREPOWER,ROF",
+      "Fighter": "yes",
+      "AllowedToStartInMultiplayer": "no",
+      "ImmuneToPsionics": "yes",
+      "ElitePrimary": "MaverickE",
+      "PreventAttackMove": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:ORCA",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10583,
+          "section": "ORCA",
+          "key": "UIName",
+          "value": "Name:ORCA"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7786,
+            "section": "ORCA",
+            "key": "UIName",
+            "value": "Name:ORCA"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10578,
+            "section": "ORCA",
+            "key": "UIName",
+            "value": "Name:ORCA"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Intruder",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10584,
+          "section": "ORCA",
+          "key": "Name",
+          "value": "Intruder"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7787,
+            "section": "ORCA",
+            "key": "Name",
+            "value": "Intruder"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10579,
+            "section": "ORCA",
+            "key": "Name",
+            "value": "Intruder"
+          }
+        ]
+      },
+      "Image": {
+        "value": "FALC",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10585,
+          "section": "ORCA",
+          "key": "Image",
+          "value": "FALC"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7788,
+            "section": "ORCA",
+            "key": "Image",
+            "value": "FALC"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10580,
+            "section": "ORCA",
+            "key": "Image",
+            "value": "FALC"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "RADAR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10586,
+          "section": "ORCA",
+          "key": "Prerequisite",
+          "value": "RADAR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7789,
+            "section": "ORCA",
+            "key": "Prerequisite",
+            "value": "RADAR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10581,
+            "section": "ORCA",
+            "key": "Prerequisite",
+            "value": "RADAR"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "Maverick",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10587,
+          "section": "ORCA",
+          "key": "Primary",
+          "value": "Maverick"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7790,
+            "section": "ORCA",
+            "key": "Primary",
+            "value": "Maverick"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10582,
+            "section": "ORCA",
+            "key": "Primary",
+            "value": "Maverick"
+          }
+        ]
+      },
+      "CanPassiveAquire": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10588,
+          "section": "ORCA",
+          "key": "CanPassiveAquire",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7791,
+            "section": "ORCA",
+            "key": "CanPassiveAquire",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10583,
+            "section": "ORCA",
+            "key": "CanPassiveAquire",
+            "value": "no"
+          }
+        ]
+      },
+      "CanRetaliate": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10589,
+          "section": "ORCA",
+          "key": "CanRetaliate",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7792,
+            "section": "ORCA",
+            "key": "CanRetaliate",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10584,
+            "section": "ORCA",
+            "key": "CanRetaliate",
+            "value": "no"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "150",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10590,
+          "section": "ORCA",
+          "key": "Strength",
+          "value": "150"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7793,
+            "section": "ORCA",
+            "key": "Strength",
+            "value": "150"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10585,
+            "section": "ORCA",
+            "key": "Strength",
+            "value": "150"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AirPower",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10591,
+          "section": "ORCA",
+          "key": "Category",
+          "value": "AirPower"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7794,
+            "section": "ORCA",
+            "key": "Category",
+            "value": "AirPower"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10586,
+            "section": "ORCA",
+            "key": "Category",
+            "value": "AirPower"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10592,
+          "section": "ORCA",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7795,
+            "section": "ORCA",
+            "key": "Armor",
+            "value": "light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10587,
+            "section": "ORCA",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10593,
+          "section": "ORCA",
+          "key": "TechLevel",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7796,
+            "section": "ORCA",
+            "key": "TechLevel",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10588,
+            "section": "ORCA",
+            "key": "TechLevel",
+            "value": "3"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10594,
+          "section": "ORCA",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7797,
+            "section": "ORCA",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10589,
+            "section": "ORCA",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10595,
+          "section": "ORCA",
+          "key": "RadarInvisible",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7798,
+            "section": "ORCA",
+            "key": "RadarInvisible",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10590,
+            "section": "ORCA",
+            "key": "RadarInvisible",
+            "value": "no"
+          }
+        ]
+      },
+      "Landable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10596,
+          "section": "ORCA",
+          "key": "Landable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7799,
+            "section": "ORCA",
+            "key": "Landable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10591,
+            "section": "ORCA",
+            "key": "Landable",
+            "value": "yes"
+          }
+        ]
+      },
+      "MoveToShroud": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10597,
+          "section": "ORCA",
+          "key": "MoveToShroud",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7800,
+            "section": "ORCA",
+            "key": "MoveToShroud",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10592,
+            "section": "ORCA",
+            "key": "MoveToShroud",
+            "value": "yes"
+          }
+        ]
+      },
+      "Dock": {
+        "value": "GAAIRC,AMRADR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10599,
+          "section": "ORCA",
+          "key": "Dock",
+          "value": "GAAIRC,AMRADR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7802,
+            "section": "ORCA",
+            "key": "Dock",
+            "value": "GAAIRC,AMRADR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10594,
+            "section": "ORCA",
+            "key": "Dock",
+            "value": "GAAIRC,AMRADR"
+          }
+        ]
+      },
+      "PipScale": {
+        "value": "Ammo",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10600,
+          "section": "ORCA",
+          "key": "PipScale",
+          "value": "Ammo"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7803,
+            "section": "ORCA",
+            "key": "PipScale",
+            "value": "Ammo"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10595,
+            "section": "ORCA",
+            "key": "PipScale",
+            "value": "Ammo"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "14",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10601,
+          "section": "ORCA",
+          "key": "Speed",
+          "value": "14"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7804,
+            "section": "ORCA",
+            "key": "Speed",
+            "value": "14"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10596,
+            "section": "ORCA",
+            "key": "Speed",
+            "value": "14"
+          }
+        ]
+      },
+      "PitchSpeed": {
+        "value": "1.1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10605,
+          "section": "ORCA",
+          "key": "PitchSpeed",
+          "value": "1.1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7808,
+            "section": "ORCA",
+            "key": "PitchSpeed",
+            "value": "1.1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10600,
+            "section": "ORCA",
+            "key": "PitchSpeed",
+            "value": "1.1"
+          }
+        ]
+      },
+      "PitchAngle": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10606,
+          "section": "ORCA",
+          "key": "PitchAngle",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7809,
+            "section": "ORCA",
+            "key": "PitchAngle",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10601,
+            "section": "ORCA",
+            "key": "PitchAngle",
+            "value": "0"
+          }
+        ]
+      },
+      "OmniFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10607,
+          "section": "ORCA",
+          "key": "OmniFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7810,
+            "section": "ORCA",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10602,
+            "section": "ORCA",
+            "key": "OmniFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10609,
+          "section": "ORCA",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7812,
+            "section": "ORCA",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10604,
+            "section": "ORCA",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans"
+          }
+        ]
+      },
+      "ForbiddenHouses": {
+        "value": "Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10610,
+          "section": "ORCA",
+          "key": "ForbiddenHouses",
+          "value": "Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7813,
+            "section": "ORCA",
+            "key": "ForbiddenHouses",
+            "value": "Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10605,
+            "section": "ORCA",
+            "key": "ForbiddenHouses",
+            "value": "Alliance"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10612,
+          "section": "ORCA",
+          "key": "Cost",
+          "value": "1200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7815,
+            "section": "ORCA",
+            "key": "Cost",
+            "value": "1200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10607,
+            "section": "ORCA",
+            "key": "Cost",
+            "value": "1200"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10613,
+          "section": "ORCA",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7816,
+            "section": "ORCA",
+            "key": "Points",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10608,
+            "section": "ORCA",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10614,
+          "section": "ORCA",
+          "key": "ROT",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7817,
+            "section": "ORCA",
+            "key": "ROT",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10609,
+            "section": "ORCA",
+            "key": "ROT",
+            "value": "3"
+          }
+        ]
+      },
+      "Ammo": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10615,
+          "section": "ORCA",
+          "key": "Ammo",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7818,
+            "section": "ORCA",
+            "key": "Ammo",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10610,
+            "section": "ORCA",
+            "key": "Ammo",
+            "value": "1"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10616,
+          "section": "ORCA",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7819,
+            "section": "ORCA",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10611,
+            "section": "ORCA",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "ConsideredAircraft": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10617,
+          "section": "ORCA",
+          "key": "ConsideredAircraft",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7820,
+            "section": "ORCA",
+            "key": "ConsideredAircraft",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10612,
+            "section": "ORCA",
+            "key": "ConsideredAircraft",
+            "value": "yes"
+          }
+        ]
+      },
+      "AirportBound": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10618,
+          "section": "ORCA",
+          "key": "AirportBound",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7821,
+            "section": "ORCA",
+            "key": "AirportBound",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10613,
+            "section": "ORCA",
+            "key": "AirportBound",
+            "value": "yes"
+          }
+        ]
+      },
+      "GuardRange": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10619,
+          "section": "ORCA",
+          "key": "GuardRange",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7822,
+            "section": "ORCA",
+            "key": "GuardRange",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10614,
+            "section": "ORCA",
+            "key": "GuardRange",
+            "value": "30"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10620,
+          "section": "ORCA",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7823,
+            "section": "ORCA",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10615,
+            "section": "ORCA",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10621,
+          "section": "ORCA",
+          "key": "MaxDebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7824,
+            "section": "ORCA",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10616,
+            "section": "ORCA",
+            "key": "MaxDebris",
+            "value": "3"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10622,
+          "section": "ORCA",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7825,
+            "section": "ORCA",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10617,
+            "section": "ORCA",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "IntruderSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10623,
+          "section": "ORCA",
+          "key": "VoiceSelect",
+          "value": "IntruderSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7826,
+            "section": "ORCA",
+            "key": "VoiceSelect",
+            "value": "IntruderSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10618,
+            "section": "ORCA",
+            "key": "VoiceSelect",
+            "value": "IntruderSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "IntruderMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10624,
+          "section": "ORCA",
+          "key": "VoiceMove",
+          "value": "IntruderMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7827,
+            "section": "ORCA",
+            "key": "VoiceMove",
+            "value": "IntruderMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10619,
+            "section": "ORCA",
+            "key": "VoiceMove",
+            "value": "IntruderMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "IntruderAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10625,
+          "section": "ORCA",
+          "key": "VoiceAttack",
+          "value": "IntruderAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7828,
+            "section": "ORCA",
+            "key": "VoiceAttack",
+            "value": "IntruderAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10620,
+            "section": "ORCA",
+            "key": "VoiceAttack",
+            "value": "IntruderAttackCommand"
+          }
+        ]
+      },
+      "VoiceCrashing": {
+        "value": "IntruderVoiceDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10626,
+          "section": "ORCA",
+          "key": "VoiceCrashing",
+          "value": "IntruderVoiceDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7829,
+            "section": "ORCA",
+            "key": "VoiceCrashing",
+            "value": "IntruderVoiceDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10621,
+            "section": "ORCA",
+            "key": "VoiceCrashing",
+            "value": "IntruderVoiceDie"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10627,
+          "section": "ORCA",
+          "key": "DieSound",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7830,
+            "section": "ORCA",
+            "key": "DieSound",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10622,
+            "section": "ORCA",
+            "key": "DieSound",
+            "value": ""
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "IntruderMoveLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10628,
+          "section": "ORCA",
+          "key": "MoveSound",
+          "value": "IntruderMoveLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7831,
+            "section": "ORCA",
+            "key": "MoveSound",
+            "value": "IntruderMoveLoop"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10623,
+            "section": "ORCA",
+            "key": "MoveSound",
+            "value": "IntruderMoveLoop"
+          }
+        ]
+      },
+      "CrashingSound": {
+        "value": "IntruderDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10629,
+          "section": "ORCA",
+          "key": "CrashingSound",
+          "value": "IntruderDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7832,
+            "section": "ORCA",
+            "key": "CrashingSound",
+            "value": "IntruderDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10624,
+            "section": "ORCA",
+            "key": "CrashingSound",
+            "value": "IntruderDie"
+          }
+        ]
+      },
+      "ImpactLandSound": {
+        "value": "GenAircraftCrash",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10630,
+          "section": "ORCA",
+          "key": "ImpactLandSound",
+          "value": "GenAircraftCrash"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7833,
+            "section": "ORCA",
+            "key": "ImpactLandSound",
+            "value": "GenAircraftCrash"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10625,
+            "section": "ORCA",
+            "key": "ImpactLandSound",
+            "value": "GenAircraftCrash"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10631,
+          "section": "ORCA",
+          "key": "Locomotor",
+          "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7834,
+            "section": "ORCA",
+            "key": "Locomotor",
+            "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10626,
+            "section": "ORCA",
+            "key": "Locomotor",
+            "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Fly",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10632,
+          "section": "ORCA",
+          "key": "MovementZone",
+          "value": "Fly"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7835,
+            "section": "ORCA",
+            "key": "MovementZone",
+            "value": "Fly"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10627,
+            "section": "ORCA",
+            "key": "MovementZone",
+            "value": "Fly"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10633,
+          "section": "ORCA",
+          "key": "ThreatPosed",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7836,
+            "section": "ORCA",
+            "key": "ThreatPosed",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10628,
+            "section": "ORCA",
+            "key": "ThreatPosed",
+            "value": "20"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10634,
+          "section": "ORCA",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7837,
+            "section": "ORCA",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10629,
+            "section": "ORCA",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "AuxSound1": {
+        "value": "IntruderTakeOff",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10635,
+          "section": "ORCA",
+          "key": "AuxSound1",
+          "value": "IntruderTakeOff"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7838,
+            "section": "ORCA",
+            "key": "AuxSound1",
+            "value": "IntruderTakeOff"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10630,
+            "section": "ORCA",
+            "key": "AuxSound1",
+            "value": "IntruderTakeOff"
+          }
+        ]
+      },
+      "AuxSound2": {
+        "value": "IntruderLanding",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10636,
+          "section": "ORCA",
+          "key": "AuxSound2",
+          "value": "IntruderLanding"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7839,
+            "section": "ORCA",
+            "key": "AuxSound2",
+            "value": "IntruderLanding"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10631,
+            "section": "ORCA",
+            "key": "AuxSound2",
+            "value": "IntruderLanding"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10637,
+          "section": "ORCA",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7840,
+            "section": "ORCA",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10632,
+            "section": "ORCA",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10638,
+          "section": "ORCA",
+          "key": "EliteAbilities",
+          "value": "STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7841,
+            "section": "ORCA",
+            "key": "EliteAbilities",
+            "value": "STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10633,
+            "section": "ORCA",
+            "key": "EliteAbilities",
+            "value": "STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Fighter": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10639,
+          "section": "ORCA",
+          "key": "Fighter",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7842,
+            "section": "ORCA",
+            "key": "Fighter",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10634,
+            "section": "ORCA",
+            "key": "Fighter",
+            "value": "yes"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10640,
+          "section": "ORCA",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7843,
+            "section": "ORCA",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10635,
+            "section": "ORCA",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10641,
+          "section": "ORCA",
+          "key": "ImmuneToPsionics",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7844,
+            "section": "ORCA",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10636,
+            "section": "ORCA",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "MaverickE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10642,
+          "section": "ORCA",
+          "key": "ElitePrimary",
+          "value": "MaverickE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7845,
+            "section": "ORCA",
+            "key": "ElitePrimary",
+            "value": "MaverickE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10637,
+            "section": "ORCA",
+            "key": "ElitePrimary",
+            "value": "MaverickE"
+          }
+        ]
+      },
+      "PreventAttackMove": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 10643,
+          "section": "ORCA",
+          "key": "PreventAttackMove",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 7846,
+            "section": "ORCA",
+            "key": "PreventAttackMove",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 10638,
+            "section": "ORCA",
+            "key": "PreventAttackMove",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true,
+      "Remapable": true,
+      "Cameo": "FALCICON",
+      "AltCameo": "FALCUICO"
+    },
+    "raw_values": {
+      "Voxel": "yes",
+      "Remapable": "yes",
+      "Cameo": "FALCICON",
+      "AltCameo": "FALCUICO"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 746,
+          "section": "FALC",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 537,
+            "section": "FALC",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 747,
+          "section": "FALC",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 538,
+            "section": "FALC",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "FALCICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 748,
+          "section": "FALC",
+          "key": "Cameo",
+          "value": "FALCICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 539,
+            "section": "FALC",
+            "key": "Cameo",
+            "value": "FALCICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "FALCUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 749,
+          "section": "FALC",
+          "key": "AltCameo",
+          "value": "FALCUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 540,
+            "section": "FALC",
+            "key": "AltCameo",
+            "value": "FALCUICO"
+          }
+        ]
+      }
+    }
+  }
+}

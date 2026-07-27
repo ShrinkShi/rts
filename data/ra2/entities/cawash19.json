@@ -1,0 +1,5137 @@
+{
+  "id": "CAWASH19",
+  "category": "building",
+  "name_token": "Name:CAWASH19",
+  "art_id": "CAWASH19",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 500,
+  "armor": "concrete",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAWASH19",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1828,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctwash19.shp",
+          "folder": "isotemp",
+          "filename": "ctwash19.shp",
+          "stem": "ctwash19",
+          "extension": ".shp",
+          "size": 50528,
+          "sha1": "2d4bb439ec10ad78c92733785496d710beb93178"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 730,
+          "pack": "ra2",
+          "relative_path": "isosnow/cawash19.shp",
+          "folder": "isosnow",
+          "filename": "cawash19.shp",
+          "stem": "cawash19",
+          "extension": ".shp",
+          "size": 50528,
+          "sha1": "2d4bb439ec10ad78c92733785496d710beb93178"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2915,
+          "pack": "ra2",
+          "relative_path": "isourb/cuwash19.shp",
+          "folder": "isourb",
+          "filename": "cuwash19.shp",
+          "stem": "cuwash19",
+          "extension": ".shp",
+          "size": 50528,
+          "sha1": "2ed5cb6842b04e8db78420d36e43fea82c8ad5af"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6296,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdwash19.shp",
+          "folder": "isodes",
+          "filename": "cdwash19.shp",
+          "stem": "cdwash19",
+          "extension": ".shp",
+          "size": 50528,
+          "sha1": "2d4bb439ec10ad78c92733785496d710beb93178"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8364,
+          "pack": "ra2md",
+          "relative_path": "isolun/clwash19.shp",
+          "folder": "isolun",
+          "filename": "clwash19.shp",
+          "stem": "clwash19",
+          "extension": ".shp",
+          "size": 50528,
+          "sha1": "2d4bb439ec10ad78c92733785496d710beb93178"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9443,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnwash19.shp",
+          "folder": "isoubn",
+          "filename": "cnwash19.shp",
+          "stem": "cnwash19",
+          "extension": ".shp",
+          "size": 50528,
+          "sha1": "2d4bb439ec10ad78c92733785496d710beb93178"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "CAWA19_A",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1810,
+            "pack": "ra2",
+            "relative_path": "isotemp/ctwa19_a.shp",
+            "folder": "isotemp",
+            "filename": "ctwa19_a.shp",
+            "stem": "ctwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "LoopStart": 1,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8989,
+                "section": "CAWA19_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7195,
+                  "section": "CAWA19_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8990,
+                "section": "CAWA19_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7196,
+                  "section": "CAWA19_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8991,
+                "section": "CAWA19_A",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7197,
+                  "section": "CAWA19_A",
+                  "key": "LoopStart",
+                  "value": "1"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8992,
+                "section": "CAWA19_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7198,
+                  "section": "CAWA19_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8993,
+                "section": "CAWA19_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7199,
+                  "section": "CAWA19_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8995,
+                "section": "CAWA19_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7201,
+                  "section": "CAWA19_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8996,
+                "section": "CAWA19_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7202,
+                  "section": "CAWA19_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8997,
+                "section": "CAWA19_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7203,
+                  "section": "CAWA19_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -100,
+          "YSort": 724
+        },
+        "snow": {
+          "art_id": "CAWA19_A",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 712,
+            "pack": "ra2",
+            "relative_path": "isosnow/cawa19_a.shp",
+            "folder": "isosnow",
+            "filename": "cawa19_a.shp",
+            "stem": "cawa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "LoopStart": 1,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8989,
+                "section": "CAWA19_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7195,
+                  "section": "CAWA19_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8990,
+                "section": "CAWA19_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7196,
+                  "section": "CAWA19_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8991,
+                "section": "CAWA19_A",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7197,
+                  "section": "CAWA19_A",
+                  "key": "LoopStart",
+                  "value": "1"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8992,
+                "section": "CAWA19_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7198,
+                  "section": "CAWA19_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8993,
+                "section": "CAWA19_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7199,
+                  "section": "CAWA19_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8995,
+                "section": "CAWA19_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7201,
+                  "section": "CAWA19_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8996,
+                "section": "CAWA19_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7202,
+                  "section": "CAWA19_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8997,
+                "section": "CAWA19_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7203,
+                  "section": "CAWA19_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -100,
+          "YSort": 724
+        },
+        "urban": {
+          "art_id": "CAWA19_A",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2897,
+            "pack": "ra2",
+            "relative_path": "isourb/cuwa19_a.shp",
+            "folder": "isourb",
+            "filename": "cuwa19_a.shp",
+            "stem": "cuwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "LoopStart": 1,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8989,
+                "section": "CAWA19_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7195,
+                  "section": "CAWA19_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8990,
+                "section": "CAWA19_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7196,
+                  "section": "CAWA19_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8991,
+                "section": "CAWA19_A",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7197,
+                  "section": "CAWA19_A",
+                  "key": "LoopStart",
+                  "value": "1"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8992,
+                "section": "CAWA19_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7198,
+                  "section": "CAWA19_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8993,
+                "section": "CAWA19_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7199,
+                  "section": "CAWA19_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8995,
+                "section": "CAWA19_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7201,
+                  "section": "CAWA19_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8996,
+                "section": "CAWA19_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7202,
+                  "section": "CAWA19_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8997,
+                "section": "CAWA19_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7203,
+                  "section": "CAWA19_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -100,
+          "YSort": 724
+        },
+        "desert": {
+          "art_id": "CAWA19_A",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6278,
+            "pack": "ra2md",
+            "relative_path": "isodes/cdwa19_a.shp",
+            "folder": "isodes",
+            "filename": "cdwa19_a.shp",
+            "stem": "cdwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "LoopStart": 1,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8989,
+                "section": "CAWA19_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7195,
+                  "section": "CAWA19_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8990,
+                "section": "CAWA19_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7196,
+                  "section": "CAWA19_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8991,
+                "section": "CAWA19_A",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7197,
+                  "section": "CAWA19_A",
+                  "key": "LoopStart",
+                  "value": "1"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8992,
+                "section": "CAWA19_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7198,
+                  "section": "CAWA19_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8993,
+                "section": "CAWA19_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7199,
+                  "section": "CAWA19_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8995,
+                "section": "CAWA19_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7201,
+                  "section": "CAWA19_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8996,
+                "section": "CAWA19_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7202,
+                  "section": "CAWA19_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8997,
+                "section": "CAWA19_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7203,
+                  "section": "CAWA19_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -100,
+          "YSort": 724
+        },
+        "lunar": {
+          "art_id": "CAWA19_A",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8346,
+            "pack": "ra2md",
+            "relative_path": "isolun/clwa19_a.shp",
+            "folder": "isolun",
+            "filename": "clwa19_a.shp",
+            "stem": "clwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "LoopStart": 1,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8989,
+                "section": "CAWA19_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7195,
+                  "section": "CAWA19_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8990,
+                "section": "CAWA19_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7196,
+                  "section": "CAWA19_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8991,
+                "section": "CAWA19_A",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7197,
+                  "section": "CAWA19_A",
+                  "key": "LoopStart",
+                  "value": "1"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8992,
+                "section": "CAWA19_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7198,
+                  "section": "CAWA19_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8993,
+                "section": "CAWA19_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7199,
+                  "section": "CAWA19_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8995,
+                "section": "CAWA19_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7201,
+                  "section": "CAWA19_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8996,
+                "section": "CAWA19_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7202,
+                  "section": "CAWA19_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8997,
+                "section": "CAWA19_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7203,
+                  "section": "CAWA19_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -100,
+          "YSort": 724
+        },
+        "newurban": {
+          "art_id": "CAWA19_A",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9425,
+            "pack": "ra2md",
+            "relative_path": "isoubn/cnwa19_a.shp",
+            "folder": "isoubn",
+            "filename": "cnwa19_a.shp",
+            "stem": "cnwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "LoopStart": 1,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8989,
+                "section": "CAWA19_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7195,
+                  "section": "CAWA19_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8990,
+                "section": "CAWA19_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7196,
+                  "section": "CAWA19_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8991,
+                "section": "CAWA19_A",
+                "key": "LoopStart",
+                "value": "1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7197,
+                  "section": "CAWA19_A",
+                  "key": "LoopStart",
+                  "value": "1"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8992,
+                "section": "CAWA19_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7198,
+                  "section": "CAWA19_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8993,
+                "section": "CAWA19_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7199,
+                  "section": "CAWA19_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8995,
+                "section": "CAWA19_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7201,
+                  "section": "CAWA19_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8996,
+                "section": "CAWA19_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7202,
+                  "section": "CAWA19_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8997,
+                "section": "CAWA19_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7203,
+                  "section": "CAWA19_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -100,
+          "YSort": 724
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "CAWA19_AD",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1810,
+            "pack": "ra2",
+            "relative_path": "isotemp/ctwa19_a.shp",
+            "folder": "isotemp",
+            "filename": "ctwa19_a.shp",
+            "stem": "ctwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 17,
+          "LoopStart": 17,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9000,
+                "section": "CAWA19_AD",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7206,
+                  "section": "CAWA19_AD",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9001,
+                "section": "CAWA19_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7207,
+                  "section": "CAWA19_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9002,
+                "section": "CAWA19_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7208,
+                  "section": "CAWA19_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9003,
+                "section": "CAWA19_AD",
+                "key": "Start",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7209,
+                  "section": "CAWA19_AD",
+                  "key": "Start",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9004,
+                "section": "CAWA19_AD",
+                "key": "LoopStart",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7210,
+                  "section": "CAWA19_AD",
+                  "key": "LoopStart",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9005,
+                "section": "CAWA19_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7211,
+                  "section": "CAWA19_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9006,
+                "section": "CAWA19_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7212,
+                  "section": "CAWA19_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9008,
+                "section": "CAWA19_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7214,
+                  "section": "CAWA19_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9009,
+                "section": "CAWA19_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7215,
+                  "section": "CAWA19_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9010,
+                "section": "CAWA19_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7216,
+                  "section": "CAWA19_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -100,
+          "YSort": 724
+        },
+        "snow": {
+          "art_id": "CAWA19_AD",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 712,
+            "pack": "ra2",
+            "relative_path": "isosnow/cawa19_a.shp",
+            "folder": "isosnow",
+            "filename": "cawa19_a.shp",
+            "stem": "cawa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 17,
+          "LoopStart": 17,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9000,
+                "section": "CAWA19_AD",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7206,
+                  "section": "CAWA19_AD",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9001,
+                "section": "CAWA19_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7207,
+                  "section": "CAWA19_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9002,
+                "section": "CAWA19_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7208,
+                  "section": "CAWA19_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9003,
+                "section": "CAWA19_AD",
+                "key": "Start",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7209,
+                  "section": "CAWA19_AD",
+                  "key": "Start",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9004,
+                "section": "CAWA19_AD",
+                "key": "LoopStart",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7210,
+                  "section": "CAWA19_AD",
+                  "key": "LoopStart",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9005,
+                "section": "CAWA19_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7211,
+                  "section": "CAWA19_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9006,
+                "section": "CAWA19_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7212,
+                  "section": "CAWA19_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9008,
+                "section": "CAWA19_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7214,
+                  "section": "CAWA19_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9009,
+                "section": "CAWA19_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7215,
+                  "section": "CAWA19_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9010,
+                "section": "CAWA19_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7216,
+                  "section": "CAWA19_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -100,
+          "YSort": 724
+        },
+        "urban": {
+          "art_id": "CAWA19_AD",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2897,
+            "pack": "ra2",
+            "relative_path": "isourb/cuwa19_a.shp",
+            "folder": "isourb",
+            "filename": "cuwa19_a.shp",
+            "stem": "cuwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 17,
+          "LoopStart": 17,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9000,
+                "section": "CAWA19_AD",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7206,
+                  "section": "CAWA19_AD",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9001,
+                "section": "CAWA19_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7207,
+                  "section": "CAWA19_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9002,
+                "section": "CAWA19_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7208,
+                  "section": "CAWA19_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9003,
+                "section": "CAWA19_AD",
+                "key": "Start",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7209,
+                  "section": "CAWA19_AD",
+                  "key": "Start",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9004,
+                "section": "CAWA19_AD",
+                "key": "LoopStart",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7210,
+                  "section": "CAWA19_AD",
+                  "key": "LoopStart",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9005,
+                "section": "CAWA19_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7211,
+                  "section": "CAWA19_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9006,
+                "section": "CAWA19_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7212,
+                  "section": "CAWA19_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9008,
+                "section": "CAWA19_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7214,
+                  "section": "CAWA19_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9009,
+                "section": "CAWA19_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7215,
+                  "section": "CAWA19_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9010,
+                "section": "CAWA19_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7216,
+                  "section": "CAWA19_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -100,
+          "YSort": 724
+        },
+        "desert": {
+          "art_id": "CAWA19_AD",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6278,
+            "pack": "ra2md",
+            "relative_path": "isodes/cdwa19_a.shp",
+            "folder": "isodes",
+            "filename": "cdwa19_a.shp",
+            "stem": "cdwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 17,
+          "LoopStart": 17,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9000,
+                "section": "CAWA19_AD",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7206,
+                  "section": "CAWA19_AD",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9001,
+                "section": "CAWA19_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7207,
+                  "section": "CAWA19_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9002,
+                "section": "CAWA19_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7208,
+                  "section": "CAWA19_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9003,
+                "section": "CAWA19_AD",
+                "key": "Start",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7209,
+                  "section": "CAWA19_AD",
+                  "key": "Start",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9004,
+                "section": "CAWA19_AD",
+                "key": "LoopStart",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7210,
+                  "section": "CAWA19_AD",
+                  "key": "LoopStart",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9005,
+                "section": "CAWA19_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7211,
+                  "section": "CAWA19_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9006,
+                "section": "CAWA19_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7212,
+                  "section": "CAWA19_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9008,
+                "section": "CAWA19_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7214,
+                  "section": "CAWA19_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9009,
+                "section": "CAWA19_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7215,
+                  "section": "CAWA19_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9010,
+                "section": "CAWA19_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7216,
+                  "section": "CAWA19_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -100,
+          "YSort": 724
+        },
+        "lunar": {
+          "art_id": "CAWA19_AD",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8346,
+            "pack": "ra2md",
+            "relative_path": "isolun/clwa19_a.shp",
+            "folder": "isolun",
+            "filename": "clwa19_a.shp",
+            "stem": "clwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 17,
+          "LoopStart": 17,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9000,
+                "section": "CAWA19_AD",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7206,
+                  "section": "CAWA19_AD",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9001,
+                "section": "CAWA19_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7207,
+                  "section": "CAWA19_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9002,
+                "section": "CAWA19_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7208,
+                  "section": "CAWA19_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9003,
+                "section": "CAWA19_AD",
+                "key": "Start",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7209,
+                  "section": "CAWA19_AD",
+                  "key": "Start",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9004,
+                "section": "CAWA19_AD",
+                "key": "LoopStart",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7210,
+                  "section": "CAWA19_AD",
+                  "key": "LoopStart",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9005,
+                "section": "CAWA19_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7211,
+                  "section": "CAWA19_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9006,
+                "section": "CAWA19_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7212,
+                  "section": "CAWA19_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9008,
+                "section": "CAWA19_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7214,
+                  "section": "CAWA19_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9009,
+                "section": "CAWA19_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7215,
+                  "section": "CAWA19_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9010,
+                "section": "CAWA19_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7216,
+                  "section": "CAWA19_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -100,
+          "YSort": 724
+        },
+        "newurban": {
+          "art_id": "CAWA19_AD",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9425,
+            "pack": "ra2md",
+            "relative_path": "isoubn/cnwa19_a.shp",
+            "folder": "isoubn",
+            "filename": "cnwa19_a.shp",
+            "stem": "cnwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 17,
+          "LoopStart": 17,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9000,
+                "section": "CAWA19_AD",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7206,
+                  "section": "CAWA19_AD",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9001,
+                "section": "CAWA19_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7207,
+                  "section": "CAWA19_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9002,
+                "section": "CAWA19_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7208,
+                  "section": "CAWA19_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9003,
+                "section": "CAWA19_AD",
+                "key": "Start",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7209,
+                  "section": "CAWA19_AD",
+                  "key": "Start",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "17",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9004,
+                "section": "CAWA19_AD",
+                "key": "LoopStart",
+                "value": "17"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7210,
+                  "section": "CAWA19_AD",
+                  "key": "LoopStart",
+                  "value": "17"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9005,
+                "section": "CAWA19_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7211,
+                  "section": "CAWA19_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9006,
+                "section": "CAWA19_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7212,
+                  "section": "CAWA19_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9008,
+                "section": "CAWA19_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7214,
+                  "section": "CAWA19_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9009,
+                "section": "CAWA19_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7215,
+                  "section": "CAWA19_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9010,
+                "section": "CAWA19_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7216,
+                  "section": "CAWA19_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -100,
+          "YSort": 724
+        }
+      },
+      "ActiveAnimGarrisoned": {
+        "temperate": {
+          "art_id": "CAWA19_AG",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1810,
+            "pack": "ra2",
+            "relative_path": "isotemp/ctwa19_a.shp",
+            "folder": "isotemp",
+            "filename": "ctwa19_a.shp",
+            "stem": "ctwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 48,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9013,
+                "section": "CAWA19_AG",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7219,
+                  "section": "CAWA19_AG",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9014,
+                "section": "CAWA19_AG",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7220,
+                  "section": "CAWA19_AG",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9015,
+                "section": "CAWA19_AG",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7221,
+                  "section": "CAWA19_AG",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9016,
+                "section": "CAWA19_AG",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7222,
+                  "section": "CAWA19_AG",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9017,
+                "section": "CAWA19_AG",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7223,
+                  "section": "CAWA19_AG",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "48",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9018,
+                "section": "CAWA19_AG",
+                "key": "LoopEnd",
+                "value": "48"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7224,
+                  "section": "CAWA19_AG",
+                  "key": "LoopEnd",
+                  "value": "48"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9019,
+                "section": "CAWA19_AG",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7225,
+                  "section": "CAWA19_AG",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9021,
+                "section": "CAWA19_AG",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7227,
+                  "section": "CAWA19_AG",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9022,
+                "section": "CAWA19_AG",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7228,
+                  "section": "CAWA19_AG",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9023,
+                "section": "CAWA19_AG",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7229,
+                  "section": "CAWA19_AG",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimGarrisoned",
+          "slot": "ActiveAnimGarrisoned",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "CAWA19_AG",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 712,
+            "pack": "ra2",
+            "relative_path": "isosnow/cawa19_a.shp",
+            "folder": "isosnow",
+            "filename": "cawa19_a.shp",
+            "stem": "cawa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 48,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9013,
+                "section": "CAWA19_AG",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7219,
+                  "section": "CAWA19_AG",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9014,
+                "section": "CAWA19_AG",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7220,
+                  "section": "CAWA19_AG",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9015,
+                "section": "CAWA19_AG",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7221,
+                  "section": "CAWA19_AG",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9016,
+                "section": "CAWA19_AG",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7222,
+                  "section": "CAWA19_AG",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9017,
+                "section": "CAWA19_AG",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7223,
+                  "section": "CAWA19_AG",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "48",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9018,
+                "section": "CAWA19_AG",
+                "key": "LoopEnd",
+                "value": "48"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7224,
+                  "section": "CAWA19_AG",
+                  "key": "LoopEnd",
+                  "value": "48"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9019,
+                "section": "CAWA19_AG",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7225,
+                  "section": "CAWA19_AG",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9021,
+                "section": "CAWA19_AG",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7227,
+                  "section": "CAWA19_AG",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9022,
+                "section": "CAWA19_AG",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7228,
+                  "section": "CAWA19_AG",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9023,
+                "section": "CAWA19_AG",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7229,
+                  "section": "CAWA19_AG",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimGarrisoned",
+          "slot": "ActiveAnimGarrisoned",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "CAWA19_AG",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2897,
+            "pack": "ra2",
+            "relative_path": "isourb/cuwa19_a.shp",
+            "folder": "isourb",
+            "filename": "cuwa19_a.shp",
+            "stem": "cuwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 48,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9013,
+                "section": "CAWA19_AG",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7219,
+                  "section": "CAWA19_AG",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9014,
+                "section": "CAWA19_AG",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7220,
+                  "section": "CAWA19_AG",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9015,
+                "section": "CAWA19_AG",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7221,
+                  "section": "CAWA19_AG",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9016,
+                "section": "CAWA19_AG",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7222,
+                  "section": "CAWA19_AG",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9017,
+                "section": "CAWA19_AG",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7223,
+                  "section": "CAWA19_AG",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "48",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9018,
+                "section": "CAWA19_AG",
+                "key": "LoopEnd",
+                "value": "48"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7224,
+                  "section": "CAWA19_AG",
+                  "key": "LoopEnd",
+                  "value": "48"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9019,
+                "section": "CAWA19_AG",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7225,
+                  "section": "CAWA19_AG",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9021,
+                "section": "CAWA19_AG",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7227,
+                  "section": "CAWA19_AG",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9022,
+                "section": "CAWA19_AG",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7228,
+                  "section": "CAWA19_AG",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9023,
+                "section": "CAWA19_AG",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7229,
+                  "section": "CAWA19_AG",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimGarrisoned",
+          "slot": "ActiveAnimGarrisoned",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "CAWA19_AG",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6278,
+            "pack": "ra2md",
+            "relative_path": "isodes/cdwa19_a.shp",
+            "folder": "isodes",
+            "filename": "cdwa19_a.shp",
+            "stem": "cdwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 48,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9013,
+                "section": "CAWA19_AG",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7219,
+                  "section": "CAWA19_AG",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9014,
+                "section": "CAWA19_AG",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7220,
+                  "section": "CAWA19_AG",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9015,
+                "section": "CAWA19_AG",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7221,
+                  "section": "CAWA19_AG",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9016,
+                "section": "CAWA19_AG",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7222,
+                  "section": "CAWA19_AG",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9017,
+                "section": "CAWA19_AG",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7223,
+                  "section": "CAWA19_AG",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "48",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9018,
+                "section": "CAWA19_AG",
+                "key": "LoopEnd",
+                "value": "48"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7224,
+                  "section": "CAWA19_AG",
+                  "key": "LoopEnd",
+                  "value": "48"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9019,
+                "section": "CAWA19_AG",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7225,
+                  "section": "CAWA19_AG",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9021,
+                "section": "CAWA19_AG",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7227,
+                  "section": "CAWA19_AG",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9022,
+                "section": "CAWA19_AG",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7228,
+                  "section": "CAWA19_AG",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9023,
+                "section": "CAWA19_AG",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7229,
+                  "section": "CAWA19_AG",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimGarrisoned",
+          "slot": "ActiveAnimGarrisoned",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "CAWA19_AG",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8346,
+            "pack": "ra2md",
+            "relative_path": "isolun/clwa19_a.shp",
+            "folder": "isolun",
+            "filename": "clwa19_a.shp",
+            "stem": "clwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 48,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9013,
+                "section": "CAWA19_AG",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7219,
+                  "section": "CAWA19_AG",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9014,
+                "section": "CAWA19_AG",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7220,
+                  "section": "CAWA19_AG",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9015,
+                "section": "CAWA19_AG",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7221,
+                  "section": "CAWA19_AG",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9016,
+                "section": "CAWA19_AG",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7222,
+                  "section": "CAWA19_AG",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9017,
+                "section": "CAWA19_AG",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7223,
+                  "section": "CAWA19_AG",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "48",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9018,
+                "section": "CAWA19_AG",
+                "key": "LoopEnd",
+                "value": "48"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7224,
+                  "section": "CAWA19_AG",
+                  "key": "LoopEnd",
+                  "value": "48"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9019,
+                "section": "CAWA19_AG",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7225,
+                  "section": "CAWA19_AG",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9021,
+                "section": "CAWA19_AG",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7227,
+                  "section": "CAWA19_AG",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9022,
+                "section": "CAWA19_AG",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7228,
+                  "section": "CAWA19_AG",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9023,
+                "section": "CAWA19_AG",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7229,
+                  "section": "CAWA19_AG",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimGarrisoned",
+          "slot": "ActiveAnimGarrisoned",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "CAWA19_AG",
+          "image": "CAWA19_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9425,
+            "pack": "ra2md",
+            "relative_path": "isoubn/cnwa19_a.shp",
+            "folder": "isoubn",
+            "filename": "cnwa19_a.shp",
+            "stem": "cnwa19_a",
+            "extension": ".shp",
+            "size": 50288,
+            "sha1": "1ea285e9507e04b178dbbabd12f8309a1b973ce7"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 48,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAWA19_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9013,
+                "section": "CAWA19_AG",
+                "key": "Image",
+                "value": "CAWA19_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7219,
+                  "section": "CAWA19_AG",
+                  "key": "Image",
+                  "value": "CAWA19_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9014,
+                "section": "CAWA19_AG",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7220,
+                  "section": "CAWA19_AG",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9015,
+                "section": "CAWA19_AG",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7221,
+                  "section": "CAWA19_AG",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9016,
+                "section": "CAWA19_AG",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7222,
+                  "section": "CAWA19_AG",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9017,
+                "section": "CAWA19_AG",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7223,
+                  "section": "CAWA19_AG",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "48",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9018,
+                "section": "CAWA19_AG",
+                "key": "LoopEnd",
+                "value": "48"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7224,
+                  "section": "CAWA19_AG",
+                  "key": "LoopEnd",
+                  "value": "48"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9019,
+                "section": "CAWA19_AG",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7225,
+                  "section": "CAWA19_AG",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9021,
+                "section": "CAWA19_AG",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7227,
+                  "section": "CAWA19_AG",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9022,
+                "section": "CAWA19_AG",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7228,
+                  "section": "CAWA19_AG",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 9023,
+                "section": "CAWA19_AG",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 7229,
+                  "section": "CAWA19_AG",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimGarrisoned",
+          "slot": "ActiveAnimGarrisoned",
+          "damaged": false
+        }
+      }
+    },
+    "foundation": "4x4",
+    "height": 6,
+    "occupy_height": 2,
+    "damage_fire_offsets": [
+      [
+        -35.0,
+        58.0
+      ],
+      [
+        1.0,
+        40.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "Iwo Jima Memorial",
+      "UIName": "Name:CAWASH19",
+      "TechLevel": -1,
+      "Strength": 500,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "concrete",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS3SM,DBRIS5LG,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8SM,DBRS10SM",
+      "MaxDebris": 15,
+      "MinDebris": 7,
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "LeaveRubble": true
+    },
+    "raw_values": {
+      "Name": "Iwo Jima Memorial",
+      "UIName": "Name:CAWASH19",
+      "TechLevel": "-1",
+      "Strength": "500",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "concrete",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS3SM,DBRIS5LG,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8SM,DBRS10SM",
+      "MaxDebris": "15",
+      "MinDebris": "7",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "LeaveRubble": "Yes"
+    },
+    "provenance": {
+      "Name": {
+        "value": "Iwo Jima Memorial",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14590,
+          "section": "CAWASH19",
+          "key": "Name",
+          "value": "Iwo Jima Memorial"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13283,
+            "section": "CAWASH19",
+            "key": "Name",
+            "value": "RA2 Iwo Jima Memorial"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14583,
+            "section": "CAWASH19",
+            "key": "Name",
+            "value": "Iwo Jima Memorial"
+          }
+        ]
+      },
+      "UIName": {
+        "value": "Name:CAWASH19",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14591,
+          "section": "CAWASH19",
+          "key": "UIName",
+          "value": "Name:CAWASH19"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13284,
+            "section": "CAWASH19",
+            "key": "UIName",
+            "value": "Name:CAWASH19"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14584,
+            "section": "CAWASH19",
+            "key": "UIName",
+            "value": "Name:CAWASH19"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14592,
+          "section": "CAWASH19",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13285,
+            "section": "CAWASH19",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14585,
+            "section": "CAWASH19",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14593,
+          "section": "CAWASH19",
+          "key": "Strength",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13286,
+            "section": "CAWASH19",
+            "key": "Strength",
+            "value": "500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14586,
+            "section": "CAWASH19",
+            "key": "Strength",
+            "value": "500"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14594,
+          "section": "CAWASH19",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13287,
+            "section": "CAWASH19",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14587,
+            "section": "CAWASH19",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14595,
+          "section": "CAWASH19",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13288,
+            "section": "CAWASH19",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14588,
+            "section": "CAWASH19",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 13289,
+          "section": "CAWASH19",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14597,
+          "section": "CAWASH19",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13290,
+            "section": "CAWASH19",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14590,
+            "section": "CAWASH19",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "concrete",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14598,
+          "section": "CAWASH19",
+          "key": "Armor",
+          "value": "concrete"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13291,
+            "section": "CAWASH19",
+            "key": "Armor",
+            "value": "concrete"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14591,
+            "section": "CAWASH19",
+            "key": "Armor",
+            "value": "concrete"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14599,
+          "section": "CAWASH19",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13292,
+            "section": "CAWASH19",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14592,
+            "section": "CAWASH19",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS3SM,DBRIS5LG,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8SM,DBRS10SM",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14601,
+          "section": "CAWASH19",
+          "key": "DebrisAnims",
+          "value": "DBRIS3SM,DBRIS5LG,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8SM,DBRS10SM"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13294,
+            "section": "CAWASH19",
+            "key": "DebrisAnims",
+            "value": "DBRIS3SM,DBRIS5LG,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8SM,DBRS10SM"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14594,
+            "section": "CAWASH19",
+            "key": "DebrisAnims",
+            "value": "DBRIS3SM,DBRIS5LG,DBRIS6SM,DBRIS7LG,DBRIS7SM,DBRIS8SM,DBRS10SM"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14602,
+          "section": "CAWASH19",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13295,
+            "section": "CAWASH19",
+            "key": "MaxDebris",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14595,
+            "section": "CAWASH19",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14603,
+          "section": "CAWASH19",
+          "key": "MinDebris",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13296,
+            "section": "CAWASH19",
+            "key": "MinDebris",
+            "value": "7"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14596,
+            "section": "CAWASH19",
+            "key": "MinDebris",
+            "value": "7"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14606,
+          "section": "CAWASH19",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13299,
+            "section": "CAWASH19",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14599,
+            "section": "CAWASH19",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14607,
+          "section": "CAWASH19",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13300,
+            "section": "CAWASH19",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14600,
+            "section": "CAWASH19",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14608,
+          "section": "CAWASH19",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13301,
+            "section": "CAWASH19",
+            "key": "ClickRepairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14601,
+            "section": "CAWASH19",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "Yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14614,
+          "section": "CAWASH19",
+          "key": "LeaveRubble",
+          "value": "Yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13307,
+            "section": "CAWASH19",
+            "key": "LeaveRubble",
+            "value": "Yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14607,
+            "section": "CAWASH19",
+            "key": "LeaveRubble",
+            "value": "Yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Normalized": true,
+      "Remapable": false,
+      "Foundation": "4x4",
+      "Height": 6,
+      "NewTheater": true,
+      "ActiveAnim": "CAWA19_A",
+      "ActiveAnimDamaged": "CAWA19_AD",
+      "ActiveAnimGarrisoned": "CAWA19_AG",
+      "ActiveAnimZAdjust": -100,
+      "ActiveAnimYSort": 724,
+      "DemandLoad": true,
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 2,
+      "DamageFireOffset0": "-35,58",
+      "DamageFireOffset1": "1,40"
+    },
+    "raw_values": {
+      "Normalized": "yes",
+      "Remapable": "no",
+      "Foundation": "4x4",
+      "Height": "6",
+      "NewTheater": "yes",
+      "ActiveAnim": "CAWA19_A",
+      "ActiveAnimDamaged": "CAWA19_AD",
+      "ActiveAnimGarrisoned": "CAWA19_AG",
+      "ActiveAnimZAdjust": "-100",
+      "ActiveAnimYSort": "724",
+      "DemandLoad": "true",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "2",
+      "DamageFireOffset0": "-35,58",
+      "DamageFireOffset1": "1,40"
+    },
+    "provenance": {
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8971,
+          "section": "CAWASH19",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7177,
+            "section": "CAWASH19",
+            "key": "Normalized",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8972,
+          "section": "CAWASH19",
+          "key": "Remapable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7178,
+            "section": "CAWASH19",
+            "key": "Remapable",
+            "value": "no"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "4x4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8973,
+          "section": "CAWASH19",
+          "key": "Foundation",
+          "value": "4x4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7179,
+            "section": "CAWASH19",
+            "key": "Foundation",
+            "value": "4x4"
+          }
+        ]
+      },
+      "Height": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8974,
+          "section": "CAWASH19",
+          "key": "Height",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7180,
+            "section": "CAWASH19",
+            "key": "Height",
+            "value": "6"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8975,
+          "section": "CAWASH19",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7181,
+            "section": "CAWASH19",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "ActiveAnim": {
+        "value": "CAWA19_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8976,
+          "section": "CAWASH19",
+          "key": "ActiveAnim",
+          "value": "CAWA19_A"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7182,
+            "section": "CAWASH19",
+            "key": "ActiveAnim",
+            "value": "CAWA19_A"
+          }
+        ]
+      },
+      "ActiveAnimDamaged": {
+        "value": "CAWA19_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8977,
+          "section": "CAWASH19",
+          "key": "ActiveAnimDamaged",
+          "value": "CAWA19_AD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7183,
+            "section": "CAWASH19",
+            "key": "ActiveAnimDamaged",
+            "value": "CAWA19_AD"
+          }
+        ]
+      },
+      "ActiveAnimGarrisoned": {
+        "value": "CAWA19_AG",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8978,
+          "section": "CAWASH19",
+          "key": "ActiveAnimGarrisoned",
+          "value": "CAWA19_AG"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7184,
+            "section": "CAWASH19",
+            "key": "ActiveAnimGarrisoned",
+            "value": "CAWA19_AG"
+          }
+        ]
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-100",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8979,
+          "section": "CAWASH19",
+          "key": "ActiveAnimZAdjust",
+          "value": "-100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7185,
+            "section": "CAWASH19",
+            "key": "ActiveAnimZAdjust",
+            "value": "-100"
+          }
+        ]
+      },
+      "ActiveAnimYSort": {
+        "value": "724",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8980,
+          "section": "CAWASH19",
+          "key": "ActiveAnimYSort",
+          "value": "724"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7186,
+            "section": "CAWASH19",
+            "key": "ActiveAnimYSort",
+            "value": "724"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8981,
+          "section": "CAWASH19",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7187,
+            "section": "CAWASH19",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8982,
+          "section": "CAWASH19",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7188,
+            "section": "CAWASH19",
+            "key": "CanHideThings",
+            "value": "True"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8983,
+          "section": "CAWASH19",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7189,
+            "section": "CAWASH19",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8984,
+          "section": "CAWASH19",
+          "key": "OccupyHeight",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7190,
+            "section": "CAWASH19",
+            "key": "OccupyHeight",
+            "value": "2"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-35,58",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8985,
+          "section": "CAWASH19",
+          "key": "DamageFireOffset0",
+          "value": "-35,58"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7191,
+            "section": "CAWASH19",
+            "key": "DamageFireOffset0",
+            "value": "-35,58"
+          }
+        ]
+      },
+      "DamageFireOffset1": {
+        "value": "1,40",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8986,
+          "section": "CAWASH19",
+          "key": "DamageFireOffset1",
+          "value": "1,40"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7192,
+            "section": "CAWASH19",
+            "key": "DamageFireOffset1",
+            "value": "1,40"
+          }
+        ]
+      }
+    }
+  }
+}

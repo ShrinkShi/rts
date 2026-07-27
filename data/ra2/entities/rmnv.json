@@ -1,0 +1,2243 @@
+{
+  "id": "RMNV",
+  "category": "infantry",
+  "name_token": "Name:RMNV",
+  "art_id": "RMNV",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 10,
+  "strength": 50,
+  "armor": "none",
+  "speed": 4,
+  "sight": 2,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Infantry",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "RomanovSelect"
+    ],
+    "VoiceMove": [
+      "RomanovMove"
+    ],
+    "VoiceAttack": [
+      "RomanovAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "RomanovFear"
+    ],
+    "VoiceSpecialAttack": [
+      "RomanovMove"
+    ],
+    "DieSound": [
+      "RomanovDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "RMNV",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 5724,
+          "pack": "ra2md",
+          "relative_path": "conqmd/rmnv.shp",
+          "folder": "conqmd",
+          "filename": "rmnv.shp",
+          "stem": "rmnv",
+          "extension": ".shp",
+          "size": 97304,
+          "sha1": "f15cd5258e485db0a64616f54935dc35af6f48dc"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 5724,
+          "pack": "ra2md",
+          "relative_path": "conqmd/rmnv.shp",
+          "folder": "conqmd",
+          "filename": "rmnv.shp",
+          "stem": "rmnv",
+          "extension": ".shp",
+          "size": 97304,
+          "sha1": "f15cd5258e485db0a64616f54935dc35af6f48dc"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 5724,
+          "pack": "ra2md",
+          "relative_path": "conqmd/rmnv.shp",
+          "folder": "conqmd",
+          "filename": "rmnv.shp",
+          "stem": "rmnv",
+          "extension": ".shp",
+          "size": 97304,
+          "sha1": "f15cd5258e485db0a64616f54935dc35af6f48dc"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 5724,
+          "pack": "ra2md",
+          "relative_path": "conqmd/rmnv.shp",
+          "folder": "conqmd",
+          "filename": "rmnv.shp",
+          "stem": "rmnv",
+          "extension": ".shp",
+          "size": 97304,
+          "sha1": "f15cd5258e485db0a64616f54935dc35af6f48dc"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 5724,
+          "pack": "ra2md",
+          "relative_path": "conqmd/rmnv.shp",
+          "folder": "conqmd",
+          "filename": "rmnv.shp",
+          "stem": "rmnv",
+          "extension": ".shp",
+          "size": 97304,
+          "sha1": "f15cd5258e485db0a64616f54935dc35af6f48dc"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 5724,
+          "pack": "ra2md",
+          "relative_path": "conqmd/rmnv.shp",
+          "folder": "conqmd",
+          "filename": "rmnv.shp",
+          "stem": "rmnv",
+          "extension": ".shp",
+          "size": 97304,
+          "sha1": "f15cd5258e485db0a64616f54935dc35af6f48dc"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "SpySequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 86,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122
+          ],
+          "1": [
+            116
+          ],
+          "2": [
+            110
+          ],
+          "3": [
+            104
+          ],
+          "4": [
+            98
+          ],
+          "5": [
+            92
+          ],
+          "6": [
+            86
+          ],
+          "7": [
+            128
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 164,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            176,
+            177
+          ],
+          "1": [
+            174,
+            175
+          ],
+          "2": [
+            172,
+            173
+          ],
+          "3": [
+            170,
+            171
+          ],
+          "4": [
+            168,
+            169
+          ],
+          "5": [
+            166,
+            167
+          ],
+          "6": [
+            164,
+            165
+          ],
+          "7": [
+            178,
+            179
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 86,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "1": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "2": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "3": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "4": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "5": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "6": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "7": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 180,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            192,
+            193
+          ],
+          "1": [
+            190,
+            191
+          ],
+          "2": [
+            188,
+            189
+          ],
+          "3": [
+            186,
+            187
+          ],
+          "4": [
+            184,
+            185
+          ],
+          "5": [
+            182,
+            183
+          ],
+          "6": [
+            180,
+            181
+          ],
+          "7": [
+            194,
+            195
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 86,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122
+          ],
+          "1": [
+            116
+          ],
+          "2": [
+            110
+          ],
+          "3": [
+            104
+          ],
+          "4": [
+            98
+          ],
+          "5": [
+            92
+          ],
+          "6": [
+            86
+          ],
+          "7": [
+            128
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 134,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 149,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 196,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:RMNV",
+      "Name": "Romanov",
+      "Category": "Civilian",
+      "Strength": 50,
+      "Armor": "none",
+      "TechLevel": -1,
+      "CrushSound": "InfantrySquish",
+      "Insignificant": true,
+      "Sight": 2,
+      "Speed": 4,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 10,
+      "Soylent": 100,
+      "Points": 1,
+      "Fraidycat": true,
+      "Civilian": true,
+      "Nominal": true,
+      "Pip": "yellow",
+      "VoiceSelect": "RomanovSelect",
+      "VoiceMove": "RomanovMove",
+      "VoiceAttack": "RomanovAttackCommand",
+      "VoiceFeedback": "RomanovFear",
+      "VoiceSpecialAttack": "RomanovMove",
+      "DieSound": "RomanovDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "Infantry",
+      "ThreatPosed": 0,
+      "ImmuneToVeins": true,
+      "Size": 1,
+      "Trainable": false,
+      "PixelSelectionBracketDelta": -6,
+      "UseOwnName": true
+    },
+    "raw_values": {
+      "UIName": "Name:RMNV",
+      "Name": "Romanov",
+      "Category": "Civilian",
+      "Strength": "50",
+      "Armor": "none",
+      "TechLevel": "-1",
+      "CrushSound": "InfantrySquish",
+      "Insignificant": "yes",
+      "Sight": "2",
+      "Speed": "4",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "10",
+      "Soylent": "100",
+      "Points": "1",
+      "Fraidycat": "yes",
+      "Civilian": "yes",
+      "Nominal": "yes",
+      "Pip": "yellow",
+      "VoiceSelect": "RomanovSelect",
+      "VoiceMove": "RomanovMove",
+      "VoiceAttack": "RomanovAttackCommand",
+      "VoiceFeedback": "RomanovFear",
+      "VoiceSpecialAttack": "RomanovMove",
+      "DieSound": "RomanovDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "Infantry",
+      "ThreatPosed": "0",
+      "ImmuneToVeins": "yes",
+      "Size": "1",
+      "Trainable": "no",
+      "PixelSelectionBracketDelta": "-6",
+      "UseOwnName": "true"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:RMNV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6331,
+          "section": "RMNV",
+          "key": "UIName",
+          "value": "Name:RMNV"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6329,
+            "section": "RMNV",
+            "key": "UIName",
+            "value": "Name:RMNV"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Romanov",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6332,
+          "section": "RMNV",
+          "key": "Name",
+          "value": "Romanov"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6330,
+            "section": "RMNV",
+            "key": "Name",
+            "value": "Romanov"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Civilian",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6334,
+          "section": "RMNV",
+          "key": "Category",
+          "value": "Civilian"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6332,
+            "section": "RMNV",
+            "key": "Category",
+            "value": "Civilian"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "50",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6335,
+          "section": "RMNV",
+          "key": "Strength",
+          "value": "50"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6333,
+            "section": "RMNV",
+            "key": "Strength",
+            "value": "50"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6336,
+          "section": "RMNV",
+          "key": "Armor",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6334,
+            "section": "RMNV",
+            "key": "Armor",
+            "value": "none"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6337,
+          "section": "RMNV",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6335,
+            "section": "RMNV",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6338,
+          "section": "RMNV",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6336,
+            "section": "RMNV",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6339,
+          "section": "RMNV",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6337,
+            "section": "RMNV",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6340,
+          "section": "RMNV",
+          "key": "Sight",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6338,
+            "section": "RMNV",
+            "key": "Sight",
+            "value": "2"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6341,
+          "section": "RMNV",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6339,
+            "section": "RMNV",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6342,
+          "section": "RMNV",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6340,
+            "section": "RMNV",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6343,
+          "section": "RMNV",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6341,
+            "section": "RMNV",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6344,
+          "section": "RMNV",
+          "key": "Cost",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6342,
+            "section": "RMNV",
+            "key": "Cost",
+            "value": "10"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6345,
+          "section": "RMNV",
+          "key": "Soylent",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6343,
+            "section": "RMNV",
+            "key": "Soylent",
+            "value": "100"
+          }
+        ]
+      },
+      "Points": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6346,
+          "section": "RMNV",
+          "key": "Points",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6344,
+            "section": "RMNV",
+            "key": "Points",
+            "value": "1"
+          }
+        ]
+      },
+      "Fraidycat": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6348,
+          "section": "RMNV",
+          "key": "Fraidycat",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6346,
+            "section": "RMNV",
+            "key": "Fraidycat",
+            "value": "yes"
+          }
+        ]
+      },
+      "Civilian": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6349,
+          "section": "RMNV",
+          "key": "Civilian",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6347,
+            "section": "RMNV",
+            "key": "Civilian",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6350,
+          "section": "RMNV",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6348,
+            "section": "RMNV",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "yellow",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6351,
+          "section": "RMNV",
+          "key": "Pip",
+          "value": "yellow"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6349,
+            "section": "RMNV",
+            "key": "Pip",
+            "value": "yellow"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "RomanovSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6352,
+          "section": "RMNV",
+          "key": "VoiceSelect",
+          "value": "RomanovSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6350,
+            "section": "RMNV",
+            "key": "VoiceSelect",
+            "value": "RomanovSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "RomanovMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6353,
+          "section": "RMNV",
+          "key": "VoiceMove",
+          "value": "RomanovMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6351,
+            "section": "RMNV",
+            "key": "VoiceMove",
+            "value": "RomanovMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "RomanovAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6354,
+          "section": "RMNV",
+          "key": "VoiceAttack",
+          "value": "RomanovAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6352,
+            "section": "RMNV",
+            "key": "VoiceAttack",
+            "value": "RomanovAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "RomanovFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6355,
+          "section": "RMNV",
+          "key": "VoiceFeedback",
+          "value": "RomanovFear"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6353,
+            "section": "RMNV",
+            "key": "VoiceFeedback",
+            "value": "RomanovFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "RomanovMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6356,
+          "section": "RMNV",
+          "key": "VoiceSpecialAttack",
+          "value": "RomanovMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6354,
+            "section": "RMNV",
+            "key": "VoiceSpecialAttack",
+            "value": "RomanovMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "RomanovDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6357,
+          "section": "RMNV",
+          "key": "DieSound",
+          "value": "RomanovDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6355,
+            "section": "RMNV",
+            "key": "DieSound",
+            "value": "RomanovDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6358,
+          "section": "RMNV",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6356,
+            "section": "RMNV",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6359,
+          "section": "RMNV",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6357,
+            "section": "RMNV",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6360,
+          "section": "RMNV",
+          "key": "MovementZone",
+          "value": "Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6358,
+            "section": "RMNV",
+            "key": "MovementZone",
+            "value": "Infantry"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6361,
+          "section": "RMNV",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6359,
+            "section": "RMNV",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6362,
+          "section": "RMNV",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6360,
+            "section": "RMNV",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6363,
+          "section": "RMNV",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6361,
+            "section": "RMNV",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6364,
+          "section": "RMNV",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6362,
+            "section": "RMNV",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "PixelSelectionBracketDelta": {
+        "value": "-6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6365,
+          "section": "RMNV",
+          "key": "PixelSelectionBracketDelta",
+          "value": "-6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6363,
+            "section": "RMNV",
+            "key": "PixelSelectionBracketDelta",
+            "value": "-6"
+          }
+        ]
+      },
+      "UseOwnName": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 6366,
+          "section": "RMNV",
+          "key": "UseOwnName",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 6364,
+            "section": "RMNV",
+            "key": "UseOwnName",
+            "value": "true"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "SHKICON",
+      "AltCameo": "SHKUICO",
+      "Sequence": "SpySequence",
+      "Crawls": true,
+      "Remapable": true,
+      "FireUp": 2,
+      "PrimaryFireFLH": "100,-25,135",
+      "SecondaryFireFLH": "100,-25,135"
+    },
+    "raw_values": {
+      "Cameo": "SHKICON",
+      "AltCameo": "SHKUICO",
+      "Sequence": "SpySequence",
+      "Crawls": "yes",
+      "Remapable": "yes",
+      "FireUp": "2",
+      "PrimaryFireFLH": "100,-25,135",
+      "SecondaryFireFLH": "100,-25,135"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "SHKICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 502,
+          "section": "RMNV",
+          "key": "Cameo",
+          "value": "SHKICON"
+        },
+        "history": []
+      },
+      "AltCameo": {
+        "value": "SHKUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 503,
+          "section": "RMNV",
+          "key": "AltCameo",
+          "value": "SHKUICO"
+        },
+        "history": []
+      },
+      "Sequence": {
+        "value": "SpySequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 504,
+          "section": "RMNV",
+          "key": "Sequence",
+          "value": "SpySequence"
+        },
+        "history": []
+      },
+      "Crawls": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 505,
+          "section": "RMNV",
+          "key": "Crawls",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 506,
+          "section": "RMNV",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "FireUp": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 507,
+          "section": "RMNV",
+          "key": "FireUp",
+          "value": "2"
+        },
+        "history": []
+      },
+      "PrimaryFireFLH": {
+        "value": "100,-25,135",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 508,
+          "section": "RMNV",
+          "key": "PrimaryFireFLH",
+          "value": "100,-25,135"
+        },
+        "history": []
+      },
+      "SecondaryFireFLH": {
+        "value": "100,-25,135",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 509,
+          "section": "RMNV",
+          "key": "SecondaryFireFLH",
+          "value": "100,-25,135"
+        },
+        "history": []
+      }
+    }
+  }
+}

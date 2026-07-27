@@ -1,0 +1,924 @@
+{
+  "id": "CARUS02A",
+  "category": "building",
+  "name_token": "Russain Kremlin Wall LTower",
+  "art_id": "CARUS02A",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 800,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CARUS02A",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1763,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctrus02a.shp",
+          "folder": "isotemp",
+          "filename": "ctrus02a.shp",
+          "stem": "ctrus02a",
+          "extension": ".shp",
+          "size": 24384,
+          "sha1": "340b977a6423276c2a31414604cfa5603035fdfa"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 661,
+          "pack": "ra2",
+          "relative_path": "isosnow/carus02a.shp",
+          "folder": "isosnow",
+          "filename": "carus02a.shp",
+          "stem": "carus02a",
+          "extension": ".shp",
+          "size": 23752,
+          "sha1": "328f6a8990a6ac957e836a6b041792530f1e16d5"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2850,
+          "pack": "ra2",
+          "relative_path": "isourb/curus02a.shp",
+          "folder": "isourb",
+          "filename": "curus02a.shp",
+          "stem": "curus02a",
+          "extension": ".shp",
+          "size": 24384,
+          "sha1": "340b977a6423276c2a31414604cfa5603035fdfa"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6231,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdrus02a.shp",
+          "folder": "isodes",
+          "filename": "cdrus02a.shp",
+          "stem": "cdrus02a",
+          "extension": ".shp",
+          "size": 24384,
+          "sha1": "340b977a6423276c2a31414604cfa5603035fdfa"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8299,
+          "pack": "ra2md",
+          "relative_path": "isolun/clrus02a.shp",
+          "folder": "isolun",
+          "filename": "clrus02a.shp",
+          "stem": "clrus02a",
+          "extension": ".shp",
+          "size": 24384,
+          "sha1": "340b977a6423276c2a31414604cfa5603035fdfa"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9378,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnrus02a.shp",
+          "folder": "isoubn",
+          "filename": "cnrus02a.shp",
+          "stem": "cnrus02a",
+          "extension": ".shp",
+          "size": 24384,
+          "sha1": "340b977a6423276c2a31414604cfa5603035fdfa"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 11,
+    "occupy_height": 6,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "Russain Kremlin Wall LTower",
+      "TechLevel": -1,
+      "Strength": 800,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "BaseNormal": false
+    },
+    "raw_values": {
+      "Name": "Russain Kremlin Wall LTower",
+      "TechLevel": "-1",
+      "Strength": "800",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "BaseNormal": "no"
+    },
+    "provenance": {
+      "Name": {
+        "value": "Russain Kremlin Wall LTower",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18596,
+          "section": "CARUS02A",
+          "key": "Name",
+          "value": "Russain Kremlin Wall LTower"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11632,
+            "section": "CARUS02A",
+            "key": "Name",
+            "value": "RA2 Russain Kremlin Wall LTower"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18588,
+            "section": "CARUS02A",
+            "key": "Name",
+            "value": "Russain Kremlin Wall LTower"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18597,
+          "section": "CARUS02A",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11633,
+            "section": "CARUS02A",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18589,
+            "section": "CARUS02A",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "800",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18598,
+          "section": "CARUS02A",
+          "key": "Strength",
+          "value": "800"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11634,
+            "section": "CARUS02A",
+            "key": "Strength",
+            "value": "800"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18590,
+            "section": "CARUS02A",
+            "key": "Strength",
+            "value": "800"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18599,
+          "section": "CARUS02A",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11635,
+            "section": "CARUS02A",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18591,
+            "section": "CARUS02A",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18600,
+          "section": "CARUS02A",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11636,
+            "section": "CARUS02A",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18592,
+            "section": "CARUS02A",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 11637,
+          "section": "CARUS02A",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18602,
+          "section": "CARUS02A",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11638,
+            "section": "CARUS02A",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18594,
+            "section": "CARUS02A",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18603,
+          "section": "CARUS02A",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11639,
+            "section": "CARUS02A",
+            "key": "Armor",
+            "value": "steel"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18595,
+            "section": "CARUS02A",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18604,
+          "section": "CARUS02A",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11640,
+            "section": "CARUS02A",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18596,
+            "section": "CARUS02A",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18605,
+          "section": "CARUS02A",
+          "key": "DebrisAnims",
+          "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11641,
+            "section": "CARUS02A",
+            "key": "DebrisAnims",
+            "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18597,
+            "section": "CARUS02A",
+            "key": "DebrisAnims",
+            "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18606,
+          "section": "CARUS02A",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11642,
+            "section": "CARUS02A",
+            "key": "MaxDebris",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18598,
+            "section": "CARUS02A",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18607,
+          "section": "CARUS02A",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11643,
+            "section": "CARUS02A",
+            "key": "MinDebris",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18599,
+            "section": "CARUS02A",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 18610,
+          "section": "CARUS02A",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 11646,
+            "section": "CARUS02A",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 18602,
+            "section": "CARUS02A",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Height": 11,
+      "Foundation": "1x1",
+      "NewTheater": true,
+      "DemandLoad": true,
+      "MuzzleFlash0": "-20,-20",
+      "MuzzleFlash1": "10,10",
+      "MuzzleFlash2": "0,5",
+      "MuzzleFlash3": "20,-10",
+      "MuzzleFlash4": "-10,5",
+      "MuzzleFlash5": "0,20",
+      "MuzzleFlash6": "10,15",
+      "MuzzleFlash7": "-20,30",
+      "MuzzleFlash8": "5,35",
+      "MuzzleFlash9": "35,-5",
+      "OccupyHeight": 6
+    },
+    "raw_values": {
+      "Height": "11",
+      "Foundation": "1x1",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "MuzzleFlash0": "-20,-20",
+      "MuzzleFlash1": "10,10",
+      "MuzzleFlash2": "0,5",
+      "MuzzleFlash3": "20,-10",
+      "MuzzleFlash4": "-10,5",
+      "MuzzleFlash5": "0,20",
+      "MuzzleFlash6": "10,15",
+      "MuzzleFlash7": "-20,30",
+      "MuzzleFlash8": "5,35",
+      "MuzzleFlash9": "35,-5",
+      "OccupyHeight": "6"
+    },
+    "provenance": {
+      "Height": {
+        "value": "11",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7206,
+          "section": "CARUS02A",
+          "key": "Height",
+          "value": "11"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5412,
+            "section": "CARUS02A",
+            "key": "Height",
+            "value": "11"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7207,
+          "section": "CARUS02A",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5413,
+            "section": "CARUS02A",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7208,
+          "section": "CARUS02A",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5414,
+            "section": "CARUS02A",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7209,
+          "section": "CARUS02A",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5415,
+            "section": "CARUS02A",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "MuzzleFlash0": {
+        "value": "-20,-20",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7211,
+          "section": "CARUS02A",
+          "key": "MuzzleFlash0",
+          "value": "-20,-20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5417,
+            "section": "CARUS02A",
+            "key": "MuzzleFlash0",
+            "value": "-20,-20"
+          }
+        ]
+      },
+      "MuzzleFlash1": {
+        "value": "10,10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7212,
+          "section": "CARUS02A",
+          "key": "MuzzleFlash1",
+          "value": "10,10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5418,
+            "section": "CARUS02A",
+            "key": "MuzzleFlash1",
+            "value": "10,10"
+          }
+        ]
+      },
+      "MuzzleFlash2": {
+        "value": "0,5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7213,
+          "section": "CARUS02A",
+          "key": "MuzzleFlash2",
+          "value": "0,5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5419,
+            "section": "CARUS02A",
+            "key": "MuzzleFlash2",
+            "value": "0,5"
+          }
+        ]
+      },
+      "MuzzleFlash3": {
+        "value": "20,-10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7214,
+          "section": "CARUS02A",
+          "key": "MuzzleFlash3",
+          "value": "20,-10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5420,
+            "section": "CARUS02A",
+            "key": "MuzzleFlash3",
+            "value": "20,-10"
+          }
+        ]
+      },
+      "MuzzleFlash4": {
+        "value": "-10,5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7215,
+          "section": "CARUS02A",
+          "key": "MuzzleFlash4",
+          "value": "-10,5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5421,
+            "section": "CARUS02A",
+            "key": "MuzzleFlash4",
+            "value": "-10,5"
+          }
+        ]
+      },
+      "MuzzleFlash5": {
+        "value": "0,20",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7216,
+          "section": "CARUS02A",
+          "key": "MuzzleFlash5",
+          "value": "0,20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5422,
+            "section": "CARUS02A",
+            "key": "MuzzleFlash5",
+            "value": "0,20"
+          }
+        ]
+      },
+      "MuzzleFlash6": {
+        "value": "10,15",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7217,
+          "section": "CARUS02A",
+          "key": "MuzzleFlash6",
+          "value": "10,15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5423,
+            "section": "CARUS02A",
+            "key": "MuzzleFlash6",
+            "value": "10,15"
+          }
+        ]
+      },
+      "MuzzleFlash7": {
+        "value": "-20,30",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7218,
+          "section": "CARUS02A",
+          "key": "MuzzleFlash7",
+          "value": "-20,30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5424,
+            "section": "CARUS02A",
+            "key": "MuzzleFlash7",
+            "value": "-20,30"
+          }
+        ]
+      },
+      "MuzzleFlash8": {
+        "value": "5,35",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7219,
+          "section": "CARUS02A",
+          "key": "MuzzleFlash8",
+          "value": "5,35"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5425,
+            "section": "CARUS02A",
+            "key": "MuzzleFlash8",
+            "value": "5,35"
+          }
+        ]
+      },
+      "MuzzleFlash9": {
+        "value": "35,-5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7220,
+          "section": "CARUS02A",
+          "key": "MuzzleFlash9",
+          "value": "35,-5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5426,
+            "section": "CARUS02A",
+            "key": "MuzzleFlash9",
+            "value": "35,-5"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7221,
+          "section": "CARUS02A",
+          "key": "OccupyHeight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5427,
+            "section": "CARUS02A",
+            "key": "OccupyHeight",
+            "value": "6"
+          }
+        ]
+      }
+    }
+  }
+}

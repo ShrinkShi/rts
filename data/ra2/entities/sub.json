@@ -1,0 +1,2193 @@
+{
+  "id": "SUB",
+  "category": "vehicle",
+  "name_token": "Name:SUB",
+  "art_id": "SUB",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAYARD"
+  ],
+  "tech_level": 2,
+  "cost": 1000,
+  "strength": 600,
+  "armor": "heavy",
+  "speed": 4,
+  "sight": 4,
+  "locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+  "movement_zone": "Water",
+  "weapons": {
+    "Primary": {
+      "id": "SubTorpedo",
+      "projectile": "Torpedo",
+      "warhead": "APSplash",
+      "report": [
+        "SubAttack"
+      ],
+      "values": {
+        "Damage": 100,
+        "ROF": 120,
+        "Range": 7,
+        "Projectile": "Torpedo",
+        "Speed": 25,
+        "Report": "SubAttack",
+        "Warhead": "APSplash",
+        "DecloakToFire": false
+      },
+      "raw_values": {
+        "Damage": "100",
+        "ROF": "120",
+        "Range": "7",
+        "Projectile": "Torpedo",
+        "Speed": "25",
+        "Report": "SubAttack",
+        "Warhead": "APSplash",
+        "DecloakToFire": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22514,
+            "section": "SubTorpedo",
+            "key": "Damage",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16253,
+              "section": "SubTorpedo",
+              "key": "Damage",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22506,
+              "section": "SubTorpedo",
+              "key": "Damage",
+              "value": "100"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "120",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22515,
+            "section": "SubTorpedo",
+            "key": "ROF",
+            "value": "120"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16254,
+              "section": "SubTorpedo",
+              "key": "ROF",
+              "value": "120"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22507,
+              "section": "SubTorpedo",
+              "key": "ROF",
+              "value": "120"
+            }
+          ]
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22516,
+            "section": "SubTorpedo",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16255,
+              "section": "SubTorpedo",
+              "key": "Range",
+              "value": "7"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22508,
+              "section": "SubTorpedo",
+              "key": "Range",
+              "value": "7"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "Torpedo",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22517,
+            "section": "SubTorpedo",
+            "key": "Projectile",
+            "value": "Torpedo"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16256,
+              "section": "SubTorpedo",
+              "key": "Projectile",
+              "value": "Torpedo"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22509,
+              "section": "SubTorpedo",
+              "key": "Projectile",
+              "value": "Torpedo"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22518,
+            "section": "SubTorpedo",
+            "key": "Speed",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16257,
+              "section": "SubTorpedo",
+              "key": "Speed",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22510,
+              "section": "SubTorpedo",
+              "key": "Speed",
+              "value": "25"
+            }
+          ]
+        },
+        "Report": {
+          "value": "SubAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22519,
+            "section": "SubTorpedo",
+            "key": "Report",
+            "value": "SubAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16258,
+              "section": "SubTorpedo",
+              "key": "Report",
+              "value": "SubAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22511,
+              "section": "SubTorpedo",
+              "key": "Report",
+              "value": "SubAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "APSplash",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22520,
+            "section": "SubTorpedo",
+            "key": "Warhead",
+            "value": "APSplash"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16259,
+              "section": "SubTorpedo",
+              "key": "Warhead",
+              "value": "APSplash"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22512,
+              "section": "SubTorpedo",
+              "key": "Warhead",
+              "value": "APSplash"
+            }
+          ]
+        },
+        "DecloakToFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22521,
+            "section": "SubTorpedo",
+            "key": "DecloakToFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16260,
+              "section": "SubTorpedo",
+              "key": "DecloakToFire",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22513,
+              "section": "SubTorpedo",
+              "key": "DecloakToFire",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "SubTorpedoE",
+      "projectile": "Torpedo",
+      "warhead": "APSplash",
+      "report": [
+        "SubAttack"
+      ],
+      "values": {
+        "Damage": 100,
+        "ROF": 120,
+        "Range": 7,
+        "Projectile": "Torpedo",
+        "Speed": 18,
+        "Report": "SubAttack",
+        "Warhead": "APSplash",
+        "DecloakToFire": false,
+        "Burst": 2
+      },
+      "raw_values": {
+        "Damage": "100",
+        "ROF": "120",
+        "Range": "7",
+        "Projectile": "Torpedo",
+        "Speed": "18",
+        "Report": "SubAttack",
+        "Warhead": "APSplash",
+        "DecloakToFire": "no",
+        "Burst": "2"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25075,
+            "section": "SubTorpedoE",
+            "key": "Damage",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17966,
+              "section": "SubTorpedoE",
+              "key": "Damage",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25067,
+              "section": "SubTorpedoE",
+              "key": "Damage",
+              "value": "100"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "120",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25076,
+            "section": "SubTorpedoE",
+            "key": "ROF",
+            "value": "120"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17967,
+              "section": "SubTorpedoE",
+              "key": "ROF",
+              "value": "120"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25068,
+              "section": "SubTorpedoE",
+              "key": "ROF",
+              "value": "120"
+            }
+          ]
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25077,
+            "section": "SubTorpedoE",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17968,
+              "section": "SubTorpedoE",
+              "key": "Range",
+              "value": "7"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25069,
+              "section": "SubTorpedoE",
+              "key": "Range",
+              "value": "7"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "Torpedo",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25078,
+            "section": "SubTorpedoE",
+            "key": "Projectile",
+            "value": "Torpedo"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17969,
+              "section": "SubTorpedoE",
+              "key": "Projectile",
+              "value": "Torpedo"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25070,
+              "section": "SubTorpedoE",
+              "key": "Projectile",
+              "value": "Torpedo"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "18",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25079,
+            "section": "SubTorpedoE",
+            "key": "Speed",
+            "value": "18"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17970,
+              "section": "SubTorpedoE",
+              "key": "Speed",
+              "value": "18"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25071,
+              "section": "SubTorpedoE",
+              "key": "Speed",
+              "value": "18"
+            }
+          ]
+        },
+        "Report": {
+          "value": "SubAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25080,
+            "section": "SubTorpedoE",
+            "key": "Report",
+            "value": "SubAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17971,
+              "section": "SubTorpedoE",
+              "key": "Report",
+              "value": "SubAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25072,
+              "section": "SubTorpedoE",
+              "key": "Report",
+              "value": "SubAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "APSplash",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25081,
+            "section": "SubTorpedoE",
+            "key": "Warhead",
+            "value": "APSplash"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17972,
+              "section": "SubTorpedoE",
+              "key": "Warhead",
+              "value": "APSplash"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25073,
+              "section": "SubTorpedoE",
+              "key": "Warhead",
+              "value": "APSplash"
+            }
+          ]
+        },
+        "DecloakToFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25082,
+            "section": "SubTorpedoE",
+            "key": "DecloakToFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17973,
+              "section": "SubTorpedoE",
+              "key": "DecloakToFire",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25074,
+              "section": "SubTorpedoE",
+              "key": "DecloakToFire",
+              "value": "no"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25083,
+            "section": "SubTorpedoE",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17974,
+              "section": "SubTorpedoE",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25075,
+              "section": "SubTorpedoE",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "TyphoonSubSelect"
+    ],
+    "VoiceMove": [
+      "TyphoonSubMove"
+    ],
+    "VoiceAttack": [
+      "TyphoonSubAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "SubFear"
+    ],
+    "DieSound": [
+      "GenSmallWaterDie"
+    ],
+    "MoveSound": [
+      "SubMoveStart"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "SUB",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4359,
+      "pack": "ra2",
+      "relative_path": "local/sub.vxl",
+      "folder": "local",
+      "filename": "sub.vxl",
+      "stem": "sub",
+      "extension": ".vxl",
+      "size": 45546,
+      "sha1": "5d1924bac0c013f8f7972bc81c4c072443d38fe1"
+    },
+    "body_hva": {
+      "asset_id": 4358,
+      "pack": "ra2",
+      "relative_path": "local/sub.hva",
+      "folder": "local",
+      "filename": "sub.hva",
+      "stem": "sub",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "5474514a98e9e8a86ccfe6c506805e231b3ae90a"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      150.0,
+      0.0,
+      0.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:SUB",
+      "Name": "Typhoon Attack Sub",
+      "Prerequisite": "NAYARD",
+      "Primary": "SubTorpedo",
+      "NavalTargeting": 5,
+      "LandTargeting": 1,
+      "FireAngle": 64,
+      "Category": "AFV",
+      "Strength": 600,
+      "Naval": true,
+      "Armor": "heavy",
+      "TechLevel": 2,
+      "Underwater": true,
+      "Sight": 4,
+      "Sensors": true,
+      "SensorsSight": 7,
+      "Speed": 4,
+      "CrateGoodie": false,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 1000,
+      "Turret": false,
+      "Points": 30,
+      "ROT": 2,
+      "Crusher": false,
+      "Crewed": false,
+      "Weight": 4,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "TyphoonSubSelect",
+      "VoiceMove": "TyphoonSubMove",
+      "VoiceAttack": "TyphoonSubAttackCommand",
+      "VoiceFeedback": "SubFear",
+      "DieSound": "GenSmallWaterDie",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": 20,
+      "Accelerates": true,
+      "Cloakable": true,
+      "CloakingSpeed": 1,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "TooBigToFitUnderBridge": true,
+      "ElitePrimary": "SubTorpedoE",
+      "Size": 20,
+      "Soylent": 1000,
+      "MoveSound": "SubMoveStart"
+    },
+    "raw_values": {
+      "UIName": "Name:SUB",
+      "Name": "Typhoon Attack Sub",
+      "Prerequisite": "NAYARD",
+      "Primary": "SubTorpedo",
+      "NavalTargeting": "5",
+      "LandTargeting": "1",
+      "FireAngle": "64",
+      "Category": "AFV",
+      "Strength": "600",
+      "Naval": "yes",
+      "Armor": "heavy",
+      "TechLevel": "2",
+      "Underwater": "yes",
+      "Sight": "4",
+      "Sensors": "yes",
+      "SensorsSight": "7",
+      "Speed": "4",
+      "CrateGoodie": "no",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "1000",
+      "Turret": "no",
+      "Points": "30",
+      "ROT": "2",
+      "Crusher": "no",
+      "Crewed": "no",
+      "Weight": "4",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "TyphoonSubSelect",
+      "VoiceMove": "TyphoonSubMove",
+      "VoiceAttack": "TyphoonSubAttackCommand",
+      "VoiceFeedback": "SubFear",
+      "DieSound": "GenSmallWaterDie",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": "20",
+      "Accelerates": "true",
+      "Cloakable": "yes",
+      "CloakingSpeed": "1",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "TooBigToFitUnderBridge": "true",
+      "ElitePrimary": "SubTorpedoE",
+      "Size": "20",
+      "Soylent": "1000",
+      "MoveSound": "SubMoveStart"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:SUB",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8002,
+          "section": "SUB",
+          "key": "UIName",
+          "value": "Name:SUB"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5183,
+            "section": "SUB",
+            "key": "UIName",
+            "value": "Name:SUB"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7999,
+            "section": "SUB",
+            "key": "UIName",
+            "value": "Name:SUB"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Typhoon Attack Sub",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8003,
+          "section": "SUB",
+          "key": "Name",
+          "value": "Typhoon Attack Sub"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5184,
+            "section": "SUB",
+            "key": "Name",
+            "value": "Typhoon Attack Sub"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8000,
+            "section": "SUB",
+            "key": "Name",
+            "value": "Typhoon Attack Sub"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAYARD",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8004,
+          "section": "SUB",
+          "key": "Prerequisite",
+          "value": "NAYARD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5185,
+            "section": "SUB",
+            "key": "Prerequisite",
+            "value": "NAYARD"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8001,
+            "section": "SUB",
+            "key": "Prerequisite",
+            "value": "NAYARD"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "SubTorpedo",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8005,
+          "section": "SUB",
+          "key": "Primary",
+          "value": "SubTorpedo"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5186,
+            "section": "SUB",
+            "key": "Primary",
+            "value": "SubTorpedo"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8002,
+            "section": "SUB",
+            "key": "Primary",
+            "value": "SubTorpedo"
+          }
+        ]
+      },
+      "NavalTargeting": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8006,
+          "section": "SUB",
+          "key": "NavalTargeting",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5187,
+            "section": "SUB",
+            "key": "NavalTargeting",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8003,
+            "section": "SUB",
+            "key": "NavalTargeting",
+            "value": "5"
+          }
+        ]
+      },
+      "LandTargeting": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8007,
+          "section": "SUB",
+          "key": "LandTargeting",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5188,
+            "section": "SUB",
+            "key": "LandTargeting",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8004,
+            "section": "SUB",
+            "key": "LandTargeting",
+            "value": "1"
+          }
+        ]
+      },
+      "FireAngle": {
+        "value": "64",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8008,
+          "section": "SUB",
+          "key": "FireAngle",
+          "value": "64"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5189,
+            "section": "SUB",
+            "key": "FireAngle",
+            "value": "64"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8005,
+            "section": "SUB",
+            "key": "FireAngle",
+            "value": "64"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8009,
+          "section": "SUB",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5190,
+            "section": "SUB",
+            "key": "Category",
+            "value": "AFV"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8006,
+            "section": "SUB",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8010,
+          "section": "SUB",
+          "key": "Strength",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5191,
+            "section": "SUB",
+            "key": "Strength",
+            "value": "600"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8007,
+            "section": "SUB",
+            "key": "Strength",
+            "value": "600"
+          }
+        ]
+      },
+      "Naval": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8011,
+          "section": "SUB",
+          "key": "Naval",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5192,
+            "section": "SUB",
+            "key": "Naval",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8008,
+            "section": "SUB",
+            "key": "Naval",
+            "value": "yes"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8012,
+          "section": "SUB",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5193,
+            "section": "SUB",
+            "key": "Armor",
+            "value": "heavy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8009,
+            "section": "SUB",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8013,
+          "section": "SUB",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5194,
+            "section": "SUB",
+            "key": "TechLevel",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8010,
+            "section": "SUB",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Underwater": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8014,
+          "section": "SUB",
+          "key": "Underwater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5195,
+            "section": "SUB",
+            "key": "Underwater",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8011,
+            "section": "SUB",
+            "key": "Underwater",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8015,
+          "section": "SUB",
+          "key": "Sight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5196,
+            "section": "SUB",
+            "key": "Sight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8012,
+            "section": "SUB",
+            "key": "Sight",
+            "value": "4"
+          }
+        ]
+      },
+      "Sensors": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8016,
+          "section": "SUB",
+          "key": "Sensors",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5197,
+            "section": "SUB",
+            "key": "Sensors",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8013,
+            "section": "SUB",
+            "key": "Sensors",
+            "value": "yes"
+          }
+        ]
+      },
+      "SensorsSight": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8017,
+          "section": "SUB",
+          "key": "SensorsSight",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5198,
+            "section": "SUB",
+            "key": "SensorsSight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8014,
+            "section": "SUB",
+            "key": "SensorsSight",
+            "value": "7"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8018,
+          "section": "SUB",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5199,
+            "section": "SUB",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8015,
+            "section": "SUB",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8019,
+          "section": "SUB",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5200,
+            "section": "SUB",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8016,
+            "section": "SUB",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8020,
+          "section": "SUB",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5201,
+            "section": "SUB",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8017,
+            "section": "SUB",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8021,
+          "section": "SUB",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5202,
+            "section": "SUB",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8018,
+            "section": "SUB",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8022,
+          "section": "SUB",
+          "key": "Cost",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5203,
+            "section": "SUB",
+            "key": "Cost",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8019,
+            "section": "SUB",
+            "key": "Cost",
+            "value": "1000"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8024,
+          "section": "SUB",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5204,
+            "section": "SUB",
+            "key": "Turret",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8021,
+            "section": "SUB",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8025,
+          "section": "SUB",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5205,
+            "section": "SUB",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8022,
+            "section": "SUB",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8026,
+          "section": "SUB",
+          "key": "ROT",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5206,
+            "section": "SUB",
+            "key": "ROT",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8023,
+            "section": "SUB",
+            "key": "ROT",
+            "value": "2"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8027,
+          "section": "SUB",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5207,
+            "section": "SUB",
+            "key": "Crusher",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8024,
+            "section": "SUB",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8028,
+          "section": "SUB",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5208,
+            "section": "SUB",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8025,
+            "section": "SUB",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8029,
+          "section": "SUB",
+          "key": "Weight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5209,
+            "section": "SUB",
+            "key": "Weight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8026,
+            "section": "SUB",
+            "key": "Weight",
+            "value": "4"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8030,
+          "section": "SUB",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5210,
+            "section": "SUB",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8027,
+            "section": "SUB",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "TyphoonSubSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8031,
+          "section": "SUB",
+          "key": "VoiceSelect",
+          "value": "TyphoonSubSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5211,
+            "section": "SUB",
+            "key": "VoiceSelect",
+            "value": "GenSovWaterSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8028,
+            "section": "SUB",
+            "key": "VoiceSelect",
+            "value": "TyphoonSubSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "TyphoonSubMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8032,
+          "section": "SUB",
+          "key": "VoiceMove",
+          "value": "TyphoonSubMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5212,
+            "section": "SUB",
+            "key": "VoiceMove",
+            "value": "SubMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8029,
+            "section": "SUB",
+            "key": "VoiceMove",
+            "value": "TyphoonSubMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "TyphoonSubAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8033,
+          "section": "SUB",
+          "key": "VoiceAttack",
+          "value": "TyphoonSubAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5213,
+            "section": "SUB",
+            "key": "VoiceAttack",
+            "value": "GenSovWaterAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8030,
+            "section": "SUB",
+            "key": "VoiceAttack",
+            "value": "TyphoonSubAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "SubFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8034,
+          "section": "SUB",
+          "key": "VoiceFeedback",
+          "value": "SubFear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5214,
+            "section": "SUB",
+            "key": "VoiceFeedback",
+            "value": "SubFear"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8031,
+            "section": "SUB",
+            "key": "VoiceFeedback",
+            "value": "SubFear"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenSmallWaterDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8035,
+          "section": "SUB",
+          "key": "DieSound",
+          "value": "GenSmallWaterDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5215,
+            "section": "SUB",
+            "key": "DieSound",
+            "value": "GenSmallWaterDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8032,
+            "section": "SUB",
+            "key": "DieSound",
+            "value": "GenSmallWaterDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8037,
+          "section": "SUB",
+          "key": "Locomotor",
+          "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5216,
+            "section": "SUB",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8034,
+            "section": "SUB",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Float",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8038,
+          "section": "SUB",
+          "key": "SpeedType",
+          "value": "Float"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5217,
+            "section": "SUB",
+            "key": "SpeedType",
+            "value": "Float"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8035,
+            "section": "SUB",
+            "key": "SpeedType",
+            "value": "Float"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Water",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8039,
+          "section": "SUB",
+          "key": "MovementZone",
+          "value": "Water"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5218,
+            "section": "SUB",
+            "key": "MovementZone",
+            "value": "Water"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8036,
+            "section": "SUB",
+            "key": "MovementZone",
+            "value": "Water"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8040,
+          "section": "SUB",
+          "key": "ThreatPosed",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5219,
+            "section": "SUB",
+            "key": "ThreatPosed",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8037,
+            "section": "SUB",
+            "key": "ThreatPosed",
+            "value": "20"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8041,
+          "section": "SUB",
+          "key": "Accelerates",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5220,
+            "section": "SUB",
+            "key": "Accelerates",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8038,
+            "section": "SUB",
+            "key": "Accelerates",
+            "value": "true"
+          }
+        ]
+      },
+      "Cloakable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8042,
+          "section": "SUB",
+          "key": "Cloakable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5221,
+            "section": "SUB",
+            "key": "Cloakable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8039,
+            "section": "SUB",
+            "key": "Cloakable",
+            "value": "yes"
+          }
+        ]
+      },
+      "CloakingSpeed": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8043,
+          "section": "SUB",
+          "key": "CloakingSpeed",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5222,
+            "section": "SUB",
+            "key": "CloakingSpeed",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8040,
+            "section": "SUB",
+            "key": "CloakingSpeed",
+            "value": "1"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8044,
+          "section": "SUB",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5223,
+            "section": "SUB",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8041,
+            "section": "SUB",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8045,
+          "section": "SUB",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5224,
+            "section": "SUB",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8042,
+            "section": "SUB",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8046,
+          "section": "SUB",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5225,
+            "section": "SUB",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8043,
+            "section": "SUB",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "SubTorpedoE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8047,
+          "section": "SUB",
+          "key": "ElitePrimary",
+          "value": "SubTorpedoE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5226,
+            "section": "SUB",
+            "key": "ElitePrimary",
+            "value": "SubTorpedoE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8044,
+            "section": "SUB",
+            "key": "ElitePrimary",
+            "value": "SubTorpedoE"
+          }
+        ]
+      },
+      "Size": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8048,
+          "section": "SUB",
+          "key": "Size",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5227,
+            "section": "SUB",
+            "key": "Size",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8045,
+            "section": "SUB",
+            "key": "Size",
+            "value": "20"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8023,
+          "section": "SUB",
+          "key": "Soylent",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8020,
+            "section": "SUB",
+            "key": "Soylent",
+            "value": "1000"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "SubMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8036,
+          "section": "SUB",
+          "key": "MoveSound",
+          "value": "SubMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8033,
+            "section": "SUB",
+            "key": "MoveSound",
+            "value": "SubMoveStart"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "SubICON",
+      "Voxel": true,
+      "Remapable": true,
+      "PrimaryFireFLH": "150,0,0"
+    },
+    "raw_values": {
+      "Cameo": "SubICON",
+      "Voxel": "yes",
+      "Remapable": "yes",
+      "PrimaryFireFLH": "150,0,0"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "SubICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 661,
+          "section": "SUB",
+          "key": "Cameo",
+          "value": "SubICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 474,
+            "section": "SUB",
+            "key": "Cameo",
+            "value": "SubICON"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 662,
+          "section": "SUB",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 475,
+            "section": "SUB",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 663,
+          "section": "SUB",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 476,
+            "section": "SUB",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "150,0,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 664,
+          "section": "SUB",
+          "key": "PrimaryFireFLH",
+          "value": "150,0,0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 477,
+            "section": "SUB",
+            "key": "PrimaryFireFLH",
+            "value": "150,0,0"
+          }
+        ]
+      }
+    }
+  }
+}

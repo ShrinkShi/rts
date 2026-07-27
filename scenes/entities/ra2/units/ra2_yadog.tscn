@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/unit.gd" id="1_script"]
+[ext_resource type="SpriteFrames" path="res://assets/ra2_full/yadog/sprite_frames.tres" id="2_body"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_collision"]
+radius = 9.6000
+
+[node name="ra2_yadog" type="CharacterBody2D"]
+script = ExtResource("1_script")
+preset_unit_id = "ra2_yadog"
+auto_fit_ra2_visual = false
+use_prefab_collision_shape = true
+editor_description = "RA2/YR 可视化单位预制场景。直接调整 VisualRoot、Body、Turret、碰撞体和挂点。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_collision")
+
+[node name="VisualRoot" type="Node2D" parent="."]
+position = Vector2(0, -10)
+scale = Vector2(0.820000, 0.820000)
+
+[node name="Body" type="AnimatedSprite2D" parent="VisualRoot"]
+sprite_frames = ExtResource("2_body")
+animation = &"stand_0"
+centered = true
+texture_filter = 1
+show_behind_parent = true
+
+[node name="Turret" type="AnimatedSprite2D" parent="VisualRoot"]
+visible = false
+centered = true
+texture_filter = 1
+z_index = 2
+
+[node name="DamageSmokeAnchor" type="Marker2D" parent="."]
+position = Vector2(0, -26)
+
+[node name="SelectionAnchor" type="Marker2D" parent="."]
+position = Vector2(0, 10)
+
+[node name="CargoBarAnchor" type="Marker2D" parent="."]
+position = Vector2(0, 22)

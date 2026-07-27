@@ -1,0 +1,91 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="SpriteFrames" path="res://assets/ra2_imported/ggi/sprite_frames.tres" id="1_ggi"]
+[ext_resource type="SpriteFrames" path="res://assets/ra2_imported/htk/body_frames.tres" id="2_body"]
+[ext_resource type="SpriteFrames" path="res://assets/ra2_imported/htk/turret_frames.tres" id="3_turret"]
+[ext_resource type="Texture2D" path="res://assets/ra2_imported/ygpowr/atlas.png" id="4_power"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_power"]
+atlas = ExtResource("4_power")
+region = Rect2(0, 0, 174, 142)
+filter_clip = true
+
+[node name="RA2AssetGallery" type="Node2D"]
+editor_description = "RA2/YR 导入结果预览。可在 2D 编辑器直接观察 SHP 与 VXL/HVA 转换后的 Godot 资源。"
+
+[node name="Background" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-420, -210, 420, -210, 420, 210, -420, 210)
+color = Color(0.08, 0.105, 0.09, 1)
+
+[node name="Title" type="Label" parent="."]
+offset_left = -385.0
+offset_top = -190.0
+offset_right = 385.0
+offset_bottom = -155.0
+text = "RA2 / 尤里的复仇素材导入预览"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 22
+
+[node name="GI" type="AnimatedSprite2D" parent="."]
+position = Vector2(-255, 35)
+scale = Vector2(1.8, 1.8)
+sprite_frames = ExtResource("1_ggi")
+animation = &"move_0"
+autoplay = "move_0"
+texture_filter = 1
+
+[node name="GILabel" type="Label" parent="."]
+offset_left = -330.0
+offset_top = 125.0
+offset_right = -180.0
+offset_bottom = 155.0
+text = "GGI.SHP → SpriteFrames"
+horizontal_alignment = 1
+
+[node name="HTKBody" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 35)
+scale = Vector2(1.35, 1.35)
+sprite_frames = ExtResource("2_body")
+animation = &"stand_0"
+autoplay = "stand_0"
+texture_filter = 1
+
+[node name="HTKTurret" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 35)
+scale = Vector2(1.35, 1.35)
+sprite_frames = ExtResource("3_turret")
+animation = &"stand_0"
+autoplay = "stand_0"
+texture_filter = 1
+z_index = 2
+
+[node name="HTKLabel" type="Label" parent="."]
+offset_left = -100.0
+offset_top = 125.0
+offset_right = 100.0
+offset_bottom = 155.0
+text = "HTK.VXL + HVA → 8 方向"
+horizontal_alignment = 1
+
+[node name="Power" type="Sprite2D" parent="."]
+position = Vector2(265, 25)
+scale = Vector2(0.9, 0.9)
+texture = SubResource("AtlasTexture_power")
+texture_filter = 1
+
+[node name="PowerLabel" type="Label" parent="."]
+offset_left = 170.0
+offset_top = 125.0
+offset_right = 360.0
+offset_bottom = 155.0
+text = "YGPOWR.SHP → 建筑帧"
+horizontal_alignment = 1
+
+[node name="Hint" type="Label" parent="."]
+offset_left = -385.0
+offset_top = 165.0
+offset_right = 385.0
+offset_bottom = 195.0
+text = "此场景仅预览转换结果；在实体 Prefab 中可继续可视化调整位置、缩放与碰撞体。"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.7, 0.75, 0.7, 1)

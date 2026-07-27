@@ -1,0 +1,1974 @@
+{
+  "id": "TELE",
+  "category": "vehicle",
+  "name_token": "Name:Magnetron",
+  "art_id": "TELE",
+  "owners": [
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YAWEAP",
+    "NAPSIS"
+  ],
+  "tech_level": 2,
+  "cost": 1000,
+  "strength": 150,
+  "armor": "light",
+  "speed": 5,
+  "sight": 10,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Destroyer",
+  "weapons": {
+    "Primary": {
+      "id": "MagneticBeam",
+      "projectile": "InvisibleHigh",
+      "warhead": "LocomotorBeam",
+      "report": [
+        "MagnetronAttack"
+      ],
+      "values": {
+        "Damage": 5000,
+        "ROF": 20,
+        "Range": 12,
+        "MinimumRange": 3,
+        "Speed": 100,
+        "Projectile": "InvisibleHigh",
+        "Warhead": "LocomotorBeam",
+        "Report": "MagnetronAttack",
+        "IsMagBeam": true
+      },
+      "raw_values": {
+        "Damage": "5000",
+        "ROF": "20",
+        "Range": "12",
+        "MinimumRange": "3",
+        "Speed": "100",
+        "Projectile": "InvisibleHigh",
+        "Warhead": "LocomotorBeam",
+        "Report": "MagnetronAttack",
+        "IsMagBeam": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "5000",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24334,
+            "section": "MagneticBeam",
+            "key": "Damage",
+            "value": "5000"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24326,
+              "section": "MagneticBeam",
+              "key": "Damage",
+              "value": "5000"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24335,
+            "section": "MagneticBeam",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24327,
+              "section": "MagneticBeam",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "12",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24336,
+            "section": "MagneticBeam",
+            "key": "Range",
+            "value": "12"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24328,
+              "section": "MagneticBeam",
+              "key": "Range",
+              "value": "12"
+            }
+          ]
+        },
+        "MinimumRange": {
+          "value": "3",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24337,
+            "section": "MagneticBeam",
+            "key": "MinimumRange",
+            "value": "3"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24329,
+              "section": "MagneticBeam",
+              "key": "MinimumRange",
+              "value": "3"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24338,
+            "section": "MagneticBeam",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24330,
+              "section": "MagneticBeam",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleHigh",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24339,
+            "section": "MagneticBeam",
+            "key": "Projectile",
+            "value": "InvisibleHigh"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24331,
+              "section": "MagneticBeam",
+              "key": "Projectile",
+              "value": "InvisibleHigh"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "LocomotorBeam",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24340,
+            "section": "MagneticBeam",
+            "key": "Warhead",
+            "value": "LocomotorBeam"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24332,
+              "section": "MagneticBeam",
+              "key": "Warhead",
+              "value": "LocomotorBeam"
+            }
+          ]
+        },
+        "Report": {
+          "value": "MagnetronAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24341,
+            "section": "MagneticBeam",
+            "key": "Report",
+            "value": "MagnetronAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24333,
+              "section": "MagneticBeam",
+              "key": "Report",
+              "value": "MagnetronAttack"
+            }
+          ]
+        },
+        "IsMagBeam": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24343,
+            "section": "MagneticBeam",
+            "key": "IsMagBeam",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24335,
+              "section": "MagneticBeam",
+              "key": "IsMagBeam",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "MagneShake",
+      "projectile": "InvisibleHigh",
+      "warhead": "MagneShakeWH",
+      "report": [
+        "MagnetronMagneShake"
+      ],
+      "values": {
+        "Damage": 80,
+        "ROF": 110,
+        "Range": 10,
+        "Projectile": "InvisibleHigh",
+        "Spread": 2,
+        "Speed": 40,
+        "Report": "MagnetronMagneShake",
+        "Warhead": "MagneShakeWH",
+        "IsMagBeam": true
+      },
+      "raw_values": {
+        "Damage": "80",
+        "ROF": "110",
+        "Range": "10",
+        "Projectile": "InvisibleHigh",
+        "Spread": "2",
+        "Speed": "40",
+        "Report": "MagnetronMagneShake",
+        "Warhead": "MagneShakeWH",
+        "IsMagBeam": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "80",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24347,
+            "section": "MagneShake",
+            "key": "Damage",
+            "value": "80"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24339,
+              "section": "MagneShake",
+              "key": "Damage",
+              "value": "80"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "110",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24348,
+            "section": "MagneShake",
+            "key": "ROF",
+            "value": "110"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24340,
+              "section": "MagneShake",
+              "key": "ROF",
+              "value": "110"
+            }
+          ]
+        },
+        "Range": {
+          "value": "10",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24349,
+            "section": "MagneShake",
+            "key": "Range",
+            "value": "10"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24341,
+              "section": "MagneShake",
+              "key": "Range",
+              "value": "10"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleHigh",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24350,
+            "section": "MagneShake",
+            "key": "Projectile",
+            "value": "InvisibleHigh"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24342,
+              "section": "MagneShake",
+              "key": "Projectile",
+              "value": "InvisibleHigh"
+            }
+          ]
+        },
+        "Spread": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24351,
+            "section": "MagneShake",
+            "key": "Spread",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24343,
+              "section": "MagneShake",
+              "key": "Spread",
+              "value": "2"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "40",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24352,
+            "section": "MagneShake",
+            "key": "Speed",
+            "value": "40"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24344,
+              "section": "MagneShake",
+              "key": "Speed",
+              "value": "40"
+            }
+          ]
+        },
+        "Report": {
+          "value": "MagnetronMagneShake",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24353,
+            "section": "MagneShake",
+            "key": "Report",
+            "value": "MagnetronMagneShake"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24345,
+              "section": "MagneShake",
+              "key": "Report",
+              "value": "MagnetronMagneShake"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "MagneShakeWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24354,
+            "section": "MagneShake",
+            "key": "Warhead",
+            "value": "MagneShakeWH"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24346,
+              "section": "MagneShake",
+              "key": "Warhead",
+              "value": "MagneShakeWH"
+            }
+          ]
+        },
+        "IsMagBeam": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24361,
+            "section": "MagneShake",
+            "key": "IsMagBeam",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24353,
+              "section": "MagneShake",
+              "key": "IsMagBeam",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "MagneticBeamE",
+      "projectile": "InvisibleHigh",
+      "warhead": "LocomotorBeam",
+      "report": [
+        "MagnetronAttack"
+      ],
+      "values": {
+        "Damage": 10000,
+        "ROF": 20,
+        "Range": 12,
+        "MinimumRange": 3,
+        "Speed": 100,
+        "Projectile": "InvisibleHigh",
+        "Warhead": "LocomotorBeam",
+        "Report": "MagnetronAttack",
+        "IsMagBeam": true
+      },
+      "raw_values": {
+        "Damage": "10000",
+        "ROF": "20",
+        "Range": "12",
+        "MinimumRange": "3",
+        "Speed": "100",
+        "Projectile": "InvisibleHigh",
+        "Warhead": "LocomotorBeam",
+        "Report": "MagnetronAttack",
+        "IsMagBeam": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "10000",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24991,
+            "section": "MagneticBeamE",
+            "key": "Damage",
+            "value": "10000"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24983,
+              "section": "MagneticBeamE",
+              "key": "Damage",
+              "value": "10000"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24992,
+            "section": "MagneticBeamE",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24984,
+              "section": "MagneticBeamE",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "12",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24993,
+            "section": "MagneticBeamE",
+            "key": "Range",
+            "value": "12"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24985,
+              "section": "MagneticBeamE",
+              "key": "Range",
+              "value": "10"
+            }
+          ]
+        },
+        "MinimumRange": {
+          "value": "3",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24994,
+            "section": "MagneticBeamE",
+            "key": "MinimumRange",
+            "value": "3"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24986,
+              "section": "MagneticBeamE",
+              "key": "MinimumRange",
+              "value": "3"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24995,
+            "section": "MagneticBeamE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24987,
+              "section": "MagneticBeamE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleHigh",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24996,
+            "section": "MagneticBeamE",
+            "key": "Projectile",
+            "value": "InvisibleHigh"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24988,
+              "section": "MagneticBeamE",
+              "key": "Projectile",
+              "value": "InvisibleHigh"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "LocomotorBeam",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24997,
+            "section": "MagneticBeamE",
+            "key": "Warhead",
+            "value": "LocomotorBeam"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24989,
+              "section": "MagneticBeamE",
+              "key": "Warhead",
+              "value": "LocomotorBeam"
+            }
+          ]
+        },
+        "Report": {
+          "value": "MagnetronAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24998,
+            "section": "MagneticBeamE",
+            "key": "Report",
+            "value": "MagnetronAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24990,
+              "section": "MagneticBeamE",
+              "key": "Report",
+              "value": "MagnetronAttack"
+            }
+          ]
+        },
+        "IsMagBeam": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24999,
+            "section": "MagneticBeamE",
+            "key": "IsMagBeam",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24991,
+              "section": "MagneticBeamE",
+              "key": "IsMagBeam",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "MagnetronSelect"
+    ],
+    "VoiceMove": [
+      "MagnetronMove"
+    ],
+    "VoiceAttack": [
+      "MagnetronAttackCommand"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ],
+    "MoveSound": [
+      "MagnetronMoveStart"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "TELE",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 10839,
+      "pack": "ra2md",
+      "relative_path": "localmd/tele.vxl",
+      "folder": "localmd",
+      "filename": "tele.vxl",
+      "stem": "tele",
+      "extension": ".vxl",
+      "size": 44045,
+      "sha1": "56825667a19342465be5da1a8f76ecdb666da3bd"
+    },
+    "body_hva": {
+      "asset_id": 10838,
+      "pack": "ra2md",
+      "relative_path": "localmd/tele.hva",
+      "folder": "localmd",
+      "filename": "tele.hva",
+      "stem": "tele",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "16f447b46e02485f6bdb0feb7b185556546248ae"
+    },
+    "turret": {
+      "asset_id": 10841,
+      "pack": "ra2md",
+      "relative_path": "localmd/teletur.vxl",
+      "folder": "localmd",
+      "filename": "teletur.vxl",
+      "stem": "teletur",
+      "extension": ".vxl",
+      "size": 14665,
+      "sha1": "4cea5e6aebd3e7d8bb5a28ac417e1d1ae33485aa"
+    },
+    "turret_hva": {
+      "asset_id": 10840,
+      "pack": "ra2md",
+      "relative_path": "localmd/teletur.hva",
+      "folder": "localmd",
+      "filename": "teletur.hva",
+      "stem": "teletur",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "4891660a04e85b2aeedc56b21616dbf4dcf8390e"
+    },
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": -100,
+    "primary_fire_flh": [
+      85.0,
+      0.0,
+      130.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:Magnetron",
+      "Name": "Magnetron",
+      "Prerequisite": "YAWEAP,NAPSIS",
+      "Primary": "MagneticBeam",
+      "Secondary": "MagneShake",
+      "Strength": 150,
+      "Category": "AFV",
+      "Armor": "light",
+      "Turret": true,
+      "IsTilter": true,
+      "TooBigToFitUnderBridge": true,
+      "TechLevel": 2,
+      "Sight": 10,
+      "Speed": 5,
+      "CrateGoodie": false,
+      "Crusher": false,
+      "Owner": "YuriCountry",
+      "Cost": 1000,
+      "Soylent": 1000,
+      "Points": 25,
+      "ROT": 5,
+      "AllowedToStartInMultiplayer": false,
+      "IsSelectableCombatant": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "MagnetronSelect",
+      "VoiceMove": "MagnetronMove",
+      "VoiceAttack": "MagnetronAttackCommand",
+      "VoiceSecondaryWeaponAttack": "MagnetronMagneShakeVoice",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "MagnetronMoveStart",
+      "CrushSound": "TankCrush",
+      "Maxdebris": 3,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Destroyer",
+      "ThreatPosed": 40,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "DamageSmokeOffset": "100, 100, 275",
+      "Weight": 3.5,
+      "VeteranAbilities": "STRONGER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,ROF",
+      "Accelerates": false,
+      "ZFudgeColumn": 8,
+      "ZFudgeTunnel": 13,
+      "Size": 6,
+      "OpportunityFire": true,
+      "ElitePrimary": "MagneticBeamE",
+      "Bunkerable": false,
+      "CanPassiveAquire": false
+    },
+    "raw_values": {
+      "UIName": "Name:Magnetron",
+      "Name": "Magnetron",
+      "Prerequisite": "YAWEAP,NAPSIS",
+      "Primary": "MagneticBeam",
+      "Secondary": "MagneShake",
+      "Strength": "150",
+      "Category": "AFV",
+      "Armor": "light",
+      "Turret": "yes",
+      "IsTilter": "yes",
+      "TooBigToFitUnderBridge": "true",
+      "TechLevel": "2",
+      "Sight": "10",
+      "Speed": "5",
+      "CrateGoodie": "no",
+      "Crusher": "no",
+      "Owner": "YuriCountry",
+      "Cost": "1000",
+      "Soylent": "1000",
+      "Points": "25",
+      "ROT": "5",
+      "AllowedToStartInMultiplayer": "no",
+      "IsSelectableCombatant": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "MagnetronSelect",
+      "VoiceMove": "MagnetronMove",
+      "VoiceAttack": "MagnetronAttackCommand",
+      "VoiceSecondaryWeaponAttack": "MagnetronMagneShakeVoice",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "MagnetronMoveStart",
+      "CrushSound": "TankCrush",
+      "Maxdebris": "3",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Destroyer",
+      "ThreatPosed": "40",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "DamageSmokeOffset": "100, 100, 275",
+      "Weight": "3.5",
+      "VeteranAbilities": "STRONGER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,ROF",
+      "Accelerates": "false",
+      "ZFudgeColumn": "8",
+      "ZFudgeTunnel": "13",
+      "Size": "6",
+      "OpportunityFire": "yes",
+      "ElitePrimary": "MagneticBeamE",
+      "Bunkerable": "no",
+      "CanPassiveAquire": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:Magnetron",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8587,
+          "section": "TELE",
+          "key": "UIName",
+          "value": "Name:Magnetron"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8584,
+            "section": "TELE",
+            "key": "UIName",
+            "value": "Name:Magnetron"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Magnetron",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8588,
+          "section": "TELE",
+          "key": "Name",
+          "value": "Magnetron"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8585,
+            "section": "TELE",
+            "key": "Name",
+            "value": "Magnetron"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YAWEAP,NAPSIS",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8590,
+          "section": "TELE",
+          "key": "Prerequisite",
+          "value": "YAWEAP,NAPSIS"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8587,
+            "section": "TELE",
+            "key": "Prerequisite",
+            "value": "YAWEAP,NAPSIS"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "MagneticBeam",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8591,
+          "section": "TELE",
+          "key": "Primary",
+          "value": "MagneticBeam"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8588,
+            "section": "TELE",
+            "key": "Primary",
+            "value": "MagneticBeam"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "MagneShake",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8592,
+          "section": "TELE",
+          "key": "Secondary",
+          "value": "MagneShake"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8589,
+            "section": "TELE",
+            "key": "Secondary",
+            "value": "MagneShake"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "150",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8593,
+          "section": "TELE",
+          "key": "Strength",
+          "value": "150"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8590,
+            "section": "TELE",
+            "key": "Strength",
+            "value": "150"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8594,
+          "section": "TELE",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8591,
+            "section": "TELE",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8595,
+          "section": "TELE",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8592,
+            "section": "TELE",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8596,
+          "section": "TELE",
+          "key": "Turret",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8593,
+            "section": "TELE",
+            "key": "Turret",
+            "value": "yes"
+          }
+        ]
+      },
+      "IsTilter": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8597,
+          "section": "TELE",
+          "key": "IsTilter",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8594,
+            "section": "TELE",
+            "key": "IsTilter",
+            "value": "yes"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8599,
+          "section": "TELE",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8596,
+            "section": "TELE",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8600,
+          "section": "TELE",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8597,
+            "section": "TELE",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8601,
+          "section": "TELE",
+          "key": "Sight",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8598,
+            "section": "TELE",
+            "key": "Sight",
+            "value": "10"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8602,
+          "section": "TELE",
+          "key": "Speed",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8599,
+            "section": "TELE",
+            "key": "Speed",
+            "value": "5"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8603,
+          "section": "TELE",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8600,
+            "section": "TELE",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8604,
+          "section": "TELE",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8601,
+            "section": "TELE",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8605,
+          "section": "TELE",
+          "key": "Owner",
+          "value": "YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8602,
+            "section": "TELE",
+            "key": "Owner",
+            "value": "YuriCountry"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8606,
+          "section": "TELE",
+          "key": "Cost",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8603,
+            "section": "TELE",
+            "key": "Cost",
+            "value": "1000"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8607,
+          "section": "TELE",
+          "key": "Soylent",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8604,
+            "section": "TELE",
+            "key": "Soylent",
+            "value": "1000"
+          }
+        ]
+      },
+      "Points": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8608,
+          "section": "TELE",
+          "key": "Points",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8605,
+            "section": "TELE",
+            "key": "Points",
+            "value": "25"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8609,
+          "section": "TELE",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8606,
+            "section": "TELE",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8610,
+          "section": "TELE",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8607,
+            "section": "TELE",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8611,
+          "section": "TELE",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8608,
+            "section": "TELE",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8612,
+          "section": "TELE",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8609,
+            "section": "TELE",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "MagnetronSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8613,
+          "section": "TELE",
+          "key": "VoiceSelect",
+          "value": "MagnetronSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8610,
+            "section": "TELE",
+            "key": "VoiceSelect",
+            "value": "MagnetronSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "MagnetronMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8614,
+          "section": "TELE",
+          "key": "VoiceMove",
+          "value": "MagnetronMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8611,
+            "section": "TELE",
+            "key": "VoiceMove",
+            "value": "MagnetronMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "MagnetronAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8615,
+          "section": "TELE",
+          "key": "VoiceAttack",
+          "value": "MagnetronAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8612,
+            "section": "TELE",
+            "key": "VoiceAttack",
+            "value": "MagnetronAttackCommand"
+          }
+        ]
+      },
+      "VoiceSecondaryWeaponAttack": {
+        "value": "MagnetronMagneShakeVoice",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8616,
+          "section": "TELE",
+          "key": "VoiceSecondaryWeaponAttack",
+          "value": "MagnetronMagneShakeVoice"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8613,
+            "section": "TELE",
+            "key": "VoiceSecondaryWeaponAttack",
+            "value": "MagnetronMagneShakeVoice"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8617,
+          "section": "TELE",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8614,
+            "section": "TELE",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "MagnetronMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8618,
+          "section": "TELE",
+          "key": "MoveSound",
+          "value": "MagnetronMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8615,
+            "section": "TELE",
+            "key": "MoveSound",
+            "value": "MagnetronMoveStart"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8619,
+          "section": "TELE",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8616,
+            "section": "TELE",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      },
+      "Maxdebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8620,
+          "section": "TELE",
+          "key": "Maxdebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8617,
+            "section": "TELE",
+            "key": "Maxdebris",
+            "value": "3"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8621,
+          "section": "TELE",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8618,
+            "section": "TELE",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Destroyer",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8622,
+          "section": "TELE",
+          "key": "MovementZone",
+          "value": "Destroyer"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8619,
+            "section": "TELE",
+            "key": "MovementZone",
+            "value": "Destroyer"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "40",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8623,
+          "section": "TELE",
+          "key": "ThreatPosed",
+          "value": "40"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8620,
+            "section": "TELE",
+            "key": "ThreatPosed",
+            "value": "40"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8624,
+          "section": "TELE",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8621,
+            "section": "TELE",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "100, 100, 275",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8625,
+          "section": "TELE",
+          "key": "DamageSmokeOffset",
+          "value": "100, 100, 275"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8622,
+            "section": "TELE",
+            "key": "DamageSmokeOffset",
+            "value": "100, 100, 275"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "3.5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8626,
+          "section": "TELE",
+          "key": "Weight",
+          "value": "3.5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8623,
+            "section": "TELE",
+            "key": "Weight",
+            "value": "3.5"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8627,
+          "section": "TELE",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8624,
+            "section": "TELE",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8628,
+          "section": "TELE",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8625,
+            "section": "TELE",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,ROF"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8629,
+          "section": "TELE",
+          "key": "Accelerates",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8626,
+            "section": "TELE",
+            "key": "Accelerates",
+            "value": "false"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8630,
+          "section": "TELE",
+          "key": "ZFudgeColumn",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8627,
+            "section": "TELE",
+            "key": "ZFudgeColumn",
+            "value": "8"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8631,
+          "section": "TELE",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8628,
+            "section": "TELE",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "Size": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8632,
+          "section": "TELE",
+          "key": "Size",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8629,
+            "section": "TELE",
+            "key": "Size",
+            "value": "6"
+          }
+        ]
+      },
+      "OpportunityFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8633,
+          "section": "TELE",
+          "key": "OpportunityFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8630,
+            "section": "TELE",
+            "key": "OpportunityFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "MagneticBeamE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8634,
+          "section": "TELE",
+          "key": "ElitePrimary",
+          "value": "MagneticBeamE"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8631,
+            "section": "TELE",
+            "key": "ElitePrimary",
+            "value": "MagneticBeamE"
+          }
+        ]
+      },
+      "Bunkerable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8635,
+          "section": "TELE",
+          "key": "Bunkerable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8632,
+            "section": "TELE",
+            "key": "Bunkerable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanPassiveAquire": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8636,
+          "section": "TELE",
+          "key": "CanPassiveAquire",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8633,
+            "section": "TELE",
+            "key": "CanPassiveAquire",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "TELEICON",
+      "AltCameo": "TELEUICO",
+      "Voxel": true,
+      "TurretOffset": -100,
+      "Remapable": true,
+      "PrimaryFireFLH": "85,0,130"
+    },
+    "raw_values": {
+      "Cameo": "TELEICON",
+      "AltCameo": "TELEUICO",
+      "Voxel": "yes",
+      "TurretOffset": "-100",
+      "Remapable": "yes",
+      "PrimaryFireFLH": "85,0,130"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "TELEICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 712,
+          "section": "TELE",
+          "key": "Cameo",
+          "value": "TELEICON"
+        },
+        "history": []
+      },
+      "AltCameo": {
+        "value": "TELEUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 713,
+          "section": "TELE",
+          "key": "AltCameo",
+          "value": "TELEUICO"
+        },
+        "history": []
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 714,
+          "section": "TELE",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "TurretOffset": {
+        "value": "-100",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 715,
+          "section": "TELE",
+          "key": "TurretOffset",
+          "value": "-100"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 716,
+          "section": "TELE",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "PrimaryFireFLH": {
+        "value": "85,0,130",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 717,
+          "section": "TELE",
+          "key": "PrimaryFireFLH",
+          "value": "85,0,130"
+        },
+        "history": []
+      }
+    }
+  }
+}

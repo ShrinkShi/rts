@@ -1,0 +1,3409 @@
+{
+  "id": "CLEG",
+  "category": "infantry",
+  "name_token": "Name:CLEG",
+  "art_id": "CLEG",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GAPILE",
+    "TECH"
+  ],
+  "tech_level": 10,
+  "cost": 1500,
+  "strength": 125,
+  "armor": "none",
+  "speed": 5,
+  "sight": 8,
+  "locomotor": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Infantry",
+  "weapons": {
+    "Primary": {
+      "id": "NeutronRifle",
+      "projectile": "InvisibleMedium",
+      "warhead": "ChronoBeam",
+      "report": [
+        "ChronoLegionAttack"
+      ],
+      "values": {
+        "Damage": 8,
+        "ROF": 120,
+        "Range": 5,
+        "Speed": 100,
+        "Projectile": "InvisibleMedium",
+        "Warhead": "ChronoBeam",
+        "Report": "ChronoLegionAttack",
+        "IsRadBeam": true
+      },
+      "raw_values": {
+        "Damage": "8",
+        "ROF": "120",
+        "Range": "5",
+        "Speed": "100",
+        "Projectile": "InvisibleMedium",
+        "Warhead": "ChronoBeam",
+        "Report": "ChronoLegionAttack",
+        "IsRadBeam": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "8",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23759,
+            "section": "NeutronRifle",
+            "key": "Damage",
+            "value": "8"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17003,
+              "section": "NeutronRifle",
+              "key": "Damage",
+              "value": "8"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23751,
+              "section": "NeutronRifle",
+              "key": "Damage",
+              "value": "8"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "120",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23760,
+            "section": "NeutronRifle",
+            "key": "ROF",
+            "value": "120"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17004,
+              "section": "NeutronRifle",
+              "key": "ROF",
+              "value": "120"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23752,
+              "section": "NeutronRifle",
+              "key": "ROF",
+              "value": "120"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23761,
+            "section": "NeutronRifle",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17005,
+              "section": "NeutronRifle",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23753,
+              "section": "NeutronRifle",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23762,
+            "section": "NeutronRifle",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17006,
+              "section": "NeutronRifle",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23754,
+              "section": "NeutronRifle",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleMedium",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23763,
+            "section": "NeutronRifle",
+            "key": "Projectile",
+            "value": "InvisibleMedium"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17007,
+              "section": "NeutronRifle",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23755,
+              "section": "NeutronRifle",
+              "key": "Projectile",
+              "value": "InvisibleMedium"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "ChronoBeam",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23764,
+            "section": "NeutronRifle",
+            "key": "Warhead",
+            "value": "ChronoBeam"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17008,
+              "section": "NeutronRifle",
+              "key": "Warhead",
+              "value": "ChronoBeam"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23756,
+              "section": "NeutronRifle",
+              "key": "Warhead",
+              "value": "ChronoBeam"
+            }
+          ]
+        },
+        "Report": {
+          "value": "ChronoLegionAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23765,
+            "section": "NeutronRifle",
+            "key": "Report",
+            "value": "ChronoLegionAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17009,
+              "section": "NeutronRifle",
+              "key": "Report",
+              "value": "ChronoLegionAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23757,
+              "section": "NeutronRifle",
+              "key": "Report",
+              "value": "ChronoLegionAttack"
+            }
+          ]
+        },
+        "IsRadBeam": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23766,
+            "section": "NeutronRifle",
+            "key": "IsRadBeam",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17010,
+              "section": "NeutronRifle",
+              "key": "IsRadBeam",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23758,
+              "section": "NeutronRifle",
+              "key": "IsRadBeam",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "NeutronRifleE",
+      "projectile": "InvisibleLow",
+      "warhead": "ChronoBeam",
+      "report": [
+        "ChronoLegionAttack"
+      ],
+      "values": {
+        "Damage": 16,
+        "ROF": 120,
+        "Range": 5,
+        "Speed": 100,
+        "Projectile": "InvisibleLow",
+        "Warhead": "ChronoBeam",
+        "Report": "ChronoLegionAttack",
+        "IsRadBeam": true
+      },
+      "raw_values": {
+        "Damage": "16",
+        "ROF": "120",
+        "Range": "5",
+        "Speed": "100",
+        "Projectile": "InvisibleLow",
+        "Warhead": "ChronoBeam",
+        "Report": "ChronoLegionAttack",
+        "IsRadBeam": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "16",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24980,
+            "section": "NeutronRifleE",
+            "key": "Damage",
+            "value": "16"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17890,
+              "section": "NeutronRifleE",
+              "key": "Damage",
+              "value": "16"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24972,
+              "section": "NeutronRifleE",
+              "key": "Damage",
+              "value": "16"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "120",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24981,
+            "section": "NeutronRifleE",
+            "key": "ROF",
+            "value": "120"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17891,
+              "section": "NeutronRifleE",
+              "key": "ROF",
+              "value": "120"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24973,
+              "section": "NeutronRifleE",
+              "key": "ROF",
+              "value": "120"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24982,
+            "section": "NeutronRifleE",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17892,
+              "section": "NeutronRifleE",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24974,
+              "section": "NeutronRifleE",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24983,
+            "section": "NeutronRifleE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17893,
+              "section": "NeutronRifleE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24975,
+              "section": "NeutronRifleE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24984,
+            "section": "NeutronRifleE",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17894,
+              "section": "NeutronRifleE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24976,
+              "section": "NeutronRifleE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "ChronoBeam",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24985,
+            "section": "NeutronRifleE",
+            "key": "Warhead",
+            "value": "ChronoBeam"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17895,
+              "section": "NeutronRifleE",
+              "key": "Warhead",
+              "value": "ChronoBeam"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24977,
+              "section": "NeutronRifleE",
+              "key": "Warhead",
+              "value": "ChronoBeam"
+            }
+          ]
+        },
+        "Report": {
+          "value": "ChronoLegionAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24986,
+            "section": "NeutronRifleE",
+            "key": "Report",
+            "value": "ChronoLegionAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17896,
+              "section": "NeutronRifleE",
+              "key": "Report",
+              "value": "ChronoLegionAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24978,
+              "section": "NeutronRifleE",
+              "key": "Report",
+              "value": "ChronoLegionAttack"
+            }
+          ]
+        },
+        "IsRadBeam": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24987,
+            "section": "NeutronRifleE",
+            "key": "IsRadBeam",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17897,
+              "section": "NeutronRifleE",
+              "key": "IsRadBeam",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24979,
+              "section": "NeutronRifleE",
+              "key": "IsRadBeam",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "ChronoLegionSelect"
+    ],
+    "VoiceMove": [
+      "ChronoLegionMove"
+    ],
+    "VoiceAttack": [
+      "ChronoLegionAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "ChronoLegionFear"
+    ],
+    "VoiceSpecialAttack": [
+      "ChronoLegionMove"
+    ],
+    "DieSound": [
+      "ChronoLegionDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "CLEG",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 93,
+          "pack": "ra2",
+          "relative_path": "conquer/cleg.shp",
+          "folder": "conquer",
+          "filename": "cleg.shp",
+          "stem": "cleg",
+          "extension": ".shp",
+          "size": 114784,
+          "sha1": "68aa413f2e88dac34eb02b871ef6d2c3999390ee"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 93,
+          "pack": "ra2",
+          "relative_path": "conquer/cleg.shp",
+          "folder": "conquer",
+          "filename": "cleg.shp",
+          "stem": "cleg",
+          "extension": ".shp",
+          "size": 114784,
+          "sha1": "68aa413f2e88dac34eb02b871ef6d2c3999390ee"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 93,
+          "pack": "ra2",
+          "relative_path": "conquer/cleg.shp",
+          "folder": "conquer",
+          "filename": "cleg.shp",
+          "stem": "cleg",
+          "extension": ".shp",
+          "size": 114784,
+          "sha1": "68aa413f2e88dac34eb02b871ef6d2c3999390ee"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 93,
+          "pack": "ra2",
+          "relative_path": "conquer/cleg.shp",
+          "folder": "conquer",
+          "filename": "cleg.shp",
+          "stem": "cleg",
+          "extension": ".shp",
+          "size": 114784,
+          "sha1": "68aa413f2e88dac34eb02b871ef6d2c3999390ee"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 93,
+          "pack": "ra2",
+          "relative_path": "conquer/cleg.shp",
+          "folder": "conquer",
+          "filename": "cleg.shp",
+          "stem": "cleg",
+          "extension": ".shp",
+          "size": 114784,
+          "sha1": "68aa413f2e88dac34eb02b871ef6d2c3999390ee"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 93,
+          "pack": "ra2",
+          "relative_path": "conquer/cleg.shp",
+          "folder": "conquer",
+          "filename": "cleg.shp",
+          "stem": "cleg",
+          "extension": ".shp",
+          "size": 114784,
+          "sha1": "68aa413f2e88dac34eb02b871ef6d2c3999390ee"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "ClegSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 117,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            153,
+            154,
+            155,
+            156,
+            157,
+            158
+          ],
+          "1": [
+            147,
+            148,
+            149,
+            150,
+            151,
+            152
+          ],
+          "2": [
+            141,
+            142,
+            143,
+            144,
+            145,
+            146
+          ],
+          "3": [
+            135,
+            136,
+            137,
+            138,
+            139,
+            140
+          ],
+          "4": [
+            129,
+            130,
+            131,
+            132,
+            133,
+            134
+          ],
+          "5": [
+            123,
+            124,
+            125,
+            126,
+            127,
+            128
+          ],
+          "6": [
+            117,
+            118,
+            119,
+            120,
+            121,
+            122
+          ],
+          "7": [
+            159,
+            160,
+            161,
+            162,
+            163,
+            164
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 8,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 23,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 38,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 53,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 68,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "1": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "2": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "3": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "4": [
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ],
+          "5": [
+            74,
+            75,
+            76,
+            77,
+            78,
+            79
+          ],
+          "6": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73
+          ],
+          "7": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 68,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "1": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "2": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "3": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "4": [
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ],
+          "5": [
+            74,
+            75,
+            76,
+            77,
+            78,
+            79
+          ],
+          "6": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73
+          ],
+          "7": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ]
+        }
+      },
+      "Paradrop": {
+        "name": "Paradrop",
+        "start": 116,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            116
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 166,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CLEG",
+      "Name": "Chrono Legionnaire",
+      "Category": "Soldier",
+      "Primary": "NeutronRifle",
+      "Prerequisite": "GAPILE,TECH",
+      "PrerequisiteOverride": "CAWASH16",
+      "CrushSound": "InfantrySquish",
+      "Crushable": false,
+      "Strength": 125,
+      "Armor": "none",
+      "TechLevel": 10,
+      "Pip": "red",
+      "Sight": 8,
+      "Speed": 5,
+      "MoveToShroud": false,
+      "Teleporter": true,
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "Cost": 1500,
+      "Soylent": 750,
+      "Points": 15,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "ChronoLegionSelect",
+      "VoiceMove": "ChronoLegionMove",
+      "VoiceAttack": "ChronoLegionAttackCommand",
+      "VoiceFeedback": "ChronoLegionFear",
+      "VoiceSpecialAttack": "ChronoLegionMove",
+      "DieSound": "ChronoLegionDie",
+      "ChronoInSound": "ChronoLegionTeleport",
+      "ChronoOutSound": "ChronoLegionTeleport",
+      "Locomotor": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "Infantry",
+      "ThreatPosed": 20,
+      "ImmuneToRadiation": false,
+      "ImmuneToPsionics": false,
+      "Bombable": true,
+      "AllowedToStartInMultiplayer": false,
+      "Size": 1,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ElitePrimary": "NeutronRifleE",
+      "PreventAttackMove": true,
+      "IFVMode": 10
+    },
+    "raw_values": {
+      "UIName": "Name:CLEG",
+      "Name": "Chrono Legionnaire",
+      "Category": "Soldier",
+      "Primary": "NeutronRifle",
+      "Prerequisite": "GAPILE,TECH",
+      "PrerequisiteOverride": "CAWASH16",
+      "CrushSound": "InfantrySquish",
+      "Crushable": "no",
+      "Strength": "125",
+      "Armor": "none",
+      "TechLevel": "10",
+      "Pip": "red",
+      "Sight": "8",
+      "Speed": "5",
+      "MoveToShroud": "no",
+      "Teleporter": "yes",
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "Cost": "1500",
+      "Soylent": "750",
+      "Points": "15",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "ChronoLegionSelect",
+      "VoiceMove": "ChronoLegionMove",
+      "VoiceAttack": "ChronoLegionAttackCommand",
+      "VoiceFeedback": "ChronoLegionFear",
+      "VoiceSpecialAttack": "ChronoLegionMove",
+      "DieSound": "ChronoLegionDie",
+      "ChronoInSound": "ChronoLegionTeleport",
+      "ChronoOutSound": "ChronoLegionTeleport",
+      "Locomotor": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "Infantry",
+      "ThreatPosed": "20",
+      "ImmuneToRadiation": "no",
+      "ImmuneToPsionics": "no",
+      "Bombable": "yes",
+      "AllowedToStartInMultiplayer": "no",
+      "Size": "1",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ElitePrimary": "NeutronRifleE",
+      "PreventAttackMove": "yes",
+      "IFVMode": "10"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CLEG",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4126,
+          "section": "CLEG",
+          "key": "UIName",
+          "value": "Name:CLEG"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3734,
+            "section": "CLEG",
+            "key": "UIName",
+            "value": "Name:CLEG"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4125,
+            "section": "CLEG",
+            "key": "UIName",
+            "value": "Name:CLEG"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Chrono Legionnaire",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4127,
+          "section": "CLEG",
+          "key": "Name",
+          "value": "Chrono Legionnaire"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3735,
+            "section": "CLEG",
+            "key": "Name",
+            "value": "Chrono Legionnaire"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4126,
+            "section": "CLEG",
+            "key": "Name",
+            "value": "Chrono Legionnaire"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4128,
+          "section": "CLEG",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3736,
+            "section": "CLEG",
+            "key": "Category",
+            "value": "Soldier"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4127,
+            "section": "CLEG",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "NeutronRifle",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4129,
+          "section": "CLEG",
+          "key": "Primary",
+          "value": "NeutronRifle"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3737,
+            "section": "CLEG",
+            "key": "Primary",
+            "value": "NeutronRifle"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4128,
+            "section": "CLEG",
+            "key": "Primary",
+            "value": "NeutronRifle"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GAPILE,TECH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4130,
+          "section": "CLEG",
+          "key": "Prerequisite",
+          "value": "GAPILE,TECH"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3738,
+            "section": "CLEG",
+            "key": "Prerequisite",
+            "value": "GAPILE,TECH"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4129,
+            "section": "CLEG",
+            "key": "Prerequisite",
+            "value": "GAPILE,TECH"
+          }
+        ]
+      },
+      "PrerequisiteOverride": {
+        "value": "CAWASH16",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4131,
+          "section": "CLEG",
+          "key": "PrerequisiteOverride",
+          "value": "CAWASH16"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3739,
+            "section": "CLEG",
+            "key": "PrerequisiteOverride",
+            "value": "CAWASH16"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4130,
+            "section": "CLEG",
+            "key": "PrerequisiteOverride",
+            "value": "CAWASH16"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4132,
+          "section": "CLEG",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3740,
+            "section": "CLEG",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4131,
+            "section": "CLEG",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Crushable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4133,
+          "section": "CLEG",
+          "key": "Crushable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3741,
+            "section": "CLEG",
+            "key": "Crushable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4132,
+            "section": "CLEG",
+            "key": "Crushable",
+            "value": "no"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "125",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4134,
+          "section": "CLEG",
+          "key": "Strength",
+          "value": "125"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3742,
+            "section": "CLEG",
+            "key": "Strength",
+            "value": "125"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4133,
+            "section": "CLEG",
+            "key": "Strength",
+            "value": "125"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4135,
+          "section": "CLEG",
+          "key": "Armor",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3743,
+            "section": "CLEG",
+            "key": "Armor",
+            "value": "none"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4134,
+            "section": "CLEG",
+            "key": "Armor",
+            "value": "none"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4136,
+          "section": "CLEG",
+          "key": "TechLevel",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3744,
+            "section": "CLEG",
+            "key": "TechLevel",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4135,
+            "section": "CLEG",
+            "key": "TechLevel",
+            "value": "10"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "red",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4137,
+          "section": "CLEG",
+          "key": "Pip",
+          "value": "red"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3745,
+            "section": "CLEG",
+            "key": "Pip",
+            "value": "red"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4136,
+            "section": "CLEG",
+            "key": "Pip",
+            "value": "red"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4138,
+          "section": "CLEG",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3746,
+            "section": "CLEG",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4137,
+            "section": "CLEG",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4139,
+          "section": "CLEG",
+          "key": "Speed",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3747,
+            "section": "CLEG",
+            "key": "Speed",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4138,
+            "section": "CLEG",
+            "key": "Speed",
+            "value": "5"
+          }
+        ]
+      },
+      "MoveToShroud": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4140,
+          "section": "CLEG",
+          "key": "MoveToShroud",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3748,
+            "section": "CLEG",
+            "key": "MoveToShroud",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4139,
+            "section": "CLEG",
+            "key": "MoveToShroud",
+            "value": "no"
+          }
+        ]
+      },
+      "Teleporter": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4141,
+          "section": "CLEG",
+          "key": "Teleporter",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3749,
+            "section": "CLEG",
+            "key": "Teleporter",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4140,
+            "section": "CLEG",
+            "key": "Teleporter",
+            "value": "yes"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4142,
+          "section": "CLEG",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3750,
+            "section": "CLEG",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4141,
+            "section": "CLEG",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4143,
+          "section": "CLEG",
+          "key": "Cost",
+          "value": "1500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3751,
+            "section": "CLEG",
+            "key": "Cost",
+            "value": "1500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4142,
+            "section": "CLEG",
+            "key": "Cost",
+            "value": "1500"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "750",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4144,
+          "section": "CLEG",
+          "key": "Soylent",
+          "value": "750"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3752,
+            "section": "CLEG",
+            "key": "Soylent",
+            "value": "1200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4143,
+            "section": "CLEG",
+            "key": "Soylent",
+            "value": "750"
+          }
+        ]
+      },
+      "Points": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4145,
+          "section": "CLEG",
+          "key": "Points",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3753,
+            "section": "CLEG",
+            "key": "Points",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4144,
+            "section": "CLEG",
+            "key": "Points",
+            "value": "15"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4146,
+          "section": "CLEG",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3754,
+            "section": "CLEG",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4145,
+            "section": "CLEG",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "ChronoLegionSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4147,
+          "section": "CLEG",
+          "key": "VoiceSelect",
+          "value": "ChronoLegionSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3755,
+            "section": "CLEG",
+            "key": "VoiceSelect",
+            "value": "ChronoLegionSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4146,
+            "section": "CLEG",
+            "key": "VoiceSelect",
+            "value": "ChronoLegionSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "ChronoLegionMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4148,
+          "section": "CLEG",
+          "key": "VoiceMove",
+          "value": "ChronoLegionMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3756,
+            "section": "CLEG",
+            "key": "VoiceMove",
+            "value": "ChronoLegionMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4147,
+            "section": "CLEG",
+            "key": "VoiceMove",
+            "value": "ChronoLegionMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "ChronoLegionAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4149,
+          "section": "CLEG",
+          "key": "VoiceAttack",
+          "value": "ChronoLegionAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3757,
+            "section": "CLEG",
+            "key": "VoiceAttack",
+            "value": "ChronoLegionAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4148,
+            "section": "CLEG",
+            "key": "VoiceAttack",
+            "value": "ChronoLegionAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "ChronoLegionFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4150,
+          "section": "CLEG",
+          "key": "VoiceFeedback",
+          "value": "ChronoLegionFear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3758,
+            "section": "CLEG",
+            "key": "VoiceFeedback",
+            "value": "ChronoLegionFear"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4149,
+            "section": "CLEG",
+            "key": "VoiceFeedback",
+            "value": "ChronoLegionFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "ChronoLegionMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4151,
+          "section": "CLEG",
+          "key": "VoiceSpecialAttack",
+          "value": "ChronoLegionMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3759,
+            "section": "CLEG",
+            "key": "VoiceSpecialAttack",
+            "value": "ChronoLegionMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4150,
+            "section": "CLEG",
+            "key": "VoiceSpecialAttack",
+            "value": "ChronoLegionMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "ChronoLegionDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4152,
+          "section": "CLEG",
+          "key": "DieSound",
+          "value": "ChronoLegionDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3760,
+            "section": "CLEG",
+            "key": "DieSound",
+            "value": "ChronoLegionDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4151,
+            "section": "CLEG",
+            "key": "DieSound",
+            "value": "ChronoLegionDie"
+          }
+        ]
+      },
+      "ChronoInSound": {
+        "value": "ChronoLegionTeleport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4153,
+          "section": "CLEG",
+          "key": "ChronoInSound",
+          "value": "ChronoLegionTeleport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3761,
+            "section": "CLEG",
+            "key": "ChronoInSound",
+            "value": "ChronoLegionTeleport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4152,
+            "section": "CLEG",
+            "key": "ChronoInSound",
+            "value": "ChronoLegionTeleport"
+          }
+        ]
+      },
+      "ChronoOutSound": {
+        "value": "ChronoLegionTeleport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4154,
+          "section": "CLEG",
+          "key": "ChronoOutSound",
+          "value": "ChronoLegionTeleport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3762,
+            "section": "CLEG",
+            "key": "ChronoOutSound",
+            "value": "ChronoLegionTeleport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4153,
+            "section": "CLEG",
+            "key": "ChronoOutSound",
+            "value": "ChronoLegionTeleport"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4155,
+          "section": "CLEG",
+          "key": "Locomotor",
+          "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3763,
+            "section": "CLEG",
+            "key": "Locomotor",
+            "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4154,
+            "section": "CLEG",
+            "key": "Locomotor",
+            "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4157,
+          "section": "CLEG",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3765,
+            "section": "CLEG",
+            "key": "PhysicalSize",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4156,
+            "section": "CLEG",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4158,
+          "section": "CLEG",
+          "key": "MovementZone",
+          "value": "Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3766,
+            "section": "CLEG",
+            "key": "MovementZone",
+            "value": "Infantry"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4157,
+            "section": "CLEG",
+            "key": "MovementZone",
+            "value": "Infantry"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4160,
+          "section": "CLEG",
+          "key": "ThreatPosed",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3768,
+            "section": "CLEG",
+            "key": "ThreatPosed",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4159,
+            "section": "CLEG",
+            "key": "ThreatPosed",
+            "value": "20"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4161,
+          "section": "CLEG",
+          "key": "ImmuneToRadiation",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3769,
+            "section": "CLEG",
+            "key": "ImmuneToRadiation",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4160,
+            "section": "CLEG",
+            "key": "ImmuneToRadiation",
+            "value": "no"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4162,
+          "section": "CLEG",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3770,
+            "section": "CLEG",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4161,
+            "section": "CLEG",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Bombable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4163,
+          "section": "CLEG",
+          "key": "Bombable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3771,
+            "section": "CLEG",
+            "key": "Bombable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4162,
+            "section": "CLEG",
+            "key": "Bombable",
+            "value": "yes"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4164,
+          "section": "CLEG",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3772,
+            "section": "CLEG",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4163,
+            "section": "CLEG",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4165,
+          "section": "CLEG",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3773,
+            "section": "CLEG",
+            "key": "Size",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4164,
+            "section": "CLEG",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4166,
+          "section": "CLEG",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3774,
+            "section": "CLEG",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4165,
+            "section": "CLEG",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4167,
+          "section": "CLEG",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3775,
+            "section": "CLEG",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4166,
+            "section": "CLEG",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "NeutronRifleE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4170,
+          "section": "CLEG",
+          "key": "ElitePrimary",
+          "value": "NeutronRifleE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3778,
+            "section": "CLEG",
+            "key": "ElitePrimary",
+            "value": "NeutronRifleE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4169,
+            "section": "CLEG",
+            "key": "ElitePrimary",
+            "value": "NeutronRifleE"
+          }
+        ]
+      },
+      "PreventAttackMove": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 3779,
+          "section": "CLEG",
+          "key": "PreventAttackMove",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "IFVMode": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4172,
+          "section": "CLEG",
+          "key": "IFVMode",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3780,
+            "section": "CLEG",
+            "key": "IFVMode",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4171,
+            "section": "CLEG",
+            "key": "IFVMode",
+            "value": "10"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "CLEGICON",
+      "AltCameo": "CLEGUICO",
+      "Sequence": "ClegSequence",
+      "Crawls": true,
+      "Remapable": true,
+      "FireUp": 2,
+      "PrimaryFireFLH": "100,-25,135"
+    },
+    "raw_values": {
+      "Cameo": "CLEGICON",
+      "AltCameo": "CLEGUICO",
+      "Sequence": "ClegSequence",
+      "Crawls": "yes",
+      "Remapable": "yes",
+      "FireUp": "2",
+      "PrimaryFireFLH": "100,-25,135"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "CLEGICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 224,
+          "section": "CLEG",
+          "key": "Cameo",
+          "value": "CLEGICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 178,
+            "section": "CLEG",
+            "key": "Cameo",
+            "value": "CLEGICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "CLEGUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 225,
+          "section": "CLEG",
+          "key": "AltCameo",
+          "value": "CLEGUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 179,
+            "section": "CLEG",
+            "key": "AltCameo",
+            "value": "CLEGUICO"
+          }
+        ]
+      },
+      "Sequence": {
+        "value": "ClegSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 226,
+          "section": "CLEG",
+          "key": "Sequence",
+          "value": "ClegSequence"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 180,
+            "section": "CLEG",
+            "key": "Sequence",
+            "value": "ClegSequence"
+          }
+        ]
+      },
+      "Crawls": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 227,
+          "section": "CLEG",
+          "key": "Crawls",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 181,
+            "section": "CLEG",
+            "key": "Crawls",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 228,
+          "section": "CLEG",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 182,
+            "section": "CLEG",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "FireUp": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 229,
+          "section": "CLEG",
+          "key": "FireUp",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 183,
+            "section": "CLEG",
+            "key": "FireUp",
+            "value": "2"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "100,-25,135",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 230,
+          "section": "CLEG",
+          "key": "PrimaryFireFLH",
+          "value": "100,-25,135"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 184,
+            "section": "CLEG",
+            "key": "PrimaryFireFLH",
+            "value": "100,-25,135"
+          }
+        ]
+      }
+    }
+  }
+}

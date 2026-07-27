@@ -1,0 +1,814 @@
+{
+  "id": "CATIME02",
+  "category": "building",
+  "name_token": "Name:CATIME02",
+  "art_id": "CATIME02",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 1000,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CATIME02",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 8073,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgtime02.shp",
+          "folder": "isogenmd",
+          "filename": "cgtime02.shp",
+          "stem": "cgtime02",
+          "extension": ".shp",
+          "size": 28568,
+          "sha1": "f68cec05b0e45044679cb339fd7ca7592cef781d"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 8899,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/catime02.shp",
+          "folder": "isosnomd",
+          "filename": "catime02.shp",
+          "stem": "catime02",
+          "extension": ".shp",
+          "size": 28568,
+          "sha1": "f68cec05b0e45044679cb339fd7ca7592cef781d"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 8073,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgtime02.shp",
+          "folder": "isogenmd",
+          "filename": "cgtime02.shp",
+          "stem": "cgtime02",
+          "extension": ".shp",
+          "size": 28568,
+          "sha1": "f68cec05b0e45044679cb339fd7ca7592cef781d"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 8073,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgtime02.shp",
+          "folder": "isogenmd",
+          "filename": "cgtime02.shp",
+          "stem": "cgtime02",
+          "extension": ".shp",
+          "size": 28568,
+          "sha1": "f68cec05b0e45044679cb339fd7ca7592cef781d"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8073,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgtime02.shp",
+          "folder": "isogenmd",
+          "filename": "cgtime02.shp",
+          "stem": "cgtime02",
+          "extension": ".shp",
+          "size": 28568,
+          "sha1": "f68cec05b0e45044679cb339fd7ca7592cef781d"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 8073,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgtime02.shp",
+          "folder": "isogenmd",
+          "filename": "cgtime02.shp",
+          "stem": "cgtime02",
+          "extension": ".shp",
+          "size": 28568,
+          "sha1": "f68cec05b0e45044679cb339fd7ca7592cef781d"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "4x3",
+    "height": 6,
+    "occupy_height": 4,
+    "damage_fire_offsets": [
+      [
+        -11.0,
+        10.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CATIME02",
+      "Name": "Time Machine Traveled",
+      "TechLevel": -1,
+      "Strength": 1000,
+      "Insignificant": true,
+      "Nominal": true,
+      "Points": 5,
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 0,
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": true,
+      "LeaveRubble": true
+    },
+    "raw_values": {
+      "UIName": "Name:CATIME02",
+      "Name": "Time Machine Traveled",
+      "TechLevel": "-1",
+      "Strength": "1000",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "Points": "5",
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "0",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "yes",
+      "LeaveRubble": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CATIME02",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15026,
+          "section": "CATIME02",
+          "key": "UIName",
+          "value": "Name:CATIME02"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15019,
+            "section": "CATIME02",
+            "key": "UIName",
+            "value": "Name:CATIME02"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Time Machine Traveled",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15027,
+          "section": "CATIME02",
+          "key": "Name",
+          "value": "Time Machine Traveled"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15020,
+            "section": "CATIME02",
+            "key": "Name",
+            "value": "Time Machine Traveled"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15029,
+          "section": "CATIME02",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15022,
+            "section": "CATIME02",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15030,
+          "section": "CATIME02",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15023,
+            "section": "CATIME02",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15031,
+          "section": "CATIME02",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15024,
+            "section": "CATIME02",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15032,
+          "section": "CATIME02",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15025,
+            "section": "CATIME02",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15034,
+          "section": "CATIME02",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15027,
+            "section": "CATIME02",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15035,
+          "section": "CATIME02",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15028,
+            "section": "CATIME02",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15036,
+          "section": "CATIME02",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15029,
+            "section": "CATIME02",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15037,
+          "section": "CATIME02",
+          "key": "MaxDebris",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15030,
+            "section": "CATIME02",
+            "key": "MaxDebris",
+            "value": "0"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15040,
+          "section": "CATIME02",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15033,
+            "section": "CATIME02",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15041,
+          "section": "CATIME02",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15034,
+            "section": "CATIME02",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15042,
+          "section": "CATIME02",
+          "key": "ClickRepairable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15035,
+            "section": "CATIME02",
+            "key": "ClickRepairable",
+            "value": "yes"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15047,
+          "section": "CATIME02",
+          "key": "LeaveRubble",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15040,
+            "section": "CATIME02",
+            "key": "LeaveRubble",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "4x3",
+      "NewTheater": true,
+      "DemandLoad": true,
+      "Height": 6,
+      "MuzzleFlash0": "22,-25",
+      "MuzzleFlash1": "5,-28",
+      "MuzzleFlash2": "42,47",
+      "MuzzleFlash3": "29,17",
+      "MuzzleFlash4": "-12,-25",
+      "MuzzleFlash5": "-14,-33",
+      "MuzzleFlash6": "30,-29",
+      "MuzzleFlash7": "-10,-23",
+      "MuzzleFlash8": "32,5",
+      "MuzzleFlash9": "46,37",
+      "DamageFireOffset0": "-11,10",
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 4,
+      "RemoveOccupy1": "-2,0",
+      "RemoveOccupy2": "-2,-1",
+      "RemoveOccupy3": "-2,1"
+    },
+    "raw_values": {
+      "Foundation": "4x3",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "Height": "6",
+      "MuzzleFlash0": "22,-25",
+      "MuzzleFlash1": "5,-28",
+      "MuzzleFlash2": "42,47",
+      "MuzzleFlash3": "29,17",
+      "MuzzleFlash4": "-12,-25",
+      "MuzzleFlash5": "-14,-33",
+      "MuzzleFlash6": "30,-29",
+      "MuzzleFlash7": "-10,-23",
+      "MuzzleFlash8": "32,5",
+      "MuzzleFlash9": "46,37",
+      "DamageFireOffset0": "-11,10",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "4",
+      "RemoveOccupy1": "-2,0",
+      "RemoveOccupy2": "-2,-1",
+      "RemoveOccupy3": "-2,1"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "4x3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12322,
+          "section": "CATIME02",
+          "key": "Foundation",
+          "value": "4x3"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12323,
+          "section": "CATIME02",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12324,
+          "section": "CATIME02",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12325,
+          "section": "CATIME02",
+          "key": "Height",
+          "value": "6"
+        },
+        "history": []
+      },
+      "MuzzleFlash0": {
+        "value": "22,-25",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12327,
+          "section": "CATIME02",
+          "key": "MuzzleFlash0",
+          "value": "22,-25"
+        },
+        "history": []
+      },
+      "MuzzleFlash1": {
+        "value": "5,-28",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12328,
+          "section": "CATIME02",
+          "key": "MuzzleFlash1",
+          "value": "5,-28"
+        },
+        "history": []
+      },
+      "MuzzleFlash2": {
+        "value": "42,47",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12329,
+          "section": "CATIME02",
+          "key": "MuzzleFlash2",
+          "value": "42,47"
+        },
+        "history": []
+      },
+      "MuzzleFlash3": {
+        "value": "29,17",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12330,
+          "section": "CATIME02",
+          "key": "MuzzleFlash3",
+          "value": "29,17"
+        },
+        "history": []
+      },
+      "MuzzleFlash4": {
+        "value": "-12,-25",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12331,
+          "section": "CATIME02",
+          "key": "MuzzleFlash4",
+          "value": "-12,-25"
+        },
+        "history": []
+      },
+      "MuzzleFlash5": {
+        "value": "-14,-33",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12332,
+          "section": "CATIME02",
+          "key": "MuzzleFlash5",
+          "value": "-14,-33"
+        },
+        "history": []
+      },
+      "MuzzleFlash6": {
+        "value": "30,-29",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12333,
+          "section": "CATIME02",
+          "key": "MuzzleFlash6",
+          "value": "30,-29"
+        },
+        "history": []
+      },
+      "MuzzleFlash7": {
+        "value": "-10,-23",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12334,
+          "section": "CATIME02",
+          "key": "MuzzleFlash7",
+          "value": "-10,-23"
+        },
+        "history": []
+      },
+      "MuzzleFlash8": {
+        "value": "32,5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12335,
+          "section": "CATIME02",
+          "key": "MuzzleFlash8",
+          "value": "32,5"
+        },
+        "history": []
+      },
+      "MuzzleFlash9": {
+        "value": "46,37",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12336,
+          "section": "CATIME02",
+          "key": "MuzzleFlash9",
+          "value": "46,37"
+        },
+        "history": []
+      },
+      "DamageFireOffset0": {
+        "value": "-11,10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12337,
+          "section": "CATIME02",
+          "key": "DamageFireOffset0",
+          "value": "-11,10"
+        },
+        "history": []
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12338,
+          "section": "CATIME02",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12339,
+          "section": "CATIME02",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12340,
+          "section": "CATIME02",
+          "key": "OccupyHeight",
+          "value": "4"
+        },
+        "history": []
+      },
+      "RemoveOccupy1": {
+        "value": "-2,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12341,
+          "section": "CATIME02",
+          "key": "RemoveOccupy1",
+          "value": "-2,0"
+        },
+        "history": []
+      },
+      "RemoveOccupy2": {
+        "value": "-2,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12342,
+          "section": "CATIME02",
+          "key": "RemoveOccupy2",
+          "value": "-2,-1"
+        },
+        "history": []
+      },
+      "RemoveOccupy3": {
+        "value": "-2,1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12343,
+          "section": "CATIME02",
+          "key": "RemoveOccupy3",
+          "value": "-2,1"
+        },
+        "history": []
+      }
+    }
+  }
+}

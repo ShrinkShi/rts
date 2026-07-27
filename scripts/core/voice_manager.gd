@@ -4,6 +4,26 @@ var voice_id = ""
 var next_allowed_ms = 0
 var warned_unavailable = false
 var adjutant_next_allowed_ms = 0
+var adjutant_faction: String = "union"
+
+const ADJUTANT_SAMPLE_NUMBERS = {
+    "building_ready": 48,
+    "construction_complete": 48,
+    "new_options": 49,
+    "insufficient_funds": 50,
+    "cancel": 51,
+    "building": 52,
+    "low_power": 53,
+    "building_attacked": 54,
+    "base_attacked": 54,
+    "on_hold": 56,
+    "repairing": 57,
+    "unit_ready": 62,
+    "cannot_deploy": 63,
+    "unit_lost": 64,
+    "unit_attacked": 35,
+    "harvester_attacked": 37,
+}
 
 const PHRASES = {
     "rifle": {
@@ -90,26 +110,67 @@ func stop():
     DisplayServer.tts_stop()
 
 
+func set_adjutant_faction(faction_id: String) -> void:
+    adjutant_faction = faction_id
+
+func _adjutant_prefix() -> String:
+    match adjutant_faction:
+        "dominion":
+            return "csof"
+        "republic":
+            return "cyur"
+        _:
+            return "ceva"
+
+func _adjutant_sample_path(event_name: String) -> String:
+    if not ADJUTANT_SAMPLE_NUMBERS.has(event_name):
+        return ""
+    var sample_name: String = "%s%03d.wav" % [_adjutant_prefix(), int(ADJUTANT_SAMPLE_NUMBERS[event_name])]
+    for bank: String in ["ra2md", "ra2"]:
+        var path: String = "res://assets/ra2_audio/%s/standalone/%s" % [bank, sample_name]
+        if FileAccess.file_exists(path):
+            return path
+    return ""
+
 func speak_adjutant(event_name, detail = ""):
     if not bool(SaveManager.settings.get("unit_voices", true)):
         return
+    var now: int = Time.get_ticks_msec()
+    if now < adjutant_next_allowed_ms:
+        return
+    var original_path: String = _adjutant_sample_path(str(event_name))
+    if not original_path.is_empty() and RA2AudioService.play_path(original_path, "EVA:" + str(event_name)):
+        adjutant_next_allowed_ms = now + 2600
+        return
+
+    # Fallback is intentionally retained for custom engine events that have no
+    # direct RA2/YR EVA line.
     var phrases = {
-        "building_ready": ["建筑已就绪", "建筑部署准备完成"],
-        "unit_ready": ["单位已就绪", "增援单位已经抵达"],
-        "unit_attacked": ["我们的单位遭到攻击", "部队正在承受攻击"],
-        "harvester_attacked": ["我们的矿车遭到攻击", "采矿单位正在遭受攻击"],
-        "building_attacked": ["我们的建筑遭到攻击", "基地设施正在遭受攻击"],
-        "cancel": ["已取消", "命令取消"],
-        "low_power": ["电力不足", "基地电力供应不足"]
+        "building_ready": ["建筑已就绪"],
+        "unit_ready": ["单位已就绪"],
+        "unit_attacked": ["我们的单位遭到攻击"],
+        "harvester_attacked": ["我们的矿车遭到攻击"],
+        "building_attacked": ["我们的建筑遭到攻击"],
+        "cancel": ["已取消"],
+        "low_power": ["电力不足"],
+        "insufficient_funds": ["资金不足"],
+        "cannot_deploy": ["无法部署"],
     }
     var options = phrases.get(event_name, [])
-    if options.is_empty(): return
-    var now = Time.get_ticks_msec()
-    if now < adjutant_next_allowed_ms: return
-    if voice_id == "": _select_voice()
-    if voice_id == "": return
-    var text = str(options[randi() % options.size()])
-    if detail != "": text += "，" + detail
-    var volume = int(round(clamp(float(SaveManager.settings.get("master_volume",0.8)),0.0,1.0) * clamp(float(SaveManager.settings.get("voice_volume",0.75)),0.0,1.0) * 100.0))
+    if options.is_empty():
+        return
+    if voice_id == "":
+        _select_voice()
+    if voice_id == "":
+        return
+    var text = str(options[0])
+    if detail != "":
+        text += "，" + detail
+    var volume = int(round(
+        clamp(float(SaveManager.settings.get("master_volume", 0.8)), 0.0, 1.0)
+        * clamp(float(SaveManager.settings.get("voice_volume", 0.75)), 0.0, 1.0)
+        * 100.0
+    ))
     DisplayServer.tts_speak(text, voice_id, volume, 1.0, 1.03, 0, true)
     adjutant_next_allowed_ms = now + 3200
+

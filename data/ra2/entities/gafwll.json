@@ -1,0 +1,827 @@
+{
+  "id": "GAFWLL",
+  "category": "building",
+  "name_token": "Name:Citadel",
+  "art_id": "GAFWLL",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YABRCK"
+  ],
+  "tech_level": 2,
+  "cost": 100,
+  "strength": 300,
+  "armor": "concrete",
+  "speed": 0,
+  "sight": 1,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "GAFWLL",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 5980,
+          "pack": "ra2md",
+          "relative_path": "genermd/ggfwll.shp",
+          "folder": "genermd",
+          "filename": "ggfwll.shp",
+          "stem": "ggfwll",
+          "extension": ".shp",
+          "size": 115720,
+          "sha1": "39b9fb5c5ca1d353f54fdd48124e18a7a47d02bc"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 4907,
+          "pack": "ra2",
+          "relative_path": "snow/gafwll.shp",
+          "folder": "snow",
+          "filename": "gafwll.shp",
+          "stem": "gafwll",
+          "extension": ".shp",
+          "size": 50656,
+          "sha1": "928951b8a920696c9edc1691a0506e12fe29a92f"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 5980,
+          "pack": "ra2md",
+          "relative_path": "genermd/ggfwll.shp",
+          "folder": "genermd",
+          "filename": "ggfwll.shp",
+          "stem": "ggfwll",
+          "extension": ".shp",
+          "size": 115720,
+          "sha1": "39b9fb5c5ca1d353f54fdd48124e18a7a47d02bc"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 5980,
+          "pack": "ra2md",
+          "relative_path": "genermd/ggfwll.shp",
+          "folder": "genermd",
+          "filename": "ggfwll.shp",
+          "stem": "ggfwll",
+          "extension": ".shp",
+          "size": 115720,
+          "sha1": "39b9fb5c5ca1d353f54fdd48124e18a7a47d02bc"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 5980,
+          "pack": "ra2md",
+          "relative_path": "genermd/ggfwll.shp",
+          "folder": "genermd",
+          "filename": "ggfwll.shp",
+          "stem": "ggfwll",
+          "extension": ".shp",
+          "size": 115720,
+          "sha1": "39b9fb5c5ca1d353f54fdd48124e18a7a47d02bc"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 5980,
+          "pack": "ra2md",
+          "relative_path": "genermd/ggfwll.shp",
+          "folder": "genermd",
+          "filename": "ggfwll.shp",
+          "stem": "ggfwll",
+          "extension": ".shp",
+          "size": 115720,
+          "sha1": "39b9fb5c5ca1d353f54fdd48124e18a7a47d02bc"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 0,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:Citadel",
+      "Name": "Yuri Citadel Wall",
+      "BuildCat": "Combat",
+      "Strength": 300,
+      "Prerequisite": "YABRCK",
+      "Armor": "concrete",
+      "TechLevel": 2,
+      "Adjacent": 8,
+      "Wall": true,
+      "Sight": 1,
+      "Selectable": false,
+      "Insignificant": true,
+      "Nominal": true,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": 2,
+      "Cost": 100,
+      "Points": 5,
+      "Repairable": false,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "ThreatPosed": 0,
+      "BaseNormal": false,
+      "GuardRange": 5
+    },
+    "raw_values": {
+      "UIName": "Name:Citadel",
+      "Name": "Yuri Citadel Wall",
+      "BuildCat": "Combat",
+      "Strength": "300",
+      "Prerequisite": "YABRCK",
+      "Armor": "concrete",
+      "TechLevel": "2",
+      "Adjacent": "8",
+      "Wall": "yes",
+      "Sight": "1",
+      "Selectable": "no",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": "2",
+      "Cost": "100",
+      "Points": "5",
+      "Repairable": "false",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "ThreatPosed": "0",
+      "BaseNormal": "no",
+      "GuardRange": "5"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:Citadel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13562,
+          "section": "GAFWLL",
+          "key": "UIName",
+          "value": "Name:Citadel"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13555,
+            "section": "GAFWLL",
+            "key": "UIName",
+            "value": "Name:Citadel"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Yuri Citadel Wall",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13563,
+          "section": "GAFWLL",
+          "key": "Name",
+          "value": "Yuri Citadel Wall"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13556,
+            "section": "GAFWLL",
+            "key": "Name",
+            "value": "Yuri Citadel Wall"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Combat",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13565,
+          "section": "GAFWLL",
+          "key": "BuildCat",
+          "value": "Combat"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13558,
+            "section": "GAFWLL",
+            "key": "BuildCat",
+            "value": "Combat"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "300",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13566,
+          "section": "GAFWLL",
+          "key": "Strength",
+          "value": "300"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13559,
+            "section": "GAFWLL",
+            "key": "Strength",
+            "value": "300"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YABRCK",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13567,
+          "section": "GAFWLL",
+          "key": "Prerequisite",
+          "value": "YABRCK"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13560,
+            "section": "GAFWLL",
+            "key": "Prerequisite",
+            "value": "YABRCK"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "concrete",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13568,
+          "section": "GAFWLL",
+          "key": "Armor",
+          "value": "concrete"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13561,
+            "section": "GAFWLL",
+            "key": "Armor",
+            "value": "concrete"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13569,
+          "section": "GAFWLL",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13562,
+            "section": "GAFWLL",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13570,
+          "section": "GAFWLL",
+          "key": "Adjacent",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13563,
+            "section": "GAFWLL",
+            "key": "Adjacent",
+            "value": "8"
+          }
+        ]
+      },
+      "Wall": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13571,
+          "section": "GAFWLL",
+          "key": "Wall",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13564,
+            "section": "GAFWLL",
+            "key": "Wall",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13572,
+          "section": "GAFWLL",
+          "key": "Sight",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13565,
+            "section": "GAFWLL",
+            "key": "Sight",
+            "value": "1"
+          }
+        ]
+      },
+      "Selectable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13573,
+          "section": "GAFWLL",
+          "key": "Selectable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13566,
+            "section": "GAFWLL",
+            "key": "Selectable",
+            "value": "no"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13574,
+          "section": "GAFWLL",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13567,
+            "section": "GAFWLL",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13575,
+          "section": "GAFWLL",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13568,
+            "section": "GAFWLL",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13576,
+          "section": "GAFWLL",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13569,
+            "section": "GAFWLL",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AIBasePlanningSide": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13577,
+          "section": "GAFWLL",
+          "key": "AIBasePlanningSide",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13570,
+            "section": "GAFWLL",
+            "key": "AIBasePlanningSide",
+            "value": "2"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13579,
+          "section": "GAFWLL",
+          "key": "Cost",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13572,
+            "section": "GAFWLL",
+            "key": "Cost",
+            "value": "100"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13580,
+          "section": "GAFWLL",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13573,
+            "section": "GAFWLL",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Repairable": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13581,
+          "section": "GAFWLL",
+          "key": "Repairable",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13574,
+            "section": "GAFWLL",
+            "key": "Repairable",
+            "value": "false"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13582,
+          "section": "GAFWLL",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13575,
+            "section": "GAFWLL",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13583,
+          "section": "GAFWLL",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13576,
+            "section": "GAFWLL",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13585,
+          "section": "GAFWLL",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13578,
+            "section": "GAFWLL",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "GuardRange": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13586,
+          "section": "GAFWLL",
+          "key": "GuardRange",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13579,
+            "section": "GAFWLL",
+            "key": "GuardRange",
+            "value": "5"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "CITWICON",
+      "Foundation": "1x1",
+      "ToOverlay": "GAFWLL",
+      "DamageLevels": 3,
+      "NewTheater": true
+    },
+    "raw_values": {
+      "Cameo": "CITWICON",
+      "Foundation": "1x1",
+      "ToOverlay": "GAFWLL",
+      "DamageLevels": "3",
+      "NewTheater": "yes"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "CITWICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4130,
+          "section": "GAFWLL",
+          "key": "Cameo",
+          "value": "CITWICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2675,
+            "section": "GAFWLL",
+            "key": "Cameo",
+            "value": "WALLICON"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4131,
+          "section": "GAFWLL",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2676,
+            "section": "GAFWLL",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "ToOverlay": {
+        "value": "GAFWLL",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4132,
+          "section": "GAFWLL",
+          "key": "ToOverlay",
+          "value": "GAFWLL"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2677,
+            "section": "GAFWLL",
+            "key": "ToOverlay",
+            "value": "GAFWLL"
+          }
+        ]
+      },
+      "DamageLevels": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4133,
+          "section": "GAFWLL",
+          "key": "DamageLevels",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2678,
+            "section": "GAFWLL",
+            "key": "DamageLevels",
+            "value": "3"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4134,
+          "section": "GAFWLL",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2679,
+            "section": "GAFWLL",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  }
+}

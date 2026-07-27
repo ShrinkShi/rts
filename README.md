@@ -1,6 +1,29 @@
-# 钢铁子午线（Iron Meridian RTS）v0.9.0
+# 钢铁子午线（Iron Meridian RTS）v0.13.1
 
-使用 **Godot 4.7 + GDScript** 编写的原创 RTS 游戏底座。项目采用矩形瓦片逻辑网格、AI 生成高精度 2.5D 精灵与程序化地图，不包含任何第三方游戏的代码、美术、音频、剧情或商标。
+## RA2 / 尤里的复仇可交互资源浏览器
+
+> v0.13.1 修复步兵/SHP 载具南北方向、建筑多部件合成动画，以及温带错误显示雪地素材的问题。详见 `docs/RELEASE_NOTES_v0.13.1.md`。
+
+v0.13.0 将旧版固定坐标数据库页重构为可交互的资源验收工具：中文自适应排版、SHP Sequence 动画、VXL/HVA 八方向组合、建筑状态与附属动画、所属色遮罩、剧院切换，以及可实际播放的 RA2/YR 声音事件。
+
+核心数据：
+
+- 11,593 个源资源与 559 个对象定义可追溯浏览。
+- 176 个真实对象动画预览：31 步兵、78 载具、11 飞行器、56 建筑。
+- 1,077 个动画定义、15,997 个预览帧引用。
+- 526 个声音事件，1,825/1,825 个样本引用全部解析，并可选择或随机试听。
+- 5,212 条 CSF 文本与 13 张官方地图元数据。
+
+详细说明见：
+
+- `docs/RELEASE_NOTES_v0.13.0.md`
+- `docs/RA2_RESOURCE_BROWSER_v0.13.md`
+- `docs/RA2_PIPELINE_ARCHITECTURE.md`
+- `docs/V013_RESOURCE_BROWSER_PREVIEW.png`
+
+---
+
+使用 **Godot 4.7 + GDScript** 编写的原创 RTS 游戏底座。引擎代码、数据结构和交互系统由本项目实现；本地研究构建可以导入用户提供的 RA2/YR 素材、文本和音频，用于验证格式兼容与玩法逻辑。
 
 
 
@@ -11,7 +34,25 @@
 - `S` 改为一次性中断：清空命令后立即恢复自主警戒；`H` 为持续原地不动，直到收到下一条命令。
 - `G` 打开单位智能逻辑面板，可配置警戒、警戒范围、自动攻击、有限追击、同玩家支援、盟友支援和支援距离。
 - AI 攻势改为攻击移动和战略目标评估，优先处理沿途敌军及防御/生产/经济设施，不再固定无脑冲向建造中心。
-- 新增 `scenes/tools/visual_profile_preview.tscn`，可在 Godot 2D 视口拖动/缩放视觉节点并写回共享视觉资源。
+- v0.9.0 的 `.tres` 预览器已在 v0.9.1 被真实 `.tscn` 预制场景取代；旧路径仅保留迁移提示。
+
+
+
+## v0.9.2 Godot 4.7.1 警告清理
+
+- 清理编辑器调试器中 29 条 GDScript 警告。
+- 修复未初始化的 `speaking_unit`，避免攻击语音选择存在不确定状态。
+- 将整数除法改为显式浮点计算或中心坐标，避免小数静默截断。
+- 消除 `position` 对 Node2D/Control 基类属性的遮蔽。
+- 保留 EventBus 外部发射信号，并对该设计产生的误报做精确抑制。
+- 移除未使用变量并规范未使用参数命名。
+
+## v0.9.1 可视化预制场景重构
+
+- 全部单位和建筑改为真实 `.tscn` / `PackedScene` 预制场景。
+- 可在 2D 编辑器直接拖动精灵、炮塔、碰撞体和 Marker2D 挂点。
+- 实体动画拆分为 `resources/sprite_frames/*.tres`，打开场景即可看到实际图像。
+- 详细操作见 `docs/PREFAB_WORKFLOW.md`。
 
 ## v0.8.4 可视化校准与采矿修复
 
@@ -132,7 +173,9 @@ python tools/process_ai_assets.py
 
 ```text
 scripts/game/rts_match.gd            对局编排、双建筑产能、维修出售、强制攻击与公平编队
+scenes/entities/units/*.tscn        可视化单位预制场景、精灵、炮塔、碰撞体和挂点
 scripts/game/unit.gd                 单位命令、碰撞分离、反击支援、维修进入与8方向动画
+scenes/entities/buildings/*.tscn    可视化建筑预制场景和武器挂点
 scripts/game/building.gd             建筑建造/变卖动画、维修厂、防御塔攻击与受损状态
 scripts/game/grid_world.gd            双寻路网格、树林掩体、对称地形与逐格资源
 scripts/game/tree_entity.gd           茂密/稀疏树木、车辆阻挡与可破坏环境目标

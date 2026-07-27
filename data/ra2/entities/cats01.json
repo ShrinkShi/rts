@@ -1,0 +1,954 @@
+{
+  "id": "CATS01",
+  "category": "building",
+  "name_token": "Name:CATS01",
+  "art_id": "CATS01",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 300,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CATS01",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1805,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctts01.shp",
+          "folder": "isotemp",
+          "filename": "ctts01.shp",
+          "stem": "ctts01",
+          "extension": ".shp",
+          "size": 14176,
+          "sha1": "6d46ab8d0201d616a0bd7ca158debd47b0122b8c"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 707,
+          "pack": "ra2",
+          "relative_path": "isosnow/cats01.shp",
+          "folder": "isosnow",
+          "filename": "cats01.shp",
+          "stem": "cats01",
+          "extension": ".shp",
+          "size": 14176,
+          "sha1": "f0a81c916560494e0eede6de84804fbc36e459ba"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2892,
+          "pack": "ra2",
+          "relative_path": "isourb/cuts01.shp",
+          "folder": "isourb",
+          "filename": "cuts01.shp",
+          "stem": "cuts01",
+          "extension": ".shp",
+          "size": 14176,
+          "sha1": "6d46ab8d0201d616a0bd7ca158debd47b0122b8c"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6273,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdts01.shp",
+          "folder": "isodes",
+          "filename": "cdts01.shp",
+          "stem": "cdts01",
+          "extension": ".shp",
+          "size": 14176,
+          "sha1": "6d46ab8d0201d616a0bd7ca158debd47b0122b8c"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8341,
+          "pack": "ra2md",
+          "relative_path": "isolun/clts01.shp",
+          "folder": "isolun",
+          "filename": "clts01.shp",
+          "stem": "clts01",
+          "extension": ".shp",
+          "size": 14176,
+          "sha1": "6d46ab8d0201d616a0bd7ca158debd47b0122b8c"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9420,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnts01.shp",
+          "folder": "isoubn",
+          "filename": "cnts01.shp",
+          "stem": "cnts01",
+          "extension": ".shp",
+          "size": 14176,
+          "sha1": "6d46ab8d0201d616a0bd7ca158debd47b0122b8c"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "2x2",
+    "height": 3,
+    "occupy_height": 3,
+    "damage_fire_offsets": [
+      [
+        30.0,
+        19.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CATS01",
+      "Name": "Farm Twin Silos",
+      "TechLevel": -1,
+      "Strength": 300,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "DebrisAnim": "Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg,Dbris5lg,Dbris5sm,Dbris9lg,Dbris8lg",
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "CanBeOccupied": false,
+      "MaxNumberOccupants": 0,
+      "DistributedFire": false
+    },
+    "raw_values": {
+      "UIName": "Name:CATS01",
+      "Name": "Farm Twin Silos",
+      "TechLevel": "-1",
+      "Strength": "300",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "DebrisAnim": "Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg,Dbris5lg,Dbris5sm,Dbris9lg,Dbris8lg",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "CanBeOccupied": "no",
+      "MaxNumberOccupants": "0",
+      "DistributedFire": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CATS01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21461,
+          "section": "CATS01",
+          "key": "UIName",
+          "value": "Name:CATS01"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14816,
+            "section": "CATS01",
+            "key": "UIName",
+            "value": "Name:CATS01"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21453,
+            "section": "CATS01",
+            "key": "UIName",
+            "value": "Name:CATS01"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Farm Twin Silos",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21462,
+          "section": "CATS01",
+          "key": "Name",
+          "value": "Farm Twin Silos"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14817,
+            "section": "CATS01",
+            "key": "Name",
+            "value": "RA2 Twin Silos"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21454,
+            "section": "CATS01",
+            "key": "Name",
+            "value": "Farm Twin Silos"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21463,
+          "section": "CATS01",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14818,
+            "section": "CATS01",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21455,
+            "section": "CATS01",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "300",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21464,
+          "section": "CATS01",
+          "key": "Strength",
+          "value": "300"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14819,
+            "section": "CATS01",
+            "key": "Strength",
+            "value": "300"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21456,
+            "section": "CATS01",
+            "key": "Strength",
+            "value": "300"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21465,
+          "section": "CATS01",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14820,
+            "section": "CATS01",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21457,
+            "section": "CATS01",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21466,
+          "section": "CATS01",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14821,
+            "section": "CATS01",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21458,
+            "section": "CATS01",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 14822,
+          "section": "CATS01",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21468,
+          "section": "CATS01",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14823,
+            "section": "CATS01",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21460,
+            "section": "CATS01",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21469,
+          "section": "CATS01",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14824,
+            "section": "CATS01",
+            "key": "Armor",
+            "value": "steel"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21461,
+            "section": "CATS01",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21470,
+          "section": "CATS01",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14825,
+            "section": "CATS01",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21462,
+            "section": "CATS01",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21471,
+          "section": "CATS01",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14826,
+            "section": "CATS01",
+            "key": "MaxDebris",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21463,
+            "section": "CATS01",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21472,
+          "section": "CATS01",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14827,
+            "section": "CATS01",
+            "key": "MinDebris",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21464,
+            "section": "CATS01",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "DebrisAnim": {
+        "value": "Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg,Dbris5lg,Dbris5sm,Dbris9lg,Dbris8lg",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21473,
+          "section": "CATS01",
+          "key": "DebrisAnim",
+          "value": "Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg,Dbris5lg,Dbris5sm,Dbris9lg,Dbris8lg"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14828,
+            "section": "CATS01",
+            "key": "DebrisAnim",
+            "value": "Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg,Dbris5lg,Dbris5sm,Dbris9lg,Dbris8lg"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21465,
+            "section": "CATS01",
+            "key": "DebrisAnim",
+            "value": "Dbris4lg,Dbris4sm,Dbris6sm,Dbris7lg,Dbris7sm,Dbris8sm,Dbris9lg,Dbris5lg,Dbris5sm,Dbris9lg,Dbris8lg"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21476,
+          "section": "CATS01",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14831,
+            "section": "CATS01",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21468,
+            "section": "CATS01",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21477,
+          "section": "CATS01",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14832,
+            "section": "CATS01",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21469,
+            "section": "CATS01",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21478,
+          "section": "CATS01",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14833,
+            "section": "CATS01",
+            "key": "ClickRepairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21470,
+            "section": "CATS01",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanBeOccupied": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21479,
+          "section": "CATS01",
+          "key": "CanBeOccupied",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14834,
+            "section": "CATS01",
+            "key": "CanBeOccupied",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21471,
+            "section": "CATS01",
+            "key": "CanBeOccupied",
+            "value": "no"
+          }
+        ]
+      },
+      "MaxNumberOccupants": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21480,
+          "section": "CATS01",
+          "key": "MaxNumberOccupants",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14835,
+            "section": "CATS01",
+            "key": "MaxNumberOccupants",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21472,
+            "section": "CATS01",
+            "key": "MaxNumberOccupants",
+            "value": "0"
+          }
+        ]
+      },
+      "DistributedFire": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21481,
+          "section": "CATS01",
+          "key": "DistributedFire",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14836,
+            "section": "CATS01",
+            "key": "DistributedFire",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21473,
+            "section": "CATS01",
+            "key": "DistributedFire",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "2x2",
+      "NewTheater": true,
+      "DemandLoad": true,
+      "Height": 3,
+      "CanHideThings": true,
+      "OccupyHeight": 3,
+      "CanBeHidden": false,
+      "DamageFireOffset0": "30,19"
+    },
+    "raw_values": {
+      "Foundation": "2x2",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "Height": "3",
+      "CanHideThings": "true",
+      "OccupyHeight": "3",
+      "CanBeHidden": "False",
+      "DamageFireOffset0": "30,19"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "2x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7042,
+          "section": "CATS01",
+          "key": "Foundation",
+          "value": "2x2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5248,
+            "section": "CATS01",
+            "key": "Foundation",
+            "value": "2x2"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7043,
+          "section": "CATS01",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5249,
+            "section": "CATS01",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7044,
+          "section": "CATS01",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5250,
+            "section": "CATS01",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "Height": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7045,
+          "section": "CATS01",
+          "key": "Height",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5251,
+            "section": "CATS01",
+            "key": "Height",
+            "value": "3"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7046,
+          "section": "CATS01",
+          "key": "CanHideThings",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5252,
+            "section": "CATS01",
+            "key": "CanHideThings",
+            "value": "true"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7047,
+          "section": "CATS01",
+          "key": "OccupyHeight",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5253,
+            "section": "CATS01",
+            "key": "OccupyHeight",
+            "value": "3"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7051,
+          "section": "CATS01",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5257,
+            "section": "CATS01",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "30,19",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 7052,
+          "section": "CATS01",
+          "key": "DamageFireOffset0",
+          "value": "30,19"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5258,
+            "section": "CATS01",
+            "key": "DamageFireOffset0",
+            "value": "30,19"
+          }
+        ]
+      }
+    }
+  }
+}

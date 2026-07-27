@@ -1,0 +1,4453 @@
+{
+  "id": "NAPSIS",
+  "category": "building",
+  "name_token": "Name:YURIRAD",
+  "art_id": "NAPSIS",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YACNST",
+    "PROC"
+  ],
+  "tech_level": 3,
+  "cost": 1000,
+  "strength": 750,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 10,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "NAPSIS",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 11214,
+          "pack": "ra2md",
+          "relative_path": "snowmd/napsis.shp",
+          "folder": "snowmd",
+          "filename": "napsis.shp",
+          "stem": "napsis",
+          "extension": ".shp",
+          "size": 15072,
+          "sha1": "d8cadb09bdfbd71029e8e3dcd90515a8472097ab"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 5058,
+          "pack": "ra2",
+          "relative_path": "snow/napsis.shp",
+          "folder": "snow",
+          "filename": "napsis.shp",
+          "stem": "napsis",
+          "extension": ".shp",
+          "size": 14872,
+          "sha1": "9d5b7575a0a26452e556c9c4e1c0e927fe73ba33"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 11214,
+          "pack": "ra2md",
+          "relative_path": "snowmd/napsis.shp",
+          "folder": "snowmd",
+          "filename": "napsis.shp",
+          "stem": "napsis",
+          "extension": ".shp",
+          "size": 15072,
+          "sha1": "d8cadb09bdfbd71029e8e3dcd90515a8472097ab"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 11214,
+          "pack": "ra2md",
+          "relative_path": "snowmd/napsis.shp",
+          "folder": "snowmd",
+          "filename": "napsis.shp",
+          "stem": "napsis",
+          "extension": ".shp",
+          "size": 15072,
+          "sha1": "d8cadb09bdfbd71029e8e3dcd90515a8472097ab"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 11214,
+          "pack": "ra2md",
+          "relative_path": "snowmd/napsis.shp",
+          "folder": "snowmd",
+          "filename": "napsis.shp",
+          "stem": "napsis",
+          "extension": ".shp",
+          "size": 15072,
+          "sha1": "d8cadb09bdfbd71029e8e3dcd90515a8472097ab"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 11214,
+          "pack": "ra2md",
+          "relative_path": "snowmd/napsis.shp",
+          "folder": "snowmd",
+          "filename": "napsis.shp",
+          "stem": "napsis",
+          "extension": ".shp",
+          "size": 15072,
+          "sha1": "d8cadb09bdfbd71029e8e3dcd90515a8472097ab"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "Buildup": {
+        "temperate": {
+          "art_id": "NAPSISMK",
+          "image": "NAPSISMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 8963,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/napsismk.shp",
+            "folder": "isosnomd",
+            "filename": "napsismk.shp",
+            "stem": "napsismk",
+            "extension": ".shp",
+            "size": 118768,
+            "sha1": "5c0d6d937fbc0c03d5e9c3b3da017e4fa65bed1f"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "NAPSISMK",
+          "image": "NAPSISMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 1061,
+            "pack": "ra2",
+            "relative_path": "isosnow/napsismk.shp",
+            "folder": "isosnow",
+            "filename": "napsismk.shp",
+            "stem": "napsismk",
+            "extension": ".shp",
+            "size": 119008,
+            "sha1": "4f39a21594749007b1ff7b5cca7bddcf53201507"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "NAPSISMK",
+          "image": "NAPSISMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 8963,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/napsismk.shp",
+            "folder": "isosnomd",
+            "filename": "napsismk.shp",
+            "stem": "napsismk",
+            "extension": ".shp",
+            "size": 118768,
+            "sha1": "5c0d6d937fbc0c03d5e9c3b3da017e4fa65bed1f"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "NAPSISMK",
+          "image": "NAPSISMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 8963,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/napsismk.shp",
+            "folder": "isosnomd",
+            "filename": "napsismk.shp",
+            "stem": "napsismk",
+            "extension": ".shp",
+            "size": 118768,
+            "sha1": "5c0d6d937fbc0c03d5e9c3b3da017e4fa65bed1f"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "NAPSISMK",
+          "image": "NAPSISMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 8963,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/napsismk.shp",
+            "folder": "isosnomd",
+            "filename": "napsismk.shp",
+            "stem": "napsismk",
+            "extension": ".shp",
+            "size": 118768,
+            "sha1": "5c0d6d937fbc0c03d5e9c3b3da017e4fa65bed1f"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "NAPSISMK",
+          "image": "NAPSISMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 8963,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/napsismk.shp",
+            "folder": "isosnomd",
+            "filename": "napsismk.shp",
+            "stem": "napsismk",
+            "extension": ".shp",
+            "size": 118768,
+            "sha1": "5c0d6d937fbc0c03d5e9c3b3da017e4fa65bed1f"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        }
+      },
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "NAPSIS_A",
+          "image": "NAPSIS_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 5993,
+            "pack": "ra2md",
+            "relative_path": "genermd/ngpsis_a.shp",
+            "folder": "genermd",
+            "filename": "ngpsis_a.shp",
+            "stem": "ngpsis_a",
+            "extension": ".shp",
+            "size": 617784,
+            "sha1": "31f9e9b3f56d4b43f65ffc969514ef43b0c94d81"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 39,
+          "LoopCount": -1,
+          "Rate": 350,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16683,
+                "section": "NAPSIS_A",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11980,
+                  "section": "NAPSIS_A",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16684,
+                "section": "NAPSIS_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11981,
+                  "section": "NAPSIS_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16685,
+                "section": "NAPSIS_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11982,
+                  "section": "NAPSIS_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16686,
+                "section": "NAPSIS_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11983,
+                  "section": "NAPSIS_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "39",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16687,
+                "section": "NAPSIS_A",
+                "key": "LoopEnd",
+                "value": "39"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11984,
+                  "section": "NAPSIS_A",
+                  "key": "LoopEnd",
+                  "value": "39"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16688,
+                "section": "NAPSIS_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11985,
+                  "section": "NAPSIS_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "350",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16689,
+                "section": "NAPSIS_A",
+                "key": "Rate",
+                "value": "350"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11986,
+                  "section": "NAPSIS_A",
+                  "key": "Rate",
+                  "value": "350"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16690,
+                "section": "NAPSIS_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11987,
+                  "section": "NAPSIS_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16691,
+                "section": "NAPSIS_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11988,
+                  "section": "NAPSIS_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5,
+          "YSort": 100
+        },
+        "snow": {
+          "art_id": "NAPSIS_A",
+          "image": "NAPSIS_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 5059,
+            "pack": "ra2",
+            "relative_path": "snow/napsis_a.shp",
+            "folder": "snow",
+            "filename": "napsis_a.shp",
+            "stem": "napsis_a",
+            "extension": ".shp",
+            "size": 610760,
+            "sha1": "2e2fdd289244fca33e0682f92c1133fcdacad899"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 39,
+          "LoopCount": -1,
+          "Rate": 350,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16683,
+                "section": "NAPSIS_A",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11980,
+                  "section": "NAPSIS_A",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16684,
+                "section": "NAPSIS_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11981,
+                  "section": "NAPSIS_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16685,
+                "section": "NAPSIS_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11982,
+                  "section": "NAPSIS_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16686,
+                "section": "NAPSIS_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11983,
+                  "section": "NAPSIS_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "39",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16687,
+                "section": "NAPSIS_A",
+                "key": "LoopEnd",
+                "value": "39"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11984,
+                  "section": "NAPSIS_A",
+                  "key": "LoopEnd",
+                  "value": "39"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16688,
+                "section": "NAPSIS_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11985,
+                  "section": "NAPSIS_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "350",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16689,
+                "section": "NAPSIS_A",
+                "key": "Rate",
+                "value": "350"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11986,
+                  "section": "NAPSIS_A",
+                  "key": "Rate",
+                  "value": "350"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16690,
+                "section": "NAPSIS_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11987,
+                  "section": "NAPSIS_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16691,
+                "section": "NAPSIS_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11988,
+                  "section": "NAPSIS_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5,
+          "YSort": 100
+        },
+        "urban": {
+          "art_id": "NAPSIS_A",
+          "image": "NAPSIS_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 5993,
+            "pack": "ra2md",
+            "relative_path": "genermd/ngpsis_a.shp",
+            "folder": "genermd",
+            "filename": "ngpsis_a.shp",
+            "stem": "ngpsis_a",
+            "extension": ".shp",
+            "size": 617784,
+            "sha1": "31f9e9b3f56d4b43f65ffc969514ef43b0c94d81"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 39,
+          "LoopCount": -1,
+          "Rate": 350,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16683,
+                "section": "NAPSIS_A",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11980,
+                  "section": "NAPSIS_A",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16684,
+                "section": "NAPSIS_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11981,
+                  "section": "NAPSIS_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16685,
+                "section": "NAPSIS_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11982,
+                  "section": "NAPSIS_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16686,
+                "section": "NAPSIS_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11983,
+                  "section": "NAPSIS_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "39",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16687,
+                "section": "NAPSIS_A",
+                "key": "LoopEnd",
+                "value": "39"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11984,
+                  "section": "NAPSIS_A",
+                  "key": "LoopEnd",
+                  "value": "39"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16688,
+                "section": "NAPSIS_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11985,
+                  "section": "NAPSIS_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "350",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16689,
+                "section": "NAPSIS_A",
+                "key": "Rate",
+                "value": "350"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11986,
+                  "section": "NAPSIS_A",
+                  "key": "Rate",
+                  "value": "350"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16690,
+                "section": "NAPSIS_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11987,
+                  "section": "NAPSIS_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16691,
+                "section": "NAPSIS_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11988,
+                  "section": "NAPSIS_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5,
+          "YSort": 100
+        },
+        "desert": {
+          "art_id": "NAPSIS_A",
+          "image": "NAPSIS_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 5993,
+            "pack": "ra2md",
+            "relative_path": "genermd/ngpsis_a.shp",
+            "folder": "genermd",
+            "filename": "ngpsis_a.shp",
+            "stem": "ngpsis_a",
+            "extension": ".shp",
+            "size": 617784,
+            "sha1": "31f9e9b3f56d4b43f65ffc969514ef43b0c94d81"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 39,
+          "LoopCount": -1,
+          "Rate": 350,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16683,
+                "section": "NAPSIS_A",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11980,
+                  "section": "NAPSIS_A",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16684,
+                "section": "NAPSIS_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11981,
+                  "section": "NAPSIS_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16685,
+                "section": "NAPSIS_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11982,
+                  "section": "NAPSIS_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16686,
+                "section": "NAPSIS_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11983,
+                  "section": "NAPSIS_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "39",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16687,
+                "section": "NAPSIS_A",
+                "key": "LoopEnd",
+                "value": "39"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11984,
+                  "section": "NAPSIS_A",
+                  "key": "LoopEnd",
+                  "value": "39"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16688,
+                "section": "NAPSIS_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11985,
+                  "section": "NAPSIS_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "350",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16689,
+                "section": "NAPSIS_A",
+                "key": "Rate",
+                "value": "350"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11986,
+                  "section": "NAPSIS_A",
+                  "key": "Rate",
+                  "value": "350"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16690,
+                "section": "NAPSIS_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11987,
+                  "section": "NAPSIS_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16691,
+                "section": "NAPSIS_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11988,
+                  "section": "NAPSIS_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5,
+          "YSort": 100
+        },
+        "lunar": {
+          "art_id": "NAPSIS_A",
+          "image": "NAPSIS_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 5993,
+            "pack": "ra2md",
+            "relative_path": "genermd/ngpsis_a.shp",
+            "folder": "genermd",
+            "filename": "ngpsis_a.shp",
+            "stem": "ngpsis_a",
+            "extension": ".shp",
+            "size": 617784,
+            "sha1": "31f9e9b3f56d4b43f65ffc969514ef43b0c94d81"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 39,
+          "LoopCount": -1,
+          "Rate": 350,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16683,
+                "section": "NAPSIS_A",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11980,
+                  "section": "NAPSIS_A",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16684,
+                "section": "NAPSIS_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11981,
+                  "section": "NAPSIS_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16685,
+                "section": "NAPSIS_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11982,
+                  "section": "NAPSIS_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16686,
+                "section": "NAPSIS_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11983,
+                  "section": "NAPSIS_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "39",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16687,
+                "section": "NAPSIS_A",
+                "key": "LoopEnd",
+                "value": "39"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11984,
+                  "section": "NAPSIS_A",
+                  "key": "LoopEnd",
+                  "value": "39"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16688,
+                "section": "NAPSIS_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11985,
+                  "section": "NAPSIS_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "350",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16689,
+                "section": "NAPSIS_A",
+                "key": "Rate",
+                "value": "350"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11986,
+                  "section": "NAPSIS_A",
+                  "key": "Rate",
+                  "value": "350"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16690,
+                "section": "NAPSIS_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11987,
+                  "section": "NAPSIS_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16691,
+                "section": "NAPSIS_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11988,
+                  "section": "NAPSIS_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5,
+          "YSort": 100
+        },
+        "newurban": {
+          "art_id": "NAPSIS_A",
+          "image": "NAPSIS_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 5993,
+            "pack": "ra2md",
+            "relative_path": "genermd/ngpsis_a.shp",
+            "folder": "genermd",
+            "filename": "ngpsis_a.shp",
+            "stem": "ngpsis_a",
+            "extension": ".shp",
+            "size": 617784,
+            "sha1": "31f9e9b3f56d4b43f65ffc969514ef43b0c94d81"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 39,
+          "LoopCount": -1,
+          "Rate": 350,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16683,
+                "section": "NAPSIS_A",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11980,
+                  "section": "NAPSIS_A",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16684,
+                "section": "NAPSIS_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11981,
+                  "section": "NAPSIS_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16685,
+                "section": "NAPSIS_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11982,
+                  "section": "NAPSIS_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16686,
+                "section": "NAPSIS_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11983,
+                  "section": "NAPSIS_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "39",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16687,
+                "section": "NAPSIS_A",
+                "key": "LoopEnd",
+                "value": "39"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11984,
+                  "section": "NAPSIS_A",
+                  "key": "LoopEnd",
+                  "value": "39"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16688,
+                "section": "NAPSIS_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11985,
+                  "section": "NAPSIS_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "350",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16689,
+                "section": "NAPSIS_A",
+                "key": "Rate",
+                "value": "350"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11986,
+                  "section": "NAPSIS_A",
+                  "key": "Rate",
+                  "value": "350"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16690,
+                "section": "NAPSIS_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11987,
+                  "section": "NAPSIS_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16691,
+                "section": "NAPSIS_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11988,
+                  "section": "NAPSIS_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5,
+          "YSort": 100
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "NAPSIS_AD",
+          "image": "NAPSIS_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 11215,
+            "pack": "ra2md",
+            "relative_path": "snowmd/napsis_a.shp",
+            "folder": "snowmd",
+            "filename": "napsis_a.shp",
+            "stem": "napsis_a",
+            "extension": ".shp",
+            "size": 617768,
+            "sha1": "65463bca922f8e6397d1baab8f6131c02937fd3c"
+          },
+          "Start": 40,
+          "LoopStart": 40,
+          "LoopEnd": 80,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16694,
+                "section": "NAPSIS_AD",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11991,
+                  "section": "NAPSIS_AD",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16696,
+                "section": "NAPSIS_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11993,
+                  "section": "NAPSIS_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16697,
+                "section": "NAPSIS_AD",
+                "key": "Start",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11994,
+                  "section": "NAPSIS_AD",
+                  "key": "Start",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16698,
+                "section": "NAPSIS_AD",
+                "key": "LoopStart",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11995,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopStart",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "80",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16699,
+                "section": "NAPSIS_AD",
+                "key": "LoopEnd",
+                "value": "80"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11996,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopEnd",
+                  "value": "79"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16700,
+                "section": "NAPSIS_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11997,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16701,
+                "section": "NAPSIS_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11998,
+                  "section": "NAPSIS_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16702,
+                "section": "NAPSIS_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11999,
+                  "section": "NAPSIS_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16703,
+                "section": "NAPSIS_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 12000,
+                  "section": "NAPSIS_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5,
+          "YSort": 100
+        },
+        "snow": {
+          "art_id": "NAPSIS_AD",
+          "image": "NAPSIS_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 5059,
+            "pack": "ra2",
+            "relative_path": "snow/napsis_a.shp",
+            "folder": "snow",
+            "filename": "napsis_a.shp",
+            "stem": "napsis_a",
+            "extension": ".shp",
+            "size": 610760,
+            "sha1": "2e2fdd289244fca33e0682f92c1133fcdacad899"
+          },
+          "Start": 40,
+          "LoopStart": 40,
+          "LoopEnd": 80,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16694,
+                "section": "NAPSIS_AD",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11991,
+                  "section": "NAPSIS_AD",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16696,
+                "section": "NAPSIS_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11993,
+                  "section": "NAPSIS_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16697,
+                "section": "NAPSIS_AD",
+                "key": "Start",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11994,
+                  "section": "NAPSIS_AD",
+                  "key": "Start",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16698,
+                "section": "NAPSIS_AD",
+                "key": "LoopStart",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11995,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopStart",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "80",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16699,
+                "section": "NAPSIS_AD",
+                "key": "LoopEnd",
+                "value": "80"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11996,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopEnd",
+                  "value": "79"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16700,
+                "section": "NAPSIS_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11997,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16701,
+                "section": "NAPSIS_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11998,
+                  "section": "NAPSIS_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16702,
+                "section": "NAPSIS_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11999,
+                  "section": "NAPSIS_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16703,
+                "section": "NAPSIS_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 12000,
+                  "section": "NAPSIS_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5,
+          "YSort": 100
+        },
+        "urban": {
+          "art_id": "NAPSIS_AD",
+          "image": "NAPSIS_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 11215,
+            "pack": "ra2md",
+            "relative_path": "snowmd/napsis_a.shp",
+            "folder": "snowmd",
+            "filename": "napsis_a.shp",
+            "stem": "napsis_a",
+            "extension": ".shp",
+            "size": 617768,
+            "sha1": "65463bca922f8e6397d1baab8f6131c02937fd3c"
+          },
+          "Start": 40,
+          "LoopStart": 40,
+          "LoopEnd": 80,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16694,
+                "section": "NAPSIS_AD",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11991,
+                  "section": "NAPSIS_AD",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16696,
+                "section": "NAPSIS_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11993,
+                  "section": "NAPSIS_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16697,
+                "section": "NAPSIS_AD",
+                "key": "Start",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11994,
+                  "section": "NAPSIS_AD",
+                  "key": "Start",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16698,
+                "section": "NAPSIS_AD",
+                "key": "LoopStart",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11995,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopStart",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "80",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16699,
+                "section": "NAPSIS_AD",
+                "key": "LoopEnd",
+                "value": "80"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11996,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopEnd",
+                  "value": "79"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16700,
+                "section": "NAPSIS_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11997,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16701,
+                "section": "NAPSIS_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11998,
+                  "section": "NAPSIS_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16702,
+                "section": "NAPSIS_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11999,
+                  "section": "NAPSIS_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16703,
+                "section": "NAPSIS_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 12000,
+                  "section": "NAPSIS_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5,
+          "YSort": 100
+        },
+        "desert": {
+          "art_id": "NAPSIS_AD",
+          "image": "NAPSIS_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 11215,
+            "pack": "ra2md",
+            "relative_path": "snowmd/napsis_a.shp",
+            "folder": "snowmd",
+            "filename": "napsis_a.shp",
+            "stem": "napsis_a",
+            "extension": ".shp",
+            "size": 617768,
+            "sha1": "65463bca922f8e6397d1baab8f6131c02937fd3c"
+          },
+          "Start": 40,
+          "LoopStart": 40,
+          "LoopEnd": 80,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16694,
+                "section": "NAPSIS_AD",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11991,
+                  "section": "NAPSIS_AD",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16696,
+                "section": "NAPSIS_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11993,
+                  "section": "NAPSIS_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16697,
+                "section": "NAPSIS_AD",
+                "key": "Start",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11994,
+                  "section": "NAPSIS_AD",
+                  "key": "Start",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16698,
+                "section": "NAPSIS_AD",
+                "key": "LoopStart",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11995,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopStart",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "80",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16699,
+                "section": "NAPSIS_AD",
+                "key": "LoopEnd",
+                "value": "80"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11996,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopEnd",
+                  "value": "79"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16700,
+                "section": "NAPSIS_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11997,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16701,
+                "section": "NAPSIS_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11998,
+                  "section": "NAPSIS_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16702,
+                "section": "NAPSIS_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11999,
+                  "section": "NAPSIS_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16703,
+                "section": "NAPSIS_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 12000,
+                  "section": "NAPSIS_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5,
+          "YSort": 100
+        },
+        "lunar": {
+          "art_id": "NAPSIS_AD",
+          "image": "NAPSIS_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 11215,
+            "pack": "ra2md",
+            "relative_path": "snowmd/napsis_a.shp",
+            "folder": "snowmd",
+            "filename": "napsis_a.shp",
+            "stem": "napsis_a",
+            "extension": ".shp",
+            "size": 617768,
+            "sha1": "65463bca922f8e6397d1baab8f6131c02937fd3c"
+          },
+          "Start": 40,
+          "LoopStart": 40,
+          "LoopEnd": 80,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16694,
+                "section": "NAPSIS_AD",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11991,
+                  "section": "NAPSIS_AD",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16696,
+                "section": "NAPSIS_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11993,
+                  "section": "NAPSIS_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16697,
+                "section": "NAPSIS_AD",
+                "key": "Start",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11994,
+                  "section": "NAPSIS_AD",
+                  "key": "Start",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16698,
+                "section": "NAPSIS_AD",
+                "key": "LoopStart",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11995,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopStart",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "80",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16699,
+                "section": "NAPSIS_AD",
+                "key": "LoopEnd",
+                "value": "80"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11996,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopEnd",
+                  "value": "79"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16700,
+                "section": "NAPSIS_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11997,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16701,
+                "section": "NAPSIS_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11998,
+                  "section": "NAPSIS_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16702,
+                "section": "NAPSIS_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11999,
+                  "section": "NAPSIS_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16703,
+                "section": "NAPSIS_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 12000,
+                  "section": "NAPSIS_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5,
+          "YSort": 100
+        },
+        "newurban": {
+          "art_id": "NAPSIS_AD",
+          "image": "NAPSIS_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 11215,
+            "pack": "ra2md",
+            "relative_path": "snowmd/napsis_a.shp",
+            "folder": "snowmd",
+            "filename": "napsis_a.shp",
+            "stem": "napsis_a",
+            "extension": ".shp",
+            "size": 617768,
+            "sha1": "65463bca922f8e6397d1baab8f6131c02937fd3c"
+          },
+          "Start": 40,
+          "LoopStart": 40,
+          "LoopEnd": 80,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSIS_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16694,
+                "section": "NAPSIS_AD",
+                "key": "Image",
+                "value": "NAPSIS_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11991,
+                  "section": "NAPSIS_AD",
+                  "key": "Image",
+                  "value": "NAPSIS_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16696,
+                "section": "NAPSIS_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11993,
+                  "section": "NAPSIS_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16697,
+                "section": "NAPSIS_AD",
+                "key": "Start",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11994,
+                  "section": "NAPSIS_AD",
+                  "key": "Start",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "40",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16698,
+                "section": "NAPSIS_AD",
+                "key": "LoopStart",
+                "value": "40"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11995,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopStart",
+                  "value": "40"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "80",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16699,
+                "section": "NAPSIS_AD",
+                "key": "LoopEnd",
+                "value": "80"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11996,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopEnd",
+                  "value": "79"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16700,
+                "section": "NAPSIS_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11997,
+                  "section": "NAPSIS_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16701,
+                "section": "NAPSIS_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11998,
+                  "section": "NAPSIS_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16702,
+                "section": "NAPSIS_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11999,
+                  "section": "NAPSIS_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16703,
+                "section": "NAPSIS_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 12000,
+                  "section": "NAPSIS_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5,
+          "YSort": 100
+        }
+      }
+    },
+    "foundation": "2x2",
+    "height": 8,
+    "occupy_height": 2,
+    "damage_fire_offsets": [
+      [
+        -23.0,
+        34.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:YURIRAD",
+      "Name": "Yuri Psychic Sensor",
+      "BuildCat": "Tech",
+      "Prerequisite": "YACNST,PROC",
+      "Strength": 750,
+      "Armor": "wood",
+      "TechLevel": 3,
+      "Adjacent": 2,
+      "Sight": 10,
+      "PsychicDetectionRadius": 15,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": 2,
+      "Cost": 1000,
+      "Points": 50,
+      "Power": -50,
+      "Powered": true,
+      "Capturable": true,
+      "Crewed": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnim": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+      "DamageSmokeOffset": "220, 390, 150",
+      "AIBuildThis": true,
+      "HasRadialIndicator": true,
+      "ConcentricRadialIndicator": true,
+      "DetectDisguise": true,
+      "DetectDisguiseRange": 15,
+      "SensorArray": true,
+      "SensorsSight": 15,
+      "Radar": true,
+      "Spyable": true,
+      "ImmuneToPsionics": false,
+      "SuperWeapon": "PsychicRevealSpecial"
+    },
+    "raw_values": {
+      "UIName": "Name:YURIRAD",
+      "Name": "Yuri Psychic Sensor",
+      "BuildCat": "Tech",
+      "Prerequisite": "YACNST,PROC",
+      "Strength": "750",
+      "Armor": "wood",
+      "TechLevel": "3",
+      "Adjacent": "2",
+      "Sight": "10",
+      "PsychicDetectionRadius": "15",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": "2",
+      "Cost": "1000",
+      "Points": "50",
+      "Power": "-50",
+      "Powered": "true",
+      "Capturable": "true",
+      "Crewed": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnim": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+      "DamageSmokeOffset": "220, 390, 150",
+      "AIBuildThis": "yes",
+      "HasRadialIndicator": "true",
+      "ConcentricRadialIndicator": "true",
+      "DetectDisguise": "yes",
+      "DetectDisguiseRange": "15",
+      "SensorArray": "yes",
+      "SensorsSight": "15",
+      "Radar": "yes",
+      "Spyable": "yes",
+      "ImmuneToPsionics": "no",
+      "SuperWeapon": "PsychicRevealSpecial"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:YURIRAD",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13343,
+          "section": "NAPSIS",
+          "key": "UIName",
+          "value": "Name:YURIRAD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10211,
+            "section": "NAPSIS",
+            "key": "UIName",
+            "value": "Name:NAPSIS"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13336,
+            "section": "NAPSIS",
+            "key": "UIName",
+            "value": "Name:YURIRAD"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Yuri Psychic Sensor",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13344,
+          "section": "NAPSIS",
+          "key": "Name",
+          "value": "Yuri Psychic Sensor"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10212,
+            "section": "NAPSIS",
+            "key": "Name",
+            "value": "Psychic Sensor"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13337,
+            "section": "NAPSIS",
+            "key": "Name",
+            "value": "Yuri Psychic Sensor"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Tech",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13345,
+          "section": "NAPSIS",
+          "key": "BuildCat",
+          "value": "Tech"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10213,
+            "section": "NAPSIS",
+            "key": "BuildCat",
+            "value": "Combat"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13338,
+            "section": "NAPSIS",
+            "key": "BuildCat",
+            "value": "Tech"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YACNST,PROC",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13346,
+          "section": "NAPSIS",
+          "key": "Prerequisite",
+          "value": "YACNST,PROC"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10214,
+            "section": "NAPSIS",
+            "key": "Prerequisite",
+            "value": "NATECH,NACNST"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13339,
+            "section": "NAPSIS",
+            "key": "Prerequisite",
+            "value": "YACNST,PROC"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "750",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13347,
+          "section": "NAPSIS",
+          "key": "Strength",
+          "value": "750"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10215,
+            "section": "NAPSIS",
+            "key": "Strength",
+            "value": "750"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13340,
+            "section": "NAPSIS",
+            "key": "Strength",
+            "value": "750"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13349,
+          "section": "NAPSIS",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10216,
+            "section": "NAPSIS",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13342,
+            "section": "NAPSIS",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13350,
+          "section": "NAPSIS",
+          "key": "TechLevel",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10217,
+            "section": "NAPSIS",
+            "key": "TechLevel",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13343,
+            "section": "NAPSIS",
+            "key": "TechLevel",
+            "value": "3"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13351,
+          "section": "NAPSIS",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10218,
+            "section": "NAPSIS",
+            "key": "Adjacent",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13344,
+            "section": "NAPSIS",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13352,
+          "section": "NAPSIS",
+          "key": "Sight",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10219,
+            "section": "NAPSIS",
+            "key": "Sight",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13345,
+            "section": "NAPSIS",
+            "key": "Sight",
+            "value": "10"
+          }
+        ]
+      },
+      "PsychicDetectionRadius": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13353,
+          "section": "NAPSIS",
+          "key": "PsychicDetectionRadius",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10220,
+            "section": "NAPSIS",
+            "key": "PsychicDetectionRadius",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13346,
+            "section": "NAPSIS",
+            "key": "PsychicDetectionRadius",
+            "value": "15"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13354,
+          "section": "NAPSIS",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10221,
+            "section": "NAPSIS",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13347,
+            "section": "NAPSIS",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AIBasePlanningSide": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13355,
+          "section": "NAPSIS",
+          "key": "AIBasePlanningSide",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10222,
+            "section": "NAPSIS",
+            "key": "AIBasePlanningSide",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13348,
+            "section": "NAPSIS",
+            "key": "AIBasePlanningSide",
+            "value": "2"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13356,
+          "section": "NAPSIS",
+          "key": "Cost",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10223,
+            "section": "NAPSIS",
+            "key": "Cost",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13349,
+            "section": "NAPSIS",
+            "key": "Cost",
+            "value": "1000"
+          }
+        ]
+      },
+      "Points": {
+        "value": "50",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13357,
+          "section": "NAPSIS",
+          "key": "Points",
+          "value": "50"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10224,
+            "section": "NAPSIS",
+            "key": "Points",
+            "value": "50"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13350,
+            "section": "NAPSIS",
+            "key": "Points",
+            "value": "50"
+          }
+        ]
+      },
+      "Power": {
+        "value": "-50",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13358,
+          "section": "NAPSIS",
+          "key": "Power",
+          "value": "-50"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10225,
+            "section": "NAPSIS",
+            "key": "Power",
+            "value": "-50"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13351,
+            "section": "NAPSIS",
+            "key": "Power",
+            "value": "-50"
+          }
+        ]
+      },
+      "Powered": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13359,
+          "section": "NAPSIS",
+          "key": "Powered",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10226,
+            "section": "NAPSIS",
+            "key": "Powered",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13352,
+            "section": "NAPSIS",
+            "key": "Powered",
+            "value": "true"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13360,
+          "section": "NAPSIS",
+          "key": "Capturable",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10227,
+            "section": "NAPSIS",
+            "key": "Capturable",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13353,
+            "section": "NAPSIS",
+            "key": "Capturable",
+            "value": "true"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13361,
+          "section": "NAPSIS",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10228,
+            "section": "NAPSIS",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13354,
+            "section": "NAPSIS",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13362,
+          "section": "NAPSIS",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10229,
+            "section": "NAPSIS",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13355,
+            "section": "NAPSIS",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnim": {
+        "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13363,
+          "section": "NAPSIS",
+          "key": "DebrisAnim",
+          "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10230,
+            "section": "NAPSIS",
+            "key": "DebrisAnim",
+            "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13356,
+            "section": "NAPSIS",
+            "key": "DebrisAnim",
+            "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13364,
+          "section": "NAPSIS",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10231,
+            "section": "NAPSIS",
+            "key": "MaxDebris",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13357,
+            "section": "NAPSIS",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13365,
+          "section": "NAPSIS",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10232,
+            "section": "NAPSIS",
+            "key": "MinDebris",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13358,
+            "section": "NAPSIS",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13366,
+          "section": "NAPSIS",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10233,
+            "section": "NAPSIS",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13359,
+            "section": "NAPSIS",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13367,
+          "section": "NAPSIS",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys,BigGreySmokeSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10234,
+            "section": "NAPSIS",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys,BigGreySmokeSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13360,
+            "section": "NAPSIS",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys,BigGreySmokeSys"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "220, 390, 150",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13368,
+          "section": "NAPSIS",
+          "key": "DamageSmokeOffset",
+          "value": "220, 390, 150"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10235,
+            "section": "NAPSIS",
+            "key": "DamageSmokeOffset",
+            "value": "220, 390, 150"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13361,
+            "section": "NAPSIS",
+            "key": "DamageSmokeOffset",
+            "value": "220, 390, 150"
+          }
+        ]
+      },
+      "AIBuildThis": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13369,
+          "section": "NAPSIS",
+          "key": "AIBuildThis",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10236,
+            "section": "NAPSIS",
+            "key": "AIBuildThis",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13362,
+            "section": "NAPSIS",
+            "key": "AIBuildThis",
+            "value": "yes"
+          }
+        ]
+      },
+      "HasRadialIndicator": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13370,
+          "section": "NAPSIS",
+          "key": "HasRadialIndicator",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10237,
+            "section": "NAPSIS",
+            "key": "HasRadialIndicator",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13363,
+            "section": "NAPSIS",
+            "key": "HasRadialIndicator",
+            "value": "true"
+          }
+        ]
+      },
+      "ConcentricRadialIndicator": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13371,
+          "section": "NAPSIS",
+          "key": "ConcentricRadialIndicator",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10238,
+            "section": "NAPSIS",
+            "key": "ConcentricRadialIndicator",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13364,
+            "section": "NAPSIS",
+            "key": "ConcentricRadialIndicator",
+            "value": "true"
+          }
+        ]
+      },
+      "DetectDisguise": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13372,
+          "section": "NAPSIS",
+          "key": "DetectDisguise",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10239,
+            "section": "NAPSIS",
+            "key": "DetectDisguise",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13365,
+            "section": "NAPSIS",
+            "key": "DetectDisguise",
+            "value": "yes"
+          }
+        ]
+      },
+      "DetectDisguiseRange": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13373,
+          "section": "NAPSIS",
+          "key": "DetectDisguiseRange",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10240,
+            "section": "NAPSIS",
+            "key": "DetectDisguiseRange",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13366,
+            "section": "NAPSIS",
+            "key": "DetectDisguiseRange",
+            "value": "15"
+          }
+        ]
+      },
+      "SensorArray": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13375,
+          "section": "NAPSIS",
+          "key": "SensorArray",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10242,
+            "section": "NAPSIS",
+            "key": "SensorArray",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13368,
+            "section": "NAPSIS",
+            "key": "SensorArray",
+            "value": "yes"
+          }
+        ]
+      },
+      "SensorsSight": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13376,
+          "section": "NAPSIS",
+          "key": "SensorsSight",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10243,
+            "section": "NAPSIS",
+            "key": "SensorsSight",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13369,
+            "section": "NAPSIS",
+            "key": "SensorsSight",
+            "value": "15"
+          }
+        ]
+      },
+      "Radar": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13348,
+          "section": "NAPSIS",
+          "key": "Radar",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13341,
+            "section": "NAPSIS",
+            "key": "Radar",
+            "value": "yes"
+          }
+        ]
+      },
+      "Spyable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13377,
+          "section": "NAPSIS",
+          "key": "Spyable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13370,
+            "section": "NAPSIS",
+            "key": "Spyable",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13378,
+          "section": "NAPSIS",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13371,
+            "section": "NAPSIS",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "SuperWeapon": {
+        "value": "PsychicRevealSpecial",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13379,
+          "section": "NAPSIS",
+          "key": "SuperWeapon",
+          "value": "PsychicRevealSpecial"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13372,
+            "section": "NAPSIS",
+            "key": "SuperWeapon",
+            "value": "PsychicRevealSpecial"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Remapable": true,
+      "Normalized": true,
+      "Height": 8,
+      "Cameo": "PSISICON",
+      "Foundation": "2x2",
+      "Buildup": "NAPSISMK",
+      "DemandLoadBuildup": true,
+      "FreeBuildup": true,
+      "ActiveAnim": "NAPSIS_A",
+      "ActiveAnimDamaged": "NAPSIS_AD",
+      "ActiveAnimZAdjust": -5,
+      "ActiveAnimYSort": 100,
+      "CanBeHidden": false,
+      "OccupyHeight": 2,
+      "AddOccupy1": "-2,-2",
+      "AddOccupy2": "-3,-3",
+      "AddOccupy3": "-1,-1",
+      "DamageFireOffset0": "-23,34"
+    },
+    "raw_values": {
+      "Remapable": "yes",
+      "Normalized": "yes",
+      "Height": "8",
+      "Cameo": "PSISICON",
+      "Foundation": "2x2",
+      "Buildup": "NAPSISMK",
+      "DemandLoadBuildup": "true",
+      "FreeBuildup": "true",
+      "ActiveAnim": "NAPSIS_A",
+      "ActiveAnimDamaged": "NAPSIS_AD",
+      "ActiveAnimZAdjust": "-5",
+      "ActiveAnimYSort": "100",
+      "CanBeHidden": "False",
+      "OccupyHeight": "2",
+      "AddOccupy1": "-2,-2",
+      "AddOccupy2": "-3,-3",
+      "AddOccupy3": "-1,-1",
+      "DamageFireOffset0": "-23,34"
+    },
+    "provenance": {
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2664,
+          "section": "NAPSIS",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1569,
+            "section": "NAPSIS",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2665,
+          "section": "NAPSIS",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1570,
+            "section": "NAPSIS",
+            "key": "Normalized",
+            "value": "yes"
+          }
+        ]
+      },
+      "Height": {
+        "value": "8",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2666,
+          "section": "NAPSIS",
+          "key": "Height",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1571,
+            "section": "NAPSIS",
+            "key": "Height",
+            "value": "8"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "PSISICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2667,
+          "section": "NAPSIS",
+          "key": "Cameo",
+          "value": "PSISICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1572,
+            "section": "NAPSIS",
+            "key": "Cameo",
+            "value": "PSISICON"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "2x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2668,
+          "section": "NAPSIS",
+          "key": "Foundation",
+          "value": "2x2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1573,
+            "section": "NAPSIS",
+            "key": "Foundation",
+            "value": "2x2"
+          }
+        ]
+      },
+      "Buildup": {
+        "value": "NAPSISMK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2669,
+          "section": "NAPSIS",
+          "key": "Buildup",
+          "value": "NAPSISMK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1574,
+            "section": "NAPSIS",
+            "key": "Buildup",
+            "value": "NAPSISMK"
+          }
+        ]
+      },
+      "DemandLoadBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2670,
+          "section": "NAPSIS",
+          "key": "DemandLoadBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1575,
+            "section": "NAPSIS",
+            "key": "DemandLoadBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "FreeBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2671,
+          "section": "NAPSIS",
+          "key": "FreeBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1576,
+            "section": "NAPSIS",
+            "key": "FreeBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "ActiveAnim": {
+        "value": "NAPSIS_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2672,
+          "section": "NAPSIS",
+          "key": "ActiveAnim",
+          "value": "NAPSIS_A"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1577,
+            "section": "NAPSIS",
+            "key": "ActiveAnim",
+            "value": "NAPSIS_A"
+          }
+        ]
+      },
+      "ActiveAnimDamaged": {
+        "value": "NAPSIS_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2673,
+          "section": "NAPSIS",
+          "key": "ActiveAnimDamaged",
+          "value": "NAPSIS_AD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1578,
+            "section": "NAPSIS",
+            "key": "ActiveAnimDamaged",
+            "value": "NAPSIS_AD"
+          }
+        ]
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2674,
+          "section": "NAPSIS",
+          "key": "ActiveAnimZAdjust",
+          "value": "-5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1579,
+            "section": "NAPSIS",
+            "key": "ActiveAnimZAdjust",
+            "value": "-5"
+          }
+        ]
+      },
+      "ActiveAnimYSort": {
+        "value": "100",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2675,
+          "section": "NAPSIS",
+          "key": "ActiveAnimYSort",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1580,
+            "section": "NAPSIS",
+            "key": "ActiveAnimYSort",
+            "value": "100"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2676,
+          "section": "NAPSIS",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1581,
+            "section": "NAPSIS",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2677,
+          "section": "NAPSIS",
+          "key": "OccupyHeight",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1582,
+            "section": "NAPSIS",
+            "key": "OccupyHeight",
+            "value": "2"
+          }
+        ]
+      },
+      "AddOccupy1": {
+        "value": "-2,-2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2678,
+          "section": "NAPSIS",
+          "key": "AddOccupy1",
+          "value": "-2,-2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1583,
+            "section": "NAPSIS",
+            "key": "AddOccupy1",
+            "value": "-2,-2"
+          }
+        ]
+      },
+      "AddOccupy2": {
+        "value": "-3,-3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2679,
+          "section": "NAPSIS",
+          "key": "AddOccupy2",
+          "value": "-3,-3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1584,
+            "section": "NAPSIS",
+            "key": "AddOccupy2",
+            "value": "-3,-3"
+          }
+        ]
+      },
+      "AddOccupy3": {
+        "value": "-1,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2680,
+          "section": "NAPSIS",
+          "key": "AddOccupy3",
+          "value": "-1,-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1585,
+            "section": "NAPSIS",
+            "key": "AddOccupy3",
+            "value": "-1,-1"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-23,34",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 2681,
+          "section": "NAPSIS",
+          "key": "DamageFireOffset0",
+          "value": "-23,34"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1586,
+            "section": "NAPSIS",
+            "key": "DamageFireOffset0",
+            "value": "-23,34"
+          }
+        ]
+      }
+    }
+  }
+}

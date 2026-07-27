@@ -1,0 +1,777 @@
+{
+  "schema_version": 2,
+  "entity_id": "SMIN",
+  "category": "vehicle",
+  "visual_kind": "voxel",
+  "sources": [
+    "smin.vxl",
+    "smintur.vxl"
+  ],
+  "canvas": [
+    224,
+    192
+  ],
+  "available_theaters": [],
+  "default_animation": "Stand",
+  "animations": {
+    "Stand": {
+      "label": "Stand",
+      "directional": true,
+      "facing_count": 8,
+      "rate_ms": 90,
+      "loop": true,
+      "directions": {
+        "0": {
+          "frames": [
+            "stand_0_000.png"
+          ],
+          "remap_masks": [
+            "stand_0_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ]
+        },
+        "1": {
+          "frames": [
+            "stand_1_000.png"
+          ],
+          "remap_masks": [
+            "stand_1_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ]
+        },
+        "2": {
+          "frames": [
+            "stand_2_000.png"
+          ],
+          "remap_masks": [
+            "stand_2_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ]
+        },
+        "3": {
+          "frames": [
+            "stand_3_000.png"
+          ],
+          "remap_masks": [
+            "stand_3_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ]
+        },
+        "4": {
+          "frames": [
+            "stand_4_000.png"
+          ],
+          "remap_masks": [
+            "stand_4_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ]
+        },
+        "5": {
+          "frames": [
+            "stand_5_000.png"
+          ],
+          "remap_masks": [
+            "stand_5_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ]
+        },
+        "6": {
+          "frames": [
+            "stand_6_000.png"
+          ],
+          "remap_masks": [
+            "stand_6_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ]
+        },
+        "7": {
+          "frames": [
+            "stand_7_000.png"
+          ],
+          "remap_masks": [
+            "stand_7_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ]
+        }
+      },
+      "frames": null,
+      "remap_masks": null,
+      "source_indices": null
+    }
+  },
+  "turret_offset_leptons": 70,
+  "primary_fire_flh": [
+    120.0,
+    0.0,
+    185.0
+  ],
+  "secondary_fire_flh": null,
+  "shadow_index": 0,
+  "use_turret_shadow": false,
+  "no_spawn_alt": false,
+  "render_note": "8-direction development preview using VXL/HVA geometry and VPL ramps.",
+  "layered_vehicle": {
+    "direction_count": 8,
+    "stand": {
+      "0:0": {
+        "body": "layer_body_0.png",
+        "body_remap": "layer_body_0_remap.png",
+        "turret": [
+          "layer_turret_0_0.png"
+        ],
+        "turret_remap": [
+          "layer_turret_0_0_remap.png"
+        ]
+      },
+      "0:1": {
+        "body": "layer_body_0.png",
+        "body_remap": "layer_body_0_remap.png",
+        "turret": [
+          "layer_turret_0_1.png"
+        ],
+        "turret_remap": [
+          "layer_turret_0_1_remap.png"
+        ]
+      },
+      "0:2": {
+        "body": "layer_body_0.png",
+        "body_remap": "layer_body_0_remap.png",
+        "turret": [
+          "layer_turret_0_2.png"
+        ],
+        "turret_remap": [
+          "layer_turret_0_2_remap.png"
+        ]
+      },
+      "0:3": {
+        "body": "layer_body_0.png",
+        "body_remap": "layer_body_0_remap.png",
+        "turret": [
+          "layer_turret_0_3.png"
+        ],
+        "turret_remap": [
+          "layer_turret_0_3_remap.png"
+        ]
+      },
+      "0:4": {
+        "body": "layer_body_0.png",
+        "body_remap": "layer_body_0_remap.png",
+        "turret": [
+          "layer_turret_0_4.png"
+        ],
+        "turret_remap": [
+          "layer_turret_0_4_remap.png"
+        ]
+      },
+      "0:5": {
+        "body": "layer_body_0.png",
+        "body_remap": "layer_body_0_remap.png",
+        "turret": [
+          "layer_turret_0_5.png"
+        ],
+        "turret_remap": [
+          "layer_turret_0_5_remap.png"
+        ]
+      },
+      "0:6": {
+        "body": "layer_body_0.png",
+        "body_remap": "layer_body_0_remap.png",
+        "turret": [
+          "layer_turret_0_6.png"
+        ],
+        "turret_remap": [
+          "layer_turret_0_6_remap.png"
+        ]
+      },
+      "0:7": {
+        "body": "layer_body_0.png",
+        "body_remap": "layer_body_0_remap.png",
+        "turret": [
+          "layer_turret_0_7.png"
+        ],
+        "turret_remap": [
+          "layer_turret_0_7_remap.png"
+        ]
+      },
+      "1:0": {
+        "body": "layer_body_1.png",
+        "body_remap": "layer_body_1_remap.png",
+        "turret": [
+          "layer_turret_1_0.png"
+        ],
+        "turret_remap": [
+          "layer_turret_1_0_remap.png"
+        ]
+      },
+      "1:1": {
+        "body": "layer_body_1.png",
+        "body_remap": "layer_body_1_remap.png",
+        "turret": [
+          "layer_turret_1_1.png"
+        ],
+        "turret_remap": [
+          "layer_turret_1_1_remap.png"
+        ]
+      },
+      "1:2": {
+        "body": "layer_body_1.png",
+        "body_remap": "layer_body_1_remap.png",
+        "turret": [
+          "layer_turret_1_2.png"
+        ],
+        "turret_remap": [
+          "layer_turret_1_2_remap.png"
+        ]
+      },
+      "1:3": {
+        "body": "layer_body_1.png",
+        "body_remap": "layer_body_1_remap.png",
+        "turret": [
+          "layer_turret_1_3.png"
+        ],
+        "turret_remap": [
+          "layer_turret_1_3_remap.png"
+        ]
+      },
+      "1:4": {
+        "body": "layer_body_1.png",
+        "body_remap": "layer_body_1_remap.png",
+        "turret": [
+          "layer_turret_1_4.png"
+        ],
+        "turret_remap": [
+          "layer_turret_1_4_remap.png"
+        ]
+      },
+      "1:5": {
+        "body": "layer_body_1.png",
+        "body_remap": "layer_body_1_remap.png",
+        "turret": [
+          "layer_turret_1_5.png"
+        ],
+        "turret_remap": [
+          "layer_turret_1_5_remap.png"
+        ]
+      },
+      "1:6": {
+        "body": "layer_body_1.png",
+        "body_remap": "layer_body_1_remap.png",
+        "turret": [
+          "layer_turret_1_6.png"
+        ],
+        "turret_remap": [
+          "layer_turret_1_6_remap.png"
+        ]
+      },
+      "1:7": {
+        "body": "layer_body_1.png",
+        "body_remap": "layer_body_1_remap.png",
+        "turret": [
+          "layer_turret_1_7.png"
+        ],
+        "turret_remap": [
+          "layer_turret_1_7_remap.png"
+        ]
+      },
+      "2:0": {
+        "body": "layer_body_2.png",
+        "body_remap": "layer_body_2_remap.png",
+        "turret": [
+          "layer_turret_2_0.png"
+        ],
+        "turret_remap": [
+          "layer_turret_2_0_remap.png"
+        ]
+      },
+      "2:1": {
+        "body": "layer_body_2.png",
+        "body_remap": "layer_body_2_remap.png",
+        "turret": [
+          "layer_turret_2_1.png"
+        ],
+        "turret_remap": [
+          "layer_turret_2_1_remap.png"
+        ]
+      },
+      "2:2": {
+        "body": "layer_body_2.png",
+        "body_remap": "layer_body_2_remap.png",
+        "turret": [
+          "layer_turret_2_2.png"
+        ],
+        "turret_remap": [
+          "layer_turret_2_2_remap.png"
+        ]
+      },
+      "2:3": {
+        "body": "layer_body_2.png",
+        "body_remap": "layer_body_2_remap.png",
+        "turret": [
+          "layer_turret_2_3.png"
+        ],
+        "turret_remap": [
+          "layer_turret_2_3_remap.png"
+        ]
+      },
+      "2:4": {
+        "body": "layer_body_2.png",
+        "body_remap": "layer_body_2_remap.png",
+        "turret": [
+          "layer_turret_2_4.png"
+        ],
+        "turret_remap": [
+          "layer_turret_2_4_remap.png"
+        ]
+      },
+      "2:5": {
+        "body": "layer_body_2.png",
+        "body_remap": "layer_body_2_remap.png",
+        "turret": [
+          "layer_turret_2_5.png"
+        ],
+        "turret_remap": [
+          "layer_turret_2_5_remap.png"
+        ]
+      },
+      "2:6": {
+        "body": "layer_body_2.png",
+        "body_remap": "layer_body_2_remap.png",
+        "turret": [
+          "layer_turret_2_6.png"
+        ],
+        "turret_remap": [
+          "layer_turret_2_6_remap.png"
+        ]
+      },
+      "2:7": {
+        "body": "layer_body_2.png",
+        "body_remap": "layer_body_2_remap.png",
+        "turret": [
+          "layer_turret_2_7.png"
+        ],
+        "turret_remap": [
+          "layer_turret_2_7_remap.png"
+        ]
+      },
+      "3:0": {
+        "body": "layer_body_3.png",
+        "body_remap": "layer_body_3_remap.png",
+        "turret": [
+          "layer_turret_3_0.png"
+        ],
+        "turret_remap": [
+          "layer_turret_3_0_remap.png"
+        ]
+      },
+      "3:1": {
+        "body": "layer_body_3.png",
+        "body_remap": "layer_body_3_remap.png",
+        "turret": [
+          "layer_turret_3_1.png"
+        ],
+        "turret_remap": [
+          "layer_turret_3_1_remap.png"
+        ]
+      },
+      "3:2": {
+        "body": "layer_body_3.png",
+        "body_remap": "layer_body_3_remap.png",
+        "turret": [
+          "layer_turret_3_2.png"
+        ],
+        "turret_remap": [
+          "layer_turret_3_2_remap.png"
+        ]
+      },
+      "3:3": {
+        "body": "layer_body_3.png",
+        "body_remap": "layer_body_3_remap.png",
+        "turret": [
+          "layer_turret_3_3.png"
+        ],
+        "turret_remap": [
+          "layer_turret_3_3_remap.png"
+        ]
+      },
+      "3:4": {
+        "body": "layer_body_3.png",
+        "body_remap": "layer_body_3_remap.png",
+        "turret": [
+          "layer_turret_3_4.png"
+        ],
+        "turret_remap": [
+          "layer_turret_3_4_remap.png"
+        ]
+      },
+      "3:5": {
+        "body": "layer_body_3.png",
+        "body_remap": "layer_body_3_remap.png",
+        "turret": [
+          "layer_turret_3_5.png"
+        ],
+        "turret_remap": [
+          "layer_turret_3_5_remap.png"
+        ]
+      },
+      "3:6": {
+        "body": "layer_body_3.png",
+        "body_remap": "layer_body_3_remap.png",
+        "turret": [
+          "layer_turret_3_6.png"
+        ],
+        "turret_remap": [
+          "layer_turret_3_6_remap.png"
+        ]
+      },
+      "3:7": {
+        "body": "layer_body_3.png",
+        "body_remap": "layer_body_3_remap.png",
+        "turret": [
+          "layer_turret_3_7.png"
+        ],
+        "turret_remap": [
+          "layer_turret_3_7_remap.png"
+        ]
+      },
+      "4:0": {
+        "body": "layer_body_4.png",
+        "body_remap": "layer_body_4_remap.png",
+        "turret": [
+          "layer_turret_4_0.png"
+        ],
+        "turret_remap": [
+          "layer_turret_4_0_remap.png"
+        ]
+      },
+      "4:1": {
+        "body": "layer_body_4.png",
+        "body_remap": "layer_body_4_remap.png",
+        "turret": [
+          "layer_turret_4_1.png"
+        ],
+        "turret_remap": [
+          "layer_turret_4_1_remap.png"
+        ]
+      },
+      "4:2": {
+        "body": "layer_body_4.png",
+        "body_remap": "layer_body_4_remap.png",
+        "turret": [
+          "layer_turret_4_2.png"
+        ],
+        "turret_remap": [
+          "layer_turret_4_2_remap.png"
+        ]
+      },
+      "4:3": {
+        "body": "layer_body_4.png",
+        "body_remap": "layer_body_4_remap.png",
+        "turret": [
+          "layer_turret_4_3.png"
+        ],
+        "turret_remap": [
+          "layer_turret_4_3_remap.png"
+        ]
+      },
+      "4:4": {
+        "body": "layer_body_4.png",
+        "body_remap": "layer_body_4_remap.png",
+        "turret": [
+          "layer_turret_4_4.png"
+        ],
+        "turret_remap": [
+          "layer_turret_4_4_remap.png"
+        ]
+      },
+      "4:5": {
+        "body": "layer_body_4.png",
+        "body_remap": "layer_body_4_remap.png",
+        "turret": [
+          "layer_turret_4_5.png"
+        ],
+        "turret_remap": [
+          "layer_turret_4_5_remap.png"
+        ]
+      },
+      "4:6": {
+        "body": "layer_body_4.png",
+        "body_remap": "layer_body_4_remap.png",
+        "turret": [
+          "layer_turret_4_6.png"
+        ],
+        "turret_remap": [
+          "layer_turret_4_6_remap.png"
+        ]
+      },
+      "4:7": {
+        "body": "layer_body_4.png",
+        "body_remap": "layer_body_4_remap.png",
+        "turret": [
+          "layer_turret_4_7.png"
+        ],
+        "turret_remap": [
+          "layer_turret_4_7_remap.png"
+        ]
+      },
+      "5:0": {
+        "body": "layer_body_5.png",
+        "body_remap": "layer_body_5_remap.png",
+        "turret": [
+          "layer_turret_5_0.png"
+        ],
+        "turret_remap": [
+          "layer_turret_5_0_remap.png"
+        ]
+      },
+      "5:1": {
+        "body": "layer_body_5.png",
+        "body_remap": "layer_body_5_remap.png",
+        "turret": [
+          "layer_turret_5_1.png"
+        ],
+        "turret_remap": [
+          "layer_turret_5_1_remap.png"
+        ]
+      },
+      "5:2": {
+        "body": "layer_body_5.png",
+        "body_remap": "layer_body_5_remap.png",
+        "turret": [
+          "layer_turret_5_2.png"
+        ],
+        "turret_remap": [
+          "layer_turret_5_2_remap.png"
+        ]
+      },
+      "5:3": {
+        "body": "layer_body_5.png",
+        "body_remap": "layer_body_5_remap.png",
+        "turret": [
+          "layer_turret_5_3.png"
+        ],
+        "turret_remap": [
+          "layer_turret_5_3_remap.png"
+        ]
+      },
+      "5:4": {
+        "body": "layer_body_5.png",
+        "body_remap": "layer_body_5_remap.png",
+        "turret": [
+          "layer_turret_5_4.png"
+        ],
+        "turret_remap": [
+          "layer_turret_5_4_remap.png"
+        ]
+      },
+      "5:5": {
+        "body": "layer_body_5.png",
+        "body_remap": "layer_body_5_remap.png",
+        "turret": [
+          "layer_turret_5_5.png"
+        ],
+        "turret_remap": [
+          "layer_turret_5_5_remap.png"
+        ]
+      },
+      "5:6": {
+        "body": "layer_body_5.png",
+        "body_remap": "layer_body_5_remap.png",
+        "turret": [
+          "layer_turret_5_6.png"
+        ],
+        "turret_remap": [
+          "layer_turret_5_6_remap.png"
+        ]
+      },
+      "5:7": {
+        "body": "layer_body_5.png",
+        "body_remap": "layer_body_5_remap.png",
+        "turret": [
+          "layer_turret_5_7.png"
+        ],
+        "turret_remap": [
+          "layer_turret_5_7_remap.png"
+        ]
+      },
+      "6:0": {
+        "body": "layer_body_6.png",
+        "body_remap": "layer_body_6_remap.png",
+        "turret": [
+          "layer_turret_6_0.png"
+        ],
+        "turret_remap": [
+          "layer_turret_6_0_remap.png"
+        ]
+      },
+      "6:1": {
+        "body": "layer_body_6.png",
+        "body_remap": "layer_body_6_remap.png",
+        "turret": [
+          "layer_turret_6_1.png"
+        ],
+        "turret_remap": [
+          "layer_turret_6_1_remap.png"
+        ]
+      },
+      "6:2": {
+        "body": "layer_body_6.png",
+        "body_remap": "layer_body_6_remap.png",
+        "turret": [
+          "layer_turret_6_2.png"
+        ],
+        "turret_remap": [
+          "layer_turret_6_2_remap.png"
+        ]
+      },
+      "6:3": {
+        "body": "layer_body_6.png",
+        "body_remap": "layer_body_6_remap.png",
+        "turret": [
+          "layer_turret_6_3.png"
+        ],
+        "turret_remap": [
+          "layer_turret_6_3_remap.png"
+        ]
+      },
+      "6:4": {
+        "body": "layer_body_6.png",
+        "body_remap": "layer_body_6_remap.png",
+        "turret": [
+          "layer_turret_6_4.png"
+        ],
+        "turret_remap": [
+          "layer_turret_6_4_remap.png"
+        ]
+      },
+      "6:5": {
+        "body": "layer_body_6.png",
+        "body_remap": "layer_body_6_remap.png",
+        "turret": [
+          "layer_turret_6_5.png"
+        ],
+        "turret_remap": [
+          "layer_turret_6_5_remap.png"
+        ]
+      },
+      "6:6": {
+        "body": "layer_body_6.png",
+        "body_remap": "layer_body_6_remap.png",
+        "turret": [
+          "layer_turret_6_6.png"
+        ],
+        "turret_remap": [
+          "layer_turret_6_6_remap.png"
+        ]
+      },
+      "6:7": {
+        "body": "layer_body_6.png",
+        "body_remap": "layer_body_6_remap.png",
+        "turret": [
+          "layer_turret_6_7.png"
+        ],
+        "turret_remap": [
+          "layer_turret_6_7_remap.png"
+        ]
+      },
+      "7:0": {
+        "body": "layer_body_7.png",
+        "body_remap": "layer_body_7_remap.png",
+        "turret": [
+          "layer_turret_7_0.png"
+        ],
+        "turret_remap": [
+          "layer_turret_7_0_remap.png"
+        ]
+      },
+      "7:1": {
+        "body": "layer_body_7.png",
+        "body_remap": "layer_body_7_remap.png",
+        "turret": [
+          "layer_turret_7_1.png"
+        ],
+        "turret_remap": [
+          "layer_turret_7_1_remap.png"
+        ]
+      },
+      "7:2": {
+        "body": "layer_body_7.png",
+        "body_remap": "layer_body_7_remap.png",
+        "turret": [
+          "layer_turret_7_2.png"
+        ],
+        "turret_remap": [
+          "layer_turret_7_2_remap.png"
+        ]
+      },
+      "7:3": {
+        "body": "layer_body_7.png",
+        "body_remap": "layer_body_7_remap.png",
+        "turret": [
+          "layer_turret_7_3.png"
+        ],
+        "turret_remap": [
+          "layer_turret_7_3_remap.png"
+        ]
+      },
+      "7:4": {
+        "body": "layer_body_7.png",
+        "body_remap": "layer_body_7_remap.png",
+        "turret": [
+          "layer_turret_7_4.png"
+        ],
+        "turret_remap": [
+          "layer_turret_7_4_remap.png"
+        ]
+      },
+      "7:5": {
+        "body": "layer_body_7.png",
+        "body_remap": "layer_body_7_remap.png",
+        "turret": [
+          "layer_turret_7_5.png"
+        ],
+        "turret_remap": [
+          "layer_turret_7_5_remap.png"
+        ]
+      },
+      "7:6": {
+        "body": "layer_body_7.png",
+        "body_remap": "layer_body_7_remap.png",
+        "turret": [
+          "layer_turret_7_6.png"
+        ],
+        "turret_remap": [
+          "layer_turret_7_6_remap.png"
+        ]
+      },
+      "7:7": {
+        "body": "layer_body_7.png",
+        "body_remap": "layer_body_7_remap.png",
+        "turret": [
+          "layer_turret_7_7.png"
+        ],
+        "turret_remap": [
+          "layer_turret_7_7_remap.png"
+        ]
+      }
+    },
+    "fire": {},
+    "fire_frame_count": 1,
+    "fire_rate_ms": 90
+  }
+}

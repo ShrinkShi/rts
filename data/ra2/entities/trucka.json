@@ -1,0 +1,1406 @@
+{
+  "id": "TRUCKA",
+  "category": "vehicle",
+  "name_token": "Name:TRUCKA",
+  "art_id": "TRUCKA",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 200,
+  "armor": "light",
+  "speed": 4,
+  "sight": 5,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Normal",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "CivAllSelect"
+    ],
+    "VoiceAttack": [
+      "CivAllAttackCommand"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "TRUCKA",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4409,
+      "pack": "ra2",
+      "relative_path": "local/trucka.vxl",
+      "folder": "local",
+      "filename": "trucka.vxl",
+      "stem": "trucka",
+      "extension": ".vxl",
+      "size": 33454,
+      "sha1": "17d57007976e6b00fe369ec0a2463b8814263a46"
+    },
+    "body_hva": {
+      "asset_id": 4408,
+      "pack": "ra2",
+      "relative_path": "local/trucka.hva",
+      "folder": "local",
+      "filename": "trucka.hva",
+      "stem": "trucka",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "d6900ae14e3e8d3f12396d406fe905ce9afc4a60"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      40.0,
+      32.0,
+      96.0
+    ],
+    "secondary_fire_flh": [
+      -32.0,
+      80.0,
+      120.0
+    ],
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:TRUCKA",
+      "Name": "Truck",
+      "Category": "AFV",
+      "Primary": "none",
+      "Secondary": "none",
+      "Strength": 200,
+      "Armor": "light",
+      "Turret": false,
+      "TechLevel": -1,
+      "Sight": 5,
+      "Speed": 4,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 0,
+      "Points": 40,
+      "ROT": 5,
+      "Crusher": false,
+      "SelfHealing": false,
+      "Crewed": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "CivAllSelect",
+      "VoiceMove": "",
+      "VoiceAttack": "CivAllAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": 2,
+      "MovementZone": "Normal",
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "MaxDebris": 2,
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": 4,
+      "Size": 6,
+      "Insignificant": true,
+      "Trainable": false,
+      "Soylent": 100,
+      "CrushSound": "TankCrush"
+    },
+    "raw_values": {
+      "UIName": "Name:TRUCKA",
+      "Name": "Truck",
+      "Category": "AFV",
+      "Primary": "none",
+      "Secondary": "none",
+      "Strength": "200",
+      "Armor": "light",
+      "Turret": "no",
+      "TechLevel": "-1",
+      "Sight": "5",
+      "Speed": "4",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "0",
+      "Points": "40",
+      "ROT": "5",
+      "Crusher": "no",
+      "SelfHealing": "no",
+      "Crewed": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "CivAllSelect",
+      "VoiceMove": "",
+      "VoiceAttack": "CivAllAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": "2",
+      "MovementZone": "Normal",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "MaxDebris": "2",
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": "4",
+      "Size": "6",
+      "Insignificant": "yes",
+      "Trainable": "no",
+      "Soylent": "100",
+      "CrushSound": "TankCrush"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:TRUCKA",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9176,
+          "section": "TRUCKA",
+          "key": "UIName",
+          "value": "Name:TRUCKA"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5105,
+            "section": "TRUCKA",
+            "key": "UIName",
+            "value": "Name:TRUCKA"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9171,
+            "section": "TRUCKA",
+            "key": "UIName",
+            "value": "Name:TRUCKA"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Truck",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9177,
+          "section": "TRUCKA",
+          "key": "Name",
+          "value": "Truck"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5106,
+            "section": "TRUCKA",
+            "key": "Name",
+            "value": "Truck"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9172,
+            "section": "TRUCKA",
+            "key": "Name",
+            "value": "Truck"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9178,
+          "section": "TRUCKA",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5107,
+            "section": "TRUCKA",
+            "key": "Category",
+            "value": "AFV"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9173,
+            "section": "TRUCKA",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9179,
+          "section": "TRUCKA",
+          "key": "Primary",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5108,
+            "section": "TRUCKA",
+            "key": "Primary",
+            "value": "none"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9174,
+            "section": "TRUCKA",
+            "key": "Primary",
+            "value": "none"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9180,
+          "section": "TRUCKA",
+          "key": "Secondary",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5109,
+            "section": "TRUCKA",
+            "key": "Secondary",
+            "value": "none"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9175,
+            "section": "TRUCKA",
+            "key": "Secondary",
+            "value": "none"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9181,
+          "section": "TRUCKA",
+          "key": "Strength",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5110,
+            "section": "TRUCKA",
+            "key": "Strength",
+            "value": "200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9176,
+            "section": "TRUCKA",
+            "key": "Strength",
+            "value": "200"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9182,
+          "section": "TRUCKA",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5111,
+            "section": "TRUCKA",
+            "key": "Armor",
+            "value": "light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9177,
+            "section": "TRUCKA",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9183,
+          "section": "TRUCKA",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5112,
+            "section": "TRUCKA",
+            "key": "Turret",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9178,
+            "section": "TRUCKA",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9184,
+          "section": "TRUCKA",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5113,
+            "section": "TRUCKA",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9179,
+            "section": "TRUCKA",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9185,
+          "section": "TRUCKA",
+          "key": "Sight",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5114,
+            "section": "TRUCKA",
+            "key": "Sight",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9180,
+            "section": "TRUCKA",
+            "key": "Sight",
+            "value": "5"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9186,
+          "section": "TRUCKA",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5115,
+            "section": "TRUCKA",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9181,
+            "section": "TRUCKA",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9187,
+          "section": "TRUCKA",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5116,
+            "section": "TRUCKA",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9182,
+            "section": "TRUCKA",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9188,
+          "section": "TRUCKA",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5117,
+            "section": "TRUCKA",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9183,
+            "section": "TRUCKA",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9189,
+          "section": "TRUCKA",
+          "key": "Cost",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5118,
+            "section": "TRUCKA",
+            "key": "Cost",
+            "value": "500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9184,
+            "section": "TRUCKA",
+            "key": "Cost",
+            "value": "0"
+          }
+        ]
+      },
+      "Points": {
+        "value": "40",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9191,
+          "section": "TRUCKA",
+          "key": "Points",
+          "value": "40"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5119,
+            "section": "TRUCKA",
+            "key": "Points",
+            "value": "40"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9186,
+            "section": "TRUCKA",
+            "key": "Points",
+            "value": "40"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9192,
+          "section": "TRUCKA",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5120,
+            "section": "TRUCKA",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9187,
+            "section": "TRUCKA",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9193,
+          "section": "TRUCKA",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5121,
+            "section": "TRUCKA",
+            "key": "Crusher",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9188,
+            "section": "TRUCKA",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "SelfHealing": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9194,
+          "section": "TRUCKA",
+          "key": "SelfHealing",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5122,
+            "section": "TRUCKA",
+            "key": "SelfHealing",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9189,
+            "section": "TRUCKA",
+            "key": "SelfHealing",
+            "value": "no"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9195,
+          "section": "TRUCKA",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5123,
+            "section": "TRUCKA",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9190,
+            "section": "TRUCKA",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9196,
+          "section": "TRUCKA",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5124,
+            "section": "TRUCKA",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9191,
+            "section": "TRUCKA",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "CivAllSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9197,
+          "section": "TRUCKA",
+          "key": "VoiceSelect",
+          "value": "CivAllSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5125,
+            "section": "TRUCKA",
+            "key": "VoiceSelect",
+            "value": "CivAllSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9192,
+            "section": "TRUCKA",
+            "key": "VoiceSelect",
+            "value": "CivAllSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9198,
+          "section": "TRUCKA",
+          "key": "VoiceMove",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5126,
+            "section": "TRUCKA",
+            "key": "VoiceMove",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9193,
+            "section": "TRUCKA",
+            "key": "VoiceMove",
+            "value": ""
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "CivAllAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9199,
+          "section": "TRUCKA",
+          "key": "VoiceAttack",
+          "value": "CivAllAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5127,
+            "section": "TRUCKA",
+            "key": "VoiceAttack",
+            "value": "CivAllAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9194,
+            "section": "TRUCKA",
+            "key": "VoiceAttack",
+            "value": "CivAllAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9200,
+          "section": "TRUCKA",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5128,
+            "section": "TRUCKA",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9195,
+            "section": "TRUCKA",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9201,
+          "section": "TRUCKA",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5129,
+            "section": "TRUCKA",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9196,
+            "section": "TRUCKA",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9203,
+          "section": "TRUCKA",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5130,
+            "section": "TRUCKA",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9198,
+            "section": "TRUCKA",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9204,
+          "section": "TRUCKA",
+          "key": "Weight",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5131,
+            "section": "TRUCKA",
+            "key": "Weight",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9199,
+            "section": "TRUCKA",
+            "key": "Weight",
+            "value": "2"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Normal",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9205,
+          "section": "TRUCKA",
+          "key": "MovementZone",
+          "value": "Normal"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5132,
+            "section": "TRUCKA",
+            "key": "MovementZone",
+            "value": "Normal"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9200,
+            "section": "TRUCKA",
+            "key": "MovementZone",
+            "value": "Normal"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9206,
+          "section": "TRUCKA",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5133,
+            "section": "TRUCKA",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9201,
+            "section": "TRUCKA",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9207,
+          "section": "TRUCKA",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5134,
+            "section": "TRUCKA",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9202,
+            "section": "TRUCKA",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9208,
+          "section": "TRUCKA",
+          "key": "MaxDebris",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5135,
+            "section": "TRUCKA",
+            "key": "MaxDebris",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9203,
+            "section": "TRUCKA",
+            "key": "MaxDebris",
+            "value": "2"
+          }
+        ]
+      },
+      "DebrisTypes": {
+        "value": "TIRE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9209,
+          "section": "TRUCKA",
+          "key": "DebrisTypes",
+          "value": "TIRE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5136,
+            "section": "TRUCKA",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9204,
+            "section": "TRUCKA",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          }
+        ]
+      },
+      "DebrisMaximums": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9210,
+          "section": "TRUCKA",
+          "key": "DebrisMaximums",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5137,
+            "section": "TRUCKA",
+            "key": "DebrisMaximums",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9205,
+            "section": "TRUCKA",
+            "key": "DebrisMaximums",
+            "value": "4"
+          }
+        ]
+      },
+      "Size": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9211,
+          "section": "TRUCKA",
+          "key": "Size",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5138,
+            "section": "TRUCKA",
+            "key": "Size",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9206,
+            "section": "TRUCKA",
+            "key": "Size",
+            "value": "6"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9212,
+          "section": "TRUCKA",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5139,
+            "section": "TRUCKA",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9207,
+            "section": "TRUCKA",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9213,
+          "section": "TRUCKA",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5140,
+            "section": "TRUCKA",
+            "key": "Trainable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9208,
+            "section": "TRUCKA",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9190,
+          "section": "TRUCKA",
+          "key": "Soylent",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9185,
+            "section": "TRUCKA",
+            "key": "Soylent",
+            "value": "100"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9202,
+          "section": "TRUCKA",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9197,
+            "section": "TRUCKA",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true,
+      "Cameo": "TRKAICON",
+      "Remapable": true,
+      "PrimaryFireFLH": "40,32,96",
+      "SecondaryFireFLH": "-32,80,120",
+      "PBarrelLength": 192
+    },
+    "raw_values": {
+      "Voxel": "yes",
+      "Cameo": "TRKAICON",
+      "Remapable": "yes",
+      "PrimaryFireFLH": "40,32,96",
+      "SecondaryFireFLH": "-32,80,120",
+      "PBarrelLength": "192"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 606,
+          "section": "TRUCKA",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 438,
+            "section": "TRUCKA",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "TRKAICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 607,
+          "section": "TRUCKA",
+          "key": "Cameo",
+          "value": "TRKAICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 439,
+            "section": "TRUCKA",
+            "key": "Cameo",
+            "value": "TRKAICON"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 608,
+          "section": "TRUCKA",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 440,
+            "section": "TRUCKA",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "40,32,96",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 609,
+          "section": "TRUCKA",
+          "key": "PrimaryFireFLH",
+          "value": "40,32,96"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 441,
+            "section": "TRUCKA",
+            "key": "PrimaryFireFLH",
+            "value": "40,32,96"
+          }
+        ]
+      },
+      "SecondaryFireFLH": {
+        "value": "-32,80,120",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 610,
+          "section": "TRUCKA",
+          "key": "SecondaryFireFLH",
+          "value": "-32,80,120"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 442,
+            "section": "TRUCKA",
+            "key": "SecondaryFireFLH",
+            "value": "-32,80,120"
+          }
+        ]
+      },
+      "PBarrelLength": {
+        "value": "192",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 611,
+          "section": "TRUCKA",
+          "key": "PBarrelLength",
+          "value": "192"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 443,
+            "section": "TRUCKA",
+            "key": "PBarrelLength",
+            "value": "192"
+          }
+        ]
+      }
+    }
+  }
+}

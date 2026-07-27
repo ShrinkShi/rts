@@ -1,0 +1,30 @@
+Iron Meridian RTS v0.12.1 validation
+
+Static/project validation
+- Pipeline full rebuild from ra2.zip, ra2md.zip, CSF, audio.zip, audiomd.zip and expand packs: PASS
+- RA2 pipeline validator: PASS
+- GDScript static validation: 41 files PASS
+- Prefab validation: 8 SpriteFrames resources, 13 entity scenes PASS
+- Project structure validation: 41 GDScript files / 10556 lines / 5 core JSON datasets PASS
+
+Database
+- Assets: 11593
+- Entities: 559
+- Localization: 5212
+- Official maps: 13
+
+Audio
+- Banks: 2 (ra2 < ra2md)
+- BAG entries: 3438
+- Standalone WAV: 1197
+- Unique samples: 3227
+- Shadowed lower-priority sample names: 1408
+- Referenced sound samples: 1825
+- Resolved sound samples: 1825
+- Resolution ratio: 100.0%
+- Entity sound roles resolved: 977
+- RIFF length validation for all generated BAG WAV: PASS
+- FFprobe decode for PCM mono/stereo and IMA ADPCM mono/stereo in both banks: PASS
+
+Runtime limitation
+- Godot 4.7.1 binary was not available in the build container. Editor import and F5 runtime validation must be performed locally.

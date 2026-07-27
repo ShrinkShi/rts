@@ -1,0 +1,5630 @@
+{
+  "id": "CAOILD",
+  "category": "building",
+  "name_token": "Name:CAOILD",
+  "art_id": "CAOILD",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 1000,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {
+    "WorkingSound": [
+      "OilDerrickLoop"
+    ]
+  },
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAOILD",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1731,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctoild.shp",
+          "folder": "isotemp",
+          "filename": "ctoild.shp",
+          "stem": "ctoild",
+          "extension": ".shp",
+          "size": 16016,
+          "sha1": "f9e1e2450314af07298b3b6d7edf11e79e0e8de2"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 627,
+          "pack": "ra2",
+          "relative_path": "isosnow/caoild.shp",
+          "folder": "isosnow",
+          "filename": "caoild.shp",
+          "stem": "caoild",
+          "extension": ".shp",
+          "size": 16032,
+          "sha1": "8e96e4d94dc980b1b6baa301488956083eab726c"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2818,
+          "pack": "ra2",
+          "relative_path": "isourb/cuoild.shp",
+          "folder": "isourb",
+          "filename": "cuoild.shp",
+          "stem": "cuoild",
+          "extension": ".shp",
+          "size": 16016,
+          "sha1": "d5c1cb8f0b76b45af7e0d6071d0ac767df8778d2"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6199,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdoild.shp",
+          "folder": "isodes",
+          "filename": "cdoild.shp",
+          "stem": "cdoild",
+          "extension": ".shp",
+          "size": 16016,
+          "sha1": "f9e1e2450314af07298b3b6d7edf11e79e0e8de2"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8267,
+          "pack": "ra2md",
+          "relative_path": "isolun/cloild.shp",
+          "folder": "isolun",
+          "filename": "cloild.shp",
+          "stem": "cloild",
+          "extension": ".shp",
+          "size": 16016,
+          "sha1": "f9e1e2450314af07298b3b6d7edf11e79e0e8de2"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 11535,
+          "pack": "expandmd01",
+          "relative_path": "cnoild.shp",
+          "folder": "",
+          "filename": "cnoild.shp",
+          "stem": "cnoild",
+          "extension": ".shp",
+          "size": 16016,
+          "sha1": "6fe348cfbfd3415c8d4c0d1462eb5a3835a10874"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "CAOILD_A",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1732,
+            "pack": "ra2",
+            "relative_path": "isotemp/ctoild_a.shp",
+            "folder": "isotemp",
+            "filename": "ctoild_a.shp",
+            "stem": "ctoild_a",
+            "extension": ".shp",
+            "size": 263416,
+            "sha1": "42d05df8ab702f12aa74df2fe71057e558ac2491"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16506,
+                "section": "CAOILD_A",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11829,
+                  "section": "CAOILD_A",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16507,
+                "section": "CAOILD_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11830,
+                  "section": "CAOILD_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16508,
+                "section": "CAOILD_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11831,
+                  "section": "CAOILD_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16509,
+                "section": "CAOILD_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11832,
+                  "section": "CAOILD_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16510,
+                "section": "CAOILD_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11833,
+                  "section": "CAOILD_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16511,
+                "section": "CAOILD_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11834,
+                  "section": "CAOILD_A",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16512,
+                "section": "CAOILD_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11835,
+                  "section": "CAOILD_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16513,
+                "section": "CAOILD_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11836,
+                  "section": "CAOILD_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16514,
+                "section": "CAOILD_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11837,
+                  "section": "CAOILD_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16515,
+                "section": "CAOILD_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11838,
+                  "section": "CAOILD_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "snow": {
+          "art_id": "CAOILD_A",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 628,
+            "pack": "ra2",
+            "relative_path": "isosnow/caoild_a.shp",
+            "folder": "isosnow",
+            "filename": "caoild_a.shp",
+            "stem": "caoild_a",
+            "extension": ".shp",
+            "size": 263560,
+            "sha1": "72978b5960728a59082d5f49dac169e339cc969e"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16506,
+                "section": "CAOILD_A",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11829,
+                  "section": "CAOILD_A",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16507,
+                "section": "CAOILD_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11830,
+                  "section": "CAOILD_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16508,
+                "section": "CAOILD_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11831,
+                  "section": "CAOILD_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16509,
+                "section": "CAOILD_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11832,
+                  "section": "CAOILD_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16510,
+                "section": "CAOILD_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11833,
+                  "section": "CAOILD_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16511,
+                "section": "CAOILD_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11834,
+                  "section": "CAOILD_A",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16512,
+                "section": "CAOILD_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11835,
+                  "section": "CAOILD_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16513,
+                "section": "CAOILD_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11836,
+                  "section": "CAOILD_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16514,
+                "section": "CAOILD_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11837,
+                  "section": "CAOILD_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16515,
+                "section": "CAOILD_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11838,
+                  "section": "CAOILD_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "urban": {
+          "art_id": "CAOILD_A",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2819,
+            "pack": "ra2",
+            "relative_path": "isourb/cuoild_a.shp",
+            "folder": "isourb",
+            "filename": "cuoild_a.shp",
+            "stem": "cuoild_a",
+            "extension": ".shp",
+            "size": 263416,
+            "sha1": "42d05df8ab702f12aa74df2fe71057e558ac2491"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16506,
+                "section": "CAOILD_A",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11829,
+                  "section": "CAOILD_A",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16507,
+                "section": "CAOILD_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11830,
+                  "section": "CAOILD_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16508,
+                "section": "CAOILD_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11831,
+                  "section": "CAOILD_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16509,
+                "section": "CAOILD_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11832,
+                  "section": "CAOILD_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16510,
+                "section": "CAOILD_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11833,
+                  "section": "CAOILD_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16511,
+                "section": "CAOILD_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11834,
+                  "section": "CAOILD_A",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16512,
+                "section": "CAOILD_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11835,
+                  "section": "CAOILD_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16513,
+                "section": "CAOILD_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11836,
+                  "section": "CAOILD_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16514,
+                "section": "CAOILD_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11837,
+                  "section": "CAOILD_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16515,
+                "section": "CAOILD_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11838,
+                  "section": "CAOILD_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "desert": {
+          "art_id": "CAOILD_A",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6200,
+            "pack": "ra2md",
+            "relative_path": "isodes/cdoild_a.shp",
+            "folder": "isodes",
+            "filename": "cdoild_a.shp",
+            "stem": "cdoild_a",
+            "extension": ".shp",
+            "size": 263416,
+            "sha1": "42d05df8ab702f12aa74df2fe71057e558ac2491"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16506,
+                "section": "CAOILD_A",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11829,
+                  "section": "CAOILD_A",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16507,
+                "section": "CAOILD_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11830,
+                  "section": "CAOILD_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16508,
+                "section": "CAOILD_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11831,
+                  "section": "CAOILD_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16509,
+                "section": "CAOILD_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11832,
+                  "section": "CAOILD_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16510,
+                "section": "CAOILD_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11833,
+                  "section": "CAOILD_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16511,
+                "section": "CAOILD_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11834,
+                  "section": "CAOILD_A",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16512,
+                "section": "CAOILD_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11835,
+                  "section": "CAOILD_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16513,
+                "section": "CAOILD_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11836,
+                  "section": "CAOILD_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16514,
+                "section": "CAOILD_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11837,
+                  "section": "CAOILD_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16515,
+                "section": "CAOILD_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11838,
+                  "section": "CAOILD_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "lunar": {
+          "art_id": "CAOILD_A",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8268,
+            "pack": "ra2md",
+            "relative_path": "isolun/cloild_a.shp",
+            "folder": "isolun",
+            "filename": "cloild_a.shp",
+            "stem": "cloild_a",
+            "extension": ".shp",
+            "size": 263416,
+            "sha1": "42d05df8ab702f12aa74df2fe71057e558ac2491"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16506,
+                "section": "CAOILD_A",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11829,
+                  "section": "CAOILD_A",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16507,
+                "section": "CAOILD_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11830,
+                  "section": "CAOILD_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16508,
+                "section": "CAOILD_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11831,
+                  "section": "CAOILD_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16509,
+                "section": "CAOILD_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11832,
+                  "section": "CAOILD_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16510,
+                "section": "CAOILD_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11833,
+                  "section": "CAOILD_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16511,
+                "section": "CAOILD_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11834,
+                  "section": "CAOILD_A",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16512,
+                "section": "CAOILD_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11835,
+                  "section": "CAOILD_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16513,
+                "section": "CAOILD_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11836,
+                  "section": "CAOILD_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16514,
+                "section": "CAOILD_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11837,
+                  "section": "CAOILD_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16515,
+                "section": "CAOILD_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11838,
+                  "section": "CAOILD_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "newurban": {
+          "art_id": "CAOILD_A",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9349,
+            "pack": "ra2md",
+            "relative_path": "isoubn/cnoild_a.shp",
+            "folder": "isoubn",
+            "filename": "cnoild_a.shp",
+            "stem": "cnoild_a",
+            "extension": ".shp",
+            "size": 263416,
+            "sha1": "42d05df8ab702f12aa74df2fe71057e558ac2491"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16506,
+                "section": "CAOILD_A",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11829,
+                  "section": "CAOILD_A",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16507,
+                "section": "CAOILD_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11830,
+                  "section": "CAOILD_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16508,
+                "section": "CAOILD_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11831,
+                  "section": "CAOILD_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16509,
+                "section": "CAOILD_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11832,
+                  "section": "CAOILD_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16510,
+                "section": "CAOILD_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11833,
+                  "section": "CAOILD_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16511,
+                "section": "CAOILD_A",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11834,
+                  "section": "CAOILD_A",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16512,
+                "section": "CAOILD_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11835,
+                  "section": "CAOILD_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16513,
+                "section": "CAOILD_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11836,
+                  "section": "CAOILD_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16514,
+                "section": "CAOILD_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11837,
+                  "section": "CAOILD_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16515,
+                "section": "CAOILD_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11838,
+                  "section": "CAOILD_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": 0,
+          "YSort": 362
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "CAOILD_AD",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1732,
+            "pack": "ra2",
+            "relative_path": "isotemp/ctoild_a.shp",
+            "folder": "isotemp",
+            "filename": "ctoild_a.shp",
+            "stem": "ctoild_a",
+            "extension": ".shp",
+            "size": 263416,
+            "sha1": "42d05df8ab702f12aa74df2fe71057e558ac2491"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 64,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16519,
+                "section": "CAOILD_AD",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11842,
+                  "section": "CAOILD_AD",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16520,
+                "section": "CAOILD_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11843,
+                  "section": "CAOILD_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16521,
+                "section": "CAOILD_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11844,
+                  "section": "CAOILD_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16522,
+                "section": "CAOILD_AD",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11845,
+                  "section": "CAOILD_AD",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16523,
+                "section": "CAOILD_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11846,
+                  "section": "CAOILD_AD",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "64",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16524,
+                "section": "CAOILD_AD",
+                "key": "LoopEnd",
+                "value": "64"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11847,
+                  "section": "CAOILD_AD",
+                  "key": "LoopEnd",
+                  "value": "64"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16525,
+                "section": "CAOILD_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11848,
+                  "section": "CAOILD_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16526,
+                "section": "CAOILD_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11849,
+                  "section": "CAOILD_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16527,
+                "section": "CAOILD_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11850,
+                  "section": "CAOILD_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16528,
+                "section": "CAOILD_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11851,
+                  "section": "CAOILD_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "snow": {
+          "art_id": "CAOILD_AD",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 628,
+            "pack": "ra2",
+            "relative_path": "isosnow/caoild_a.shp",
+            "folder": "isosnow",
+            "filename": "caoild_a.shp",
+            "stem": "caoild_a",
+            "extension": ".shp",
+            "size": 263560,
+            "sha1": "72978b5960728a59082d5f49dac169e339cc969e"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 64,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16519,
+                "section": "CAOILD_AD",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11842,
+                  "section": "CAOILD_AD",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16520,
+                "section": "CAOILD_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11843,
+                  "section": "CAOILD_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16521,
+                "section": "CAOILD_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11844,
+                  "section": "CAOILD_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16522,
+                "section": "CAOILD_AD",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11845,
+                  "section": "CAOILD_AD",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16523,
+                "section": "CAOILD_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11846,
+                  "section": "CAOILD_AD",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "64",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16524,
+                "section": "CAOILD_AD",
+                "key": "LoopEnd",
+                "value": "64"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11847,
+                  "section": "CAOILD_AD",
+                  "key": "LoopEnd",
+                  "value": "64"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16525,
+                "section": "CAOILD_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11848,
+                  "section": "CAOILD_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16526,
+                "section": "CAOILD_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11849,
+                  "section": "CAOILD_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16527,
+                "section": "CAOILD_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11850,
+                  "section": "CAOILD_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16528,
+                "section": "CAOILD_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11851,
+                  "section": "CAOILD_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "urban": {
+          "art_id": "CAOILD_AD",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2819,
+            "pack": "ra2",
+            "relative_path": "isourb/cuoild_a.shp",
+            "folder": "isourb",
+            "filename": "cuoild_a.shp",
+            "stem": "cuoild_a",
+            "extension": ".shp",
+            "size": 263416,
+            "sha1": "42d05df8ab702f12aa74df2fe71057e558ac2491"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 64,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16519,
+                "section": "CAOILD_AD",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11842,
+                  "section": "CAOILD_AD",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16520,
+                "section": "CAOILD_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11843,
+                  "section": "CAOILD_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16521,
+                "section": "CAOILD_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11844,
+                  "section": "CAOILD_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16522,
+                "section": "CAOILD_AD",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11845,
+                  "section": "CAOILD_AD",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16523,
+                "section": "CAOILD_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11846,
+                  "section": "CAOILD_AD",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "64",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16524,
+                "section": "CAOILD_AD",
+                "key": "LoopEnd",
+                "value": "64"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11847,
+                  "section": "CAOILD_AD",
+                  "key": "LoopEnd",
+                  "value": "64"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16525,
+                "section": "CAOILD_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11848,
+                  "section": "CAOILD_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16526,
+                "section": "CAOILD_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11849,
+                  "section": "CAOILD_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16527,
+                "section": "CAOILD_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11850,
+                  "section": "CAOILD_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16528,
+                "section": "CAOILD_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11851,
+                  "section": "CAOILD_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "desert": {
+          "art_id": "CAOILD_AD",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6200,
+            "pack": "ra2md",
+            "relative_path": "isodes/cdoild_a.shp",
+            "folder": "isodes",
+            "filename": "cdoild_a.shp",
+            "stem": "cdoild_a",
+            "extension": ".shp",
+            "size": 263416,
+            "sha1": "42d05df8ab702f12aa74df2fe71057e558ac2491"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 64,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16519,
+                "section": "CAOILD_AD",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11842,
+                  "section": "CAOILD_AD",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16520,
+                "section": "CAOILD_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11843,
+                  "section": "CAOILD_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16521,
+                "section": "CAOILD_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11844,
+                  "section": "CAOILD_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16522,
+                "section": "CAOILD_AD",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11845,
+                  "section": "CAOILD_AD",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16523,
+                "section": "CAOILD_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11846,
+                  "section": "CAOILD_AD",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "64",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16524,
+                "section": "CAOILD_AD",
+                "key": "LoopEnd",
+                "value": "64"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11847,
+                  "section": "CAOILD_AD",
+                  "key": "LoopEnd",
+                  "value": "64"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16525,
+                "section": "CAOILD_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11848,
+                  "section": "CAOILD_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16526,
+                "section": "CAOILD_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11849,
+                  "section": "CAOILD_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16527,
+                "section": "CAOILD_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11850,
+                  "section": "CAOILD_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16528,
+                "section": "CAOILD_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11851,
+                  "section": "CAOILD_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "lunar": {
+          "art_id": "CAOILD_AD",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8268,
+            "pack": "ra2md",
+            "relative_path": "isolun/cloild_a.shp",
+            "folder": "isolun",
+            "filename": "cloild_a.shp",
+            "stem": "cloild_a",
+            "extension": ".shp",
+            "size": 263416,
+            "sha1": "42d05df8ab702f12aa74df2fe71057e558ac2491"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 64,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16519,
+                "section": "CAOILD_AD",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11842,
+                  "section": "CAOILD_AD",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16520,
+                "section": "CAOILD_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11843,
+                  "section": "CAOILD_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16521,
+                "section": "CAOILD_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11844,
+                  "section": "CAOILD_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16522,
+                "section": "CAOILD_AD",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11845,
+                  "section": "CAOILD_AD",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16523,
+                "section": "CAOILD_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11846,
+                  "section": "CAOILD_AD",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "64",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16524,
+                "section": "CAOILD_AD",
+                "key": "LoopEnd",
+                "value": "64"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11847,
+                  "section": "CAOILD_AD",
+                  "key": "LoopEnd",
+                  "value": "64"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16525,
+                "section": "CAOILD_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11848,
+                  "section": "CAOILD_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16526,
+                "section": "CAOILD_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11849,
+                  "section": "CAOILD_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16527,
+                "section": "CAOILD_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11850,
+                  "section": "CAOILD_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16528,
+                "section": "CAOILD_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11851,
+                  "section": "CAOILD_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        },
+        "newurban": {
+          "art_id": "CAOILD_AD",
+          "image": "CAOILD_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9349,
+            "pack": "ra2md",
+            "relative_path": "isoubn/cnoild_a.shp",
+            "folder": "isoubn",
+            "filename": "cnoild_a.shp",
+            "stem": "cnoild_a",
+            "extension": ".shp",
+            "size": 263416,
+            "sha1": "42d05df8ab702f12aa74df2fe71057e558ac2491"
+          },
+          "Start": 33,
+          "LoopStart": 33,
+          "LoopEnd": 64,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16519,
+                "section": "CAOILD_AD",
+                "key": "Image",
+                "value": "CAOILD_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11842,
+                  "section": "CAOILD_AD",
+                  "key": "Image",
+                  "value": "CAOILD_A"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16520,
+                "section": "CAOILD_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11843,
+                  "section": "CAOILD_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16521,
+                "section": "CAOILD_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11844,
+                  "section": "CAOILD_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16522,
+                "section": "CAOILD_AD",
+                "key": "Start",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11845,
+                  "section": "CAOILD_AD",
+                  "key": "Start",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "33",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16523,
+                "section": "CAOILD_AD",
+                "key": "LoopStart",
+                "value": "33"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11846,
+                  "section": "CAOILD_AD",
+                  "key": "LoopStart",
+                  "value": "33"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "64",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16524,
+                "section": "CAOILD_AD",
+                "key": "LoopEnd",
+                "value": "64"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11847,
+                  "section": "CAOILD_AD",
+                  "key": "LoopEnd",
+                  "value": "64"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16525,
+                "section": "CAOILD_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11848,
+                  "section": "CAOILD_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16526,
+                "section": "CAOILD_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11849,
+                  "section": "CAOILD_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16527,
+                "section": "CAOILD_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11850,
+                  "section": "CAOILD_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16528,
+                "section": "CAOILD_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11851,
+                  "section": "CAOILD_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": 0,
+          "YSort": 362
+        }
+      },
+      "ActiveAnimTwo": {
+        "temperate": {
+          "art_id": "CAOILD_F",
+          "image": "CAOILD_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1733,
+            "pack": "ra2",
+            "relative_path": "isotemp/ctoild_f.shp",
+            "folder": "isotemp",
+            "filename": "ctoild_f.shp",
+            "stem": "ctoild_f",
+            "extension": ".shp",
+            "size": 20136,
+            "sha1": "32c450e16bf4aa8d402579b3b136fc23b53105e8"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16532,
+                "section": "CAOILD_F",
+                "key": "Image",
+                "value": "CAOILD_F"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11855,
+                  "section": "CAOILD_F",
+                  "key": "Image",
+                  "value": "CAOILD_F"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16533,
+                "section": "CAOILD_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11856,
+                  "section": "CAOILD_F",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16534,
+                "section": "CAOILD_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11857,
+                  "section": "CAOILD_F",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16535,
+                "section": "CAOILD_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11858,
+                  "section": "CAOILD_F",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16536,
+                "section": "CAOILD_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11859,
+                  "section": "CAOILD_F",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16537,
+                "section": "CAOILD_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11860,
+                  "section": "CAOILD_F",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16538,
+                "section": "CAOILD_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11861,
+                  "section": "CAOILD_F",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16539,
+                "section": "CAOILD_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11862,
+                  "section": "CAOILD_F",
+                  "key": "Rate",
+                  "value": "300"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16540,
+                "section": "CAOILD_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11863,
+                  "section": "CAOILD_F",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimTwo",
+          "slot": "ActiveAnimTwo",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        },
+        "snow": {
+          "art_id": "CAOILD_F",
+          "image": "CAOILD_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 629,
+            "pack": "ra2",
+            "relative_path": "isosnow/caoild_f.shp",
+            "folder": "isosnow",
+            "filename": "caoild_f.shp",
+            "stem": "caoild_f",
+            "extension": ".shp",
+            "size": 12848,
+            "sha1": "34e0da3a830414ed804fc146bcba59ae3b550d22"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16532,
+                "section": "CAOILD_F",
+                "key": "Image",
+                "value": "CAOILD_F"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11855,
+                  "section": "CAOILD_F",
+                  "key": "Image",
+                  "value": "CAOILD_F"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16533,
+                "section": "CAOILD_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11856,
+                  "section": "CAOILD_F",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16534,
+                "section": "CAOILD_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11857,
+                  "section": "CAOILD_F",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16535,
+                "section": "CAOILD_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11858,
+                  "section": "CAOILD_F",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16536,
+                "section": "CAOILD_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11859,
+                  "section": "CAOILD_F",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16537,
+                "section": "CAOILD_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11860,
+                  "section": "CAOILD_F",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16538,
+                "section": "CAOILD_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11861,
+                  "section": "CAOILD_F",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16539,
+                "section": "CAOILD_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11862,
+                  "section": "CAOILD_F",
+                  "key": "Rate",
+                  "value": "300"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16540,
+                "section": "CAOILD_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11863,
+                  "section": "CAOILD_F",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimTwo",
+          "slot": "ActiveAnimTwo",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        },
+        "urban": {
+          "art_id": "CAOILD_F",
+          "image": "CAOILD_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2820,
+            "pack": "ra2",
+            "relative_path": "isourb/cuoild_f.shp",
+            "folder": "isourb",
+            "filename": "cuoild_f.shp",
+            "stem": "cuoild_f",
+            "extension": ".shp",
+            "size": 20136,
+            "sha1": "32c450e16bf4aa8d402579b3b136fc23b53105e8"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16532,
+                "section": "CAOILD_F",
+                "key": "Image",
+                "value": "CAOILD_F"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11855,
+                  "section": "CAOILD_F",
+                  "key": "Image",
+                  "value": "CAOILD_F"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16533,
+                "section": "CAOILD_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11856,
+                  "section": "CAOILD_F",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16534,
+                "section": "CAOILD_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11857,
+                  "section": "CAOILD_F",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16535,
+                "section": "CAOILD_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11858,
+                  "section": "CAOILD_F",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16536,
+                "section": "CAOILD_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11859,
+                  "section": "CAOILD_F",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16537,
+                "section": "CAOILD_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11860,
+                  "section": "CAOILD_F",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16538,
+                "section": "CAOILD_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11861,
+                  "section": "CAOILD_F",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16539,
+                "section": "CAOILD_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11862,
+                  "section": "CAOILD_F",
+                  "key": "Rate",
+                  "value": "300"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16540,
+                "section": "CAOILD_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11863,
+                  "section": "CAOILD_F",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimTwo",
+          "slot": "ActiveAnimTwo",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        },
+        "desert": {
+          "art_id": "CAOILD_F",
+          "image": "CAOILD_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6201,
+            "pack": "ra2md",
+            "relative_path": "isodes/cdoild_f.shp",
+            "folder": "isodes",
+            "filename": "cdoild_f.shp",
+            "stem": "cdoild_f",
+            "extension": ".shp",
+            "size": 20136,
+            "sha1": "32c450e16bf4aa8d402579b3b136fc23b53105e8"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16532,
+                "section": "CAOILD_F",
+                "key": "Image",
+                "value": "CAOILD_F"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11855,
+                  "section": "CAOILD_F",
+                  "key": "Image",
+                  "value": "CAOILD_F"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16533,
+                "section": "CAOILD_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11856,
+                  "section": "CAOILD_F",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16534,
+                "section": "CAOILD_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11857,
+                  "section": "CAOILD_F",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16535,
+                "section": "CAOILD_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11858,
+                  "section": "CAOILD_F",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16536,
+                "section": "CAOILD_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11859,
+                  "section": "CAOILD_F",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16537,
+                "section": "CAOILD_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11860,
+                  "section": "CAOILD_F",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16538,
+                "section": "CAOILD_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11861,
+                  "section": "CAOILD_F",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16539,
+                "section": "CAOILD_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11862,
+                  "section": "CAOILD_F",
+                  "key": "Rate",
+                  "value": "300"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16540,
+                "section": "CAOILD_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11863,
+                  "section": "CAOILD_F",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimTwo",
+          "slot": "ActiveAnimTwo",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        },
+        "lunar": {
+          "art_id": "CAOILD_F",
+          "image": "CAOILD_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8269,
+            "pack": "ra2md",
+            "relative_path": "isolun/cloild_f.shp",
+            "folder": "isolun",
+            "filename": "cloild_f.shp",
+            "stem": "cloild_f",
+            "extension": ".shp",
+            "size": 20136,
+            "sha1": "32c450e16bf4aa8d402579b3b136fc23b53105e8"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16532,
+                "section": "CAOILD_F",
+                "key": "Image",
+                "value": "CAOILD_F"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11855,
+                  "section": "CAOILD_F",
+                  "key": "Image",
+                  "value": "CAOILD_F"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16533,
+                "section": "CAOILD_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11856,
+                  "section": "CAOILD_F",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16534,
+                "section": "CAOILD_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11857,
+                  "section": "CAOILD_F",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16535,
+                "section": "CAOILD_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11858,
+                  "section": "CAOILD_F",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16536,
+                "section": "CAOILD_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11859,
+                  "section": "CAOILD_F",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16537,
+                "section": "CAOILD_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11860,
+                  "section": "CAOILD_F",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16538,
+                "section": "CAOILD_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11861,
+                  "section": "CAOILD_F",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16539,
+                "section": "CAOILD_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11862,
+                  "section": "CAOILD_F",
+                  "key": "Rate",
+                  "value": "300"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16540,
+                "section": "CAOILD_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11863,
+                  "section": "CAOILD_F",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimTwo",
+          "slot": "ActiveAnimTwo",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        },
+        "newurban": {
+          "art_id": "CAOILD_F",
+          "image": "CAOILD_F",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9350,
+            "pack": "ra2md",
+            "relative_path": "isoubn/cnoild_f.shp",
+            "folder": "isoubn",
+            "filename": "cnoild_f.shp",
+            "stem": "cnoild_f",
+            "extension": ".shp",
+            "size": 20136,
+            "sha1": "32c450e16bf4aa8d402579b3b136fc23b53105e8"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 300,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CAOILD_F",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16532,
+                "section": "CAOILD_F",
+                "key": "Image",
+                "value": "CAOILD_F"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11855,
+                  "section": "CAOILD_F",
+                  "key": "Image",
+                  "value": "CAOILD_F"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16533,
+                "section": "CAOILD_F",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11856,
+                  "section": "CAOILD_F",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16534,
+                "section": "CAOILD_F",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11857,
+                  "section": "CAOILD_F",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16535,
+                "section": "CAOILD_F",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11858,
+                  "section": "CAOILD_F",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16536,
+                "section": "CAOILD_F",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11859,
+                  "section": "CAOILD_F",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16537,
+                "section": "CAOILD_F",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11860,
+                  "section": "CAOILD_F",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16538,
+                "section": "CAOILD_F",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11861,
+                  "section": "CAOILD_F",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "300",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16539,
+                "section": "CAOILD_F",
+                "key": "Rate",
+                "value": "300"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11862,
+                  "section": "CAOILD_F",
+                  "key": "Rate",
+                  "value": "300"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16540,
+                "section": "CAOILD_F",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11863,
+                  "section": "CAOILD_F",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimTwo",
+          "slot": "ActiveAnimTwo",
+          "damaged": false,
+          "ZAdjust": -50,
+          "YSort": 362,
+          "Powered": false
+        }
+      }
+    },
+    "foundation": "2x2",
+    "height": 5,
+    "occupy_height": 3,
+    "damage_fire_offsets": [
+      [
+        -2.0,
+        34.0
+      ],
+      [
+        7.0,
+        -21.0
+      ],
+      [
+        29.0,
+        10.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CAOILD",
+      "Name": "Tech Oil Derrick",
+      "TechLevel": -1,
+      "Strength": 1000,
+      "Insignificant": true,
+      "Nominal": true,
+      "Sight": 6,
+      "Points": 5,
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM",
+      "MaxDebris": 8,
+      "MinDebris": 4,
+      "Capturable": true,
+      "NeedsEngineer": true,
+      "Unsellable": true,
+      "Explodes": true,
+      "DeathWeapon": "OilExplosion",
+      "ProduceCashStartup": 1000,
+      "ProduceCashAmount": 20,
+      "ProduceCashDelay": 100,
+      "WorkingSound": "OilDerrickLoop",
+      "LeaveRubble": true,
+      "CaptureEvaEvent": "EVA_OilRefineryCaptured",
+      "RadarVisible": true
+    },
+    "raw_values": {
+      "UIName": "Name:CAOILD",
+      "Name": "Tech Oil Derrick",
+      "TechLevel": "-1",
+      "Strength": "1000",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "Sight": "6",
+      "Points": "5",
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM",
+      "MaxDebris": "8",
+      "MinDebris": "4",
+      "Capturable": "yes",
+      "NeedsEngineer": "yes",
+      "Unsellable": "yes",
+      "Explodes": "yes",
+      "DeathWeapon": "OilExplosion",
+      "ProduceCashStartup": "1000",
+      "ProduceCashAmount": "20",
+      "ProduceCashDelay": "100",
+      "WorkingSound": "OilDerrickLoop",
+      "LeaveRubble": "yes",
+      "CaptureEvaEvent": "EVA_OilRefineryCaptured",
+      "RadarVisible": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CAOILD",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13929,
+          "section": "CAOILD",
+          "key": "UIName",
+          "value": "Name:CAOILD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10623,
+            "section": "CAOILD",
+            "key": "UIName",
+            "value": "Name:CAOILD"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13922,
+            "section": "CAOILD",
+            "key": "UIName",
+            "value": "Name:CAOILD"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Tech Oil Derrick",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13930,
+          "section": "CAOILD",
+          "key": "Name",
+          "value": "Tech Oil Derrick"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10624,
+            "section": "CAOILD",
+            "key": "Name",
+            "value": "Tech Oil Derrick"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13923,
+            "section": "CAOILD",
+            "key": "Name",
+            "value": "Tech Oil Derrick"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13931,
+          "section": "CAOILD",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10626,
+            "section": "CAOILD",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13924,
+            "section": "CAOILD",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13932,
+          "section": "CAOILD",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10627,
+            "section": "CAOILD",
+            "key": "Strength",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13925,
+            "section": "CAOILD",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13933,
+          "section": "CAOILD",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10628,
+            "section": "CAOILD",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13926,
+            "section": "CAOILD",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13934,
+          "section": "CAOILD",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10629,
+            "section": "CAOILD",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13927,
+            "section": "CAOILD",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13935,
+          "section": "CAOILD",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10630,
+            "section": "CAOILD",
+            "key": "Sight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13928,
+            "section": "CAOILD",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13936,
+          "section": "CAOILD",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10631,
+            "section": "CAOILD",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13929,
+            "section": "CAOILD",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13937,
+          "section": "CAOILD",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10632,
+            "section": "CAOILD",
+            "key": "Armor",
+            "value": "steel"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13930,
+            "section": "CAOILD",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13938,
+          "section": "CAOILD",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10633,
+            "section": "CAOILD",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13931,
+            "section": "CAOILD",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13939,
+          "section": "CAOILD",
+          "key": "DebrisAnims",
+          "value": "DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10634,
+            "section": "CAOILD",
+            "key": "DebrisAnims",
+            "value": "DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13932,
+            "section": "CAOILD",
+            "key": "DebrisAnims",
+            "value": "DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG,DBRIS7SM"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13940,
+          "section": "CAOILD",
+          "key": "MaxDebris",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10635,
+            "section": "CAOILD",
+            "key": "MaxDebris",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13933,
+            "section": "CAOILD",
+            "key": "MaxDebris",
+            "value": "8"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13941,
+          "section": "CAOILD",
+          "key": "MinDebris",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10636,
+            "section": "CAOILD",
+            "key": "MinDebris",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13934,
+            "section": "CAOILD",
+            "key": "MinDebris",
+            "value": "4"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13943,
+          "section": "CAOILD",
+          "key": "Capturable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10638,
+            "section": "CAOILD",
+            "key": "Capturable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13936,
+            "section": "CAOILD",
+            "key": "Capturable",
+            "value": "yes"
+          }
+        ]
+      },
+      "NeedsEngineer": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13945,
+          "section": "CAOILD",
+          "key": "NeedsEngineer",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10639,
+            "section": "CAOILD",
+            "key": "NeedsEngineer",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13938,
+            "section": "CAOILD",
+            "key": "NeedsEngineer",
+            "value": "yes"
+          }
+        ]
+      },
+      "Unsellable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13946,
+          "section": "CAOILD",
+          "key": "Unsellable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10640,
+            "section": "CAOILD",
+            "key": "Unsellable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13939,
+            "section": "CAOILD",
+            "key": "Unsellable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explodes": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13947,
+          "section": "CAOILD",
+          "key": "Explodes",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10641,
+            "section": "CAOILD",
+            "key": "Explodes",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13940,
+            "section": "CAOILD",
+            "key": "Explodes",
+            "value": "yes"
+          }
+        ]
+      },
+      "DeathWeapon": {
+        "value": "OilExplosion",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13948,
+          "section": "CAOILD",
+          "key": "DeathWeapon",
+          "value": "OilExplosion"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10642,
+            "section": "CAOILD",
+            "key": "DeathWeapon",
+            "value": "OilExplosion"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13941,
+            "section": "CAOILD",
+            "key": "DeathWeapon",
+            "value": "OilExplosion"
+          }
+        ]
+      },
+      "ProduceCashStartup": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13949,
+          "section": "CAOILD",
+          "key": "ProduceCashStartup",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10643,
+            "section": "CAOILD",
+            "key": "ProduceCashStartup",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13942,
+            "section": "CAOILD",
+            "key": "ProduceCashStartup",
+            "value": "1000"
+          }
+        ]
+      },
+      "ProduceCashAmount": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13950,
+          "section": "CAOILD",
+          "key": "ProduceCashAmount",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10644,
+            "section": "CAOILD",
+            "key": "ProduceCashAmount",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13943,
+            "section": "CAOILD",
+            "key": "ProduceCashAmount",
+            "value": "20"
+          }
+        ]
+      },
+      "ProduceCashDelay": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13951,
+          "section": "CAOILD",
+          "key": "ProduceCashDelay",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10645,
+            "section": "CAOILD",
+            "key": "ProduceCashDelay",
+            "value": "100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13944,
+            "section": "CAOILD",
+            "key": "ProduceCashDelay",
+            "value": "100"
+          }
+        ]
+      },
+      "WorkingSound": {
+        "value": "OilDerrickLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13952,
+          "section": "CAOILD",
+          "key": "WorkingSound",
+          "value": "OilDerrickLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10646,
+            "section": "CAOILD",
+            "key": "WorkingSound",
+            "value": "OilDerrickLoop"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13945,
+            "section": "CAOILD",
+            "key": "WorkingSound",
+            "value": "OilDerrickLoop"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13953,
+          "section": "CAOILD",
+          "key": "LeaveRubble",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 10647,
+            "section": "CAOILD",
+            "key": "LeaveRubble",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13946,
+            "section": "CAOILD",
+            "key": "LeaveRubble",
+            "value": "yes"
+          }
+        ]
+      },
+      "CaptureEvaEvent": {
+        "value": "EVA_OilRefineryCaptured",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13944,
+          "section": "CAOILD",
+          "key": "CaptureEvaEvent",
+          "value": "EVA_OilRefineryCaptured"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13937,
+            "section": "CAOILD",
+            "key": "CaptureEvaEvent",
+            "value": "EVA_OilRefineryCaptured"
+          }
+        ]
+      },
+      "RadarVisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 13954,
+          "section": "CAOILD",
+          "key": "RadarVisible",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 13947,
+            "section": "CAOILD",
+            "key": "RadarVisible",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Normalized": true,
+      "Remapable": false,
+      "Foundation": "2x2",
+      "Height": 5,
+      "NewTheater": true,
+      "ActiveAnim": "CAOILD_A",
+      "ActiveAnimDamaged": "CAOILD_AD",
+      "ActiveAnimZAdjust": 0,
+      "ActiveAnimYSort": 362,
+      "ActiveAnimTwo": "CAOILD_F",
+      "ActiveAnimTwoZAdjust": -50,
+      "ActiveAnimTwoYSort": 362,
+      "ActiveAnimTwoPowered": false,
+      "DemandLoad": true,
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 3,
+      "DamageFireOffset0": "-2,34",
+      "DamageFireOffset1": "7,-21",
+      "DamageFireOffset2": "29,10"
+    },
+    "raw_values": {
+      "Normalized": "yes",
+      "Remapable": "no",
+      "Foundation": "2x2",
+      "Height": "5",
+      "NewTheater": "yes",
+      "ActiveAnim": "CAOILD_A",
+      "ActiveAnimDamaged": "CAOILD_AD",
+      "ActiveAnimZAdjust": "0",
+      "ActiveAnimYSort": "362",
+      "ActiveAnimTwo": "CAOILD_F",
+      "ActiveAnimTwoZAdjust": "-50",
+      "ActiveAnimTwoYSort": "362",
+      "ActiveAnimTwoPowered": "no",
+      "DemandLoad": "true",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "3",
+      "DamageFireOffset0": "-2,34",
+      "DamageFireOffset1": "7,-21",
+      "DamageFireOffset2": "29,10"
+    },
+    "provenance": {
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3379,
+          "section": "CAOILD",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2040,
+            "section": "CAOILD",
+            "key": "Normalized",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3380,
+          "section": "CAOILD",
+          "key": "Remapable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2041,
+            "section": "CAOILD",
+            "key": "Remapable",
+            "value": "no"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "2x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3381,
+          "section": "CAOILD",
+          "key": "Foundation",
+          "value": "2x2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2042,
+            "section": "CAOILD",
+            "key": "Foundation",
+            "value": "2x2"
+          }
+        ]
+      },
+      "Height": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3382,
+          "section": "CAOILD",
+          "key": "Height",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2043,
+            "section": "CAOILD",
+            "key": "Height",
+            "value": "5"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3384,
+          "section": "CAOILD",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2045,
+            "section": "CAOILD",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "ActiveAnim": {
+        "value": "CAOILD_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3385,
+          "section": "CAOILD",
+          "key": "ActiveAnim",
+          "value": "CAOILD_A"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2046,
+            "section": "CAOILD",
+            "key": "ActiveAnim",
+            "value": "CAOILD_A"
+          }
+        ]
+      },
+      "ActiveAnimDamaged": {
+        "value": "CAOILD_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3386,
+          "section": "CAOILD",
+          "key": "ActiveAnimDamaged",
+          "value": "CAOILD_AD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2047,
+            "section": "CAOILD",
+            "key": "ActiveAnimDamaged",
+            "value": "CAOILD_AD"
+          }
+        ]
+      },
+      "ActiveAnimZAdjust": {
+        "value": "0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3387,
+          "section": "CAOILD",
+          "key": "ActiveAnimZAdjust",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2048,
+            "section": "CAOILD",
+            "key": "ActiveAnimZAdjust",
+            "value": "0"
+          }
+        ]
+      },
+      "ActiveAnimYSort": {
+        "value": "362",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3388,
+          "section": "CAOILD",
+          "key": "ActiveAnimYSort",
+          "value": "362"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2049,
+            "section": "CAOILD",
+            "key": "ActiveAnimYSort",
+            "value": "362"
+          }
+        ]
+      },
+      "ActiveAnimTwo": {
+        "value": "CAOILD_F",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3389,
+          "section": "CAOILD",
+          "key": "ActiveAnimTwo",
+          "value": "CAOILD_F"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2050,
+            "section": "CAOILD",
+            "key": "ActiveAnimTwo",
+            "value": "CAOILD_F"
+          }
+        ]
+      },
+      "ActiveAnimTwoZAdjust": {
+        "value": "-50",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3390,
+          "section": "CAOILD",
+          "key": "ActiveAnimTwoZAdjust",
+          "value": "-50"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2051,
+            "section": "CAOILD",
+            "key": "ActiveAnimTwoZAdjust",
+            "value": "-50"
+          }
+        ]
+      },
+      "ActiveAnimTwoYSort": {
+        "value": "362",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3391,
+          "section": "CAOILD",
+          "key": "ActiveAnimTwoYSort",
+          "value": "362"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2052,
+            "section": "CAOILD",
+            "key": "ActiveAnimTwoYSort",
+            "value": "362"
+          }
+        ]
+      },
+      "ActiveAnimTwoPowered": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3392,
+          "section": "CAOILD",
+          "key": "ActiveAnimTwoPowered",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2053,
+            "section": "CAOILD",
+            "key": "ActiveAnimTwoPowered",
+            "value": "no"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3393,
+          "section": "CAOILD",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2054,
+            "section": "CAOILD",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3394,
+          "section": "CAOILD",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2055,
+            "section": "CAOILD",
+            "key": "CanHideThings",
+            "value": "True"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3395,
+          "section": "CAOILD",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2056,
+            "section": "CAOILD",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3396,
+          "section": "CAOILD",
+          "key": "OccupyHeight",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2057,
+            "section": "CAOILD",
+            "key": "OccupyHeight",
+            "value": "3"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-2,34",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3397,
+          "section": "CAOILD",
+          "key": "DamageFireOffset0",
+          "value": "-2,34"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2058,
+            "section": "CAOILD",
+            "key": "DamageFireOffset0",
+            "value": "-2,34"
+          }
+        ]
+      },
+      "DamageFireOffset1": {
+        "value": "7,-21",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3398,
+          "section": "CAOILD",
+          "key": "DamageFireOffset1",
+          "value": "7,-21"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2059,
+            "section": "CAOILD",
+            "key": "DamageFireOffset1",
+            "value": "7,-21"
+          }
+        ]
+      },
+      "DamageFireOffset2": {
+        "value": "29,10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3399,
+          "section": "CAOILD",
+          "key": "DamageFireOffset2",
+          "value": "29,10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2060,
+            "section": "CAOILD",
+            "key": "DamageFireOffset2",
+            "value": "29,10"
+          }
+        ]
+      }
+    }
+  }
+}

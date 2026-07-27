@@ -1,0 +1,1225 @@
+{
+  "id": "CAMSC09",
+  "category": "building",
+  "name_token": "Name:CAMSC07",
+  "art_id": "CAMSC09",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 200,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {
+    "Primary": {
+      "id": "AlliedOccupyW",
+      "projectile": "InvisibleHigh",
+      "warhead": "SSAB",
+      "report": [
+        "AlliedOccupiedAttack"
+      ],
+      "values": {
+        "Damage": 30,
+        "ROF": 15,
+        "Range": 7,
+        "Projectile": "InvisibleHigh",
+        "Speed": 100,
+        "Warhead": "SSAB",
+        "Report": "AlliedOccupiedAttack",
+        "Anim": "UCFLASH"
+      },
+      "raw_values": {
+        "Damage": "30",
+        "ROF": "15",
+        "Range": "7",
+        "Projectile": "InvisibleHigh",
+        "Speed": "100",
+        "Warhead": "SSAB",
+        "Report": "AlliedOccupiedAttack",
+        "Anim": "UCFLASH"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "30",
+          "origin": {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16112,
+            "section": "AlliedOccupyW",
+            "key": "Damage",
+            "value": "30"
+          },
+          "history": []
+        },
+        "ROF": {
+          "value": "15",
+          "origin": {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16113,
+            "section": "AlliedOccupyW",
+            "key": "ROF",
+            "value": "15"
+          },
+          "history": []
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16114,
+            "section": "AlliedOccupyW",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": []
+        },
+        "Projectile": {
+          "value": "InvisibleHigh",
+          "origin": {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16115,
+            "section": "AlliedOccupyW",
+            "key": "Projectile",
+            "value": "InvisibleHigh"
+          },
+          "history": []
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16116,
+            "section": "AlliedOccupyW",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": []
+        },
+        "Warhead": {
+          "value": "SSAB",
+          "origin": {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16117,
+            "section": "AlliedOccupyW",
+            "key": "Warhead",
+            "value": "SSAB"
+          },
+          "history": []
+        },
+        "Report": {
+          "value": "AlliedOccupiedAttack",
+          "origin": {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16118,
+            "section": "AlliedOccupyW",
+            "key": "Report",
+            "value": "AlliedOccupiedAttack"
+          },
+          "history": []
+        },
+        "Anim": {
+          "value": "UCFLASH",
+          "origin": {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 16119,
+            "section": "AlliedOccupyW",
+            "key": "Anim",
+            "value": "UCFLASH"
+          },
+          "history": []
+        }
+      }
+    }
+  },
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAMSC09",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1701,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctmsc09.shp",
+          "folder": "isotemp",
+          "filename": "ctmsc09.shp",
+          "stem": "ctmsc09",
+          "extension": ".shp",
+          "size": 6464,
+          "sha1": "f236ddc8f74b40d5620d95f1688497c9770f4364"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 597,
+          "pack": "ra2",
+          "relative_path": "isosnow/camsc09.shp",
+          "folder": "isosnow",
+          "filename": "camsc09.shp",
+          "stem": "camsc09",
+          "extension": ".shp",
+          "size": 6464,
+          "sha1": "f236ddc8f74b40d5620d95f1688497c9770f4364"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2788,
+          "pack": "ra2",
+          "relative_path": "isourb/cumsc09.shp",
+          "folder": "isourb",
+          "filename": "cumsc09.shp",
+          "stem": "cumsc09",
+          "extension": ".shp",
+          "size": 6464,
+          "sha1": "f236ddc8f74b40d5620d95f1688497c9770f4364"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6169,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdmsc09.shp",
+          "folder": "isodes",
+          "filename": "cdmsc09.shp",
+          "stem": "cdmsc09",
+          "extension": ".shp",
+          "size": 6464,
+          "sha1": "f236ddc8f74b40d5620d95f1688497c9770f4364"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8237,
+          "pack": "ra2md",
+          "relative_path": "isolun/clmsc09.shp",
+          "folder": "isolun",
+          "filename": "clmsc09.shp",
+          "stem": "clmsc09",
+          "extension": ".shp",
+          "size": 6464,
+          "sha1": "f236ddc8f74b40d5620d95f1688497c9770f4364"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9318,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnmsc09.shp",
+          "folder": "isoubn",
+          "filename": "cnmsc09.shp",
+          "stem": "cnmsc09",
+          "extension": ".shp",
+          "size": 6464,
+          "sha1": "f236ddc8f74b40d5620d95f1688497c9770f4364"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 3,
+    "occupy_height": 3,
+    "damage_fire_offsets": [
+      [
+        -7.0,
+        10.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "Thatched Hut B",
+      "UIName": "Name:CAMSC07",
+      "TechLevel": -1,
+      "Strength": 200,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS2LG,DBRIS3SM,DBRIS5SM",
+      "MaxDebris": 4,
+      "MinDebris": 2,
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "CanBeOccupied": true,
+      "MaxNumberOccupants": 6,
+      "Primary": "AlliedOccupyW",
+      "CanOccupyFire": true
+    },
+    "raw_values": {
+      "Name": "Thatched Hut B",
+      "UIName": "Name:CAMSC07",
+      "TechLevel": "-1",
+      "Strength": "200",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS2LG,DBRIS3SM,DBRIS5SM",
+      "MaxDebris": "4",
+      "MinDebris": "2",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "CanBeOccupied": "yes",
+      "MaxNumberOccupants": "6",
+      "Primary": "AlliedOccupyW",
+      "CanOccupyFire": "yes"
+    },
+    "provenance": {
+      "Name": {
+        "value": "Thatched Hut B",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20339,
+          "section": "CAMSC09",
+          "key": "Name",
+          "value": "Thatched Hut B"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13719,
+            "section": "CAMSC09",
+            "key": "Name",
+            "value": "RA2 Thatched Hut B"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20331,
+            "section": "CAMSC09",
+            "key": "Name",
+            "value": "Thatched Hut B"
+          }
+        ]
+      },
+      "UIName": {
+        "value": "Name:CAMSC07",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20340,
+          "section": "CAMSC09",
+          "key": "UIName",
+          "value": "Name:CAMSC07"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13720,
+            "section": "CAMSC09",
+            "key": "UIName",
+            "value": "Name:CAMSC07"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20332,
+            "section": "CAMSC09",
+            "key": "UIName",
+            "value": "Name:CAMSC07"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20341,
+          "section": "CAMSC09",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13721,
+            "section": "CAMSC09",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20333,
+            "section": "CAMSC09",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20342,
+          "section": "CAMSC09",
+          "key": "Strength",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13722,
+            "section": "CAMSC09",
+            "key": "Strength",
+            "value": "200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20334,
+            "section": "CAMSC09",
+            "key": "Strength",
+            "value": "200"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20343,
+          "section": "CAMSC09",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13723,
+            "section": "CAMSC09",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20335,
+            "section": "CAMSC09",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20344,
+          "section": "CAMSC09",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13724,
+            "section": "CAMSC09",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20336,
+            "section": "CAMSC09",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 13725,
+          "section": "CAMSC09",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20346,
+          "section": "CAMSC09",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13726,
+            "section": "CAMSC09",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20338,
+            "section": "CAMSC09",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20347,
+          "section": "CAMSC09",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13727,
+            "section": "CAMSC09",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20339,
+            "section": "CAMSC09",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20348,
+          "section": "CAMSC09",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13728,
+            "section": "CAMSC09",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20340,
+            "section": "CAMSC09",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS2LG,DBRIS3SM,DBRIS5SM",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20349,
+          "section": "CAMSC09",
+          "key": "DebrisAnims",
+          "value": "DBRIS2LG,DBRIS3SM,DBRIS5SM"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13729,
+            "section": "CAMSC09",
+            "key": "DebrisAnims",
+            "value": "DBRIS2LG,DBRIS3SM,DBRIS5SM"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20341,
+            "section": "CAMSC09",
+            "key": "DebrisAnims",
+            "value": "DBRIS2LG,DBRIS3SM,DBRIS5SM"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20350,
+          "section": "CAMSC09",
+          "key": "MaxDebris",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13730,
+            "section": "CAMSC09",
+            "key": "MaxDebris",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20342,
+            "section": "CAMSC09",
+            "key": "MaxDebris",
+            "value": "4"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20351,
+          "section": "CAMSC09",
+          "key": "MinDebris",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13731,
+            "section": "CAMSC09",
+            "key": "MinDebris",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20343,
+            "section": "CAMSC09",
+            "key": "MinDebris",
+            "value": "2"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20352,
+          "section": "CAMSC09",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13732,
+            "section": "CAMSC09",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20344,
+            "section": "CAMSC09",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20353,
+          "section": "CAMSC09",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13733,
+            "section": "CAMSC09",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20345,
+            "section": "CAMSC09",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20354,
+          "section": "CAMSC09",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13734,
+            "section": "CAMSC09",
+            "key": "ClickRepairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20346,
+            "section": "CAMSC09",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanBeOccupied": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20355,
+          "section": "CAMSC09",
+          "key": "CanBeOccupied",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13735,
+            "section": "CAMSC09",
+            "key": "CanBeOccupied",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20347,
+            "section": "CAMSC09",
+            "key": "CanBeOccupied",
+            "value": "yes"
+          }
+        ]
+      },
+      "MaxNumberOccupants": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20356,
+          "section": "CAMSC09",
+          "key": "MaxNumberOccupants",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13736,
+            "section": "CAMSC09",
+            "key": "MaxNumberOccupants",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20348,
+            "section": "CAMSC09",
+            "key": "MaxNumberOccupants",
+            "value": "6"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "AlliedOccupyW",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 13738,
+          "section": "CAMSC09",
+          "key": "Primary",
+          "value": "AlliedOccupyW"
+        },
+        "history": []
+      },
+      "CanOccupyFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20358,
+          "section": "CAMSC09",
+          "key": "CanOccupyFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20350,
+            "section": "CAMSC09",
+            "key": "CanOccupyFire",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "1x1",
+      "Height": 3,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 3,
+      "DamageFireOffset0": "-7,10",
+      "MuzzleFlash0": "-11,10",
+      "MuzzleFlash1": "5,12",
+      "MuzzleFlash2": "-3,10",
+      "MuzzleFlash3": "-11,10",
+      "MuzzleFlash4": "5,12",
+      "MuzzleFlash5": "-3,10"
+    },
+    "raw_values": {
+      "Foundation": "1x1",
+      "Height": "3",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "3",
+      "DamageFireOffset0": "-7,10",
+      "MuzzleFlash0": "-11,10",
+      "MuzzleFlash1": "5,12",
+      "MuzzleFlash2": "-3,10",
+      "MuzzleFlash3": "-11,10",
+      "MuzzleFlash4": "5,12",
+      "MuzzleFlash5": "-3,10"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11994,
+          "section": "CAMSC09",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8006,
+            "section": "CAMSC09",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "Height": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11995,
+          "section": "CAMSC09",
+          "key": "Height",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8007,
+            "section": "CAMSC09",
+            "key": "Height",
+            "value": "3"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11996,
+          "section": "CAMSC09",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8008,
+            "section": "CAMSC09",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11997,
+          "section": "CAMSC09",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8009,
+            "section": "CAMSC09",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11999,
+          "section": "CAMSC09",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8011,
+            "section": "CAMSC09",
+            "key": "CanHideThings",
+            "value": "True"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12000,
+          "section": "CAMSC09",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8012,
+            "section": "CAMSC09",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12001,
+          "section": "CAMSC09",
+          "key": "OccupyHeight",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8013,
+            "section": "CAMSC09",
+            "key": "OccupyHeight",
+            "value": "3"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-7,10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12002,
+          "section": "CAMSC09",
+          "key": "DamageFireOffset0",
+          "value": "-7,10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8014,
+            "section": "CAMSC09",
+            "key": "DamageFireOffset0",
+            "value": "-7,10"
+          }
+        ]
+      },
+      "MuzzleFlash0": {
+        "value": "-11,10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12003,
+          "section": "CAMSC09",
+          "key": "MuzzleFlash0",
+          "value": "-11,10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8015,
+            "section": "CAMSC09",
+            "key": "MuzzleFlash0",
+            "value": "-11,10"
+          }
+        ]
+      },
+      "MuzzleFlash1": {
+        "value": "5,12",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12004,
+          "section": "CAMSC09",
+          "key": "MuzzleFlash1",
+          "value": "5,12"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8016,
+            "section": "CAMSC09",
+            "key": "MuzzleFlash1",
+            "value": "5,12"
+          }
+        ]
+      },
+      "MuzzleFlash2": {
+        "value": "-3,10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12005,
+          "section": "CAMSC09",
+          "key": "MuzzleFlash2",
+          "value": "-3,10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8017,
+            "section": "CAMSC09",
+            "key": "MuzzleFlash2",
+            "value": "-3,10"
+          }
+        ]
+      },
+      "MuzzleFlash3": {
+        "value": "-11,10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12006,
+          "section": "CAMSC09",
+          "key": "MuzzleFlash3",
+          "value": "-11,10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8018,
+            "section": "CAMSC09",
+            "key": "MuzzleFlash3",
+            "value": "-11,10"
+          }
+        ]
+      },
+      "MuzzleFlash4": {
+        "value": "5,12",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12007,
+          "section": "CAMSC09",
+          "key": "MuzzleFlash4",
+          "value": "5,12"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8019,
+            "section": "CAMSC09",
+            "key": "MuzzleFlash4",
+            "value": "5,12"
+          }
+        ]
+      },
+      "MuzzleFlash5": {
+        "value": "-3,10",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12008,
+          "section": "CAMSC09",
+          "key": "MuzzleFlash5",
+          "value": "-3,10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8020,
+            "section": "CAMSC09",
+            "key": "MuzzleFlash5",
+            "value": "-3,10"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/entities/units/rifle.tscn" id="u1"]
+[ext_resource type="PackedScene" path="res://scenes/entities/units/rocket.tscn" id="u2"]
+[ext_resource type="PackedScene" path="res://scenes/entities/units/tank.tscn" id="u3"]
+[ext_resource type="PackedScene" path="res://scenes/entities/units/scout.tscn" id="u4"]
+[ext_resource type="PackedScene" path="res://scenes/entities/units/harvester.tscn" id="u5"]
+[ext_resource type="PackedScene" path="res://scenes/entities/buildings/command.tscn" id="b6"]
+[ext_resource type="PackedScene" path="res://scenes/entities/buildings/power.tscn" id="b7"]
+[ext_resource type="PackedScene" path="res://scenes/entities/buildings/barracks.tscn" id="b8"]
+[ext_resource type="PackedScene" path="res://scenes/entities/buildings/refinery.tscn" id="b9"]
+[ext_resource type="PackedScene" path="res://scenes/entities/buildings/war_factory.tscn" id="b10"]
+[ext_resource type="PackedScene" path="res://scenes/entities/buildings/repair_bay.tscn" id="b11"]
+[ext_resource type="PackedScene" path="res://scenes/entities/buildings/turret.tscn" id="b12"]
+[ext_resource type="PackedScene" path="res://scenes/entities/buildings/bunker.tscn" id="b13"]
+
+[node name="PrefabGallery" type="Node2D"]
+editor_description = "预制场景总览。这里只用于查看；请双击 scenes/entities/units 或 buildings 下的源 .tscn 进行编辑。"
+
+[node name="rifle" parent="." instance=ExtResource("u1")]
+position = Vector2(-330, -170)
+process_mode = 4
+
+[node name="rocket" parent="." instance=ExtResource("u2")]
+position = Vector2(-170, -170)
+process_mode = 4
+
+[node name="tank" parent="." instance=ExtResource("u3")]
+position = Vector2(20, -170)
+process_mode = 4
+
+[node name="scout" parent="." instance=ExtResource("u4")]
+position = Vector2(220, -170)
+process_mode = 4
+
+[node name="harvester" parent="." instance=ExtResource("u5")]
+position = Vector2(410, -170)
+process_mode = 4
+
+[node name="command" parent="." instance=ExtResource("b6")]
+position = Vector2(-420, 130)
+process_mode = 4
+
+[node name="power" parent="." instance=ExtResource("b7")]
+position = Vector2(-280, 130)
+process_mode = 4
+
+[node name="barracks" parent="." instance=ExtResource("b8")]
+position = Vector2(-145, 130)
+process_mode = 4
+
+[node name="refinery" parent="." instance=ExtResource("b9")]
+position = Vector2(20, 130)
+process_mode = 4
+
+[node name="war_factory" parent="." instance=ExtResource("b10")]
+position = Vector2(200, 130)
+process_mode = 4
+
+[node name="repair_bay" parent="." instance=ExtResource("b11")]
+position = Vector2(390, 130)
+process_mode = 4
+
+[node name="turret" parent="." instance=ExtResource("b12")]
+position = Vector2(-80, 360)
+process_mode = 4
+
+[node name="bunker" parent="." instance=ExtResource("b13")]
+position = Vector2(80, 360)
+process_mode = 4
+

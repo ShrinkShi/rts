@@ -1,0 +1,2911 @@
+{
+  "id": "POLARB",
+  "category": "infantry",
+  "name_token": "NAME:POLARBEAR",
+  "art_id": "POLARB",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 10,
+  "strength": 200,
+  "armor": "none",
+  "speed": 4,
+  "sight": 2,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Infantry",
+  "weapons": {
+    "Primary": {
+      "id": "BearBite",
+      "projectile": "InvisibleLow",
+      "warhead": "HollowPoint",
+      "report": [
+        "BearAttack"
+      ],
+      "values": {
+        "Range": 1.5,
+        "CellRangefinding": true,
+        "Projectile": "InvisibleLow",
+        "Speed": 100,
+        "Damage": 30,
+        "ROF": 30,
+        "Warhead": "HollowPoint",
+        "Report": "BearAttack"
+      },
+      "raw_values": {
+        "Range": "1.5",
+        "CellRangefinding": "yes",
+        "Projectile": "InvisibleLow",
+        "Speed": "100",
+        "Damage": "30",
+        "ROF": "30",
+        "Warhead": "HollowPoint",
+        "Report": "BearAttack"
+      },
+      "provenance": {
+        "Range": {
+          "value": "1.5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23570,
+            "section": "BearBite",
+            "key": "Range",
+            "value": "1.5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16881,
+              "section": "BearBite",
+              "key": "Range",
+              "value": "1.5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23562,
+              "section": "BearBite",
+              "key": "Range",
+              "value": "1.5"
+            }
+          ]
+        },
+        "CellRangefinding": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23571,
+            "section": "BearBite",
+            "key": "CellRangefinding",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16882,
+              "section": "BearBite",
+              "key": "CellRangefinding",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23563,
+              "section": "BearBite",
+              "key": "CellRangefinding",
+              "value": "yes"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23572,
+            "section": "BearBite",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16883,
+              "section": "BearBite",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23564,
+              "section": "BearBite",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23573,
+            "section": "BearBite",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16884,
+              "section": "BearBite",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23565,
+              "section": "BearBite",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Damage": {
+          "value": "30",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23574,
+            "section": "BearBite",
+            "key": "Damage",
+            "value": "30"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16885,
+              "section": "BearBite",
+              "key": "Damage",
+              "value": "30"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23566,
+              "section": "BearBite",
+              "key": "Damage",
+              "value": "30"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "30",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23575,
+            "section": "BearBite",
+            "key": "ROF",
+            "value": "30"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16886,
+              "section": "BearBite",
+              "key": "ROF",
+              "value": "30"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23567,
+              "section": "BearBite",
+              "key": "ROF",
+              "value": "30"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "HollowPoint",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23576,
+            "section": "BearBite",
+            "key": "Warhead",
+            "value": "HollowPoint"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16887,
+              "section": "BearBite",
+              "key": "Warhead",
+              "value": "HollowPoint"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23568,
+              "section": "BearBite",
+              "key": "Warhead",
+              "value": "HollowPoint"
+            }
+          ]
+        },
+        "Report": {
+          "value": "BearAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23577,
+            "section": "BearBite",
+            "key": "Report",
+            "value": "BearAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16888,
+              "section": "BearBite",
+              "key": "Report",
+              "value": "BearAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23569,
+              "section": "BearBite",
+              "key": "Report",
+              "value": "BearAttack"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "VirtualScanner",
+      "projectile": "InvisibleAll",
+      "warhead": "SA",
+      "report": [],
+      "values": {
+        "Damage": 1,
+        "Range": 5,
+        "NeverUse": true,
+        "Projectile": "InvisibleAll",
+        "Warhead": "SA",
+        "Speed": 100
+      },
+      "raw_values": {
+        "Damage": "1",
+        "Range": "5",
+        "NeverUse": "yes",
+        "Projectile": "InvisibleAll",
+        "Warhead": "SA",
+        "Speed": "100"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23620,
+            "section": "VirtualScanner",
+            "key": "Damage",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16901,
+              "section": "VirtualScanner",
+              "key": "Damage",
+              "value": "1"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23612,
+              "section": "VirtualScanner",
+              "key": "Damage",
+              "value": "1"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23621,
+            "section": "VirtualScanner",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16902,
+              "section": "VirtualScanner",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23613,
+              "section": "VirtualScanner",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "NeverUse": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23622,
+            "section": "VirtualScanner",
+            "key": "NeverUse",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16903,
+              "section": "VirtualScanner",
+              "key": "NeverUse",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23614,
+              "section": "VirtualScanner",
+              "key": "NeverUse",
+              "value": "yes"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleAll",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23623,
+            "section": "VirtualScanner",
+            "key": "Projectile",
+            "value": "InvisibleAll"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16904,
+              "section": "VirtualScanner",
+              "key": "Projectile",
+              "value": "InvisibleAll"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23615,
+              "section": "VirtualScanner",
+              "key": "Projectile",
+              "value": "InvisibleAll"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SA",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23624,
+            "section": "VirtualScanner",
+            "key": "Warhead",
+            "value": "SA"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16905,
+              "section": "VirtualScanner",
+              "key": "Warhead",
+              "value": "SA"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23616,
+              "section": "VirtualScanner",
+              "key": "Warhead",
+              "value": "SA"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23625,
+            "section": "VirtualScanner",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16906,
+              "section": "VirtualScanner",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23617,
+              "section": "VirtualScanner",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "BearSelect"
+    ],
+    "VoiceMove": [
+      "BearMove"
+    ],
+    "VoiceAttack": [
+      "BearAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "BearFear"
+    ],
+    "VoiceSpecialAttack": [
+      "BearMove"
+    ],
+    "DieSound": [
+      "BearDie"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "POLARB",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 234,
+          "pack": "ra2",
+          "relative_path": "conquer/polarb.shp",
+          "folder": "conquer",
+          "filename": "polarb.shp",
+          "stem": "polarb",
+          "extension": ".shp",
+          "size": 121208,
+          "sha1": "abdd2c142bf152a267ae7540227738a055c4cb36"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 234,
+          "pack": "ra2",
+          "relative_path": "conquer/polarb.shp",
+          "folder": "conquer",
+          "filename": "polarb.shp",
+          "stem": "polarb",
+          "extension": ".shp",
+          "size": 121208,
+          "sha1": "abdd2c142bf152a267ae7540227738a055c4cb36"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 234,
+          "pack": "ra2",
+          "relative_path": "conquer/polarb.shp",
+          "folder": "conquer",
+          "filename": "polarb.shp",
+          "stem": "polarb",
+          "extension": ".shp",
+          "size": 121208,
+          "sha1": "abdd2c142bf152a267ae7540227738a055c4cb36"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 234,
+          "pack": "ra2",
+          "relative_path": "conquer/polarb.shp",
+          "folder": "conquer",
+          "filename": "polarb.shp",
+          "stem": "polarb",
+          "extension": ".shp",
+          "size": 121208,
+          "sha1": "abdd2c142bf152a267ae7540227738a055c4cb36"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 234,
+          "pack": "ra2",
+          "relative_path": "conquer/polarb.shp",
+          "folder": "conquer",
+          "filename": "polarb.shp",
+          "stem": "polarb",
+          "extension": ".shp",
+          "size": 121208,
+          "sha1": "abdd2c142bf152a267ae7540227738a055c4cb36"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 234,
+          "pack": "ra2",
+          "relative_path": "conquer/polarb.shp",
+          "folder": "conquer",
+          "filename": "polarb.shp",
+          "stem": "polarb",
+          "extension": ".shp",
+          "size": 121208,
+          "sha1": "abdd2c142bf152a267ae7540227738a055c4cb36"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "AnimalSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 86,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 101,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 116,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            152,
+            153,
+            154,
+            155,
+            156,
+            157
+          ],
+          "1": [
+            146,
+            147,
+            148,
+            149,
+            150,
+            151
+          ],
+          "2": [
+            140,
+            141,
+            142,
+            143,
+            144,
+            145
+          ],
+          "3": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139
+          ],
+          "4": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ],
+          "5": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "6": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "7": [
+            158,
+            159,
+            160,
+            161,
+            162,
+            163
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "NAME:POLARBEAR",
+      "Name": "Animal Polar Bear",
+      "Category": "Soldier",
+      "Strength": 200,
+      "Armor": "none",
+      "TechLevel": -1,
+      "Crushable": false,
+      "Insignificant": false,
+      "Primary": "BearBite",
+      "Secondary": "VirtualScanner",
+      "Sight": 2,
+      "Speed": 4,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 10,
+      "Soylent": 200,
+      "Points": 1,
+      "Nominal": true,
+      "Pip": "yellow",
+      "VoiceSelect": "BearSelect",
+      "VoiceMove": "BearMove",
+      "VoiceAttack": "BearAttackCommand",
+      "VoiceFeedback": "BearFear",
+      "VoiceSpecialAttack": "BearMove",
+      "DieSound": "BearDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "Infantry",
+      "ThreatPosed": 2,
+      "Size": 2,
+      "IFVMode": 12,
+      "Trainable": false,
+      "Natural": true,
+      "NotHuman": true
+    },
+    "raw_values": {
+      "UIName": "NAME:POLARBEAR",
+      "Name": "Animal Polar Bear",
+      "Category": "Soldier",
+      "Strength": "200",
+      "Armor": "none",
+      "TechLevel": "-1",
+      "Crushable": "no",
+      "Insignificant": "no",
+      "Primary": "BearBite",
+      "Secondary": "VirtualScanner",
+      "Sight": "2",
+      "Speed": "4",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "10",
+      "Soylent": "200",
+      "Points": "1",
+      "Nominal": "yes",
+      "Pip": "yellow",
+      "VoiceSelect": "BearSelect",
+      "VoiceMove": "BearMove",
+      "VoiceAttack": "BearAttackCommand",
+      "VoiceFeedback": "BearFear",
+      "VoiceSpecialAttack": "BearMove",
+      "DieSound": "BearDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "Infantry",
+      "ThreatPosed": "2",
+      "Size": "2",
+      "IFVMode": "12",
+      "Trainable": "no",
+      "Natural": "yes",
+      "NotHuman": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "NAME:POLARBEAR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5391,
+          "section": "POLARB",
+          "key": "UIName",
+          "value": "NAME:POLARBEAR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4577,
+            "section": "POLARB",
+            "key": "UIName",
+            "value": "NAME:POLARBEAR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5389,
+            "section": "POLARB",
+            "key": "UIName",
+            "value": "NAME:POLARBEAR"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Animal Polar Bear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5392,
+          "section": "POLARB",
+          "key": "Name",
+          "value": "Animal Polar Bear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4578,
+            "section": "POLARB",
+            "key": "Name",
+            "value": "Frosty the Polar Bear"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5390,
+            "section": "POLARB",
+            "key": "Name",
+            "value": "Animal Polar Bear"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5393,
+          "section": "POLARB",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4579,
+            "section": "POLARB",
+            "key": "Category",
+            "value": "Soldier"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5391,
+            "section": "POLARB",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5394,
+          "section": "POLARB",
+          "key": "Strength",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4580,
+            "section": "POLARB",
+            "key": "Strength",
+            "value": "200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5392,
+            "section": "POLARB",
+            "key": "Strength",
+            "value": "200"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5395,
+          "section": "POLARB",
+          "key": "Armor",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4581,
+            "section": "POLARB",
+            "key": "Armor",
+            "value": "none"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5393,
+            "section": "POLARB",
+            "key": "Armor",
+            "value": "none"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5396,
+          "section": "POLARB",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4582,
+            "section": "POLARB",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5394,
+            "section": "POLARB",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Crushable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5397,
+          "section": "POLARB",
+          "key": "Crushable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4583,
+            "section": "POLARB",
+            "key": "Crushable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5395,
+            "section": "POLARB",
+            "key": "Crushable",
+            "value": "no"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5398,
+          "section": "POLARB",
+          "key": "Insignificant",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4584,
+            "section": "POLARB",
+            "key": "Insignificant",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5396,
+            "section": "POLARB",
+            "key": "Insignificant",
+            "value": "no"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "BearBite",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5399,
+          "section": "POLARB",
+          "key": "Primary",
+          "value": "BearBite"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4585,
+            "section": "POLARB",
+            "key": "Primary",
+            "value": "BearBite"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5397,
+            "section": "POLARB",
+            "key": "Primary",
+            "value": "BearBite"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "VirtualScanner",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5400,
+          "section": "POLARB",
+          "key": "Secondary",
+          "value": "VirtualScanner"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4586,
+            "section": "POLARB",
+            "key": "Secondary",
+            "value": "VirtualScanner"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5398,
+            "section": "POLARB",
+            "key": "Secondary",
+            "value": "VirtualScanner"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5401,
+          "section": "POLARB",
+          "key": "Sight",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4587,
+            "section": "POLARB",
+            "key": "Sight",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5399,
+            "section": "POLARB",
+            "key": "Sight",
+            "value": "2"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5402,
+          "section": "POLARB",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4588,
+            "section": "POLARB",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5400,
+            "section": "POLARB",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5403,
+          "section": "POLARB",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4589,
+            "section": "POLARB",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5401,
+            "section": "POLARB",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5404,
+          "section": "POLARB",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4590,
+            "section": "POLARB",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5402,
+            "section": "POLARB",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5405,
+          "section": "POLARB",
+          "key": "Cost",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4591,
+            "section": "POLARB",
+            "key": "Cost",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5403,
+            "section": "POLARB",
+            "key": "Cost",
+            "value": "10"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5406,
+          "section": "POLARB",
+          "key": "Soylent",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4592,
+            "section": "POLARB",
+            "key": "Soylent",
+            "value": "2000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5404,
+            "section": "POLARB",
+            "key": "Soylent",
+            "value": "200"
+          }
+        ]
+      },
+      "Points": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5407,
+          "section": "POLARB",
+          "key": "Points",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4593,
+            "section": "POLARB",
+            "key": "Points",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5405,
+            "section": "POLARB",
+            "key": "Points",
+            "value": "1"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5408,
+          "section": "POLARB",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4594,
+            "section": "POLARB",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5406,
+            "section": "POLARB",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "yellow",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5409,
+          "section": "POLARB",
+          "key": "Pip",
+          "value": "yellow"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4595,
+            "section": "POLARB",
+            "key": "Pip",
+            "value": "yellow"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5407,
+            "section": "POLARB",
+            "key": "Pip",
+            "value": "yellow"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "BearSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5410,
+          "section": "POLARB",
+          "key": "VoiceSelect",
+          "value": "BearSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4596,
+            "section": "POLARB",
+            "key": "VoiceSelect",
+            "value": "BearSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5408,
+            "section": "POLARB",
+            "key": "VoiceSelect",
+            "value": "BearSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "BearMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5411,
+          "section": "POLARB",
+          "key": "VoiceMove",
+          "value": "BearMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4597,
+            "section": "POLARB",
+            "key": "VoiceMove",
+            "value": "BearMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5409,
+            "section": "POLARB",
+            "key": "VoiceMove",
+            "value": "BearMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "BearAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5412,
+          "section": "POLARB",
+          "key": "VoiceAttack",
+          "value": "BearAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4598,
+            "section": "POLARB",
+            "key": "VoiceAttack",
+            "value": "BearAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5410,
+            "section": "POLARB",
+            "key": "VoiceAttack",
+            "value": "BearAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "BearFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5413,
+          "section": "POLARB",
+          "key": "VoiceFeedback",
+          "value": "BearFear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4599,
+            "section": "POLARB",
+            "key": "VoiceFeedback",
+            "value": "BearFear"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5411,
+            "section": "POLARB",
+            "key": "VoiceFeedback",
+            "value": "BearFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "BearMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5414,
+          "section": "POLARB",
+          "key": "VoiceSpecialAttack",
+          "value": "BearMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4600,
+            "section": "POLARB",
+            "key": "VoiceSpecialAttack",
+            "value": "BearMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5412,
+            "section": "POLARB",
+            "key": "VoiceSpecialAttack",
+            "value": "BearMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "BearDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5415,
+          "section": "POLARB",
+          "key": "DieSound",
+          "value": "BearDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4601,
+            "section": "POLARB",
+            "key": "DieSound",
+            "value": "BearDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5413,
+            "section": "POLARB",
+            "key": "DieSound",
+            "value": "BearDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5416,
+          "section": "POLARB",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4602,
+            "section": "POLARB",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5414,
+            "section": "POLARB",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5417,
+          "section": "POLARB",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4603,
+            "section": "POLARB",
+            "key": "PhysicalSize",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5415,
+            "section": "POLARB",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5418,
+          "section": "POLARB",
+          "key": "MovementZone",
+          "value": "Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4604,
+            "section": "POLARB",
+            "key": "MovementZone",
+            "value": "Infantry"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5416,
+            "section": "POLARB",
+            "key": "MovementZone",
+            "value": "Infantry"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5419,
+          "section": "POLARB",
+          "key": "ThreatPosed",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4605,
+            "section": "POLARB",
+            "key": "ThreatPosed",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5417,
+            "section": "POLARB",
+            "key": "ThreatPosed",
+            "value": "2"
+          }
+        ]
+      },
+      "Size": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5420,
+          "section": "POLARB",
+          "key": "Size",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4606,
+            "section": "POLARB",
+            "key": "Size",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5418,
+            "section": "POLARB",
+            "key": "Size",
+            "value": "2"
+          }
+        ]
+      },
+      "IFVMode": {
+        "value": "12",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5421,
+          "section": "POLARB",
+          "key": "IFVMode",
+          "value": "12"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4607,
+            "section": "POLARB",
+            "key": "IFVMode",
+            "value": "12"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5419,
+            "section": "POLARB",
+            "key": "IFVMode",
+            "value": "12"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5422,
+          "section": "POLARB",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4608,
+            "section": "POLARB",
+            "key": "Trainable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5420,
+            "section": "POLARB",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "Natural": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5423,
+          "section": "POLARB",
+          "key": "Natural",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5421,
+            "section": "POLARB",
+            "key": "Natural",
+            "value": "yes"
+          }
+        ]
+      },
+      "NotHuman": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5424,
+          "section": "POLARB",
+          "key": "NotHuman",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5422,
+            "section": "POLARB",
+            "key": "NotHuman",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Sequence": "AnimalSequence",
+      "Crawls": false,
+      "Remapable": false,
+      "FireUp": 5
+    },
+    "raw_values": {
+      "Sequence": "AnimalSequence",
+      "Crawls": "no",
+      "Remapable": "no",
+      "FireUp": "5"
+    },
+    "provenance": {
+      "Sequence": {
+        "value": "AnimalSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 248,
+          "section": "POLARB",
+          "key": "Sequence",
+          "value": "AnimalSequence"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 202,
+            "section": "POLARB",
+            "key": "Sequence",
+            "value": "AnimalSequence"
+          }
+        ]
+      },
+      "Crawls": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 249,
+          "section": "POLARB",
+          "key": "Crawls",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 203,
+            "section": "POLARB",
+            "key": "Crawls",
+            "value": "no"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 250,
+          "section": "POLARB",
+          "key": "Remapable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 204,
+            "section": "POLARB",
+            "key": "Remapable",
+            "value": "no"
+          }
+        ]
+      },
+      "FireUp": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 251,
+          "section": "POLARB",
+          "key": "FireUp",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 205,
+            "section": "POLARB",
+            "key": "FireUp",
+            "value": "5"
+          }
+        ]
+      }
+    }
+  }
+}

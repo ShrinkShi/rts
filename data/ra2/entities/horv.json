@@ -1,0 +1,1280 @@
+{
+  "id": "HORV",
+  "category": "vehicle",
+  "name_token": "Name:HORV",
+  "art_id": "HORV",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 1400,
+  "strength": 1000,
+  "armor": "medium",
+  "speed": 4,
+  "sight": 4,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Crusher",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "GenSovVehicleSelect"
+    ],
+    "VoiceMove": [
+      "GenSovVehicleMove"
+    ],
+    "VoiceAttack": [
+      "GenSovVehicleAttackCommand"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "HORV",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4135,
+      "pack": "ra2",
+      "relative_path": "local/horv.vxl",
+      "folder": "local",
+      "filename": "horv.vxl",
+      "stem": "horv",
+      "extension": ".vxl",
+      "size": 56017,
+      "sha1": "5da11b2c51ede8233cdf348dd92a3d0960449076"
+    },
+    "body_hva": {
+      "asset_id": 4134,
+      "pack": "ra2",
+      "relative_path": "local/horv.hva",
+      "folder": "local",
+      "filename": "horv.hva",
+      "stem": "horv",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "f2139793aeb6f6a378f2cf83f01b1afc10b17191"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:HORV",
+      "Name": "War Miner",
+      "Nominal": true,
+      "ToProtect": true,
+      "Category": "Support",
+      "Strength": 1000,
+      "Armor": "medium",
+      "Dock": "NAREFN,GAREFN",
+      "Harvester": true,
+      "TechLevel": -1,
+      "Sight": 4,
+      "Speed": 4,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 1400,
+      "Points": 25,
+      "ROT": 5,
+      "Crusher": true,
+      "Crewed": false,
+      "SelfHealing": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenSovVehicleSelect",
+      "VoiceMove": "GenSovVehicleMove",
+      "VoiceAttack": "GenSovVehicleAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "Maxdebris": 3,
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": 4,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": 3.5,
+      "MovementZone": "Crusher",
+      "ThreatPosed": 0,
+      "ThreatAvoidanceCoefficient": 1,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "ImmuneToRadiation": true,
+      "CrushSound": "TankCrush"
+    },
+    "raw_values": {
+      "UIName": "Name:HORV",
+      "Name": "War Miner",
+      "Nominal": "yes",
+      "ToProtect": "yes",
+      "Category": "Support",
+      "Strength": "1000",
+      "Armor": "medium",
+      "Dock": "NAREFN,GAREFN",
+      "Harvester": "yes",
+      "TechLevel": "-1",
+      "Sight": "4",
+      "Speed": "4",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "1400",
+      "Points": "25",
+      "ROT": "5",
+      "Crusher": "yes",
+      "Crewed": "no",
+      "SelfHealing": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "GenSovVehicleSelect",
+      "VoiceMove": "GenSovVehicleMove",
+      "VoiceAttack": "GenSovVehicleAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "Maxdebris": "3",
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": "4",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": "3.5",
+      "MovementZone": "Crusher",
+      "ThreatPosed": "0",
+      "ThreatAvoidanceCoefficient": "1",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "ImmuneToRadiation": "yes",
+      "CrushSound": "TankCrush"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:HORV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8175,
+          "section": "HORV",
+          "key": "UIName",
+          "value": "Name:HORV"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5885,
+            "section": "HORV",
+            "key": "UIName",
+            "value": "Name:HORV"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8172,
+            "section": "HORV",
+            "key": "UIName",
+            "value": "Name:HORV"
+          }
+        ]
+      },
+      "Name": {
+        "value": "War Miner",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8176,
+          "section": "HORV",
+          "key": "Name",
+          "value": "War Miner"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5886,
+            "section": "HORV",
+            "key": "Name",
+            "value": "War Miner"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8173,
+            "section": "HORV",
+            "key": "Name",
+            "value": "War Miner"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8177,
+          "section": "HORV",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5887,
+            "section": "HORV",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8174,
+            "section": "HORV",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "ToProtect": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8178,
+          "section": "HORV",
+          "key": "ToProtect",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5888,
+            "section": "HORV",
+            "key": "ToProtect",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8175,
+            "section": "HORV",
+            "key": "ToProtect",
+            "value": "yes"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Support",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8179,
+          "section": "HORV",
+          "key": "Category",
+          "value": "Support"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5889,
+            "section": "HORV",
+            "key": "Category",
+            "value": "Support"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8176,
+            "section": "HORV",
+            "key": "Category",
+            "value": "Support"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8180,
+          "section": "HORV",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5890,
+            "section": "HORV",
+            "key": "Strength",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8177,
+            "section": "HORV",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "medium",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8181,
+          "section": "HORV",
+          "key": "Armor",
+          "value": "medium"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5891,
+            "section": "HORV",
+            "key": "Armor",
+            "value": "medium"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8178,
+            "section": "HORV",
+            "key": "Armor",
+            "value": "medium"
+          }
+        ]
+      },
+      "Dock": {
+        "value": "NAREFN,GAREFN",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8183,
+          "section": "HORV",
+          "key": "Dock",
+          "value": "NAREFN,GAREFN"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5893,
+            "section": "HORV",
+            "key": "Dock",
+            "value": "NAREFN,GAREFN"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8180,
+            "section": "HORV",
+            "key": "Dock",
+            "value": "NAREFN,GAREFN"
+          }
+        ]
+      },
+      "Harvester": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8184,
+          "section": "HORV",
+          "key": "Harvester",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5894,
+            "section": "HORV",
+            "key": "Harvester",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8181,
+            "section": "HORV",
+            "key": "Harvester",
+            "value": "yes"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8185,
+          "section": "HORV",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5895,
+            "section": "HORV",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8182,
+            "section": "HORV",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8186,
+          "section": "HORV",
+          "key": "Sight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5896,
+            "section": "HORV",
+            "key": "Sight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8183,
+            "section": "HORV",
+            "key": "Sight",
+            "value": "4"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8187,
+          "section": "HORV",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5897,
+            "section": "HORV",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8184,
+            "section": "HORV",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8188,
+          "section": "HORV",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5898,
+            "section": "HORV",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8185,
+            "section": "HORV",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8189,
+          "section": "HORV",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5899,
+            "section": "HORV",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8186,
+            "section": "HORV",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1400",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8190,
+          "section": "HORV",
+          "key": "Cost",
+          "value": "1400"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5900,
+            "section": "HORV",
+            "key": "Cost",
+            "value": "1400"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8187,
+            "section": "HORV",
+            "key": "Cost",
+            "value": "1400"
+          }
+        ]
+      },
+      "Points": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8191,
+          "section": "HORV",
+          "key": "Points",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5901,
+            "section": "HORV",
+            "key": "Points",
+            "value": "25"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8188,
+            "section": "HORV",
+            "key": "Points",
+            "value": "25"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8192,
+          "section": "HORV",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5902,
+            "section": "HORV",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8189,
+            "section": "HORV",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8193,
+          "section": "HORV",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5903,
+            "section": "HORV",
+            "key": "Crusher",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8190,
+            "section": "HORV",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8194,
+          "section": "HORV",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5904,
+            "section": "HORV",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8191,
+            "section": "HORV",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "SelfHealing": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8195,
+          "section": "HORV",
+          "key": "SelfHealing",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5905,
+            "section": "HORV",
+            "key": "SelfHealing",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8192,
+            "section": "HORV",
+            "key": "SelfHealing",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8196,
+          "section": "HORV",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5906,
+            "section": "HORV",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8193,
+            "section": "HORV",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "GenSovVehicleSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8197,
+          "section": "HORV",
+          "key": "VoiceSelect",
+          "value": "GenSovVehicleSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5907,
+            "section": "HORV",
+            "key": "VoiceSelect",
+            "value": "GenSovVehicleSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8194,
+            "section": "HORV",
+            "key": "VoiceSelect",
+            "value": "GenSovVehicleSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "GenSovVehicleMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8198,
+          "section": "HORV",
+          "key": "VoiceMove",
+          "value": "GenSovVehicleMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5908,
+            "section": "HORV",
+            "key": "VoiceMove",
+            "value": "GenSovVehicleMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8195,
+            "section": "HORV",
+            "key": "VoiceMove",
+            "value": "GenSovVehicleMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "GenSovVehicleAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8199,
+          "section": "HORV",
+          "key": "VoiceAttack",
+          "value": "GenSovVehicleAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5909,
+            "section": "HORV",
+            "key": "VoiceAttack",
+            "value": "GenSovVehicleAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8196,
+            "section": "HORV",
+            "key": "VoiceAttack",
+            "value": "GenSovVehicleAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8200,
+          "section": "HORV",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5910,
+            "section": "HORV",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8197,
+            "section": "HORV",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8202,
+          "section": "HORV",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5911,
+            "section": "HORV",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8199,
+            "section": "HORV",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "Maxdebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8203,
+          "section": "HORV",
+          "key": "Maxdebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5912,
+            "section": "HORV",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8200,
+            "section": "HORV",
+            "key": "Maxdebris",
+            "value": "3"
+          }
+        ]
+      },
+      "DebrisTypes": {
+        "value": "TIRE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8204,
+          "section": "HORV",
+          "key": "DebrisTypes",
+          "value": "TIRE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5913,
+            "section": "HORV",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8201,
+            "section": "HORV",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          }
+        ]
+      },
+      "DebrisMaximums": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8205,
+          "section": "HORV",
+          "key": "DebrisMaximums",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5914,
+            "section": "HORV",
+            "key": "DebrisMaximums",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8202,
+            "section": "HORV",
+            "key": "DebrisMaximums",
+            "value": "4"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8206,
+          "section": "HORV",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5915,
+            "section": "HORV",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8203,
+            "section": "HORV",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "3.5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8207,
+          "section": "HORV",
+          "key": "Weight",
+          "value": "3.5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5916,
+            "section": "HORV",
+            "key": "Weight",
+            "value": "3.5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8204,
+            "section": "HORV",
+            "key": "Weight",
+            "value": "3.5"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Crusher",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8208,
+          "section": "HORV",
+          "key": "MovementZone",
+          "value": "Crusher"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5917,
+            "section": "HORV",
+            "key": "MovementZone",
+            "value": "Crusher"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8205,
+            "section": "HORV",
+            "key": "MovementZone",
+            "value": "Crusher"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8209,
+          "section": "HORV",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5918,
+            "section": "HORV",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8206,
+            "section": "HORV",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "ThreatAvoidanceCoefficient": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8210,
+          "section": "HORV",
+          "key": "ThreatAvoidanceCoefficient",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5919,
+            "section": "HORV",
+            "key": "ThreatAvoidanceCoefficient",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8207,
+            "section": "HORV",
+            "key": "ThreatAvoidanceCoefficient",
+            "value": "1"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8211,
+          "section": "HORV",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5920,
+            "section": "HORV",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8208,
+            "section": "HORV",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8212,
+          "section": "HORV",
+          "key": "ImmuneToRadiation",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5921,
+            "section": "HORV",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8209,
+            "section": "HORV",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8201,
+          "section": "HORV",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8198,
+            "section": "HORV",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true,
+      "Remapable": true
+    },
+    "raw_values": {
+      "Voxel": "yes",
+      "Remapable": "yes"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 621,
+          "section": "HORV",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 453,
+            "section": "HORV",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 622,
+          "section": "HORV",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 454,
+            "section": "HORV",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  }
+}

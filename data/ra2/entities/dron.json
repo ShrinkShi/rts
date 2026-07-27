@@ -1,0 +1,2451 @@
+{
+  "id": "DRON",
+  "category": "vehicle",
+  "name_token": "Name:DRON",
+  "art_id": "DRON",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAWEAP"
+  ],
+  "tech_level": 4,
+  "cost": 500,
+  "strength": 100,
+  "armor": "special_1",
+  "speed": 10,
+  "sight": 4,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Destroyer",
+  "weapons": {
+    "Primary": {
+      "id": "DroneJump",
+      "projectile": "JUMP",
+      "warhead": "Parasite",
+      "report": [
+        "TerrorDroneAttack"
+      ],
+      "values": {
+        "Damage": 50,
+        "ROF": 60,
+        "Range": 1.83,
+        "Projectile": "JUMP",
+        "Speed": 30,
+        "Warhead": "Parasite",
+        "LimboLaunch": true,
+        "Report": "TerrorDroneAttack",
+        "PenetratesBunker": true,
+        "FireInTransport": false
+      },
+      "raw_values": {
+        "Damage": "50",
+        "ROF": "60",
+        "Range": "1.83",
+        "Projectile": "JUMP",
+        "Speed": "30",
+        "Warhead": "Parasite",
+        "LimboLaunch": "yes",
+        "Report": "TerrorDroneAttack",
+        "PenetratesBunker": "yes",
+        "FireInTransport": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23521,
+            "section": "DroneJump",
+            "key": "Damage",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16837,
+              "section": "DroneJump",
+              "key": "Damage",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23513,
+              "section": "DroneJump",
+              "key": "Damage",
+              "value": "50"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23522,
+            "section": "DroneJump",
+            "key": "ROF",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16838,
+              "section": "DroneJump",
+              "key": "ROF",
+              "value": "60"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23514,
+              "section": "DroneJump",
+              "key": "ROF",
+              "value": "60"
+            }
+          ]
+        },
+        "Range": {
+          "value": "1.83",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23523,
+            "section": "DroneJump",
+            "key": "Range",
+            "value": "1.83"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16839,
+              "section": "DroneJump",
+              "key": "Range",
+              "value": "1.83"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23515,
+              "section": "DroneJump",
+              "key": "Range",
+              "value": "1.83"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "JUMP",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23524,
+            "section": "DroneJump",
+            "key": "Projectile",
+            "value": "JUMP"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16840,
+              "section": "DroneJump",
+              "key": "Projectile",
+              "value": "JUMP"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23516,
+              "section": "DroneJump",
+              "key": "Projectile",
+              "value": "JUMP"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "30",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23525,
+            "section": "DroneJump",
+            "key": "Speed",
+            "value": "30"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16841,
+              "section": "DroneJump",
+              "key": "Speed",
+              "value": "30"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23517,
+              "section": "DroneJump",
+              "key": "Speed",
+              "value": "30"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Parasite",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23526,
+            "section": "DroneJump",
+            "key": "Warhead",
+            "value": "Parasite"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16842,
+              "section": "DroneJump",
+              "key": "Warhead",
+              "value": "Parasite"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23518,
+              "section": "DroneJump",
+              "key": "Warhead",
+              "value": "Parasite"
+            }
+          ]
+        },
+        "LimboLaunch": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23527,
+            "section": "DroneJump",
+            "key": "LimboLaunch",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16843,
+              "section": "DroneJump",
+              "key": "LimboLaunch",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23519,
+              "section": "DroneJump",
+              "key": "LimboLaunch",
+              "value": "yes"
+            }
+          ]
+        },
+        "Report": {
+          "value": "TerrorDroneAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23528,
+            "section": "DroneJump",
+            "key": "Report",
+            "value": "TerrorDroneAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16844,
+              "section": "DroneJump",
+              "key": "Report",
+              "value": "TerrorDroneAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23520,
+              "section": "DroneJump",
+              "key": "Report",
+              "value": "TerrorDroneAttack"
+            }
+          ]
+        },
+        "PenetratesBunker": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23529,
+            "section": "DroneJump",
+            "key": "PenetratesBunker",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23521,
+              "section": "DroneJump",
+              "key": "PenetratesBunker",
+              "value": "yes"
+            }
+          ]
+        },
+        "FireInTransport": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23531,
+            "section": "DroneJump",
+            "key": "FireInTransport",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23523,
+              "section": "DroneJump",
+              "key": "FireInTransport",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "VirtualScanner",
+      "projectile": "InvisibleAll",
+      "warhead": "SA",
+      "report": [],
+      "values": {
+        "Damage": 1,
+        "Range": 5,
+        "NeverUse": true,
+        "Projectile": "InvisibleAll",
+        "Warhead": "SA",
+        "Speed": 100
+      },
+      "raw_values": {
+        "Damage": "1",
+        "Range": "5",
+        "NeverUse": "yes",
+        "Projectile": "InvisibleAll",
+        "Warhead": "SA",
+        "Speed": "100"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23620,
+            "section": "VirtualScanner",
+            "key": "Damage",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16901,
+              "section": "VirtualScanner",
+              "key": "Damage",
+              "value": "1"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23612,
+              "section": "VirtualScanner",
+              "key": "Damage",
+              "value": "1"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23621,
+            "section": "VirtualScanner",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16902,
+              "section": "VirtualScanner",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23613,
+              "section": "VirtualScanner",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "NeverUse": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23622,
+            "section": "VirtualScanner",
+            "key": "NeverUse",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16903,
+              "section": "VirtualScanner",
+              "key": "NeverUse",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23614,
+              "section": "VirtualScanner",
+              "key": "NeverUse",
+              "value": "yes"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleAll",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23623,
+            "section": "VirtualScanner",
+            "key": "Projectile",
+            "value": "InvisibleAll"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16904,
+              "section": "VirtualScanner",
+              "key": "Projectile",
+              "value": "InvisibleAll"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23615,
+              "section": "VirtualScanner",
+              "key": "Projectile",
+              "value": "InvisibleAll"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SA",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23624,
+            "section": "VirtualScanner",
+            "key": "Warhead",
+            "value": "SA"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16905,
+              "section": "VirtualScanner",
+              "key": "Warhead",
+              "value": "SA"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23616,
+              "section": "VirtualScanner",
+              "key": "Warhead",
+              "value": "SA"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23625,
+            "section": "VirtualScanner",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16906,
+              "section": "VirtualScanner",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23617,
+              "section": "VirtualScanner",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "TerrorDroneSelect"
+    ],
+    "VoiceMove": [
+      "TerrorDroneMove"
+    ],
+    "VoiceAttack": [
+      "TerrorDroneAttackCommand"
+    ],
+    "DieSound": [
+      "TerrorDroneDie"
+    ],
+    "MoveSound": [
+      "TerrorDroneMoveLoop"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "DRON",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 143,
+          "pack": "ra2",
+          "relative_path": "conquer/dron.shp",
+          "folder": "conquer",
+          "filename": "dron.shp",
+          "stem": "dron",
+          "extension": ".shp",
+          "size": 42576,
+          "sha1": "74d3ac4bf2d2218e2683ba035460ccb776759178"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 143,
+          "pack": "ra2",
+          "relative_path": "conquer/dron.shp",
+          "folder": "conquer",
+          "filename": "dron.shp",
+          "stem": "dron",
+          "extension": ".shp",
+          "size": 42576,
+          "sha1": "74d3ac4bf2d2218e2683ba035460ccb776759178"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 143,
+          "pack": "ra2",
+          "relative_path": "conquer/dron.shp",
+          "folder": "conquer",
+          "filename": "dron.shp",
+          "stem": "dron",
+          "extension": ".shp",
+          "size": 42576,
+          "sha1": "74d3ac4bf2d2218e2683ba035460ccb776759178"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 143,
+          "pack": "ra2",
+          "relative_path": "conquer/dron.shp",
+          "folder": "conquer",
+          "filename": "dron.shp",
+          "stem": "dron",
+          "extension": ".shp",
+          "size": 42576,
+          "sha1": "74d3ac4bf2d2218e2683ba035460ccb776759178"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 143,
+          "pack": "ra2",
+          "relative_path": "conquer/dron.shp",
+          "folder": "conquer",
+          "filename": "dron.shp",
+          "stem": "dron",
+          "extension": ".shp",
+          "size": 42576,
+          "sha1": "74d3ac4bf2d2218e2683ba035460ccb776759178"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 143,
+          "pack": "ra2",
+          "relative_path": "conquer/dron.shp",
+          "folder": "conquer",
+          "filename": "dron.shp",
+          "stem": "dron",
+          "extension": ".shp",
+          "size": 42576,
+          "sha1": "74d3ac4bf2d2218e2683ba035460ccb776759178"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:DRON",
+      "Name": "Terror Drone",
+      "Category": "AFV",
+      "Prerequisite": "NAWEAP",
+      "Primary": "DroneJump",
+      "Secondary": "VirtualScanner",
+      "NavalTargeting": 6,
+      "Strength": 100,
+      "SuppressionThreshold": 5,
+      "ReselectIfLimboed": true,
+      "DefaultToGuardArea": true,
+      "Armor": "special_1",
+      "TechLevel": 4,
+      "Turret": false,
+      "IsTilter": false,
+      "CrateGoodie": false,
+      "Sight": 4,
+      "Speed": 10,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "Cost": 500,
+      "Points": 20,
+      "ROT": 40,
+      "AllowedToStartInMultiplayer": false,
+      "Crusher": false,
+      "Crewed": false,
+      "IsSelectableCombatant": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "TerrorDroneSelect",
+      "VoiceAttack": "TerrorDroneAttackCommand",
+      "VoiceMove": "TerrorDroneMove",
+      "VoiceFeedback": "",
+      "DieSound": "TerrorDroneDie",
+      "MoveSound": "TerrorDroneMoveLoop",
+      "MaxDebris": 2,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Destroyer",
+      "ThreatPosed": 25,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "Weight": 0.5,
+      "ImmuneToPsionics": true,
+      "ImmuneToRadiation": true,
+      "Parasiteable": false,
+      "Trainable": false,
+      "Explodes": false,
+      "AccelerationFactor": 5,
+      "DeaccelerationFactor": 5,
+      "ZFudgeColumn": 8,
+      "ZFudgeTunnel": 13,
+      "Size": 2,
+      "Accelerates": false,
+      "Soylent": 500,
+      "Bunkerable": false
+    },
+    "raw_values": {
+      "UIName": "Name:DRON",
+      "Name": "Terror Drone",
+      "Category": "AFV",
+      "Prerequisite": "NAWEAP",
+      "Primary": "DroneJump",
+      "Secondary": "VirtualScanner",
+      "NavalTargeting": "6",
+      "Strength": "100",
+      "SuppressionThreshold": "5",
+      "ReselectIfLimboed": "yes",
+      "DefaultToGuardArea": "yes",
+      "Armor": "special_1",
+      "TechLevel": "4",
+      "Turret": "no",
+      "IsTilter": "no",
+      "CrateGoodie": "no",
+      "Sight": "4",
+      "Speed": "10",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "Cost": "500",
+      "Points": "20",
+      "ROT": "40",
+      "AllowedToStartInMultiplayer": "no",
+      "Crusher": "no",
+      "Crewed": "no",
+      "IsSelectableCombatant": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "TerrorDroneSelect",
+      "VoiceAttack": "TerrorDroneAttackCommand",
+      "VoiceMove": "TerrorDroneMove",
+      "VoiceFeedback": "",
+      "DieSound": "TerrorDroneDie",
+      "MoveSound": "TerrorDroneMoveLoop",
+      "MaxDebris": "2",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Destroyer",
+      "ThreatPosed": "25",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "Weight": ".5",
+      "ImmuneToPsionics": "yes",
+      "ImmuneToRadiation": "yes",
+      "Parasiteable": "no",
+      "Trainable": "no",
+      "Explodes": "no",
+      "AccelerationFactor": "5",
+      "DeaccelerationFactor": "5",
+      "ZFudgeColumn": "8",
+      "ZFudgeTunnel": "13",
+      "Size": "2",
+      "Accelerates": "false",
+      "Soylent": "500",
+      "Bunkerable": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:DRON",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7570,
+          "section": "DRON",
+          "key": "UIName",
+          "value": "Name:DRON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5763,
+            "section": "DRON",
+            "key": "UIName",
+            "value": "Name:DRON"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7568,
+            "section": "DRON",
+            "key": "UIName",
+            "value": "Name:DRON"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Terror Drone",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7571,
+          "section": "DRON",
+          "key": "Name",
+          "value": "Terror Drone"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5764,
+            "section": "DRON",
+            "key": "Name",
+            "value": "Terror Drone"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7569,
+            "section": "DRON",
+            "key": "Name",
+            "value": "Terror Drone"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7572,
+          "section": "DRON",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5765,
+            "section": "DRON",
+            "key": "Category",
+            "value": "AFV"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7570,
+            "section": "DRON",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAWEAP",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7573,
+          "section": "DRON",
+          "key": "Prerequisite",
+          "value": "NAWEAP"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5766,
+            "section": "DRON",
+            "key": "Prerequisite",
+            "value": "NAWEAP"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7571,
+            "section": "DRON",
+            "key": "Prerequisite",
+            "value": "NAWEAP"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "DroneJump",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7574,
+          "section": "DRON",
+          "key": "Primary",
+          "value": "DroneJump"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5767,
+            "section": "DRON",
+            "key": "Primary",
+            "value": "DroneJump"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7572,
+            "section": "DRON",
+            "key": "Primary",
+            "value": "DroneJump"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "VirtualScanner",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7575,
+          "section": "DRON",
+          "key": "Secondary",
+          "value": "VirtualScanner"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5768,
+            "section": "DRON",
+            "key": "Secondary",
+            "value": "VirtualScanner"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7573,
+            "section": "DRON",
+            "key": "Secondary",
+            "value": "VirtualScanner"
+          }
+        ]
+      },
+      "NavalTargeting": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7576,
+          "section": "DRON",
+          "key": "NavalTargeting",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5769,
+            "section": "DRON",
+            "key": "NavalTargeting",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7574,
+            "section": "DRON",
+            "key": "NavalTargeting",
+            "value": "6"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7577,
+          "section": "DRON",
+          "key": "Strength",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5770,
+            "section": "DRON",
+            "key": "Strength",
+            "value": "100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7575,
+            "section": "DRON",
+            "key": "Strength",
+            "value": "100"
+          }
+        ]
+      },
+      "SuppressionThreshold": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7578,
+          "section": "DRON",
+          "key": "SuppressionThreshold",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5771,
+            "section": "DRON",
+            "key": "SuppressionThreshold",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7576,
+            "section": "DRON",
+            "key": "SuppressionThreshold",
+            "value": "5"
+          }
+        ]
+      },
+      "ReselectIfLimboed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7579,
+          "section": "DRON",
+          "key": "ReselectIfLimboed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5772,
+            "section": "DRON",
+            "key": "ReselectIfLimboed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7577,
+            "section": "DRON",
+            "key": "ReselectIfLimboed",
+            "value": "yes"
+          }
+        ]
+      },
+      "DefaultToGuardArea": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7580,
+          "section": "DRON",
+          "key": "DefaultToGuardArea",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5774,
+            "section": "DRON",
+            "key": "DefaultToGuardArea",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7578,
+            "section": "DRON",
+            "key": "DefaultToGuardArea",
+            "value": "yes"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "special_1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7581,
+          "section": "DRON",
+          "key": "Armor",
+          "value": "special_1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5776,
+            "section": "DRON",
+            "key": "Armor",
+            "value": "special_1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7579,
+            "section": "DRON",
+            "key": "Armor",
+            "value": "special_1"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7582,
+          "section": "DRON",
+          "key": "TechLevel",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5777,
+            "section": "DRON",
+            "key": "TechLevel",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7580,
+            "section": "DRON",
+            "key": "TechLevel",
+            "value": "4"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7583,
+          "section": "DRON",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5778,
+            "section": "DRON",
+            "key": "Turret",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7581,
+            "section": "DRON",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "IsTilter": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7584,
+          "section": "DRON",
+          "key": "IsTilter",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5779,
+            "section": "DRON",
+            "key": "IsTilter",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7582,
+            "section": "DRON",
+            "key": "IsTilter",
+            "value": "no"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7585,
+          "section": "DRON",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5780,
+            "section": "DRON",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7583,
+            "section": "DRON",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7586,
+          "section": "DRON",
+          "key": "Sight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5781,
+            "section": "DRON",
+            "key": "Sight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7584,
+            "section": "DRON",
+            "key": "Sight",
+            "value": "4"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7587,
+          "section": "DRON",
+          "key": "Speed",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5782,
+            "section": "DRON",
+            "key": "Speed",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7585,
+            "section": "DRON",
+            "key": "Speed",
+            "value": "10"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7588,
+          "section": "DRON",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5783,
+            "section": "DRON",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7586,
+            "section": "DRON",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7589,
+          "section": "DRON",
+          "key": "Cost",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5784,
+            "section": "DRON",
+            "key": "Cost",
+            "value": "500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7587,
+            "section": "DRON",
+            "key": "Cost",
+            "value": "500"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7591,
+          "section": "DRON",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5785,
+            "section": "DRON",
+            "key": "Points",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7589,
+            "section": "DRON",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "40",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7592,
+          "section": "DRON",
+          "key": "ROT",
+          "value": "40"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5786,
+            "section": "DRON",
+            "key": "ROT",
+            "value": "40"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7590,
+            "section": "DRON",
+            "key": "ROT",
+            "value": "40"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7593,
+          "section": "DRON",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5787,
+            "section": "DRON",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7591,
+            "section": "DRON",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7594,
+          "section": "DRON",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5788,
+            "section": "DRON",
+            "key": "Crusher",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7592,
+            "section": "DRON",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7595,
+          "section": "DRON",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5789,
+            "section": "DRON",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7593,
+            "section": "DRON",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7596,
+          "section": "DRON",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5790,
+            "section": "DRON",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7594,
+            "section": "DRON",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7597,
+          "section": "DRON",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5791,
+            "section": "DRON",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7595,
+            "section": "DRON",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "TerrorDroneSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7598,
+          "section": "DRON",
+          "key": "VoiceSelect",
+          "value": "TerrorDroneSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5792,
+            "section": "DRON",
+            "key": "VoiceSelect",
+            "value": "TerrorDroneSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7596,
+            "section": "DRON",
+            "key": "VoiceSelect",
+            "value": "TerrorDroneSelect"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "TerrorDroneAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7599,
+          "section": "DRON",
+          "key": "VoiceAttack",
+          "value": "TerrorDroneAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5793,
+            "section": "DRON",
+            "key": "VoiceAttack",
+            "value": "TerrorDroneAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7597,
+            "section": "DRON",
+            "key": "VoiceAttack",
+            "value": "TerrorDroneAttackCommand"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "TerrorDroneMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7600,
+          "section": "DRON",
+          "key": "VoiceMove",
+          "value": "TerrorDroneMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5794,
+            "section": "DRON",
+            "key": "VoiceMove",
+            "value": "TerrorDroneMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7598,
+            "section": "DRON",
+            "key": "VoiceMove",
+            "value": "TerrorDroneMove"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7601,
+          "section": "DRON",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5795,
+            "section": "DRON",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7599,
+            "section": "DRON",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "TerrorDroneDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7602,
+          "section": "DRON",
+          "key": "DieSound",
+          "value": "TerrorDroneDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5796,
+            "section": "DRON",
+            "key": "DieSound",
+            "value": "TerrorDroneDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7600,
+            "section": "DRON",
+            "key": "DieSound",
+            "value": "TerrorDroneDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "TerrorDroneMoveLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7603,
+          "section": "DRON",
+          "key": "MoveSound",
+          "value": "TerrorDroneMoveLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5797,
+            "section": "DRON",
+            "key": "MoveSound",
+            "value": "TerrorDroneMoveLoop"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7601,
+            "section": "DRON",
+            "key": "MoveSound",
+            "value": "TerrorDroneMoveLoop"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7604,
+          "section": "DRON",
+          "key": "MaxDebris",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5798,
+            "section": "DRON",
+            "key": "MaxDebris",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7602,
+            "section": "DRON",
+            "key": "MaxDebris",
+            "value": "2"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7605,
+          "section": "DRON",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5799,
+            "section": "DRON",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7603,
+            "section": "DRON",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Destroyer",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7607,
+          "section": "DRON",
+          "key": "MovementZone",
+          "value": "Destroyer"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5800,
+            "section": "DRON",
+            "key": "MovementZone",
+            "value": "Destroyer"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7605,
+            "section": "DRON",
+            "key": "MovementZone",
+            "value": "Destroyer"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7608,
+          "section": "DRON",
+          "key": "ThreatPosed",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5801,
+            "section": "DRON",
+            "key": "ThreatPosed",
+            "value": "25"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7606,
+            "section": "DRON",
+            "key": "ThreatPosed",
+            "value": "25"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7609,
+          "section": "DRON",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5802,
+            "section": "DRON",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7607,
+            "section": "DRON",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "Weight": {
+        "value": ".5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7610,
+          "section": "DRON",
+          "key": "Weight",
+          "value": ".5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5803,
+            "section": "DRON",
+            "key": "Weight",
+            "value": ".5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7608,
+            "section": "DRON",
+            "key": "Weight",
+            "value": ".5"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7611,
+          "section": "DRON",
+          "key": "ImmuneToPsionics",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5804,
+            "section": "DRON",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7609,
+            "section": "DRON",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7612,
+          "section": "DRON",
+          "key": "ImmuneToRadiation",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5805,
+            "section": "DRON",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7610,
+            "section": "DRON",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          }
+        ]
+      },
+      "Parasiteable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7613,
+          "section": "DRON",
+          "key": "Parasiteable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5806,
+            "section": "DRON",
+            "key": "Parasiteable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7611,
+            "section": "DRON",
+            "key": "Parasiteable",
+            "value": "no"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7614,
+          "section": "DRON",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5807,
+            "section": "DRON",
+            "key": "Trainable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7612,
+            "section": "DRON",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "Explodes": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7615,
+          "section": "DRON",
+          "key": "Explodes",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5808,
+            "section": "DRON",
+            "key": "Explodes",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7613,
+            "section": "DRON",
+            "key": "Explodes",
+            "value": "no"
+          }
+        ]
+      },
+      "AccelerationFactor": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7616,
+          "section": "DRON",
+          "key": "AccelerationFactor",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5809,
+            "section": "DRON",
+            "key": "AccelerationFactor",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7614,
+            "section": "DRON",
+            "key": "AccelerationFactor",
+            "value": "5"
+          }
+        ]
+      },
+      "DeaccelerationFactor": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7617,
+          "section": "DRON",
+          "key": "DeaccelerationFactor",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5810,
+            "section": "DRON",
+            "key": "DeaccelerationFactor",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7615,
+            "section": "DRON",
+            "key": "DeaccelerationFactor",
+            "value": "5"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7618,
+          "section": "DRON",
+          "key": "ZFudgeColumn",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5811,
+            "section": "DRON",
+            "key": "ZFudgeColumn",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7616,
+            "section": "DRON",
+            "key": "ZFudgeColumn",
+            "value": "8"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7619,
+          "section": "DRON",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5812,
+            "section": "DRON",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7617,
+            "section": "DRON",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "Size": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7621,
+          "section": "DRON",
+          "key": "Size",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5814,
+            "section": "DRON",
+            "key": "Size",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7619,
+            "section": "DRON",
+            "key": "Size",
+            "value": "2"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7622,
+          "section": "DRON",
+          "key": "Accelerates",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5815,
+            "section": "DRON",
+            "key": "Accelerates",
+            "value": "false"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7620,
+            "section": "DRON",
+            "key": "Accelerates",
+            "value": "false"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7590,
+          "section": "DRON",
+          "key": "Soylent",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7588,
+            "section": "DRON",
+            "key": "Soylent",
+            "value": "500"
+          }
+        ]
+      },
+      "Bunkerable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7623,
+          "section": "DRON",
+          "key": "Bunkerable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7621,
+            "section": "DRON",
+            "key": "Bunkerable",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": false,
+      "Remapable": true,
+      "Cameo": "DRONICON",
+      "PrimaryFireFLH": "0,0,30",
+      "WalkFrames": 6,
+      "FiringFrames": 4
+    },
+    "raw_values": {
+      "Voxel": "no",
+      "Remapable": "yes",
+      "Cameo": "DRONICON",
+      "PrimaryFireFLH": "0,0,30",
+      "WalkFrames": "6",
+      "FiringFrames": "4"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 950,
+          "section": "DRON",
+          "key": "Voxel",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 665,
+            "section": "DRON",
+            "key": "Voxel",
+            "value": "no"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 951,
+          "section": "DRON",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 666,
+            "section": "DRON",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "DRONICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 952,
+          "section": "DRON",
+          "key": "Cameo",
+          "value": "DRONICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 667,
+            "section": "DRON",
+            "key": "Cameo",
+            "value": "DRONICON"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "0,0,30",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 953,
+          "section": "DRON",
+          "key": "PrimaryFireFLH",
+          "value": "0,0,30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 668,
+            "section": "DRON",
+            "key": "PrimaryFireFLH",
+            "value": "0,0,30"
+          }
+        ]
+      },
+      "WalkFrames": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 954,
+          "section": "DRON",
+          "key": "WalkFrames",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 669,
+            "section": "DRON",
+            "key": "WalkFrames",
+            "value": "6"
+          }
+        ]
+      },
+      "FiringFrames": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 955,
+          "section": "DRON",
+          "key": "FiringFrames",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 670,
+            "section": "DRON",
+            "key": "FiringFrames",
+            "value": "4"
+          }
+        ]
+      }
+    }
+  }
+}

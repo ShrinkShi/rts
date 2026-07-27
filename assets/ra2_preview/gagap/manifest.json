@@ -1,0 +1,244 @@
+{
+  "schema_version": 3,
+  "entity_id": "GAGAP",
+  "category": "building",
+  "visual_kind": "building_shp",
+  "available_theaters": [
+    "temperate",
+    "snow"
+  ],
+  "default_theater": "temperate",
+  "default_animation": "BodyStates",
+  "foundation": "1x1",
+  "damage_fire_offsets": [
+    [
+      -5.0,
+      11.0
+    ]
+  ],
+  "new_theater": true,
+  "theaters": {
+    "temperate": {
+      "body_source": "gggap.shp",
+      "palette": "unittem.pal",
+      "canvas": [
+        178,
+        176
+      ],
+      "default_animation": "BodyStates",
+      "animations": {
+        "BodyStates": {
+          "label": "主体状态",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 500,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "body_normal.png",
+            "body_damaged.png",
+            "body_rubble.png"
+          ],
+          "remap_masks": [
+            "body_normal_remap.png",
+            "body_damaged_remap.png",
+            "body_rubble_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "Buildup": {
+          "label": "Buildup",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 120,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "buildup_000.png",
+            "buildup_001.png",
+            "buildup_002.png",
+            "buildup_003.png",
+            "buildup_004.png",
+            "buildup_005.png",
+            "buildup_006.png",
+            "buildup_007.png",
+            "buildup_008.png",
+            "buildup_009.png",
+            "buildup_010.png",
+            "buildup_011.png",
+            "buildup_012.png",
+            "buildup_013.png",
+            "buildup_014.png",
+            "buildup_015.png",
+            "buildup_016.png",
+            "buildup_017.png"
+          ],
+          "remap_masks": [
+            "buildup_000_remap.png",
+            "buildup_001_remap.png",
+            "buildup_002_remap.png",
+            "buildup_003_remap.png",
+            "buildup_004_remap.png",
+            "buildup_005_remap.png",
+            "buildup_006_remap.png",
+            "buildup_007_remap.png",
+            "buildup_008_remap.png",
+            "buildup_009_remap.png",
+            "buildup_010_remap.png",
+            "buildup_011_remap.png",
+            "buildup_012_remap.png",
+            "buildup_013_remap.png",
+            "buildup_014_remap.png",
+            "buildup_015_remap.png",
+            "buildup_016_remap.png",
+            "buildup_017_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "source": "gtgapmk.shp",
+          "art_id": "GAGAPMK",
+          "layer": "",
+          "offset": [
+            0,
+            0
+          ],
+          "z_adjust": 0,
+          "y_sort": 0
+        }
+      }
+    },
+    "snow": {
+      "body_source": "gagap.shp",
+      "palette": "unitsno.pal",
+      "canvas": [
+        178,
+        176
+      ],
+      "default_animation": "BodyStates",
+      "animations": {
+        "BodyStates": {
+          "label": "主体状态",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 500,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "body_normal.png",
+            "body_damaged.png",
+            "body_rubble.png"
+          ],
+          "remap_masks": [
+            "body_normal_remap.png",
+            "body_damaged_remap.png",
+            "body_rubble_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "Buildup": {
+          "label": "Buildup",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 120,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "buildup_000.png",
+            "buildup_001.png",
+            "buildup_002.png",
+            "buildup_003.png",
+            "buildup_004.png",
+            "buildup_005.png",
+            "buildup_006.png",
+            "buildup_007.png",
+            "buildup_008.png",
+            "buildup_009.png",
+            "buildup_010.png",
+            "buildup_011.png",
+            "buildup_012.png",
+            "buildup_013.png",
+            "buildup_014.png",
+            "buildup_015.png",
+            "buildup_016.png",
+            "buildup_017.png"
+          ],
+          "remap_masks": [
+            "buildup_000_remap.png",
+            "buildup_001_remap.png",
+            "buildup_002_remap.png",
+            "buildup_003_remap.png",
+            "buildup_004_remap.png",
+            "buildup_005_remap.png",
+            "buildup_006_remap.png",
+            "buildup_007_remap.png",
+            "buildup_008_remap.png",
+            "buildup_009_remap.png",
+            "buildup_010_remap.png",
+            "buildup_011_remap.png",
+            "buildup_012_remap.png",
+            "buildup_013_remap.png",
+            "buildup_014_remap.png",
+            "buildup_015_remap.png",
+            "buildup_016_remap.png",
+            "buildup_017_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "source": "gagapmk.shp",
+          "art_id": "GAGAPMK",
+          "layer": "",
+          "offset": [
+            0,
+            0
+          ],
+          "z_adjust": 0,
+          "y_sort": 0
+        }
+      }
+    }
+  }
+}

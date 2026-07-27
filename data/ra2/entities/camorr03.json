@@ -1,0 +1,946 @@
+{
+  "id": "CAMORR03",
+  "category": "building",
+  "name_token": "Name:CACITY01",
+  "art_id": "CAMORR03",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 1000,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 8,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {
+    "DieSound": [
+      "MonumentCrumble"
+    ]
+  },
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAMORR03",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 8040,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgmorr03.shp",
+          "folder": "isogenmd",
+          "filename": "cgmorr03.shp",
+          "stem": "cgmorr03",
+          "extension": ".shp",
+          "size": 94864,
+          "sha1": "b5122e8d75f976e50dd8ceea1e97c2a3641ace08"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 8862,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/camorr03.shp",
+          "folder": "isosnomd",
+          "filename": "camorr03.shp",
+          "stem": "camorr03",
+          "extension": ".shp",
+          "size": 88512,
+          "sha1": "6fc9ac01f76d29c944bbab7c2c626d460210dce3"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 8040,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgmorr03.shp",
+          "folder": "isogenmd",
+          "filename": "cgmorr03.shp",
+          "stem": "cgmorr03",
+          "extension": ".shp",
+          "size": 94864,
+          "sha1": "b5122e8d75f976e50dd8ceea1e97c2a3641ace08"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 8040,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgmorr03.shp",
+          "folder": "isogenmd",
+          "filename": "cgmorr03.shp",
+          "stem": "cgmorr03",
+          "extension": ".shp",
+          "size": 94864,
+          "sha1": "b5122e8d75f976e50dd8ceea1e97c2a3641ace08"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8040,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgmorr03.shp",
+          "folder": "isogenmd",
+          "filename": "cgmorr03.shp",
+          "stem": "cgmorr03",
+          "extension": ".shp",
+          "size": 94864,
+          "sha1": "b5122e8d75f976e50dd8ceea1e97c2a3641ace08"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 8040,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgmorr03.shp",
+          "folder": "isogenmd",
+          "filename": "cgmorr03.shp",
+          "stem": "cgmorr03",
+          "extension": ".shp",
+          "size": 94864,
+          "sha1": "b5122e8d75f976e50dd8ceea1e97c2a3641ace08"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "3x3",
+    "height": 8,
+    "occupy_height": 5,
+    "damage_fire_offsets": [
+      [
+        -29.0,
+        44.0
+      ],
+      [
+        33.0,
+        51.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "Morroco Generic03",
+      "UIName": "Name:CACITY01",
+      "TechLevel": -1,
+      "Strength": 1000,
+      "Insignificant": true,
+      "Nominal": true,
+      "Points": 5,
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "BaseNormal": false,
+      "Sight": 8,
+      "ClickRepairable": false,
+      "CanBeOccupied": true,
+      "MaxNumberOccupants": 10,
+      "CanOccupyFire": true,
+      "LeaveRubble": true,
+      "DieSound": "MonumentCrumble"
+    },
+    "raw_values": {
+      "Name": "Morroco Generic03",
+      "UIName": "Name:CACITY01",
+      "TechLevel": "-1",
+      "Strength": "1000",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "Points": "5",
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "BaseNormal": "no",
+      "Sight": "8",
+      "ClickRepairable": "no",
+      "CanBeOccupied": "yes",
+      "MaxNumberOccupants": "10",
+      "CanOccupyFire": "yes",
+      "LeaveRubble": "true",
+      "DieSound": "MonumentCrumble"
+    },
+    "provenance": {
+      "Name": {
+        "value": "Morroco Generic03",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16685,
+          "section": "CAMORR03",
+          "key": "Name",
+          "value": "Morroco Generic03"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16677,
+            "section": "CAMORR03",
+            "key": "Name",
+            "value": "Morroco Generic03"
+          }
+        ]
+      },
+      "UIName": {
+        "value": "Name:CACITY01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16687,
+          "section": "CAMORR03",
+          "key": "UIName",
+          "value": "Name:CACITY01"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16679,
+            "section": "CAMORR03",
+            "key": "UIName",
+            "value": "Name:CACITY01"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16688,
+          "section": "CAMORR03",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16680,
+            "section": "CAMORR03",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16689,
+          "section": "CAMORR03",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16681,
+            "section": "CAMORR03",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16690,
+          "section": "CAMORR03",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16682,
+            "section": "CAMORR03",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16691,
+          "section": "CAMORR03",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16683,
+            "section": "CAMORR03",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16693,
+          "section": "CAMORR03",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16685,
+            "section": "CAMORR03",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16694,
+          "section": "CAMORR03",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16686,
+            "section": "CAMORR03",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16695,
+          "section": "CAMORR03",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16687,
+            "section": "CAMORR03",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16697,
+          "section": "CAMORR03",
+          "key": "DebrisAnims",
+          "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16689,
+            "section": "CAMORR03",
+            "key": "DebrisAnims",
+            "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16698,
+          "section": "CAMORR03",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16690,
+            "section": "CAMORR03",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16699,
+          "section": "CAMORR03",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16691,
+            "section": "CAMORR03",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16702,
+          "section": "CAMORR03",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16694,
+            "section": "CAMORR03",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16703,
+          "section": "CAMORR03",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16695,
+            "section": "CAMORR03",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16704,
+          "section": "CAMORR03",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16696,
+            "section": "CAMORR03",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanBeOccupied": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16705,
+          "section": "CAMORR03",
+          "key": "CanBeOccupied",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16697,
+            "section": "CAMORR03",
+            "key": "CanBeOccupied",
+            "value": "yes"
+          }
+        ]
+      },
+      "MaxNumberOccupants": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16706,
+          "section": "CAMORR03",
+          "key": "MaxNumberOccupants",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16698,
+            "section": "CAMORR03",
+            "key": "MaxNumberOccupants",
+            "value": "10"
+          }
+        ]
+      },
+      "CanOccupyFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16707,
+          "section": "CAMORR03",
+          "key": "CanOccupyFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16699,
+            "section": "CAMORR03",
+            "key": "CanOccupyFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16708,
+          "section": "CAMORR03",
+          "key": "LeaveRubble",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16700,
+            "section": "CAMORR03",
+            "key": "LeaveRubble",
+            "value": "true"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "MonumentCrumble",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16709,
+          "section": "CAMORR03",
+          "key": "DieSound",
+          "value": "MonumentCrumble"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16701,
+            "section": "CAMORR03",
+            "key": "DieSound",
+            "value": "MonumentCrumble"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Normalized": true,
+      "Remapable": false,
+      "Foundation": "3x3",
+      "Height": 8,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "MuzzleFlash0": "-63,12",
+      "MuzzleFlash1": "-12,41",
+      "MuzzleFlash2": "-13,1",
+      "MuzzleFlash3": "-33,9",
+      "MuzzleFlash4": "-31,49",
+      "MuzzleFlash5": "43,7",
+      "MuzzleFlash6": "66,15",
+      "MuzzleFlash7": "43,44",
+      "MuzzleFlash8": "14,35",
+      "MuzzleFlash9": "47,23",
+      "CanBeHidden": false,
+      "OccupyHeight": 5,
+      "DamageFireOffset0": "-29,44",
+      "DamageFireOffset1": "33,51"
+    },
+    "raw_values": {
+      "Normalized": "yes",
+      "Remapable": "no",
+      "Foundation": "3x3",
+      "Height": "8",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "MuzzleFlash0": "-63,12",
+      "MuzzleFlash1": "-12,41",
+      "MuzzleFlash2": "-13,1",
+      "MuzzleFlash3": "-33,9",
+      "MuzzleFlash4": "-31,49",
+      "MuzzleFlash5": "43,7",
+      "MuzzleFlash6": "66,15",
+      "MuzzleFlash7": "43,44",
+      "MuzzleFlash8": "14,35",
+      "MuzzleFlash9": "47,23",
+      "CanBeHidden": "False",
+      "OccupyHeight": "5",
+      "DamageFireOffset0": "-29,44",
+      "DamageFireOffset1": "33,51"
+    },
+    "provenance": {
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10366,
+          "section": "CAMORR03",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10367,
+          "section": "CAMORR03",
+          "key": "Remapable",
+          "value": "no"
+        },
+        "history": []
+      },
+      "Foundation": {
+        "value": "3x3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10368,
+          "section": "CAMORR03",
+          "key": "Foundation",
+          "value": "3x3"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "8",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10369,
+          "section": "CAMORR03",
+          "key": "Height",
+          "value": "8"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10371,
+          "section": "CAMORR03",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10374,
+          "section": "CAMORR03",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": []
+      },
+      "MuzzleFlash0": {
+        "value": "-63,12",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10375,
+          "section": "CAMORR03",
+          "key": "MuzzleFlash0",
+          "value": "-63,12"
+        },
+        "history": []
+      },
+      "MuzzleFlash1": {
+        "value": "-12,41",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10376,
+          "section": "CAMORR03",
+          "key": "MuzzleFlash1",
+          "value": "-12,41"
+        },
+        "history": []
+      },
+      "MuzzleFlash2": {
+        "value": "-13,1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10377,
+          "section": "CAMORR03",
+          "key": "MuzzleFlash2",
+          "value": "-13,1"
+        },
+        "history": []
+      },
+      "MuzzleFlash3": {
+        "value": "-33,9",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10378,
+          "section": "CAMORR03",
+          "key": "MuzzleFlash3",
+          "value": "-33,9"
+        },
+        "history": []
+      },
+      "MuzzleFlash4": {
+        "value": "-31,49",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10379,
+          "section": "CAMORR03",
+          "key": "MuzzleFlash4",
+          "value": "-31,49"
+        },
+        "history": []
+      },
+      "MuzzleFlash5": {
+        "value": "43,7",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10380,
+          "section": "CAMORR03",
+          "key": "MuzzleFlash5",
+          "value": "43,7"
+        },
+        "history": []
+      },
+      "MuzzleFlash6": {
+        "value": "66,15",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10381,
+          "section": "CAMORR03",
+          "key": "MuzzleFlash6",
+          "value": "66,15"
+        },
+        "history": []
+      },
+      "MuzzleFlash7": {
+        "value": "43,44",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10382,
+          "section": "CAMORR03",
+          "key": "MuzzleFlash7",
+          "value": "43,44"
+        },
+        "history": []
+      },
+      "MuzzleFlash8": {
+        "value": "14,35",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10383,
+          "section": "CAMORR03",
+          "key": "MuzzleFlash8",
+          "value": "14,35"
+        },
+        "history": []
+      },
+      "MuzzleFlash9": {
+        "value": "47,23",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10384,
+          "section": "CAMORR03",
+          "key": "MuzzleFlash9",
+          "value": "47,23"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10385,
+          "section": "CAMORR03",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10386,
+          "section": "CAMORR03",
+          "key": "OccupyHeight",
+          "value": "5"
+        },
+        "history": []
+      },
+      "DamageFireOffset0": {
+        "value": "-29,44",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10387,
+          "section": "CAMORR03",
+          "key": "DamageFireOffset0",
+          "value": "-29,44"
+        },
+        "history": []
+      },
+      "DamageFireOffset1": {
+        "value": "33,51",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 10388,
+          "section": "CAMORR03",
+          "key": "DamageFireOffset1",
+          "value": "33,51"
+        },
+        "history": []
+      }
+    }
+  }
+}

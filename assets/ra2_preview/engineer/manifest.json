@@ -1,0 +1,1502 @@
+{
+  "schema_version": 2,
+  "entity_id": "ENGINEER",
+  "category": "infantry",
+  "visual_kind": "infantry_shp",
+  "source": "engineer.shp",
+  "palette": "unittem.pal",
+  "canvas": [
+    76,
+    80
+  ],
+  "available_theaters": [
+    "temperate",
+    "snow",
+    "urban",
+    "desert",
+    "lunar",
+    "newurban"
+  ],
+  "theater": "temperate",
+  "default_animation": "Ready",
+  "animations": {
+    "Ready": {
+      "label": "Ready",
+      "directional": true,
+      "facing_count": 8,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": {
+        "0": {
+          "frames": [
+            "ready_0_000.png"
+          ],
+          "remap_masks": [
+            "ready_0_000_remap.png"
+          ],
+          "source_indices": [
+            6
+          ]
+        },
+        "1": {
+          "frames": [
+            "ready_1_000.png"
+          ],
+          "remap_masks": [
+            "ready_1_000_remap.png"
+          ],
+          "source_indices": [
+            5
+          ]
+        },
+        "2": {
+          "frames": [
+            "ready_2_000.png"
+          ],
+          "remap_masks": [
+            "ready_2_000_remap.png"
+          ],
+          "source_indices": [
+            4
+          ]
+        },
+        "3": {
+          "frames": [
+            "ready_3_000.png"
+          ],
+          "remap_masks": [
+            "ready_3_000_remap.png"
+          ],
+          "source_indices": [
+            3
+          ]
+        },
+        "4": {
+          "frames": [
+            "ready_4_000.png"
+          ],
+          "remap_masks": [
+            "ready_4_000_remap.png"
+          ],
+          "source_indices": [
+            2
+          ]
+        },
+        "5": {
+          "frames": [
+            "ready_5_000.png"
+          ],
+          "remap_masks": [
+            "ready_5_000_remap.png"
+          ],
+          "source_indices": [
+            1
+          ]
+        },
+        "6": {
+          "frames": [
+            "ready_6_000.png"
+          ],
+          "remap_masks": [
+            "ready_6_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ]
+        },
+        "7": {
+          "frames": [
+            "ready_7_000.png"
+          ],
+          "remap_masks": [
+            "ready_7_000_remap.png"
+          ],
+          "source_indices": [
+            7
+          ]
+        }
+      },
+      "frames": null,
+      "remap_masks": null,
+      "source_indices": null,
+      "source_sequence": "Ready",
+      "reverse": false
+    },
+    "Guard": {
+      "label": "Guard",
+      "directional": true,
+      "facing_count": 8,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": {
+        "0": {
+          "frames": [
+            "guard_0_000.png"
+          ],
+          "remap_masks": [
+            "guard_0_000_remap.png"
+          ],
+          "source_indices": [
+            6
+          ]
+        },
+        "1": {
+          "frames": [
+            "guard_1_000.png"
+          ],
+          "remap_masks": [
+            "guard_1_000_remap.png"
+          ],
+          "source_indices": [
+            5
+          ]
+        },
+        "2": {
+          "frames": [
+            "guard_2_000.png"
+          ],
+          "remap_masks": [
+            "guard_2_000_remap.png"
+          ],
+          "source_indices": [
+            4
+          ]
+        },
+        "3": {
+          "frames": [
+            "guard_3_000.png"
+          ],
+          "remap_masks": [
+            "guard_3_000_remap.png"
+          ],
+          "source_indices": [
+            3
+          ]
+        },
+        "4": {
+          "frames": [
+            "guard_4_000.png"
+          ],
+          "remap_masks": [
+            "guard_4_000_remap.png"
+          ],
+          "source_indices": [
+            2
+          ]
+        },
+        "5": {
+          "frames": [
+            "guard_5_000.png"
+          ],
+          "remap_masks": [
+            "guard_5_000_remap.png"
+          ],
+          "source_indices": [
+            1
+          ]
+        },
+        "6": {
+          "frames": [
+            "guard_6_000.png"
+          ],
+          "remap_masks": [
+            "guard_6_000_remap.png"
+          ],
+          "source_indices": [
+            0
+          ]
+        },
+        "7": {
+          "frames": [
+            "guard_7_000.png"
+          ],
+          "remap_masks": [
+            "guard_7_000_remap.png"
+          ],
+          "source_indices": [
+            7
+          ]
+        }
+      },
+      "frames": null,
+      "remap_masks": null,
+      "source_indices": null,
+      "source_sequence": "Guard",
+      "reverse": false
+    },
+    "Walk": {
+      "label": "Walk",
+      "directional": true,
+      "facing_count": 8,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": {
+        "0": {
+          "frames": [
+            "walk_0_000.png",
+            "walk_0_001.png",
+            "walk_0_002.png",
+            "walk_0_003.png",
+            "walk_0_004.png",
+            "walk_0_005.png"
+          ],
+          "remap_masks": [
+            "walk_0_000_remap.png",
+            "walk_0_001_remap.png",
+            "walk_0_002_remap.png",
+            "walk_0_003_remap.png",
+            "walk_0_004_remap.png",
+            "walk_0_005_remap.png"
+          ],
+          "source_indices": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ]
+        },
+        "1": {
+          "frames": [
+            "walk_1_000.png",
+            "walk_1_001.png",
+            "walk_1_002.png",
+            "walk_1_003.png",
+            "walk_1_004.png",
+            "walk_1_005.png"
+          ],
+          "remap_masks": [
+            "walk_1_000_remap.png",
+            "walk_1_001_remap.png",
+            "walk_1_002_remap.png",
+            "walk_1_003_remap.png",
+            "walk_1_004_remap.png",
+            "walk_1_005_remap.png"
+          ],
+          "source_indices": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        "2": {
+          "frames": [
+            "walk_2_000.png",
+            "walk_2_001.png",
+            "walk_2_002.png",
+            "walk_2_003.png",
+            "walk_2_004.png",
+            "walk_2_005.png"
+          ],
+          "remap_masks": [
+            "walk_2_000_remap.png",
+            "walk_2_001_remap.png",
+            "walk_2_002_remap.png",
+            "walk_2_003_remap.png",
+            "walk_2_004_remap.png",
+            "walk_2_005_remap.png"
+          ],
+          "source_indices": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ]
+        },
+        "3": {
+          "frames": [
+            "walk_3_000.png",
+            "walk_3_001.png",
+            "walk_3_002.png",
+            "walk_3_003.png",
+            "walk_3_004.png",
+            "walk_3_005.png"
+          ],
+          "remap_masks": [
+            "walk_3_000_remap.png",
+            "walk_3_001_remap.png",
+            "walk_3_002_remap.png",
+            "walk_3_003_remap.png",
+            "walk_3_004_remap.png",
+            "walk_3_005_remap.png"
+          ],
+          "source_indices": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ]
+        },
+        "4": {
+          "frames": [
+            "walk_4_000.png",
+            "walk_4_001.png",
+            "walk_4_002.png",
+            "walk_4_003.png",
+            "walk_4_004.png",
+            "walk_4_005.png"
+          ],
+          "remap_masks": [
+            "walk_4_000_remap.png",
+            "walk_4_001_remap.png",
+            "walk_4_002_remap.png",
+            "walk_4_003_remap.png",
+            "walk_4_004_remap.png",
+            "walk_4_005_remap.png"
+          ],
+          "source_indices": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ]
+        },
+        "5": {
+          "frames": [
+            "walk_5_000.png",
+            "walk_5_001.png",
+            "walk_5_002.png",
+            "walk_5_003.png",
+            "walk_5_004.png",
+            "walk_5_005.png"
+          ],
+          "remap_masks": [
+            "walk_5_000_remap.png",
+            "walk_5_001_remap.png",
+            "walk_5_002_remap.png",
+            "walk_5_003_remap.png",
+            "walk_5_004_remap.png",
+            "walk_5_005_remap.png"
+          ],
+          "source_indices": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        "6": {
+          "frames": [
+            "walk_6_000.png",
+            "walk_6_001.png",
+            "walk_6_002.png",
+            "walk_6_003.png",
+            "walk_6_004.png",
+            "walk_6_005.png"
+          ],
+          "remap_masks": [
+            "walk_6_000_remap.png",
+            "walk_6_001_remap.png",
+            "walk_6_002_remap.png",
+            "walk_6_003_remap.png",
+            "walk_6_004_remap.png",
+            "walk_6_005_remap.png"
+          ],
+          "source_indices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        "7": {
+          "frames": [
+            "walk_7_000.png",
+            "walk_7_001.png",
+            "walk_7_002.png",
+            "walk_7_003.png",
+            "walk_7_004.png",
+            "walk_7_005.png"
+          ],
+          "remap_masks": [
+            "walk_7_000_remap.png",
+            "walk_7_001_remap.png",
+            "walk_7_002_remap.png",
+            "walk_7_003_remap.png",
+            "walk_7_004_remap.png",
+            "walk_7_005_remap.png"
+          ],
+          "source_indices": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "frames": null,
+      "remap_masks": null,
+      "source_indices": null,
+      "source_sequence": "Walk",
+      "reverse": false
+    },
+    "FireUp": {
+      "label": "FireUp",
+      "directional": true,
+      "facing_count": 8,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": {
+        "0": {
+          "frames": [
+            "fireup_0_000.png",
+            "fireup_0_001.png",
+            "fireup_0_002.png",
+            "fireup_0_003.png",
+            "fireup_0_004.png",
+            "fireup_0_005.png"
+          ],
+          "remap_masks": [
+            "fireup_0_000_remap.png",
+            "fireup_0_001_remap.png",
+            "fireup_0_002_remap.png",
+            "fireup_0_003_remap.png",
+            "fireup_0_004_remap.png",
+            "fireup_0_005_remap.png"
+          ],
+          "source_indices": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205
+          ]
+        },
+        "1": {
+          "frames": [
+            "fireup_1_000.png",
+            "fireup_1_001.png",
+            "fireup_1_002.png",
+            "fireup_1_003.png",
+            "fireup_1_004.png",
+            "fireup_1_005.png"
+          ],
+          "remap_masks": [
+            "fireup_1_000_remap.png",
+            "fireup_1_001_remap.png",
+            "fireup_1_002_remap.png",
+            "fireup_1_003_remap.png",
+            "fireup_1_004_remap.png",
+            "fireup_1_005_remap.png"
+          ],
+          "source_indices": [
+            194,
+            195,
+            196,
+            197,
+            198,
+            199
+          ]
+        },
+        "2": {
+          "frames": [
+            "fireup_2_000.png",
+            "fireup_2_001.png",
+            "fireup_2_002.png",
+            "fireup_2_003.png",
+            "fireup_2_004.png",
+            "fireup_2_005.png"
+          ],
+          "remap_masks": [
+            "fireup_2_000_remap.png",
+            "fireup_2_001_remap.png",
+            "fireup_2_002_remap.png",
+            "fireup_2_003_remap.png",
+            "fireup_2_004_remap.png",
+            "fireup_2_005_remap.png"
+          ],
+          "source_indices": [
+            188,
+            189,
+            190,
+            191,
+            192,
+            193
+          ]
+        },
+        "3": {
+          "frames": [
+            "fireup_3_000.png",
+            "fireup_3_001.png",
+            "fireup_3_002.png",
+            "fireup_3_003.png",
+            "fireup_3_004.png",
+            "fireup_3_005.png"
+          ],
+          "remap_masks": [
+            "fireup_3_000_remap.png",
+            "fireup_3_001_remap.png",
+            "fireup_3_002_remap.png",
+            "fireup_3_003_remap.png",
+            "fireup_3_004_remap.png",
+            "fireup_3_005_remap.png"
+          ],
+          "source_indices": [
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ]
+        },
+        "4": {
+          "frames": [
+            "fireup_4_000.png",
+            "fireup_4_001.png",
+            "fireup_4_002.png",
+            "fireup_4_003.png",
+            "fireup_4_004.png",
+            "fireup_4_005.png"
+          ],
+          "remap_masks": [
+            "fireup_4_000_remap.png",
+            "fireup_4_001_remap.png",
+            "fireup_4_002_remap.png",
+            "fireup_4_003_remap.png",
+            "fireup_4_004_remap.png",
+            "fireup_4_005_remap.png"
+          ],
+          "source_indices": [
+            176,
+            177,
+            178,
+            179,
+            180,
+            181
+          ]
+        },
+        "5": {
+          "frames": [
+            "fireup_5_000.png",
+            "fireup_5_001.png",
+            "fireup_5_002.png",
+            "fireup_5_003.png",
+            "fireup_5_004.png",
+            "fireup_5_005.png"
+          ],
+          "remap_masks": [
+            "fireup_5_000_remap.png",
+            "fireup_5_001_remap.png",
+            "fireup_5_002_remap.png",
+            "fireup_5_003_remap.png",
+            "fireup_5_004_remap.png",
+            "fireup_5_005_remap.png"
+          ],
+          "source_indices": [
+            170,
+            171,
+            172,
+            173,
+            174,
+            175
+          ]
+        },
+        "6": {
+          "frames": [
+            "fireup_6_000.png",
+            "fireup_6_001.png",
+            "fireup_6_002.png",
+            "fireup_6_003.png",
+            "fireup_6_004.png",
+            "fireup_6_005.png"
+          ],
+          "remap_masks": [
+            "fireup_6_000_remap.png",
+            "fireup_6_001_remap.png",
+            "fireup_6_002_remap.png",
+            "fireup_6_003_remap.png",
+            "fireup_6_004_remap.png",
+            "fireup_6_005_remap.png"
+          ],
+          "source_indices": [
+            164,
+            165,
+            166,
+            167,
+            168,
+            169
+          ]
+        },
+        "7": {
+          "frames": [
+            "fireup_7_000.png",
+            "fireup_7_001.png",
+            "fireup_7_002.png",
+            "fireup_7_003.png",
+            "fireup_7_004.png",
+            "fireup_7_005.png"
+          ],
+          "remap_masks": [
+            "fireup_7_000_remap.png",
+            "fireup_7_001_remap.png",
+            "fireup_7_002_remap.png",
+            "fireup_7_003_remap.png",
+            "fireup_7_004_remap.png",
+            "fireup_7_005_remap.png"
+          ],
+          "source_indices": [
+            206,
+            207,
+            208,
+            209,
+            210,
+            211
+          ]
+        }
+      },
+      "frames": null,
+      "remap_masks": null,
+      "source_indices": null,
+      "source_sequence": "FireUp",
+      "reverse": false
+    },
+    "Prone": {
+      "label": "Prone",
+      "directional": true,
+      "facing_count": 8,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": {
+        "0": {
+          "frames": [
+            "prone_0_000.png"
+          ],
+          "remap_masks": [
+            "prone_0_000_remap.png"
+          ],
+          "source_indices": [
+            122
+          ]
+        },
+        "1": {
+          "frames": [
+            "prone_1_000.png"
+          ],
+          "remap_masks": [
+            "prone_1_000_remap.png"
+          ],
+          "source_indices": [
+            116
+          ]
+        },
+        "2": {
+          "frames": [
+            "prone_2_000.png"
+          ],
+          "remap_masks": [
+            "prone_2_000_remap.png"
+          ],
+          "source_indices": [
+            110
+          ]
+        },
+        "3": {
+          "frames": [
+            "prone_3_000.png"
+          ],
+          "remap_masks": [
+            "prone_3_000_remap.png"
+          ],
+          "source_indices": [
+            104
+          ]
+        },
+        "4": {
+          "frames": [
+            "prone_4_000.png"
+          ],
+          "remap_masks": [
+            "prone_4_000_remap.png"
+          ],
+          "source_indices": [
+            98
+          ]
+        },
+        "5": {
+          "frames": [
+            "prone_5_000.png"
+          ],
+          "remap_masks": [
+            "prone_5_000_remap.png"
+          ],
+          "source_indices": [
+            92
+          ]
+        },
+        "6": {
+          "frames": [
+            "prone_6_000.png"
+          ],
+          "remap_masks": [
+            "prone_6_000_remap.png"
+          ],
+          "source_indices": [
+            86
+          ]
+        },
+        "7": {
+          "frames": [
+            "prone_7_000.png"
+          ],
+          "remap_masks": [
+            "prone_7_000_remap.png"
+          ],
+          "source_indices": [
+            128
+          ]
+        }
+      },
+      "frames": null,
+      "remap_masks": null,
+      "source_indices": null,
+      "source_sequence": "Prone",
+      "reverse": false
+    },
+    "Crawl": {
+      "label": "Crawl",
+      "directional": true,
+      "facing_count": 8,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": {
+        "0": {
+          "frames": [
+            "crawl_0_000.png",
+            "crawl_0_001.png",
+            "crawl_0_002.png",
+            "crawl_0_003.png",
+            "crawl_0_004.png",
+            "crawl_0_005.png"
+          ],
+          "remap_masks": [
+            "crawl_0_000_remap.png",
+            "crawl_0_001_remap.png",
+            "crawl_0_002_remap.png",
+            "crawl_0_003_remap.png",
+            "crawl_0_004_remap.png",
+            "crawl_0_005_remap.png"
+          ],
+          "source_indices": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ]
+        },
+        "1": {
+          "frames": [
+            "crawl_1_000.png",
+            "crawl_1_001.png",
+            "crawl_1_002.png",
+            "crawl_1_003.png",
+            "crawl_1_004.png",
+            "crawl_1_005.png"
+          ],
+          "remap_masks": [
+            "crawl_1_000_remap.png",
+            "crawl_1_001_remap.png",
+            "crawl_1_002_remap.png",
+            "crawl_1_003_remap.png",
+            "crawl_1_004_remap.png",
+            "crawl_1_005_remap.png"
+          ],
+          "source_indices": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ]
+        },
+        "2": {
+          "frames": [
+            "crawl_2_000.png",
+            "crawl_2_001.png",
+            "crawl_2_002.png",
+            "crawl_2_003.png",
+            "crawl_2_004.png",
+            "crawl_2_005.png"
+          ],
+          "remap_masks": [
+            "crawl_2_000_remap.png",
+            "crawl_2_001_remap.png",
+            "crawl_2_002_remap.png",
+            "crawl_2_003_remap.png",
+            "crawl_2_004_remap.png",
+            "crawl_2_005_remap.png"
+          ],
+          "source_indices": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ]
+        },
+        "3": {
+          "frames": [
+            "crawl_3_000.png",
+            "crawl_3_001.png",
+            "crawl_3_002.png",
+            "crawl_3_003.png",
+            "crawl_3_004.png",
+            "crawl_3_005.png"
+          ],
+          "remap_masks": [
+            "crawl_3_000_remap.png",
+            "crawl_3_001_remap.png",
+            "crawl_3_002_remap.png",
+            "crawl_3_003_remap.png",
+            "crawl_3_004_remap.png",
+            "crawl_3_005_remap.png"
+          ],
+          "source_indices": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ]
+        },
+        "4": {
+          "frames": [
+            "crawl_4_000.png",
+            "crawl_4_001.png",
+            "crawl_4_002.png",
+            "crawl_4_003.png",
+            "crawl_4_004.png",
+            "crawl_4_005.png"
+          ],
+          "remap_masks": [
+            "crawl_4_000_remap.png",
+            "crawl_4_001_remap.png",
+            "crawl_4_002_remap.png",
+            "crawl_4_003_remap.png",
+            "crawl_4_004_remap.png",
+            "crawl_4_005_remap.png"
+          ],
+          "source_indices": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ]
+        },
+        "5": {
+          "frames": [
+            "crawl_5_000.png",
+            "crawl_5_001.png",
+            "crawl_5_002.png",
+            "crawl_5_003.png",
+            "crawl_5_004.png",
+            "crawl_5_005.png"
+          ],
+          "remap_masks": [
+            "crawl_5_000_remap.png",
+            "crawl_5_001_remap.png",
+            "crawl_5_002_remap.png",
+            "crawl_5_003_remap.png",
+            "crawl_5_004_remap.png",
+            "crawl_5_005_remap.png"
+          ],
+          "source_indices": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ]
+        },
+        "6": {
+          "frames": [
+            "crawl_6_000.png",
+            "crawl_6_001.png",
+            "crawl_6_002.png",
+            "crawl_6_003.png",
+            "crawl_6_004.png",
+            "crawl_6_005.png"
+          ],
+          "remap_masks": [
+            "crawl_6_000_remap.png",
+            "crawl_6_001_remap.png",
+            "crawl_6_002_remap.png",
+            "crawl_6_003_remap.png",
+            "crawl_6_004_remap.png",
+            "crawl_6_005_remap.png"
+          ],
+          "source_indices": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ]
+        },
+        "7": {
+          "frames": [
+            "crawl_7_000.png",
+            "crawl_7_001.png",
+            "crawl_7_002.png",
+            "crawl_7_003.png",
+            "crawl_7_004.png",
+            "crawl_7_005.png"
+          ],
+          "remap_masks": [
+            "crawl_7_000_remap.png",
+            "crawl_7_001_remap.png",
+            "crawl_7_002_remap.png",
+            "crawl_7_003_remap.png",
+            "crawl_7_004_remap.png",
+            "crawl_7_005_remap.png"
+          ],
+          "source_indices": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "frames": null,
+      "remap_masks": null,
+      "source_indices": null,
+      "source_sequence": "Crawl",
+      "reverse": false
+    },
+    "FireProne": {
+      "label": "FireProne",
+      "directional": true,
+      "facing_count": 8,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": {
+        "0": {
+          "frames": [
+            "fireprone_0_000.png",
+            "fireprone_0_001.png",
+            "fireprone_0_002.png",
+            "fireprone_0_003.png",
+            "fireprone_0_004.png",
+            "fireprone_0_005.png"
+          ],
+          "remap_masks": [
+            "fireprone_0_000_remap.png",
+            "fireprone_0_001_remap.png",
+            "fireprone_0_002_remap.png",
+            "fireprone_0_003_remap.png",
+            "fireprone_0_004_remap.png",
+            "fireprone_0_005_remap.png"
+          ],
+          "source_indices": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205
+          ]
+        },
+        "1": {
+          "frames": [
+            "fireprone_1_000.png",
+            "fireprone_1_001.png",
+            "fireprone_1_002.png",
+            "fireprone_1_003.png",
+            "fireprone_1_004.png",
+            "fireprone_1_005.png"
+          ],
+          "remap_masks": [
+            "fireprone_1_000_remap.png",
+            "fireprone_1_001_remap.png",
+            "fireprone_1_002_remap.png",
+            "fireprone_1_003_remap.png",
+            "fireprone_1_004_remap.png",
+            "fireprone_1_005_remap.png"
+          ],
+          "source_indices": [
+            194,
+            195,
+            196,
+            197,
+            198,
+            199
+          ]
+        },
+        "2": {
+          "frames": [
+            "fireprone_2_000.png",
+            "fireprone_2_001.png",
+            "fireprone_2_002.png",
+            "fireprone_2_003.png",
+            "fireprone_2_004.png",
+            "fireprone_2_005.png"
+          ],
+          "remap_masks": [
+            "fireprone_2_000_remap.png",
+            "fireprone_2_001_remap.png",
+            "fireprone_2_002_remap.png",
+            "fireprone_2_003_remap.png",
+            "fireprone_2_004_remap.png",
+            "fireprone_2_005_remap.png"
+          ],
+          "source_indices": [
+            188,
+            189,
+            190,
+            191,
+            192,
+            193
+          ]
+        },
+        "3": {
+          "frames": [
+            "fireprone_3_000.png",
+            "fireprone_3_001.png",
+            "fireprone_3_002.png",
+            "fireprone_3_003.png",
+            "fireprone_3_004.png",
+            "fireprone_3_005.png"
+          ],
+          "remap_masks": [
+            "fireprone_3_000_remap.png",
+            "fireprone_3_001_remap.png",
+            "fireprone_3_002_remap.png",
+            "fireprone_3_003_remap.png",
+            "fireprone_3_004_remap.png",
+            "fireprone_3_005_remap.png"
+          ],
+          "source_indices": [
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ]
+        },
+        "4": {
+          "frames": [
+            "fireprone_4_000.png",
+            "fireprone_4_001.png",
+            "fireprone_4_002.png",
+            "fireprone_4_003.png",
+            "fireprone_4_004.png",
+            "fireprone_4_005.png"
+          ],
+          "remap_masks": [
+            "fireprone_4_000_remap.png",
+            "fireprone_4_001_remap.png",
+            "fireprone_4_002_remap.png",
+            "fireprone_4_003_remap.png",
+            "fireprone_4_004_remap.png",
+            "fireprone_4_005_remap.png"
+          ],
+          "source_indices": [
+            176,
+            177,
+            178,
+            179,
+            180,
+            181
+          ]
+        },
+        "5": {
+          "frames": [
+            "fireprone_5_000.png",
+            "fireprone_5_001.png",
+            "fireprone_5_002.png",
+            "fireprone_5_003.png",
+            "fireprone_5_004.png",
+            "fireprone_5_005.png"
+          ],
+          "remap_masks": [
+            "fireprone_5_000_remap.png",
+            "fireprone_5_001_remap.png",
+            "fireprone_5_002_remap.png",
+            "fireprone_5_003_remap.png",
+            "fireprone_5_004_remap.png",
+            "fireprone_5_005_remap.png"
+          ],
+          "source_indices": [
+            170,
+            171,
+            172,
+            173,
+            174,
+            175
+          ]
+        },
+        "6": {
+          "frames": [
+            "fireprone_6_000.png",
+            "fireprone_6_001.png",
+            "fireprone_6_002.png",
+            "fireprone_6_003.png",
+            "fireprone_6_004.png",
+            "fireprone_6_005.png"
+          ],
+          "remap_masks": [
+            "fireprone_6_000_remap.png",
+            "fireprone_6_001_remap.png",
+            "fireprone_6_002_remap.png",
+            "fireprone_6_003_remap.png",
+            "fireprone_6_004_remap.png",
+            "fireprone_6_005_remap.png"
+          ],
+          "source_indices": [
+            164,
+            165,
+            166,
+            167,
+            168,
+            169
+          ]
+        },
+        "7": {
+          "frames": [
+            "fireprone_7_000.png",
+            "fireprone_7_001.png",
+            "fireprone_7_002.png",
+            "fireprone_7_003.png",
+            "fireprone_7_004.png",
+            "fireprone_7_005.png"
+          ],
+          "remap_masks": [
+            "fireprone_7_000_remap.png",
+            "fireprone_7_001_remap.png",
+            "fireprone_7_002_remap.png",
+            "fireprone_7_003_remap.png",
+            "fireprone_7_004_remap.png",
+            "fireprone_7_005_remap.png"
+          ],
+          "source_indices": [
+            206,
+            207,
+            208,
+            209,
+            210,
+            211
+          ]
+        }
+      },
+      "frames": null,
+      "remap_masks": null,
+      "source_indices": null,
+      "source_sequence": "FireProne",
+      "reverse": false
+    },
+    "Die1": {
+      "label": "Die1",
+      "directional": false,
+      "facing_count": 1,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": null,
+      "frames": [
+        "die1_000.png",
+        "die1_001.png",
+        "die1_002.png",
+        "die1_003.png",
+        "die1_004.png",
+        "die1_005.png",
+        "die1_006.png",
+        "die1_007.png",
+        "die1_008.png",
+        "die1_009.png",
+        "die1_010.png",
+        "die1_011.png",
+        "die1_012.png",
+        "die1_013.png",
+        "die1_014.png"
+      ],
+      "remap_masks": [
+        "die1_000_remap.png",
+        "die1_001_remap.png",
+        "die1_002_remap.png",
+        "die1_003_remap.png",
+        "die1_004_remap.png",
+        "die1_005_remap.png",
+        "die1_006_remap.png",
+        "die1_007_remap.png",
+        "die1_008_remap.png",
+        "die1_009_remap.png",
+        "die1_010_remap.png",
+        "die1_011_remap.png",
+        "die1_012_remap.png",
+        "die1_013_remap.png",
+        "die1_014_remap.png"
+      ],
+      "source_indices": [
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148
+      ],
+      "source_sequence": "Die1",
+      "reverse": false
+    },
+    "Die2": {
+      "label": "Die2",
+      "directional": false,
+      "facing_count": 1,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": null,
+      "frames": [
+        "die2_000.png",
+        "die2_001.png",
+        "die2_002.png",
+        "die2_003.png",
+        "die2_004.png",
+        "die2_005.png",
+        "die2_006.png",
+        "die2_007.png",
+        "die2_008.png",
+        "die2_009.png",
+        "die2_010.png",
+        "die2_011.png",
+        "die2_012.png",
+        "die2_013.png",
+        "die2_014.png"
+      ],
+      "remap_masks": [
+        "die2_000_remap.png",
+        "die2_001_remap.png",
+        "die2_002_remap.png",
+        "die2_003_remap.png",
+        "die2_004_remap.png",
+        "die2_005_remap.png",
+        "die2_006_remap.png",
+        "die2_007_remap.png",
+        "die2_008_remap.png",
+        "die2_009_remap.png",
+        "die2_010_remap.png",
+        "die2_011_remap.png",
+        "die2_012_remap.png",
+        "die2_013_remap.png",
+        "die2_014_remap.png"
+      ],
+      "source_indices": [
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "source_sequence": "Die2",
+      "reverse": false
+    },
+    "Cheer": {
+      "label": "Cheer",
+      "directional": false,
+      "facing_count": 1,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": null,
+      "frames": [
+        "cheer_000.png",
+        "cheer_001.png",
+        "cheer_002.png",
+        "cheer_003.png",
+        "cheer_004.png",
+        "cheer_005.png",
+        "cheer_006.png",
+        "cheer_007.png"
+      ],
+      "remap_masks": [
+        "cheer_000_remap.png",
+        "cheer_001_remap.png",
+        "cheer_002_remap.png",
+        "cheer_003_remap.png",
+        "cheer_004_remap.png",
+        "cheer_005_remap.png",
+        "cheer_006_remap.png",
+        "cheer_007_remap.png"
+      ],
+      "source_indices": [
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252
+      ],
+      "source_sequence": "Cheer",
+      "reverse": false
+    },
+    "Idle1": {
+      "label": "Idle1",
+      "directional": false,
+      "facing_count": 1,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": null,
+      "frames": [
+        "idle1_000.png",
+        "idle1_001.png",
+        "idle1_002.png",
+        "idle1_003.png",
+        "idle1_004.png",
+        "idle1_005.png",
+        "idle1_006.png",
+        "idle1_007.png",
+        "idle1_008.png",
+        "idle1_009.png",
+        "idle1_010.png",
+        "idle1_011.png",
+        "idle1_012.png",
+        "idle1_013.png",
+        "idle1_014.png"
+      ],
+      "remap_masks": [
+        "idle1_000_remap.png",
+        "idle1_001_remap.png",
+        "idle1_002_remap.png",
+        "idle1_003_remap.png",
+        "idle1_004_remap.png",
+        "idle1_005_remap.png",
+        "idle1_006_remap.png",
+        "idle1_007_remap.png",
+        "idle1_008_remap.png",
+        "idle1_009_remap.png",
+        "idle1_010_remap.png",
+        "idle1_011_remap.png",
+        "idle1_012_remap.png",
+        "idle1_013_remap.png",
+        "idle1_014_remap.png"
+      ],
+      "source_indices": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "source_sequence": "Idle1",
+      "reverse": false
+    },
+    "Idle2": {
+      "label": "Idle2",
+      "directional": false,
+      "facing_count": 1,
+      "rate_ms": 110,
+      "loop": true,
+      "directions": null,
+      "frames": [
+        "idle2_000.png",
+        "idle2_001.png",
+        "idle2_002.png",
+        "idle2_003.png",
+        "idle2_004.png",
+        "idle2_005.png",
+        "idle2_006.png",
+        "idle2_007.png",
+        "idle2_008.png",
+        "idle2_009.png",
+        "idle2_010.png",
+        "idle2_011.png",
+        "idle2_012.png",
+        "idle2_013.png",
+        "idle2_014.png"
+      ],
+      "remap_masks": [
+        "idle2_000_remap.png",
+        "idle2_001_remap.png",
+        "idle2_002_remap.png",
+        "idle2_003_remap.png",
+        "idle2_004_remap.png",
+        "idle2_005_remap.png",
+        "idle2_006_remap.png",
+        "idle2_007_remap.png",
+        "idle2_008_remap.png",
+        "idle2_009_remap.png",
+        "idle2_010_remap.png",
+        "idle2_011_remap.png",
+        "idle2_012_remap.png",
+        "idle2_013_remap.png",
+        "idle2_014_remap.png"
+      ],
+      "source_indices": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "source_sequence": "Idle2",
+      "reverse": false
+    }
+  }
+}

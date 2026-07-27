@@ -1,0 +1,807 @@
+{
+  "id": "CAFARM02",
+  "category": "building",
+  "name_token": "Name:CAFARM02",
+  "art_id": "CAFARM02",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 400,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAFARM02",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1627,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctfarm02.shp",
+          "folder": "isotemp",
+          "filename": "ctfarm02.shp",
+          "stem": "ctfarm02",
+          "extension": ".shp",
+          "size": 14496,
+          "sha1": "c11f1bc96d68de9749fe002806848e9b3b3fe626"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 523,
+          "pack": "ra2",
+          "relative_path": "isosnow/cafarm02.shp",
+          "folder": "isosnow",
+          "filename": "cafarm02.shp",
+          "stem": "cafarm02",
+          "extension": ".shp",
+          "size": 14496,
+          "sha1": "34d5ee801900b4bd98686e465a30484475ba0d50"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2714,
+          "pack": "ra2",
+          "relative_path": "isourb/cufarm02.shp",
+          "folder": "isourb",
+          "filename": "cufarm02.shp",
+          "stem": "cufarm02",
+          "extension": ".shp",
+          "size": 14496,
+          "sha1": "c11f1bc96d68de9749fe002806848e9b3b3fe626"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6095,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdfarm02.shp",
+          "folder": "isodes",
+          "filename": "cdfarm02.shp",
+          "stem": "cdfarm02",
+          "extension": ".shp",
+          "size": 14496,
+          "sha1": "c11f1bc96d68de9749fe002806848e9b3b3fe626"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8163,
+          "pack": "ra2md",
+          "relative_path": "isolun/clfarm02.shp",
+          "folder": "isolun",
+          "filename": "clfarm02.shp",
+          "stem": "clfarm02",
+          "extension": ".shp",
+          "size": 14496,
+          "sha1": "c11f1bc96d68de9749fe002806848e9b3b3fe626"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9244,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnfarm02.shp",
+          "folder": "isoubn",
+          "filename": "cnfarm02.shp",
+          "stem": "cnfarm02",
+          "extension": ".shp",
+          "size": 14496,
+          "sha1": "c11f1bc96d68de9749fe002806848e9b3b3fe626"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 5,
+    "occupy_height": 4,
+    "damage_fire_offsets": [
+      [
+        0.0,
+        19.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CAFARM02",
+      "Name": "Farm Silo",
+      "TechLevel": -1,
+      "Strength": 400,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "Selectable": false,
+      "BaseNormal": false
+    },
+    "raw_values": {
+      "UIName": "Name:CAFARM02",
+      "Name": "Farm Silo",
+      "TechLevel": "-1",
+      "Strength": "400",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "Selectable": "no",
+      "BaseNormal": "no"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CAFARM02",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21178,
+          "section": "CAFARM02",
+          "key": "UIName",
+          "value": "Name:CAFARM02"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14533,
+            "section": "CAFARM02",
+            "key": "UIName",
+            "value": "Name:CAFARM02"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21170,
+            "section": "CAFARM02",
+            "key": "UIName",
+            "value": "Name:CAFARM02"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Farm Silo",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21179,
+          "section": "CAFARM02",
+          "key": "Name",
+          "value": "Farm Silo"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14534,
+            "section": "CAFARM02",
+            "key": "Name",
+            "value": "RA2 Farm Silo"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21171,
+            "section": "CAFARM02",
+            "key": "Name",
+            "value": "Farm Silo"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21180,
+          "section": "CAFARM02",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14535,
+            "section": "CAFARM02",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21172,
+            "section": "CAFARM02",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "400",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21181,
+          "section": "CAFARM02",
+          "key": "Strength",
+          "value": "400"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14536,
+            "section": "CAFARM02",
+            "key": "Strength",
+            "value": "400"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21173,
+            "section": "CAFARM02",
+            "key": "Strength",
+            "value": "400"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21182,
+          "section": "CAFARM02",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14537,
+            "section": "CAFARM02",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21174,
+            "section": "CAFARM02",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21183,
+          "section": "CAFARM02",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14538,
+            "section": "CAFARM02",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21175,
+            "section": "CAFARM02",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 14539,
+          "section": "CAFARM02",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21185,
+          "section": "CAFARM02",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14540,
+            "section": "CAFARM02",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21177,
+            "section": "CAFARM02",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21186,
+          "section": "CAFARM02",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14541,
+            "section": "CAFARM02",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21178,
+            "section": "CAFARM02",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21187,
+          "section": "CAFARM02",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14542,
+            "section": "CAFARM02",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21179,
+            "section": "CAFARM02",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21188,
+          "section": "CAFARM02",
+          "key": "DebrisAnims",
+          "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14543,
+            "section": "CAFARM02",
+            "key": "DebrisAnims",
+            "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21180,
+            "section": "CAFARM02",
+            "key": "DebrisAnims",
+            "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21189,
+          "section": "CAFARM02",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14544,
+            "section": "CAFARM02",
+            "key": "MaxDebris",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21181,
+            "section": "CAFARM02",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21190,
+          "section": "CAFARM02",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14545,
+            "section": "CAFARM02",
+            "key": "MinDebris",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21182,
+            "section": "CAFARM02",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "Selectable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21191,
+          "section": "CAFARM02",
+          "key": "Selectable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14546,
+            "section": "CAFARM02",
+            "key": "Selectable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21183,
+            "section": "CAFARM02",
+            "key": "Selectable",
+            "value": "no"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 21193,
+          "section": "CAFARM02",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14548,
+            "section": "CAFARM02",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 21185,
+            "section": "CAFARM02",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "1x1",
+      "Height": 5,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "CanBeHidden": false,
+      "DamageFireOffset0": "0,19",
+      "OccupyHeight": 4
+    },
+    "raw_values": {
+      "Foundation": "1x1",
+      "Height": "5",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "CanBeHidden": "False",
+      "DamageFireOffset0": "0,19",
+      "OccupyHeight": "4"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6599,
+          "section": "CAFARM02",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 4806,
+            "section": "CAFARM02",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "Height": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6600,
+          "section": "CAFARM02",
+          "key": "Height",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 4807,
+            "section": "CAFARM02",
+            "key": "Height",
+            "value": "5"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6601,
+          "section": "CAFARM02",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 4808,
+            "section": "CAFARM02",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6602,
+          "section": "CAFARM02",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 4809,
+            "section": "CAFARM02",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6604,
+          "section": "CAFARM02",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 4811,
+            "section": "CAFARM02",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "0,19",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6605,
+          "section": "CAFARM02",
+          "key": "DamageFireOffset0",
+          "value": "0,19"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 4812,
+            "section": "CAFARM02",
+            "key": "DamageFireOffset0",
+            "value": "0,19"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6606,
+          "section": "CAFARM02",
+          "key": "OccupyHeight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 4813,
+            "section": "CAFARM02",
+            "key": "OccupyHeight",
+            "value": "4"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/building.gd" id="1_script"]
+[ext_resource type="Resource" path="res://assets/ra2_full/gaweat/shp_resource.tres" id="2_shp"]
+[ext_resource type="Texture2D" path="res://assets/ra2_full/gaweat/atlas.png" id="3_atlas"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_preview"]
+atlas = ExtResource("3_atlas")
+region = Rect2(0, 0, 154, 154)
+filter_clip = true
+
+[node name="ra2_gaweat" type="Node2D"]
+script = ExtResource("1_script")
+preset_building_id = "ra2_gaweat"
+auto_fit_ra2_visual = false
+external_shp_resource = ExtResource("2_shp")
+external_shp_healthy_frame = 0
+external_shp_damage_1_frame = 3
+external_shp_damage_2_frame = 4
+external_shp_destroyed_frame = 5
+editor_description = "RA2/YR 可视化建筑预制场景。直接调整 VisualRoot、Body、Weapon 和挂点。"
+
+[node name="VisualRoot" type="Node2D" parent="."]
+position = Vector2(0, -44.8800)
+scale = Vector2(1.217143, 1.217143)
+
+[node name="Body" type="Sprite2D" parent="VisualRoot"]
+texture = SubResource("AtlasTexture_preview")
+centered = true
+texture_filter = 1
+show_behind_parent = true
+
+[node name="Weapon" type="AnimatedSprite2D" parent="VisualRoot"]
+visible = false
+centered = true
+texture_filter = 1
+z_index = 2
+
+[node name="DamageSmokeAnchor" type="Marker2D" parent="."]
+position = Vector2(0, -38)
+
+[node name="ServiceAnchor" type="Marker2D" parent="."]
+position = Vector2(0, 28)

@@ -1,0 +1,3672 @@
+{
+  "id": "SHK",
+  "category": "infantry",
+  "name_token": "Name:SHK",
+  "art_id": "SHK",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAHAND"
+  ],
+  "tech_level": 5,
+  "cost": 500,
+  "strength": 130,
+  "armor": "Plate",
+  "speed": 4,
+  "sight": 6,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Infantry",
+  "weapons": {
+    "Primary": {
+      "id": "ElectricBolt",
+      "projectile": "InvisibleLow",
+      "warhead": "Shock",
+      "report": [
+        "TeslaTroopAttack"
+      ],
+      "values": {
+        "Damage": 50,
+        "ROF": 60,
+        "Range": 3,
+        "Speed": 100,
+        "Warhead": "Shock",
+        "Report": "TeslaTroopAttack",
+        "Projectile": "InvisibleLow",
+        "IsElectricBolt": true,
+        "AssaultAnim": "UCELEC"
+      },
+      "raw_values": {
+        "Damage": "50",
+        "ROF": "60",
+        "Range": "3",
+        "Speed": "100",
+        "Warhead": "Shock",
+        "Report": "TeslaTroopAttack",
+        "Projectile": "InvisibleLow",
+        "IsElectricBolt": "true",
+        "AssaultAnim": "UCELEC"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23857,
+            "section": "ElectricBolt",
+            "key": "Damage",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17088,
+              "section": "ElectricBolt",
+              "key": "Damage",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23849,
+              "section": "ElectricBolt",
+              "key": "Damage",
+              "value": "50"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23858,
+            "section": "ElectricBolt",
+            "key": "ROF",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17089,
+              "section": "ElectricBolt",
+              "key": "ROF",
+              "value": "60"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23850,
+              "section": "ElectricBolt",
+              "key": "ROF",
+              "value": "60"
+            }
+          ]
+        },
+        "Range": {
+          "value": "3",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23859,
+            "section": "ElectricBolt",
+            "key": "Range",
+            "value": "3"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17090,
+              "section": "ElectricBolt",
+              "key": "Range",
+              "value": "3"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23851,
+              "section": "ElectricBolt",
+              "key": "Range",
+              "value": "3"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23860,
+            "section": "ElectricBolt",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17091,
+              "section": "ElectricBolt",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23852,
+              "section": "ElectricBolt",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Shock",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23861,
+            "section": "ElectricBolt",
+            "key": "Warhead",
+            "value": "Shock"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17092,
+              "section": "ElectricBolt",
+              "key": "Warhead",
+              "value": "Shock"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23853,
+              "section": "ElectricBolt",
+              "key": "Warhead",
+              "value": "Shock"
+            }
+          ]
+        },
+        "Report": {
+          "value": "TeslaTroopAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23862,
+            "section": "ElectricBolt",
+            "key": "Report",
+            "value": "TeslaTroopAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17093,
+              "section": "ElectricBolt",
+              "key": "Report",
+              "value": "TeslaTroopAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23854,
+              "section": "ElectricBolt",
+              "key": "Report",
+              "value": "TeslaTroopAttack"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23863,
+            "section": "ElectricBolt",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17094,
+              "section": "ElectricBolt",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23855,
+              "section": "ElectricBolt",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "IsElectricBolt": {
+          "value": "true",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23864,
+            "section": "ElectricBolt",
+            "key": "IsElectricBolt",
+            "value": "true"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17095,
+              "section": "ElectricBolt",
+              "key": "IsElectricBolt",
+              "value": "true"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23856,
+              "section": "ElectricBolt",
+              "key": "IsElectricBolt",
+              "value": "true"
+            }
+          ]
+        },
+        "AssaultAnim": {
+          "value": "UCELEC",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23865,
+            "section": "ElectricBolt",
+            "key": "AssaultAnim",
+            "value": "UCELEC"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17096,
+              "section": "ElectricBolt",
+              "key": "AssaultAnim",
+              "value": "UCELEC"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23857,
+              "section": "ElectricBolt",
+              "key": "AssaultAnim",
+              "value": "UCELEC"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "AssaultBolt",
+      "projectile": "InvisibleLow",
+      "warhead": "ElectricAssault",
+      "report": [
+        "TeslaTroopRechargeCoil"
+      ],
+      "values": {
+        "Damage": 10,
+        "ROF": 25,
+        "Range": 1.83,
+        "Speed": 100,
+        "Warhead": "ElectricAssault",
+        "Report": "TeslaTroopRechargeCoil",
+        "Projectile": "InvisibleLow",
+        "IsElectricBolt": true,
+        "IsAlternateColor": true
+      },
+      "raw_values": {
+        "Damage": "10",
+        "ROF": "25",
+        "Range": "1.83",
+        "Speed": "100",
+        "Warhead": "ElectricAssault",
+        "Report": "TeslaTroopRechargeCoil",
+        "Projectile": "InvisibleLow",
+        "IsElectricBolt": "true",
+        "IsAlternateColor": "true"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "10",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23880,
+            "section": "AssaultBolt",
+            "key": "Damage",
+            "value": "10"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17111,
+              "section": "AssaultBolt",
+              "key": "Damage",
+              "value": "10"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23872,
+              "section": "AssaultBolt",
+              "key": "Damage",
+              "value": "10"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23881,
+            "section": "AssaultBolt",
+            "key": "ROF",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17112,
+              "section": "AssaultBolt",
+              "key": "ROF",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23873,
+              "section": "AssaultBolt",
+              "key": "ROF",
+              "value": "25"
+            }
+          ]
+        },
+        "Range": {
+          "value": "1.83",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23882,
+            "section": "AssaultBolt",
+            "key": "Range",
+            "value": "1.83"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17113,
+              "section": "AssaultBolt",
+              "key": "Range",
+              "value": "1.83"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23874,
+              "section": "AssaultBolt",
+              "key": "Range",
+              "value": "1.83"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23883,
+            "section": "AssaultBolt",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17114,
+              "section": "AssaultBolt",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23875,
+              "section": "AssaultBolt",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "ElectricAssault",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23884,
+            "section": "AssaultBolt",
+            "key": "Warhead",
+            "value": "ElectricAssault"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17115,
+              "section": "AssaultBolt",
+              "key": "Warhead",
+              "value": "ElectricAssault"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23876,
+              "section": "AssaultBolt",
+              "key": "Warhead",
+              "value": "ElectricAssault"
+            }
+          ]
+        },
+        "Report": {
+          "value": "TeslaTroopRechargeCoil",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23885,
+            "section": "AssaultBolt",
+            "key": "Report",
+            "value": "TeslaTroopRechargeCoil"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17116,
+              "section": "AssaultBolt",
+              "key": "Report",
+              "value": "TeslaTroopRechargeCoil"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23877,
+              "section": "AssaultBolt",
+              "key": "Report",
+              "value": "TeslaTroopRechargeCoil"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23886,
+            "section": "AssaultBolt",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17117,
+              "section": "AssaultBolt",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23878,
+              "section": "AssaultBolt",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "IsElectricBolt": {
+          "value": "true",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23887,
+            "section": "AssaultBolt",
+            "key": "IsElectricBolt",
+            "value": "true"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17118,
+              "section": "AssaultBolt",
+              "key": "IsElectricBolt",
+              "value": "true"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23879,
+              "section": "AssaultBolt",
+              "key": "IsElectricBolt",
+              "value": "true"
+            }
+          ]
+        },
+        "IsAlternateColor": {
+          "value": "true",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23888,
+            "section": "AssaultBolt",
+            "key": "IsAlternateColor",
+            "value": "true"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17119,
+              "section": "AssaultBolt",
+              "key": "IsAlternateColor",
+              "value": "true"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23880,
+              "section": "AssaultBolt",
+              "key": "IsAlternateColor",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "ElectricBoltE",
+      "projectile": "Electricbounce",
+      "warhead": "Shock",
+      "report": [
+        "TeslaTroopEliteAttack"
+      ],
+      "values": {
+        "Damage": 50,
+        "ROF": 40,
+        "Range": 5,
+        "Speed": 100,
+        "Warhead": "Shock",
+        "Report": "TeslaTroopEliteAttack",
+        "Projectile": "Electricbounce",
+        "IsElectricBolt": true,
+        "AssaultAnim": "UCELEC"
+      },
+      "raw_values": {
+        "Damage": "50",
+        "ROF": "40",
+        "Range": "5",
+        "Speed": "100",
+        "Warhead": "Shock",
+        "Report": "TeslaTroopEliteAttack",
+        "Projectile": "Electricbounce",
+        "IsElectricBolt": "true",
+        "AssaultAnim": "UCELEC"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24873,
+            "section": "ElectricBoltE",
+            "key": "Damage",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17808,
+              "section": "ElectricBoltE",
+              "key": "Damage",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24865,
+              "section": "ElectricBoltE",
+              "key": "Damage",
+              "value": "50"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "40",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24874,
+            "section": "ElectricBoltE",
+            "key": "ROF",
+            "value": "40"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17809,
+              "section": "ElectricBoltE",
+              "key": "ROF",
+              "value": "40"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24866,
+              "section": "ElectricBoltE",
+              "key": "ROF",
+              "value": "40"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24875,
+            "section": "ElectricBoltE",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17810,
+              "section": "ElectricBoltE",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24867,
+              "section": "ElectricBoltE",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24876,
+            "section": "ElectricBoltE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17811,
+              "section": "ElectricBoltE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24868,
+              "section": "ElectricBoltE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Shock",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24877,
+            "section": "ElectricBoltE",
+            "key": "Warhead",
+            "value": "Shock"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17812,
+              "section": "ElectricBoltE",
+              "key": "Warhead",
+              "value": "Shock"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24869,
+              "section": "ElectricBoltE",
+              "key": "Warhead",
+              "value": "Shock"
+            }
+          ]
+        },
+        "Report": {
+          "value": "TeslaTroopEliteAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24878,
+            "section": "ElectricBoltE",
+            "key": "Report",
+            "value": "TeslaTroopEliteAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17813,
+              "section": "ElectricBoltE",
+              "key": "Report",
+              "value": "TeslaTroopEliteAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24870,
+              "section": "ElectricBoltE",
+              "key": "Report",
+              "value": "TeslaTroopEliteAttack"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "Electricbounce",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24879,
+            "section": "ElectricBoltE",
+            "key": "Projectile",
+            "value": "Electricbounce"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17814,
+              "section": "ElectricBoltE",
+              "key": "Projectile",
+              "value": "Electricbounce"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24871,
+              "section": "ElectricBoltE",
+              "key": "Projectile",
+              "value": "Electricbounce"
+            }
+          ]
+        },
+        "IsElectricBolt": {
+          "value": "true",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24880,
+            "section": "ElectricBoltE",
+            "key": "IsElectricBolt",
+            "value": "true"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17815,
+              "section": "ElectricBoltE",
+              "key": "IsElectricBolt",
+              "value": "true"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24872,
+              "section": "ElectricBoltE",
+              "key": "IsElectricBolt",
+              "value": "true"
+            }
+          ]
+        },
+        "AssaultAnim": {
+          "value": "UCELEC",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24881,
+            "section": "ElectricBoltE",
+            "key": "AssaultAnim",
+            "value": "UCELEC"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17816,
+              "section": "ElectricBoltE",
+              "key": "AssaultAnim",
+              "value": "UCELEC"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24873,
+              "section": "ElectricBoltE",
+              "key": "AssaultAnim",
+              "value": "UCELEC"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "TeslaTroopSelect"
+    ],
+    "VoiceMove": [
+      "TeslaTroopMove"
+    ],
+    "VoiceAttack": [
+      "TeslaTroopAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "TeslaTroopFear"
+    ],
+    "VoiceSpecialAttack": [
+      "TeslaTroopMove"
+    ],
+    "DieSound": [
+      "TeslaTroopDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "SHK",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 268,
+          "pack": "ra2",
+          "relative_path": "conquer/shk.shp",
+          "folder": "conquer",
+          "filename": "shk.shp",
+          "stem": "shk",
+          "extension": ".shp",
+          "size": 164128,
+          "sha1": "47b511980da90c570a1b018fc202f0ccf4c7343b"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 268,
+          "pack": "ra2",
+          "relative_path": "conquer/shk.shp",
+          "folder": "conquer",
+          "filename": "shk.shp",
+          "stem": "shk",
+          "extension": ".shp",
+          "size": 164128,
+          "sha1": "47b511980da90c570a1b018fc202f0ccf4c7343b"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 268,
+          "pack": "ra2",
+          "relative_path": "conquer/shk.shp",
+          "folder": "conquer",
+          "filename": "shk.shp",
+          "stem": "shk",
+          "extension": ".shp",
+          "size": 164128,
+          "sha1": "47b511980da90c570a1b018fc202f0ccf4c7343b"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 268,
+          "pack": "ra2",
+          "relative_path": "conquer/shk.shp",
+          "folder": "conquer",
+          "filename": "shk.shp",
+          "stem": "shk",
+          "extension": ".shp",
+          "size": 164128,
+          "sha1": "47b511980da90c570a1b018fc202f0ccf4c7343b"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 268,
+          "pack": "ra2",
+          "relative_path": "conquer/shk.shp",
+          "folder": "conquer",
+          "filename": "shk.shp",
+          "stem": "shk",
+          "extension": ".shp",
+          "size": 164128,
+          "sha1": "47b511980da90c570a1b018fc202f0ccf4c7343b"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 268,
+          "pack": "ra2",
+          "relative_path": "conquer/shk.shp",
+          "folder": "conquer",
+          "filename": "shk.shp",
+          "stem": "shk",
+          "extension": ".shp",
+          "size": 164128,
+          "sha1": "47b511980da90c570a1b018fc202f0ccf4c7343b"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "ConSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 86,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122
+          ],
+          "1": [
+            116
+          ],
+          "2": [
+            110
+          ],
+          "3": [
+            104
+          ],
+          "4": [
+            98
+          ],
+          "5": [
+            92
+          ],
+          "6": [
+            86
+          ],
+          "7": [
+            128
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 164,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205
+          ],
+          "1": [
+            194,
+            195,
+            196,
+            197,
+            198,
+            199
+          ],
+          "2": [
+            188,
+            189,
+            190,
+            191,
+            192,
+            193
+          ],
+          "3": [
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "4": [
+            176,
+            177,
+            178,
+            179,
+            180,
+            181
+          ],
+          "5": [
+            170,
+            171,
+            172,
+            173,
+            174,
+            175
+          ],
+          "6": [
+            164,
+            165,
+            166,
+            167,
+            168,
+            169
+          ],
+          "7": [
+            206,
+            207,
+            208,
+            209,
+            210,
+            211
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 260,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            272,
+            273
+          ],
+          "1": [
+            270,
+            271
+          ],
+          "2": [
+            268,
+            269
+          ],
+          "3": [
+            266,
+            267
+          ],
+          "4": [
+            264,
+            265
+          ],
+          "5": [
+            262,
+            263
+          ],
+          "6": [
+            260,
+            261
+          ],
+          "7": [
+            274,
+            275
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 86,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "1": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "2": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "3": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "4": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "5": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "6": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "7": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 276,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            288,
+            289
+          ],
+          "1": [
+            286,
+            287
+          ],
+          "2": [
+            284,
+            285
+          ],
+          "3": [
+            282,
+            283
+          ],
+          "4": [
+            280,
+            281
+          ],
+          "5": [
+            278,
+            279
+          ],
+          "6": [
+            276,
+            277
+          ],
+          "7": [
+            290,
+            291
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 212,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            248,
+            249,
+            250,
+            251,
+            252,
+            253
+          ],
+          "1": [
+            242,
+            243,
+            244,
+            245,
+            246,
+            247
+          ],
+          "2": [
+            236,
+            237,
+            238,
+            239,
+            240,
+            241
+          ],
+          "3": [
+            230,
+            231,
+            232,
+            233,
+            234,
+            235
+          ],
+          "4": [
+            224,
+            225,
+            226,
+            227,
+            228,
+            229
+          ],
+          "5": [
+            218,
+            219,
+            220,
+            221,
+            222,
+            223
+          ],
+          "6": [
+            212,
+            213,
+            214,
+            215,
+            216,
+            217
+          ],
+          "7": [
+            254,
+            255,
+            256,
+            257,
+            258,
+            259
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 134,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 149,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 293,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            293,
+            294,
+            295,
+            296,
+            297,
+            298,
+            299,
+            300
+          ]
+        }
+      },
+      "Paradrop": {
+        "name": "Paradrop",
+        "start": 292,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            292
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:SHK",
+      "Name": "Shock Trooper",
+      "Category": "Soldier",
+      "Primary": "ElectricBolt",
+      "Secondary": "AssaultBolt",
+      "Assaulter": false,
+      "Prerequisite": "NAHAND",
+      "CrushSound": "InfantrySquish",
+      "Crushable": false,
+      "Strength": 130,
+      "Armor": "Plate",
+      "TechLevel": 5,
+      "Pip": "white",
+      "Sight": 6,
+      "Speed": 4,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "Cost": 500,
+      "Soylent": 250,
+      "Points": 5,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "TeslaTroopSelect",
+      "VoiceMove": "TeslaTroopMove",
+      "VoiceAttack": "TeslaTroopAttackCommand",
+      "VoiceFeedback": "TeslaTroopFear",
+      "VoiceSpecialAttack": "TeslaTroopMove",
+      "DieSound": "TeslaTroopDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "Infantry",
+      "ThreatPosed": 20,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ImmuneToVeins": true,
+      "Size": 1,
+      "AllowedToStartInMultiplayer": false,
+      "ElitePrimary": "ElectricBoltE",
+      "IFVMode": 6
+    },
+    "raw_values": {
+      "UIName": "Name:SHK",
+      "Name": "Shock Trooper",
+      "Category": "Soldier",
+      "Primary": "ElectricBolt",
+      "Secondary": "AssaultBolt",
+      "Assaulter": "no",
+      "Prerequisite": "NAHAND",
+      "CrushSound": "InfantrySquish",
+      "Crushable": "no",
+      "Strength": "130",
+      "Armor": "Plate",
+      "TechLevel": "5",
+      "Pip": "white",
+      "Sight": "6",
+      "Speed": "4",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "Cost": "500",
+      "Soylent": "250",
+      "Points": "5",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "TeslaTroopSelect",
+      "VoiceMove": "TeslaTroopMove",
+      "VoiceAttack": "TeslaTroopAttackCommand",
+      "VoiceFeedback": "TeslaTroopFear",
+      "VoiceSpecialAttack": "TeslaTroopMove",
+      "DieSound": "TeslaTroopDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "Infantry",
+      "ThreatPosed": "20",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ImmuneToVeins": "yes",
+      "Size": "1",
+      "AllowedToStartInMultiplayer": "no",
+      "ElitePrimary": "ElectricBoltE",
+      "IFVMode": "6"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:SHK",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4508,
+          "section": "SHK",
+          "key": "UIName",
+          "value": "Name:SHK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3302,
+            "section": "SHK",
+            "key": "UIName",
+            "value": "Name:SHK"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4507,
+            "section": "SHK",
+            "key": "UIName",
+            "value": "Name:SHK"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Shock Trooper",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4509,
+          "section": "SHK",
+          "key": "Name",
+          "value": "Shock Trooper"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3303,
+            "section": "SHK",
+            "key": "Name",
+            "value": "Shock Trooper"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4508,
+            "section": "SHK",
+            "key": "Name",
+            "value": "Shock Trooper"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4510,
+          "section": "SHK",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3304,
+            "section": "SHK",
+            "key": "Category",
+            "value": "Soldier"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4509,
+            "section": "SHK",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "ElectricBolt",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4511,
+          "section": "SHK",
+          "key": "Primary",
+          "value": "ElectricBolt"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3305,
+            "section": "SHK",
+            "key": "Primary",
+            "value": "ElectricBolt"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4510,
+            "section": "SHK",
+            "key": "Primary",
+            "value": "ElectricBolt"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "AssaultBolt",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4512,
+          "section": "SHK",
+          "key": "Secondary",
+          "value": "AssaultBolt"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3306,
+            "section": "SHK",
+            "key": "Secondary",
+            "value": "AssaultBolt"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4511,
+            "section": "SHK",
+            "key": "Secondary",
+            "value": "AssaultBolt"
+          }
+        ]
+      },
+      "Assaulter": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4513,
+          "section": "SHK",
+          "key": "Assaulter",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3307,
+            "section": "SHK",
+            "key": "Assaulter",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4512,
+            "section": "SHK",
+            "key": "Assaulter",
+            "value": "no"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAHAND",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4514,
+          "section": "SHK",
+          "key": "Prerequisite",
+          "value": "NAHAND"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3308,
+            "section": "SHK",
+            "key": "Prerequisite",
+            "value": "NAHAND"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4513,
+            "section": "SHK",
+            "key": "Prerequisite",
+            "value": "NAHAND"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4515,
+          "section": "SHK",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3309,
+            "section": "SHK",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4514,
+            "section": "SHK",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Crushable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4516,
+          "section": "SHK",
+          "key": "Crushable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3310,
+            "section": "SHK",
+            "key": "Crushable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4515,
+            "section": "SHK",
+            "key": "Crushable",
+            "value": "no"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "130",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4517,
+          "section": "SHK",
+          "key": "Strength",
+          "value": "130"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3311,
+            "section": "SHK",
+            "key": "Strength",
+            "value": "130"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4516,
+            "section": "SHK",
+            "key": "Strength",
+            "value": "130"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "Plate",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4518,
+          "section": "SHK",
+          "key": "Armor",
+          "value": "Plate"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3312,
+            "section": "SHK",
+            "key": "Armor",
+            "value": "Plate"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4517,
+            "section": "SHK",
+            "key": "Armor",
+            "value": "Plate"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4519,
+          "section": "SHK",
+          "key": "TechLevel",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3313,
+            "section": "SHK",
+            "key": "TechLevel",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4518,
+            "section": "SHK",
+            "key": "TechLevel",
+            "value": "5"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "white",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4520,
+          "section": "SHK",
+          "key": "Pip",
+          "value": "white"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3314,
+            "section": "SHK",
+            "key": "Pip",
+            "value": "white"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4519,
+            "section": "SHK",
+            "key": "Pip",
+            "value": "white"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4521,
+          "section": "SHK",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3315,
+            "section": "SHK",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4520,
+            "section": "SHK",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4522,
+          "section": "SHK",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3316,
+            "section": "SHK",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4521,
+            "section": "SHK",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4523,
+          "section": "SHK",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3317,
+            "section": "SHK",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4522,
+            "section": "SHK",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4524,
+          "section": "SHK",
+          "key": "Cost",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3318,
+            "section": "SHK",
+            "key": "Cost",
+            "value": "500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4523,
+            "section": "SHK",
+            "key": "Cost",
+            "value": "500"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "250",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4525,
+          "section": "SHK",
+          "key": "Soylent",
+          "value": "250"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3319,
+            "section": "SHK",
+            "key": "Soylent",
+            "value": "125"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4524,
+            "section": "SHK",
+            "key": "Soylent",
+            "value": "250"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4526,
+          "section": "SHK",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3320,
+            "section": "SHK",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4525,
+            "section": "SHK",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4527,
+          "section": "SHK",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3321,
+            "section": "SHK",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4526,
+            "section": "SHK",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "TeslaTroopSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4528,
+          "section": "SHK",
+          "key": "VoiceSelect",
+          "value": "TeslaTroopSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3322,
+            "section": "SHK",
+            "key": "VoiceSelect",
+            "value": "TeslaTroopSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4527,
+            "section": "SHK",
+            "key": "VoiceSelect",
+            "value": "TeslaTroopSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "TeslaTroopMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4529,
+          "section": "SHK",
+          "key": "VoiceMove",
+          "value": "TeslaTroopMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3323,
+            "section": "SHK",
+            "key": "VoiceMove",
+            "value": "TeslaTroopMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4528,
+            "section": "SHK",
+            "key": "VoiceMove",
+            "value": "TeslaTroopMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "TeslaTroopAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4530,
+          "section": "SHK",
+          "key": "VoiceAttack",
+          "value": "TeslaTroopAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3324,
+            "section": "SHK",
+            "key": "VoiceAttack",
+            "value": "TeslaTroopAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4529,
+            "section": "SHK",
+            "key": "VoiceAttack",
+            "value": "TeslaTroopAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "TeslaTroopFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4531,
+          "section": "SHK",
+          "key": "VoiceFeedback",
+          "value": "TeslaTroopFear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3325,
+            "section": "SHK",
+            "key": "VoiceFeedback",
+            "value": "TeslaTroopFear"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4530,
+            "section": "SHK",
+            "key": "VoiceFeedback",
+            "value": "TeslaTroopFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "TeslaTroopMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4532,
+          "section": "SHK",
+          "key": "VoiceSpecialAttack",
+          "value": "TeslaTroopMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3326,
+            "section": "SHK",
+            "key": "VoiceSpecialAttack",
+            "value": "TeslaTroopMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4531,
+            "section": "SHK",
+            "key": "VoiceSpecialAttack",
+            "value": "TeslaTroopMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "TeslaTroopDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4533,
+          "section": "SHK",
+          "key": "DieSound",
+          "value": "TeslaTroopDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3327,
+            "section": "SHK",
+            "key": "DieSound",
+            "value": "TeslaTroopDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4532,
+            "section": "SHK",
+            "key": "DieSound",
+            "value": "TeslaTroopDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4534,
+          "section": "SHK",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3328,
+            "section": "SHK",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4533,
+            "section": "SHK",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4535,
+          "section": "SHK",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3329,
+            "section": "SHK",
+            "key": "PhysicalSize",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4534,
+            "section": "SHK",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4536,
+          "section": "SHK",
+          "key": "MovementZone",
+          "value": "Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3330,
+            "section": "SHK",
+            "key": "MovementZone",
+            "value": "Infantry"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4535,
+            "section": "SHK",
+            "key": "MovementZone",
+            "value": "Infantry"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4538,
+          "section": "SHK",
+          "key": "ThreatPosed",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3332,
+            "section": "SHK",
+            "key": "ThreatPosed",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4537,
+            "section": "SHK",
+            "key": "ThreatPosed",
+            "value": "20"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4539,
+          "section": "SHK",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3333,
+            "section": "SHK",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4538,
+            "section": "SHK",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4540,
+          "section": "SHK",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3334,
+            "section": "SHK",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4539,
+            "section": "SHK",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4541,
+          "section": "SHK",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3335,
+            "section": "SHK",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4540,
+            "section": "SHK",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4542,
+          "section": "SHK",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3336,
+            "section": "SHK",
+            "key": "Size",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4541,
+            "section": "SHK",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4543,
+          "section": "SHK",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3337,
+            "section": "SHK",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4542,
+            "section": "SHK",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "ElectricBoltE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4544,
+          "section": "SHK",
+          "key": "ElitePrimary",
+          "value": "ElectricBoltE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3338,
+            "section": "SHK",
+            "key": "ElitePrimary",
+            "value": "ElectricBoltE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4543,
+            "section": "SHK",
+            "key": "ElitePrimary",
+            "value": "ElectricBoltE"
+          }
+        ]
+      },
+      "IFVMode": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4545,
+          "section": "SHK",
+          "key": "IFVMode",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 3339,
+            "section": "SHK",
+            "key": "IFVMode",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4544,
+            "section": "SHK",
+            "key": "IFVMode",
+            "value": "6"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "SHKICON",
+      "AltCameo": "SHKUICO",
+      "Sequence": "ConSequence",
+      "Crawls": true,
+      "Remapable": true,
+      "FireUp": 2,
+      "PrimaryFireFLH": "100,-25,135",
+      "SecondaryFireFLH": "100,-25,135"
+    },
+    "raw_values": {
+      "Cameo": "SHKICON",
+      "AltCameo": "SHKUICO",
+      "Sequence": "ConSequence",
+      "Crawls": "yes",
+      "Remapable": "yes",
+      "FireUp": "2",
+      "PrimaryFireFLH": "100,-25,135",
+      "SecondaryFireFLH": "100,-25,135"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "SHKICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 194,
+          "section": "SHK",
+          "key": "Cameo",
+          "value": "SHKICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 159,
+            "section": "SHK",
+            "key": "Cameo",
+            "value": "SHKICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "SHKUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 195,
+          "section": "SHK",
+          "key": "AltCameo",
+          "value": "SHKUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 160,
+            "section": "SHK",
+            "key": "AltCameo",
+            "value": "SHKUICO"
+          }
+        ]
+      },
+      "Sequence": {
+        "value": "ConSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 196,
+          "section": "SHK",
+          "key": "Sequence",
+          "value": "ConSequence"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 161,
+            "section": "SHK",
+            "key": "Sequence",
+            "value": "ConSequence"
+          }
+        ]
+      },
+      "Crawls": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 197,
+          "section": "SHK",
+          "key": "Crawls",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 162,
+            "section": "SHK",
+            "key": "Crawls",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 198,
+          "section": "SHK",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 163,
+            "section": "SHK",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "FireUp": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 199,
+          "section": "SHK",
+          "key": "FireUp",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 164,
+            "section": "SHK",
+            "key": "FireUp",
+            "value": "2"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "100,-25,135",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 200,
+          "section": "SHK",
+          "key": "PrimaryFireFLH",
+          "value": "100,-25,135"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 165,
+            "section": "SHK",
+            "key": "PrimaryFireFLH",
+            "value": "100,-25,135"
+          }
+        ]
+      },
+      "SecondaryFireFLH": {
+        "value": "100,-25,135",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 201,
+          "section": "SHK",
+          "key": "SecondaryFireFLH",
+          "value": "100,-25,135"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 166,
+            "section": "SHK",
+            "key": "SecondaryFireFLH",
+            "value": "100,-25,135"
+          }
+        ]
+      }
+    }
+  }
+}

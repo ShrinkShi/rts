@@ -1,0 +1,873 @@
+{
+  "id": "TSTLAMP",
+  "category": "building",
+  "name_token": "AlphaLightPost",
+  "art_id": "GALITE",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 600,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "GALITE",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 4914,
+          "pack": "ra2",
+          "relative_path": "snow/galite.shp",
+          "folder": "snow",
+          "filename": "galite.shp",
+          "stem": "galite",
+          "extension": ".shp",
+          "size": 1776,
+          "sha1": "3728a41c19799184d1497173230ec428925b46ff"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 0,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "AlphaLightPost",
+      "Image": "GALITE",
+      "Strength": 600,
+      "Armor": "wood",
+      "TechLevel": -1,
+      "Nominal": true,
+      "Sight": 0,
+      "Points": 30,
+      "Power": 0,
+      "Crewed": false,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 1,
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys",
+      "Insignificant": true,
+      "AlphaImage": "ALPHATST"
+    },
+    "raw_values": {
+      "Name": "AlphaLightPost",
+      "Image": "GALITE",
+      "Strength": "600",
+      "Armor": "wood",
+      "TechLevel": "-1",
+      "Nominal": "yes",
+      "Sight": "0",
+      "Points": "30",
+      "Power": "0",
+      "Crewed": "no",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "1",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys",
+      "Insignificant": "yes",
+      "AlphaImage": "ALPHATST"
+    },
+    "provenance": {
+      "Name": {
+        "value": "AlphaLightPost",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17215,
+          "section": "TSTLAMP",
+          "key": "Name",
+          "value": "AlphaLightPost"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9468,
+            "section": "TSTLAMP",
+            "key": "Name",
+            "value": "AlphaLightPost"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17207,
+            "section": "TSTLAMP",
+            "key": "Name",
+            "value": "AlphaLightPost"
+          }
+        ]
+      },
+      "Image": {
+        "value": "GALITE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17216,
+          "section": "TSTLAMP",
+          "key": "Image",
+          "value": "GALITE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9469,
+            "section": "TSTLAMP",
+            "key": "Image",
+            "value": "GALITE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17208,
+            "section": "TSTLAMP",
+            "key": "Image",
+            "value": "GALITE"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17217,
+          "section": "TSTLAMP",
+          "key": "Strength",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9470,
+            "section": "TSTLAMP",
+            "key": "Strength",
+            "value": "600"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17209,
+            "section": "TSTLAMP",
+            "key": "Strength",
+            "value": "600"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17218,
+          "section": "TSTLAMP",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9471,
+            "section": "TSTLAMP",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17210,
+            "section": "TSTLAMP",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17219,
+          "section": "TSTLAMP",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9472,
+            "section": "TSTLAMP",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17211,
+            "section": "TSTLAMP",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17220,
+          "section": "TSTLAMP",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9473,
+            "section": "TSTLAMP",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17212,
+            "section": "TSTLAMP",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17221,
+          "section": "TSTLAMP",
+          "key": "Sight",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9474,
+            "section": "TSTLAMP",
+            "key": "Sight",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17213,
+            "section": "TSTLAMP",
+            "key": "Sight",
+            "value": "0"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17222,
+          "section": "TSTLAMP",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9475,
+            "section": "TSTLAMP",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17214,
+            "section": "TSTLAMP",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "Power": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17223,
+          "section": "TSTLAMP",
+          "key": "Power",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9476,
+            "section": "TSTLAMP",
+            "key": "Power",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17215,
+            "section": "TSTLAMP",
+            "key": "Power",
+            "value": "0"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17224,
+          "section": "TSTLAMP",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9477,
+            "section": "TSTLAMP",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17216,
+            "section": "TSTLAMP",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17225,
+          "section": "TSTLAMP",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9478,
+            "section": "TSTLAMP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17217,
+            "section": "TSTLAMP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17226,
+          "section": "TSTLAMP",
+          "key": "MaxDebris",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9479,
+            "section": "TSTLAMP",
+            "key": "MaxDebris",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17218,
+            "section": "TSTLAMP",
+            "key": "MaxDebris",
+            "value": "1"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17227,
+          "section": "TSTLAMP",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9480,
+            "section": "TSTLAMP",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17219,
+            "section": "TSTLAMP",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17228,
+          "section": "TSTLAMP",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9481,
+            "section": "TSTLAMP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17220,
+            "section": "TSTLAMP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17229,
+          "section": "TSTLAMP",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9482,
+            "section": "TSTLAMP",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17221,
+            "section": "TSTLAMP",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "AlphaImage": {
+        "value": "ALPHATST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17230,
+          "section": "TSTLAMP",
+          "key": "AlphaImage",
+          "value": "ALPHATST"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9483,
+            "section": "TSTLAMP",
+            "key": "AlphaImage",
+            "value": "ALPHATST"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17222,
+            "section": "TSTLAMP",
+            "key": "AlphaImage",
+            "value": "ALPHATST"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "LITEICON",
+      "Image": "GALITE",
+      "Remapable": true,
+      "Foundation": "1x1",
+      "TerrainPalette": true,
+      "NewTheater": true,
+      "ExtraDamageStage": false,
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Cameo": "LITEICON",
+      "Image": "GALITE",
+      "Remapable": "yes",
+      "Foundation": "1x1",
+      "TerrainPalette": "yes",
+      "NewTheater": "yes",
+      "ExtraDamageStage": "false",
+      "CanBeHidden": "False"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "LITEICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4317,
+          "section": "GALITE",
+          "key": "Cameo",
+          "value": "LITEICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2831,
+            "section": "GALITE",
+            "key": "Cameo",
+            "value": "LITEICON"
+          }
+        ]
+      },
+      "Image": {
+        "value": "GALITE",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4318,
+          "section": "GALITE",
+          "key": "Image",
+          "value": "GALITE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2832,
+            "section": "GALITE",
+            "key": "Image",
+            "value": "GALITE"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4319,
+          "section": "GALITE",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2833,
+            "section": "GALITE",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4320,
+          "section": "GALITE",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2834,
+            "section": "GALITE",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "TerrainPalette": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4321,
+          "section": "GALITE",
+          "key": "TerrainPalette",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2835,
+            "section": "GALITE",
+            "key": "TerrainPalette",
+            "value": "yes"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4322,
+          "section": "GALITE",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2836,
+            "section": "GALITE",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "ExtraDamageStage": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4323,
+          "section": "GALITE",
+          "key": "ExtraDamageStage",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2837,
+            "section": "GALITE",
+            "key": "ExtraDamageStage",
+            "value": "false"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4326,
+          "section": "GALITE",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2840,
+            "section": "GALITE",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      }
+    }
+  }
+}

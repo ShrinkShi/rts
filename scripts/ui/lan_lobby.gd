@@ -233,14 +233,14 @@ func _render_lobby(state):
             row.add_child(color)
             color.item_selected.connect(func(item_index, slot_index = index, option = color, ai = editable_ai): _patch_slot(slot_index, {"color": str(option.get_item_metadata(item_index))}, ai))
 
-            var position = OptionButton.new()
+            var position_option = OptionButton.new()
             for position_index in range(state.get("slots", []).size()):
-                position.add_item(str(position_index + 1))
-                position.set_item_metadata(position_index, position_index)
-            _select_metadata(position, int(slot.get("position", index)))
-            UIFactory.style_compact_option(position, 46)
-            row.add_child(position)
-            position.item_selected.connect(func(item_index, slot_index = index, option = position, ai = editable_ai): _patch_slot(slot_index, {"position": int(option.get_item_metadata(item_index))}, ai))
+                position_option.add_item(str(position_index + 1))
+                position_option.set_item_metadata(position_index, position_index)
+            _select_metadata(position_option, int(slot.get("position", index)))
+            UIFactory.style_compact_option(position_option, 46)
+            row.add_child(position_option)
+            position_option.item_selected.connect(func(item_index, slot_index = index, option = position_option, ai = editable_ai): _patch_slot(slot_index, {"position": int(option.get_item_metadata(item_index))}, ai))
 
             if editable_ai:
                 var difficulty = OptionButton.new()

@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/unit.gd" id="1_unit"]
+
+[node name="RA2GenericUnit" type="CharacterBody2D"]
+script = ExtResource("1_unit")
+auto_fit_ra2_visual = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="VisualRoot" type="Node2D" parent="."]
+position = Vector2(0, -10)
+
+[node name="Body" type="AnimatedSprite2D" parent="VisualRoot"]
+centered = true
+texture_filter = 1
+show_behind_parent = true
+
+[node name="Turret" type="AnimatedSprite2D" parent="VisualRoot"]
+visible = false
+centered = true
+texture_filter = 1
+z_index = 2
+
+[node name="DamageSmokeAnchor" type="Marker2D" parent="."]
+position = Vector2(0, -26)
+
+[node name="SelectionAnchor" type="Marker2D" parent="."]
+position = Vector2(0, 10)
+
+[node name="CargoBarAnchor" type="Marker2D" parent="."]
+position = Vector2(0, 22)

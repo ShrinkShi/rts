@@ -1,0 +1,2549 @@
+{
+  "id": "DLPH",
+  "category": "vehicle",
+  "name_token": "Name:DLPH",
+  "art_id": "DLPH",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GAYARD",
+    "GATECH"
+  ],
+  "tech_level": 5,
+  "cost": 500,
+  "strength": 200,
+  "armor": "light",
+  "speed": 8,
+  "sight": 4,
+  "locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+  "movement_zone": "Water",
+  "weapons": {
+    "Primary": {
+      "id": "SonicZap",
+      "projectile": "Sonic",
+      "warhead": "SonicWarhead",
+      "report": [
+        "DolphinAttack"
+      ],
+      "values": {
+        "Damage": 4,
+        "AmbientDamage": 10,
+        "ROF": 120,
+        "Range": 6,
+        "Projectile": "Sonic",
+        "Speed": 100,
+        "Warhead": "SonicWarhead",
+        "Report": "DolphinAttack",
+        "IsSonic": true,
+        "DecloakToFire": false
+      },
+      "raw_values": {
+        "Damage": "4",
+        "AmbientDamage": "10",
+        "ROF": "120",
+        "Range": "6",
+        "Projectile": "Sonic",
+        "Speed": "100",
+        "Warhead": "SonicWarhead",
+        "Report": "DolphinAttack",
+        "IsSonic": "Yes",
+        "DecloakToFire": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "4",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23679,
+            "section": "SonicZap",
+            "key": "Damage",
+            "value": "4"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16963,
+              "section": "SonicZap",
+              "key": "Damage",
+              "value": "4"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23671,
+              "section": "SonicZap",
+              "key": "Damage",
+              "value": "4"
+            }
+          ]
+        },
+        "AmbientDamage": {
+          "value": "10",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23680,
+            "section": "SonicZap",
+            "key": "AmbientDamage",
+            "value": "10"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16964,
+              "section": "SonicZap",
+              "key": "AmbientDamage",
+              "value": "10"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23672,
+              "section": "SonicZap",
+              "key": "AmbientDamage",
+              "value": "10"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "120",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23681,
+            "section": "SonicZap",
+            "key": "ROF",
+            "value": "120"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16966,
+              "section": "SonicZap",
+              "key": "ROF",
+              "value": "120"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23673,
+              "section": "SonicZap",
+              "key": "ROF",
+              "value": "120"
+            }
+          ]
+        },
+        "Range": {
+          "value": "6",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23682,
+            "section": "SonicZap",
+            "key": "Range",
+            "value": "6"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16967,
+              "section": "SonicZap",
+              "key": "Range",
+              "value": "6"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23674,
+              "section": "SonicZap",
+              "key": "Range",
+              "value": "6"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "Sonic",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23684,
+            "section": "SonicZap",
+            "key": "Projectile",
+            "value": "Sonic"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16969,
+              "section": "SonicZap",
+              "key": "Projectile",
+              "value": "Sonic"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23676,
+              "section": "SonicZap",
+              "key": "Projectile",
+              "value": "Sonic"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23685,
+            "section": "SonicZap",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16970,
+              "section": "SonicZap",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23677,
+              "section": "SonicZap",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SonicWarhead",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23686,
+            "section": "SonicZap",
+            "key": "Warhead",
+            "value": "SonicWarhead"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16971,
+              "section": "SonicZap",
+              "key": "Warhead",
+              "value": "SonicWarhead"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23678,
+              "section": "SonicZap",
+              "key": "Warhead",
+              "value": "SonicWarhead"
+            }
+          ]
+        },
+        "Report": {
+          "value": "DolphinAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23687,
+            "section": "SonicZap",
+            "key": "Report",
+            "value": "DolphinAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16972,
+              "section": "SonicZap",
+              "key": "Report",
+              "value": "DolphinAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23679,
+              "section": "SonicZap",
+              "key": "Report",
+              "value": "DolphinAttack"
+            }
+          ]
+        },
+        "IsSonic": {
+          "value": "Yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23688,
+            "section": "SonicZap",
+            "key": "IsSonic",
+            "value": "Yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16973,
+              "section": "SonicZap",
+              "key": "IsSonic",
+              "value": "Yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23680,
+              "section": "SonicZap",
+              "key": "IsSonic",
+              "value": "Yes"
+            }
+          ]
+        },
+        "DecloakToFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23689,
+            "section": "SonicZap",
+            "key": "DecloakToFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16974,
+              "section": "SonicZap",
+              "key": "DecloakToFire",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23681,
+              "section": "SonicZap",
+              "key": "DecloakToFire",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "SonicZapE",
+      "projectile": "Sonic",
+      "warhead": "SonicWarhead",
+      "report": [
+        "DolphinAttack"
+      ],
+      "values": {
+        "Damage": 8,
+        "AmbientDamage": 15,
+        "ROF": 80,
+        "Range": 6,
+        "Projectile": "Sonic",
+        "Speed": 100,
+        "Warhead": "SonicWarhead",
+        "Report": "DolphinAttack",
+        "IsSonic": true,
+        "Burst": 2,
+        "DecloakToFire": false
+      },
+      "raw_values": {
+        "Damage": "8",
+        "AmbientDamage": "15",
+        "ROF": "80",
+        "Range": "6",
+        "Projectile": "Sonic",
+        "Speed": "100",
+        "Warhead": "SonicWarhead",
+        "Report": "DolphinAttack",
+        "IsSonic": "Yes",
+        "Burst": "2",
+        "DecloakToFire": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "8",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25098,
+            "section": "SonicZapE",
+            "key": "Damage",
+            "value": "8"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17977,
+              "section": "SonicZapE",
+              "key": "Damage",
+              "value": "8"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25090,
+              "section": "SonicZapE",
+              "key": "Damage",
+              "value": "8"
+            }
+          ]
+        },
+        "AmbientDamage": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25099,
+            "section": "SonicZapE",
+            "key": "AmbientDamage",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17978,
+              "section": "SonicZapE",
+              "key": "AmbientDamage",
+              "value": "15"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25091,
+              "section": "SonicZapE",
+              "key": "AmbientDamage",
+              "value": "15"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "80",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25100,
+            "section": "SonicZapE",
+            "key": "ROF",
+            "value": "80"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17979,
+              "section": "SonicZapE",
+              "key": "ROF",
+              "value": "80"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25092,
+              "section": "SonicZapE",
+              "key": "ROF",
+              "value": "80"
+            }
+          ]
+        },
+        "Range": {
+          "value": "6",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25101,
+            "section": "SonicZapE",
+            "key": "Range",
+            "value": "6"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17980,
+              "section": "SonicZapE",
+              "key": "Range",
+              "value": "6"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25093,
+              "section": "SonicZapE",
+              "key": "Range",
+              "value": "6"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "Sonic",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25103,
+            "section": "SonicZapE",
+            "key": "Projectile",
+            "value": "Sonic"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17982,
+              "section": "SonicZapE",
+              "key": "Projectile",
+              "value": "Sonic"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25095,
+              "section": "SonicZapE",
+              "key": "Projectile",
+              "value": "Sonic"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25104,
+            "section": "SonicZapE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17983,
+              "section": "SonicZapE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25096,
+              "section": "SonicZapE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SonicWarhead",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25105,
+            "section": "SonicZapE",
+            "key": "Warhead",
+            "value": "SonicWarhead"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17984,
+              "section": "SonicZapE",
+              "key": "Warhead",
+              "value": "SonicWarhead"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25097,
+              "section": "SonicZapE",
+              "key": "Warhead",
+              "value": "SonicWarhead"
+            }
+          ]
+        },
+        "Report": {
+          "value": "DolphinAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25106,
+            "section": "SonicZapE",
+            "key": "Report",
+            "value": "DolphinAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17985,
+              "section": "SonicZapE",
+              "key": "Report",
+              "value": "DolphinAttack"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25098,
+              "section": "SonicZapE",
+              "key": "Report",
+              "value": "DolphinAttack"
+            }
+          ]
+        },
+        "IsSonic": {
+          "value": "Yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25107,
+            "section": "SonicZapE",
+            "key": "IsSonic",
+            "value": "Yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17986,
+              "section": "SonicZapE",
+              "key": "IsSonic",
+              "value": "Yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25099,
+              "section": "SonicZapE",
+              "key": "IsSonic",
+              "value": "Yes"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25109,
+            "section": "SonicZapE",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17988,
+              "section": "SonicZapE",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25101,
+              "section": "SonicZapE",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        },
+        "DecloakToFire": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 25110,
+            "section": "SonicZapE",
+            "key": "DecloakToFire",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17989,
+              "section": "SonicZapE",
+              "key": "DecloakToFire",
+              "value": "no"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 25102,
+              "section": "SonicZapE",
+              "key": "DecloakToFire",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "DolphinSelect"
+    ],
+    "VoiceMove": [
+      "DolphinMove"
+    ],
+    "VoiceAttack": [
+      "DolphinAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "DolphinFear"
+    ],
+    "DieSound": [
+      "DolphinDie"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "DLPH",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 138,
+          "pack": "ra2",
+          "relative_path": "conquer/dlph.shp",
+          "folder": "conquer",
+          "filename": "dlph.shp",
+          "stem": "dlph",
+          "extension": ".shp",
+          "size": 48264,
+          "sha1": "731ac415f68d308a5de03460815463beae8108c7"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 138,
+          "pack": "ra2",
+          "relative_path": "conquer/dlph.shp",
+          "folder": "conquer",
+          "filename": "dlph.shp",
+          "stem": "dlph",
+          "extension": ".shp",
+          "size": 48264,
+          "sha1": "731ac415f68d308a5de03460815463beae8108c7"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 138,
+          "pack": "ra2",
+          "relative_path": "conquer/dlph.shp",
+          "folder": "conquer",
+          "filename": "dlph.shp",
+          "stem": "dlph",
+          "extension": ".shp",
+          "size": 48264,
+          "sha1": "731ac415f68d308a5de03460815463beae8108c7"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 138,
+          "pack": "ra2",
+          "relative_path": "conquer/dlph.shp",
+          "folder": "conquer",
+          "filename": "dlph.shp",
+          "stem": "dlph",
+          "extension": ".shp",
+          "size": 48264,
+          "sha1": "731ac415f68d308a5de03460815463beae8108c7"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 138,
+          "pack": "ra2",
+          "relative_path": "conquer/dlph.shp",
+          "folder": "conquer",
+          "filename": "dlph.shp",
+          "stem": "dlph",
+          "extension": ".shp",
+          "size": 48264,
+          "sha1": "731ac415f68d308a5de03460815463beae8108c7"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 138,
+          "pack": "ra2",
+          "relative_path": "conquer/dlph.shp",
+          "folder": "conquer",
+          "filename": "dlph.shp",
+          "stem": "dlph",
+          "extension": ".shp",
+          "size": 48264,
+          "sha1": "731ac415f68d308a5de03460815463beae8108c7"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:DLPH",
+      "Name": "Dolphin",
+      "NotHuman": true,
+      "Prerequisite": "GAYARD,GATECH",
+      "Primary": "SonicZap",
+      "NavalTargeting": 5,
+      "LandTargeting": 1,
+      "FireAngle": 64,
+      "Category": "AFV",
+      "Strength": 200,
+      "Naval": true,
+      "Armor": "light",
+      "TechLevel": 5,
+      "Underwater": true,
+      "Sight": 4,
+      "GuardRange": 4,
+      "Sensors": true,
+      "SensorsSight": 8,
+      "Speed": 8,
+      "CrateGoodie": false,
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 500,
+      "Turret": false,
+      "Points": 15,
+      "ROT": 6,
+      "Crewed": false,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "DolphinSelect",
+      "VoiceMove": "DolphinMove",
+      "VoiceAttack": "DolphinAttackCommand",
+      "VoiceFeedback": "DolphinFear",
+      "DieSound": "DolphinDie",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": 20,
+      "Accelerates": true,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Cloakable": true,
+      "CloakingSpeed": 1,
+      "TypeImmune": true,
+      "Organic": true,
+      "WalkRate": 4,
+      "IdleRate": 8,
+      "ElitePrimary": "SonicZapE",
+      "Size": 15,
+      "IsSelectableCombatant": true,
+      "Soylent": 500
+    },
+    "raw_values": {
+      "UIName": "Name:DLPH",
+      "Name": "Dolphin",
+      "NotHuman": "yes",
+      "Prerequisite": "GAYARD,GATECH",
+      "Primary": "SonicZap",
+      "NavalTargeting": "5",
+      "LandTargeting": "1",
+      "FireAngle": "64",
+      "Category": "AFV",
+      "Strength": "200",
+      "Naval": "yes",
+      "Armor": "light",
+      "TechLevel": "5",
+      "Underwater": "yes",
+      "Sight": "4",
+      "GuardRange": "4",
+      "Sensors": "yes",
+      "SensorsSight": "8",
+      "Speed": "8",
+      "CrateGoodie": "no",
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "500",
+      "Turret": "no",
+      "Points": "15",
+      "ROT": "6",
+      "Crewed": "no",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "DolphinSelect",
+      "VoiceMove": "DolphinMove",
+      "VoiceAttack": "DolphinAttackCommand",
+      "VoiceFeedback": "DolphinFear",
+      "DieSound": "DolphinDie",
+      "Locomotor": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+      "SpeedType": "Float",
+      "MovementZone": "Water",
+      "ThreatPosed": "20",
+      "Accelerates": "true",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Cloakable": "yes",
+      "CloakingSpeed": "1",
+      "TypeImmune": "yes",
+      "Organic": "yes",
+      "WalkRate": "4",
+      "IdleRate": "8",
+      "ElitePrimary": "SonicZapE",
+      "Size": "15",
+      "IsSelectableCombatant": "yes",
+      "Soylent": "500"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:DLPH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7131,
+          "section": "DLPH",
+          "key": "UIName",
+          "value": "Name:DLPH"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5231,
+            "section": "DLPH",
+            "key": "UIName",
+            "value": "Name:DLPH"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7129,
+            "section": "DLPH",
+            "key": "UIName",
+            "value": "Name:DLPH"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Dolphin",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7132,
+          "section": "DLPH",
+          "key": "Name",
+          "value": "Dolphin"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5232,
+            "section": "DLPH",
+            "key": "Name",
+            "value": "Dolphin"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7130,
+            "section": "DLPH",
+            "key": "Name",
+            "value": "Dolphin"
+          }
+        ]
+      },
+      "NotHuman": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7133,
+          "section": "DLPH",
+          "key": "NotHuman",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5233,
+            "section": "DLPH",
+            "key": "NotHuman",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7131,
+            "section": "DLPH",
+            "key": "NotHuman",
+            "value": "yes"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GAYARD,GATECH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7134,
+          "section": "DLPH",
+          "key": "Prerequisite",
+          "value": "GAYARD,GATECH"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5234,
+            "section": "DLPH",
+            "key": "Prerequisite",
+            "value": "GAYARD,GATECH"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7132,
+            "section": "DLPH",
+            "key": "Prerequisite",
+            "value": "GAYARD,GATECH"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "SonicZap",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7135,
+          "section": "DLPH",
+          "key": "Primary",
+          "value": "SonicZap"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5235,
+            "section": "DLPH",
+            "key": "Primary",
+            "value": "SonicZap"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7133,
+            "section": "DLPH",
+            "key": "Primary",
+            "value": "SonicZap"
+          }
+        ]
+      },
+      "NavalTargeting": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7136,
+          "section": "DLPH",
+          "key": "NavalTargeting",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5236,
+            "section": "DLPH",
+            "key": "NavalTargeting",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7134,
+            "section": "DLPH",
+            "key": "NavalTargeting",
+            "value": "5"
+          }
+        ]
+      },
+      "LandTargeting": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7137,
+          "section": "DLPH",
+          "key": "LandTargeting",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5237,
+            "section": "DLPH",
+            "key": "LandTargeting",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7135,
+            "section": "DLPH",
+            "key": "LandTargeting",
+            "value": "1"
+          }
+        ]
+      },
+      "FireAngle": {
+        "value": "64",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7138,
+          "section": "DLPH",
+          "key": "FireAngle",
+          "value": "64"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5238,
+            "section": "DLPH",
+            "key": "FireAngle",
+            "value": "64"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7136,
+            "section": "DLPH",
+            "key": "FireAngle",
+            "value": "64"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7139,
+          "section": "DLPH",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5239,
+            "section": "DLPH",
+            "key": "Category",
+            "value": "AFV"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7137,
+            "section": "DLPH",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7140,
+          "section": "DLPH",
+          "key": "Strength",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5240,
+            "section": "DLPH",
+            "key": "Strength",
+            "value": "200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7138,
+            "section": "DLPH",
+            "key": "Strength",
+            "value": "200"
+          }
+        ]
+      },
+      "Naval": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7141,
+          "section": "DLPH",
+          "key": "Naval",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5241,
+            "section": "DLPH",
+            "key": "Naval",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7139,
+            "section": "DLPH",
+            "key": "Naval",
+            "value": "yes"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7142,
+          "section": "DLPH",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5242,
+            "section": "DLPH",
+            "key": "Armor",
+            "value": "light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7140,
+            "section": "DLPH",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7143,
+          "section": "DLPH",
+          "key": "TechLevel",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5243,
+            "section": "DLPH",
+            "key": "TechLevel",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7141,
+            "section": "DLPH",
+            "key": "TechLevel",
+            "value": "5"
+          }
+        ]
+      },
+      "Underwater": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7144,
+          "section": "DLPH",
+          "key": "Underwater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5244,
+            "section": "DLPH",
+            "key": "Underwater",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7142,
+            "section": "DLPH",
+            "key": "Underwater",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7145,
+          "section": "DLPH",
+          "key": "Sight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5245,
+            "section": "DLPH",
+            "key": "Sight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7143,
+            "section": "DLPH",
+            "key": "Sight",
+            "value": "4"
+          }
+        ]
+      },
+      "GuardRange": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7146,
+          "section": "DLPH",
+          "key": "GuardRange",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5246,
+            "section": "DLPH",
+            "key": "GuardRange",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7144,
+            "section": "DLPH",
+            "key": "GuardRange",
+            "value": "4"
+          }
+        ]
+      },
+      "Sensors": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7147,
+          "section": "DLPH",
+          "key": "Sensors",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5247,
+            "section": "DLPH",
+            "key": "Sensors",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7145,
+            "section": "DLPH",
+            "key": "Sensors",
+            "value": "yes"
+          }
+        ]
+      },
+      "SensorsSight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7148,
+          "section": "DLPH",
+          "key": "SensorsSight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5248,
+            "section": "DLPH",
+            "key": "SensorsSight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7146,
+            "section": "DLPH",
+            "key": "SensorsSight",
+            "value": "8"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7149,
+          "section": "DLPH",
+          "key": "Speed",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5249,
+            "section": "DLPH",
+            "key": "Speed",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7147,
+            "section": "DLPH",
+            "key": "Speed",
+            "value": "8"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7150,
+          "section": "DLPH",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5250,
+            "section": "DLPH",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7148,
+            "section": "DLPH",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7151,
+          "section": "DLPH",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5251,
+            "section": "DLPH",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7149,
+            "section": "DLPH",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7152,
+          "section": "DLPH",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5252,
+            "section": "DLPH",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7150,
+            "section": "DLPH",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7153,
+          "section": "DLPH",
+          "key": "Cost",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5253,
+            "section": "DLPH",
+            "key": "Cost",
+            "value": "500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7151,
+            "section": "DLPH",
+            "key": "Cost",
+            "value": "500"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7155,
+          "section": "DLPH",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5254,
+            "section": "DLPH",
+            "key": "Turret",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7153,
+            "section": "DLPH",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "Points": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7156,
+          "section": "DLPH",
+          "key": "Points",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5255,
+            "section": "DLPH",
+            "key": "Points",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7154,
+            "section": "DLPH",
+            "key": "Points",
+            "value": "15"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7157,
+          "section": "DLPH",
+          "key": "ROT",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5256,
+            "section": "DLPH",
+            "key": "ROT",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7155,
+            "section": "DLPH",
+            "key": "ROT",
+            "value": "6"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7159,
+          "section": "DLPH",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5258,
+            "section": "DLPH",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7157,
+            "section": "DLPH",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7160,
+          "section": "DLPH",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5259,
+            "section": "DLPH",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7158,
+            "section": "DLPH",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "DolphinSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7161,
+          "section": "DLPH",
+          "key": "VoiceSelect",
+          "value": "DolphinSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5260,
+            "section": "DLPH",
+            "key": "VoiceSelect",
+            "value": "DolphinSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7159,
+            "section": "DLPH",
+            "key": "VoiceSelect",
+            "value": "DolphinSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "DolphinMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7162,
+          "section": "DLPH",
+          "key": "VoiceMove",
+          "value": "DolphinMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5261,
+            "section": "DLPH",
+            "key": "VoiceMove",
+            "value": "DolphinMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7160,
+            "section": "DLPH",
+            "key": "VoiceMove",
+            "value": "DolphinMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "DolphinAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7163,
+          "section": "DLPH",
+          "key": "VoiceAttack",
+          "value": "DolphinAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5262,
+            "section": "DLPH",
+            "key": "VoiceAttack",
+            "value": "DolphinAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7161,
+            "section": "DLPH",
+            "key": "VoiceAttack",
+            "value": "DolphinAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "DolphinFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7164,
+          "section": "DLPH",
+          "key": "VoiceFeedback",
+          "value": "DolphinFear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5263,
+            "section": "DLPH",
+            "key": "VoiceFeedback",
+            "value": "DolphinFear"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7162,
+            "section": "DLPH",
+            "key": "VoiceFeedback",
+            "value": "DolphinFear"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "DolphinDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7165,
+          "section": "DLPH",
+          "key": "DieSound",
+          "value": "DolphinDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5264,
+            "section": "DLPH",
+            "key": "DieSound",
+            "value": "DolphinDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7163,
+            "section": "DLPH",
+            "key": "DieSound",
+            "value": "DolphinDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7166,
+          "section": "DLPH",
+          "key": "Locomotor",
+          "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5265,
+            "section": "DLPH",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7164,
+            "section": "DLPH",
+            "key": "Locomotor",
+            "value": "{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Float",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7167,
+          "section": "DLPH",
+          "key": "SpeedType",
+          "value": "Float"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5266,
+            "section": "DLPH",
+            "key": "SpeedType",
+            "value": "Float"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7165,
+            "section": "DLPH",
+            "key": "SpeedType",
+            "value": "Float"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Water",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7168,
+          "section": "DLPH",
+          "key": "MovementZone",
+          "value": "Water"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5267,
+            "section": "DLPH",
+            "key": "MovementZone",
+            "value": "Water"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7166,
+            "section": "DLPH",
+            "key": "MovementZone",
+            "value": "Water"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7169,
+          "section": "DLPH",
+          "key": "ThreatPosed",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5268,
+            "section": "DLPH",
+            "key": "ThreatPosed",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7167,
+            "section": "DLPH",
+            "key": "ThreatPosed",
+            "value": "20"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7170,
+          "section": "DLPH",
+          "key": "Accelerates",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5269,
+            "section": "DLPH",
+            "key": "Accelerates",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7168,
+            "section": "DLPH",
+            "key": "Accelerates",
+            "value": "true"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7171,
+          "section": "DLPH",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5270,
+            "section": "DLPH",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7169,
+            "section": "DLPH",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7172,
+          "section": "DLPH",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5271,
+            "section": "DLPH",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7170,
+            "section": "DLPH",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Cloakable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7174,
+          "section": "DLPH",
+          "key": "Cloakable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5273,
+            "section": "DLPH",
+            "key": "Cloakable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7172,
+            "section": "DLPH",
+            "key": "Cloakable",
+            "value": "yes"
+          }
+        ]
+      },
+      "CloakingSpeed": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7175,
+          "section": "DLPH",
+          "key": "CloakingSpeed",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5274,
+            "section": "DLPH",
+            "key": "CloakingSpeed",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7173,
+            "section": "DLPH",
+            "key": "CloakingSpeed",
+            "value": "1"
+          }
+        ]
+      },
+      "TypeImmune": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7176,
+          "section": "DLPH",
+          "key": "TypeImmune",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5275,
+            "section": "DLPH",
+            "key": "TypeImmune",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7174,
+            "section": "DLPH",
+            "key": "TypeImmune",
+            "value": "yes"
+          }
+        ]
+      },
+      "Organic": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7177,
+          "section": "DLPH",
+          "key": "Organic",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5276,
+            "section": "DLPH",
+            "key": "Organic",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7175,
+            "section": "DLPH",
+            "key": "Organic",
+            "value": "yes"
+          }
+        ]
+      },
+      "WalkRate": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7179,
+          "section": "DLPH",
+          "key": "WalkRate",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5278,
+            "section": "DLPH",
+            "key": "WalkRate",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7177,
+            "section": "DLPH",
+            "key": "WalkRate",
+            "value": "4"
+          }
+        ]
+      },
+      "IdleRate": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7180,
+          "section": "DLPH",
+          "key": "IdleRate",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5279,
+            "section": "DLPH",
+            "key": "IdleRate",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7178,
+            "section": "DLPH",
+            "key": "IdleRate",
+            "value": "8"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "SonicZapE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7181,
+          "section": "DLPH",
+          "key": "ElitePrimary",
+          "value": "SonicZapE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5280,
+            "section": "DLPH",
+            "key": "ElitePrimary",
+            "value": "SonicZapE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7179,
+            "section": "DLPH",
+            "key": "ElitePrimary",
+            "value": "SonicZapE"
+          }
+        ]
+      },
+      "Size": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7182,
+          "section": "DLPH",
+          "key": "Size",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5281,
+            "section": "DLPH",
+            "key": "Size",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7180,
+            "section": "DLPH",
+            "key": "Size",
+            "value": "15"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7183,
+          "section": "DLPH",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5282,
+            "section": "DLPH",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7181,
+            "section": "DLPH",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7154,
+          "section": "DLPH",
+          "key": "Soylent",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7152,
+            "section": "DLPH",
+            "key": "Soylent",
+            "value": "500"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "DLPHICON",
+      "Voxel": false,
+      "Remapable": true,
+      "WalkFrames": 6,
+      "FiringFrames": 6
+    },
+    "raw_values": {
+      "Cameo": "DLPHICON",
+      "Voxel": "no",
+      "Remapable": "yes",
+      "WalkFrames": "6",
+      "FiringFrames": "6"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "DLPHICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 675,
+          "section": "DLPH",
+          "key": "Cameo",
+          "value": "DLPHICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 480,
+            "section": "DLPH",
+            "key": "Cameo",
+            "value": "DLPHICON"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 676,
+          "section": "DLPH",
+          "key": "Voxel",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 481,
+            "section": "DLPH",
+            "key": "Voxel",
+            "value": "no"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 677,
+          "section": "DLPH",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 482,
+            "section": "DLPH",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "WalkFrames": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 678,
+          "section": "DLPH",
+          "key": "WalkFrames",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 483,
+            "section": "DLPH",
+            "key": "WalkFrames",
+            "value": "6"
+          }
+        ]
+      },
+      "FiringFrames": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 679,
+          "section": "DLPH",
+          "key": "FiringFrames",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 484,
+            "section": "DLPH",
+            "key": "FiringFrames",
+            "value": "6"
+          }
+        ]
+      }
+    }
+  }
+}

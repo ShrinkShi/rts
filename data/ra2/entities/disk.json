@@ -1,0 +1,2693 @@
+{
+  "id": "DISK",
+  "category": "vehicle",
+  "name_token": "Name:DISK",
+  "art_id": "DISK",
+  "owners": [
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YAWEAP",
+    "YATECH"
+  ],
+  "tech_level": 2,
+  "cost": 1750,
+  "strength": 600,
+  "armor": "light",
+  "speed": 15,
+  "sight": 9,
+  "locomotor": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+  "movement_zone": "Fly",
+  "weapons": {
+    "Primary": {
+      "id": "DiskLaser",
+      "projectile": "InvisibleAll",
+      "warhead": "DiskWH",
+      "report": [
+        "FloatingDiscAttack"
+      ],
+      "values": {
+        "Damage": 90,
+        "ROF": 80,
+        "Range": 7,
+        "Projectile": "InvisibleAll",
+        "Speed": 40,
+        "Report": "FloatingDiscAttack",
+        "Warhead": "DiskWH",
+        "Bright": true,
+        "LaserInnerColor": "216,0,184",
+        "LaserOuterColor": "80,0,88",
+        "LaserOuterSpread": "0,0,0",
+        "LaserDuration": 15,
+        "DiskLaser": true,
+        "OmniFire": true
+      },
+      "raw_values": {
+        "Damage": "90",
+        "ROF": "80",
+        "Range": "7",
+        "Projectile": "InvisibleAll",
+        "Speed": "40",
+        "Report": "FloatingDiscAttack",
+        "Warhead": "DiskWH",
+        "Bright": "yes",
+        "LaserInnerColor": "216,0,184",
+        "LaserOuterColor": "80,0,88",
+        "LaserOuterSpread": "0,0,0",
+        "LaserDuration": "15",
+        "DiskLaser": "yes",
+        "OmniFire": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "90",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24256,
+            "section": "DiskLaser",
+            "key": "Damage",
+            "value": "90"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24248,
+              "section": "DiskLaser",
+              "key": "Damage",
+              "value": "90"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "80",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24257,
+            "section": "DiskLaser",
+            "key": "ROF",
+            "value": "80"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24249,
+              "section": "DiskLaser",
+              "key": "ROF",
+              "value": "80"
+            }
+          ]
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24258,
+            "section": "DiskLaser",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24250,
+              "section": "DiskLaser",
+              "key": "Range",
+              "value": "7"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleAll",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24259,
+            "section": "DiskLaser",
+            "key": "Projectile",
+            "value": "InvisibleAll"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24251,
+              "section": "DiskLaser",
+              "key": "Projectile",
+              "value": "InvisibleAll"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "40",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24260,
+            "section": "DiskLaser",
+            "key": "Speed",
+            "value": "40"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24252,
+              "section": "DiskLaser",
+              "key": "Speed",
+              "value": "40"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FloatingDiscAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24261,
+            "section": "DiskLaser",
+            "key": "Report",
+            "value": "FloatingDiscAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24253,
+              "section": "DiskLaser",
+              "key": "Report",
+              "value": "FloatingDiscAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "DiskWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24262,
+            "section": "DiskLaser",
+            "key": "Warhead",
+            "value": "DiskWH"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24254,
+              "section": "DiskLaser",
+              "key": "Warhead",
+              "value": "DiskWH"
+            }
+          ]
+        },
+        "Bright": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24263,
+            "section": "DiskLaser",
+            "key": "Bright",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24255,
+              "section": "DiskLaser",
+              "key": "Bright",
+              "value": "yes"
+            }
+          ]
+        },
+        "LaserInnerColor": {
+          "value": "216,0,184",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24265,
+            "section": "DiskLaser",
+            "key": "LaserInnerColor",
+            "value": "216,0,184"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24257,
+              "section": "DiskLaser",
+              "key": "LaserInnerColor",
+              "value": "216,0,184"
+            }
+          ]
+        },
+        "LaserOuterColor": {
+          "value": "80,0,88",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24266,
+            "section": "DiskLaser",
+            "key": "LaserOuterColor",
+            "value": "80,0,88"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24258,
+              "section": "DiskLaser",
+              "key": "LaserOuterColor",
+              "value": "80,0,88"
+            }
+          ]
+        },
+        "LaserOuterSpread": {
+          "value": "0,0,0",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24267,
+            "section": "DiskLaser",
+            "key": "LaserOuterSpread",
+            "value": "0,0,0"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24259,
+              "section": "DiskLaser",
+              "key": "LaserOuterSpread",
+              "value": "0,0,0"
+            }
+          ]
+        },
+        "LaserDuration": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24268,
+            "section": "DiskLaser",
+            "key": "LaserDuration",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24260,
+              "section": "DiskLaser",
+              "key": "LaserDuration",
+              "value": "15"
+            }
+          ]
+        },
+        "DiskLaser": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24270,
+            "section": "DiskLaser",
+            "key": "DiskLaser",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24262,
+              "section": "DiskLaser",
+              "key": "DiskLaser",
+              "value": "yes"
+            }
+          ]
+        },
+        "OmniFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24271,
+            "section": "DiskLaser",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24263,
+              "section": "DiskLaser",
+              "key": "OmniFire",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "DiskDrain",
+      "projectile": "InvisibleVertical",
+      "warhead": "AntiB",
+      "report": [
+        "KirovAttack"
+      ],
+      "values": {
+        "Damage": 1,
+        "Burst": 1,
+        "ROF": 50,
+        "Range": 1.5,
+        "CellRangefinding": true,
+        "Projectile": "InvisibleVertical",
+        "Speed": 20,
+        "Warhead": "AntiB",
+        "Report": "KirovAttack",
+        "OmniFire": true,
+        "FireOnce": true,
+        "DrainWeapon": true,
+        "FireWhileMoving": false
+      },
+      "raw_values": {
+        "Damage": "1",
+        "Burst": "1",
+        "ROF": "50",
+        "Range": "1.5",
+        "CellRangefinding": "yes",
+        "Projectile": "InvisibleVertical",
+        "Speed": "20",
+        "Warhead": "AntiB",
+        "Report": "KirovAttack",
+        "OmniFire": "yes",
+        "FireOnce": "yes",
+        "DrainWeapon": "yes",
+        "FireWhileMoving": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24274,
+            "section": "DiskDrain",
+            "key": "Damage",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24266,
+              "section": "DiskDrain",
+              "key": "Damage",
+              "value": "1"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24275,
+            "section": "DiskDrain",
+            "key": "Burst",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24267,
+              "section": "DiskDrain",
+              "key": "Burst",
+              "value": "1"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24276,
+            "section": "DiskDrain",
+            "key": "ROF",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24268,
+              "section": "DiskDrain",
+              "key": "ROF",
+              "value": "50"
+            }
+          ]
+        },
+        "Range": {
+          "value": "1.5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24277,
+            "section": "DiskDrain",
+            "key": "Range",
+            "value": "1.5"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24269,
+              "section": "DiskDrain",
+              "key": "Range",
+              "value": "1.5"
+            }
+          ]
+        },
+        "CellRangefinding": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24278,
+            "section": "DiskDrain",
+            "key": "CellRangefinding",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24270,
+              "section": "DiskDrain",
+              "key": "CellRangefinding",
+              "value": "yes"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleVertical",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24279,
+            "section": "DiskDrain",
+            "key": "Projectile",
+            "value": "InvisibleVertical"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24271,
+              "section": "DiskDrain",
+              "key": "Projectile",
+              "value": "InvisibleVertical"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24280,
+            "section": "DiskDrain",
+            "key": "Speed",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24272,
+              "section": "DiskDrain",
+              "key": "Speed",
+              "value": "20"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "AntiB",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24281,
+            "section": "DiskDrain",
+            "key": "Warhead",
+            "value": "AntiB"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24273,
+              "section": "DiskDrain",
+              "key": "Warhead",
+              "value": "AntiB"
+            }
+          ]
+        },
+        "Report": {
+          "value": "KirovAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24282,
+            "section": "DiskDrain",
+            "key": "Report",
+            "value": "KirovAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24274,
+              "section": "DiskDrain",
+              "key": "Report",
+              "value": "KirovAttack"
+            }
+          ]
+        },
+        "OmniFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24283,
+            "section": "DiskDrain",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24275,
+              "section": "DiskDrain",
+              "key": "OmniFire",
+              "value": "yes"
+            }
+          ]
+        },
+        "FireOnce": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24284,
+            "section": "DiskDrain",
+            "key": "FireOnce",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24276,
+              "section": "DiskDrain",
+              "key": "FireOnce",
+              "value": "yes"
+            }
+          ]
+        },
+        "DrainWeapon": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24285,
+            "section": "DiskDrain",
+            "key": "DrainWeapon",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24277,
+              "section": "DiskDrain",
+              "key": "DrainWeapon",
+              "value": "yes"
+            }
+          ]
+        },
+        "FireWhileMoving": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24286,
+            "section": "DiskDrain",
+            "key": "FireWhileMoving",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24278,
+              "section": "DiskDrain",
+              "key": "FireWhileMoving",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "DiskLaserE",
+      "projectile": "InvisibleAll",
+      "warhead": "DiskWH",
+      "report": [
+        "FloatingDiscAttack"
+      ],
+      "values": {
+        "Damage": 90,
+        "ROF": 80,
+        "Range": 7,
+        "Projectile": "InvisibleAll",
+        "Speed": 40,
+        "Report": "FloatingDiscAttack",
+        "Warhead": "DiskWH",
+        "Bright": true,
+        "LaserInnerColor": "216,0,184",
+        "LaserOuterColor": "80,0,88",
+        "LaserOuterSpread": "0,0,0",
+        "LaserDuration": 15,
+        "DiskLaser": true,
+        "OmniFire": true
+      },
+      "raw_values": {
+        "Damage": "90",
+        "ROF": "80",
+        "Range": "7",
+        "Projectile": "InvisibleAll",
+        "Speed": "40",
+        "Report": "FloatingDiscAttack",
+        "Warhead": "DiskWH",
+        "Bright": "yes",
+        "LaserInnerColor": "216,0,184",
+        "LaserOuterColor": "80,0,88",
+        "LaserOuterSpread": "0,0,0",
+        "LaserDuration": "15",
+        "DiskLaser": "yes",
+        "OmniFire": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "90",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24755,
+            "section": "DiskLaserE",
+            "key": "Damage",
+            "value": "90"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24747,
+              "section": "DiskLaserE",
+              "key": "Damage",
+              "value": "90"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "80",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24756,
+            "section": "DiskLaserE",
+            "key": "ROF",
+            "value": "80"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24748,
+              "section": "DiskLaserE",
+              "key": "ROF",
+              "value": "80"
+            }
+          ]
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24757,
+            "section": "DiskLaserE",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24749,
+              "section": "DiskLaserE",
+              "key": "Range",
+              "value": "7"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleAll",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24758,
+            "section": "DiskLaserE",
+            "key": "Projectile",
+            "value": "InvisibleAll"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24750,
+              "section": "DiskLaserE",
+              "key": "Projectile",
+              "value": "InvisibleAll"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "40",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24759,
+            "section": "DiskLaserE",
+            "key": "Speed",
+            "value": "40"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24751,
+              "section": "DiskLaserE",
+              "key": "Speed",
+              "value": "40"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FloatingDiscAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24760,
+            "section": "DiskLaserE",
+            "key": "Report",
+            "value": "FloatingDiscAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24752,
+              "section": "DiskLaserE",
+              "key": "Report",
+              "value": "FloatingDiscAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "DiskWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24761,
+            "section": "DiskLaserE",
+            "key": "Warhead",
+            "value": "DiskWH"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24753,
+              "section": "DiskLaserE",
+              "key": "Warhead",
+              "value": "DiskWH"
+            }
+          ]
+        },
+        "Bright": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24762,
+            "section": "DiskLaserE",
+            "key": "Bright",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24754,
+              "section": "DiskLaserE",
+              "key": "Bright",
+              "value": "yes"
+            }
+          ]
+        },
+        "LaserInnerColor": {
+          "value": "216,0,184",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24764,
+            "section": "DiskLaserE",
+            "key": "LaserInnerColor",
+            "value": "216,0,184"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24756,
+              "section": "DiskLaserE",
+              "key": "LaserInnerColor",
+              "value": "216,0,184"
+            }
+          ]
+        },
+        "LaserOuterColor": {
+          "value": "80,0,88",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24765,
+            "section": "DiskLaserE",
+            "key": "LaserOuterColor",
+            "value": "80,0,88"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24757,
+              "section": "DiskLaserE",
+              "key": "LaserOuterColor",
+              "value": "80,0,88"
+            }
+          ]
+        },
+        "LaserOuterSpread": {
+          "value": "0,0,0",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24766,
+            "section": "DiskLaserE",
+            "key": "LaserOuterSpread",
+            "value": "0,0,0"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24758,
+              "section": "DiskLaserE",
+              "key": "LaserOuterSpread",
+              "value": "0,0,0"
+            }
+          ]
+        },
+        "LaserDuration": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24767,
+            "section": "DiskLaserE",
+            "key": "LaserDuration",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24759,
+              "section": "DiskLaserE",
+              "key": "LaserDuration",
+              "value": "15"
+            }
+          ]
+        },
+        "DiskLaser": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24769,
+            "section": "DiskLaserE",
+            "key": "DiskLaser",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24761,
+              "section": "DiskLaserE",
+              "key": "DiskLaser",
+              "value": "yes"
+            }
+          ]
+        },
+        "OmniFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24770,
+            "section": "DiskLaserE",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24762,
+              "section": "DiskLaserE",
+              "key": "OmniFire",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "FloatingDiscSelect"
+    ],
+    "VoiceMove": [
+      "FloatingDiscMove"
+    ],
+    "VoiceAttack": [
+      "FloatingDiscAttackCommand"
+    ],
+    "MoveSound": [
+      "FloatingDiscMoveLoop"
+    ],
+    "CreateSound": [
+      "FloatingDiscCreated"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "DISK",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 10735,
+      "pack": "ra2md",
+      "relative_path": "localmd/disk.vxl",
+      "folder": "localmd",
+      "filename": "disk.vxl",
+      "stem": "disk",
+      "extension": ".vxl",
+      "size": 60543,
+      "sha1": "c6a87be5aa20dbc5e3b06a40058dc2b96036a5d5"
+    },
+    "body_hva": {
+      "asset_id": 10734,
+      "pack": "ra2md",
+      "relative_path": "localmd/disk.hva",
+      "folder": "localmd",
+      "filename": "disk.hva",
+      "stem": "disk",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "34d4a773165a2e4c8d1a39aeec382b7f85f81ade"
+    },
+    "turret": {
+      "asset_id": 10737,
+      "pack": "ra2md",
+      "relative_path": "localmd/disktur.vxl",
+      "folder": "localmd",
+      "filename": "disktur.vxl",
+      "stem": "disktur",
+      "extension": ".vxl",
+      "size": 119841,
+      "sha1": "57c52ed25dcf94d00e0b0c4c67135b5cf7e2b969"
+    },
+    "turret_hva": {
+      "asset_id": 10736,
+      "pack": "ra2md",
+      "relative_path": "localmd/disktur.hva",
+      "folder": "localmd",
+      "filename": "disktur.hva",
+      "stem": "disktur",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "34d4a773165a2e4c8d1a39aeec382b7f85f81ade"
+    },
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      0.0,
+      0.0,
+      75.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:DISK",
+      "Name": "Floating Disk",
+      "Prerequisite": "YAWEAP,YATECH",
+      "Primary": "DiskLaser",
+      "Secondary": "DiskDrain",
+      "Strength": 600,
+      "Category": "AirPower",
+      "Armor": "light",
+      "IsTilter": true,
+      "TooBigToFitUnderBridge": true,
+      "TechLevel": 2,
+      "Turret": true,
+      "TurretSpins": true,
+      "Sight": 9,
+      "Speed": 15,
+      "CrateGoodie": false,
+      "Crusher": false,
+      "Owner": "YuriCountry",
+      "Cost": 1750,
+      "Soylent": 1750,
+      "Points": 25,
+      "ROT": 100,
+      "AllowedToStartInMultiplayer": false,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "FloatingDiscSelect",
+      "VoiceMove": "FloatingDiscMove",
+      "VoiceAttack": "FloatingDiscAttackCommand",
+      "VoiceSecondaryWeaponAttack": "FloatingDiscSteal",
+      "VoiceFeedback": "",
+      "CrashingSound": "FloatingDiscDie",
+      "MoveSound": "FloatingDiscMoveLoop",
+      "CreateSound": "FloatingDiscCreated",
+      "BalloonHover": true,
+      "Locomotor": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+      "SpeedType": "Hover",
+      "MovementZone": "Fly",
+      "MoveToShroud": true,
+      "ThreatPosed": 20,
+      "ConsideredAircraft": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 14,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "DamageSmokeOffset": "100, 100, 275",
+      "Weight": 3.5,
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Accelerates": false,
+      "ZFudgeColumn": 8,
+      "ZFudgeTunnel": 13,
+      "Size": 6,
+      "OpportunityFire": true,
+      "ElitePrimary": "DiskLaserE",
+      "JumpjetSpeed": 16,
+      "JumpjetClimb": 8,
+      "JumpjetCrash": 15,
+      "JumpJetAccel": 10,
+      "JumpJetTurnRate": 100,
+      "JumpjetHeight": 750,
+      "JumpjetWobbles": 0.1,
+      "JumpjetDeviation": 15,
+      "JumpjetNoWobbles": true,
+      "Crashable": true,
+      "TiltCrashJumpjet": true,
+      "DeathWeapon": "BlimpBombEffect",
+      "DeathWeaponDamageModifier": 0.1,
+      "SelfHealing": true
+    },
+    "raw_values": {
+      "UIName": "Name:DISK",
+      "Name": "Floating Disk",
+      "Prerequisite": "YAWEAP,YATECH",
+      "Primary": "DiskLaser",
+      "Secondary": "DiskDrain",
+      "Strength": "600",
+      "Category": "AirPower",
+      "Armor": "light",
+      "IsTilter": "yes",
+      "TooBigToFitUnderBridge": "true",
+      "TechLevel": "2",
+      "Turret": "yes",
+      "TurretSpins": "yes",
+      "Sight": "9",
+      "Speed": "15",
+      "CrateGoodie": "no",
+      "Crusher": "no",
+      "Owner": "YuriCountry",
+      "Cost": "1750",
+      "Soylent": "1750",
+      "Points": "25",
+      "ROT": "100",
+      "AllowedToStartInMultiplayer": "no",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "FloatingDiscSelect",
+      "VoiceMove": "FloatingDiscMove",
+      "VoiceAttack": "FloatingDiscAttackCommand",
+      "VoiceSecondaryWeaponAttack": "FloatingDiscSteal",
+      "VoiceFeedback": "",
+      "CrashingSound": "FloatingDiscDie",
+      "MoveSound": "FloatingDiscMoveLoop",
+      "CreateSound": "FloatingDiscCreated",
+      "BalloonHover": "yes",
+      "Locomotor": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+      "SpeedType": "Hover",
+      "MovementZone": "Fly",
+      "MoveToShroud": "yes",
+      "ThreatPosed": "20",
+      "ConsideredAircraft": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "14",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "DamageSmokeOffset": "100, 100, 275",
+      "Weight": "3.5",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "Accelerates": "false",
+      "ZFudgeColumn": "8",
+      "ZFudgeTunnel": "13",
+      "Size": "6",
+      "OpportunityFire": "yes",
+      "ElitePrimary": "DiskLaserE",
+      "JumpjetSpeed": "16",
+      "JumpjetClimb": "8",
+      "JumpjetCrash": "15",
+      "JumpJetAccel": "10",
+      "JumpJetTurnRate": "100",
+      "JumpjetHeight": "750",
+      "JumpjetWobbles": ".1",
+      "JumpjetDeviation": "15",
+      "JumpjetNoWobbles": "yes",
+      "Crashable": "yes",
+      "TiltCrashJumpjet": "yes",
+      "DeathWeapon": "BlimpBombEffect",
+      "DeathWeaponDamageModifier": ".1",
+      "SelfHealing": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:DISK",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8692,
+          "section": "DISK",
+          "key": "UIName",
+          "value": "Name:DISK"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8689,
+            "section": "DISK",
+            "key": "UIName",
+            "value": "Name:DISK"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Floating Disk",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8693,
+          "section": "DISK",
+          "key": "Name",
+          "value": "Floating Disk"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8690,
+            "section": "DISK",
+            "key": "Name",
+            "value": "Floating Disk"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YAWEAP,YATECH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8694,
+          "section": "DISK",
+          "key": "Prerequisite",
+          "value": "YAWEAP,YATECH"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8691,
+            "section": "DISK",
+            "key": "Prerequisite",
+            "value": "YAWEAP,YATECH"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "DiskLaser",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8695,
+          "section": "DISK",
+          "key": "Primary",
+          "value": "DiskLaser"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8692,
+            "section": "DISK",
+            "key": "Primary",
+            "value": "DiskLaser"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "DiskDrain",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8696,
+          "section": "DISK",
+          "key": "Secondary",
+          "value": "DiskDrain"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8693,
+            "section": "DISK",
+            "key": "Secondary",
+            "value": "DiskDrain"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8697,
+          "section": "DISK",
+          "key": "Strength",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8694,
+            "section": "DISK",
+            "key": "Strength",
+            "value": "600"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AirPower",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8698,
+          "section": "DISK",
+          "key": "Category",
+          "value": "AirPower"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8695,
+            "section": "DISK",
+            "key": "Category",
+            "value": "AirPower"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8699,
+          "section": "DISK",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8696,
+            "section": "DISK",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "IsTilter": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8700,
+          "section": "DISK",
+          "key": "IsTilter",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8697,
+            "section": "DISK",
+            "key": "IsTilter",
+            "value": "yes"
+          }
+        ]
+      },
+      "TooBigToFitUnderBridge": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8701,
+          "section": "DISK",
+          "key": "TooBigToFitUnderBridge",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8698,
+            "section": "DISK",
+            "key": "TooBigToFitUnderBridge",
+            "value": "true"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8702,
+          "section": "DISK",
+          "key": "TechLevel",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8699,
+            "section": "DISK",
+            "key": "TechLevel",
+            "value": "2"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8703,
+          "section": "DISK",
+          "key": "Turret",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8700,
+            "section": "DISK",
+            "key": "Turret",
+            "value": "yes"
+          }
+        ]
+      },
+      "TurretSpins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8704,
+          "section": "DISK",
+          "key": "TurretSpins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8701,
+            "section": "DISK",
+            "key": "TurretSpins",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "9",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8705,
+          "section": "DISK",
+          "key": "Sight",
+          "value": "9"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8702,
+            "section": "DISK",
+            "key": "Sight",
+            "value": "9"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8706,
+          "section": "DISK",
+          "key": "Speed",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8703,
+            "section": "DISK",
+            "key": "Speed",
+            "value": "15"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8707,
+          "section": "DISK",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8704,
+            "section": "DISK",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8708,
+          "section": "DISK",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8705,
+            "section": "DISK",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8709,
+          "section": "DISK",
+          "key": "Owner",
+          "value": "YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8706,
+            "section": "DISK",
+            "key": "Owner",
+            "value": "YuriCountry"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1750",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8710,
+          "section": "DISK",
+          "key": "Cost",
+          "value": "1750"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8707,
+            "section": "DISK",
+            "key": "Cost",
+            "value": "1750"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "1750",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8711,
+          "section": "DISK",
+          "key": "Soylent",
+          "value": "1750"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8708,
+            "section": "DISK",
+            "key": "Soylent",
+            "value": "1750"
+          }
+        ]
+      },
+      "Points": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8712,
+          "section": "DISK",
+          "key": "Points",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8709,
+            "section": "DISK",
+            "key": "Points",
+            "value": "25"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8713,
+          "section": "DISK",
+          "key": "ROT",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8710,
+            "section": "DISK",
+            "key": "ROT",
+            "value": "100"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8714,
+          "section": "DISK",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8711,
+            "section": "DISK",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8715,
+          "section": "DISK",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8712,
+            "section": "DISK",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "FloatingDiscSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8716,
+          "section": "DISK",
+          "key": "VoiceSelect",
+          "value": "FloatingDiscSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8713,
+            "section": "DISK",
+            "key": "VoiceSelect",
+            "value": "FloatingDiscSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "FloatingDiscMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8717,
+          "section": "DISK",
+          "key": "VoiceMove",
+          "value": "FloatingDiscMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8714,
+            "section": "DISK",
+            "key": "VoiceMove",
+            "value": "FloatingDiscMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "FloatingDiscAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8718,
+          "section": "DISK",
+          "key": "VoiceAttack",
+          "value": "FloatingDiscAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8715,
+            "section": "DISK",
+            "key": "VoiceAttack",
+            "value": "FloatingDiscAttackCommand"
+          }
+        ]
+      },
+      "VoiceSecondaryWeaponAttack": {
+        "value": "FloatingDiscSteal",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8719,
+          "section": "DISK",
+          "key": "VoiceSecondaryWeaponAttack",
+          "value": "FloatingDiscSteal"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8716,
+            "section": "DISK",
+            "key": "VoiceSecondaryWeaponAttack",
+            "value": "FloatingDiscSteal"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8720,
+          "section": "DISK",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8717,
+            "section": "DISK",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "CrashingSound": {
+        "value": "FloatingDiscDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8721,
+          "section": "DISK",
+          "key": "CrashingSound",
+          "value": "FloatingDiscDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8718,
+            "section": "DISK",
+            "key": "CrashingSound",
+            "value": "FloatingDiscDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "FloatingDiscMoveLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8722,
+          "section": "DISK",
+          "key": "MoveSound",
+          "value": "FloatingDiscMoveLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8719,
+            "section": "DISK",
+            "key": "MoveSound",
+            "value": "FloatingDiscMoveLoop"
+          }
+        ]
+      },
+      "CreateSound": {
+        "value": "FloatingDiscCreated",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8723,
+          "section": "DISK",
+          "key": "CreateSound",
+          "value": "FloatingDiscCreated"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8720,
+            "section": "DISK",
+            "key": "CreateSound",
+            "value": "FloatingDiscCreated"
+          }
+        ]
+      },
+      "BalloonHover": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8724,
+          "section": "DISK",
+          "key": "BalloonHover",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8721,
+            "section": "DISK",
+            "key": "BalloonHover",
+            "value": "yes"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8725,
+          "section": "DISK",
+          "key": "Locomotor",
+          "value": "{92612C46-F71F-11d1-AC9F-006008055BB5}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8722,
+            "section": "DISK",
+            "key": "Locomotor",
+            "value": "{92612C46-F71F-11d1-AC9F-006008055BB5}"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Hover",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8726,
+          "section": "DISK",
+          "key": "SpeedType",
+          "value": "Hover"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8723,
+            "section": "DISK",
+            "key": "SpeedType",
+            "value": "Hover"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Fly",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8727,
+          "section": "DISK",
+          "key": "MovementZone",
+          "value": "Fly"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8724,
+            "section": "DISK",
+            "key": "MovementZone",
+            "value": "Fly"
+          }
+        ]
+      },
+      "MoveToShroud": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8728,
+          "section": "DISK",
+          "key": "MoveToShroud",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8725,
+            "section": "DISK",
+            "key": "MoveToShroud",
+            "value": "yes"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8729,
+          "section": "DISK",
+          "key": "ThreatPosed",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8726,
+            "section": "DISK",
+            "key": "ThreatPosed",
+            "value": "20"
+          }
+        ]
+      },
+      "ConsideredAircraft": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8730,
+          "section": "DISK",
+          "key": "ConsideredAircraft",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8727,
+            "section": "DISK",
+            "key": "ConsideredAircraft",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8731,
+          "section": "DISK",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8728,
+            "section": "DISK",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "14",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8732,
+          "section": "DISK",
+          "key": "MaxDebris",
+          "value": "14"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8729,
+            "section": "DISK",
+            "key": "MaxDebris",
+            "value": "14"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8733,
+          "section": "DISK",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8730,
+            "section": "DISK",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "100, 100, 275",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8734,
+          "section": "DISK",
+          "key": "DamageSmokeOffset",
+          "value": "100, 100, 275"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8731,
+            "section": "DISK",
+            "key": "DamageSmokeOffset",
+            "value": "100, 100, 275"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "3.5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8735,
+          "section": "DISK",
+          "key": "Weight",
+          "value": "3.5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8732,
+            "section": "DISK",
+            "key": "Weight",
+            "value": "3.5"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8736,
+          "section": "DISK",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8733,
+            "section": "DISK",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8737,
+          "section": "DISK",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8734,
+            "section": "DISK",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8738,
+          "section": "DISK",
+          "key": "Accelerates",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8735,
+            "section": "DISK",
+            "key": "Accelerates",
+            "value": "false"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8739,
+          "section": "DISK",
+          "key": "ZFudgeColumn",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8736,
+            "section": "DISK",
+            "key": "ZFudgeColumn",
+            "value": "8"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8740,
+          "section": "DISK",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8737,
+            "section": "DISK",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "Size": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8741,
+          "section": "DISK",
+          "key": "Size",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8738,
+            "section": "DISK",
+            "key": "Size",
+            "value": "6"
+          }
+        ]
+      },
+      "OpportunityFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8742,
+          "section": "DISK",
+          "key": "OpportunityFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8739,
+            "section": "DISK",
+            "key": "OpportunityFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "DiskLaserE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8743,
+          "section": "DISK",
+          "key": "ElitePrimary",
+          "value": "DiskLaserE"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8740,
+            "section": "DISK",
+            "key": "ElitePrimary",
+            "value": "DiskLaserE"
+          }
+        ]
+      },
+      "JumpjetSpeed": {
+        "value": "16",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8744,
+          "section": "DISK",
+          "key": "JumpjetSpeed",
+          "value": "16"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8741,
+            "section": "DISK",
+            "key": "JumpjetSpeed",
+            "value": "16"
+          }
+        ]
+      },
+      "JumpjetClimb": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8745,
+          "section": "DISK",
+          "key": "JumpjetClimb",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8742,
+            "section": "DISK",
+            "key": "JumpjetClimb",
+            "value": "8"
+          }
+        ]
+      },
+      "JumpjetCrash": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8746,
+          "section": "DISK",
+          "key": "JumpjetCrash",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8743,
+            "section": "DISK",
+            "key": "JumpjetCrash",
+            "value": "15"
+          }
+        ]
+      },
+      "JumpJetAccel": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8747,
+          "section": "DISK",
+          "key": "JumpJetAccel",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8744,
+            "section": "DISK",
+            "key": "JumpJetAccel",
+            "value": "10"
+          }
+        ]
+      },
+      "JumpJetTurnRate": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8748,
+          "section": "DISK",
+          "key": "JumpJetTurnRate",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8745,
+            "section": "DISK",
+            "key": "JumpJetTurnRate",
+            "value": "100"
+          }
+        ]
+      },
+      "JumpjetHeight": {
+        "value": "750",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8749,
+          "section": "DISK",
+          "key": "JumpjetHeight",
+          "value": "750"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8746,
+            "section": "DISK",
+            "key": "JumpjetHeight",
+            "value": "750"
+          }
+        ]
+      },
+      "JumpjetWobbles": {
+        "value": ".1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8750,
+          "section": "DISK",
+          "key": "JumpjetWobbles",
+          "value": ".1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8747,
+            "section": "DISK",
+            "key": "JumpjetWobbles",
+            "value": ".1"
+          }
+        ]
+      },
+      "JumpjetDeviation": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8751,
+          "section": "DISK",
+          "key": "JumpjetDeviation",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8748,
+            "section": "DISK",
+            "key": "JumpjetDeviation",
+            "value": "15"
+          }
+        ]
+      },
+      "JumpjetNoWobbles": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8752,
+          "section": "DISK",
+          "key": "JumpjetNoWobbles",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8749,
+            "section": "DISK",
+            "key": "JumpjetNoWobbles",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crashable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8753,
+          "section": "DISK",
+          "key": "Crashable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8750,
+            "section": "DISK",
+            "key": "Crashable",
+            "value": "yes"
+          }
+        ]
+      },
+      "TiltCrashJumpjet": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8754,
+          "section": "DISK",
+          "key": "TiltCrashJumpjet",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8751,
+            "section": "DISK",
+            "key": "TiltCrashJumpjet",
+            "value": "yes"
+          }
+        ]
+      },
+      "DeathWeapon": {
+        "value": "BlimpBombEffect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8755,
+          "section": "DISK",
+          "key": "DeathWeapon",
+          "value": "BlimpBombEffect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8752,
+            "section": "DISK",
+            "key": "DeathWeapon",
+            "value": "BlimpBombEffect"
+          }
+        ]
+      },
+      "DeathWeaponDamageModifier": {
+        "value": ".1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8756,
+          "section": "DISK",
+          "key": "DeathWeaponDamageModifier",
+          "value": ".1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8753,
+            "section": "DISK",
+            "key": "DeathWeaponDamageModifier",
+            "value": ".1"
+          }
+        ]
+      },
+      "SelfHealing": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8757,
+          "section": "DISK",
+          "key": "SelfHealing",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8754,
+            "section": "DISK",
+            "key": "SelfHealing",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "DISKICON",
+      "AltCameo": "DISKUICO",
+      "Voxel": true,
+      "TurretOffset": 0,
+      "PrimaryFireFLH": "0,0,75"
+    },
+    "raw_values": {
+      "Cameo": "DISKICON",
+      "AltCameo": "DISKUICO",
+      "Voxel": "yes",
+      "TurretOffset": "0",
+      "PrimaryFireFLH": "0,0,75"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "DISKICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1125,
+          "section": "DISK",
+          "key": "Cameo",
+          "value": "DISKICON"
+        },
+        "history": []
+      },
+      "AltCameo": {
+        "value": "DISKUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1126,
+          "section": "DISK",
+          "key": "AltCameo",
+          "value": "DISKUICO"
+        },
+        "history": []
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1127,
+          "section": "DISK",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "TurretOffset": {
+        "value": "0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1128,
+          "section": "DISK",
+          "key": "TurretOffset",
+          "value": "0"
+        },
+        "history": []
+      },
+      "PrimaryFireFLH": {
+        "value": "0,0,75",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1129,
+          "section": "DISK",
+          "key": "PrimaryFireFLH",
+          "value": "0,0,75"
+        },
+        "history": []
+      }
+    }
+  }
+}

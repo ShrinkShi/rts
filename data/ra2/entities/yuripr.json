@@ -1,0 +1,4216 @@
+{
+  "id": "YURIPR",
+  "category": "infantry",
+  "name_token": "Name:YuriPrime",
+  "art_id": "YURIX",
+  "owners": [
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YABRCK",
+    "YATECH"
+  ],
+  "tech_level": 10,
+  "cost": 1500,
+  "strength": 150,
+  "armor": "flak",
+  "speed": 6,
+  "sight": 9,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "AmphibiousDestroyer",
+  "weapons": {
+    "Primary": {
+      "id": "SuperMindControl",
+      "projectile": "PsychicControl",
+      "warhead": "ControllerBuilding",
+      "report": [],
+      "values": {
+        "Damage": 1,
+        "ROF": 200,
+        "Range": 7,
+        "Projectile": "PsychicControl",
+        "Speed": 100,
+        "Warhead": "ControllerBuilding",
+        "Anim": "YURICNTL",
+        "FireOnce": true
+      },
+      "raw_values": {
+        "Damage": "1",
+        "ROF": "200",
+        "Range": "7",
+        "Projectile": "PsychicControl",
+        "Speed": "100",
+        "Warhead": "ControllerBuilding",
+        "Anim": "YURICNTL",
+        "FireOnce": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24052,
+            "section": "SuperMindControl",
+            "key": "Damage",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17282,
+              "section": "SuperMindControl",
+              "key": "Damage",
+              "value": "10"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24044,
+              "section": "SuperMindControl",
+              "key": "Damage",
+              "value": "1"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "200",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24053,
+            "section": "SuperMindControl",
+            "key": "ROF",
+            "value": "200"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17283,
+              "section": "SuperMindControl",
+              "key": "ROF",
+              "value": "200"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24045,
+              "section": "SuperMindControl",
+              "key": "ROF",
+              "value": "200"
+            }
+          ]
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24054,
+            "section": "SuperMindControl",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17284,
+              "section": "SuperMindControl",
+              "key": "Range",
+              "value": "30"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24046,
+              "section": "SuperMindControl",
+              "key": "Range",
+              "value": "7"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "PsychicControl",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24055,
+            "section": "SuperMindControl",
+            "key": "Projectile",
+            "value": "PsychicControl"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17285,
+              "section": "SuperMindControl",
+              "key": "Projectile",
+              "value": "PsychicControl"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24047,
+              "section": "SuperMindControl",
+              "key": "Projectile",
+              "value": "PsychicControl"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24056,
+            "section": "SuperMindControl",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17286,
+              "section": "SuperMindControl",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24048,
+              "section": "SuperMindControl",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "ControllerBuilding",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24057,
+            "section": "SuperMindControl",
+            "key": "Warhead",
+            "value": "ControllerBuilding"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17287,
+              "section": "SuperMindControl",
+              "key": "Warhead",
+              "value": "Controller"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24049,
+              "section": "SuperMindControl",
+              "key": "Warhead",
+              "value": "ControllerBuilding"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "YURICNTL",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24059,
+            "section": "SuperMindControl",
+            "key": "Anim",
+            "value": "YURICNTL"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17289,
+              "section": "SuperMindControl",
+              "key": "Anim",
+              "value": "YURICNTL"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24051,
+              "section": "SuperMindControl",
+              "key": "Anim",
+              "value": "YURICNTL"
+            }
+          ]
+        },
+        "FireOnce": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24060,
+            "section": "SuperMindControl",
+            "key": "FireOnce",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17290,
+              "section": "SuperMindControl",
+              "key": "FireOnce",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24052,
+              "section": "SuperMindControl",
+              "key": "FireOnce",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "SuperPsiWave",
+      "projectile": "Psychic",
+      "warhead": "SuperPsiPulse",
+      "report": [
+        "YuriDeploy"
+      ],
+      "values": {
+        "Damage": 250,
+        "Range": 1,
+        "ROF": 50,
+        "Projectile": "Psychic",
+        "Speed": 1,
+        "Warhead": "SuperPsiPulse",
+        "AreaFire": true,
+        "FireOnce": true,
+        "Report": "YuriDeploy",
+        "Anim": "RING1"
+      },
+      "raw_values": {
+        "Damage": "250",
+        "Range": "1",
+        "ROF": "50",
+        "Projectile": "Psychic",
+        "Speed": "1",
+        "Warhead": "SuperPsiPulse",
+        "AreaFire": "yes",
+        "FireOnce": "yes",
+        "Report": "YuriDeploy",
+        "Anim": "RING1"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "250",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24099,
+            "section": "SuperPsiWave",
+            "key": "Damage",
+            "value": "250"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24091,
+              "section": "SuperPsiWave",
+              "key": "Damage",
+              "value": "250"
+            }
+          ]
+        },
+        "Range": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24100,
+            "section": "SuperPsiWave",
+            "key": "Range",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24092,
+              "section": "SuperPsiWave",
+              "key": "Range",
+              "value": "1"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24101,
+            "section": "SuperPsiWave",
+            "key": "ROF",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24093,
+              "section": "SuperPsiWave",
+              "key": "ROF",
+              "value": "50"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "Psychic",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24102,
+            "section": "SuperPsiWave",
+            "key": "Projectile",
+            "value": "Psychic"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24094,
+              "section": "SuperPsiWave",
+              "key": "Projectile",
+              "value": "Psychic"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24103,
+            "section": "SuperPsiWave",
+            "key": "Speed",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24095,
+              "section": "SuperPsiWave",
+              "key": "Speed",
+              "value": "1"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SuperPsiPulse",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24104,
+            "section": "SuperPsiWave",
+            "key": "Warhead",
+            "value": "SuperPsiPulse"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24096,
+              "section": "SuperPsiWave",
+              "key": "Warhead",
+              "value": "SuperPsiPulse"
+            }
+          ]
+        },
+        "AreaFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24105,
+            "section": "SuperPsiWave",
+            "key": "AreaFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24097,
+              "section": "SuperPsiWave",
+              "key": "AreaFire",
+              "value": "yes"
+            }
+          ]
+        },
+        "FireOnce": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24106,
+            "section": "SuperPsiWave",
+            "key": "FireOnce",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24098,
+              "section": "SuperPsiWave",
+              "key": "FireOnce",
+              "value": "yes"
+            }
+          ]
+        },
+        "Report": {
+          "value": "YuriDeploy",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24107,
+            "section": "SuperPsiWave",
+            "key": "Report",
+            "value": "YuriDeploy"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24099,
+              "section": "SuperPsiWave",
+              "key": "Report",
+              "value": "YuriDeploy"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "RING1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24108,
+            "section": "SuperPsiWave",
+            "key": "Anim",
+            "value": "RING1"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24100,
+              "section": "SuperPsiWave",
+              "key": "Anim",
+              "value": "RING1"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "YuriPrimeSelect"
+    ],
+    "VoiceMove": [
+      "YuriPrimeMove"
+    ],
+    "VoiceAttack": [
+      "YuriPrimeAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "YuriPrimeFear"
+    ],
+    "VoiceSpecialAttack": [
+      "YuriPrimeMove"
+    ],
+    "DieSound": [
+      "YuriPrimeDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ],
+    "MoveSound": [
+      "YuriPrimeMoveLoop"
+    ],
+    "CreateSound": [
+      "YuriPrimeCreated"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "YURIX",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 5735,
+          "pack": "ra2md",
+          "relative_path": "conqmd/yurix.shp",
+          "folder": "conqmd",
+          "filename": "yurix.shp",
+          "stem": "yurix",
+          "extension": ".shp",
+          "size": 303176,
+          "sha1": "7f01416edf0d52c44509b3937170e62c88ee5f49"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 5735,
+          "pack": "ra2md",
+          "relative_path": "conqmd/yurix.shp",
+          "folder": "conqmd",
+          "filename": "yurix.shp",
+          "stem": "yurix",
+          "extension": ".shp",
+          "size": 303176,
+          "sha1": "7f01416edf0d52c44509b3937170e62c88ee5f49"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 5735,
+          "pack": "ra2md",
+          "relative_path": "conqmd/yurix.shp",
+          "folder": "conqmd",
+          "filename": "yurix.shp",
+          "stem": "yurix",
+          "extension": ".shp",
+          "size": 303176,
+          "sha1": "7f01416edf0d52c44509b3937170e62c88ee5f49"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 5735,
+          "pack": "ra2md",
+          "relative_path": "conqmd/yurix.shp",
+          "folder": "conqmd",
+          "filename": "yurix.shp",
+          "stem": "yurix",
+          "extension": ".shp",
+          "size": 303176,
+          "sha1": "7f01416edf0d52c44509b3937170e62c88ee5f49"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 5735,
+          "pack": "ra2md",
+          "relative_path": "conqmd/yurix.shp",
+          "folder": "conqmd",
+          "filename": "yurix.shp",
+          "stem": "yurix",
+          "extension": ".shp",
+          "size": 303176,
+          "sha1": "7f01416edf0d52c44509b3937170e62c88ee5f49"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 5735,
+          "pack": "ra2md",
+          "relative_path": "conqmd/yurix.shp",
+          "folder": "conqmd",
+          "filename": "yurix.shp",
+          "stem": "yurix",
+          "extension": ".shp",
+          "size": 303176,
+          "sha1": "7f01416edf0d52c44509b3937170e62c88ee5f49"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "YuriXSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 86,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122
+          ],
+          "1": [
+            116
+          ],
+          "2": [
+            110
+          ],
+          "3": [
+            104
+          ],
+          "4": [
+            98
+          ],
+          "5": [
+            92
+          ],
+          "6": [
+            86
+          ],
+          "7": [
+            128
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 86,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "1": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "2": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "3": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "4": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "5": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "6": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "7": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 134,
+        "frames": 20,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 154,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 169,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            205,
+            206,
+            207,
+            208,
+            209,
+            210
+          ],
+          "1": [
+            199,
+            200,
+            201,
+            202,
+            203,
+            204
+          ],
+          "2": [
+            193,
+            194,
+            195,
+            196,
+            197,
+            198
+          ],
+          "3": [
+            187,
+            188,
+            189,
+            190,
+            191,
+            192
+          ],
+          "4": [
+            181,
+            182,
+            183,
+            184,
+            185,
+            186
+          ],
+          "5": [
+            175,
+            176,
+            177,
+            178,
+            179,
+            180
+          ],
+          "6": [
+            169,
+            170,
+            171,
+            172,
+            173,
+            174
+          ],
+          "7": [
+            211,
+            212,
+            213,
+            214,
+            215,
+            216
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 217,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            253,
+            254,
+            255,
+            256,
+            257,
+            258
+          ],
+          "1": [
+            247,
+            248,
+            249,
+            250,
+            251,
+            252
+          ],
+          "2": [
+            241,
+            242,
+            243,
+            244,
+            245,
+            246
+          ],
+          "3": [
+            235,
+            236,
+            237,
+            238,
+            239,
+            240
+          ],
+          "4": [
+            229,
+            230,
+            231,
+            232,
+            233,
+            234
+          ],
+          "5": [
+            223,
+            224,
+            225,
+            226,
+            227,
+            228
+          ],
+          "6": [
+            217,
+            218,
+            219,
+            220,
+            221,
+            222
+          ],
+          "7": [
+            259,
+            260,
+            261,
+            262,
+            263,
+            264
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 260,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            272,
+            273
+          ],
+          "1": [
+            270,
+            271
+          ],
+          "2": [
+            268,
+            269
+          ],
+          "3": [
+            266,
+            267
+          ],
+          "4": [
+            264,
+            265
+          ],
+          "5": [
+            262,
+            263
+          ],
+          "6": [
+            260,
+            261
+          ],
+          "7": [
+            274,
+            275
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 276,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            288,
+            289
+          ],
+          "1": [
+            286,
+            287
+          ],
+          "2": [
+            284,
+            285
+          ],
+          "3": [
+            282,
+            283
+          ],
+          "4": [
+            280,
+            281
+          ],
+          "5": [
+            278,
+            279
+          ],
+          "6": [
+            276,
+            277
+          ],
+          "7": [
+            290,
+            291
+          ]
+        }
+      },
+      "Deploy": {
+        "name": "Deploy",
+        "start": 265,
+        "frames": 7,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271
+          ]
+        }
+      },
+      "Deployed": {
+        "name": "Deployed",
+        "start": 272,
+        "frames": 2,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            272,
+            273
+          ]
+        }
+      },
+      "Undeploy": {
+        "name": "Undeploy",
+        "start": 274,
+        "frames": 6,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            274,
+            275,
+            276,
+            277,
+            278,
+            279
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 280,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            280,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "Paradrop": {
+        "name": "Paradrop",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Tread": {
+        "name": "Tread",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Swim": {
+        "name": "Swim",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "WetAttack": {
+        "name": "WetAttack",
+        "start": 169,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            205,
+            206,
+            207,
+            208,
+            209,
+            210
+          ],
+          "1": [
+            199,
+            200,
+            201,
+            202,
+            203,
+            204
+          ],
+          "2": [
+            193,
+            194,
+            195,
+            196,
+            197,
+            198
+          ],
+          "3": [
+            187,
+            188,
+            189,
+            190,
+            191,
+            192
+          ],
+          "4": [
+            181,
+            182,
+            183,
+            184,
+            185,
+            186
+          ],
+          "5": [
+            175,
+            176,
+            177,
+            178,
+            179,
+            180
+          ],
+          "6": [
+            169,
+            170,
+            171,
+            172,
+            173,
+            174
+          ],
+          "7": [
+            211,
+            212,
+            213,
+            214,
+            215,
+            216
+          ]
+        }
+      },
+      "WetIdle1": {
+        "name": "WetIdle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "WetIdle2": {
+        "name": "WetIdle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "WetDie1": {
+        "name": "WetDie1",
+        "start": 134,
+        "frames": 20,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ]
+        }
+      },
+      "WetDie2": {
+        "name": "WetDie2",
+        "start": 154,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:YuriPrime",
+      "Name": "Yuri Prime",
+      "Category": "Soldier",
+      "Prerequisite": "YABRCK,YATECH",
+      "RequiresStolenSovietTech": true,
+      "Primary": "SuperMindControl",
+      "Secondary": "SuperPsiWave",
+      "CrushSound": "InfantrySquish",
+      "Crushable": false,
+      "TiberiumProof": true,
+      "Strength": 150,
+      "Armor": "flak",
+      "TechLevel": 10,
+      "Pip": "red",
+      "Sight": 9,
+      "Speed": 6,
+      "Owner": "YuriCountry",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 1500,
+      "Soylent": 750,
+      "Points": 50,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "YuriPrimeSelect",
+      "VoiceMove": "YuriPrimeMove",
+      "VoiceAttack": "YuriPrimeAttackCommand",
+      "VoiceFeedback": "YuriPrimeFear",
+      "VoiceSpecialAttack": "YuriPrimeMove",
+      "DieSound": "YuriPrimeDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "AmphibiousDestroyer",
+      "ThreatPosed": 25,
+      "SpecialThreatValue": 1,
+      "ImmuneToVeins": true,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ImmuneToPsionics": true,
+      "Deployer": true,
+      "DeployFire": true,
+      "UndeployDelay": 75,
+      "Size": 1,
+      "BuildLimit": 1,
+      "CanPassiveAquire": false,
+      "IFVMode": 15,
+      "Image": "YURIX",
+      "OpenTransportWeapon": 1,
+      "PixelSelectionBracketDelta": -26,
+      "MoveSound": "YuriPrimeMoveLoop",
+      "CreateSound": "YuriPrimeCreated",
+      "SpeedType": "Amphibious",
+      "Unnatural": true,
+      "SelfHealing": true,
+      "ImmuneToPsionicWeapons": true
+    },
+    "raw_values": {
+      "UIName": "Name:YuriPrime",
+      "Name": "Yuri Prime",
+      "Category": "Soldier",
+      "Prerequisite": "YABRCK,YATECH",
+      "RequiresStolenSovietTech": "yes",
+      "Primary": "SuperMindControl",
+      "Secondary": "SuperPsiWave",
+      "CrushSound": "InfantrySquish",
+      "Crushable": "no",
+      "TiberiumProof": "yes",
+      "Strength": "150",
+      "Armor": "flak",
+      "TechLevel": "10",
+      "Pip": "red",
+      "Sight": "9",
+      "Speed": "6",
+      "Owner": "YuriCountry",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "1500",
+      "Soylent": "750",
+      "Points": "50",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "YuriPrimeSelect",
+      "VoiceMove": "YuriPrimeMove",
+      "VoiceAttack": "YuriPrimeAttackCommand",
+      "VoiceFeedback": "YuriPrimeFear",
+      "VoiceSpecialAttack": "YuriPrimeMove",
+      "DieSound": "YuriPrimeDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "AmphibiousDestroyer",
+      "ThreatPosed": "25",
+      "SpecialThreatValue": "1",
+      "ImmuneToVeins": "yes",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ImmuneToPsionics": "yes",
+      "Deployer": "yes",
+      "DeployFire": "yes",
+      "UndeployDelay": "75",
+      "Size": "1",
+      "BuildLimit": "1",
+      "CanPassiveAquire": "no",
+      "IFVMode": "15",
+      "Image": "YURIX",
+      "OpenTransportWeapon": "1",
+      "PixelSelectionBracketDelta": "-26",
+      "MoveSound": "YuriPrimeMoveLoop",
+      "CreateSound": "YuriPrimeCreated",
+      "SpeedType": "Amphibious",
+      "Unnatural": "yes",
+      "SelfHealing": "yes",
+      "ImmuneToPsionicWeapons": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:YuriPrime",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5247,
+          "section": "YURIPR",
+          "key": "UIName",
+          "value": "Name:YuriPrime"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4958,
+            "section": "YURIPR",
+            "key": "UIName",
+            "value": "Name:YURIPR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5246,
+            "section": "YURIPR",
+            "key": "UIName",
+            "value": "Name:YuriPrime"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Yuri Prime",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5248,
+          "section": "YURIPR",
+          "key": "Name",
+          "value": "Yuri Prime"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4959,
+            "section": "YURIPR",
+            "key": "Name",
+            "value": "Yuri Prime"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5247,
+            "section": "YURIPR",
+            "key": "Name",
+            "value": "Yuri Prime"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5250,
+          "section": "YURIPR",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4960,
+            "section": "YURIPR",
+            "key": "Category",
+            "value": "Soldier"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5249,
+            "section": "YURIPR",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YABRCK,YATECH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5251,
+          "section": "YURIPR",
+          "key": "Prerequisite",
+          "value": "YABRCK,YATECH"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4962,
+            "section": "YURIPR",
+            "key": "Prerequisite",
+            "value": "NAHAND"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5250,
+            "section": "YURIPR",
+            "key": "Prerequisite",
+            "value": "YABRCK,YATECH"
+          }
+        ]
+      },
+      "RequiresStolenSovietTech": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 4963,
+          "section": "YURIPR",
+          "key": "RequiresStolenSovietTech",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Primary": {
+        "value": "SuperMindControl",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5252,
+          "section": "YURIPR",
+          "key": "Primary",
+          "value": "SuperMindControl"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4964,
+            "section": "YURIPR",
+            "key": "Primary",
+            "value": "SuperMindControl"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5251,
+            "section": "YURIPR",
+            "key": "Primary",
+            "value": "SuperMindControl"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "SuperPsiWave",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5253,
+          "section": "YURIPR",
+          "key": "Secondary",
+          "value": "SuperPsiWave"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4965,
+            "section": "YURIPR",
+            "key": "Secondary",
+            "value": "PsiWave"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5252,
+            "section": "YURIPR",
+            "key": "Secondary",
+            "value": "SuperPsiWave"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5255,
+          "section": "YURIPR",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4966,
+            "section": "YURIPR",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5254,
+            "section": "YURIPR",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Crushable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5256,
+          "section": "YURIPR",
+          "key": "Crushable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4967,
+            "section": "YURIPR",
+            "key": "Crushable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5255,
+            "section": "YURIPR",
+            "key": "Crushable",
+            "value": "no"
+          }
+        ]
+      },
+      "TiberiumProof": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5257,
+          "section": "YURIPR",
+          "key": "TiberiumProof",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4968,
+            "section": "YURIPR",
+            "key": "TiberiumProof",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5256,
+            "section": "YURIPR",
+            "key": "TiberiumProof",
+            "value": "yes"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "150",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5258,
+          "section": "YURIPR",
+          "key": "Strength",
+          "value": "150"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4969,
+            "section": "YURIPR",
+            "key": "Strength",
+            "value": "200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5257,
+            "section": "YURIPR",
+            "key": "Strength",
+            "value": "150"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "flak",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5259,
+          "section": "YURIPR",
+          "key": "Armor",
+          "value": "flak"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4970,
+            "section": "YURIPR",
+            "key": "Armor",
+            "value": "flak"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5258,
+            "section": "YURIPR",
+            "key": "Armor",
+            "value": "flak"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5260,
+          "section": "YURIPR",
+          "key": "TechLevel",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4971,
+            "section": "YURIPR",
+            "key": "TechLevel",
+            "value": "9"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5259,
+            "section": "YURIPR",
+            "key": "TechLevel",
+            "value": "10"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "red",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5261,
+          "section": "YURIPR",
+          "key": "Pip",
+          "value": "red"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4972,
+            "section": "YURIPR",
+            "key": "Pip",
+            "value": "red"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5260,
+            "section": "YURIPR",
+            "key": "Pip",
+            "value": "red"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "9",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5263,
+          "section": "YURIPR",
+          "key": "Sight",
+          "value": "9"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4973,
+            "section": "YURIPR",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5262,
+            "section": "YURIPR",
+            "key": "Sight",
+            "value": "9"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5264,
+          "section": "YURIPR",
+          "key": "Speed",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4974,
+            "section": "YURIPR",
+            "key": "Speed",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5263,
+            "section": "YURIPR",
+            "key": "Speed",
+            "value": "6"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5265,
+          "section": "YURIPR",
+          "key": "Owner",
+          "value": "YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4975,
+            "section": "YURIPR",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5264,
+            "section": "YURIPR",
+            "key": "Owner",
+            "value": "YuriCountry"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5266,
+          "section": "YURIPR",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4976,
+            "section": "YURIPR",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5265,
+            "section": "YURIPR",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5267,
+          "section": "YURIPR",
+          "key": "Cost",
+          "value": "1500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4977,
+            "section": "YURIPR",
+            "key": "Cost",
+            "value": "2000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5266,
+            "section": "YURIPR",
+            "key": "Cost",
+            "value": "1500"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "750",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5268,
+          "section": "YURIPR",
+          "key": "Soylent",
+          "value": "750"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4978,
+            "section": "YURIPR",
+            "key": "Soylent",
+            "value": "250"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5267,
+            "section": "YURIPR",
+            "key": "Soylent",
+            "value": "750"
+          }
+        ]
+      },
+      "Points": {
+        "value": "50",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5269,
+          "section": "YURIPR",
+          "key": "Points",
+          "value": "50"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4979,
+            "section": "YURIPR",
+            "key": "Points",
+            "value": "50"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5268,
+            "section": "YURIPR",
+            "key": "Points",
+            "value": "50"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5270,
+          "section": "YURIPR",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4980,
+            "section": "YURIPR",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5269,
+            "section": "YURIPR",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "YuriPrimeSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5271,
+          "section": "YURIPR",
+          "key": "VoiceSelect",
+          "value": "YuriPrimeSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4981,
+            "section": "YURIPR",
+            "key": "VoiceSelect",
+            "value": "YuriSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5270,
+            "section": "YURIPR",
+            "key": "VoiceSelect",
+            "value": "YuriPrimeSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "YuriPrimeMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5272,
+          "section": "YURIPR",
+          "key": "VoiceMove",
+          "value": "YuriPrimeMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4982,
+            "section": "YURIPR",
+            "key": "VoiceMove",
+            "value": "YuriMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5271,
+            "section": "YURIPR",
+            "key": "VoiceMove",
+            "value": "YuriPrimeMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "YuriPrimeAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5273,
+          "section": "YURIPR",
+          "key": "VoiceAttack",
+          "value": "YuriPrimeAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4983,
+            "section": "YURIPR",
+            "key": "VoiceAttack",
+            "value": "YuriAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5272,
+            "section": "YURIPR",
+            "key": "VoiceAttack",
+            "value": "YuriPrimeAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "YuriPrimeFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5274,
+          "section": "YURIPR",
+          "key": "VoiceFeedback",
+          "value": "YuriPrimeFear"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4984,
+            "section": "YURIPR",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5273,
+            "section": "YURIPR",
+            "key": "VoiceFeedback",
+            "value": "YuriPrimeFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "YuriPrimeMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5275,
+          "section": "YURIPR",
+          "key": "VoiceSpecialAttack",
+          "value": "YuriPrimeMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4985,
+            "section": "YURIPR",
+            "key": "VoiceSpecialAttack",
+            "value": "YuriMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5274,
+            "section": "YURIPR",
+            "key": "VoiceSpecialAttack",
+            "value": "YuriPrimeMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "YuriPrimeDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5276,
+          "section": "YURIPR",
+          "key": "DieSound",
+          "value": "YuriPrimeDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4986,
+            "section": "YURIPR",
+            "key": "DieSound",
+            "value": "YuriDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5275,
+            "section": "YURIPR",
+            "key": "DieSound",
+            "value": "YuriPrimeDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5288,
+          "section": "YURIPR",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4987,
+            "section": "YURIPR",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5287,
+            "section": "YURIPR",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5291,
+          "section": "YURIPR",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4988,
+            "section": "YURIPR",
+            "key": "PhysicalSize",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5290,
+            "section": "YURIPR",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "AmphibiousDestroyer",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5289,
+          "section": "YURIPR",
+          "key": "MovementZone",
+          "value": "AmphibiousDestroyer"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4989,
+            "section": "YURIPR",
+            "key": "MovementZone",
+            "value": "Infantry"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5288,
+            "section": "YURIPR",
+            "key": "MovementZone",
+            "value": "AmphibiousDestroyer"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5292,
+          "section": "YURIPR",
+          "key": "ThreatPosed",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4990,
+            "section": "YURIPR",
+            "key": "ThreatPosed",
+            "value": "25"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5291,
+            "section": "YURIPR",
+            "key": "ThreatPosed",
+            "value": "25"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5293,
+          "section": "YURIPR",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4991,
+            "section": "YURIPR",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5292,
+            "section": "YURIPR",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5294,
+          "section": "YURIPR",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4992,
+            "section": "YURIPR",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5293,
+            "section": "YURIPR",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5295,
+          "section": "YURIPR",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4993,
+            "section": "YURIPR",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5294,
+            "section": "YURIPR",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5296,
+          "section": "YURIPR",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4994,
+            "section": "YURIPR",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5295,
+            "section": "YURIPR",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5297,
+          "section": "YURIPR",
+          "key": "ImmuneToPsionics",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4995,
+            "section": "YURIPR",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5296,
+            "section": "YURIPR",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          }
+        ]
+      },
+      "Deployer": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5299,
+          "section": "YURIPR",
+          "key": "Deployer",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4997,
+            "section": "YURIPR",
+            "key": "Deployer",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5297,
+            "section": "YURIPR",
+            "key": "Deployer",
+            "value": "yes"
+          }
+        ]
+      },
+      "DeployFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5300,
+          "section": "YURIPR",
+          "key": "DeployFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4998,
+            "section": "YURIPR",
+            "key": "DeployFire",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5298,
+            "section": "YURIPR",
+            "key": "DeployFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "UndeployDelay": {
+        "value": "75",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5301,
+          "section": "YURIPR",
+          "key": "UndeployDelay",
+          "value": "75"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 4999,
+            "section": "YURIPR",
+            "key": "UndeployDelay",
+            "value": "75"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5299,
+            "section": "YURIPR",
+            "key": "UndeployDelay",
+            "value": "75"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5302,
+          "section": "YURIPR",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5000,
+            "section": "YURIPR",
+            "key": "Size",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5300,
+            "section": "YURIPR",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "BuildLimit": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5303,
+          "section": "YURIPR",
+          "key": "BuildLimit",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5001,
+            "section": "YURIPR",
+            "key": "BuildLimit",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5301,
+            "section": "YURIPR",
+            "key": "BuildLimit",
+            "value": "1"
+          }
+        ]
+      },
+      "CanPassiveAquire": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 5002,
+          "section": "YURIPR",
+          "key": "CanPassiveAquire",
+          "value": "no"
+        },
+        "history": []
+      },
+      "IFVMode": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5305,
+          "section": "YURIPR",
+          "key": "IFVMode",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5003,
+            "section": "YURIPR",
+            "key": "IFVMode",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5303,
+            "section": "YURIPR",
+            "key": "IFVMode",
+            "value": "15"
+          }
+        ]
+      },
+      "Image": {
+        "value": "YURIX",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5249,
+          "section": "YURIPR",
+          "key": "Image",
+          "value": "YURIX"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5248,
+            "section": "YURIPR",
+            "key": "Image",
+            "value": "YURIX"
+          }
+        ]
+      },
+      "OpenTransportWeapon": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5254,
+          "section": "YURIPR",
+          "key": "OpenTransportWeapon",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5253,
+            "section": "YURIPR",
+            "key": "OpenTransportWeapon",
+            "value": "1"
+          }
+        ]
+      },
+      "PixelSelectionBracketDelta": {
+        "value": "-26",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5262,
+          "section": "YURIPR",
+          "key": "PixelSelectionBracketDelta",
+          "value": "-26"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5261,
+            "section": "YURIPR",
+            "key": "PixelSelectionBracketDelta",
+            "value": "-26"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "YuriPrimeMoveLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5277,
+          "section": "YURIPR",
+          "key": "MoveSound",
+          "value": "YuriPrimeMoveLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5276,
+            "section": "YURIPR",
+            "key": "MoveSound",
+            "value": "YuriPrimeMoveLoop"
+          }
+        ]
+      },
+      "CreateSound": {
+        "value": "YuriPrimeCreated",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5278,
+          "section": "YURIPR",
+          "key": "CreateSound",
+          "value": "YuriPrimeCreated"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5277,
+            "section": "YURIPR",
+            "key": "CreateSound",
+            "value": "YuriPrimeCreated"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Amphibious",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5287,
+          "section": "YURIPR",
+          "key": "SpeedType",
+          "value": "Amphibious"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5286,
+            "section": "YURIPR",
+            "key": "SpeedType",
+            "value": "Amphibious"
+          }
+        ]
+      },
+      "Unnatural": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5306,
+          "section": "YURIPR",
+          "key": "Unnatural",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5304,
+            "section": "YURIPR",
+            "key": "Unnatural",
+            "value": "yes"
+          }
+        ]
+      },
+      "SelfHealing": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5307,
+          "section": "YURIPR",
+          "key": "SelfHealing",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5305,
+            "section": "YURIPR",
+            "key": "SelfHealing",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionicWeapons": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5298,
+          "section": "YURIPR",
+          "key": "ImmuneToPsionicWeapons",
+          "value": "yes"
+        },
+        "history": []
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "YYPRICON",
+      "AltCameo": "YYPRUICO",
+      "Sequence": "YuriXSequence",
+      "Crawls": true,
+      "Remapable": true,
+      "FireUp": 6,
+      "PrimaryFireFLH": "10,0,195",
+      "SecondaryFireFLH": "10,0,195"
+    },
+    "raw_values": {
+      "Cameo": "YYPRICON",
+      "AltCameo": "YYPRUICO",
+      "Sequence": "YuriXSequence",
+      "Crawls": "yes",
+      "Remapable": "yes",
+      "FireUp": "6",
+      "PrimaryFireFLH": "10,0,195",
+      "SecondaryFireFLH": "10,0,195"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "YYPRICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 340,
+          "section": "YURIX",
+          "key": "Cameo",
+          "value": "YYPRICON"
+        },
+        "history": []
+      },
+      "AltCameo": {
+        "value": "YYPRUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 341,
+          "section": "YURIX",
+          "key": "AltCameo",
+          "value": "YYPRUICO"
+        },
+        "history": []
+      },
+      "Sequence": {
+        "value": "YuriXSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 342,
+          "section": "YURIX",
+          "key": "Sequence",
+          "value": "YuriXSequence"
+        },
+        "history": []
+      },
+      "Crawls": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 343,
+          "section": "YURIX",
+          "key": "Crawls",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 344,
+          "section": "YURIX",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "FireUp": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 345,
+          "section": "YURIX",
+          "key": "FireUp",
+          "value": "6"
+        },
+        "history": []
+      },
+      "PrimaryFireFLH": {
+        "value": "10,0,195",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 346,
+          "section": "YURIX",
+          "key": "PrimaryFireFLH",
+          "value": "10,0,195"
+        },
+        "history": []
+      },
+      "SecondaryFireFLH": {
+        "value": "10,0,195",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 347,
+          "section": "YURIX",
+          "key": "SecondaryFireFLH",
+          "value": "10,0,195"
+        },
+        "history": []
+      }
+    }
+  }
+}

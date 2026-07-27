@@ -1,0 +1,85 @@
+{
+  "schema_version": 3,
+  "entity_id": "GAWALL",
+  "category": "building",
+  "visual_kind": "building_shp",
+  "available_theaters": [
+    "temperate",
+    "snow"
+  ],
+  "default_theater": "temperate",
+  "default_animation": "BodyStates",
+  "foundation": "1x1",
+  "damage_fire_offsets": [],
+  "new_theater": true,
+  "theaters": {
+    "temperate": {
+      "body_source": "gtwall.shp",
+      "palette": "unittem.pal",
+      "canvas": [
+        78,
+        70
+      ],
+      "default_animation": "BodyStates",
+      "animations": {
+        "BodyStates": {
+          "label": "主体状态",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 500,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "body_normal.png",
+            "body_damaged.png",
+            "body_rubble.png"
+          ],
+          "remap_masks": [
+            "body_normal_remap.png",
+            "body_damaged_remap.png",
+            "body_rubble_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    "snow": {
+      "body_source": "gawall.shp",
+      "palette": "unitsno.pal",
+      "canvas": [
+        78,
+        70
+      ],
+      "default_animation": "BodyStates",
+      "animations": {
+        "BodyStates": {
+          "label": "主体状态",
+          "directional": false,
+          "facing_count": 1,
+          "rate_ms": 500,
+          "loop": true,
+          "directions": null,
+          "frames": [
+            "body_normal.png",
+            "body_damaged.png",
+            "body_rubble.png"
+          ],
+          "remap_masks": [
+            "body_normal_remap.png",
+            "body_damaged_remap.png",
+            "body_rubble_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    }
+  }
+}

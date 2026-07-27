@@ -1,0 +1,1373 @@
+{
+  "id": "SMCV",
+  "category": "vehicle",
+  "name_token": "Name:SMCV",
+  "art_id": "SMCV",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAWEAP",
+    "NADEPT"
+  ],
+  "tech_level": 10,
+  "cost": 3000,
+  "strength": 1000,
+  "armor": "heavy",
+  "speed": 4,
+  "sight": 6,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Normal",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "MCVSovietSelect"
+    ],
+    "VoiceMove": [
+      "MCVSovietMove"
+    ],
+    "VoiceAttack": [
+      "MCVSovietMove"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ],
+    "MoveSound": [
+      "MCVMoveStart"
+    ],
+    "DeploySound": [
+      "PlaceBuilding"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "SMCV",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4337,
+      "pack": "ra2",
+      "relative_path": "local/smcv.vxl",
+      "folder": "local",
+      "filename": "smcv.vxl",
+      "stem": "smcv",
+      "extension": ".vxl",
+      "size": 87327,
+      "sha1": "ae84b28b7f146f43e0bf708608bf12a9bbd181dd"
+    },
+    "body_hva": {
+      "asset_id": 4336,
+      "pack": "ra2",
+      "relative_path": "local/smcv.hva",
+      "folder": "local",
+      "filename": "smcv.hva",
+      "stem": "smcv",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "c911cd16f6fbb454d5adc98588d1c97a746a0e45"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:SMCV",
+      "Name": "Soviet Construction Vehicle",
+      "Prerequisite": "NAWEAP,NADEPT",
+      "Strength": 1000,
+      "Category": "Support",
+      "Armor": "heavy",
+      "DeploysInto": "NACNST",
+      "TechLevel": 10,
+      "Sight": 6,
+      "Speed": 4,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "CrateGoodie": true,
+      "Cost": 3000,
+      "Points": 60,
+      "ROT": 5,
+      "Crewed": true,
+      "Crusher": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "MCVSovietSelect",
+      "VoiceMove": "MCVSovietMove",
+      "VoiceAttack": "MCVSovietMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "MCVMoveStart",
+      "MaxDebris": 6,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": 3.5,
+      "MovementZone": "Normal",
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": 1,
+      "ZFudgeColumn": 12,
+      "ZFudgeTunnel": 15,
+      "Size": 6,
+      "Trainable": false,
+      "Soylent": 3000,
+      "CrushSound": "TankCrush",
+      "DeploySound": "PlaceBuilding",
+      "Bunkerable": false,
+      "OmniCrushResistant": true
+    },
+    "raw_values": {
+      "UIName": "Name:SMCV",
+      "Name": "Soviet Construction Vehicle",
+      "Prerequisite": "NAWEAP,NADEPT",
+      "Strength": "1000",
+      "Category": "Support",
+      "Armor": "heavy",
+      "DeploysInto": "NACNST",
+      "TechLevel": "10",
+      "Sight": "6",
+      "Speed": "4",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "CrateGoodie": "yes",
+      "Cost": "3000",
+      "Points": "60",
+      "ROT": "5",
+      "Crewed": "yes",
+      "Crusher": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "MCVSovietSelect",
+      "VoiceMove": "MCVSovietMove",
+      "VoiceAttack": "MCVSovietMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "MCVMoveStart",
+      "MaxDebris": "6",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": "3.5",
+      "MovementZone": "Normal",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": "1",
+      "ZFudgeColumn": "12",
+      "ZFudgeTunnel": "15",
+      "Size": "6",
+      "Trainable": "no",
+      "Soylent": "3000",
+      "CrushSound": "TankCrush",
+      "DeploySound": "PlaceBuilding",
+      "Bunkerable": "no",
+      "OmniCrushResistant": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:SMCV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7839,
+          "section": "SMCV",
+          "key": "UIName",
+          "value": "Name:SMCV"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6130,
+            "section": "SMCV",
+            "key": "UIName",
+            "value": "Name:SMCV"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7836,
+            "section": "SMCV",
+            "key": "UIName",
+            "value": "Name:SMCV"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Soviet Construction Vehicle",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7840,
+          "section": "SMCV",
+          "key": "Name",
+          "value": "Soviet Construction Vehicle"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6131,
+            "section": "SMCV",
+            "key": "Name",
+            "value": "Soviet Construction Vehicle"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7837,
+            "section": "SMCV",
+            "key": "Name",
+            "value": "Soviet Construction Vehicle"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAWEAP,NADEPT",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7841,
+          "section": "SMCV",
+          "key": "Prerequisite",
+          "value": "NAWEAP,NADEPT"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6132,
+            "section": "SMCV",
+            "key": "Prerequisite",
+            "value": "NAWEAP,NADEPT"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7838,
+            "section": "SMCV",
+            "key": "Prerequisite",
+            "value": "NAWEAP,NADEPT"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7842,
+          "section": "SMCV",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6133,
+            "section": "SMCV",
+            "key": "Strength",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7839,
+            "section": "SMCV",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Support",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7843,
+          "section": "SMCV",
+          "key": "Category",
+          "value": "Support"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6134,
+            "section": "SMCV",
+            "key": "Category",
+            "value": "Support"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7840,
+            "section": "SMCV",
+            "key": "Category",
+            "value": "Support"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7844,
+          "section": "SMCV",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6135,
+            "section": "SMCV",
+            "key": "Armor",
+            "value": "heavy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7841,
+            "section": "SMCV",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "DeploysInto": {
+        "value": "NACNST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7845,
+          "section": "SMCV",
+          "key": "DeploysInto",
+          "value": "NACNST"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6136,
+            "section": "SMCV",
+            "key": "DeploysInto",
+            "value": "NACNST"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7842,
+            "section": "SMCV",
+            "key": "DeploysInto",
+            "value": "NACNST"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7846,
+          "section": "SMCV",
+          "key": "TechLevel",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6137,
+            "section": "SMCV",
+            "key": "TechLevel",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7843,
+            "section": "SMCV",
+            "key": "TechLevel",
+            "value": "10"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7847,
+          "section": "SMCV",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6138,
+            "section": "SMCV",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7844,
+            "section": "SMCV",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7848,
+          "section": "SMCV",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6139,
+            "section": "SMCV",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7845,
+            "section": "SMCV",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7849,
+          "section": "SMCV",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6140,
+            "section": "SMCV",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7846,
+            "section": "SMCV",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7850,
+          "section": "SMCV",
+          "key": "CrateGoodie",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6141,
+            "section": "SMCV",
+            "key": "CrateGoodie",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7847,
+            "section": "SMCV",
+            "key": "CrateGoodie",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "3000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7851,
+          "section": "SMCV",
+          "key": "Cost",
+          "value": "3000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6142,
+            "section": "SMCV",
+            "key": "Cost",
+            "value": "3000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7848,
+            "section": "SMCV",
+            "key": "Cost",
+            "value": "3000"
+          }
+        ]
+      },
+      "Points": {
+        "value": "60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7853,
+          "section": "SMCV",
+          "key": "Points",
+          "value": "60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6143,
+            "section": "SMCV",
+            "key": "Points",
+            "value": "60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7850,
+            "section": "SMCV",
+            "key": "Points",
+            "value": "60"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7854,
+          "section": "SMCV",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6144,
+            "section": "SMCV",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7851,
+            "section": "SMCV",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7855,
+          "section": "SMCV",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6145,
+            "section": "SMCV",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7852,
+            "section": "SMCV",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7856,
+          "section": "SMCV",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6146,
+            "section": "SMCV",
+            "key": "Crusher",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7853,
+            "section": "SMCV",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7857,
+          "section": "SMCV",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6147,
+            "section": "SMCV",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7854,
+            "section": "SMCV",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "MCVSovietSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7858,
+          "section": "SMCV",
+          "key": "VoiceSelect",
+          "value": "MCVSovietSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6148,
+            "section": "SMCV",
+            "key": "VoiceSelect",
+            "value": "GenSovVehicleSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7855,
+            "section": "SMCV",
+            "key": "VoiceSelect",
+            "value": "MCVSovietSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "MCVSovietMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7859,
+          "section": "SMCV",
+          "key": "VoiceMove",
+          "value": "MCVSovietMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6149,
+            "section": "SMCV",
+            "key": "VoiceMove",
+            "value": "GenSovVehicleMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7856,
+            "section": "SMCV",
+            "key": "VoiceMove",
+            "value": "MCVSovietMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "MCVSovietMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7860,
+          "section": "SMCV",
+          "key": "VoiceAttack",
+          "value": "MCVSovietMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6150,
+            "section": "SMCV",
+            "key": "VoiceAttack",
+            "value": "GenSovVehicleAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7857,
+            "section": "SMCV",
+            "key": "VoiceAttack",
+            "value": "MCVSovietMove"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7861,
+          "section": "SMCV",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6151,
+            "section": "SMCV",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7858,
+            "section": "SMCV",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7862,
+          "section": "SMCV",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6152,
+            "section": "SMCV",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7859,
+            "section": "SMCV",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "MCVMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7863,
+          "section": "SMCV",
+          "key": "MoveSound",
+          "value": "MCVMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6153,
+            "section": "SMCV",
+            "key": "MoveSound",
+            "value": "MCVMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7860,
+            "section": "SMCV",
+            "key": "MoveSound",
+            "value": "MCVMoveStart"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7866,
+          "section": "SMCV",
+          "key": "MaxDebris",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6154,
+            "section": "SMCV",
+            "key": "MaxDebris",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7863,
+            "section": "SMCV",
+            "key": "MaxDebris",
+            "value": "6"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7867,
+          "section": "SMCV",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6155,
+            "section": "SMCV",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7864,
+            "section": "SMCV",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "3.5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7868,
+          "section": "SMCV",
+          "key": "Weight",
+          "value": "3.5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6156,
+            "section": "SMCV",
+            "key": "Weight",
+            "value": "3.5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7865,
+            "section": "SMCV",
+            "key": "Weight",
+            "value": "3.5"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Normal",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7869,
+          "section": "SMCV",
+          "key": "MovementZone",
+          "value": "Normal"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6157,
+            "section": "SMCV",
+            "key": "MovementZone",
+            "value": "Normal"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7866,
+            "section": "SMCV",
+            "key": "MovementZone",
+            "value": "Normal"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7870,
+          "section": "SMCV",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6158,
+            "section": "SMCV",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7867,
+            "section": "SMCV",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7871,
+          "section": "SMCV",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6159,
+            "section": "SMCV",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7868,
+            "section": "SMCV",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7872,
+          "section": "SMCV",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6160,
+            "section": "SMCV",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7869,
+            "section": "SMCV",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "12",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7873,
+          "section": "SMCV",
+          "key": "ZFudgeColumn",
+          "value": "12"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6161,
+            "section": "SMCV",
+            "key": "ZFudgeColumn",
+            "value": "12"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7870,
+            "section": "SMCV",
+            "key": "ZFudgeColumn",
+            "value": "12"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7874,
+          "section": "SMCV",
+          "key": "ZFudgeTunnel",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6162,
+            "section": "SMCV",
+            "key": "ZFudgeTunnel",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7871,
+            "section": "SMCV",
+            "key": "ZFudgeTunnel",
+            "value": "15"
+          }
+        ]
+      },
+      "Size": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7875,
+          "section": "SMCV",
+          "key": "Size",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6163,
+            "section": "SMCV",
+            "key": "Size",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7872,
+            "section": "SMCV",
+            "key": "Size",
+            "value": "6"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7876,
+          "section": "SMCV",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6164,
+            "section": "SMCV",
+            "key": "Trainable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7873,
+            "section": "SMCV",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "3000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7852,
+          "section": "SMCV",
+          "key": "Soylent",
+          "value": "3000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7849,
+            "section": "SMCV",
+            "key": "Soylent",
+            "value": "3000"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7864,
+          "section": "SMCV",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7861,
+            "section": "SMCV",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      },
+      "DeploySound": {
+        "value": "PlaceBuilding",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7865,
+          "section": "SMCV",
+          "key": "DeploySound",
+          "value": "PlaceBuilding"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7862,
+            "section": "SMCV",
+            "key": "DeploySound",
+            "value": "PlaceBuilding"
+          }
+        ]
+      },
+      "Bunkerable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7877,
+          "section": "SMCV",
+          "key": "Bunkerable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7874,
+            "section": "SMCV",
+            "key": "Bunkerable",
+            "value": "no"
+          }
+        ]
+      },
+      "OmniCrushResistant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7878,
+          "section": "SMCV",
+          "key": "OmniCrushResistant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7875,
+            "section": "SMCV",
+            "key": "OmniCrushResistant",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "SMCVICON",
+      "Remapable": true,
+      "Voxel": true
+    },
+    "raw_values": {
+      "Cameo": "SMCVICON",
+      "Remapable": "yes",
+      "Voxel": "yes"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "SMCVICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 779,
+          "section": "SMCV",
+          "key": "Cameo",
+          "value": "SMCVICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 558,
+            "section": "SMCV",
+            "key": "Cameo",
+            "value": "SMCVICON"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 780,
+          "section": "SMCV",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 559,
+            "section": "SMCV",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 781,
+          "section": "SMCV",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 560,
+            "section": "SMCV",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  }
+}

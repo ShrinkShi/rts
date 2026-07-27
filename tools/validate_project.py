@@ -76,7 +76,7 @@ def validate_features(data: dict[str, object]) -> None:
     factory = text("scripts/game/sprite_sheet_factory.gd")
     asset_processor = text("tools/process_ai_assets.py")
 
-    require(project, ['config/version="0.9.0"'], "Project version")
+    require(project, ['config/version="0.15.0"'], "Project version")
     require(match, [
         'structure_jobs = {"primary": {}, "defense": {}}',
         'func repair_entity_step',
@@ -115,7 +115,7 @@ def validate_features(data: dict[str, object]) -> None:
         'construction_progress',
         'SpriteSheetFactory.get_building_frame',
         'func _update_turret_visual',
-        'RotatingWeaponVisual',
+        'VisualRoot/Weapon',
         'get_defense_head_frames',
     ], "Building")
     require(grid, [
@@ -141,9 +141,28 @@ def validate_features(data: dict[str, object]) -> None:
     require(campaign, ['MarginContainer.new()', 'size_flags_vertical = Control.SIZE_EXPAND_FILL'], "Campaign UI")
     require(factory, ['AtlasTexture.new()', 'filter_clip = true', 'tank_chassis.png', 'tank_turret.png', 'bunker_head', 'create_team_material'], "Sprite atlas")
     require(asset_processor, ['N, NW, W, SW, S, SE, E, NE', 'rows_from_specs', '[5, -5, 3, 1, 0, -2, -4, 4]', "split_grid(SOURCES['tank_chassis'], 8, 3, 26)", "split_grid(SOURCES['tank_turret'], 8, 2, 52)", '(224, 192)', '[4, 3, 2, 1, 0, 7, 6, 5]', '_tank_ring_anchor', '_turret_mount_anchor', '(128, 184)', 'clean_detached_fragments'], "AI asset alignment")
-    require(unit, ['turret_sprite.position = visual_sprite.position + visual_profile.turret_offset', 'turret_facing_direction = facing_direction', 'get_movement_speed_multiplier'], "Tank shared pivot and terrain speed")
+    require(unit, ['get_node_or_null("VisualRoot/Body")', 'get_node_or_null("VisualRoot/Turret")', 'turret_facing_direction = facing_direction', 'get_movement_speed_multiplier'], "Prefab visual nodes and terrain speed")
     visual_store = text('scripts/core/visual_profile_store.gd')
     require(visual_store, ['resources/visual_profiles', 'ResourceLoader.exists'], 'Visual tuning profiles')
+    require(match, ['UNIT_SCENE_PATHS', 'BUILDING_SCENE_PATHS', 'PackedScene', '.instantiate()'], 'PackedScene spawning')
+    for unit_id in ['rifle', 'rocket', 'tank', 'scout', 'harvester']:
+        scene_path = ROOT / 'scenes' / 'entities' / 'units' / f'{unit_id}.tscn'
+        if not scene_path.exists():
+            error(f'Missing unit prefab: {scene_path.relative_to(ROOT)}')
+        else:
+            scene_text = scene_path.read_text(encoding='utf-8')
+            for token in ['VisualRoot', 'CollisionShape2D', 'AnimatedSprite2D']:
+                if token not in scene_text:
+                    error(f'Unit prefab {unit_id} missing {token}')
+    for building_id in ['command', 'power', 'barracks', 'refinery', 'war_factory', 'repair_bay', 'turret', 'bunker']:
+        scene_path = ROOT / 'scenes' / 'entities' / 'buildings' / f'{building_id}.tscn'
+        if not scene_path.exists():
+            error(f'Missing building prefab: {scene_path.relative_to(ROOT)}')
+        else:
+            scene_text = scene_path.read_text(encoding='utf-8')
+            for token in ['VisualRoot', 'StaticBody2D', 'CollisionShape2D', 'Sprite2D']:
+                if token not in scene_text:
+                    error(f'Building prefab {building_id} missing {token}')
     for profile_id in ['rifle', 'rocket', 'tank', 'scout', 'harvester', 'power', 'barracks', 'refinery', 'war_factory', 'turret', 'bunker']:
         if not (ROOT / 'resources' / 'visual_profiles' / f'{profile_id}.tres').exists():
             error(f'Missing visual profile: {profile_id}.tres')

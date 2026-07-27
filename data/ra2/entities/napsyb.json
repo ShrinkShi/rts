@@ -1,0 +1,4475 @@
+{
+  "id": "NAPSYB",
+  "category": "building",
+  "name_token": "Name:NAPSYB",
+  "art_id": "NAPSYB",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NATECH"
+  ],
+  "tech_level": -1,
+  "cost": 1000,
+  "strength": 750,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 10,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {
+    "DieSound": [
+      "PsychicAmplifierDie"
+    ],
+    "AmbientSound": [
+      "PsychicAmplifierLoop"
+    ]
+  },
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "NAPSYB",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 5060,
+          "pack": "ra2",
+          "relative_path": "snow/napsyb.shp",
+          "folder": "snow",
+          "filename": "napsyb.shp",
+          "stem": "napsyb",
+          "extension": ".shp",
+          "size": 13504,
+          "sha1": "3e3f05b341f0349c21563fb314e6715285d97977"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 5060,
+          "pack": "ra2",
+          "relative_path": "snow/napsyb.shp",
+          "folder": "snow",
+          "filename": "napsyb.shp",
+          "stem": "napsyb",
+          "extension": ".shp",
+          "size": 13504,
+          "sha1": "3e3f05b341f0349c21563fb314e6715285d97977"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 5060,
+          "pack": "ra2",
+          "relative_path": "snow/napsyb.shp",
+          "folder": "snow",
+          "filename": "napsyb.shp",
+          "stem": "napsyb",
+          "extension": ".shp",
+          "size": 13504,
+          "sha1": "3e3f05b341f0349c21563fb314e6715285d97977"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 5060,
+          "pack": "ra2",
+          "relative_path": "snow/napsyb.shp",
+          "folder": "snow",
+          "filename": "napsyb.shp",
+          "stem": "napsyb",
+          "extension": ".shp",
+          "size": 13504,
+          "sha1": "3e3f05b341f0349c21563fb314e6715285d97977"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 5060,
+          "pack": "ra2",
+          "relative_path": "snow/napsyb.shp",
+          "folder": "snow",
+          "filename": "napsyb.shp",
+          "stem": "napsyb",
+          "extension": ".shp",
+          "size": 13504,
+          "sha1": "3e3f05b341f0349c21563fb314e6715285d97977"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 5060,
+          "pack": "ra2",
+          "relative_path": "snow/napsyb.shp",
+          "folder": "snow",
+          "filename": "napsyb.shp",
+          "stem": "napsyb",
+          "extension": ".shp",
+          "size": 13504,
+          "sha1": "3e3f05b341f0349c21563fb314e6715285d97977"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "Buildup": {
+        "temperate": {
+          "art_id": "NAPSYBMK",
+          "image": "NAPSYBMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 1064,
+            "pack": "ra2",
+            "relative_path": "isosnow/napsybmk.shp",
+            "folder": "isosnow",
+            "filename": "napsybmk.shp",
+            "stem": "napsybmk",
+            "extension": ".shp",
+            "size": 145520,
+            "sha1": "1c108e3519775791c94c7e69f905d731b754e0fb"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "NAPSYBMK",
+          "image": "NAPSYBMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 1064,
+            "pack": "ra2",
+            "relative_path": "isosnow/napsybmk.shp",
+            "folder": "isosnow",
+            "filename": "napsybmk.shp",
+            "stem": "napsybmk",
+            "extension": ".shp",
+            "size": 145520,
+            "sha1": "1c108e3519775791c94c7e69f905d731b754e0fb"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "NAPSYBMK",
+          "image": "NAPSYBMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 1064,
+            "pack": "ra2",
+            "relative_path": "isosnow/napsybmk.shp",
+            "folder": "isosnow",
+            "filename": "napsybmk.shp",
+            "stem": "napsybmk",
+            "extension": ".shp",
+            "size": 145520,
+            "sha1": "1c108e3519775791c94c7e69f905d731b754e0fb"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "NAPSYBMK",
+          "image": "NAPSYBMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 1064,
+            "pack": "ra2",
+            "relative_path": "isosnow/napsybmk.shp",
+            "folder": "isosnow",
+            "filename": "napsybmk.shp",
+            "stem": "napsybmk",
+            "extension": ".shp",
+            "size": 145520,
+            "sha1": "1c108e3519775791c94c7e69f905d731b754e0fb"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "NAPSYBMK",
+          "image": "NAPSYBMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 1064,
+            "pack": "ra2",
+            "relative_path": "isosnow/napsybmk.shp",
+            "folder": "isosnow",
+            "filename": "napsybmk.shp",
+            "stem": "napsybmk",
+            "extension": ".shp",
+            "size": 145520,
+            "sha1": "1c108e3519775791c94c7e69f905d731b754e0fb"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "NAPSYBMK",
+          "image": "NAPSYBMK",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 1064,
+            "pack": "ra2",
+            "relative_path": "isosnow/napsybmk.shp",
+            "folder": "isosnow",
+            "filename": "napsybmk.shp",
+            "stem": "napsybmk",
+            "extension": ".shp",
+            "size": 145520,
+            "sha1": "1c108e3519775791c94c7e69f905d731b754e0fb"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        }
+      },
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "NAPSYB_A",
+          "image": "NAPSYB_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 441,
+            "pack": "ra2",
+            "relative_path": "generic/ngpsyb_a.shp",
+            "folder": "generic",
+            "filename": "ngpsyb_a.shp",
+            "stem": "ngpsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "032ad568825fc1373b51f700487c625a500474c6"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 14,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8175,
+                "section": "NAPSYB_A",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6381,
+                  "section": "NAPSYB_A",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8176,
+                "section": "NAPSYB_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6382,
+                  "section": "NAPSYB_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8177,
+                "section": "NAPSYB_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6383,
+                  "section": "NAPSYB_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8178,
+                "section": "NAPSYB_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6384,
+                  "section": "NAPSYB_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "14",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8179,
+                "section": "NAPSYB_A",
+                "key": "LoopEnd",
+                "value": "14"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6385,
+                  "section": "NAPSYB_A",
+                  "key": "LoopEnd",
+                  "value": "14"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8180,
+                "section": "NAPSYB_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6386,
+                  "section": "NAPSYB_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8181,
+                "section": "NAPSYB_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6387,
+                  "section": "NAPSYB_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8182,
+                "section": "NAPSYB_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6388,
+                  "section": "NAPSYB_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8183,
+                "section": "NAPSYB_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6389,
+                  "section": "NAPSYB_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8184,
+                "section": "NAPSYB_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6390,
+                  "section": "NAPSYB_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -75,
+          "YSort": 100
+        },
+        "snow": {
+          "art_id": "NAPSYB_A",
+          "image": "NAPSYB_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 5061,
+            "pack": "ra2",
+            "relative_path": "snow/napsyb_a.shp",
+            "folder": "snow",
+            "filename": "napsyb_a.shp",
+            "stem": "napsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "acd38e266c1dea626e7358928f5dcf7d47365a72"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 14,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8175,
+                "section": "NAPSYB_A",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6381,
+                  "section": "NAPSYB_A",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8176,
+                "section": "NAPSYB_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6382,
+                  "section": "NAPSYB_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8177,
+                "section": "NAPSYB_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6383,
+                  "section": "NAPSYB_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8178,
+                "section": "NAPSYB_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6384,
+                  "section": "NAPSYB_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "14",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8179,
+                "section": "NAPSYB_A",
+                "key": "LoopEnd",
+                "value": "14"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6385,
+                  "section": "NAPSYB_A",
+                  "key": "LoopEnd",
+                  "value": "14"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8180,
+                "section": "NAPSYB_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6386,
+                  "section": "NAPSYB_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8181,
+                "section": "NAPSYB_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6387,
+                  "section": "NAPSYB_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8182,
+                "section": "NAPSYB_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6388,
+                  "section": "NAPSYB_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8183,
+                "section": "NAPSYB_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6389,
+                  "section": "NAPSYB_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8184,
+                "section": "NAPSYB_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6390,
+                  "section": "NAPSYB_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -75,
+          "YSort": 100
+        },
+        "urban": {
+          "art_id": "NAPSYB_A",
+          "image": "NAPSYB_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 441,
+            "pack": "ra2",
+            "relative_path": "generic/ngpsyb_a.shp",
+            "folder": "generic",
+            "filename": "ngpsyb_a.shp",
+            "stem": "ngpsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "032ad568825fc1373b51f700487c625a500474c6"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 14,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8175,
+                "section": "NAPSYB_A",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6381,
+                  "section": "NAPSYB_A",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8176,
+                "section": "NAPSYB_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6382,
+                  "section": "NAPSYB_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8177,
+                "section": "NAPSYB_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6383,
+                  "section": "NAPSYB_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8178,
+                "section": "NAPSYB_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6384,
+                  "section": "NAPSYB_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "14",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8179,
+                "section": "NAPSYB_A",
+                "key": "LoopEnd",
+                "value": "14"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6385,
+                  "section": "NAPSYB_A",
+                  "key": "LoopEnd",
+                  "value": "14"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8180,
+                "section": "NAPSYB_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6386,
+                  "section": "NAPSYB_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8181,
+                "section": "NAPSYB_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6387,
+                  "section": "NAPSYB_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8182,
+                "section": "NAPSYB_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6388,
+                  "section": "NAPSYB_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8183,
+                "section": "NAPSYB_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6389,
+                  "section": "NAPSYB_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8184,
+                "section": "NAPSYB_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6390,
+                  "section": "NAPSYB_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -75,
+          "YSort": 100
+        },
+        "desert": {
+          "art_id": "NAPSYB_A",
+          "image": "NAPSYB_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 441,
+            "pack": "ra2",
+            "relative_path": "generic/ngpsyb_a.shp",
+            "folder": "generic",
+            "filename": "ngpsyb_a.shp",
+            "stem": "ngpsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "032ad568825fc1373b51f700487c625a500474c6"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 14,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8175,
+                "section": "NAPSYB_A",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6381,
+                  "section": "NAPSYB_A",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8176,
+                "section": "NAPSYB_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6382,
+                  "section": "NAPSYB_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8177,
+                "section": "NAPSYB_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6383,
+                  "section": "NAPSYB_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8178,
+                "section": "NAPSYB_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6384,
+                  "section": "NAPSYB_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "14",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8179,
+                "section": "NAPSYB_A",
+                "key": "LoopEnd",
+                "value": "14"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6385,
+                  "section": "NAPSYB_A",
+                  "key": "LoopEnd",
+                  "value": "14"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8180,
+                "section": "NAPSYB_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6386,
+                  "section": "NAPSYB_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8181,
+                "section": "NAPSYB_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6387,
+                  "section": "NAPSYB_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8182,
+                "section": "NAPSYB_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6388,
+                  "section": "NAPSYB_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8183,
+                "section": "NAPSYB_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6389,
+                  "section": "NAPSYB_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8184,
+                "section": "NAPSYB_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6390,
+                  "section": "NAPSYB_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -75,
+          "YSort": 100
+        },
+        "lunar": {
+          "art_id": "NAPSYB_A",
+          "image": "NAPSYB_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 441,
+            "pack": "ra2",
+            "relative_path": "generic/ngpsyb_a.shp",
+            "folder": "generic",
+            "filename": "ngpsyb_a.shp",
+            "stem": "ngpsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "032ad568825fc1373b51f700487c625a500474c6"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 14,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8175,
+                "section": "NAPSYB_A",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6381,
+                  "section": "NAPSYB_A",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8176,
+                "section": "NAPSYB_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6382,
+                  "section": "NAPSYB_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8177,
+                "section": "NAPSYB_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6383,
+                  "section": "NAPSYB_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8178,
+                "section": "NAPSYB_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6384,
+                  "section": "NAPSYB_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "14",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8179,
+                "section": "NAPSYB_A",
+                "key": "LoopEnd",
+                "value": "14"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6385,
+                  "section": "NAPSYB_A",
+                  "key": "LoopEnd",
+                  "value": "14"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8180,
+                "section": "NAPSYB_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6386,
+                  "section": "NAPSYB_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8181,
+                "section": "NAPSYB_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6387,
+                  "section": "NAPSYB_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8182,
+                "section": "NAPSYB_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6388,
+                  "section": "NAPSYB_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8183,
+                "section": "NAPSYB_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6389,
+                  "section": "NAPSYB_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8184,
+                "section": "NAPSYB_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6390,
+                  "section": "NAPSYB_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -75,
+          "YSort": 100
+        },
+        "newurban": {
+          "art_id": "NAPSYB_A",
+          "image": "NAPSYB_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 441,
+            "pack": "ra2",
+            "relative_path": "generic/ngpsyb_a.shp",
+            "folder": "generic",
+            "filename": "ngpsyb_a.shp",
+            "stem": "ngpsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "032ad568825fc1373b51f700487c625a500474c6"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 14,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8175,
+                "section": "NAPSYB_A",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6381,
+                  "section": "NAPSYB_A",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8176,
+                "section": "NAPSYB_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6382,
+                  "section": "NAPSYB_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8177,
+                "section": "NAPSYB_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6383,
+                  "section": "NAPSYB_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8178,
+                "section": "NAPSYB_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6384,
+                  "section": "NAPSYB_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "14",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8179,
+                "section": "NAPSYB_A",
+                "key": "LoopEnd",
+                "value": "14"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6385,
+                  "section": "NAPSYB_A",
+                  "key": "LoopEnd",
+                  "value": "14"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8180,
+                "section": "NAPSYB_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6386,
+                  "section": "NAPSYB_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8181,
+                "section": "NAPSYB_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6387,
+                  "section": "NAPSYB_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8182,
+                "section": "NAPSYB_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6388,
+                  "section": "NAPSYB_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8183,
+                "section": "NAPSYB_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6389,
+                  "section": "NAPSYB_A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8184,
+                "section": "NAPSYB_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6390,
+                  "section": "NAPSYB_A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -75,
+          "YSort": 100
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "NAPSYB_AD",
+          "image": "NAPSYB_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 5061,
+            "pack": "ra2",
+            "relative_path": "snow/napsyb_a.shp",
+            "folder": "snow",
+            "filename": "napsyb_a.shp",
+            "stem": "napsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "acd38e266c1dea626e7358928f5dcf7d47365a72"
+          },
+          "Start": 15,
+          "LoopStart": 15,
+          "LoopEnd": 29,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8187,
+                "section": "NAPSYB_AD",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6393,
+                  "section": "NAPSYB_AD",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8189,
+                "section": "NAPSYB_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6395,
+                  "section": "NAPSYB_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8190,
+                "section": "NAPSYB_AD",
+                "key": "Start",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6396,
+                  "section": "NAPSYB_AD",
+                  "key": "Start",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8191,
+                "section": "NAPSYB_AD",
+                "key": "LoopStart",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6397,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopStart",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "29",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8192,
+                "section": "NAPSYB_AD",
+                "key": "LoopEnd",
+                "value": "29"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6398,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopEnd",
+                  "value": "29"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8193,
+                "section": "NAPSYB_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6399,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8194,
+                "section": "NAPSYB_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6400,
+                  "section": "NAPSYB_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8195,
+                "section": "NAPSYB_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6401,
+                  "section": "NAPSYB_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8196,
+                "section": "NAPSYB_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6402,
+                  "section": "NAPSYB_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8197,
+                "section": "NAPSYB_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6403,
+                  "section": "NAPSYB_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -75,
+          "YSort": 100
+        },
+        "snow": {
+          "art_id": "NAPSYB_AD",
+          "image": "NAPSYB_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 5061,
+            "pack": "ra2",
+            "relative_path": "snow/napsyb_a.shp",
+            "folder": "snow",
+            "filename": "napsyb_a.shp",
+            "stem": "napsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "acd38e266c1dea626e7358928f5dcf7d47365a72"
+          },
+          "Start": 15,
+          "LoopStart": 15,
+          "LoopEnd": 29,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8187,
+                "section": "NAPSYB_AD",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6393,
+                  "section": "NAPSYB_AD",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8189,
+                "section": "NAPSYB_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6395,
+                  "section": "NAPSYB_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8190,
+                "section": "NAPSYB_AD",
+                "key": "Start",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6396,
+                  "section": "NAPSYB_AD",
+                  "key": "Start",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8191,
+                "section": "NAPSYB_AD",
+                "key": "LoopStart",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6397,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopStart",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "29",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8192,
+                "section": "NAPSYB_AD",
+                "key": "LoopEnd",
+                "value": "29"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6398,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopEnd",
+                  "value": "29"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8193,
+                "section": "NAPSYB_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6399,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8194,
+                "section": "NAPSYB_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6400,
+                  "section": "NAPSYB_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8195,
+                "section": "NAPSYB_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6401,
+                  "section": "NAPSYB_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8196,
+                "section": "NAPSYB_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6402,
+                  "section": "NAPSYB_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8197,
+                "section": "NAPSYB_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6403,
+                  "section": "NAPSYB_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -75,
+          "YSort": 100
+        },
+        "urban": {
+          "art_id": "NAPSYB_AD",
+          "image": "NAPSYB_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 5061,
+            "pack": "ra2",
+            "relative_path": "snow/napsyb_a.shp",
+            "folder": "snow",
+            "filename": "napsyb_a.shp",
+            "stem": "napsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "acd38e266c1dea626e7358928f5dcf7d47365a72"
+          },
+          "Start": 15,
+          "LoopStart": 15,
+          "LoopEnd": 29,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8187,
+                "section": "NAPSYB_AD",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6393,
+                  "section": "NAPSYB_AD",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8189,
+                "section": "NAPSYB_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6395,
+                  "section": "NAPSYB_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8190,
+                "section": "NAPSYB_AD",
+                "key": "Start",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6396,
+                  "section": "NAPSYB_AD",
+                  "key": "Start",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8191,
+                "section": "NAPSYB_AD",
+                "key": "LoopStart",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6397,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopStart",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "29",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8192,
+                "section": "NAPSYB_AD",
+                "key": "LoopEnd",
+                "value": "29"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6398,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopEnd",
+                  "value": "29"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8193,
+                "section": "NAPSYB_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6399,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8194,
+                "section": "NAPSYB_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6400,
+                  "section": "NAPSYB_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8195,
+                "section": "NAPSYB_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6401,
+                  "section": "NAPSYB_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8196,
+                "section": "NAPSYB_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6402,
+                  "section": "NAPSYB_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8197,
+                "section": "NAPSYB_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6403,
+                  "section": "NAPSYB_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -75,
+          "YSort": 100
+        },
+        "desert": {
+          "art_id": "NAPSYB_AD",
+          "image": "NAPSYB_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 5061,
+            "pack": "ra2",
+            "relative_path": "snow/napsyb_a.shp",
+            "folder": "snow",
+            "filename": "napsyb_a.shp",
+            "stem": "napsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "acd38e266c1dea626e7358928f5dcf7d47365a72"
+          },
+          "Start": 15,
+          "LoopStart": 15,
+          "LoopEnd": 29,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8187,
+                "section": "NAPSYB_AD",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6393,
+                  "section": "NAPSYB_AD",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8189,
+                "section": "NAPSYB_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6395,
+                  "section": "NAPSYB_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8190,
+                "section": "NAPSYB_AD",
+                "key": "Start",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6396,
+                  "section": "NAPSYB_AD",
+                  "key": "Start",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8191,
+                "section": "NAPSYB_AD",
+                "key": "LoopStart",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6397,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopStart",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "29",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8192,
+                "section": "NAPSYB_AD",
+                "key": "LoopEnd",
+                "value": "29"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6398,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopEnd",
+                  "value": "29"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8193,
+                "section": "NAPSYB_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6399,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8194,
+                "section": "NAPSYB_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6400,
+                  "section": "NAPSYB_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8195,
+                "section": "NAPSYB_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6401,
+                  "section": "NAPSYB_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8196,
+                "section": "NAPSYB_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6402,
+                  "section": "NAPSYB_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8197,
+                "section": "NAPSYB_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6403,
+                  "section": "NAPSYB_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -75,
+          "YSort": 100
+        },
+        "lunar": {
+          "art_id": "NAPSYB_AD",
+          "image": "NAPSYB_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 5061,
+            "pack": "ra2",
+            "relative_path": "snow/napsyb_a.shp",
+            "folder": "snow",
+            "filename": "napsyb_a.shp",
+            "stem": "napsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "acd38e266c1dea626e7358928f5dcf7d47365a72"
+          },
+          "Start": 15,
+          "LoopStart": 15,
+          "LoopEnd": 29,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8187,
+                "section": "NAPSYB_AD",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6393,
+                  "section": "NAPSYB_AD",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8189,
+                "section": "NAPSYB_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6395,
+                  "section": "NAPSYB_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8190,
+                "section": "NAPSYB_AD",
+                "key": "Start",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6396,
+                  "section": "NAPSYB_AD",
+                  "key": "Start",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8191,
+                "section": "NAPSYB_AD",
+                "key": "LoopStart",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6397,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopStart",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "29",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8192,
+                "section": "NAPSYB_AD",
+                "key": "LoopEnd",
+                "value": "29"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6398,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopEnd",
+                  "value": "29"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8193,
+                "section": "NAPSYB_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6399,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8194,
+                "section": "NAPSYB_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6400,
+                  "section": "NAPSYB_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8195,
+                "section": "NAPSYB_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6401,
+                  "section": "NAPSYB_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8196,
+                "section": "NAPSYB_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6402,
+                  "section": "NAPSYB_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8197,
+                "section": "NAPSYB_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6403,
+                  "section": "NAPSYB_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -75,
+          "YSort": 100
+        },
+        "newurban": {
+          "art_id": "NAPSYB_AD",
+          "image": "NAPSYB_A",
+          "new_theater": false,
+          "asset": {
+            "asset_id": 5061,
+            "pack": "ra2",
+            "relative_path": "snow/napsyb_a.shp",
+            "folder": "snow",
+            "filename": "napsyb_a.shp",
+            "stem": "napsyb_a",
+            "extension": ".shp",
+            "size": 181552,
+            "sha1": "acd38e266c1dea626e7358928f5dcf7d47365a72"
+          },
+          "Start": 15,
+          "LoopStart": 15,
+          "LoopEnd": 29,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "NAPSYB_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8187,
+                "section": "NAPSYB_AD",
+                "key": "Image",
+                "value": "NAPSYB_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6393,
+                  "section": "NAPSYB_AD",
+                  "key": "Image",
+                  "value": "NAPSYB_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8189,
+                "section": "NAPSYB_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6395,
+                  "section": "NAPSYB_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8190,
+                "section": "NAPSYB_AD",
+                "key": "Start",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6396,
+                  "section": "NAPSYB_AD",
+                  "key": "Start",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "15",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8191,
+                "section": "NAPSYB_AD",
+                "key": "LoopStart",
+                "value": "15"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6397,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopStart",
+                  "value": "15"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "29",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8192,
+                "section": "NAPSYB_AD",
+                "key": "LoopEnd",
+                "value": "29"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6398,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopEnd",
+                  "value": "29"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8193,
+                "section": "NAPSYB_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6399,
+                  "section": "NAPSYB_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8194,
+                "section": "NAPSYB_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6400,
+                  "section": "NAPSYB_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8195,
+                "section": "NAPSYB_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6401,
+                  "section": "NAPSYB_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8196,
+                "section": "NAPSYB_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6402,
+                  "section": "NAPSYB_AD",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 8197,
+                "section": "NAPSYB_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 6403,
+                  "section": "NAPSYB_AD",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -75,
+          "YSort": 100
+        }
+      }
+    },
+    "foundation": "2x2",
+    "height": 8,
+    "occupy_height": 3,
+    "damage_fire_offsets": [
+      [
+        -12.0,
+        34.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:NAPSYB",
+      "Name": "Psychic Beacon",
+      "BuildCat": "Tech",
+      "Prerequisite": "NATECH",
+      "Strength": 750,
+      "Armor": "wood",
+      "TechLevel": -1,
+      "Adjacent": 2,
+      "Sight": 10,
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "Cost": 1000,
+      "Points": 50,
+      "Power": -100,
+      "Powered": true,
+      "Capturable": true,
+      "Crewed": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnim": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+      "DamageSmokeOffset": "220, 390, 150",
+      "AIBuildThis": false,
+      "HasRadialIndicator": true,
+      "DetectDisguise": true,
+      "BaseNormal": true,
+      "AmbientSound": "PsychicAmplifierLoop",
+      "DieSound": "PsychicAmplifierDie"
+    },
+    "raw_values": {
+      "UIName": "Name:NAPSYB",
+      "Name": "Psychic Beacon",
+      "BuildCat": "Tech",
+      "Prerequisite": "NATECH",
+      "Strength": "750",
+      "Armor": "wood",
+      "TechLevel": "-1",
+      "Adjacent": "2",
+      "Sight": "10",
+      "Owner": "Russians,Confederation,Africans,Arabs,YuriCountry",
+      "Cost": "1000",
+      "Points": "50",
+      "Power": "-100",
+      "Powered": "true",
+      "Capturable": "true",
+      "Crewed": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnim": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+      "DamageSmokeOffset": "220, 390, 150",
+      "AIBuildThis": "no",
+      "HasRadialIndicator": "true",
+      "DetectDisguise": "yes",
+      "BaseNormal": "yes",
+      "AmbientSound": "PsychicAmplifierLoop",
+      "DieSound": "PsychicAmplifierDie"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:NAPSYB",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14387,
+          "section": "NAPSYB",
+          "key": "UIName",
+          "value": "Name:NAPSYB"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12533,
+            "section": "NAPSYB",
+            "key": "UIName",
+            "value": "Name:NAPSYB"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14380,
+            "section": "NAPSYB",
+            "key": "UIName",
+            "value": "Name:NAPSYB"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Psychic Beacon",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14388,
+          "section": "NAPSYB",
+          "key": "Name",
+          "value": "Psychic Beacon"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12534,
+            "section": "NAPSYB",
+            "key": "Name",
+            "value": "RA2 Psychic Beacon"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14381,
+            "section": "NAPSYB",
+            "key": "Name",
+            "value": "Psychic Beacon"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Tech",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14389,
+          "section": "NAPSYB",
+          "key": "BuildCat",
+          "value": "Tech"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12535,
+            "section": "NAPSYB",
+            "key": "BuildCat",
+            "value": "Tech"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14382,
+            "section": "NAPSYB",
+            "key": "BuildCat",
+            "value": "Tech"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NATECH",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14390,
+          "section": "NAPSYB",
+          "key": "Prerequisite",
+          "value": "NATECH"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12536,
+            "section": "NAPSYB",
+            "key": "Prerequisite",
+            "value": "NATECH"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14383,
+            "section": "NAPSYB",
+            "key": "Prerequisite",
+            "value": "NATECH"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "750",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14391,
+          "section": "NAPSYB",
+          "key": "Strength",
+          "value": "750"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12537,
+            "section": "NAPSYB",
+            "key": "Strength",
+            "value": "750"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14384,
+            "section": "NAPSYB",
+            "key": "Strength",
+            "value": "750"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14392,
+          "section": "NAPSYB",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12538,
+            "section": "NAPSYB",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14385,
+            "section": "NAPSYB",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14393,
+          "section": "NAPSYB",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12539,
+            "section": "NAPSYB",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14386,
+            "section": "NAPSYB",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14394,
+          "section": "NAPSYB",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12540,
+            "section": "NAPSYB",
+            "key": "Adjacent",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14387,
+            "section": "NAPSYB",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14395,
+          "section": "NAPSYB",
+          "key": "Sight",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12541,
+            "section": "NAPSYB",
+            "key": "Sight",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14388,
+            "section": "NAPSYB",
+            "key": "Sight",
+            "value": "10"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14397,
+          "section": "NAPSYB",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12543,
+            "section": "NAPSYB",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14390,
+            "section": "NAPSYB",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14398,
+          "section": "NAPSYB",
+          "key": "Cost",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12544,
+            "section": "NAPSYB",
+            "key": "Cost",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14391,
+            "section": "NAPSYB",
+            "key": "Cost",
+            "value": "1000"
+          }
+        ]
+      },
+      "Points": {
+        "value": "50",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14399,
+          "section": "NAPSYB",
+          "key": "Points",
+          "value": "50"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12545,
+            "section": "NAPSYB",
+            "key": "Points",
+            "value": "50"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14392,
+            "section": "NAPSYB",
+            "key": "Points",
+            "value": "50"
+          }
+        ]
+      },
+      "Power": {
+        "value": "-100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14400,
+          "section": "NAPSYB",
+          "key": "Power",
+          "value": "-100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12546,
+            "section": "NAPSYB",
+            "key": "Power",
+            "value": "-100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14393,
+            "section": "NAPSYB",
+            "key": "Power",
+            "value": "-100"
+          }
+        ]
+      },
+      "Powered": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14401,
+          "section": "NAPSYB",
+          "key": "Powered",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12547,
+            "section": "NAPSYB",
+            "key": "Powered",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14394,
+            "section": "NAPSYB",
+            "key": "Powered",
+            "value": "true"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14402,
+          "section": "NAPSYB",
+          "key": "Capturable",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12548,
+            "section": "NAPSYB",
+            "key": "Capturable",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14395,
+            "section": "NAPSYB",
+            "key": "Capturable",
+            "value": "true"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14403,
+          "section": "NAPSYB",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12549,
+            "section": "NAPSYB",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14396,
+            "section": "NAPSYB",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14404,
+          "section": "NAPSYB",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12550,
+            "section": "NAPSYB",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14397,
+            "section": "NAPSYB",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnim": {
+        "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14405,
+          "section": "NAPSYB",
+          "key": "DebrisAnim",
+          "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12551,
+            "section": "NAPSYB",
+            "key": "DebrisAnim",
+            "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14398,
+            "section": "NAPSYB",
+            "key": "DebrisAnim",
+            "value": "Dbris1sm,Dbris1lg,Dbris4sm,Dbris5sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris5lg,Dbris4lg"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14406,
+          "section": "NAPSYB",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12552,
+            "section": "NAPSYB",
+            "key": "MaxDebris",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14399,
+            "section": "NAPSYB",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14407,
+          "section": "NAPSYB",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12553,
+            "section": "NAPSYB",
+            "key": "MinDebris",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14400,
+            "section": "NAPSYB",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14408,
+          "section": "NAPSYB",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12554,
+            "section": "NAPSYB",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14401,
+            "section": "NAPSYB",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys,BigGreySmokeSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14409,
+          "section": "NAPSYB",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys,BigGreySmokeSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12555,
+            "section": "NAPSYB",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys,BigGreySmokeSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14402,
+            "section": "NAPSYB",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys,BigGreySmokeSys"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "220, 390, 150",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14410,
+          "section": "NAPSYB",
+          "key": "DamageSmokeOffset",
+          "value": "220, 390, 150"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12556,
+            "section": "NAPSYB",
+            "key": "DamageSmokeOffset",
+            "value": "220, 390, 150"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14403,
+            "section": "NAPSYB",
+            "key": "DamageSmokeOffset",
+            "value": "220, 390, 150"
+          }
+        ]
+      },
+      "AIBuildThis": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14411,
+          "section": "NAPSYB",
+          "key": "AIBuildThis",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12557,
+            "section": "NAPSYB",
+            "key": "AIBuildThis",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14404,
+            "section": "NAPSYB",
+            "key": "AIBuildThis",
+            "value": "no"
+          }
+        ]
+      },
+      "HasRadialIndicator": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14412,
+          "section": "NAPSYB",
+          "key": "HasRadialIndicator",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12558,
+            "section": "NAPSYB",
+            "key": "HasRadialIndicator",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14405,
+            "section": "NAPSYB",
+            "key": "HasRadialIndicator",
+            "value": "true"
+          }
+        ]
+      },
+      "DetectDisguise": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14413,
+          "section": "NAPSYB",
+          "key": "DetectDisguise",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12559,
+            "section": "NAPSYB",
+            "key": "DetectDisguise",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14406,
+            "section": "NAPSYB",
+            "key": "DetectDisguise",
+            "value": "yes"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14414,
+          "section": "NAPSYB",
+          "key": "BaseNormal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12560,
+            "section": "NAPSYB",
+            "key": "BaseNormal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14407,
+            "section": "NAPSYB",
+            "key": "BaseNormal",
+            "value": "yes"
+          }
+        ]
+      },
+      "AmbientSound": {
+        "value": "PsychicAmplifierLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14415,
+          "section": "NAPSYB",
+          "key": "AmbientSound",
+          "value": "PsychicAmplifierLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12561,
+            "section": "NAPSYB",
+            "key": "AmbientSound",
+            "value": "PsychicAmplifierLoop"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14408,
+            "section": "NAPSYB",
+            "key": "AmbientSound",
+            "value": "PsychicAmplifierLoop"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "PsychicAmplifierDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14416,
+          "section": "NAPSYB",
+          "key": "DieSound",
+          "value": "PsychicAmplifierDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 12562,
+            "section": "NAPSYB",
+            "key": "DieSound",
+            "value": "PsychicAmplifierDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14409,
+            "section": "NAPSYB",
+            "key": "DieSound",
+            "value": "PsychicAmplifierDie"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Remapable": true,
+      "Normalized": true,
+      "Height": 8,
+      "Cameo": "PSYBICON",
+      "Foundation": "2x2",
+      "Buildup": "NAPSYBMK",
+      "DemandLoadBuildup": true,
+      "FreeBuildup": true,
+      "ActiveAnim": "NAPSYB_A",
+      "ActiveAnimDamaged": "NAPSYB_AD",
+      "ActiveAnimZAdjust": -75,
+      "ActiveAnimYSort": 100,
+      "OccupyHeight": 3,
+      "RemoveOccupy1": "0,-1",
+      "RemoveOccupy2": "-1,0",
+      "DamageFireOffset0": "-12,34"
+    },
+    "raw_values": {
+      "Remapable": "yes",
+      "Normalized": "yes",
+      "Height": "8",
+      "Cameo": "PSYBICON",
+      "Foundation": "2x2",
+      "Buildup": "NAPSYBMK",
+      "DemandLoadBuildup": "true",
+      "FreeBuildup": "true",
+      "ActiveAnim": "NAPSYB_A",
+      "ActiveAnimDamaged": "NAPSYB_AD",
+      "ActiveAnimZAdjust": "-75",
+      "ActiveAnimYSort": "100",
+      "OccupyHeight": "3",
+      "RemoveOccupy1": "0,-1",
+      "RemoveOccupy2": "-1,0",
+      "DamageFireOffset0": "-12,34"
+    },
+    "provenance": {
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8156,
+          "section": "NAPSYB",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6362,
+            "section": "NAPSYB",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8157,
+          "section": "NAPSYB",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6363,
+            "section": "NAPSYB",
+            "key": "Normalized",
+            "value": "yes"
+          }
+        ]
+      },
+      "Height": {
+        "value": "8",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8158,
+          "section": "NAPSYB",
+          "key": "Height",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6364,
+            "section": "NAPSYB",
+            "key": "Height",
+            "value": "8"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "PSYBICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8159,
+          "section": "NAPSYB",
+          "key": "Cameo",
+          "value": "PSYBICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6365,
+            "section": "NAPSYB",
+            "key": "Cameo",
+            "value": "PSYBICON"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "2x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8160,
+          "section": "NAPSYB",
+          "key": "Foundation",
+          "value": "2x2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6366,
+            "section": "NAPSYB",
+            "key": "Foundation",
+            "value": "2x2"
+          }
+        ]
+      },
+      "Buildup": {
+        "value": "NAPSYBMK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8161,
+          "section": "NAPSYB",
+          "key": "Buildup",
+          "value": "NAPSYBMK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6367,
+            "section": "NAPSYB",
+            "key": "Buildup",
+            "value": "NAPSYBMK"
+          }
+        ]
+      },
+      "DemandLoadBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8162,
+          "section": "NAPSYB",
+          "key": "DemandLoadBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6368,
+            "section": "NAPSYB",
+            "key": "DemandLoadBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "FreeBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8163,
+          "section": "NAPSYB",
+          "key": "FreeBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6369,
+            "section": "NAPSYB",
+            "key": "FreeBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "ActiveAnim": {
+        "value": "NAPSYB_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8164,
+          "section": "NAPSYB",
+          "key": "ActiveAnim",
+          "value": "NAPSYB_A"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6370,
+            "section": "NAPSYB",
+            "key": "ActiveAnim",
+            "value": "NAPSYB_A"
+          }
+        ]
+      },
+      "ActiveAnimDamaged": {
+        "value": "NAPSYB_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8165,
+          "section": "NAPSYB",
+          "key": "ActiveAnimDamaged",
+          "value": "NAPSYB_AD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6371,
+            "section": "NAPSYB",
+            "key": "ActiveAnimDamaged",
+            "value": "NAPSYB_AD"
+          }
+        ]
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-75",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8166,
+          "section": "NAPSYB",
+          "key": "ActiveAnimZAdjust",
+          "value": "-75"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6372,
+            "section": "NAPSYB",
+            "key": "ActiveAnimZAdjust",
+            "value": "-75"
+          }
+        ]
+      },
+      "ActiveAnimYSort": {
+        "value": "100",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8167,
+          "section": "NAPSYB",
+          "key": "ActiveAnimYSort",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6373,
+            "section": "NAPSYB",
+            "key": "ActiveAnimYSort",
+            "value": "100"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8169,
+          "section": "NAPSYB",
+          "key": "OccupyHeight",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6375,
+            "section": "NAPSYB",
+            "key": "OccupyHeight",
+            "value": "3"
+          }
+        ]
+      },
+      "RemoveOccupy1": {
+        "value": "0,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8170,
+          "section": "NAPSYB",
+          "key": "RemoveOccupy1",
+          "value": "0,-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6376,
+            "section": "NAPSYB",
+            "key": "RemoveOccupy1",
+            "value": "0,-1"
+          }
+        ]
+      },
+      "RemoveOccupy2": {
+        "value": "-1,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8171,
+          "section": "NAPSYB",
+          "key": "RemoveOccupy2",
+          "value": "-1,0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6377,
+            "section": "NAPSYB",
+            "key": "RemoveOccupy2",
+            "value": "-1,0"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-12,34",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 8172,
+          "section": "NAPSYB",
+          "key": "DamageFireOffset0",
+          "value": "-12,34"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 6378,
+            "section": "NAPSYB",
+            "key": "DamageFireOffset0",
+            "value": "-12,34"
+          }
+        ]
+      }
+    }
+  }
+}

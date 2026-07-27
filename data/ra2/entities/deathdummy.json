@@ -1,0 +1,229 @@
+{
+  "id": "DeathDummy",
+  "category": "vehicle",
+  "name_token": "DeathDummy",
+  "art_id": "DeathDummy",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 0,
+  "armor": "",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {
+    "Primary": {
+      "id": "DefaultDeathWeapon",
+      "projectile": "Invisible",
+      "warhead": "DeathWH",
+      "report": [],
+      "values": {
+        "Projectile": "Invisible",
+        "Warhead": "DeathWH"
+      },
+      "raw_values": {
+        "Projectile": "Invisible",
+        "Warhead": "DeathWH"
+      },
+      "provenance": {
+        "Projectile": {
+          "value": "Invisible",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22355,
+            "section": "DefaultDeathWeapon",
+            "key": "Projectile",
+            "value": "Invisible"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16087,
+              "section": "DefaultDeathWeapon",
+              "key": "Projectile",
+              "value": "Invisible"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22347,
+              "section": "DefaultDeathWeapon",
+              "key": "Projectile",
+              "value": "Invisible"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "DeathWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 22356,
+            "section": "DefaultDeathWeapon",
+            "key": "Warhead",
+            "value": "DeathWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16088,
+              "section": "DefaultDeathWeapon",
+              "key": "Warhead",
+              "value": "DeathWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 22348,
+              "section": "DefaultDeathWeapon",
+              "key": "Warhead",
+              "value": "DeathWH"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {},
+  "visuals": {
+    "kind": "shp",
+    "art_id": "DeathDummy",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": null,
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": null,
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": null,
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": null,
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": null,
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": null,
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "Primary": "DefaultDeathWeapon"
+    },
+    "raw_values": {
+      "Primary": "DefaultDeathWeapon"
+    },
+    "provenance": {
+      "Primary": {
+        "value": "DefaultDeathWeapon",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 9654,
+          "section": "DeathDummy",
+          "key": "Primary",
+          "value": "DefaultDeathWeapon"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6859,
+            "section": "DeathDummy",
+            "key": "Primary",
+            "value": "DefaultDeathWeapon"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 9649,
+            "section": "DeathDummy",
+            "key": "Primary",
+            "value": "DefaultDeathWeapon"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {},
+    "provenance": {}
+  }
+}

@@ -1,0 +1,2130 @@
+{
+  "id": "CAMSC06",
+  "category": "building",
+  "name_token": "Name:CAMSC06",
+  "art_id": "CAMSC06",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 10,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {
+    "AmbientSound": [
+      "CampfireLoop"
+    ]
+  },
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAMSC06",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1697,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctmsc06.shp",
+          "folder": "isotemp",
+          "filename": "ctmsc06.shp",
+          "stem": "ctmsc06",
+          "extension": ".shp",
+          "size": 2912,
+          "sha1": "47817933232d56ce4da585af52996a34c868b2ba"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 593,
+          "pack": "ra2",
+          "relative_path": "isosnow/camsc06.shp",
+          "folder": "isosnow",
+          "filename": "camsc06.shp",
+          "stem": "camsc06",
+          "extension": ".shp",
+          "size": 2912,
+          "sha1": "47817933232d56ce4da585af52996a34c868b2ba"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2784,
+          "pack": "ra2",
+          "relative_path": "isourb/cumsc06.shp",
+          "folder": "isourb",
+          "filename": "cumsc06.shp",
+          "stem": "cumsc06",
+          "extension": ".shp",
+          "size": 2912,
+          "sha1": "47817933232d56ce4da585af52996a34c868b2ba"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6165,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdmsc06.shp",
+          "folder": "isodes",
+          "filename": "cdmsc06.shp",
+          "stem": "cdmsc06",
+          "extension": ".shp",
+          "size": 2912,
+          "sha1": "47817933232d56ce4da585af52996a34c868b2ba"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8233,
+          "pack": "ra2md",
+          "relative_path": "isolun/clmsc06.shp",
+          "folder": "isolun",
+          "filename": "clmsc06.shp",
+          "stem": "clmsc06",
+          "extension": ".shp",
+          "size": 2912,
+          "sha1": "47817933232d56ce4da585af52996a34c868b2ba"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9314,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnmsc06.shp",
+          "folder": "isoubn",
+          "filename": "cnmsc06.shp",
+          "stem": "cnmsc06",
+          "extension": ".shp",
+          "size": 2912,
+          "sha1": "47817933232d56ce4da585af52996a34c868b2ba"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "CAMSC06A",
+          "image": "CAMSC06A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 1698,
+            "pack": "ra2",
+            "relative_path": "isotemp/ctmsc06a.shp",
+            "folder": "isotemp",
+            "filename": "ctmsc06a.shp",
+            "stem": "ctmsc06a",
+            "extension": ".shp",
+            "size": 3848,
+            "sha1": "48ec777e1aaddce9ff0971ce3d5585f85cc7f4cf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 4,
+          "LoopCount": -1,
+          "Rate": 120,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12147,
+                "section": "CAMSC06A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8155,
+                  "section": "CAMSC06A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12148,
+                "section": "CAMSC06A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8156,
+                  "section": "CAMSC06A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12149,
+                "section": "CAMSC06A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8157,
+                  "section": "CAMSC06A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "4",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12150,
+                "section": "CAMSC06A",
+                "key": "LoopEnd",
+                "value": "4"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8158,
+                  "section": "CAMSC06A",
+                  "key": "LoopEnd",
+                  "value": "4"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12151,
+                "section": "CAMSC06A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8159,
+                  "section": "CAMSC06A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "120",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12152,
+                "section": "CAMSC06A",
+                "key": "Rate",
+                "value": "120"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8160,
+                  "section": "CAMSC06A",
+                  "key": "Rate",
+                  "value": "120"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12153,
+                "section": "CAMSC06A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8161,
+                  "section": "CAMSC06A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12154,
+                "section": "CAMSC06A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8162,
+                  "section": "CAMSC06A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -16,
+          "YSort": 181
+        },
+        "snow": {
+          "art_id": "CAMSC06A",
+          "image": "CAMSC06A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 594,
+            "pack": "ra2",
+            "relative_path": "isosnow/camsc06a.shp",
+            "folder": "isosnow",
+            "filename": "camsc06a.shp",
+            "stem": "camsc06a",
+            "extension": ".shp",
+            "size": 3848,
+            "sha1": "48ec777e1aaddce9ff0971ce3d5585f85cc7f4cf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 4,
+          "LoopCount": -1,
+          "Rate": 120,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12147,
+                "section": "CAMSC06A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8155,
+                  "section": "CAMSC06A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12148,
+                "section": "CAMSC06A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8156,
+                  "section": "CAMSC06A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12149,
+                "section": "CAMSC06A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8157,
+                  "section": "CAMSC06A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "4",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12150,
+                "section": "CAMSC06A",
+                "key": "LoopEnd",
+                "value": "4"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8158,
+                  "section": "CAMSC06A",
+                  "key": "LoopEnd",
+                  "value": "4"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12151,
+                "section": "CAMSC06A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8159,
+                  "section": "CAMSC06A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "120",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12152,
+                "section": "CAMSC06A",
+                "key": "Rate",
+                "value": "120"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8160,
+                  "section": "CAMSC06A",
+                  "key": "Rate",
+                  "value": "120"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12153,
+                "section": "CAMSC06A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8161,
+                  "section": "CAMSC06A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12154,
+                "section": "CAMSC06A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8162,
+                  "section": "CAMSC06A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -16,
+          "YSort": 181
+        },
+        "urban": {
+          "art_id": "CAMSC06A",
+          "image": "CAMSC06A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2785,
+            "pack": "ra2",
+            "relative_path": "isourb/cumsc06a.shp",
+            "folder": "isourb",
+            "filename": "cumsc06a.shp",
+            "stem": "cumsc06a",
+            "extension": ".shp",
+            "size": 3848,
+            "sha1": "48ec777e1aaddce9ff0971ce3d5585f85cc7f4cf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 4,
+          "LoopCount": -1,
+          "Rate": 120,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12147,
+                "section": "CAMSC06A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8155,
+                  "section": "CAMSC06A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12148,
+                "section": "CAMSC06A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8156,
+                  "section": "CAMSC06A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12149,
+                "section": "CAMSC06A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8157,
+                  "section": "CAMSC06A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "4",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12150,
+                "section": "CAMSC06A",
+                "key": "LoopEnd",
+                "value": "4"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8158,
+                  "section": "CAMSC06A",
+                  "key": "LoopEnd",
+                  "value": "4"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12151,
+                "section": "CAMSC06A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8159,
+                  "section": "CAMSC06A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "120",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12152,
+                "section": "CAMSC06A",
+                "key": "Rate",
+                "value": "120"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8160,
+                  "section": "CAMSC06A",
+                  "key": "Rate",
+                  "value": "120"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12153,
+                "section": "CAMSC06A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8161,
+                  "section": "CAMSC06A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12154,
+                "section": "CAMSC06A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8162,
+                  "section": "CAMSC06A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -16,
+          "YSort": 181
+        },
+        "desert": {
+          "art_id": "CAMSC06A",
+          "image": "CAMSC06A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6166,
+            "pack": "ra2md",
+            "relative_path": "isodes/cdmsc06a.shp",
+            "folder": "isodes",
+            "filename": "cdmsc06a.shp",
+            "stem": "cdmsc06a",
+            "extension": ".shp",
+            "size": 3848,
+            "sha1": "48ec777e1aaddce9ff0971ce3d5585f85cc7f4cf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 4,
+          "LoopCount": -1,
+          "Rate": 120,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12147,
+                "section": "CAMSC06A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8155,
+                  "section": "CAMSC06A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12148,
+                "section": "CAMSC06A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8156,
+                  "section": "CAMSC06A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12149,
+                "section": "CAMSC06A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8157,
+                  "section": "CAMSC06A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "4",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12150,
+                "section": "CAMSC06A",
+                "key": "LoopEnd",
+                "value": "4"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8158,
+                  "section": "CAMSC06A",
+                  "key": "LoopEnd",
+                  "value": "4"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12151,
+                "section": "CAMSC06A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8159,
+                  "section": "CAMSC06A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "120",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12152,
+                "section": "CAMSC06A",
+                "key": "Rate",
+                "value": "120"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8160,
+                  "section": "CAMSC06A",
+                  "key": "Rate",
+                  "value": "120"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12153,
+                "section": "CAMSC06A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8161,
+                  "section": "CAMSC06A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12154,
+                "section": "CAMSC06A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8162,
+                  "section": "CAMSC06A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -16,
+          "YSort": 181
+        },
+        "lunar": {
+          "art_id": "CAMSC06A",
+          "image": "CAMSC06A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8234,
+            "pack": "ra2md",
+            "relative_path": "isolun/clmsc06a.shp",
+            "folder": "isolun",
+            "filename": "clmsc06a.shp",
+            "stem": "clmsc06a",
+            "extension": ".shp",
+            "size": 3848,
+            "sha1": "48ec777e1aaddce9ff0971ce3d5585f85cc7f4cf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 4,
+          "LoopCount": -1,
+          "Rate": 120,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12147,
+                "section": "CAMSC06A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8155,
+                  "section": "CAMSC06A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12148,
+                "section": "CAMSC06A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8156,
+                  "section": "CAMSC06A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12149,
+                "section": "CAMSC06A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8157,
+                  "section": "CAMSC06A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "4",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12150,
+                "section": "CAMSC06A",
+                "key": "LoopEnd",
+                "value": "4"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8158,
+                  "section": "CAMSC06A",
+                  "key": "LoopEnd",
+                  "value": "4"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12151,
+                "section": "CAMSC06A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8159,
+                  "section": "CAMSC06A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "120",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12152,
+                "section": "CAMSC06A",
+                "key": "Rate",
+                "value": "120"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8160,
+                  "section": "CAMSC06A",
+                  "key": "Rate",
+                  "value": "120"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12153,
+                "section": "CAMSC06A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8161,
+                  "section": "CAMSC06A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12154,
+                "section": "CAMSC06A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8162,
+                  "section": "CAMSC06A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -16,
+          "YSort": 181
+        },
+        "newurban": {
+          "art_id": "CAMSC06A",
+          "image": "CAMSC06A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9315,
+            "pack": "ra2md",
+            "relative_path": "isoubn/cnmsc06a.shp",
+            "folder": "isoubn",
+            "filename": "cnmsc06a.shp",
+            "stem": "cnmsc06a",
+            "extension": ".shp",
+            "size": 3848,
+            "sha1": "48ec777e1aaddce9ff0971ce3d5585f85cc7f4cf"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 4,
+          "LoopCount": -1,
+          "Rate": 120,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12147,
+                "section": "CAMSC06A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8155,
+                  "section": "CAMSC06A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12148,
+                "section": "CAMSC06A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8156,
+                  "section": "CAMSC06A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12149,
+                "section": "CAMSC06A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8157,
+                  "section": "CAMSC06A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "4",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12150,
+                "section": "CAMSC06A",
+                "key": "LoopEnd",
+                "value": "4"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8158,
+                  "section": "CAMSC06A",
+                  "key": "LoopEnd",
+                  "value": "4"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12151,
+                "section": "CAMSC06A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8159,
+                  "section": "CAMSC06A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "120",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12152,
+                "section": "CAMSC06A",
+                "key": "Rate",
+                "value": "120"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8160,
+                  "section": "CAMSC06A",
+                  "key": "Rate",
+                  "value": "120"
+                }
+              ]
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12153,
+                "section": "CAMSC06A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8161,
+                  "section": "CAMSC06A",
+                  "key": "DemandLoad",
+                  "value": "true"
+                }
+              ]
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 12154,
+                "section": "CAMSC06A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 8162,
+                  "section": "CAMSC06A",
+                  "key": "Shadow",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -16,
+          "YSort": 181
+        }
+      }
+    },
+    "foundation": "1x1",
+    "height": 1,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "Camp Fire",
+      "UIName": "Name:CAMSC06",
+      "TechLevel": -1,
+      "Strength": 10,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS2LG",
+      "MaxDebris": 1,
+      "MinDebris": 0,
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "AmbientSound": "CampfireLoop",
+      "DamageSmokeOffset": "128,128,128"
+    },
+    "raw_values": {
+      "Name": "Camp Fire",
+      "UIName": "Name:CAMSC06",
+      "TechLevel": "-1",
+      "Strength": "10",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS2LG",
+      "MaxDebris": "1",
+      "MinDebris": "0",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "AmbientSound": "CampfireLoop",
+      "DamageSmokeOffset": "128,128,128"
+    },
+    "provenance": {
+      "Name": {
+        "value": "Camp Fire",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20265,
+          "section": "CAMSC06",
+          "key": "Name",
+          "value": "Camp Fire"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13645,
+            "section": "CAMSC06",
+            "key": "Name",
+            "value": "RA2 Camp Fire"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20257,
+            "section": "CAMSC06",
+            "key": "Name",
+            "value": "Camp Fire"
+          }
+        ]
+      },
+      "UIName": {
+        "value": "Name:CAMSC06",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20266,
+          "section": "CAMSC06",
+          "key": "UIName",
+          "value": "Name:CAMSC06"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13646,
+            "section": "CAMSC06",
+            "key": "UIName",
+            "value": "Name:CAMSC06"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20258,
+            "section": "CAMSC06",
+            "key": "UIName",
+            "value": "Name:CAMSC06"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20267,
+          "section": "CAMSC06",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13647,
+            "section": "CAMSC06",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20259,
+            "section": "CAMSC06",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20268,
+          "section": "CAMSC06",
+          "key": "Strength",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13648,
+            "section": "CAMSC06",
+            "key": "Strength",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20260,
+            "section": "CAMSC06",
+            "key": "Strength",
+            "value": "10"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20269,
+          "section": "CAMSC06",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13649,
+            "section": "CAMSC06",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20261,
+            "section": "CAMSC06",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20270,
+          "section": "CAMSC06",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13650,
+            "section": "CAMSC06",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20262,
+            "section": "CAMSC06",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 13651,
+          "section": "CAMSC06",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20272,
+          "section": "CAMSC06",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13652,
+            "section": "CAMSC06",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20264,
+            "section": "CAMSC06",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20273,
+          "section": "CAMSC06",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13653,
+            "section": "CAMSC06",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20265,
+            "section": "CAMSC06",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20274,
+          "section": "CAMSC06",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13654,
+            "section": "CAMSC06",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20266,
+            "section": "CAMSC06",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS2LG",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20275,
+          "section": "CAMSC06",
+          "key": "DebrisAnims",
+          "value": "DBRIS2LG"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13655,
+            "section": "CAMSC06",
+            "key": "DebrisAnims",
+            "value": "DBRIS2LG"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20267,
+            "section": "CAMSC06",
+            "key": "DebrisAnims",
+            "value": "DBRIS2LG"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20276,
+          "section": "CAMSC06",
+          "key": "MaxDebris",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13656,
+            "section": "CAMSC06",
+            "key": "MaxDebris",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20268,
+            "section": "CAMSC06",
+            "key": "MaxDebris",
+            "value": "1"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20277,
+          "section": "CAMSC06",
+          "key": "MinDebris",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13657,
+            "section": "CAMSC06",
+            "key": "MinDebris",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20269,
+            "section": "CAMSC06",
+            "key": "MinDebris",
+            "value": "0"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20278,
+          "section": "CAMSC06",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13658,
+            "section": "CAMSC06",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20270,
+            "section": "CAMSC06",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20279,
+          "section": "CAMSC06",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13659,
+            "section": "CAMSC06",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20271,
+            "section": "CAMSC06",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20280,
+          "section": "CAMSC06",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13660,
+            "section": "CAMSC06",
+            "key": "ClickRepairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20272,
+            "section": "CAMSC06",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "AmbientSound": {
+        "value": "CampfireLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20281,
+          "section": "CAMSC06",
+          "key": "AmbientSound",
+          "value": "CampfireLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13661,
+            "section": "CAMSC06",
+            "key": "AmbientSound",
+            "value": "CampfireLoop"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20273,
+            "section": "CAMSC06",
+            "key": "AmbientSound",
+            "value": "CampfireLoop"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "128,128,128",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 20287,
+          "section": "CAMSC06",
+          "key": "DamageSmokeOffset",
+          "value": "128,128,128"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 13667,
+            "section": "CAMSC06",
+            "key": "DamageSmokeOffset",
+            "value": "128,128,128"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 20279,
+            "section": "CAMSC06",
+            "key": "DamageSmokeOffset",
+            "value": "128,128,128"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "1x1",
+      "Height": 1,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "ActiveAnim": "CAMSC06A",
+      "ActiveAnimZAdjust": -16,
+      "ActiveAnimYSort": 181,
+      "CanHideThings": false,
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Foundation": "1x1",
+      "Height": "1",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "ActiveAnim": "CAMSC06A",
+      "ActiveAnimZAdjust": "-16",
+      "ActiveAnimYSort": "181",
+      "CanHideThings": "False",
+      "CanBeHidden": "False"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9361,
+          "section": "CAMSC06",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7527,
+            "section": "CAMSC06",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "Height": {
+        "value": "1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9362,
+          "section": "CAMSC06",
+          "key": "Height",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7528,
+            "section": "CAMSC06",
+            "key": "Height",
+            "value": "1"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9363,
+          "section": "CAMSC06",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7529,
+            "section": "CAMSC06",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9364,
+          "section": "CAMSC06",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7530,
+            "section": "CAMSC06",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "ActiveAnim": {
+        "value": "CAMSC06A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9366,
+          "section": "CAMSC06",
+          "key": "ActiveAnim",
+          "value": "CAMSC06A"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7532,
+            "section": "CAMSC06",
+            "key": "ActiveAnim",
+            "value": "CAMSC06A"
+          }
+        ]
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-16",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9367,
+          "section": "CAMSC06",
+          "key": "ActiveAnimZAdjust",
+          "value": "-16"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7533,
+            "section": "CAMSC06",
+            "key": "ActiveAnimZAdjust",
+            "value": "-16"
+          }
+        ]
+      },
+      "ActiveAnimYSort": {
+        "value": "181",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9368,
+          "section": "CAMSC06",
+          "key": "ActiveAnimYSort",
+          "value": "181"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7534,
+            "section": "CAMSC06",
+            "key": "ActiveAnimYSort",
+            "value": "181"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9369,
+          "section": "CAMSC06",
+          "key": "CanHideThings",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7535,
+            "section": "CAMSC06",
+            "key": "CanHideThings",
+            "value": "False"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 9370,
+          "section": "CAMSC06",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 7536,
+            "section": "CAMSC06",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      }
+    }
+  }
+}

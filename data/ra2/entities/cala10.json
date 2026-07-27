@@ -1,0 +1,2556 @@
+{
+  "id": "CALA10",
+  "category": "building",
+  "name_token": "Name:CALA10",
+  "art_id": "CALA10",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 200,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 5,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CALA10",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 8026,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgla10.shp",
+          "folder": "isogenmd",
+          "filename": "cgla10.shp",
+          "stem": "cgla10",
+          "extension": ".shp",
+          "size": 26840,
+          "sha1": "7bda2492ceb478ae63896202116a44017e829264"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 8844,
+          "pack": "ra2md",
+          "relative_path": "isosnomd/cala10.shp",
+          "folder": "isosnomd",
+          "filename": "cala10.shp",
+          "stem": "cala10",
+          "extension": ".shp",
+          "size": 26840,
+          "sha1": "cf724b285ee73e3b4846302b52c7229b3c80b7a6"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 8026,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgla10.shp",
+          "folder": "isogenmd",
+          "filename": "cgla10.shp",
+          "stem": "cgla10",
+          "extension": ".shp",
+          "size": 26840,
+          "sha1": "7bda2492ceb478ae63896202116a44017e829264"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 8026,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgla10.shp",
+          "folder": "isogenmd",
+          "filename": "cgla10.shp",
+          "stem": "cgla10",
+          "extension": ".shp",
+          "size": 26840,
+          "sha1": "7bda2492ceb478ae63896202116a44017e829264"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8026,
+          "pack": "ra2md",
+          "relative_path": "isogenmd/cgla10.shp",
+          "folder": "isogenmd",
+          "filename": "cgla10.shp",
+          "stem": "cgla10",
+          "extension": ".shp",
+          "size": 26840,
+          "sha1": "7bda2492ceb478ae63896202116a44017e829264"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 10481,
+          "pack": "ra2md",
+          "relative_path": "isoubnmd/cnla10.shp",
+          "folder": "isoubnmd",
+          "filename": "cnla10.shp",
+          "stem": "cnla10",
+          "extension": ".shp",
+          "size": 26840,
+          "sha1": "698d93d6b3d1fd4925af7c729d0f7799d2ddcc97"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "CALA10_A",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8027,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgla10_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgla10_a.shp",
+            "stem": "cgla10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11269,
+                "section": "CALA10_A",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11270,
+                "section": "CALA10_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11271,
+                "section": "CALA10_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11273,
+                "section": "CALA10_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11274,
+                "section": "CALA10_A",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11275,
+                "section": "CALA10_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11276,
+                "section": "CALA10_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11277,
+                "section": "CALA10_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11278,
+                "section": "CALA10_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11279,
+                "section": "CALA10_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5
+        },
+        "snow": {
+          "art_id": "CALA10_A",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8845,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/cala10_a.shp",
+            "folder": "isosnomd",
+            "filename": "cala10_a.shp",
+            "stem": "cala10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11269,
+                "section": "CALA10_A",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11270,
+                "section": "CALA10_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11271,
+                "section": "CALA10_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11273,
+                "section": "CALA10_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11274,
+                "section": "CALA10_A",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11275,
+                "section": "CALA10_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11276,
+                "section": "CALA10_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11277,
+                "section": "CALA10_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11278,
+                "section": "CALA10_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11279,
+                "section": "CALA10_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5
+        },
+        "urban": {
+          "art_id": "CALA10_A",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8027,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgla10_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgla10_a.shp",
+            "stem": "cgla10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11269,
+                "section": "CALA10_A",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11270,
+                "section": "CALA10_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11271,
+                "section": "CALA10_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11273,
+                "section": "CALA10_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11274,
+                "section": "CALA10_A",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11275,
+                "section": "CALA10_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11276,
+                "section": "CALA10_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11277,
+                "section": "CALA10_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11278,
+                "section": "CALA10_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11279,
+                "section": "CALA10_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5
+        },
+        "desert": {
+          "art_id": "CALA10_A",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8027,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgla10_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgla10_a.shp",
+            "stem": "cgla10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11269,
+                "section": "CALA10_A",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11270,
+                "section": "CALA10_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11271,
+                "section": "CALA10_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11273,
+                "section": "CALA10_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11274,
+                "section": "CALA10_A",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11275,
+                "section": "CALA10_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11276,
+                "section": "CALA10_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11277,
+                "section": "CALA10_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11278,
+                "section": "CALA10_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11279,
+                "section": "CALA10_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5
+        },
+        "lunar": {
+          "art_id": "CALA10_A",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8027,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgla10_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgla10_a.shp",
+            "stem": "cgla10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11269,
+                "section": "CALA10_A",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11270,
+                "section": "CALA10_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11271,
+                "section": "CALA10_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11273,
+                "section": "CALA10_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11274,
+                "section": "CALA10_A",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11275,
+                "section": "CALA10_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11276,
+                "section": "CALA10_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11277,
+                "section": "CALA10_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11278,
+                "section": "CALA10_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11279,
+                "section": "CALA10_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5
+        },
+        "newurban": {
+          "art_id": "CALA10_A",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8027,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgla10_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgla10_a.shp",
+            "stem": "cgla10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11269,
+                "section": "CALA10_A",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11270,
+                "section": "CALA10_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11271,
+                "section": "CALA10_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11273,
+                "section": "CALA10_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11274,
+                "section": "CALA10_A",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11275,
+                "section": "CALA10_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11276,
+                "section": "CALA10_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11277,
+                "section": "CALA10_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11278,
+                "section": "CALA10_A",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11279,
+                "section": "CALA10_A",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -5
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "CALA10_AD",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8027,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgla10_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgla10_a.shp",
+            "stem": "cgla10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11282,
+                "section": "CALA10_AD",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11283,
+                "section": "CALA10_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11284,
+                "section": "CALA10_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11286,
+                "section": "CALA10_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11287,
+                "section": "CALA10_AD",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11288,
+                "section": "CALA10_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11289,
+                "section": "CALA10_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11290,
+                "section": "CALA10_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11291,
+                "section": "CALA10_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11292,
+                "section": "CALA10_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5
+        },
+        "snow": {
+          "art_id": "CALA10_AD",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8845,
+            "pack": "ra2md",
+            "relative_path": "isosnomd/cala10_a.shp",
+            "folder": "isosnomd",
+            "filename": "cala10_a.shp",
+            "stem": "cala10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11282,
+                "section": "CALA10_AD",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11283,
+                "section": "CALA10_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11284,
+                "section": "CALA10_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11286,
+                "section": "CALA10_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11287,
+                "section": "CALA10_AD",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11288,
+                "section": "CALA10_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11289,
+                "section": "CALA10_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11290,
+                "section": "CALA10_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11291,
+                "section": "CALA10_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11292,
+                "section": "CALA10_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5
+        },
+        "urban": {
+          "art_id": "CALA10_AD",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8027,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgla10_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgla10_a.shp",
+            "stem": "cgla10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11282,
+                "section": "CALA10_AD",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11283,
+                "section": "CALA10_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11284,
+                "section": "CALA10_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11286,
+                "section": "CALA10_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11287,
+                "section": "CALA10_AD",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11288,
+                "section": "CALA10_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11289,
+                "section": "CALA10_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11290,
+                "section": "CALA10_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11291,
+                "section": "CALA10_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11292,
+                "section": "CALA10_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5
+        },
+        "desert": {
+          "art_id": "CALA10_AD",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8027,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgla10_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgla10_a.shp",
+            "stem": "cgla10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11282,
+                "section": "CALA10_AD",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11283,
+                "section": "CALA10_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11284,
+                "section": "CALA10_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11286,
+                "section": "CALA10_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11287,
+                "section": "CALA10_AD",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11288,
+                "section": "CALA10_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11289,
+                "section": "CALA10_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11290,
+                "section": "CALA10_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11291,
+                "section": "CALA10_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11292,
+                "section": "CALA10_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5
+        },
+        "lunar": {
+          "art_id": "CALA10_AD",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8027,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgla10_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgla10_a.shp",
+            "stem": "cgla10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11282,
+                "section": "CALA10_AD",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11283,
+                "section": "CALA10_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11284,
+                "section": "CALA10_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11286,
+                "section": "CALA10_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11287,
+                "section": "CALA10_AD",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11288,
+                "section": "CALA10_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11289,
+                "section": "CALA10_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11290,
+                "section": "CALA10_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11291,
+                "section": "CALA10_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11292,
+                "section": "CALA10_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5
+        },
+        "newurban": {
+          "art_id": "CALA10_AD",
+          "image": "CALA10_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8027,
+            "pack": "ra2md",
+            "relative_path": "isogenmd/cgla10_a.shp",
+            "folder": "isogenmd",
+            "filename": "cgla10_a.shp",
+            "stem": "cgla10_a",
+            "extension": ".shp",
+            "size": 366528,
+            "sha1": "a4a728f7e3e04306f57fa7fd098abb98fddabdbe"
+          },
+          "LoopStart": 0,
+          "LoopEnd": 44,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Shadow": true,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "CALA10_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11282,
+                "section": "CALA10_AD",
+                "key": "Image",
+                "value": "CALA10_A"
+              },
+              "history": []
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11283,
+                "section": "CALA10_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11284,
+                "section": "CALA10_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11286,
+                "section": "CALA10_AD",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": []
+            },
+            "LoopEnd": {
+              "value": "44",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11287,
+                "section": "CALA10_AD",
+                "key": "LoopEnd",
+                "value": "44"
+              },
+              "history": []
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11288,
+                "section": "CALA10_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": []
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11289,
+                "section": "CALA10_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": []
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11290,
+                "section": "CALA10_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": []
+            },
+            "Shadow": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11291,
+                "section": "CALA10_AD",
+                "key": "Shadow",
+                "value": "yes"
+              },
+              "history": []
+            },
+            "DemandLoad": {
+              "value": "true",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 11292,
+                "section": "CALA10_AD",
+                "key": "DemandLoad",
+                "value": "true"
+              },
+              "history": []
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -5
+        }
+      }
+    },
+    "foundation": "1x3",
+    "height": 5,
+    "occupy_height": 4,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "LA Billboard",
+      "UIName": "Name:CALA10",
+      "TechLevel": -1,
+      "Strength": 200,
+      "Insignificant": true,
+      "Nominal": true,
+      "Points": 5,
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": 15,
+      "MinDebris": 5,
+      "BaseNormal": false,
+      "Sight": 5,
+      "ClickRepairable": false,
+      "CanBeOccupied": false,
+      "CanOccupyFire": false,
+      "LeaveRubble": true
+    },
+    "raw_values": {
+      "Name": "LA Billboard",
+      "UIName": "Name:CALA10",
+      "TechLevel": "-1",
+      "Strength": "200",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "Points": "5",
+      "Armor": "wood",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+      "MaxDebris": "15",
+      "MinDebris": "5",
+      "BaseNormal": "no",
+      "Sight": "5",
+      "ClickRepairable": "no",
+      "CanBeOccupied": "no",
+      "CanOccupyFire": "no",
+      "LeaveRubble": "true"
+    },
+    "provenance": {
+      "Name": {
+        "value": "LA Billboard",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15830,
+          "section": "CALA10",
+          "key": "Name",
+          "value": "LA Billboard"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15822,
+            "section": "CALA10",
+            "key": "Name",
+            "value": "LA Billboard"
+          }
+        ]
+      },
+      "UIName": {
+        "value": "Name:CALA10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15831,
+          "section": "CALA10",
+          "key": "UIName",
+          "value": "Name:CALA10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15823,
+            "section": "CALA10",
+            "key": "UIName",
+            "value": "Name:CALA10"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15832,
+          "section": "CALA10",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15824,
+            "section": "CALA10",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15833,
+          "section": "CALA10",
+          "key": "Strength",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15825,
+            "section": "CALA10",
+            "key": "Strength",
+            "value": "200"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15834,
+          "section": "CALA10",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15826,
+            "section": "CALA10",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15835,
+          "section": "CALA10",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15827,
+            "section": "CALA10",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15837,
+          "section": "CALA10",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15829,
+            "section": "CALA10",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15838,
+          "section": "CALA10",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15830,
+            "section": "CALA10",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15839,
+          "section": "CALA10",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15831,
+            "section": "CALA10",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15841,
+          "section": "CALA10",
+          "key": "DebrisAnims",
+          "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15833,
+            "section": "CALA10",
+            "key": "DebrisAnims",
+            "value": "DBRI-WM1,DBRI-WM2,DBRI-WM3,DBRI-WM4,DBRI-WM5,DBRI-WM6"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15842,
+          "section": "CALA10",
+          "key": "MaxDebris",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15834,
+            "section": "CALA10",
+            "key": "MaxDebris",
+            "value": "15"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15843,
+          "section": "CALA10",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15835,
+            "section": "CALA10",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15846,
+          "section": "CALA10",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15838,
+            "section": "CALA10",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15847,
+          "section": "CALA10",
+          "key": "Sight",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15839,
+            "section": "CALA10",
+            "key": "Sight",
+            "value": "5"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15848,
+          "section": "CALA10",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15840,
+            "section": "CALA10",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanBeOccupied": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15849,
+          "section": "CALA10",
+          "key": "CanBeOccupied",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15841,
+            "section": "CALA10",
+            "key": "CanBeOccupied",
+            "value": "no"
+          }
+        ]
+      },
+      "CanOccupyFire": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15851,
+          "section": "CALA10",
+          "key": "CanOccupyFire",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15843,
+            "section": "CALA10",
+            "key": "CanOccupyFire",
+            "value": "no"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15852,
+          "section": "CALA10",
+          "key": "LeaveRubble",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15844,
+            "section": "CALA10",
+            "key": "LeaveRubble",
+            "value": "true"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Normalized": true,
+      "Remapable": false,
+      "Foundation": "1x3",
+      "Height": 5,
+      "NewTheater": true,
+      "ActiveAnim": "CALA10_A",
+      "ActiveAnimDamaged": "CALA10_AD",
+      "ActiveAnimZAdjust": -5,
+      "DemandLoad": true,
+      "CanBeHidden": false,
+      "CanHideThings": true,
+      "OccupyHeight": 4
+    },
+    "raw_values": {
+      "Normalized": "yes",
+      "Remapable": "no",
+      "Foundation": "1x3",
+      "Height": "5",
+      "NewTheater": "yes",
+      "ActiveAnim": "CALA10_A",
+      "ActiveAnimDamaged": "CALA10_AD",
+      "ActiveAnimZAdjust": "-5",
+      "DemandLoad": "true",
+      "CanBeHidden": "False",
+      "CanHideThings": "True",
+      "OccupyHeight": "4"
+    },
+    "provenance": {
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11235,
+          "section": "CALA10",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11236,
+          "section": "CALA10",
+          "key": "Remapable",
+          "value": "no"
+        },
+        "history": []
+      },
+      "Foundation": {
+        "value": "1x3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11237,
+          "section": "CALA10",
+          "key": "Foundation",
+          "value": "1x3"
+        },
+        "history": []
+      },
+      "Height": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11238,
+          "section": "CALA10",
+          "key": "Height",
+          "value": "5"
+        },
+        "history": []
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11240,
+          "section": "CALA10",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "ActiveAnim": {
+        "value": "CALA10_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11241,
+          "section": "CALA10",
+          "key": "ActiveAnim",
+          "value": "CALA10_A"
+        },
+        "history": []
+      },
+      "ActiveAnimDamaged": {
+        "value": "CALA10_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11242,
+          "section": "CALA10",
+          "key": "ActiveAnimDamaged",
+          "value": "CALA10_AD"
+        },
+        "history": []
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11243,
+          "section": "CALA10",
+          "key": "ActiveAnimZAdjust",
+          "value": "-5"
+        },
+        "history": []
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11244,
+          "section": "CALA10",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": []
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11255,
+          "section": "CALA10",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": []
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11256,
+          "section": "CALA10",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": []
+      },
+      "OccupyHeight": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 11257,
+          "section": "CALA10",
+          "key": "OccupyHeight",
+          "value": "4"
+        },
+        "history": []
+      }
+    }
+  }
+}

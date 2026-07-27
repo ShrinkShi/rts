@@ -1,0 +1,4435 @@
+{
+  "id": "GAPOWR",
+  "category": "building",
+  "name_token": "Name:GAPOWR",
+  "art_id": "GAPOWR",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GACNST"
+  ],
+  "tech_level": 1,
+  "cost": 800,
+  "strength": 750,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 4,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {
+    "DieSound": [
+      "PowerPlantDie"
+    ]
+  },
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "GAPOWR",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 370,
+          "pack": "ra2",
+          "relative_path": "generic/ggpowr.shp",
+          "folder": "generic",
+          "filename": "ggpowr.shp",
+          "stem": "ggpowr",
+          "extension": ".shp",
+          "size": 16416,
+          "sha1": "9635bc283a9a12f66f696abc5fff95e33a7335b0"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 4924,
+          "pack": "ra2",
+          "relative_path": "snow/gapowr.shp",
+          "folder": "snow",
+          "filename": "gapowr.shp",
+          "stem": "gapowr",
+          "extension": ".shp",
+          "size": 16416,
+          "sha1": "c538c0b879e787017001dc4179c6cf4130919001"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 370,
+          "pack": "ra2",
+          "relative_path": "generic/ggpowr.shp",
+          "folder": "generic",
+          "filename": "ggpowr.shp",
+          "stem": "ggpowr",
+          "extension": ".shp",
+          "size": 16416,
+          "sha1": "9635bc283a9a12f66f696abc5fff95e33a7335b0"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 370,
+          "pack": "ra2",
+          "relative_path": "generic/ggpowr.shp",
+          "folder": "generic",
+          "filename": "ggpowr.shp",
+          "stem": "ggpowr",
+          "extension": ".shp",
+          "size": 16416,
+          "sha1": "9635bc283a9a12f66f696abc5fff95e33a7335b0"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 370,
+          "pack": "ra2",
+          "relative_path": "generic/ggpowr.shp",
+          "folder": "generic",
+          "filename": "ggpowr.shp",
+          "stem": "ggpowr",
+          "extension": ".shp",
+          "size": 16416,
+          "sha1": "9635bc283a9a12f66f696abc5fff95e33a7335b0"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 370,
+          "pack": "ra2",
+          "relative_path": "generic/ggpowr.shp",
+          "folder": "generic",
+          "filename": "ggpowr.shp",
+          "stem": "ggpowr",
+          "extension": ".shp",
+          "size": 16416,
+          "sha1": "9635bc283a9a12f66f696abc5fff95e33a7335b0"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "Buildup": {
+        "temperate": {
+          "art_id": "GAPOWRMK",
+          "image": "GAPOWRMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2036,
+            "pack": "ra2",
+            "relative_path": "isotemp/gtpowrmk.shp",
+            "folder": "isotemp",
+            "filename": "gtpowrmk.shp",
+            "stem": "gtpowrmk",
+            "extension": ".shp",
+            "size": 101960,
+            "sha1": "b63e40a09339936b52f368ccdf5c734af3a3dbab"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "GAPOWRMK",
+          "image": "GAPOWRMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 971,
+            "pack": "ra2",
+            "relative_path": "isosnow/gapowrmk.shp",
+            "folder": "isosnow",
+            "filename": "gapowrmk.shp",
+            "stem": "gapowrmk",
+            "extension": ".shp",
+            "size": 101960,
+            "sha1": "6b56e4064ad769a1c5a860d24bbfe9c8a883db50"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "GAPOWRMK",
+          "image": "GAPOWRMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 3137,
+            "pack": "ra2",
+            "relative_path": "isourb/gupowrmk.shp",
+            "folder": "isourb",
+            "filename": "gupowrmk.shp",
+            "stem": "gupowrmk",
+            "extension": ".shp",
+            "size": 101960,
+            "sha1": "b63e40a09339936b52f368ccdf5c734af3a3dbab"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "GAPOWRMK",
+          "image": "GAPOWRMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6673,
+            "pack": "ra2md",
+            "relative_path": "isodes/gdpowrmk.shp",
+            "folder": "isodes",
+            "filename": "gdpowrmk.shp",
+            "stem": "gdpowrmk",
+            "extension": ".shp",
+            "size": 101960,
+            "sha1": "b63e40a09339936b52f368ccdf5c734af3a3dbab"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "GAPOWRMK",
+          "image": "GAPOWRMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8449,
+            "pack": "ra2md",
+            "relative_path": "isolun/glpowrmk.shp",
+            "folder": "isolun",
+            "filename": "glpowrmk.shp",
+            "stem": "glpowrmk",
+            "extension": ".shp",
+            "size": 101960,
+            "sha1": "b63e40a09339936b52f368ccdf5c734af3a3dbab"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "GAPOWRMK",
+          "image": "GAPOWRMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9643,
+            "pack": "ra2md",
+            "relative_path": "isoubn/gnpowrmk.shp",
+            "folder": "isoubn",
+            "filename": "gnpowrmk.shp",
+            "stem": "gnpowrmk",
+            "extension": ".shp",
+            "size": 101960,
+            "sha1": "b63e40a09339936b52f368ccdf5c734af3a3dbab"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        }
+      },
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "GAPOWR_A",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 371,
+            "pack": "ra2",
+            "relative_path": "generic/ggpowr_a.shp",
+            "folder": "generic",
+            "filename": "ggpowr_a.shp",
+            "stem": "ggpowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "52966c4e9d58bb6a597f8ee6be9e2db6cd2d1152"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 8,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16385,
+                "section": "GAPOWR_A",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11792,
+                  "section": "GAPOWR_A",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16386,
+                "section": "GAPOWR_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11793,
+                  "section": "GAPOWR_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16387,
+                "section": "GAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11794,
+                  "section": "GAPOWR_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16388,
+                "section": "GAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11795,
+                  "section": "GAPOWR_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16389,
+                "section": "GAPOWR_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11796,
+                  "section": "GAPOWR_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16390,
+                "section": "GAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11797,
+                  "section": "GAPOWR_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16391,
+                "section": "GAPOWR_A",
+                "key": "LoopEnd",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11798,
+                  "section": "GAPOWR_A",
+                  "key": "LoopEnd",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16392,
+                "section": "GAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11799,
+                  "section": "GAPOWR_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16393,
+                "section": "GAPOWR_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11800,
+                  "section": "GAPOWR_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16394,
+                "section": "GAPOWR_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11801,
+                  "section": "GAPOWR_A",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        },
+        "snow": {
+          "art_id": "GAPOWR_A",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 4925,
+            "pack": "ra2",
+            "relative_path": "snow/gapowr_a.shp",
+            "folder": "snow",
+            "filename": "gapowr_a.shp",
+            "stem": "gapowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "78874475d43194d252ac29c8f813a64101600e09"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 8,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16385,
+                "section": "GAPOWR_A",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11792,
+                  "section": "GAPOWR_A",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16386,
+                "section": "GAPOWR_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11793,
+                  "section": "GAPOWR_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16387,
+                "section": "GAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11794,
+                  "section": "GAPOWR_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16388,
+                "section": "GAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11795,
+                  "section": "GAPOWR_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16389,
+                "section": "GAPOWR_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11796,
+                  "section": "GAPOWR_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16390,
+                "section": "GAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11797,
+                  "section": "GAPOWR_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16391,
+                "section": "GAPOWR_A",
+                "key": "LoopEnd",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11798,
+                  "section": "GAPOWR_A",
+                  "key": "LoopEnd",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16392,
+                "section": "GAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11799,
+                  "section": "GAPOWR_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16393,
+                "section": "GAPOWR_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11800,
+                  "section": "GAPOWR_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16394,
+                "section": "GAPOWR_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11801,
+                  "section": "GAPOWR_A",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        },
+        "urban": {
+          "art_id": "GAPOWR_A",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 371,
+            "pack": "ra2",
+            "relative_path": "generic/ggpowr_a.shp",
+            "folder": "generic",
+            "filename": "ggpowr_a.shp",
+            "stem": "ggpowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "52966c4e9d58bb6a597f8ee6be9e2db6cd2d1152"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 8,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16385,
+                "section": "GAPOWR_A",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11792,
+                  "section": "GAPOWR_A",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16386,
+                "section": "GAPOWR_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11793,
+                  "section": "GAPOWR_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16387,
+                "section": "GAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11794,
+                  "section": "GAPOWR_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16388,
+                "section": "GAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11795,
+                  "section": "GAPOWR_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16389,
+                "section": "GAPOWR_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11796,
+                  "section": "GAPOWR_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16390,
+                "section": "GAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11797,
+                  "section": "GAPOWR_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16391,
+                "section": "GAPOWR_A",
+                "key": "LoopEnd",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11798,
+                  "section": "GAPOWR_A",
+                  "key": "LoopEnd",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16392,
+                "section": "GAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11799,
+                  "section": "GAPOWR_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16393,
+                "section": "GAPOWR_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11800,
+                  "section": "GAPOWR_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16394,
+                "section": "GAPOWR_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11801,
+                  "section": "GAPOWR_A",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        },
+        "desert": {
+          "art_id": "GAPOWR_A",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 371,
+            "pack": "ra2",
+            "relative_path": "generic/ggpowr_a.shp",
+            "folder": "generic",
+            "filename": "ggpowr_a.shp",
+            "stem": "ggpowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "52966c4e9d58bb6a597f8ee6be9e2db6cd2d1152"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 8,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16385,
+                "section": "GAPOWR_A",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11792,
+                  "section": "GAPOWR_A",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16386,
+                "section": "GAPOWR_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11793,
+                  "section": "GAPOWR_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16387,
+                "section": "GAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11794,
+                  "section": "GAPOWR_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16388,
+                "section": "GAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11795,
+                  "section": "GAPOWR_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16389,
+                "section": "GAPOWR_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11796,
+                  "section": "GAPOWR_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16390,
+                "section": "GAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11797,
+                  "section": "GAPOWR_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16391,
+                "section": "GAPOWR_A",
+                "key": "LoopEnd",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11798,
+                  "section": "GAPOWR_A",
+                  "key": "LoopEnd",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16392,
+                "section": "GAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11799,
+                  "section": "GAPOWR_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16393,
+                "section": "GAPOWR_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11800,
+                  "section": "GAPOWR_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16394,
+                "section": "GAPOWR_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11801,
+                  "section": "GAPOWR_A",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        },
+        "lunar": {
+          "art_id": "GAPOWR_A",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 371,
+            "pack": "ra2",
+            "relative_path": "generic/ggpowr_a.shp",
+            "folder": "generic",
+            "filename": "ggpowr_a.shp",
+            "stem": "ggpowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "52966c4e9d58bb6a597f8ee6be9e2db6cd2d1152"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 8,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16385,
+                "section": "GAPOWR_A",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11792,
+                  "section": "GAPOWR_A",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16386,
+                "section": "GAPOWR_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11793,
+                  "section": "GAPOWR_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16387,
+                "section": "GAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11794,
+                  "section": "GAPOWR_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16388,
+                "section": "GAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11795,
+                  "section": "GAPOWR_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16389,
+                "section": "GAPOWR_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11796,
+                  "section": "GAPOWR_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16390,
+                "section": "GAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11797,
+                  "section": "GAPOWR_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16391,
+                "section": "GAPOWR_A",
+                "key": "LoopEnd",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11798,
+                  "section": "GAPOWR_A",
+                  "key": "LoopEnd",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16392,
+                "section": "GAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11799,
+                  "section": "GAPOWR_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16393,
+                "section": "GAPOWR_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11800,
+                  "section": "GAPOWR_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16394,
+                "section": "GAPOWR_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11801,
+                  "section": "GAPOWR_A",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        },
+        "newurban": {
+          "art_id": "GAPOWR_A",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 371,
+            "pack": "ra2",
+            "relative_path": "generic/ggpowr_a.shp",
+            "folder": "generic",
+            "filename": "ggpowr_a.shp",
+            "stem": "ggpowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "52966c4e9d58bb6a597f8ee6be9e2db6cd2d1152"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 8,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16385,
+                "section": "GAPOWR_A",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11792,
+                  "section": "GAPOWR_A",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16386,
+                "section": "GAPOWR_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11793,
+                  "section": "GAPOWR_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16387,
+                "section": "GAPOWR_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11794,
+                  "section": "GAPOWR_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16388,
+                "section": "GAPOWR_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11795,
+                  "section": "GAPOWR_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16389,
+                "section": "GAPOWR_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11796,
+                  "section": "GAPOWR_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16390,
+                "section": "GAPOWR_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11797,
+                  "section": "GAPOWR_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16391,
+                "section": "GAPOWR_A",
+                "key": "LoopEnd",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11798,
+                  "section": "GAPOWR_A",
+                  "key": "LoopEnd",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16392,
+                "section": "GAPOWR_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11799,
+                  "section": "GAPOWR_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16393,
+                "section": "GAPOWR_A",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11800,
+                  "section": "GAPOWR_A",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16394,
+                "section": "GAPOWR_A",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11801,
+                  "section": "GAPOWR_A",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "GAPOWR_AD",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 371,
+            "pack": "ra2",
+            "relative_path": "generic/ggpowr_a.shp",
+            "folder": "generic",
+            "filename": "ggpowr_a.shp",
+            "stem": "ggpowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "52966c4e9d58bb6a597f8ee6be9e2db6cd2d1152"
+          },
+          "Start": 8,
+          "LoopStart": 8,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16398,
+                "section": "GAPOWR_AD",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11805,
+                  "section": "GAPOWR_AD",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16399,
+                "section": "GAPOWR_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11806,
+                  "section": "GAPOWR_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16401,
+                "section": "GAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11808,
+                  "section": "GAPOWR_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16402,
+                "section": "GAPOWR_AD",
+                "key": "Start",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11809,
+                  "section": "GAPOWR_AD",
+                  "key": "Start",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16403,
+                "section": "GAPOWR_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11810,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopStart",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16404,
+                "section": "GAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11811,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16405,
+                "section": "GAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11812,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16406,
+                "section": "GAPOWR_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11813,
+                  "section": "GAPOWR_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16407,
+                "section": "GAPOWR_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11814,
+                  "section": "GAPOWR_AD",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        },
+        "snow": {
+          "art_id": "GAPOWR_AD",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 4925,
+            "pack": "ra2",
+            "relative_path": "snow/gapowr_a.shp",
+            "folder": "snow",
+            "filename": "gapowr_a.shp",
+            "stem": "gapowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "78874475d43194d252ac29c8f813a64101600e09"
+          },
+          "Start": 8,
+          "LoopStart": 8,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16398,
+                "section": "GAPOWR_AD",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11805,
+                  "section": "GAPOWR_AD",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16399,
+                "section": "GAPOWR_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11806,
+                  "section": "GAPOWR_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16401,
+                "section": "GAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11808,
+                  "section": "GAPOWR_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16402,
+                "section": "GAPOWR_AD",
+                "key": "Start",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11809,
+                  "section": "GAPOWR_AD",
+                  "key": "Start",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16403,
+                "section": "GAPOWR_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11810,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopStart",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16404,
+                "section": "GAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11811,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16405,
+                "section": "GAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11812,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16406,
+                "section": "GAPOWR_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11813,
+                  "section": "GAPOWR_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16407,
+                "section": "GAPOWR_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11814,
+                  "section": "GAPOWR_AD",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        },
+        "urban": {
+          "art_id": "GAPOWR_AD",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 371,
+            "pack": "ra2",
+            "relative_path": "generic/ggpowr_a.shp",
+            "folder": "generic",
+            "filename": "ggpowr_a.shp",
+            "stem": "ggpowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "52966c4e9d58bb6a597f8ee6be9e2db6cd2d1152"
+          },
+          "Start": 8,
+          "LoopStart": 8,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16398,
+                "section": "GAPOWR_AD",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11805,
+                  "section": "GAPOWR_AD",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16399,
+                "section": "GAPOWR_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11806,
+                  "section": "GAPOWR_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16401,
+                "section": "GAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11808,
+                  "section": "GAPOWR_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16402,
+                "section": "GAPOWR_AD",
+                "key": "Start",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11809,
+                  "section": "GAPOWR_AD",
+                  "key": "Start",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16403,
+                "section": "GAPOWR_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11810,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopStart",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16404,
+                "section": "GAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11811,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16405,
+                "section": "GAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11812,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16406,
+                "section": "GAPOWR_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11813,
+                  "section": "GAPOWR_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16407,
+                "section": "GAPOWR_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11814,
+                  "section": "GAPOWR_AD",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        },
+        "desert": {
+          "art_id": "GAPOWR_AD",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 371,
+            "pack": "ra2",
+            "relative_path": "generic/ggpowr_a.shp",
+            "folder": "generic",
+            "filename": "ggpowr_a.shp",
+            "stem": "ggpowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "52966c4e9d58bb6a597f8ee6be9e2db6cd2d1152"
+          },
+          "Start": 8,
+          "LoopStart": 8,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16398,
+                "section": "GAPOWR_AD",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11805,
+                  "section": "GAPOWR_AD",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16399,
+                "section": "GAPOWR_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11806,
+                  "section": "GAPOWR_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16401,
+                "section": "GAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11808,
+                  "section": "GAPOWR_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16402,
+                "section": "GAPOWR_AD",
+                "key": "Start",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11809,
+                  "section": "GAPOWR_AD",
+                  "key": "Start",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16403,
+                "section": "GAPOWR_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11810,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopStart",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16404,
+                "section": "GAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11811,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16405,
+                "section": "GAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11812,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16406,
+                "section": "GAPOWR_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11813,
+                  "section": "GAPOWR_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16407,
+                "section": "GAPOWR_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11814,
+                  "section": "GAPOWR_AD",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        },
+        "lunar": {
+          "art_id": "GAPOWR_AD",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 371,
+            "pack": "ra2",
+            "relative_path": "generic/ggpowr_a.shp",
+            "folder": "generic",
+            "filename": "ggpowr_a.shp",
+            "stem": "ggpowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "52966c4e9d58bb6a597f8ee6be9e2db6cd2d1152"
+          },
+          "Start": 8,
+          "LoopStart": 8,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16398,
+                "section": "GAPOWR_AD",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11805,
+                  "section": "GAPOWR_AD",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16399,
+                "section": "GAPOWR_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11806,
+                  "section": "GAPOWR_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16401,
+                "section": "GAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11808,
+                  "section": "GAPOWR_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16402,
+                "section": "GAPOWR_AD",
+                "key": "Start",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11809,
+                  "section": "GAPOWR_AD",
+                  "key": "Start",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16403,
+                "section": "GAPOWR_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11810,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopStart",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16404,
+                "section": "GAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11811,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16405,
+                "section": "GAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11812,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16406,
+                "section": "GAPOWR_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11813,
+                  "section": "GAPOWR_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16407,
+                "section": "GAPOWR_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11814,
+                  "section": "GAPOWR_AD",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        },
+        "newurban": {
+          "art_id": "GAPOWR_AD",
+          "image": "GAPOWR_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 371,
+            "pack": "ra2",
+            "relative_path": "generic/ggpowr_a.shp",
+            "folder": "generic",
+            "filename": "ggpowr_a.shp",
+            "stem": "ggpowr_a",
+            "extension": ".shp",
+            "size": 49480,
+            "sha1": "52966c4e9d58bb6a597f8ee6be9e2db6cd2d1152"
+          },
+          "Start": 8,
+          "LoopStart": 8,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 220,
+          "Layer": "ground",
+          "DetailLevel": 2,
+          "provenance": {
+            "Image": {
+              "value": "GAPOWR_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16398,
+                "section": "GAPOWR_AD",
+                "key": "Image",
+                "value": "GAPOWR_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11805,
+                  "section": "GAPOWR_AD",
+                  "key": "Image",
+                  "value": "GAPOWR_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16399,
+                "section": "GAPOWR_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11806,
+                  "section": "GAPOWR_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16401,
+                "section": "GAPOWR_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11808,
+                  "section": "GAPOWR_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "Start": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16402,
+                "section": "GAPOWR_AD",
+                "key": "Start",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11809,
+                  "section": "GAPOWR_AD",
+                  "key": "Start",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "8",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16403,
+                "section": "GAPOWR_AD",
+                "key": "LoopStart",
+                "value": "8"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11810,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopStart",
+                  "value": "8"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16404,
+                "section": "GAPOWR_AD",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11811,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16405,
+                "section": "GAPOWR_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11812,
+                  "section": "GAPOWR_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "220",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16406,
+                "section": "GAPOWR_AD",
+                "key": "Rate",
+                "value": "220"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11813,
+                  "section": "GAPOWR_AD",
+                  "key": "Rate",
+                  "value": "220"
+                }
+              ]
+            },
+            "DetailLevel": {
+              "value": "2",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 16407,
+                "section": "GAPOWR_AD",
+                "key": "DetailLevel",
+                "value": "2"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 11814,
+                  "section": "GAPOWR_AD",
+                  "key": "DetailLevel",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362,
+          "Powered": false,
+          "PoweredSpecial": true
+        }
+      }
+    },
+    "foundation": "2x2",
+    "height": 4,
+    "occupy_height": 3,
+    "damage_fire_offsets": [
+      [
+        -20.0,
+        32.0
+      ],
+      [
+        3.0,
+        12.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:GAPOWR",
+      "Name": "Allied Power Plant",
+      "BuildCat": "Power",
+      "Prerequisite": "GACNST",
+      "Strength": 750,
+      "Armor": "wood",
+      "TechLevel": 1,
+      "Adjacent": 2,
+      "Sight": 4,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": 0,
+      "Cost": 800,
+      "Points": 40,
+      "Power": 200,
+      "Capturable": true,
+      "Crewed": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60,gtpowexp",
+      "Upgrades": 2,
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM",
+      "MaxDebris": 6,
+      "MinDebris": 4,
+      "ThreatPosed": 0,
+      "DamageSmokeOffset": "300, 300, 450",
+      "TogglePower": false,
+      "Spyable": true,
+      "DieSound": "PowerPlantDie",
+      "ImmuneToPsionics": false,
+      "Drainable": true,
+      "PoweredSpecial": true
+    },
+    "raw_values": {
+      "UIName": "Name:GAPOWR",
+      "Name": "Allied Power Plant",
+      "BuildCat": "Power",
+      "Prerequisite": "GACNST",
+      "Strength": "750",
+      "Armor": "wood",
+      "TechLevel": "1",
+      "Adjacent": "2",
+      "Sight": "4",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": "0",
+      "Cost": "800",
+      "Points": "40",
+      "Power": "200",
+      "Capturable": "true",
+      "Crewed": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60,gtpowexp",
+      "Upgrades": "2",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM",
+      "MaxDebris": "6",
+      "MinDebris": "4",
+      "ThreatPosed": "0",
+      "DamageSmokeOffset": "300, 300, 450",
+      "TogglePower": "no",
+      "Spyable": "yes",
+      "DieSound": "PowerPlantDie",
+      "ImmuneToPsionics": "no",
+      "Drainable": "yes",
+      "PoweredSpecial": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:GAPOWR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11656,
+          "section": "GAPOWR",
+          "key": "UIName",
+          "value": "Name:GAPOWR"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8893,
+            "section": "GAPOWR",
+            "key": "UIName",
+            "value": "Name:GAPOWR"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11650,
+            "section": "GAPOWR",
+            "key": "UIName",
+            "value": "Name:GAPOWR"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Allied Power Plant",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11657,
+          "section": "GAPOWR",
+          "key": "Name",
+          "value": "Allied Power Plant"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8894,
+            "section": "GAPOWR",
+            "key": "Name",
+            "value": "Power Plant"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11651,
+            "section": "GAPOWR",
+            "key": "Name",
+            "value": "Allied Power Plant"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Power",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11658,
+          "section": "GAPOWR",
+          "key": "BuildCat",
+          "value": "Power"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8895,
+            "section": "GAPOWR",
+            "key": "BuildCat",
+            "value": "Power"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11652,
+            "section": "GAPOWR",
+            "key": "BuildCat",
+            "value": "Power"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GACNST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11659,
+          "section": "GAPOWR",
+          "key": "Prerequisite",
+          "value": "GACNST"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8896,
+            "section": "GAPOWR",
+            "key": "Prerequisite",
+            "value": "GACNST"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11653,
+            "section": "GAPOWR",
+            "key": "Prerequisite",
+            "value": "GACNST"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "750",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11660,
+          "section": "GAPOWR",
+          "key": "Strength",
+          "value": "750"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8897,
+            "section": "GAPOWR",
+            "key": "Strength",
+            "value": "750"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11654,
+            "section": "GAPOWR",
+            "key": "Strength",
+            "value": "750"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11661,
+          "section": "GAPOWR",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8898,
+            "section": "GAPOWR",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11655,
+            "section": "GAPOWR",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11662,
+          "section": "GAPOWR",
+          "key": "TechLevel",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8899,
+            "section": "GAPOWR",
+            "key": "TechLevel",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11656,
+            "section": "GAPOWR",
+            "key": "TechLevel",
+            "value": "1"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11663,
+          "section": "GAPOWR",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8900,
+            "section": "GAPOWR",
+            "key": "Adjacent",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11657,
+            "section": "GAPOWR",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11664,
+          "section": "GAPOWR",
+          "key": "Sight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8901,
+            "section": "GAPOWR",
+            "key": "Sight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11658,
+            "section": "GAPOWR",
+            "key": "Sight",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11665,
+          "section": "GAPOWR",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8902,
+            "section": "GAPOWR",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11659,
+            "section": "GAPOWR",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AIBasePlanningSide": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11666,
+          "section": "GAPOWR",
+          "key": "AIBasePlanningSide",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8903,
+            "section": "GAPOWR",
+            "key": "AIBasePlanningSide",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11660,
+            "section": "GAPOWR",
+            "key": "AIBasePlanningSide",
+            "value": "0"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "800",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11667,
+          "section": "GAPOWR",
+          "key": "Cost",
+          "value": "800"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8904,
+            "section": "GAPOWR",
+            "key": "Cost",
+            "value": "800"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11661,
+            "section": "GAPOWR",
+            "key": "Cost",
+            "value": "800"
+          }
+        ]
+      },
+      "Points": {
+        "value": "40",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11668,
+          "section": "GAPOWR",
+          "key": "Points",
+          "value": "40"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8905,
+            "section": "GAPOWR",
+            "key": "Points",
+            "value": "40"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11662,
+            "section": "GAPOWR",
+            "key": "Points",
+            "value": "40"
+          }
+        ]
+      },
+      "Power": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11669,
+          "section": "GAPOWR",
+          "key": "Power",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8906,
+            "section": "GAPOWR",
+            "key": "Power",
+            "value": "200"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11663,
+            "section": "GAPOWR",
+            "key": "Power",
+            "value": "200"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11670,
+          "section": "GAPOWR",
+          "key": "Capturable",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8907,
+            "section": "GAPOWR",
+            "key": "Capturable",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11664,
+            "section": "GAPOWR",
+            "key": "Capturable",
+            "value": "true"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11671,
+          "section": "GAPOWR",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8908,
+            "section": "GAPOWR",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11665,
+            "section": "GAPOWR",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60,gtpowexp",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11672,
+          "section": "GAPOWR",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60,gtpowexp"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8909,
+            "section": "GAPOWR",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60,gtpowexp"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11666,
+            "section": "GAPOWR",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60,gtpowexp"
+          }
+        ]
+      },
+      "Upgrades": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11673,
+          "section": "GAPOWR",
+          "key": "Upgrades",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8910,
+            "section": "GAPOWR",
+            "key": "Upgrades",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11667,
+            "section": "GAPOWR",
+            "key": "Upgrades",
+            "value": "2"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11674,
+          "section": "GAPOWR",
+          "key": "DebrisAnims",
+          "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8911,
+            "section": "GAPOWR",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11668,
+            "section": "GAPOWR",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11675,
+          "section": "GAPOWR",
+          "key": "MaxDebris",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8912,
+            "section": "GAPOWR",
+            "key": "MaxDebris",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11669,
+            "section": "GAPOWR",
+            "key": "MaxDebris",
+            "value": "6"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11676,
+          "section": "GAPOWR",
+          "key": "MinDebris",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8913,
+            "section": "GAPOWR",
+            "key": "MinDebris",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11670,
+            "section": "GAPOWR",
+            "key": "MinDebris",
+            "value": "4"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11677,
+          "section": "GAPOWR",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8914,
+            "section": "GAPOWR",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11671,
+            "section": "GAPOWR",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "300, 300, 450",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11679,
+          "section": "GAPOWR",
+          "key": "DamageSmokeOffset",
+          "value": "300, 300, 450"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8916,
+            "section": "GAPOWR",
+            "key": "DamageSmokeOffset",
+            "value": "300, 300, 450"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11673,
+            "section": "GAPOWR",
+            "key": "DamageSmokeOffset",
+            "value": "300, 300, 450"
+          }
+        ]
+      },
+      "TogglePower": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11680,
+          "section": "GAPOWR",
+          "key": "TogglePower",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8917,
+            "section": "GAPOWR",
+            "key": "TogglePower",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11674,
+            "section": "GAPOWR",
+            "key": "TogglePower",
+            "value": "no"
+          }
+        ]
+      },
+      "Spyable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11681,
+          "section": "GAPOWR",
+          "key": "Spyable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8918,
+            "section": "GAPOWR",
+            "key": "Spyable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11675,
+            "section": "GAPOWR",
+            "key": "Spyable",
+            "value": "yes"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "PowerPlantDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11682,
+          "section": "GAPOWR",
+          "key": "DieSound",
+          "value": "PowerPlantDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8919,
+            "section": "GAPOWR",
+            "key": "DieSound",
+            "value": "PowerPlantDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11676,
+            "section": "GAPOWR",
+            "key": "DieSound",
+            "value": "PowerPlantDie"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11683,
+          "section": "GAPOWR",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11677,
+            "section": "GAPOWR",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Drainable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11684,
+          "section": "GAPOWR",
+          "key": "Drainable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11678,
+            "section": "GAPOWR",
+            "key": "Drainable",
+            "value": "yes"
+          }
+        ]
+      },
+      "PoweredSpecial": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11685,
+          "section": "GAPOWR",
+          "key": "PoweredSpecial",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11679,
+            "section": "GAPOWR",
+            "key": "PoweredSpecial",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Normalized": true,
+      "Remapable": true,
+      "Cameo": "POWRICON",
+      "Foundation": "2x2",
+      "Buildup": "GAPOWRMK",
+      "DemandLoadBuildup": true,
+      "FreeBuildup": true,
+      "NewTheater": true,
+      "Height": 4,
+      "ActiveAnim": "GAPOWR_A",
+      "ActiveAnimDamaged": "GAPOWR_AD",
+      "ActiveAnimZAdjust": -32,
+      "ActiveAnimYSort": 362,
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 3,
+      "DamageFireOffset0": "-20,32",
+      "DamageFireOffset1": "3,12",
+      "ActiveAnimPoweredSpecial": true,
+      "ActiveAnimPowered": false
+    },
+    "raw_values": {
+      "Normalized": "yes",
+      "Remapable": "yes",
+      "Cameo": "POWRICON",
+      "Foundation": "2x2",
+      "Buildup": "GAPOWRMK",
+      "DemandLoadBuildup": "true",
+      "FreeBuildup": "true",
+      "NewTheater": "yes",
+      "Height": "4",
+      "ActiveAnim": "GAPOWR_A",
+      "ActiveAnimDamaged": "GAPOWR_AD",
+      "ActiveAnimZAdjust": "-32",
+      "ActiveAnimYSort": "362",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "3",
+      "DamageFireOffset0": "-20,32",
+      "DamageFireOffset1": "3,12",
+      "ActiveAnimPoweredSpecial": "true",
+      "ActiveAnimPowered": "false"
+    },
+    "provenance": {
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3207,
+          "section": "GAPOWR",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1906,
+            "section": "GAPOWR",
+            "key": "Normalized",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3208,
+          "section": "GAPOWR",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1907,
+            "section": "GAPOWR",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "POWRICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3209,
+          "section": "GAPOWR",
+          "key": "Cameo",
+          "value": "POWRICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1908,
+            "section": "GAPOWR",
+            "key": "Cameo",
+            "value": "POWRICON"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "2x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3210,
+          "section": "GAPOWR",
+          "key": "Foundation",
+          "value": "2x2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1909,
+            "section": "GAPOWR",
+            "key": "Foundation",
+            "value": "2x2"
+          }
+        ]
+      },
+      "Buildup": {
+        "value": "GAPOWRMK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3211,
+          "section": "GAPOWR",
+          "key": "Buildup",
+          "value": "GAPOWRMK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1910,
+            "section": "GAPOWR",
+            "key": "Buildup",
+            "value": "GAPOWRMK"
+          }
+        ]
+      },
+      "DemandLoadBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3212,
+          "section": "GAPOWR",
+          "key": "DemandLoadBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1911,
+            "section": "GAPOWR",
+            "key": "DemandLoadBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "FreeBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3213,
+          "section": "GAPOWR",
+          "key": "FreeBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1912,
+            "section": "GAPOWR",
+            "key": "FreeBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3214,
+          "section": "GAPOWR",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1913,
+            "section": "GAPOWR",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "Height": {
+        "value": "4",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3215,
+          "section": "GAPOWR",
+          "key": "Height",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1914,
+            "section": "GAPOWR",
+            "key": "Height",
+            "value": "4"
+          }
+        ]
+      },
+      "ActiveAnim": {
+        "value": "GAPOWR_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3216,
+          "section": "GAPOWR",
+          "key": "ActiveAnim",
+          "value": "GAPOWR_A"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1915,
+            "section": "GAPOWR",
+            "key": "ActiveAnim",
+            "value": "GAPOWR_A"
+          }
+        ]
+      },
+      "ActiveAnimDamaged": {
+        "value": "GAPOWR_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3217,
+          "section": "GAPOWR",
+          "key": "ActiveAnimDamaged",
+          "value": "GAPOWR_AD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1916,
+            "section": "GAPOWR",
+            "key": "ActiveAnimDamaged",
+            "value": "GAPOWR_AD"
+          }
+        ]
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-32",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3218,
+          "section": "GAPOWR",
+          "key": "ActiveAnimZAdjust",
+          "value": "-32"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1917,
+            "section": "GAPOWR",
+            "key": "ActiveAnimZAdjust",
+            "value": "-32"
+          }
+        ]
+      },
+      "ActiveAnimYSort": {
+        "value": "362",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3219,
+          "section": "GAPOWR",
+          "key": "ActiveAnimYSort",
+          "value": "362"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1918,
+            "section": "GAPOWR",
+            "key": "ActiveAnimYSort",
+            "value": "362"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3220,
+          "section": "GAPOWR",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1919,
+            "section": "GAPOWR",
+            "key": "CanHideThings",
+            "value": "True"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3221,
+          "section": "GAPOWR",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1920,
+            "section": "GAPOWR",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3222,
+          "section": "GAPOWR",
+          "key": "OccupyHeight",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1921,
+            "section": "GAPOWR",
+            "key": "OccupyHeight",
+            "value": "3"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "-20,32",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3223,
+          "section": "GAPOWR",
+          "key": "DamageFireOffset0",
+          "value": "-20,32"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1922,
+            "section": "GAPOWR",
+            "key": "DamageFireOffset0",
+            "value": "-20,32"
+          }
+        ]
+      },
+      "DamageFireOffset1": {
+        "value": "3,12",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3224,
+          "section": "GAPOWR",
+          "key": "DamageFireOffset1",
+          "value": "3,12"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 1923,
+            "section": "GAPOWR",
+            "key": "DamageFireOffset1",
+            "value": "3,12"
+          }
+        ]
+      },
+      "ActiveAnimPoweredSpecial": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3225,
+          "section": "GAPOWR",
+          "key": "ActiveAnimPoweredSpecial",
+          "value": "true"
+        },
+        "history": []
+      },
+      "ActiveAnimPowered": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 3226,
+          "section": "GAPOWR",
+          "key": "ActiveAnimPowered",
+          "value": "false"
+        },
+        "history": []
+      }
+    }
+  }
+}

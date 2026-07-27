@@ -1,0 +1,3226 @@
+{
+  "id": "BRUTE",
+  "category": "infantry",
+  "name_token": "Name:Brute",
+  "art_id": "BRUTE",
+  "owners": [
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YABRCK"
+  ],
+  "tech_level": 5,
+  "cost": 500,
+  "strength": 200,
+  "armor": "plate",
+  "speed": 6,
+  "sight": 8,
+  "locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "InfantryDestroyer",
+  "weapons": {
+    "Primary": {
+      "id": "Punch",
+      "projectile": "InvisibleLow",
+      "warhead": "Battering",
+      "report": [
+        "BruteSmashAttack"
+      ],
+      "values": {
+        "Damage": 100,
+        "ROF": 60,
+        "Range": 1.4,
+        "Speed": 100,
+        "Warhead": "Battering",
+        "Report": "BruteSmashAttack",
+        "Projectile": "InvisibleLow",
+        "FireInTransport": false
+      },
+      "raw_values": {
+        "Damage": "100",
+        "ROF": "60",
+        "Range": "1.4",
+        "Speed": "100",
+        "Warhead": "Battering",
+        "Report": "BruteSmashAttack",
+        "Projectile": "InvisibleLow",
+        "FireInTransport": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23716,
+            "section": "Punch",
+            "key": "Damage",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23708,
+              "section": "Punch",
+              "key": "Damage",
+              "value": "100"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23717,
+            "section": "Punch",
+            "key": "ROF",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23709,
+              "section": "Punch",
+              "key": "ROF",
+              "value": "60"
+            }
+          ]
+        },
+        "Range": {
+          "value": "1.4",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23718,
+            "section": "Punch",
+            "key": "Range",
+            "value": "1.4"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23710,
+              "section": "Punch",
+              "key": "Range",
+              "value": "1.4"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23719,
+            "section": "Punch",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23711,
+              "section": "Punch",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Battering",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23720,
+            "section": "Punch",
+            "key": "Warhead",
+            "value": "Battering"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23712,
+              "section": "Punch",
+              "key": "Warhead",
+              "value": "Battering"
+            }
+          ]
+        },
+        "Report": {
+          "value": "BruteSmashAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23721,
+            "section": "Punch",
+            "key": "Report",
+            "value": "BruteSmashAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23713,
+              "section": "Punch",
+              "key": "Report",
+              "value": "BruteSmashAttack"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23722,
+            "section": "Punch",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23714,
+              "section": "Punch",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "FireInTransport": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23723,
+            "section": "Punch",
+            "key": "FireInTransport",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23715,
+              "section": "Punch",
+              "key": "FireInTransport",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "Smash",
+      "projectile": "InvisibleLow",
+      "warhead": "Smashing",
+      "report": [
+        "BruteSmashAttack"
+      ],
+      "values": {
+        "Damage": 100,
+        "ROF": 60,
+        "Range": 1.1,
+        "Speed": 100,
+        "Warhead": "Smashing",
+        "Report": "BruteSmashAttack",
+        "Projectile": "InvisibleLow",
+        "FireInTransport": false
+      },
+      "raw_values": {
+        "Damage": "100",
+        "ROF": "60",
+        "Range": "1.1",
+        "Speed": "100",
+        "Warhead": "Smashing",
+        "Report": "BruteSmashAttack",
+        "Projectile": "InvisibleLow",
+        "FireInTransport": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23727,
+            "section": "Smash",
+            "key": "Damage",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23719,
+              "section": "Smash",
+              "key": "Damage",
+              "value": "100"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23728,
+            "section": "Smash",
+            "key": "ROF",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23720,
+              "section": "Smash",
+              "key": "ROF",
+              "value": "60"
+            }
+          ]
+        },
+        "Range": {
+          "value": "1.1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23729,
+            "section": "Smash",
+            "key": "Range",
+            "value": "1.1"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23721,
+              "section": "Smash",
+              "key": "Range",
+              "value": "1.1"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23730,
+            "section": "Smash",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23722,
+              "section": "Smash",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Smashing",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23731,
+            "section": "Smash",
+            "key": "Warhead",
+            "value": "Smashing"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23723,
+              "section": "Smash",
+              "key": "Warhead",
+              "value": "Smashing"
+            }
+          ]
+        },
+        "Report": {
+          "value": "BruteSmashAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23732,
+            "section": "Smash",
+            "key": "Report",
+            "value": "BruteSmashAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23724,
+              "section": "Smash",
+              "key": "Report",
+              "value": "BruteSmashAttack"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23733,
+            "section": "Smash",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23725,
+              "section": "Smash",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "FireInTransport": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23734,
+            "section": "Smash",
+            "key": "FireInTransport",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23726,
+              "section": "Smash",
+              "key": "FireInTransport",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "PunchE",
+      "projectile": "InvisibleLow",
+      "warhead": "Battering",
+      "report": [
+        "BruteSmashAttack"
+      ],
+      "values": {
+        "Damage": 100,
+        "ROF": 60,
+        "Range": 1.4,
+        "Speed": 100,
+        "Warhead": "Battering",
+        "Report": "BruteSmashAttack",
+        "Projectile": "InvisibleLow",
+        "FireInTransport": false
+      },
+      "raw_values": {
+        "Damage": "100",
+        "ROF": "60",
+        "Range": "1.4",
+        "Speed": "100",
+        "Warhead": "Battering",
+        "Report": "BruteSmashAttack",
+        "Projectile": "InvisibleLow",
+        "FireInTransport": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24954,
+            "section": "PunchE",
+            "key": "Damage",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24946,
+              "section": "PunchE",
+              "key": "Damage",
+              "value": "100"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24955,
+            "section": "PunchE",
+            "key": "ROF",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24947,
+              "section": "PunchE",
+              "key": "ROF",
+              "value": "60"
+            }
+          ]
+        },
+        "Range": {
+          "value": "1.4",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24956,
+            "section": "PunchE",
+            "key": "Range",
+            "value": "1.4"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24948,
+              "section": "PunchE",
+              "key": "Range",
+              "value": "1.4"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24957,
+            "section": "PunchE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24949,
+              "section": "PunchE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Battering",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24958,
+            "section": "PunchE",
+            "key": "Warhead",
+            "value": "Battering"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24950,
+              "section": "PunchE",
+              "key": "Warhead",
+              "value": "Battering"
+            }
+          ]
+        },
+        "Report": {
+          "value": "BruteSmashAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24959,
+            "section": "PunchE",
+            "key": "Report",
+            "value": "BruteSmashAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24951,
+              "section": "PunchE",
+              "key": "Report",
+              "value": "BruteSmashAttack"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24960,
+            "section": "PunchE",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24952,
+              "section": "PunchE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "FireInTransport": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24963,
+            "section": "PunchE",
+            "key": "FireInTransport",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24955,
+              "section": "PunchE",
+              "key": "FireInTransport",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    },
+    "EliteSecondary": {
+      "id": "SmashE",
+      "projectile": "InvisibleLow",
+      "warhead": "Smashing",
+      "report": [
+        "BruteSmashAttack"
+      ],
+      "values": {
+        "Damage": 100,
+        "ROF": 60,
+        "Range": 1.1,
+        "Speed": 100,
+        "Warhead": "Smashing",
+        "Report": "BruteSmashAttack",
+        "Projectile": "InvisibleLow",
+        "FireInTransport": false
+      },
+      "raw_values": {
+        "Damage": "100",
+        "ROF": "60",
+        "Range": "1.1",
+        "Speed": "100",
+        "Warhead": "Smashing",
+        "Report": "BruteSmashAttack",
+        "Projectile": "InvisibleLow",
+        "FireInTransport": "no"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24967,
+            "section": "SmashE",
+            "key": "Damage",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24959,
+              "section": "SmashE",
+              "key": "Damage",
+              "value": "100"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "60",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24968,
+            "section": "SmashE",
+            "key": "ROF",
+            "value": "60"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24960,
+              "section": "SmashE",
+              "key": "ROF",
+              "value": "60"
+            }
+          ]
+        },
+        "Range": {
+          "value": "1.1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24969,
+            "section": "SmashE",
+            "key": "Range",
+            "value": "1.1"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24961,
+              "section": "SmashE",
+              "key": "Range",
+              "value": "1.1"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24970,
+            "section": "SmashE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24962,
+              "section": "SmashE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "Smashing",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24971,
+            "section": "SmashE",
+            "key": "Warhead",
+            "value": "Smashing"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24963,
+              "section": "SmashE",
+              "key": "Warhead",
+              "value": "Smashing"
+            }
+          ]
+        },
+        "Report": {
+          "value": "BruteSmashAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24972,
+            "section": "SmashE",
+            "key": "Report",
+            "value": "BruteSmashAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24964,
+              "section": "SmashE",
+              "key": "Report",
+              "value": "BruteSmashAttack"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24973,
+            "section": "SmashE",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24965,
+              "section": "SmashE",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "FireInTransport": {
+          "value": "no",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24976,
+            "section": "SmashE",
+            "key": "FireInTransport",
+            "value": "no"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24968,
+              "section": "SmashE",
+              "key": "FireInTransport",
+              "value": "no"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "BruteSelect"
+    ],
+    "VoiceMove": [
+      "BruteMove"
+    ],
+    "VoiceAttack": [
+      "BruteAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "BruteFear"
+    ],
+    "VoiceSpecialAttack": [
+      "BruteMove"
+    ],
+    "DieSound": [
+      "BruteDie"
+    ],
+    "CrushSound": [
+      "InfantrySquish"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "BRUTE",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 5699,
+          "pack": "ra2md",
+          "relative_path": "conqmd/brute.shp",
+          "folder": "conqmd",
+          "filename": "brute.shp",
+          "stem": "brute",
+          "extension": ".shp",
+          "size": 250152,
+          "sha1": "ac234c3a21a0249588496307e3b938c940cc5f13"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 5699,
+          "pack": "ra2md",
+          "relative_path": "conqmd/brute.shp",
+          "folder": "conqmd",
+          "filename": "brute.shp",
+          "stem": "brute",
+          "extension": ".shp",
+          "size": 250152,
+          "sha1": "ac234c3a21a0249588496307e3b938c940cc5f13"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 5699,
+          "pack": "ra2md",
+          "relative_path": "conqmd/brute.shp",
+          "folder": "conqmd",
+          "filename": "brute.shp",
+          "stem": "brute",
+          "extension": ".shp",
+          "size": 250152,
+          "sha1": "ac234c3a21a0249588496307e3b938c940cc5f13"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 5699,
+          "pack": "ra2md",
+          "relative_path": "conqmd/brute.shp",
+          "folder": "conqmd",
+          "filename": "brute.shp",
+          "stem": "brute",
+          "extension": ".shp",
+          "size": 250152,
+          "sha1": "ac234c3a21a0249588496307e3b938c940cc5f13"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 5699,
+          "pack": "ra2md",
+          "relative_path": "conqmd/brute.shp",
+          "folder": "conqmd",
+          "filename": "brute.shp",
+          "stem": "brute",
+          "extension": ".shp",
+          "size": 250152,
+          "sha1": "ac234c3a21a0249588496307e3b938c940cc5f13"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 5699,
+          "pack": "ra2md",
+          "relative_path": "conqmd/brute.shp",
+          "folder": "conqmd",
+          "filename": "brute.shp",
+          "stem": "brute",
+          "extension": ".shp",
+          "size": 250152,
+          "sha1": "ac234c3a21a0249588496307e3b938c940cc5f13"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "BruteSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 116,
+        "frames": 10,
+        "facing_stride": 10,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185
+          ],
+          "1": [
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175
+          ],
+          "2": [
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165
+          ],
+          "3": [
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155
+          ],
+          "4": [
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145
+          ],
+          "5": [
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135
+          ],
+          "6": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125
+          ],
+          "7": [
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195
+          ]
+        }
+      },
+      "SecondaryFire": {
+        "name": "SecondaryFire",
+        "start": 196,
+        "frames": 10,
+        "facing_stride": 10,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            263,
+            264,
+            265
+          ],
+          "1": [
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255
+          ],
+          "2": [
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245
+          ],
+          "3": [
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235
+          ],
+          "4": [
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225
+          ],
+          "5": [
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215
+          ],
+          "6": [
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205
+          ],
+          "7": [
+            266,
+            267,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 86,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 101,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 276,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            276,
+            277,
+            278,
+            279,
+            280,
+            281,
+            282,
+            283
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "Paradrop": {
+        "name": "Paradrop",
+        "start": 284,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            284
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:Brute",
+      "Name": "Yuri Brute",
+      "Category": "Soldier",
+      "Primary": "Punch",
+      "Secondary": "Smash",
+      "Prerequisite": "YABRCK",
+      "CrushSound": "InfantrySquish",
+      "Crushable": false,
+      "Strength": 200,
+      "Armor": "plate",
+      "TechLevel": 5,
+      "Pip": "white",
+      "Sight": 8,
+      "Speed": 6,
+      "Owner": "YuriCountry",
+      "Cost": 500,
+      "Soylent": 250,
+      "Points": 5,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "BruteSelect",
+      "VoiceMove": "BruteMove",
+      "VoiceAttack": "BruteAttackCommand",
+      "VoiceFeedback": "BruteFear",
+      "VoiceSpecialAttack": "BruteMove",
+      "DieSound": "BruteDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": 1,
+      "MovementZone": "InfantryDestroyer",
+      "ThreatPosed": 20,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ImmuneToVeins": true,
+      "Size": 2,
+      "AllowedToStartInMultiplayer": false,
+      "ElitePrimary": "PunchE",
+      "EliteSecondary": "SmashE",
+      "IFVMode": 0,
+      "Unnatural": true,
+      "CloseRange": true,
+      "DefaultToGuardArea": true,
+      "GuardRange": 2,
+      "SelfHealing": true,
+      "ImmuneToPsionics": true,
+      "PixelSelectionBracketDelta": -8
+    },
+    "raw_values": {
+      "UIName": "Name:Brute",
+      "Name": "Yuri Brute",
+      "Category": "Soldier",
+      "Primary": "Punch",
+      "Secondary": "Smash",
+      "Prerequisite": "YABRCK",
+      "CrushSound": "InfantrySquish",
+      "Crushable": "no",
+      "Strength": "200",
+      "Armor": "plate",
+      "TechLevel": "5",
+      "Pip": "white",
+      "Sight": "8",
+      "Speed": "6",
+      "Owner": "YuriCountry",
+      "Cost": "500",
+      "Soylent": "250",
+      "Points": "5",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "BruteSelect",
+      "VoiceMove": "BruteMove",
+      "VoiceAttack": "BruteAttackCommand",
+      "VoiceFeedback": "BruteFear",
+      "VoiceSpecialAttack": "BruteMove",
+      "DieSound": "BruteDie",
+      "Locomotor": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+      "PhysicalSize": "1",
+      "MovementZone": "InfantryDestroyer",
+      "ThreatPosed": "20",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ImmuneToVeins": "yes",
+      "Size": "2",
+      "AllowedToStartInMultiplayer": "no",
+      "ElitePrimary": "PunchE",
+      "EliteSecondary": "SmashE",
+      "IFVMode": "0",
+      "Unnatural": "yes",
+      "CloseRange": "yes",
+      "DefaultToGuardArea": "yes",
+      "GuardRange": "2",
+      "SelfHealing": "yes",
+      "ImmuneToPsionics": "yes",
+      "PixelSelectionBracketDelta": "-8"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:Brute",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5105,
+          "section": "BRUTE",
+          "key": "UIName",
+          "value": "Name:Brute"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5104,
+            "section": "BRUTE",
+            "key": "UIName",
+            "value": "Name:Brute"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Yuri Brute",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5106,
+          "section": "BRUTE",
+          "key": "Name",
+          "value": "Yuri Brute"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5105,
+            "section": "BRUTE",
+            "key": "Name",
+            "value": "Yuri Brute"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5108,
+          "section": "BRUTE",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5107,
+            "section": "BRUTE",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "Punch",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5109,
+          "section": "BRUTE",
+          "key": "Primary",
+          "value": "Punch"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5108,
+            "section": "BRUTE",
+            "key": "Primary",
+            "value": "Punch"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "Smash",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5110,
+          "section": "BRUTE",
+          "key": "Secondary",
+          "value": "Smash"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5109,
+            "section": "BRUTE",
+            "key": "Secondary",
+            "value": "Smash"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YABRCK",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5112,
+          "section": "BRUTE",
+          "key": "Prerequisite",
+          "value": "YABRCK"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5111,
+            "section": "BRUTE",
+            "key": "Prerequisite",
+            "value": "YABRCK"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "InfantrySquish",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5113,
+          "section": "BRUTE",
+          "key": "CrushSound",
+          "value": "InfantrySquish"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5112,
+            "section": "BRUTE",
+            "key": "CrushSound",
+            "value": "InfantrySquish"
+          }
+        ]
+      },
+      "Crushable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5114,
+          "section": "BRUTE",
+          "key": "Crushable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5113,
+            "section": "BRUTE",
+            "key": "Crushable",
+            "value": "no"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "200",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5115,
+          "section": "BRUTE",
+          "key": "Strength",
+          "value": "200"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5114,
+            "section": "BRUTE",
+            "key": "Strength",
+            "value": "200"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "plate",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5116,
+          "section": "BRUTE",
+          "key": "Armor",
+          "value": "plate"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5115,
+            "section": "BRUTE",
+            "key": "Armor",
+            "value": "plate"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5117,
+          "section": "BRUTE",
+          "key": "TechLevel",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5116,
+            "section": "BRUTE",
+            "key": "TechLevel",
+            "value": "5"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "white",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5118,
+          "section": "BRUTE",
+          "key": "Pip",
+          "value": "white"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5117,
+            "section": "BRUTE",
+            "key": "Pip",
+            "value": "white"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5119,
+          "section": "BRUTE",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5118,
+            "section": "BRUTE",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5120,
+          "section": "BRUTE",
+          "key": "Speed",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5119,
+            "section": "BRUTE",
+            "key": "Speed",
+            "value": "6"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5121,
+          "section": "BRUTE",
+          "key": "Owner",
+          "value": "YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5120,
+            "section": "BRUTE",
+            "key": "Owner",
+            "value": "YuriCountry"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5122,
+          "section": "BRUTE",
+          "key": "Cost",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5121,
+            "section": "BRUTE",
+            "key": "Cost",
+            "value": "500"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "250",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5123,
+          "section": "BRUTE",
+          "key": "Soylent",
+          "value": "250"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5122,
+            "section": "BRUTE",
+            "key": "Soylent",
+            "value": "250"
+          }
+        ]
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5124,
+          "section": "BRUTE",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5123,
+            "section": "BRUTE",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5125,
+          "section": "BRUTE",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5124,
+            "section": "BRUTE",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "BruteSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5126,
+          "section": "BRUTE",
+          "key": "VoiceSelect",
+          "value": "BruteSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5125,
+            "section": "BRUTE",
+            "key": "VoiceSelect",
+            "value": "BruteSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "BruteMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5127,
+          "section": "BRUTE",
+          "key": "VoiceMove",
+          "value": "BruteMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5126,
+            "section": "BRUTE",
+            "key": "VoiceMove",
+            "value": "BruteMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "BruteAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5128,
+          "section": "BRUTE",
+          "key": "VoiceAttack",
+          "value": "BruteAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5127,
+            "section": "BRUTE",
+            "key": "VoiceAttack",
+            "value": "BruteAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "BruteFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5129,
+          "section": "BRUTE",
+          "key": "VoiceFeedback",
+          "value": "BruteFear"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5128,
+            "section": "BRUTE",
+            "key": "VoiceFeedback",
+            "value": "BruteFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "BruteMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5130,
+          "section": "BRUTE",
+          "key": "VoiceSpecialAttack",
+          "value": "BruteMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5129,
+            "section": "BRUTE",
+            "key": "VoiceSpecialAttack",
+            "value": "BruteMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "BruteDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5131,
+          "section": "BRUTE",
+          "key": "DieSound",
+          "value": "BruteDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5130,
+            "section": "BRUTE",
+            "key": "DieSound",
+            "value": "BruteDie"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5132,
+          "section": "BRUTE",
+          "key": "Locomotor",
+          "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5131,
+            "section": "BRUTE",
+            "key": "Locomotor",
+            "value": "{4A582744-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5133,
+          "section": "BRUTE",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5132,
+            "section": "BRUTE",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "InfantryDestroyer",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5134,
+          "section": "BRUTE",
+          "key": "MovementZone",
+          "value": "InfantryDestroyer"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5133,
+            "section": "BRUTE",
+            "key": "MovementZone",
+            "value": "InfantryDestroyer"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5135,
+          "section": "BRUTE",
+          "key": "ThreatPosed",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5134,
+            "section": "BRUTE",
+            "key": "ThreatPosed",
+            "value": "20"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5136,
+          "section": "BRUTE",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5135,
+            "section": "BRUTE",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5137,
+          "section": "BRUTE",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5136,
+            "section": "BRUTE",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "ImmuneToVeins": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5138,
+          "section": "BRUTE",
+          "key": "ImmuneToVeins",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5137,
+            "section": "BRUTE",
+            "key": "ImmuneToVeins",
+            "value": "yes"
+          }
+        ]
+      },
+      "Size": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5139,
+          "section": "BRUTE",
+          "key": "Size",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5138,
+            "section": "BRUTE",
+            "key": "Size",
+            "value": "2"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5140,
+          "section": "BRUTE",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5139,
+            "section": "BRUTE",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "PunchE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5141,
+          "section": "BRUTE",
+          "key": "ElitePrimary",
+          "value": "PunchE"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5140,
+            "section": "BRUTE",
+            "key": "ElitePrimary",
+            "value": "PunchE"
+          }
+        ]
+      },
+      "EliteSecondary": {
+        "value": "SmashE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5142,
+          "section": "BRUTE",
+          "key": "EliteSecondary",
+          "value": "SmashE"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5141,
+            "section": "BRUTE",
+            "key": "EliteSecondary",
+            "value": "SmashE"
+          }
+        ]
+      },
+      "IFVMode": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5143,
+          "section": "BRUTE",
+          "key": "IFVMode",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5142,
+            "section": "BRUTE",
+            "key": "IFVMode",
+            "value": "0"
+          }
+        ]
+      },
+      "Unnatural": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5144,
+          "section": "BRUTE",
+          "key": "Unnatural",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5143,
+            "section": "BRUTE",
+            "key": "Unnatural",
+            "value": "yes"
+          }
+        ]
+      },
+      "CloseRange": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5145,
+          "section": "BRUTE",
+          "key": "CloseRange",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5144,
+            "section": "BRUTE",
+            "key": "CloseRange",
+            "value": "yes"
+          }
+        ]
+      },
+      "DefaultToGuardArea": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5146,
+          "section": "BRUTE",
+          "key": "DefaultToGuardArea",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5145,
+            "section": "BRUTE",
+            "key": "DefaultToGuardArea",
+            "value": "yes"
+          }
+        ]
+      },
+      "GuardRange": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5147,
+          "section": "BRUTE",
+          "key": "GuardRange",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5146,
+            "section": "BRUTE",
+            "key": "GuardRange",
+            "value": "2"
+          }
+        ]
+      },
+      "SelfHealing": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5148,
+          "section": "BRUTE",
+          "key": "SelfHealing",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5147,
+            "section": "BRUTE",
+            "key": "SelfHealing",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5149,
+          "section": "BRUTE",
+          "key": "ImmuneToPsionics",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5148,
+            "section": "BRUTE",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          }
+        ]
+      },
+      "PixelSelectionBracketDelta": {
+        "value": "-8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 5150,
+          "section": "BRUTE",
+          "key": "PixelSelectionBracketDelta",
+          "value": "-8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 5149,
+            "section": "BRUTE",
+            "key": "PixelSelectionBracketDelta",
+            "value": "-8"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "BRUTICON",
+      "AltCameo": "BRUTUICO",
+      "Sequence": "BruteSequence",
+      "Crawls": false,
+      "Remapable": true,
+      "FireUp": 6,
+      "PrimaryFireFLH": "100,-25,135",
+      "SecondaryFireFLH": "100,-25,135",
+      "SecondaryFire": 7
+    },
+    "raw_values": {
+      "Cameo": "BRUTICON",
+      "AltCameo": "BRUTUICO",
+      "Sequence": "BruteSequence",
+      "Crawls": "no",
+      "Remapable": "yes",
+      "FireUp": "6",
+      "PrimaryFireFLH": "100,-25,135",
+      "SecondaryFireFLH": "100,-25,135",
+      "SecondaryFire": "7"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "BRUTICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 204,
+          "section": "BRUTE",
+          "key": "Cameo",
+          "value": "BRUTICON"
+        },
+        "history": []
+      },
+      "AltCameo": {
+        "value": "BRUTUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 205,
+          "section": "BRUTE",
+          "key": "AltCameo",
+          "value": "BRUTUICO"
+        },
+        "history": []
+      },
+      "Sequence": {
+        "value": "BruteSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 206,
+          "section": "BRUTE",
+          "key": "Sequence",
+          "value": "BruteSequence"
+        },
+        "history": []
+      },
+      "Crawls": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 207,
+          "section": "BRUTE",
+          "key": "Crawls",
+          "value": "no"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 208,
+          "section": "BRUTE",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "FireUp": {
+        "value": "6",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 209,
+          "section": "BRUTE",
+          "key": "FireUp",
+          "value": "6"
+        },
+        "history": []
+      },
+      "PrimaryFireFLH": {
+        "value": "100,-25,135",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 210,
+          "section": "BRUTE",
+          "key": "PrimaryFireFLH",
+          "value": "100,-25,135"
+        },
+        "history": []
+      },
+      "SecondaryFireFLH": {
+        "value": "100,-25,135",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 211,
+          "section": "BRUTE",
+          "key": "SecondaryFireFLH",
+          "value": "100,-25,135"
+        },
+        "history": []
+      },
+      "SecondaryFire": {
+        "value": "7",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 212,
+          "section": "BRUTE",
+          "key": "SecondaryFire",
+          "value": "7"
+        },
+        "history": []
+      }
+    }
+  }
+}

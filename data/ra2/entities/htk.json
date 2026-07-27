@@ -1,0 +1,3044 @@
+{
+  "id": "HTK",
+  "category": "vehicle",
+  "name_token": "Name:HTK",
+  "art_id": "HTK",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAWEAP"
+  ],
+  "tech_level": 3,
+  "cost": 500,
+  "strength": 180,
+  "armor": "heavy",
+  "speed": 8,
+  "sight": 8,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Normal",
+  "weapons": {
+    "Primary": {
+      "id": "FlakTrackGun",
+      "projectile": "FlakTProj",
+      "warhead": "FlakTWH",
+      "report": [
+        "FlakTrackAttackGround"
+      ],
+      "values": {
+        "Damage": 25,
+        "ROF": 25,
+        "Range": 5,
+        "Projectile": "FlakTProj",
+        "Speed": 50,
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE"
+      },
+      "raw_values": {
+        "Damage": "25",
+        "ROF": "25",
+        "Range": "5",
+        "Projectile": "FlakTProj",
+        "Speed": "50",
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24221,
+            "section": "FlakTrackGun",
+            "key": "Damage",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17414,
+              "section": "FlakTrackGun",
+              "key": "Damage",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24213,
+              "section": "FlakTrackGun",
+              "key": "Damage",
+              "value": "25"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24222,
+            "section": "FlakTrackGun",
+            "key": "ROF",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17415,
+              "section": "FlakTrackGun",
+              "key": "ROF",
+              "value": "40"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24214,
+              "section": "FlakTrackGun",
+              "key": "ROF",
+              "value": "25"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24223,
+            "section": "FlakTrackGun",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17416,
+              "section": "FlakTrackGun",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24215,
+              "section": "FlakTrackGun",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakTProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24224,
+            "section": "FlakTrackGun",
+            "key": "Projectile",
+            "value": "FlakTProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17417,
+              "section": "FlakTrackGun",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24216,
+              "section": "FlakTrackGun",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24225,
+            "section": "FlakTrackGun",
+            "key": "Speed",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17418,
+              "section": "FlakTrackGun",
+              "key": "Speed",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24217,
+              "section": "FlakTrackGun",
+              "key": "Speed",
+              "value": "50"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakTrackAttackGround",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24226,
+            "section": "FlakTrackGun",
+            "key": "Report",
+            "value": "FlakTrackAttackGround"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17419,
+              "section": "FlakTrackGun",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24218,
+              "section": "FlakTrackGun",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakTWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24227,
+            "section": "FlakTrackGun",
+            "key": "Warhead",
+            "value": "FlakTWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17420,
+              "section": "FlakTrackGun",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24219,
+              "section": "FlakTrackGun",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24228,
+            "section": "FlakTrackGun",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17421,
+              "section": "FlakTrackGun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24220,
+              "section": "FlakTrackGun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "FlakTrackAAGun",
+      "projectile": "FlakProj",
+      "warhead": "FlakWH",
+      "report": [
+        "FlakTrackAttackAir"
+      ],
+      "values": {
+        "Damage": 35,
+        "ROF": 25,
+        "Range": 10,
+        "Projectile": "FlakProj",
+        "Speed": 100,
+        "Report": "FlakTrackAttackAir",
+        "Warhead": "FlakWH",
+        "Anim": "GUNFIRE"
+      },
+      "raw_values": {
+        "Damage": "35",
+        "ROF": "25",
+        "Range": "10",
+        "Projectile": "FlakProj",
+        "Speed": "100",
+        "Report": "FlakTrackAttackAir",
+        "Warhead": "FlakWH",
+        "Anim": "GUNFIRE"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "35",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24201,
+            "section": "FlakTrackAAGun",
+            "key": "Damage",
+            "value": "35"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17394,
+              "section": "FlakTrackAAGun",
+              "key": "Damage",
+              "value": "35"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24193,
+              "section": "FlakTrackAAGun",
+              "key": "Damage",
+              "value": "35"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24202,
+            "section": "FlakTrackAAGun",
+            "key": "ROF",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17395,
+              "section": "FlakTrackAAGun",
+              "key": "ROF",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24194,
+              "section": "FlakTrackAAGun",
+              "key": "ROF",
+              "value": "25"
+            }
+          ]
+        },
+        "Range": {
+          "value": "10",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24203,
+            "section": "FlakTrackAAGun",
+            "key": "Range",
+            "value": "10"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17396,
+              "section": "FlakTrackAAGun",
+              "key": "Range",
+              "value": "10"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24195,
+              "section": "FlakTrackAAGun",
+              "key": "Range",
+              "value": "10"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24204,
+            "section": "FlakTrackAAGun",
+            "key": "Projectile",
+            "value": "FlakProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17397,
+              "section": "FlakTrackAAGun",
+              "key": "Projectile",
+              "value": "FlakProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24196,
+              "section": "FlakTrackAAGun",
+              "key": "Projectile",
+              "value": "FlakProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24205,
+            "section": "FlakTrackAAGun",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17398,
+              "section": "FlakTrackAAGun",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24197,
+              "section": "FlakTrackAAGun",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakTrackAttackAir",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24206,
+            "section": "FlakTrackAAGun",
+            "key": "Report",
+            "value": "FlakTrackAttackAir"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17399,
+              "section": "FlakTrackAAGun",
+              "key": "Report",
+              "value": "FlakTrackAttackAir"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24198,
+              "section": "FlakTrackAAGun",
+              "key": "Report",
+              "value": "FlakTrackAttackAir"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24207,
+            "section": "FlakTrackAAGun",
+            "key": "Warhead",
+            "value": "FlakWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17400,
+              "section": "FlakTrackAAGun",
+              "key": "Warhead",
+              "value": "FlakWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24199,
+              "section": "FlakTrackAAGun",
+              "key": "Warhead",
+              "value": "FlakWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24208,
+            "section": "FlakTrackAAGun",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17401,
+              "section": "FlakTrackAAGun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24200,
+              "section": "FlakTrackAAGun",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "FlakTrackGunE",
+      "projectile": "FlakTProj",
+      "warhead": "FlakTWH",
+      "report": [
+        "FlakTrackAttackGround"
+      ],
+      "values": {
+        "Damage": 25,
+        "ROF": 25,
+        "Range": 5,
+        "Projectile": "FlakTProj",
+        "Speed": 50,
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE",
+        "Burst": 2
+      },
+      "raw_values": {
+        "Damage": "25",
+        "ROF": "25",
+        "Range": "5",
+        "Projectile": "FlakTProj",
+        "Speed": "50",
+        "Report": "FlakTrackAttackGround",
+        "Warhead": "FlakTWH",
+        "Anim": "GUNFIRE",
+        "Burst": "2"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24722,
+            "section": "FlakTrackGunE",
+            "key": "Damage",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17702,
+              "section": "FlakTrackGunE",
+              "key": "Damage",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24714,
+              "section": "FlakTrackGunE",
+              "key": "Damage",
+              "value": "25"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24723,
+            "section": "FlakTrackGunE",
+            "key": "ROF",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17703,
+              "section": "FlakTrackGunE",
+              "key": "ROF",
+              "value": "40"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24715,
+              "section": "FlakTrackGunE",
+              "key": "ROF",
+              "value": "25"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24724,
+            "section": "FlakTrackGunE",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17704,
+              "section": "FlakTrackGunE",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24716,
+              "section": "FlakTrackGunE",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakTProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24725,
+            "section": "FlakTrackGunE",
+            "key": "Projectile",
+            "value": "FlakTProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17705,
+              "section": "FlakTrackGunE",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24717,
+              "section": "FlakTrackGunE",
+              "key": "Projectile",
+              "value": "FlakTProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "50",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24726,
+            "section": "FlakTrackGunE",
+            "key": "Speed",
+            "value": "50"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17706,
+              "section": "FlakTrackGunE",
+              "key": "Speed",
+              "value": "50"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24718,
+              "section": "FlakTrackGunE",
+              "key": "Speed",
+              "value": "50"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakTrackAttackGround",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24727,
+            "section": "FlakTrackGunE",
+            "key": "Report",
+            "value": "FlakTrackAttackGround"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17707,
+              "section": "FlakTrackGunE",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24719,
+              "section": "FlakTrackGunE",
+              "key": "Report",
+              "value": "FlakTrackAttackGround"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakTWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24728,
+            "section": "FlakTrackGunE",
+            "key": "Warhead",
+            "value": "FlakTWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17708,
+              "section": "FlakTrackGunE",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24720,
+              "section": "FlakTrackGunE",
+              "key": "Warhead",
+              "value": "FlakTWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24729,
+            "section": "FlakTrackGunE",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17709,
+              "section": "FlakTrackGunE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24721,
+              "section": "FlakTrackGunE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24730,
+            "section": "FlakTrackGunE",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17710,
+              "section": "FlakTrackGunE",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24722,
+              "section": "FlakTrackGunE",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        }
+      }
+    },
+    "EliteSecondary": {
+      "id": "FlakTrackAAGunE",
+      "projectile": "FlakProj",
+      "warhead": "FlakWH",
+      "report": [
+        "FlakTrackAttackAir"
+      ],
+      "values": {
+        "Damage": 20,
+        "ROF": 25,
+        "Range": 8,
+        "Projectile": "FlakProj",
+        "Speed": 100,
+        "Report": "FlakTrackAttackAir",
+        "Warhead": "FlakWH",
+        "Anim": "GUNFIRE",
+        "Burst": 2
+      },
+      "raw_values": {
+        "Damage": "20",
+        "ROF": "25",
+        "Range": "8",
+        "Projectile": "FlakProj",
+        "Speed": "100",
+        "Report": "FlakTrackAttackAir",
+        "Warhead": "FlakWH",
+        "Anim": "GUNFIRE",
+        "Burst": "2"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24711,
+            "section": "FlakTrackAAGunE",
+            "key": "Damage",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17691,
+              "section": "FlakTrackAAGunE",
+              "key": "Damage",
+              "value": "20"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24703,
+              "section": "FlakTrackAAGunE",
+              "key": "Damage",
+              "value": "20"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24712,
+            "section": "FlakTrackAAGunE",
+            "key": "ROF",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17692,
+              "section": "FlakTrackAAGunE",
+              "key": "ROF",
+              "value": "25"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24704,
+              "section": "FlakTrackAAGunE",
+              "key": "ROF",
+              "value": "25"
+            }
+          ]
+        },
+        "Range": {
+          "value": "8",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24713,
+            "section": "FlakTrackAAGunE",
+            "key": "Range",
+            "value": "8"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17693,
+              "section": "FlakTrackAAGunE",
+              "key": "Range",
+              "value": "8"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24705,
+              "section": "FlakTrackAAGunE",
+              "key": "Range",
+              "value": "8"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "FlakProj",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24714,
+            "section": "FlakTrackAAGunE",
+            "key": "Projectile",
+            "value": "FlakProj"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17694,
+              "section": "FlakTrackAAGunE",
+              "key": "Projectile",
+              "value": "FlakProj"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24706,
+              "section": "FlakTrackAAGunE",
+              "key": "Projectile",
+              "value": "FlakProj"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24715,
+            "section": "FlakTrackAAGunE",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17695,
+              "section": "FlakTrackAAGunE",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24707,
+              "section": "FlakTrackAAGunE",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        },
+        "Report": {
+          "value": "FlakTrackAttackAir",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24716,
+            "section": "FlakTrackAAGunE",
+            "key": "Report",
+            "value": "FlakTrackAttackAir"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17696,
+              "section": "FlakTrackAAGunE",
+              "key": "Report",
+              "value": "FlakTrackAttackAir"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24708,
+              "section": "FlakTrackAAGunE",
+              "key": "Report",
+              "value": "FlakTrackAttackAir"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "FlakWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24717,
+            "section": "FlakTrackAAGunE",
+            "key": "Warhead",
+            "value": "FlakWH"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17697,
+              "section": "FlakTrackAAGunE",
+              "key": "Warhead",
+              "value": "FlakWH"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24709,
+              "section": "FlakTrackAAGunE",
+              "key": "Warhead",
+              "value": "FlakWH"
+            }
+          ]
+        },
+        "Anim": {
+          "value": "GUNFIRE",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24718,
+            "section": "FlakTrackAAGunE",
+            "key": "Anim",
+            "value": "GUNFIRE"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17698,
+              "section": "FlakTrackAAGunE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24710,
+              "section": "FlakTrackAAGunE",
+              "key": "Anim",
+              "value": "GUNFIRE"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "2",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24719,
+            "section": "FlakTrackAAGunE",
+            "key": "Burst",
+            "value": "2"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 17699,
+              "section": "FlakTrackAAGunE",
+              "key": "Burst",
+              "value": "2"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24711,
+              "section": "FlakTrackAAGunE",
+              "key": "Burst",
+              "value": "2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "FlakTrackSelect"
+    ],
+    "VoiceMove": [
+      "FlakTrackMove"
+    ],
+    "VoiceAttack": [
+      "FlakTrackAttackCommand"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ],
+    "MoveSound": [
+      "FlakTrackMoveStart"
+    ],
+    "EnterTransportSound": [
+      "EnterTransport"
+    ],
+    "LeaveTransportSound": [
+      "ExitTransport"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "HTK",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4137,
+      "pack": "ra2",
+      "relative_path": "local/htk.vxl",
+      "folder": "local",
+      "filename": "htk.vxl",
+      "stem": "htk",
+      "extension": ".vxl",
+      "size": 30492,
+      "sha1": "a3a39d1ded22175ae88477b7258dd883ee529683"
+    },
+    "body_hva": {
+      "asset_id": 4136,
+      "pack": "ra2",
+      "relative_path": "local/htk.hva",
+      "folder": "local",
+      "filename": "htk.hva",
+      "stem": "htk",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "b15c934cd949f2a6679b0a40684a7ff60ef30833"
+    },
+    "turret": {
+      "asset_id": 4141,
+      "pack": "ra2",
+      "relative_path": "local/htktur.vxl",
+      "folder": "local",
+      "filename": "htktur.vxl",
+      "stem": "htktur",
+      "extension": ".vxl",
+      "size": 4743,
+      "sha1": "fe7058e052e0ef275f2ecdc3790f498a7128335f"
+    },
+    "turret_hva": {
+      "asset_id": 4140,
+      "pack": "ra2",
+      "relative_path": "local/htktur.hva",
+      "folder": "local",
+      "filename": "htktur.hva",
+      "stem": "htktur",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "f2139793aeb6f6a378f2cf83f01b1afc10b17191"
+    },
+    "barrel": {
+      "asset_id": 4139,
+      "pack": "ra2",
+      "relative_path": "local/htkbarl.vxl",
+      "folder": "local",
+      "filename": "htkbarl.vxl",
+      "stem": "htkbarl",
+      "extension": ".vxl",
+      "size": 2004,
+      "sha1": "771eea3f24fa000a52f15009e7e59b6f7b7cade2"
+    },
+    "barrel_hva": {
+      "asset_id": 4138,
+      "pack": "ra2",
+      "relative_path": "local/htkbarl.hva",
+      "folder": "local",
+      "filename": "htkbarl.hva",
+      "stem": "htkbarl",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "f2139793aeb6f6a378f2cf83f01b1afc10b17191"
+    },
+    "turret_offset_leptons": -80,
+    "primary_fire_flh": [
+      65.0,
+      0.0,
+      220.0
+    ],
+    "secondary_fire_flh": [
+      65.0,
+      0.0,
+      220.0
+    ],
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:HTK",
+      "Name": "Flak Track",
+      "Prerequisite": "NAWEAP",
+      "Primary": "FlakTrackGun",
+      "Secondary": "FlakTrackAAGun",
+      "Strength": 180,
+      "Category": "Transport",
+      "Armor": "heavy",
+      "DeployTime": 0.022,
+      "TechLevel": 3,
+      "Sight": 8,
+      "PipScale": "Passengers",
+      "Speed": 8,
+      "CrateGoodie": false,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 500,
+      "Points": 20,
+      "ROT": 5,
+      "Crusher": true,
+      "Turret": true,
+      "Passengers": 5,
+      "IsSelectableCombatant": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "FlakTrackSelect",
+      "VoiceMove": "FlakTrackMove",
+      "VoiceAttack": "FlakTrackAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "FlakTrackMoveStart",
+      "EnterTransportSound": "EnterTransport",
+      "LeaveTransportSound": "ExitTransport",
+      "Maxdebris": 3,
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": 6,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": 10,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": 1,
+      "ZFudgeColumn": 10,
+      "ZFudgeTunnel": 13,
+      "ImmuneToRadiation": false,
+      "ImmuneToPsionics": false,
+      "Size": 3,
+      "SizeLimit": 2,
+      "Accelerates": false,
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ElitePrimary": "FlakTrackGunE",
+      "EliteSecondary": "FlakTrackAAGunE",
+      "Soylent": 500,
+      "CrushSound": "TankCrush"
+    },
+    "raw_values": {
+      "UIName": "Name:HTK",
+      "Name": "Flak Track",
+      "Prerequisite": "NAWEAP",
+      "Primary": "FlakTrackGun",
+      "Secondary": "FlakTrackAAGun",
+      "Strength": "180",
+      "Category": "Transport",
+      "Armor": "heavy",
+      "DeployTime": ".022",
+      "TechLevel": "3",
+      "Sight": "8",
+      "PipScale": "Passengers",
+      "Speed": "8",
+      "CrateGoodie": "no",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "500",
+      "Points": "20",
+      "ROT": "5",
+      "Crusher": "yes",
+      "Turret": "yes",
+      "Passengers": "5",
+      "IsSelectableCombatant": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "FlakTrackSelect",
+      "VoiceMove": "FlakTrackMove",
+      "VoiceAttack": "FlakTrackAttackCommand",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "MoveSound": "FlakTrackMoveStart",
+      "EnterTransportSound": "EnterTransport",
+      "LeaveTransportSound": "ExitTransport",
+      "Maxdebris": "3",
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": "6",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Normal",
+      "ThreatPosed": "10",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "SpecialThreatValue": "1",
+      "ZFudgeColumn": "10",
+      "ZFudgeTunnel": "13",
+      "ImmuneToRadiation": "no",
+      "ImmuneToPsionics": "no",
+      "Size": "3",
+      "SizeLimit": "2",
+      "Accelerates": "false",
+      "VeteranAbilities": "STRONGER,FIREPOWER,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "ElitePrimary": "FlakTrackGunE",
+      "EliteSecondary": "FlakTrackAAGunE",
+      "Soylent": "500",
+      "CrushSound": "TankCrush"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:HTK",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7627,
+          "section": "HTK",
+          "key": "UIName",
+          "value": "Name:HTK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6232,
+            "section": "HTK",
+            "key": "UIName",
+            "value": "Name:HTK"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7625,
+            "section": "HTK",
+            "key": "UIName",
+            "value": "Name:HTK"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Flak Track",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7628,
+          "section": "HTK",
+          "key": "Name",
+          "value": "Flak Track"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6233,
+            "section": "HTK",
+            "key": "Name",
+            "value": "Flak Track"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7626,
+            "section": "HTK",
+            "key": "Name",
+            "value": "Flak Track"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAWEAP",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7629,
+          "section": "HTK",
+          "key": "Prerequisite",
+          "value": "NAWEAP"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6234,
+            "section": "HTK",
+            "key": "Prerequisite",
+            "value": "NAWEAP"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7627,
+            "section": "HTK",
+            "key": "Prerequisite",
+            "value": "NAWEAP"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "FlakTrackGun",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7630,
+          "section": "HTK",
+          "key": "Primary",
+          "value": "FlakTrackGun"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6235,
+            "section": "HTK",
+            "key": "Primary",
+            "value": "FlakTrackGun"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7628,
+            "section": "HTK",
+            "key": "Primary",
+            "value": "FlakTrackGun"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "FlakTrackAAGun",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7631,
+          "section": "HTK",
+          "key": "Secondary",
+          "value": "FlakTrackAAGun"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6236,
+            "section": "HTK",
+            "key": "Secondary",
+            "value": "FlakTrackAAGun"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7629,
+            "section": "HTK",
+            "key": "Secondary",
+            "value": "FlakTrackAAGun"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "180",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7632,
+          "section": "HTK",
+          "key": "Strength",
+          "value": "180"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6237,
+            "section": "HTK",
+            "key": "Strength",
+            "value": "180"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7630,
+            "section": "HTK",
+            "key": "Strength",
+            "value": "180"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Transport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7633,
+          "section": "HTK",
+          "key": "Category",
+          "value": "Transport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6238,
+            "section": "HTK",
+            "key": "Category",
+            "value": "Transport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7631,
+            "section": "HTK",
+            "key": "Category",
+            "value": "Transport"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "heavy",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7634,
+          "section": "HTK",
+          "key": "Armor",
+          "value": "heavy"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6239,
+            "section": "HTK",
+            "key": "Armor",
+            "value": "heavy"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7632,
+            "section": "HTK",
+            "key": "Armor",
+            "value": "heavy"
+          }
+        ]
+      },
+      "DeployTime": {
+        "value": ".022",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7635,
+          "section": "HTK",
+          "key": "DeployTime",
+          "value": ".022"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6240,
+            "section": "HTK",
+            "key": "DeployTime",
+            "value": ".022"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7633,
+            "section": "HTK",
+            "key": "DeployTime",
+            "value": ".022"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7636,
+          "section": "HTK",
+          "key": "TechLevel",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6241,
+            "section": "HTK",
+            "key": "TechLevel",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7634,
+            "section": "HTK",
+            "key": "TechLevel",
+            "value": "3"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7637,
+          "section": "HTK",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6242,
+            "section": "HTK",
+            "key": "Sight",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7635,
+            "section": "HTK",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "PipScale": {
+        "value": "Passengers",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7638,
+          "section": "HTK",
+          "key": "PipScale",
+          "value": "Passengers"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6243,
+            "section": "HTK",
+            "key": "PipScale",
+            "value": "Passengers"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7636,
+            "section": "HTK",
+            "key": "PipScale",
+            "value": "Passengers"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7639,
+          "section": "HTK",
+          "key": "Speed",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6244,
+            "section": "HTK",
+            "key": "Speed",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7637,
+            "section": "HTK",
+            "key": "Speed",
+            "value": "8"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7640,
+          "section": "HTK",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6245,
+            "section": "HTK",
+            "key": "CrateGoodie",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7638,
+            "section": "HTK",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7641,
+          "section": "HTK",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6246,
+            "section": "HTK",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7639,
+            "section": "HTK",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7642,
+          "section": "HTK",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6247,
+            "section": "HTK",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7640,
+            "section": "HTK",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7643,
+          "section": "HTK",
+          "key": "Cost",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6248,
+            "section": "HTK",
+            "key": "Cost",
+            "value": "500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7641,
+            "section": "HTK",
+            "key": "Cost",
+            "value": "500"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7645,
+          "section": "HTK",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6249,
+            "section": "HTK",
+            "key": "Points",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7643,
+            "section": "HTK",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7646,
+          "section": "HTK",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6250,
+            "section": "HTK",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7644,
+            "section": "HTK",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7647,
+          "section": "HTK",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6251,
+            "section": "HTK",
+            "key": "Crusher",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7645,
+            "section": "HTK",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7648,
+          "section": "HTK",
+          "key": "Turret",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6252,
+            "section": "HTK",
+            "key": "Turret",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7646,
+            "section": "HTK",
+            "key": "Turret",
+            "value": "yes"
+          }
+        ]
+      },
+      "Passengers": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7649,
+          "section": "HTK",
+          "key": "Passengers",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6253,
+            "section": "HTK",
+            "key": "Passengers",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7647,
+            "section": "HTK",
+            "key": "Passengers",
+            "value": "5"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7650,
+          "section": "HTK",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6254,
+            "section": "HTK",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7648,
+            "section": "HTK",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7651,
+          "section": "HTK",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6255,
+            "section": "HTK",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7649,
+            "section": "HTK",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "FlakTrackSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7652,
+          "section": "HTK",
+          "key": "VoiceSelect",
+          "value": "FlakTrackSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6256,
+            "section": "HTK",
+            "key": "VoiceSelect",
+            "value": "GenSovVehicleSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7650,
+            "section": "HTK",
+            "key": "VoiceSelect",
+            "value": "FlakTrackSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "FlakTrackMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7653,
+          "section": "HTK",
+          "key": "VoiceMove",
+          "value": "FlakTrackMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6257,
+            "section": "HTK",
+            "key": "VoiceMove",
+            "value": "GenSovVehicleMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7651,
+            "section": "HTK",
+            "key": "VoiceMove",
+            "value": "FlakTrackMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "FlakTrackAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7654,
+          "section": "HTK",
+          "key": "VoiceAttack",
+          "value": "FlakTrackAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6258,
+            "section": "HTK",
+            "key": "VoiceAttack",
+            "value": "GenSovVehicleAttackCommand"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7652,
+            "section": "HTK",
+            "key": "VoiceAttack",
+            "value": "FlakTrackAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7655,
+          "section": "HTK",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6259,
+            "section": "HTK",
+            "key": "VoiceFeedback",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7653,
+            "section": "HTK",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7656,
+          "section": "HTK",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6260,
+            "section": "HTK",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7654,
+            "section": "HTK",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "FlakTrackMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7657,
+          "section": "HTK",
+          "key": "MoveSound",
+          "value": "FlakTrackMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6261,
+            "section": "HTK",
+            "key": "MoveSound",
+            "value": "FlakTrackMoveStart"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7655,
+            "section": "HTK",
+            "key": "MoveSound",
+            "value": "FlakTrackMoveStart"
+          }
+        ]
+      },
+      "EnterTransportSound": {
+        "value": "EnterTransport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7658,
+          "section": "HTK",
+          "key": "EnterTransportSound",
+          "value": "EnterTransport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6262,
+            "section": "HTK",
+            "key": "EnterTransportSound",
+            "value": "EnterTransport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7656,
+            "section": "HTK",
+            "key": "EnterTransportSound",
+            "value": "EnterTransport"
+          }
+        ]
+      },
+      "LeaveTransportSound": {
+        "value": "ExitTransport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7659,
+          "section": "HTK",
+          "key": "LeaveTransportSound",
+          "value": "ExitTransport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6263,
+            "section": "HTK",
+            "key": "LeaveTransportSound",
+            "value": "ExitTransport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7657,
+            "section": "HTK",
+            "key": "LeaveTransportSound",
+            "value": "ExitTransport"
+          }
+        ]
+      },
+      "Maxdebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7661,
+          "section": "HTK",
+          "key": "Maxdebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6264,
+            "section": "HTK",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7659,
+            "section": "HTK",
+            "key": "Maxdebris",
+            "value": "3"
+          }
+        ]
+      },
+      "DebrisTypes": {
+        "value": "TIRE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7662,
+          "section": "HTK",
+          "key": "DebrisTypes",
+          "value": "TIRE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6265,
+            "section": "HTK",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7660,
+            "section": "HTK",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          }
+        ]
+      },
+      "DebrisMaximums": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7663,
+          "section": "HTK",
+          "key": "DebrisMaximums",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6266,
+            "section": "HTK",
+            "key": "DebrisMaximums",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7661,
+            "section": "HTK",
+            "key": "DebrisMaximums",
+            "value": "6"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7664,
+          "section": "HTK",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6267,
+            "section": "HTK",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7662,
+            "section": "HTK",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Normal",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7665,
+          "section": "HTK",
+          "key": "MovementZone",
+          "value": "Normal"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6268,
+            "section": "HTK",
+            "key": "MovementZone",
+            "value": "Normal"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7663,
+            "section": "HTK",
+            "key": "MovementZone",
+            "value": "Normal"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7666,
+          "section": "HTK",
+          "key": "ThreatPosed",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6269,
+            "section": "HTK",
+            "key": "ThreatPosed",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7664,
+            "section": "HTK",
+            "key": "ThreatPosed",
+            "value": "10"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7667,
+          "section": "HTK",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6270,
+            "section": "HTK",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7665,
+            "section": "HTK",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7668,
+          "section": "HTK",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6271,
+            "section": "HTK",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7666,
+            "section": "HTK",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7669,
+          "section": "HTK",
+          "key": "ZFudgeColumn",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6272,
+            "section": "HTK",
+            "key": "ZFudgeColumn",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7667,
+            "section": "HTK",
+            "key": "ZFudgeColumn",
+            "value": "10"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7670,
+          "section": "HTK",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6273,
+            "section": "HTK",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7668,
+            "section": "HTK",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7671,
+          "section": "HTK",
+          "key": "ImmuneToRadiation",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6274,
+            "section": "HTK",
+            "key": "ImmuneToRadiation",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7669,
+            "section": "HTK",
+            "key": "ImmuneToRadiation",
+            "value": "no"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7672,
+          "section": "HTK",
+          "key": "ImmuneToPsionics",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6275,
+            "section": "HTK",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7670,
+            "section": "HTK",
+            "key": "ImmuneToPsionics",
+            "value": "no"
+          }
+        ]
+      },
+      "Size": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7674,
+          "section": "HTK",
+          "key": "Size",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6277,
+            "section": "HTK",
+            "key": "Size",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7672,
+            "section": "HTK",
+            "key": "Size",
+            "value": "3"
+          }
+        ]
+      },
+      "SizeLimit": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7675,
+          "section": "HTK",
+          "key": "SizeLimit",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6278,
+            "section": "HTK",
+            "key": "SizeLimit",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7673,
+            "section": "HTK",
+            "key": "SizeLimit",
+            "value": "2"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7676,
+          "section": "HTK",
+          "key": "Accelerates",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6279,
+            "section": "HTK",
+            "key": "Accelerates",
+            "value": "false"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7674,
+            "section": "HTK",
+            "key": "Accelerates",
+            "value": "false"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7677,
+          "section": "HTK",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6280,
+            "section": "HTK",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7675,
+            "section": "HTK",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7678,
+          "section": "HTK",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6281,
+            "section": "HTK",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7676,
+            "section": "HTK",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "FlakTrackGunE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7679,
+          "section": "HTK",
+          "key": "ElitePrimary",
+          "value": "FlakTrackGunE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6282,
+            "section": "HTK",
+            "key": "ElitePrimary",
+            "value": "FlakTrackGunE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7677,
+            "section": "HTK",
+            "key": "ElitePrimary",
+            "value": "FlakTrackGunE"
+          }
+        ]
+      },
+      "EliteSecondary": {
+        "value": "FlakTrackAAGunE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7680,
+          "section": "HTK",
+          "key": "EliteSecondary",
+          "value": "FlakTrackAAGunE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6283,
+            "section": "HTK",
+            "key": "EliteSecondary",
+            "value": "FlakTrackAAGunE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7678,
+            "section": "HTK",
+            "key": "EliteSecondary",
+            "value": "FlakTrackAAGunE"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7644,
+          "section": "HTK",
+          "key": "Soylent",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7642,
+            "section": "HTK",
+            "key": "Soylent",
+            "value": "500"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7660,
+          "section": "HTK",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7658,
+            "section": "HTK",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "HTKICON",
+      "AltCameo": "HTKUICO",
+      "Voxel": true,
+      "TurretOffset": -80,
+      "Remapable": true,
+      "PrimaryFireFLH": "65,0,220",
+      "SecondaryFireFLH": "65,0,220"
+    },
+    "raw_values": {
+      "Cameo": "HTKICON",
+      "AltCameo": "HTKUICO",
+      "Voxel": "yes",
+      "TurretOffset": "-80",
+      "Remapable": "yes",
+      "PrimaryFireFLH": "65,0,220",
+      "SecondaryFireFLH": "65,0,220"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "HTKICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 819,
+          "section": "HTK",
+          "key": "Cameo",
+          "value": "HTKICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 589,
+            "section": "HTK",
+            "key": "Cameo",
+            "value": "HTKICON"
+          }
+        ]
+      },
+      "AltCameo": {
+        "value": "HTKUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 820,
+          "section": "HTK",
+          "key": "AltCameo",
+          "value": "HTKUICO"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 590,
+            "section": "HTK",
+            "key": "AltCameo",
+            "value": "HTKUICO"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 821,
+          "section": "HTK",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 591,
+            "section": "HTK",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "TurretOffset": {
+        "value": "-80",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 822,
+          "section": "HTK",
+          "key": "TurretOffset",
+          "value": "-80"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 592,
+            "section": "HTK",
+            "key": "TurretOffset",
+            "value": "-80"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 823,
+          "section": "HTK",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 593,
+            "section": "HTK",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "65,0,220",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 824,
+          "section": "HTK",
+          "key": "PrimaryFireFLH",
+          "value": "65,0,220"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 594,
+            "section": "HTK",
+            "key": "PrimaryFireFLH",
+            "value": "65,0,220"
+          }
+        ]
+      },
+      "SecondaryFireFLH": {
+        "value": "65,0,220",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 825,
+          "section": "HTK",
+          "key": "SecondaryFireFLH",
+          "value": "65,0,220"
+        },
+        "history": []
+      }
+    }
+  }
+}

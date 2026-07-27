@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/building.gd" id="1_building"]
+
+[node name="RA2GenericBuilding" type="Node2D"]
+script = ExtResource("1_building")
+auto_fit_ra2_visual = true
+
+[node name="VisualRoot" type="Node2D" parent="."]
+
+[node name="Body" type="Sprite2D" parent="VisualRoot"]
+centered = true
+texture_filter = 1
+show_behind_parent = true
+
+[node name="Weapon" type="AnimatedSprite2D" parent="VisualRoot"]
+visible = false
+centered = true
+texture_filter = 1
+z_index = 2
+
+[node name="DamageSmokeAnchor" type="Marker2D" parent="."]
+position = Vector2(0, -38)
+
+[node name="ServiceAnchor" type="Marker2D" parent="."]
+position = Vector2(0, 28)

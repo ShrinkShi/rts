@@ -1,0 +1,1163 @@
+{
+  "id": "SPYP",
+  "category": "aircraft",
+  "name_token": "Name:SpyP",
+  "art_id": "SPYP",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 600,
+  "armor": "light",
+  "speed": 15,
+  "sight": 0,
+  "locomotor": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Fly",
+  "weapons": {
+    "Primary": {
+      "id": "SpyCameraWeapon",
+      "projectile": "InvisibleHigh",
+      "warhead": "DummyWarhead",
+      "report": [
+        "SpyPlaneSnapshot"
+      ],
+      "values": {
+        "Damage": 6,
+        "Range": 20,
+        "Burst": 1,
+        "Projectile": "InvisibleHigh",
+        "Warhead": "DummyWarhead",
+        "Report": "SpyPlaneSnapshot"
+      },
+      "raw_values": {
+        "Damage": "6",
+        "Range": "20",
+        "Burst": "1",
+        "Projectile": "InvisibleHigh",
+        "Warhead": "DummyWarhead",
+        "Report": "SpyPlaneSnapshot"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "6",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23194,
+            "section": "SpyCameraWeapon",
+            "key": "Damage",
+            "value": "6"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23186,
+              "section": "SpyCameraWeapon",
+              "key": "Damage",
+              "value": "6"
+            }
+          ]
+        },
+        "Range": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23195,
+            "section": "SpyCameraWeapon",
+            "key": "Range",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23187,
+              "section": "SpyCameraWeapon",
+              "key": "Range",
+              "value": "20"
+            }
+          ]
+        },
+        "Burst": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23196,
+            "section": "SpyCameraWeapon",
+            "key": "Burst",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23188,
+              "section": "SpyCameraWeapon",
+              "key": "Burst",
+              "value": "1"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleHigh",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23197,
+            "section": "SpyCameraWeapon",
+            "key": "Projectile",
+            "value": "InvisibleHigh"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23189,
+              "section": "SpyCameraWeapon",
+              "key": "Projectile",
+              "value": "InvisibleHigh"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "DummyWarhead",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23198,
+            "section": "SpyCameraWeapon",
+            "key": "Warhead",
+            "value": "DummyWarhead"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23190,
+              "section": "SpyCameraWeapon",
+              "key": "Warhead",
+              "value": "DummyWarhead"
+            }
+          ]
+        },
+        "Report": {
+          "value": "SpyPlaneSnapshot",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23199,
+            "section": "SpyCameraWeapon",
+            "key": "Report",
+            "value": "SpyPlaneSnapshot"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23191,
+              "section": "SpyCameraWeapon",
+              "key": "Report",
+              "value": "SpyPlaneSnapshot"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "MoveSound": [
+      "SpyPlaneMoveLoop"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "SPYP",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 10835,
+      "pack": "ra2md",
+      "relative_path": "localmd/spyp.vxl",
+      "folder": "localmd",
+      "filename": "spyp.vxl",
+      "stem": "spyp",
+      "extension": ".vxl",
+      "size": 125084,
+      "sha1": "f3118c39185119e112b2bcf868d92a3ff4e18b69"
+    },
+    "body_hva": {
+      "asset_id": 10834,
+      "pack": "ra2md",
+      "relative_path": "localmd/spyp.hva",
+      "folder": "localmd",
+      "filename": "spyp.hva",
+      "stem": "spyp",
+      "extension": ".hva",
+      "size": 472,
+      "sha1": "b10c7cd159b52bf2a3cdba9d0d8902f16d5c4083"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 3,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:SpyP",
+      "Name": "Soviet Spy Plane",
+      "Strength": 600,
+      "Category": "AirLift",
+      "Armor": "light",
+      "TechLevel": -1,
+      "Primary": "SpyCameraWeapon",
+      "Spawned": true,
+      "LeadershipRating": 10,
+      "Selectable": false,
+      "RadarInvisible": false,
+      "Sight": 0,
+      "Landable": false,
+      "MoveToShroud": true,
+      "PitchAngle": 0,
+      "Speed": 15,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "Points": 30,
+      "ROT": 2,
+      "Crewed": true,
+      "Ammo": 100,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 2,
+      "Locomotor": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Fly",
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "ImmuneToPsionics": true,
+      "CanPassiveAquire": false,
+      "CanRetaliate": false,
+      "MoveSound": "SpyPlaneMoveLoop",
+      "DieSound": "",
+      "CrashingSound": "SpyPlaneDie",
+      "ImpactLandSound": "GenAircraftCrash",
+      "DeathWeapon": "BlimpBomb",
+      "DeathWeaponDamageModifier": 0.1,
+      "FlyBy": true
+    },
+    "raw_values": {
+      "UIName": "Name:SpyP",
+      "Name": "Soviet Spy Plane",
+      "Strength": "600",
+      "Category": "AirLift",
+      "Armor": "light",
+      "TechLevel": "-1",
+      "Primary": "SpyCameraWeapon",
+      "Spawned": "yes",
+      "LeadershipRating": "10",
+      "Selectable": "no",
+      "RadarInvisible": "no",
+      "Sight": "0",
+      "Landable": "no",
+      "MoveToShroud": "yes",
+      "PitchAngle": "0",
+      "Speed": "15",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "Points": "30",
+      "ROT": "2",
+      "Crewed": "yes",
+      "Ammo": "100",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "2",
+      "Locomotor": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Fly",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "ImmuneToPsionics": "yes",
+      "CanPassiveAquire": "no",
+      "CanRetaliate": "no",
+      "MoveSound": "SpyPlaneMoveLoop",
+      "DieSound": "",
+      "CrashingSound": "SpyPlaneDie",
+      "ImpactLandSound": "GenAircraftCrash",
+      "DeathWeapon": "BlimpBomb",
+      "DeathWeaponDamageModifier": ".1",
+      "FlyBy": "true"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:SpyP",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11324,
+          "section": "SPYP",
+          "key": "UIName",
+          "value": "Name:SpyP"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11318,
+            "section": "SPYP",
+            "key": "UIName",
+            "value": "Name:SpyP"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Soviet Spy Plane",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11325,
+          "section": "SPYP",
+          "key": "Name",
+          "value": "Soviet Spy Plane"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11319,
+            "section": "SPYP",
+            "key": "Name",
+            "value": "Soviet Spy Plane"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11327,
+          "section": "SPYP",
+          "key": "Strength",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11321,
+            "section": "SPYP",
+            "key": "Strength",
+            "value": "400"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AirLift",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11328,
+          "section": "SPYP",
+          "key": "Category",
+          "value": "AirLift"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11322,
+            "section": "SPYP",
+            "key": "Category",
+            "value": "AirLift"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11329,
+          "section": "SPYP",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11323,
+            "section": "SPYP",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11330,
+          "section": "SPYP",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11324,
+            "section": "SPYP",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "SpyCameraWeapon",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11331,
+          "section": "SPYP",
+          "key": "Primary",
+          "value": "SpyCameraWeapon"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11325,
+            "section": "SPYP",
+            "key": "Primary",
+            "value": "SpyCameraWeapon"
+          }
+        ]
+      },
+      "Spawned": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11332,
+          "section": "SPYP",
+          "key": "Spawned",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11326,
+            "section": "SPYP",
+            "key": "Spawned",
+            "value": "yes"
+          }
+        ]
+      },
+      "LeadershipRating": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11333,
+          "section": "SPYP",
+          "key": "LeadershipRating",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11327,
+            "section": "SPYP",
+            "key": "LeadershipRating",
+            "value": "10"
+          }
+        ]
+      },
+      "Selectable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11334,
+          "section": "SPYP",
+          "key": "Selectable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11328,
+            "section": "SPYP",
+            "key": "Selectable",
+            "value": "no"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11335,
+          "section": "SPYP",
+          "key": "RadarInvisible",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11329,
+            "section": "SPYP",
+            "key": "RadarInvisible",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11336,
+          "section": "SPYP",
+          "key": "Sight",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11330,
+            "section": "SPYP",
+            "key": "Sight",
+            "value": "0"
+          }
+        ]
+      },
+      "Landable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11337,
+          "section": "SPYP",
+          "key": "Landable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11331,
+            "section": "SPYP",
+            "key": "Landable",
+            "value": "no"
+          }
+        ]
+      },
+      "MoveToShroud": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11338,
+          "section": "SPYP",
+          "key": "MoveToShroud",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11332,
+            "section": "SPYP",
+            "key": "MoveToShroud",
+            "value": "yes"
+          }
+        ]
+      },
+      "PitchAngle": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11339,
+          "section": "SPYP",
+          "key": "PitchAngle",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11333,
+            "section": "SPYP",
+            "key": "PitchAngle",
+            "value": "0"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11340,
+          "section": "SPYP",
+          "key": "Speed",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11334,
+            "section": "SPYP",
+            "key": "Speed",
+            "value": "15"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11341,
+          "section": "SPYP",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11335,
+            "section": "SPYP",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11342,
+          "section": "SPYP",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11336,
+            "section": "SPYP",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11343,
+          "section": "SPYP",
+          "key": "ROT",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11337,
+            "section": "SPYP",
+            "key": "ROT",
+            "value": "2"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11344,
+          "section": "SPYP",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11338,
+            "section": "SPYP",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Ammo": {
+        "value": "100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11345,
+          "section": "SPYP",
+          "key": "Ammo",
+          "value": "100"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11339,
+            "section": "SPYP",
+            "key": "Ammo",
+            "value": "100"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11346,
+          "section": "SPYP",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11340,
+            "section": "SPYP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11347,
+          "section": "SPYP",
+          "key": "MaxDebris",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11341,
+            "section": "SPYP",
+            "key": "MaxDebris",
+            "value": "2"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11348,
+          "section": "SPYP",
+          "key": "Locomotor",
+          "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11342,
+            "section": "SPYP",
+            "key": "Locomotor",
+            "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Fly",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11349,
+          "section": "SPYP",
+          "key": "MovementZone",
+          "value": "Fly"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11343,
+            "section": "SPYP",
+            "key": "MovementZone",
+            "value": "Fly"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11350,
+          "section": "SPYP",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11344,
+            "section": "SPYP",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11351,
+          "section": "SPYP",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11345,
+            "section": "SPYP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11352,
+          "section": "SPYP",
+          "key": "ImmuneToPsionics",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11346,
+            "section": "SPYP",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          }
+        ]
+      },
+      "CanPassiveAquire": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11353,
+          "section": "SPYP",
+          "key": "CanPassiveAquire",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11347,
+            "section": "SPYP",
+            "key": "CanPassiveAquire",
+            "value": "no"
+          }
+        ]
+      },
+      "CanRetaliate": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11354,
+          "section": "SPYP",
+          "key": "CanRetaliate",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11348,
+            "section": "SPYP",
+            "key": "CanRetaliate",
+            "value": "no"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "SpyPlaneMoveLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11355,
+          "section": "SPYP",
+          "key": "MoveSound",
+          "value": "SpyPlaneMoveLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11349,
+            "section": "SPYP",
+            "key": "MoveSound",
+            "value": "SpyPlaneMoveLoop"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11356,
+          "section": "SPYP",
+          "key": "DieSound",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11350,
+            "section": "SPYP",
+            "key": "DieSound",
+            "value": ""
+          }
+        ]
+      },
+      "CrashingSound": {
+        "value": "SpyPlaneDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11357,
+          "section": "SPYP",
+          "key": "CrashingSound",
+          "value": "SpyPlaneDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11351,
+            "section": "SPYP",
+            "key": "CrashingSound",
+            "value": "SpyPlaneDie"
+          }
+        ]
+      },
+      "ImpactLandSound": {
+        "value": "GenAircraftCrash",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11358,
+          "section": "SPYP",
+          "key": "ImpactLandSound",
+          "value": "GenAircraftCrash"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11352,
+            "section": "SPYP",
+            "key": "ImpactLandSound",
+            "value": "GenAircraftCrash"
+          }
+        ]
+      },
+      "DeathWeapon": {
+        "value": "BlimpBomb",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11359,
+          "section": "SPYP",
+          "key": "DeathWeapon",
+          "value": "BlimpBomb"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11353,
+            "section": "SPYP",
+            "key": "DeathWeapon",
+            "value": "BlimpBomb"
+          }
+        ]
+      },
+      "DeathWeaponDamageModifier": {
+        "value": ".1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11360,
+          "section": "SPYP",
+          "key": "DeathWeaponDamageModifier",
+          "value": ".1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11354,
+            "section": "SPYP",
+            "key": "DeathWeaponDamageModifier",
+            "value": ".1"
+          }
+        ]
+      },
+      "FlyBy": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11361,
+          "section": "SPYP",
+          "key": "FlyBy",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11355,
+            "section": "SPYP",
+            "key": "FlyBy",
+            "value": "true"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "SPYPICON",
+      "Voxel": true,
+      "ShadowIndex": 3,
+      "DisableVoxelCache": true,
+      "DisableShadowCache": true
+    },
+    "raw_values": {
+      "Cameo": "SPYPICON",
+      "Voxel": "yes",
+      "ShadowIndex": "3",
+      "DisableVoxelCache": "yes",
+      "DisableShadowCache": "yes"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "SPYPICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1112,
+          "section": "SPYP",
+          "key": "Cameo",
+          "value": "SPYPICON"
+        },
+        "history": []
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1113,
+          "section": "SPYP",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "ShadowIndex": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1114,
+          "section": "SPYP",
+          "key": "ShadowIndex",
+          "value": "3"
+        },
+        "history": []
+      },
+      "DisableVoxelCache": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1115,
+          "section": "SPYP",
+          "key": "DisableVoxelCache",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "DisableShadowCache": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1116,
+          "section": "SPYP",
+          "key": "DisableShadowCache",
+          "value": "yes"
+        },
+        "history": []
+      }
+    }
+  }
+}

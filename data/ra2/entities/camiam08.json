@@ -1,0 +1,900 @@
+{
+  "id": "CAMIAM08",
+  "category": "building",
+  "name_token": "Name:CAMIAM08",
+  "art_id": "CAMIAM08",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 1000,
+  "armor": "steel",
+  "speed": 0,
+  "sight": 6,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAMIAM08",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1681,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctmiam08.shp",
+          "folder": "isotemp",
+          "filename": "ctmiam08.shp",
+          "stem": "ctmiam08",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "9bee3cdb6e436f53b7ecbdbe239e9541e3746fb7"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 577,
+          "pack": "ra2",
+          "relative_path": "isosnow/camiam08.shp",
+          "folder": "isosnow",
+          "filename": "camiam08.shp",
+          "stem": "camiam08",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "18e1b9e30cc8130d78542033a432ea1800ef2f42"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2768,
+          "pack": "ra2",
+          "relative_path": "isourb/cumiam08.shp",
+          "folder": "isourb",
+          "filename": "cumiam08.shp",
+          "stem": "cumiam08",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "f6650690cbcd87dddf4cb3f799fe50d891a5ba8d"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6149,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdmiam08.shp",
+          "folder": "isodes",
+          "filename": "cdmiam08.shp",
+          "stem": "cdmiam08",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "9bee3cdb6e436f53b7ecbdbe239e9541e3746fb7"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8217,
+          "pack": "ra2md",
+          "relative_path": "isolun/clmiam08.shp",
+          "folder": "isolun",
+          "filename": "clmiam08.shp",
+          "stem": "clmiam08",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "9bee3cdb6e436f53b7ecbdbe239e9541e3746fb7"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9298,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnmiam08.shp",
+          "folder": "isoubn",
+          "filename": "cnmiam08.shp",
+          "stem": "cnmiam08",
+          "extension": ".shp",
+          "size": 14312,
+          "sha1": "9bee3cdb6e436f53b7ecbdbe239e9541e3746fb7"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "3x1",
+    "height": 2,
+    "occupy_height": 0,
+    "damage_fire_offsets": [
+      [
+        62.0,
+        40.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CAMIAM08",
+      "Name": "Arizona Memorial",
+      "TechLevel": -1,
+      "Strength": 1000,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 7,
+      "MinDebris": 5,
+      "DebrisAnim": "Dbris3sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg",
+      "BaseNormal": false,
+      "Sight": 6,
+      "ClickRepairable": false,
+      "CanBeOccupied": false,
+      "LeaveRubble": true
+    },
+    "raw_values": {
+      "UIName": "Name:CAMIAM08",
+      "Name": "Arizona Memorial",
+      "TechLevel": "-1",
+      "Strength": "1000",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "steel",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "7",
+      "MinDebris": "5",
+      "DebrisAnim": "Dbris3sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg",
+      "BaseNormal": "no",
+      "Sight": "6",
+      "ClickRepairable": "no",
+      "CanBeOccupied": "no",
+      "LeaveRubble": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CAMIAM08",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15353,
+          "section": "CAMIAM08",
+          "key": "UIName",
+          "value": "Name:CAMIAM08"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15884,
+            "section": "CAMIAM08",
+            "key": "UIName",
+            "value": "Name:CAMIAM08"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15346,
+            "section": "CAMIAM08",
+            "key": "UIName",
+            "value": "Name:CAMIAM08"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Arizona Memorial",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15354,
+          "section": "CAMIAM08",
+          "key": "Name",
+          "value": "Arizona Memorial"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15885,
+            "section": "CAMIAM08",
+            "key": "Name",
+            "value": "RA2 Arizona Memorial"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15347,
+            "section": "CAMIAM08",
+            "key": "Name",
+            "value": "Arizona Memorial"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15355,
+          "section": "CAMIAM08",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15886,
+            "section": "CAMIAM08",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15348,
+            "section": "CAMIAM08",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15356,
+          "section": "CAMIAM08",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15887,
+            "section": "CAMIAM08",
+            "key": "Strength",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15349,
+            "section": "CAMIAM08",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15357,
+          "section": "CAMIAM08",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15888,
+            "section": "CAMIAM08",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15350,
+            "section": "CAMIAM08",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15358,
+          "section": "CAMIAM08",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15889,
+            "section": "CAMIAM08",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15351,
+            "section": "CAMIAM08",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 15890,
+          "section": "CAMIAM08",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15360,
+          "section": "CAMIAM08",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15891,
+            "section": "CAMIAM08",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15353,
+            "section": "CAMIAM08",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "steel",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15361,
+          "section": "CAMIAM08",
+          "key": "Armor",
+          "value": "steel"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15892,
+            "section": "CAMIAM08",
+            "key": "Armor",
+            "value": "steel"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15354,
+            "section": "CAMIAM08",
+            "key": "Armor",
+            "value": "steel"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15362,
+          "section": "CAMIAM08",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15893,
+            "section": "CAMIAM08",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15355,
+            "section": "CAMIAM08",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15363,
+          "section": "CAMIAM08",
+          "key": "MaxDebris",
+          "value": "7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15894,
+            "section": "CAMIAM08",
+            "key": "MaxDebris",
+            "value": "7"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15356,
+            "section": "CAMIAM08",
+            "key": "MaxDebris",
+            "value": "7"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15364,
+          "section": "CAMIAM08",
+          "key": "MinDebris",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15895,
+            "section": "CAMIAM08",
+            "key": "MinDebris",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15357,
+            "section": "CAMIAM08",
+            "key": "MinDebris",
+            "value": "5"
+          }
+        ]
+      },
+      "DebrisAnim": {
+        "value": "Dbris3sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15365,
+          "section": "CAMIAM08",
+          "key": "DebrisAnim",
+          "value": "Dbris3sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15896,
+            "section": "CAMIAM08",
+            "key": "DebrisAnim",
+            "value": "Dbris3sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15358,
+            "section": "CAMIAM08",
+            "key": "DebrisAnim",
+            "value": "Dbris3sm,Dbris4lg,Dbris7sm,Dbris8sm,Dbris10sm,Dbris9lg"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15368,
+          "section": "CAMIAM08",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15899,
+            "section": "CAMIAM08",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15361,
+            "section": "CAMIAM08",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15369,
+          "section": "CAMIAM08",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15900,
+            "section": "CAMIAM08",
+            "key": "Sight",
+            "value": "6"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15362,
+            "section": "CAMIAM08",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "ClickRepairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15370,
+          "section": "CAMIAM08",
+          "key": "ClickRepairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15901,
+            "section": "CAMIAM08",
+            "key": "ClickRepairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15363,
+            "section": "CAMIAM08",
+            "key": "ClickRepairable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanBeOccupied": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15371,
+          "section": "CAMIAM08",
+          "key": "CanBeOccupied",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15902,
+            "section": "CAMIAM08",
+            "key": "CanBeOccupied",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15364,
+            "section": "CAMIAM08",
+            "key": "CanBeOccupied",
+            "value": "no"
+          }
+        ]
+      },
+      "LeaveRubble": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 15372,
+          "section": "CAMIAM08",
+          "key": "LeaveRubble",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 15903,
+            "section": "CAMIAM08",
+            "key": "LeaveRubble",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 15365,
+            "section": "CAMIAM08",
+            "key": "LeaveRubble",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "3x1",
+      "Height": 2,
+      "NewTheater": true,
+      "DemandLoad": true,
+      "DamageFireOffset0": "62,40",
+      "CanHideThings": true,
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Foundation": "3x1",
+      "Height": "2",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "DamageFireOffset0": "62,40",
+      "CanHideThings": "true",
+      "CanBeHidden": "false"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "3x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6939,
+          "section": "CAMIAM08",
+          "key": "Foundation",
+          "value": "3x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5145,
+            "section": "CAMIAM08",
+            "key": "Foundation",
+            "value": "3x1"
+          }
+        ]
+      },
+      "Height": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6940,
+          "section": "CAMIAM08",
+          "key": "Height",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5146,
+            "section": "CAMIAM08",
+            "key": "Height",
+            "value": "2"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6941,
+          "section": "CAMIAM08",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5147,
+            "section": "CAMIAM08",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6942,
+          "section": "CAMIAM08",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5148,
+            "section": "CAMIAM08",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "62,40",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6944,
+          "section": "CAMIAM08",
+          "key": "DamageFireOffset0",
+          "value": "62,40"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5150,
+            "section": "CAMIAM08",
+            "key": "DamageFireOffset0",
+            "value": "62,40"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6945,
+          "section": "CAMIAM08",
+          "key": "CanHideThings",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5151,
+            "section": "CAMIAM08",
+            "key": "CanHideThings",
+            "value": "true"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 6946,
+          "section": "CAMIAM08",
+          "key": "CanBeHidden",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 5152,
+            "section": "CAMIAM08",
+            "key": "CanBeHidden",
+            "value": "false"
+          }
+        ]
+      }
+    }
+  }
+}

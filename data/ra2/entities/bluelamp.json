@@ -1,0 +1,1059 @@
+{
+  "id": "BLUELAMP",
+  "category": "building",
+  "name_token": "Blue Light Post",
+  "art_id": "GALITE",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 600,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "GALITE",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 4914,
+          "pack": "ra2",
+          "relative_path": "snow/galite.shp",
+          "folder": "snow",
+          "filename": "galite.shp",
+          "stem": "galite",
+          "extension": ".shp",
+          "size": 1776,
+          "sha1": "3728a41c19799184d1497173230ec428925b46ff"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 361,
+          "pack": "ra2",
+          "relative_path": "generic/gglite.shp",
+          "folder": "generic",
+          "filename": "gglite.shp",
+          "stem": "gglite",
+          "extension": ".shp",
+          "size": 1792,
+          "sha1": "c3a3425d36cd80ea8eb4461a1187602cb2d123ef"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 0,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "Name": "Blue Light Post",
+      "Image": "GALITE",
+      "Strength": 600,
+      "Armor": "wood",
+      "TechLevel": -1,
+      "Nominal": true,
+      "Sight": 0,
+      "Points": 30,
+      "Power": 0,
+      "Crewed": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 1,
+      "LightVisibility": 4000,
+      "LightIntensity": 0.01,
+      "LightRedTint": 0.01,
+      "LightGreenTint": "0,01",
+      "LightBlueTint": 0.7,
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,LGSparkSys",
+      "AlphaImage": "NONE",
+      "Powered": true,
+      "Insignificant": true
+    },
+    "raw_values": {
+      "Name": "Blue Light Post",
+      "Image": "GALITE",
+      "Strength": "600",
+      "Armor": "wood",
+      "TechLevel": "-1",
+      "Nominal": "yes",
+      "Sight": "0",
+      "Points": "30",
+      "Power": "0",
+      "Crewed": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "1",
+      "LightVisibility": "4000",
+      "LightIntensity": "0.01",
+      "LightRedTint": "0.01",
+      "LightGreenTint": "0,01",
+      "LightBlueTint": "0.7",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,LGSparkSys",
+      "AlphaImage": "NONE",
+      "Powered": "true",
+      "Insignificant": "yes"
+    },
+    "provenance": {
+      "Name": {
+        "value": "Blue Light Post",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17384,
+          "section": "BLUELAMP",
+          "key": "Name",
+          "value": "Blue Light Post"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9637,
+            "section": "BLUELAMP",
+            "key": "Name",
+            "value": "Blue Light Post"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17376,
+            "section": "BLUELAMP",
+            "key": "Name",
+            "value": "Blue Light Post"
+          }
+        ]
+      },
+      "Image": {
+        "value": "GALITE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17385,
+          "section": "BLUELAMP",
+          "key": "Image",
+          "value": "GALITE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9638,
+            "section": "BLUELAMP",
+            "key": "Image",
+            "value": "GALITE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17377,
+            "section": "BLUELAMP",
+            "key": "Image",
+            "value": "GALITE"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17386,
+          "section": "BLUELAMP",
+          "key": "Strength",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9639,
+            "section": "BLUELAMP",
+            "key": "Strength",
+            "value": "600"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17378,
+            "section": "BLUELAMP",
+            "key": "Strength",
+            "value": "600"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17387,
+          "section": "BLUELAMP",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9640,
+            "section": "BLUELAMP",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17379,
+            "section": "BLUELAMP",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17388,
+          "section": "BLUELAMP",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9641,
+            "section": "BLUELAMP",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17380,
+            "section": "BLUELAMP",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17389,
+          "section": "BLUELAMP",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9642,
+            "section": "BLUELAMP",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17381,
+            "section": "BLUELAMP",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17390,
+          "section": "BLUELAMP",
+          "key": "Sight",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9643,
+            "section": "BLUELAMP",
+            "key": "Sight",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17382,
+            "section": "BLUELAMP",
+            "key": "Sight",
+            "value": "0"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17391,
+          "section": "BLUELAMP",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9644,
+            "section": "BLUELAMP",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17383,
+            "section": "BLUELAMP",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "Power": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17392,
+          "section": "BLUELAMP",
+          "key": "Power",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9645,
+            "section": "BLUELAMP",
+            "key": "Power",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17384,
+            "section": "BLUELAMP",
+            "key": "Power",
+            "value": "0"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17393,
+          "section": "BLUELAMP",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9646,
+            "section": "BLUELAMP",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17385,
+            "section": "BLUELAMP",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17394,
+          "section": "BLUELAMP",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9647,
+            "section": "BLUELAMP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17386,
+            "section": "BLUELAMP",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17395,
+          "section": "BLUELAMP",
+          "key": "MaxDebris",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9648,
+            "section": "BLUELAMP",
+            "key": "MaxDebris",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17387,
+            "section": "BLUELAMP",
+            "key": "MaxDebris",
+            "value": "1"
+          }
+        ]
+      },
+      "LightVisibility": {
+        "value": "4000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17396,
+          "section": "BLUELAMP",
+          "key": "LightVisibility",
+          "value": "4000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9649,
+            "section": "BLUELAMP",
+            "key": "LightVisibility",
+            "value": "4000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17388,
+            "section": "BLUELAMP",
+            "key": "LightVisibility",
+            "value": "4000"
+          }
+        ]
+      },
+      "LightIntensity": {
+        "value": "0.01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17397,
+          "section": "BLUELAMP",
+          "key": "LightIntensity",
+          "value": "0.01"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9650,
+            "section": "BLUELAMP",
+            "key": "LightIntensity",
+            "value": "0.01"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17389,
+            "section": "BLUELAMP",
+            "key": "LightIntensity",
+            "value": "0.01"
+          }
+        ]
+      },
+      "LightRedTint": {
+        "value": "0.01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17398,
+          "section": "BLUELAMP",
+          "key": "LightRedTint",
+          "value": "0.01"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9651,
+            "section": "BLUELAMP",
+            "key": "LightRedTint",
+            "value": "0.01"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17390,
+            "section": "BLUELAMP",
+            "key": "LightRedTint",
+            "value": "0.01"
+          }
+        ]
+      },
+      "LightGreenTint": {
+        "value": "0,01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17399,
+          "section": "BLUELAMP",
+          "key": "LightGreenTint",
+          "value": "0,01"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9652,
+            "section": "BLUELAMP",
+            "key": "LightGreenTint",
+            "value": "0,01"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17391,
+            "section": "BLUELAMP",
+            "key": "LightGreenTint",
+            "value": "0,01"
+          }
+        ]
+      },
+      "LightBlueTint": {
+        "value": "0.7",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17400,
+          "section": "BLUELAMP",
+          "key": "LightBlueTint",
+          "value": "0.7"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9653,
+            "section": "BLUELAMP",
+            "key": "LightBlueTint",
+            "value": "0.7"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17392,
+            "section": "BLUELAMP",
+            "key": "LightBlueTint",
+            "value": "0.7"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17401,
+          "section": "BLUELAMP",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9654,
+            "section": "BLUELAMP",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17393,
+            "section": "BLUELAMP",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,LGSparkSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17402,
+          "section": "BLUELAMP",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,LGSparkSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9655,
+            "section": "BLUELAMP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,LGSparkSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17394,
+            "section": "BLUELAMP",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,LGSparkSys"
+          }
+        ]
+      },
+      "AlphaImage": {
+        "value": "NONE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17403,
+          "section": "BLUELAMP",
+          "key": "AlphaImage",
+          "value": "NONE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9656,
+            "section": "BLUELAMP",
+            "key": "AlphaImage",
+            "value": "NONE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17395,
+            "section": "BLUELAMP",
+            "key": "AlphaImage",
+            "value": "NONE"
+          }
+        ]
+      },
+      "Powered": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17404,
+          "section": "BLUELAMP",
+          "key": "Powered",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9657,
+            "section": "BLUELAMP",
+            "key": "Powered",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17396,
+            "section": "BLUELAMP",
+            "key": "Powered",
+            "value": "true"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 17405,
+          "section": "BLUELAMP",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9658,
+            "section": "BLUELAMP",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 17397,
+            "section": "BLUELAMP",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "LITEICON",
+      "Image": "GALITE",
+      "Remapable": true,
+      "Foundation": "1x1",
+      "TerrainPalette": true,
+      "NewTheater": true,
+      "ExtraDamageStage": false,
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Cameo": "LITEICON",
+      "Image": "GALITE",
+      "Remapable": "yes",
+      "Foundation": "1x1",
+      "TerrainPalette": "yes",
+      "NewTheater": "yes",
+      "ExtraDamageStage": "false",
+      "CanBeHidden": "False"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "LITEICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4317,
+          "section": "GALITE",
+          "key": "Cameo",
+          "value": "LITEICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2831,
+            "section": "GALITE",
+            "key": "Cameo",
+            "value": "LITEICON"
+          }
+        ]
+      },
+      "Image": {
+        "value": "GALITE",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4318,
+          "section": "GALITE",
+          "key": "Image",
+          "value": "GALITE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2832,
+            "section": "GALITE",
+            "key": "Image",
+            "value": "GALITE"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4319,
+          "section": "GALITE",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2833,
+            "section": "GALITE",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4320,
+          "section": "GALITE",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2834,
+            "section": "GALITE",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "TerrainPalette": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4321,
+          "section": "GALITE",
+          "key": "TerrainPalette",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2835,
+            "section": "GALITE",
+            "key": "TerrainPalette",
+            "value": "yes"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4322,
+          "section": "GALITE",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2836,
+            "section": "GALITE",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "ExtraDamageStage": {
+        "value": "false",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4323,
+          "section": "GALITE",
+          "key": "ExtraDamageStage",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2837,
+            "section": "GALITE",
+            "key": "ExtraDamageStage",
+            "value": "false"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4326,
+          "section": "GALITE",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2840,
+            "section": "GALITE",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      }
+    }
+  }
+}

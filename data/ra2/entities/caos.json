@@ -1,0 +1,1895 @@
+{
+  "id": "CAOS",
+  "category": "vehicle",
+  "name_token": "Name:ChaosDrone",
+  "art_id": "CAOS",
+  "owners": [
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "YAWEAP"
+  ],
+  "tech_level": 4,
+  "cost": 1000,
+  "strength": 130,
+  "armor": "light",
+  "speed": 8,
+  "sight": 6,
+  "locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Destroyer",
+  "weapons": {
+    "Primary": {
+      "id": "ChaosAttack",
+      "projectile": "InvisibleLow",
+      "warhead": "PsychGasCreate",
+      "report": [
+        "ChaosDroneAttack"
+      ],
+      "values": {
+        "Damage": 600,
+        "ROF": 45,
+        "Range": 3,
+        "Projectile": "InvisibleLow",
+        "Speed": 30,
+        "Warhead": "PsychGasCreate",
+        "Report": "ChaosDroneAttack",
+        "OmniFire": true,
+        "AreaFire": true
+      },
+      "raw_values": {
+        "Damage": "600",
+        "ROF": "45",
+        "Range": "3",
+        "Projectile": "InvisibleLow",
+        "Speed": "30",
+        "Warhead": "PsychGasCreate",
+        "Report": "ChaosDroneAttack",
+        "OmniFire": "yes",
+        "AreaFire": "yes"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "600",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23507,
+            "section": "ChaosAttack",
+            "key": "Damage",
+            "value": "600"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23499,
+              "section": "ChaosAttack",
+              "key": "Damage",
+              "value": "600"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "45",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23508,
+            "section": "ChaosAttack",
+            "key": "ROF",
+            "value": "45"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23500,
+              "section": "ChaosAttack",
+              "key": "ROF",
+              "value": "30"
+            }
+          ]
+        },
+        "Range": {
+          "value": "3",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23509,
+            "section": "ChaosAttack",
+            "key": "Range",
+            "value": "3"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23501,
+              "section": "ChaosAttack",
+              "key": "Range",
+              "value": "3"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleLow",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23510,
+            "section": "ChaosAttack",
+            "key": "Projectile",
+            "value": "InvisibleLow"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23502,
+              "section": "ChaosAttack",
+              "key": "Projectile",
+              "value": "InvisibleLow"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "30",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23511,
+            "section": "ChaosAttack",
+            "key": "Speed",
+            "value": "30"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23503,
+              "section": "ChaosAttack",
+              "key": "Speed",
+              "value": "30"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "PsychGasCreate",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23512,
+            "section": "ChaosAttack",
+            "key": "Warhead",
+            "value": "PsychGasCreate"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23504,
+              "section": "ChaosAttack",
+              "key": "Warhead",
+              "value": "PsychGasCreate"
+            }
+          ]
+        },
+        "Report": {
+          "value": "ChaosDroneAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23513,
+            "section": "ChaosAttack",
+            "key": "Report",
+            "value": "ChaosDroneAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23505,
+              "section": "ChaosAttack",
+              "key": "Report",
+              "value": "ChaosDroneAttack"
+            }
+          ]
+        },
+        "OmniFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23515,
+            "section": "ChaosAttack",
+            "key": "OmniFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23507,
+              "section": "ChaosAttack",
+              "key": "OmniFire",
+              "value": "yes"
+            }
+          ]
+        },
+        "AreaFire": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23516,
+            "section": "ChaosAttack",
+            "key": "AreaFire",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23508,
+              "section": "ChaosAttack",
+              "key": "AreaFire",
+              "value": "yes"
+            }
+          ]
+        }
+      }
+    },
+    "Secondary": {
+      "id": "VirtualScanner",
+      "projectile": "InvisibleAll",
+      "warhead": "SA",
+      "report": [],
+      "values": {
+        "Damage": 1,
+        "Range": 5,
+        "NeverUse": true,
+        "Projectile": "InvisibleAll",
+        "Warhead": "SA",
+        "Speed": 100
+      },
+      "raw_values": {
+        "Damage": "1",
+        "Range": "5",
+        "NeverUse": "yes",
+        "Projectile": "InvisibleAll",
+        "Warhead": "SA",
+        "Speed": "100"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "1",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23620,
+            "section": "VirtualScanner",
+            "key": "Damage",
+            "value": "1"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16901,
+              "section": "VirtualScanner",
+              "key": "Damage",
+              "value": "1"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23612,
+              "section": "VirtualScanner",
+              "key": "Damage",
+              "value": "1"
+            }
+          ]
+        },
+        "Range": {
+          "value": "5",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23621,
+            "section": "VirtualScanner",
+            "key": "Range",
+            "value": "5"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16902,
+              "section": "VirtualScanner",
+              "key": "Range",
+              "value": "5"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23613,
+              "section": "VirtualScanner",
+              "key": "Range",
+              "value": "5"
+            }
+          ]
+        },
+        "NeverUse": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23622,
+            "section": "VirtualScanner",
+            "key": "NeverUse",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16903,
+              "section": "VirtualScanner",
+              "key": "NeverUse",
+              "value": "yes"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23614,
+              "section": "VirtualScanner",
+              "key": "NeverUse",
+              "value": "yes"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleAll",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23623,
+            "section": "VirtualScanner",
+            "key": "Projectile",
+            "value": "InvisibleAll"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16904,
+              "section": "VirtualScanner",
+              "key": "Projectile",
+              "value": "InvisibleAll"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23615,
+              "section": "VirtualScanner",
+              "key": "Projectile",
+              "value": "InvisibleAll"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "SA",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23624,
+            "section": "VirtualScanner",
+            "key": "Warhead",
+            "value": "SA"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16905,
+              "section": "VirtualScanner",
+              "key": "Warhead",
+              "value": "SA"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23616,
+              "section": "VirtualScanner",
+              "key": "Warhead",
+              "value": "SA"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "100",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 23625,
+            "section": "VirtualScanner",
+            "key": "Speed",
+            "value": "100"
+          },
+          "history": [
+            {
+              "layer": "ra2",
+              "file": "rules.ini",
+              "line": 16906,
+              "section": "VirtualScanner",
+              "key": "Speed",
+              "value": "100"
+            },
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 23617,
+              "section": "VirtualScanner",
+              "key": "Speed",
+              "value": "100"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "ChaosDroneSelect"
+    ],
+    "VoiceMove": [
+      "ChaosDroneMove"
+    ],
+    "VoiceAttack": [
+      "ChaosDroneAttackCommand"
+    ],
+    "DieSound": [
+      "ChaosDroneDie"
+    ],
+    "MoveSound": [
+      "ChaosDroneMoveStart"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "CAOS",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 10717,
+      "pack": "ra2md",
+      "relative_path": "localmd/caos.vxl",
+      "folder": "localmd",
+      "filename": "caos.vxl",
+      "stem": "caos",
+      "extension": ".vxl",
+      "size": 24630,
+      "sha1": "bd51f0010e561a090b81e732318d1ee252cfc981"
+    },
+    "body_hva": {
+      "asset_id": 10716,
+      "pack": "ra2md",
+      "relative_path": "localmd/caos.hva",
+      "folder": "localmd",
+      "filename": "caos.hva",
+      "stem": "caos",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "7fb344e7ef17faee09c39e72bf95395ceae363a8"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:ChaosDrone",
+      "Name": "Chaos Drone",
+      "Category": "AFV",
+      "Prerequisite": "YAWEAP",
+      "Primary": "ChaosAttack",
+      "Secondary": "VirtualScanner",
+      "NavalTargeting": 6,
+      "Strength": 130,
+      "SuppressionThreshold": 5,
+      "ReselectIfLimboed": true,
+      "DefaultToGuardArea": true,
+      "Armor": "light",
+      "TechLevel": 4,
+      "Turret": false,
+      "IsTilter": false,
+      "CrateGoodie": false,
+      "Sight": 6,
+      "Speed": 8,
+      "Owner": "YuriCountry",
+      "Cost": 1000,
+      "Soylent": 1000,
+      "Points": 20,
+      "ROT": 40,
+      "AllowedToStartInMultiplayer": false,
+      "Crusher": false,
+      "Crewed": false,
+      "IsSelectableCombatant": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "ChaosDroneSelect",
+      "VoiceAttack": "ChaosDroneAttackCommand",
+      "VoiceMove": "ChaosDroneMove",
+      "VoiceFeedback": "",
+      "DieSound": "ChaosDroneDie",
+      "MoveSound": "ChaosDroneMoveStart",
+      "MaxDebris": 2,
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Destroyer",
+      "ThreatPosed": 25,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "Weight": 0.5,
+      "ImmuneToPsionics": true,
+      "ImmuneToRadiation": true,
+      "Parasiteable": true,
+      "Trainable": false,
+      "Explodes": false,
+      "AccelerationFactor": 5,
+      "DeaccelerationFactor": 5,
+      "ZFudgeColumn": 8,
+      "ZFudgeTunnel": 13,
+      "Size": 2,
+      "Accelerates": false,
+      "BerserkFriendly": true,
+      "CanPassiveAquire": false,
+      "CanRetaliate": false,
+      "Deployer": true,
+      "DeployFire": true,
+      "Bunkerable": false,
+      "BuildTimeMultiplier": 1.1
+    },
+    "raw_values": {
+      "UIName": "Name:ChaosDrone",
+      "Name": "Chaos Drone",
+      "Category": "AFV",
+      "Prerequisite": "YAWEAP",
+      "Primary": "ChaosAttack",
+      "Secondary": "VirtualScanner",
+      "NavalTargeting": "6",
+      "Strength": "130",
+      "SuppressionThreshold": "5",
+      "ReselectIfLimboed": "yes",
+      "DefaultToGuardArea": "yes",
+      "Armor": "light",
+      "TechLevel": "4",
+      "Turret": "no",
+      "IsTilter": "no",
+      "CrateGoodie": "no",
+      "Sight": "6",
+      "Speed": "8",
+      "Owner": "YuriCountry",
+      "Cost": "1000",
+      "Soylent": "1000",
+      "Points": "20",
+      "ROT": "40",
+      "AllowedToStartInMultiplayer": "no",
+      "Crusher": "no",
+      "Crewed": "no",
+      "IsSelectableCombatant": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "ChaosDroneSelect",
+      "VoiceAttack": "ChaosDroneAttackCommand",
+      "VoiceMove": "ChaosDroneMove",
+      "VoiceFeedback": "",
+      "DieSound": "ChaosDroneDie",
+      "MoveSound": "ChaosDroneMoveStart",
+      "MaxDebris": "2",
+      "Locomotor": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Destroyer",
+      "ThreatPosed": "25",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "Weight": ".5",
+      "ImmuneToPsionics": "yes",
+      "ImmuneToRadiation": "yes",
+      "Parasiteable": "yes",
+      "Trainable": "no",
+      "Explodes": "no",
+      "AccelerationFactor": "5",
+      "DeaccelerationFactor": "5",
+      "ZFudgeColumn": "8",
+      "ZFudgeTunnel": "13",
+      "Size": "2",
+      "Accelerates": "false",
+      "BerserkFriendly": "yes",
+      "CanPassiveAquire": "no",
+      "CanRetaliate": "no",
+      "Deployer": "yes",
+      "DeployFire": "yes",
+      "Bunkerable": "no",
+      "BuildTimeMultiplier": "1.1"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:ChaosDrone",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8762,
+          "section": "CAOS",
+          "key": "UIName",
+          "value": "Name:ChaosDrone"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8759,
+            "section": "CAOS",
+            "key": "UIName",
+            "value": "Name:ChaosDrone"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Chaos Drone",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8763,
+          "section": "CAOS",
+          "key": "Name",
+          "value": "Chaos Drone"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8760,
+            "section": "CAOS",
+            "key": "Name",
+            "value": "Chaos Drone"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AFV",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8765,
+          "section": "CAOS",
+          "key": "Category",
+          "value": "AFV"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8762,
+            "section": "CAOS",
+            "key": "Category",
+            "value": "AFV"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "YAWEAP",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8766,
+          "section": "CAOS",
+          "key": "Prerequisite",
+          "value": "YAWEAP"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8763,
+            "section": "CAOS",
+            "key": "Prerequisite",
+            "value": "YAWEAP"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "ChaosAttack",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8767,
+          "section": "CAOS",
+          "key": "Primary",
+          "value": "ChaosAttack"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8764,
+            "section": "CAOS",
+            "key": "Primary",
+            "value": "ChaosAttack"
+          }
+        ]
+      },
+      "Secondary": {
+        "value": "VirtualScanner",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8768,
+          "section": "CAOS",
+          "key": "Secondary",
+          "value": "VirtualScanner"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8765,
+            "section": "CAOS",
+            "key": "Secondary",
+            "value": "VirtualScanner"
+          }
+        ]
+      },
+      "NavalTargeting": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8769,
+          "section": "CAOS",
+          "key": "NavalTargeting",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8766,
+            "section": "CAOS",
+            "key": "NavalTargeting",
+            "value": "6"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "130",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8770,
+          "section": "CAOS",
+          "key": "Strength",
+          "value": "130"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8767,
+            "section": "CAOS",
+            "key": "Strength",
+            "value": "200"
+          }
+        ]
+      },
+      "SuppressionThreshold": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8771,
+          "section": "CAOS",
+          "key": "SuppressionThreshold",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8768,
+            "section": "CAOS",
+            "key": "SuppressionThreshold",
+            "value": "5"
+          }
+        ]
+      },
+      "ReselectIfLimboed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8772,
+          "section": "CAOS",
+          "key": "ReselectIfLimboed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8769,
+            "section": "CAOS",
+            "key": "ReselectIfLimboed",
+            "value": "yes"
+          }
+        ]
+      },
+      "DefaultToGuardArea": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8773,
+          "section": "CAOS",
+          "key": "DefaultToGuardArea",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8770,
+            "section": "CAOS",
+            "key": "DefaultToGuardArea",
+            "value": "yes"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8774,
+          "section": "CAOS",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8771,
+            "section": "CAOS",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8775,
+          "section": "CAOS",
+          "key": "TechLevel",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8772,
+            "section": "CAOS",
+            "key": "TechLevel",
+            "value": "4"
+          }
+        ]
+      },
+      "Turret": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8776,
+          "section": "CAOS",
+          "key": "Turret",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8773,
+            "section": "CAOS",
+            "key": "Turret",
+            "value": "no"
+          }
+        ]
+      },
+      "IsTilter": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8777,
+          "section": "CAOS",
+          "key": "IsTilter",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8774,
+            "section": "CAOS",
+            "key": "IsTilter",
+            "value": "no"
+          }
+        ]
+      },
+      "CrateGoodie": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8778,
+          "section": "CAOS",
+          "key": "CrateGoodie",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8775,
+            "section": "CAOS",
+            "key": "CrateGoodie",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "6",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8779,
+          "section": "CAOS",
+          "key": "Sight",
+          "value": "6"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8776,
+            "section": "CAOS",
+            "key": "Sight",
+            "value": "6"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8780,
+          "section": "CAOS",
+          "key": "Speed",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8777,
+            "section": "CAOS",
+            "key": "Speed",
+            "value": "8"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8781,
+          "section": "CAOS",
+          "key": "Owner",
+          "value": "YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8778,
+            "section": "CAOS",
+            "key": "Owner",
+            "value": "YuriCountry"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8782,
+          "section": "CAOS",
+          "key": "Cost",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8779,
+            "section": "CAOS",
+            "key": "Cost",
+            "value": "800"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8783,
+          "section": "CAOS",
+          "key": "Soylent",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8780,
+            "section": "CAOS",
+            "key": "Soylent",
+            "value": "800"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8784,
+          "section": "CAOS",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8781,
+            "section": "CAOS",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "40",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8785,
+          "section": "CAOS",
+          "key": "ROT",
+          "value": "40"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8782,
+            "section": "CAOS",
+            "key": "ROT",
+            "value": "40"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8786,
+          "section": "CAOS",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8783,
+            "section": "CAOS",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8787,
+          "section": "CAOS",
+          "key": "Crusher",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8784,
+            "section": "CAOS",
+            "key": "Crusher",
+            "value": "no"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8788,
+          "section": "CAOS",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8785,
+            "section": "CAOS",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8789,
+          "section": "CAOS",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8786,
+            "section": "CAOS",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8790,
+          "section": "CAOS",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8787,
+            "section": "CAOS",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "ChaosDroneSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8791,
+          "section": "CAOS",
+          "key": "VoiceSelect",
+          "value": "ChaosDroneSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8788,
+            "section": "CAOS",
+            "key": "VoiceSelect",
+            "value": "ChaosDroneSelect"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "ChaosDroneAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8792,
+          "section": "CAOS",
+          "key": "VoiceAttack",
+          "value": "ChaosDroneAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8789,
+            "section": "CAOS",
+            "key": "VoiceAttack",
+            "value": "ChaosDroneAttackCommand"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "ChaosDroneMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8793,
+          "section": "CAOS",
+          "key": "VoiceMove",
+          "value": "ChaosDroneMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8790,
+            "section": "CAOS",
+            "key": "VoiceMove",
+            "value": "ChaosDroneMove"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8794,
+          "section": "CAOS",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8791,
+            "section": "CAOS",
+            "key": "VoiceFeedback",
+            "value": ""
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "ChaosDroneDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8795,
+          "section": "CAOS",
+          "key": "DieSound",
+          "value": "ChaosDroneDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8792,
+            "section": "CAOS",
+            "key": "DieSound",
+            "value": "ChaosDroneDie"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "ChaosDroneMoveStart",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8796,
+          "section": "CAOS",
+          "key": "MoveSound",
+          "value": "ChaosDroneMoveStart"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8793,
+            "section": "CAOS",
+            "key": "MoveSound",
+            "value": "ChaosDroneMoveStart"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8797,
+          "section": "CAOS",
+          "key": "MaxDebris",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8794,
+            "section": "CAOS",
+            "key": "MaxDebris",
+            "value": "2"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8798,
+          "section": "CAOS",
+          "key": "Locomotor",
+          "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8795,
+            "section": "CAOS",
+            "key": "Locomotor",
+            "value": "{4A582741-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Destroyer",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8800,
+          "section": "CAOS",
+          "key": "MovementZone",
+          "value": "Destroyer"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8797,
+            "section": "CAOS",
+            "key": "MovementZone",
+            "value": "Destroyer"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8801,
+          "section": "CAOS",
+          "key": "ThreatPosed",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8798,
+            "section": "CAOS",
+            "key": "ThreatPosed",
+            "value": "25"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8802,
+          "section": "CAOS",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8799,
+            "section": "CAOS",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "Weight": {
+        "value": ".5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8803,
+          "section": "CAOS",
+          "key": "Weight",
+          "value": ".5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8800,
+            "section": "CAOS",
+            "key": "Weight",
+            "value": ".5"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8804,
+          "section": "CAOS",
+          "key": "ImmuneToPsionics",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8801,
+            "section": "CAOS",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8805,
+          "section": "CAOS",
+          "key": "ImmuneToRadiation",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8802,
+            "section": "CAOS",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          }
+        ]
+      },
+      "Parasiteable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8806,
+          "section": "CAOS",
+          "key": "Parasiteable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8803,
+            "section": "CAOS",
+            "key": "Parasiteable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8807,
+          "section": "CAOS",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8804,
+            "section": "CAOS",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "Explodes": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8808,
+          "section": "CAOS",
+          "key": "Explodes",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8805,
+            "section": "CAOS",
+            "key": "Explodes",
+            "value": "no"
+          }
+        ]
+      },
+      "AccelerationFactor": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8809,
+          "section": "CAOS",
+          "key": "AccelerationFactor",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8806,
+            "section": "CAOS",
+            "key": "AccelerationFactor",
+            "value": "5"
+          }
+        ]
+      },
+      "DeaccelerationFactor": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8810,
+          "section": "CAOS",
+          "key": "DeaccelerationFactor",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8807,
+            "section": "CAOS",
+            "key": "DeaccelerationFactor",
+            "value": "5"
+          }
+        ]
+      },
+      "ZFudgeColumn": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8811,
+          "section": "CAOS",
+          "key": "ZFudgeColumn",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8808,
+            "section": "CAOS",
+            "key": "ZFudgeColumn",
+            "value": "8"
+          }
+        ]
+      },
+      "ZFudgeTunnel": {
+        "value": "13",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8812,
+          "section": "CAOS",
+          "key": "ZFudgeTunnel",
+          "value": "13"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8809,
+            "section": "CAOS",
+            "key": "ZFudgeTunnel",
+            "value": "13"
+          }
+        ]
+      },
+      "Size": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8814,
+          "section": "CAOS",
+          "key": "Size",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8811,
+            "section": "CAOS",
+            "key": "Size",
+            "value": "2"
+          }
+        ]
+      },
+      "Accelerates": {
+        "value": "false",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8815,
+          "section": "CAOS",
+          "key": "Accelerates",
+          "value": "false"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8812,
+            "section": "CAOS",
+            "key": "Accelerates",
+            "value": "false"
+          }
+        ]
+      },
+      "BerserkFriendly": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8816,
+          "section": "CAOS",
+          "key": "BerserkFriendly",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8813,
+            "section": "CAOS",
+            "key": "BerserkFriendly",
+            "value": "yes"
+          }
+        ]
+      },
+      "CanPassiveAquire": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8818,
+          "section": "CAOS",
+          "key": "CanPassiveAquire",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8815,
+            "section": "CAOS",
+            "key": "CanPassiveAquire",
+            "value": "no"
+          }
+        ]
+      },
+      "CanRetaliate": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8819,
+          "section": "CAOS",
+          "key": "CanRetaliate",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8816,
+            "section": "CAOS",
+            "key": "CanRetaliate",
+            "value": "no"
+          }
+        ]
+      },
+      "Deployer": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8820,
+          "section": "CAOS",
+          "key": "Deployer",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8817,
+            "section": "CAOS",
+            "key": "Deployer",
+            "value": "yes"
+          }
+        ]
+      },
+      "DeployFire": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8821,
+          "section": "CAOS",
+          "key": "DeployFire",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8818,
+            "section": "CAOS",
+            "key": "DeployFire",
+            "value": "yes"
+          }
+        ]
+      },
+      "Bunkerable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8822,
+          "section": "CAOS",
+          "key": "Bunkerable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 8819,
+            "section": "CAOS",
+            "key": "Bunkerable",
+            "value": "no"
+          }
+        ]
+      },
+      "BuildTimeMultiplier": {
+        "value": "1.1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 8823,
+          "section": "CAOS",
+          "key": "BuildTimeMultiplier",
+          "value": "1.1"
+        },
+        "history": []
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "CAOSICON",
+      "AltCameo": "CAOSUICO",
+      "Voxel": true,
+      "Remapable": true
+    },
+    "raw_values": {
+      "Cameo": "CAOSICON",
+      "AltCameo": "CAOSUICO",
+      "Voxel": "yes",
+      "Remapable": "yes"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "CAOSICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 958,
+          "section": "CAOS",
+          "key": "Cameo",
+          "value": "CAOSICON"
+        },
+        "history": []
+      },
+      "AltCameo": {
+        "value": "CAOSUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 959,
+          "section": "CAOS",
+          "key": "AltCameo",
+          "value": "CAOSUICO"
+        },
+        "history": []
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 960,
+          "section": "CAOS",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 961,
+          "section": "CAOS",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      }
+    }
+  }
+}

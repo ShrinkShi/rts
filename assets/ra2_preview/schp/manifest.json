@@ -1,0 +1,203 @@
+{
+  "schema_version": 2,
+  "entity_id": "SCHP",
+  "category": "vehicle",
+  "visual_kind": "voxel",
+  "sources": [
+    "schp.vxl"
+  ],
+  "canvas": [
+    224,
+    192
+  ],
+  "available_theaters": [],
+  "default_animation": "HVA",
+  "animations": {
+    "HVA": {
+      "label": "HVA",
+      "directional": true,
+      "facing_count": 8,
+      "rate_ms": 90,
+      "loop": true,
+      "directions": {
+        "0": {
+          "frames": [
+            "hva_0_000.png",
+            "hva_0_001.png"
+          ],
+          "remap_masks": [
+            "hva_0_000_remap.png",
+            "hva_0_001_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        "1": {
+          "frames": [
+            "hva_1_000.png",
+            "hva_1_001.png"
+          ],
+          "remap_masks": [
+            "hva_1_000_remap.png",
+            "hva_1_001_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        "2": {
+          "frames": [
+            "hva_2_000.png",
+            "hva_2_001.png"
+          ],
+          "remap_masks": [
+            "hva_2_000_remap.png",
+            "hva_2_001_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        "3": {
+          "frames": [
+            "hva_3_000.png",
+            "hva_3_001.png"
+          ],
+          "remap_masks": [
+            "hva_3_000_remap.png",
+            "hva_3_001_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        "4": {
+          "frames": [
+            "hva_4_000.png",
+            "hva_4_001.png"
+          ],
+          "remap_masks": [
+            "hva_4_000_remap.png",
+            "hva_4_001_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        "5": {
+          "frames": [
+            "hva_5_000.png",
+            "hva_5_001.png"
+          ],
+          "remap_masks": [
+            "hva_5_000_remap.png",
+            "hva_5_001_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        "6": {
+          "frames": [
+            "hva_6_000.png",
+            "hva_6_001.png"
+          ],
+          "remap_masks": [
+            "hva_6_000_remap.png",
+            "hva_6_001_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1
+          ]
+        },
+        "7": {
+          "frames": [
+            "hva_7_000.png",
+            "hva_7_001.png"
+          ],
+          "remap_masks": [
+            "hva_7_000_remap.png",
+            "hva_7_001_remap.png"
+          ],
+          "source_indices": [
+            0,
+            1
+          ]
+        }
+      },
+      "frames": null,
+      "remap_masks": null,
+      "source_indices": null
+    },
+    "Deploy": {
+      "label": "Deploy",
+      "directional": false,
+      "facing_count": 1,
+      "rate_ms": 100,
+      "loop": true,
+      "directions": null,
+      "frames": [
+        "deploy_000.png",
+        "deploy_001.png",
+        "deploy_002.png",
+        "deploy_003.png",
+        "deploy_004.png",
+        "deploy_005.png",
+        "deploy_006.png",
+        "deploy_007.png",
+        "deploy_008.png",
+        "deploy_009.png",
+        "deploy_010.png"
+      ],
+      "remap_masks": [
+        "deploy_000_remap.png",
+        "deploy_001_remap.png",
+        "deploy_002_remap.png",
+        "deploy_003_remap.png",
+        "deploy_004_remap.png",
+        "deploy_005_remap.png",
+        "deploy_006_remap.png",
+        "deploy_007_remap.png",
+        "deploy_008_remap.png",
+        "deploy_009_remap.png",
+        "deploy_010_remap.png"
+      ],
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  "turret_offset_leptons": 0,
+  "primary_fire_flh": [
+    0.0,
+    0.0,
+    50.0
+  ],
+  "secondary_fire_flh": [
+    200.0,
+    0.0,
+    250.0
+  ],
+  "shadow_index": 2,
+  "use_turret_shadow": false,
+  "no_spawn_alt": false,
+  "render_note": "8-direction development preview using VXL/HVA geometry and VPL ramps."
+}

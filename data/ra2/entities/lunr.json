@@ -1,0 +1,3763 @@
+{
+  "id": "LUNR",
+  "category": "infantry",
+  "name_token": "Name:LUNR",
+  "art_id": "LUNR",
+  "owners": [
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "NAPILE",
+    "RADAR"
+  ],
+  "tech_level": 11,
+  "cost": 600,
+  "strength": 125,
+  "armor": "none",
+  "speed": 9,
+  "sight": 8,
+  "locomotor": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+  "movement_zone": "Fly",
+  "weapons": {
+    "Primary": {
+      "id": "Lunarlaser",
+      "projectile": "InvisibleAll",
+      "warhead": "LUNARWH",
+      "report": [
+        "LaserCosmoAttack"
+      ],
+      "values": {
+        "Damage": 25,
+        "ROF": 20,
+        "Range": 7,
+        "Projectile": "InvisibleAll",
+        "Speed": 40,
+        "Report": "LaserCosmoAttack",
+        "Warhead": "LUNARWH",
+        "Bright": true,
+        "IsHouseColor": true,
+        "LaserOuterSpread": "0,0,0",
+        "LaserDuration": 15,
+        "IsLaser": true
+      },
+      "raw_values": {
+        "Damage": "25",
+        "ROF": "20",
+        "Range": "7",
+        "Projectile": "InvisibleAll",
+        "Speed": "40",
+        "Report": "LaserCosmoAttack",
+        "Warhead": "LUNARWH",
+        "Bright": "yes",
+        "IsHouseColor": "true",
+        "LaserOuterSpread": "0,0,0",
+        "LaserDuration": "15",
+        "IsLaser": "true"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24242,
+            "section": "Lunarlaser",
+            "key": "Damage",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24234,
+              "section": "Lunarlaser",
+              "key": "Damage",
+              "value": "25"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24243,
+            "section": "Lunarlaser",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24235,
+              "section": "Lunarlaser",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24244,
+            "section": "Lunarlaser",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24236,
+              "section": "Lunarlaser",
+              "key": "Range",
+              "value": "7"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleAll",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24245,
+            "section": "Lunarlaser",
+            "key": "Projectile",
+            "value": "InvisibleAll"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24237,
+              "section": "Lunarlaser",
+              "key": "Projectile",
+              "value": "InvisibleAll"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "40",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24246,
+            "section": "Lunarlaser",
+            "key": "Speed",
+            "value": "40"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24238,
+              "section": "Lunarlaser",
+              "key": "Speed",
+              "value": "40"
+            }
+          ]
+        },
+        "Report": {
+          "value": "LaserCosmoAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24247,
+            "section": "Lunarlaser",
+            "key": "Report",
+            "value": "LaserCosmoAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24239,
+              "section": "Lunarlaser",
+              "key": "Report",
+              "value": "LaserCosmoAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "LUNARWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24248,
+            "section": "Lunarlaser",
+            "key": "Warhead",
+            "value": "LUNARWH"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24240,
+              "section": "Lunarlaser",
+              "key": "Warhead",
+              "value": "LUNARWH"
+            }
+          ]
+        },
+        "Bright": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24249,
+            "section": "Lunarlaser",
+            "key": "Bright",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24241,
+              "section": "Lunarlaser",
+              "key": "Bright",
+              "value": "yes"
+            }
+          ]
+        },
+        "IsHouseColor": {
+          "value": "true",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24250,
+            "section": "Lunarlaser",
+            "key": "IsHouseColor",
+            "value": "true"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24242,
+              "section": "Lunarlaser",
+              "key": "IsHouseColor",
+              "value": "true"
+            }
+          ]
+        },
+        "LaserOuterSpread": {
+          "value": "0,0,0",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24251,
+            "section": "Lunarlaser",
+            "key": "LaserOuterSpread",
+            "value": "0,0,0"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24243,
+              "section": "Lunarlaser",
+              "key": "LaserOuterSpread",
+              "value": "0,0,0"
+            }
+          ]
+        },
+        "LaserDuration": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24252,
+            "section": "Lunarlaser",
+            "key": "LaserDuration",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24244,
+              "section": "Lunarlaser",
+              "key": "LaserDuration",
+              "value": "15"
+            }
+          ]
+        },
+        "IsLaser": {
+          "value": "true",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24253,
+            "section": "Lunarlaser",
+            "key": "IsLaser",
+            "value": "true"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24245,
+              "section": "Lunarlaser",
+              "key": "IsLaser",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    },
+    "ElitePrimary": {
+      "id": "Lunarlaser",
+      "projectile": "InvisibleAll",
+      "warhead": "LUNARWH",
+      "report": [
+        "LaserCosmoAttack"
+      ],
+      "values": {
+        "Damage": 25,
+        "ROF": 20,
+        "Range": 7,
+        "Projectile": "InvisibleAll",
+        "Speed": 40,
+        "Report": "LaserCosmoAttack",
+        "Warhead": "LUNARWH",
+        "Bright": true,
+        "IsHouseColor": true,
+        "LaserOuterSpread": "0,0,0",
+        "LaserDuration": 15,
+        "IsLaser": true
+      },
+      "raw_values": {
+        "Damage": "25",
+        "ROF": "20",
+        "Range": "7",
+        "Projectile": "InvisibleAll",
+        "Speed": "40",
+        "Report": "LaserCosmoAttack",
+        "Warhead": "LUNARWH",
+        "Bright": "yes",
+        "IsHouseColor": "true",
+        "LaserOuterSpread": "0,0,0",
+        "LaserDuration": "15",
+        "IsLaser": "true"
+      },
+      "provenance": {
+        "Damage": {
+          "value": "25",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24242,
+            "section": "Lunarlaser",
+            "key": "Damage",
+            "value": "25"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24234,
+              "section": "Lunarlaser",
+              "key": "Damage",
+              "value": "25"
+            }
+          ]
+        },
+        "ROF": {
+          "value": "20",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24243,
+            "section": "Lunarlaser",
+            "key": "ROF",
+            "value": "20"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24235,
+              "section": "Lunarlaser",
+              "key": "ROF",
+              "value": "20"
+            }
+          ]
+        },
+        "Range": {
+          "value": "7",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24244,
+            "section": "Lunarlaser",
+            "key": "Range",
+            "value": "7"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24236,
+              "section": "Lunarlaser",
+              "key": "Range",
+              "value": "7"
+            }
+          ]
+        },
+        "Projectile": {
+          "value": "InvisibleAll",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24245,
+            "section": "Lunarlaser",
+            "key": "Projectile",
+            "value": "InvisibleAll"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24237,
+              "section": "Lunarlaser",
+              "key": "Projectile",
+              "value": "InvisibleAll"
+            }
+          ]
+        },
+        "Speed": {
+          "value": "40",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24246,
+            "section": "Lunarlaser",
+            "key": "Speed",
+            "value": "40"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24238,
+              "section": "Lunarlaser",
+              "key": "Speed",
+              "value": "40"
+            }
+          ]
+        },
+        "Report": {
+          "value": "LaserCosmoAttack",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24247,
+            "section": "Lunarlaser",
+            "key": "Report",
+            "value": "LaserCosmoAttack"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24239,
+              "section": "Lunarlaser",
+              "key": "Report",
+              "value": "LaserCosmoAttack"
+            }
+          ]
+        },
+        "Warhead": {
+          "value": "LUNARWH",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24248,
+            "section": "Lunarlaser",
+            "key": "Warhead",
+            "value": "LUNARWH"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24240,
+              "section": "Lunarlaser",
+              "key": "Warhead",
+              "value": "LUNARWH"
+            }
+          ]
+        },
+        "Bright": {
+          "value": "yes",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24249,
+            "section": "Lunarlaser",
+            "key": "Bright",
+            "value": "yes"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24241,
+              "section": "Lunarlaser",
+              "key": "Bright",
+              "value": "yes"
+            }
+          ]
+        },
+        "IsHouseColor": {
+          "value": "true",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24250,
+            "section": "Lunarlaser",
+            "key": "IsHouseColor",
+            "value": "true"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24242,
+              "section": "Lunarlaser",
+              "key": "IsHouseColor",
+              "value": "true"
+            }
+          ]
+        },
+        "LaserOuterSpread": {
+          "value": "0,0,0",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24251,
+            "section": "Lunarlaser",
+            "key": "LaserOuterSpread",
+            "value": "0,0,0"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24243,
+              "section": "Lunarlaser",
+              "key": "LaserOuterSpread",
+              "value": "0,0,0"
+            }
+          ]
+        },
+        "LaserDuration": {
+          "value": "15",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24252,
+            "section": "Lunarlaser",
+            "key": "LaserDuration",
+            "value": "15"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24244,
+              "section": "Lunarlaser",
+              "key": "LaserDuration",
+              "value": "15"
+            }
+          ]
+        },
+        "IsLaser": {
+          "value": "true",
+          "origin": {
+            "layer": "expandmd01",
+            "file": "rulesmd.ini",
+            "line": 24253,
+            "section": "Lunarlaser",
+            "key": "IsLaser",
+            "value": "true"
+          },
+          "history": [
+            {
+              "layer": "ra2md",
+              "file": "rulesmd.ini",
+              "line": 24245,
+              "section": "Lunarlaser",
+              "key": "IsLaser",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sounds": {
+    "VoiceSelect": [
+      "LaserCosmoSelect"
+    ],
+    "VoiceMove": [
+      "LaserCosmoMove"
+    ],
+    "VoiceAttack": [
+      "LaserCosmoAttackCommand"
+    ],
+    "VoiceFeedback": [
+      "LaserCosmoFear"
+    ],
+    "VoiceSpecialAttack": [
+      "LaserCosmoMove"
+    ],
+    "MoveSound": [
+      "RocketeerMoveLoop"
+    ]
+  },
+  "visuals": {
+    "kind": "shp",
+    "art_id": "LUNR",
+    "new_theater": false,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 5714,
+          "pack": "ra2md",
+          "relative_path": "conqmd/lunr.shp",
+          "folder": "conqmd",
+          "filename": "lunr.shp",
+          "stem": "lunr",
+          "extension": ".shp",
+          "size": 303808,
+          "sha1": "8895e292cecc9dc5ec4b2195708306533447c299"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 5714,
+          "pack": "ra2md",
+          "relative_path": "conqmd/lunr.shp",
+          "folder": "conqmd",
+          "filename": "lunr.shp",
+          "stem": "lunr",
+          "extension": ".shp",
+          "size": 303808,
+          "sha1": "8895e292cecc9dc5ec4b2195708306533447c299"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 5714,
+          "pack": "ra2md",
+          "relative_path": "conqmd/lunr.shp",
+          "folder": "conqmd",
+          "filename": "lunr.shp",
+          "stem": "lunr",
+          "extension": ".shp",
+          "size": 303808,
+          "sha1": "8895e292cecc9dc5ec4b2195708306533447c299"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 5714,
+          "pack": "ra2md",
+          "relative_path": "conqmd/lunr.shp",
+          "folder": "conqmd",
+          "filename": "lunr.shp",
+          "stem": "lunr",
+          "extension": ".shp",
+          "size": 303808,
+          "sha1": "8895e292cecc9dc5ec4b2195708306533447c299"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 5714,
+          "pack": "ra2md",
+          "relative_path": "conqmd/lunr.shp",
+          "folder": "conqmd",
+          "filename": "lunr.shp",
+          "stem": "lunr",
+          "extension": ".shp",
+          "size": 303808,
+          "sha1": "8895e292cecc9dc5ec4b2195708306533447c299"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 5714,
+          "pack": "ra2md",
+          "relative_path": "conqmd/lunr.shp",
+          "folder": "conqmd",
+          "filename": "lunr.shp",
+          "stem": "lunr",
+          "extension": ".shp",
+          "size": 303808,
+          "sha1": "8895e292cecc9dc5ec4b2195708306533447c299"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "sequence_id": "RocketeerSequence",
+    "sequences": {
+      "Ready": {
+        "name": "Ready",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Guard": {
+        "name": "Guard",
+        "start": 0,
+        "frames": 1,
+        "facing_stride": 1,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            6
+          ],
+          "1": [
+            5
+          ],
+          "2": [
+            4
+          ],
+          "3": [
+            3
+          ],
+          "4": [
+            2
+          ],
+          "5": [
+            1
+          ],
+          "6": [
+            0
+          ],
+          "7": [
+            7
+          ]
+        }
+      },
+      "Prone": {
+        "name": "Prone",
+        "start": 86,
+        "frames": 1,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122
+          ],
+          "1": [
+            116
+          ],
+          "2": [
+            110
+          ],
+          "3": [
+            104
+          ],
+          "4": [
+            98
+          ],
+          "5": [
+            92
+          ],
+          "6": [
+            86
+          ],
+          "7": [
+            128
+          ]
+        }
+      },
+      "Walk": {
+        "name": "Walk",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      },
+      "FireUp": {
+        "name": "FireUp",
+        "start": 164,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205
+          ],
+          "1": [
+            194,
+            195,
+            196,
+            197,
+            198,
+            199
+          ],
+          "2": [
+            188,
+            189,
+            190,
+            191,
+            192,
+            193
+          ],
+          "3": [
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "4": [
+            176,
+            177,
+            178,
+            179,
+            180,
+            181
+          ],
+          "5": [
+            170,
+            171,
+            172,
+            173,
+            174,
+            175
+          ],
+          "6": [
+            164,
+            165,
+            166,
+            167,
+            168,
+            169
+          ],
+          "7": [
+            206,
+            207,
+            208,
+            209,
+            210,
+            211
+          ]
+        }
+      },
+      "Down": {
+        "name": "Down",
+        "start": 260,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            272,
+            273
+          ],
+          "1": [
+            270,
+            271
+          ],
+          "2": [
+            268,
+            269
+          ],
+          "3": [
+            266,
+            267
+          ],
+          "4": [
+            264,
+            265
+          ],
+          "5": [
+            262,
+            263
+          ],
+          "6": [
+            260,
+            261
+          ],
+          "7": [
+            274,
+            275
+          ]
+        }
+      },
+      "Crawl": {
+        "name": "Crawl",
+        "start": 86,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "1": [
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ],
+          "2": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "3": [
+            104,
+            105,
+            106,
+            107,
+            108,
+            109
+          ],
+          "4": [
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "5": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "6": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91
+          ],
+          "7": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133
+          ]
+        }
+      },
+      "Up": {
+        "name": "Up",
+        "start": 276,
+        "frames": 2,
+        "facing_stride": 2,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            288,
+            289
+          ],
+          "1": [
+            286,
+            287
+          ],
+          "2": [
+            284,
+            285
+          ],
+          "3": [
+            282,
+            283
+          ],
+          "4": [
+            280,
+            281
+          ],
+          "5": [
+            278,
+            279
+          ],
+          "6": [
+            276,
+            277
+          ],
+          "7": [
+            290,
+            291
+          ]
+        }
+      },
+      "FireProne": {
+        "name": "FireProne",
+        "start": 212,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            248,
+            249,
+            250,
+            251,
+            252,
+            253
+          ],
+          "1": [
+            242,
+            243,
+            244,
+            245,
+            246,
+            247
+          ],
+          "2": [
+            236,
+            237,
+            238,
+            239,
+            240,
+            241
+          ],
+          "3": [
+            230,
+            231,
+            232,
+            233,
+            234,
+            235
+          ],
+          "4": [
+            224,
+            225,
+            226,
+            227,
+            228,
+            229
+          ],
+          "5": [
+            218,
+            219,
+            220,
+            221,
+            222,
+            223
+          ],
+          "6": [
+            212,
+            213,
+            214,
+            215,
+            216,
+            217
+          ],
+          "7": [
+            254,
+            255,
+            256,
+            257,
+            258,
+            259
+          ]
+        }
+      },
+      "Idle1": {
+        "name": "Idle1",
+        "start": 56,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "S",
+        "reverse": false,
+        "extra": [
+          "S"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        }
+      },
+      "Idle2": {
+        "name": "Idle2",
+        "start": 71,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ]
+        }
+      },
+      "Die1": {
+        "name": "Die1",
+        "start": 134,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148
+          ]
+        }
+      },
+      "Die2": {
+        "name": "Die2",
+        "start": 149,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163
+          ]
+        }
+      },
+      "Die3": {
+        "name": "Die3",
+        "start": 0,
+        "frames": 0,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": []
+        }
+      },
+      "Die4": {
+        "name": "Die4",
+        "start": 0,
+        "frames": 0,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": []
+        }
+      },
+      "Die5": {
+        "name": "Die5",
+        "start": 0,
+        "frames": 0,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": []
+        }
+      },
+      "Fly": {
+        "name": "Fly",
+        "start": 292,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            328,
+            329,
+            330,
+            331,
+            332,
+            333
+          ],
+          "1": [
+            322,
+            323,
+            324,
+            325,
+            326,
+            327
+          ],
+          "2": [
+            316,
+            317,
+            318,
+            319,
+            320,
+            321
+          ],
+          "3": [
+            310,
+            311,
+            312,
+            313,
+            314,
+            315
+          ],
+          "4": [
+            304,
+            305,
+            306,
+            307,
+            308,
+            309
+          ],
+          "5": [
+            298,
+            299,
+            300,
+            301,
+            302,
+            303
+          ],
+          "6": [
+            292,
+            293,
+            294,
+            295,
+            296,
+            297
+          ],
+          "7": [
+            334,
+            335,
+            336,
+            337,
+            338,
+            339
+          ]
+        }
+      },
+      "Hover": {
+        "name": "Hover",
+        "start": 292,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            328,
+            329,
+            330,
+            331,
+            332,
+            333
+          ],
+          "1": [
+            322,
+            323,
+            324,
+            325,
+            326,
+            327
+          ],
+          "2": [
+            316,
+            317,
+            318,
+            319,
+            320,
+            321
+          ],
+          "3": [
+            310,
+            311,
+            312,
+            313,
+            314,
+            315
+          ],
+          "4": [
+            304,
+            305,
+            306,
+            307,
+            308,
+            309
+          ],
+          "5": [
+            298,
+            299,
+            300,
+            301,
+            302,
+            303
+          ],
+          "6": [
+            292,
+            293,
+            294,
+            295,
+            296,
+            297
+          ],
+          "7": [
+            334,
+            335,
+            336,
+            337,
+            338,
+            339
+          ]
+        }
+      },
+      "FireFly": {
+        "name": "FireFly",
+        "start": 370,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            406,
+            407,
+            408,
+            409,
+            410,
+            411
+          ],
+          "1": [
+            400,
+            401,
+            402,
+            403,
+            404,
+            405
+          ],
+          "2": [
+            394,
+            395,
+            396,
+            397,
+            398,
+            399
+          ],
+          "3": [
+            388,
+            389,
+            390,
+            391,
+            392,
+            393
+          ],
+          "4": [
+            382,
+            383,
+            384,
+            385,
+            386,
+            387
+          ],
+          "5": [
+            376,
+            377,
+            378,
+            379,
+            380,
+            381
+          ],
+          "6": [
+            370,
+            371,
+            372,
+            373,
+            374,
+            375
+          ],
+          "7": [
+            412,
+            413,
+            414,
+            415,
+            416,
+            417
+          ]
+        }
+      },
+      "Tumble": {
+        "name": "Tumble",
+        "start": 340,
+        "frames": 15,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            340,
+            341,
+            342,
+            343,
+            344,
+            345,
+            346,
+            347,
+            348,
+            349,
+            350,
+            351,
+            352,
+            353,
+            354
+          ]
+        }
+      },
+      "AirDeathStart": {
+        "name": "AirDeathStart",
+        "start": 340,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            340,
+            341,
+            342,
+            343,
+            344,
+            345,
+            346,
+            347
+          ]
+        }
+      },
+      "AirDeathFalling": {
+        "name": "AirDeathFalling",
+        "start": 348,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            348
+          ]
+        }
+      },
+      "AirDeathFinish": {
+        "name": "AirDeathFinish",
+        "start": 349,
+        "frames": 6,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            349,
+            350,
+            351,
+            352,
+            353,
+            354
+          ]
+        }
+      },
+      "Paradrop": {
+        "name": "Paradrop",
+        "start": 418,
+        "frames": 1,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            418
+          ]
+        }
+      },
+      "Cheer": {
+        "name": "Cheer",
+        "start": 419,
+        "frames": 8,
+        "facing_stride": 0,
+        "directional": false,
+        "facing_count": 1,
+        "facing_override": "E",
+        "reverse": false,
+        "extra": [
+          "E"
+        ],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            419,
+            420,
+            421,
+            422,
+            423,
+            424,
+            425,
+            426
+          ]
+        }
+      },
+      "Panic": {
+        "name": "Panic",
+        "start": 8,
+        "frames": 6,
+        "facing_stride": 6,
+        "directional": true,
+        "facing_count": 8,
+        "facing_override": "",
+        "reverse": false,
+        "extra": [],
+        "ra2_facing_order": [
+          "N",
+          "NW",
+          "W",
+          "SW",
+          "S",
+          "SE",
+          "E",
+          "NE"
+        ],
+        "godot_to_ra2": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          7
+        ],
+        "godot_frames": {
+          "0": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "1": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "2": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "3": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "4": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "5": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "6": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "7": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ]
+        }
+      }
+    }
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:LUNR",
+      "Name": "Lunar Infantry",
+      "Image": "LUNR",
+      "Category": "Soldier",
+      "JumpJet": true,
+      "Primary": "Lunarlaser",
+      "Prerequisite": "NAPILE,RADAR",
+      "Crushable": true,
+      "Strength": 125,
+      "Fearless": true,
+      "Armor": "none",
+      "TechLevel": 11,
+      "Sight": 8,
+      "Pip": "white",
+      "Speed": 9,
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 600,
+      "Soylent": 250,
+      "Points": 15,
+      "IsSelectableCombatant": true,
+      "VoiceSelect": "LaserCosmoSelect",
+      "VoiceMove": "LaserCosmoMove",
+      "VoiceAttack": "LaserCosmoAttackCommand",
+      "VoiceFeedback": "LaserCosmoFear",
+      "VoiceSpecialAttack": "LaserCosmoMove",
+      "DieSound": "",
+      "CrashingSound": "RocketeerDie",
+      "ImpactLandSound": "RocketeerCrash",
+      "Locomotor": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+      "PhysicalSize": 1,
+      "MovementZone": "Fly",
+      "ConsideredAircraft": true,
+      "ThreatPosed": 15,
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "JumpjetSpeed": 30,
+      "JumpjetClimb": 20,
+      "JumpjetCrash": 25,
+      "JumpJetAccel": 10,
+      "JumpJetTurnRate": 10,
+      "JumpjetHeight": 500,
+      "JumpjetWobbles": 0.01,
+      "JumpjetDeviation": 1,
+      "JumpjetNoWobbles": true,
+      "Size": 1,
+      "SpeedType": "Hover",
+      "HoverAttack": true,
+      "Crashable": true,
+      "BalloonHover": true,
+      "MoveSound": "RocketeerMoveLoop",
+      "ElitePrimary": "Lunarlaser",
+      "JumpJetTurn": true
+    },
+    "raw_values": {
+      "UIName": "Name:LUNR",
+      "Name": "Lunar Infantry",
+      "Image": "LUNR",
+      "Category": "Soldier",
+      "JumpJet": "yes",
+      "Primary": "Lunarlaser",
+      "Prerequisite": "NAPILE,RADAR",
+      "Crushable": "yes",
+      "Strength": "125",
+      "Fearless": "yes",
+      "Armor": "none",
+      "TechLevel": "11",
+      "Sight": "8",
+      "Pip": "white",
+      "Speed": "9",
+      "Owner": "Russians,Confederation,Africans,Arabs",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "600",
+      "Soylent": "250",
+      "Points": "15",
+      "IsSelectableCombatant": "yes",
+      "VoiceSelect": "LaserCosmoSelect",
+      "VoiceMove": "LaserCosmoMove",
+      "VoiceAttack": "LaserCosmoAttackCommand",
+      "VoiceFeedback": "LaserCosmoFear",
+      "VoiceSpecialAttack": "LaserCosmoMove",
+      "DieSound": "",
+      "CrashingSound": "RocketeerDie",
+      "ImpactLandSound": "RocketeerCrash",
+      "Locomotor": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+      "PhysicalSize": "1",
+      "MovementZone": "Fly",
+      "ConsideredAircraft": "yes",
+      "ThreatPosed": "15",
+      "VeteranAbilities": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+      "EliteAbilities": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+      "JumpjetSpeed": "30",
+      "JumpjetClimb": "20",
+      "JumpjetCrash": "25",
+      "JumpJetAccel": "10",
+      "JumpJetTurnRate": "10",
+      "JumpjetHeight": "500",
+      "JumpjetWobbles": ".01",
+      "JumpjetDeviation": "1",
+      "JumpjetNoWobbles": "yes",
+      "Size": "1",
+      "SpeedType": "Hover",
+      "HoverAttack": "yes",
+      "Crashable": "yes",
+      "BalloonHover": "yes",
+      "MoveSound": "RocketeerMoveLoop",
+      "ElitePrimary": "Lunarlaser",
+      "JumpJetTurn": "yes"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:LUNR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4711,
+          "section": "LUNR",
+          "key": "UIName",
+          "value": "Name:LUNR"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4710,
+            "section": "LUNR",
+            "key": "UIName",
+            "value": "Name:LUNR"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Lunar Infantry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4712,
+          "section": "LUNR",
+          "key": "Name",
+          "value": "Lunar Infantry"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4711,
+            "section": "LUNR",
+            "key": "Name",
+            "value": "Lunar Infantry"
+          }
+        ]
+      },
+      "Image": {
+        "value": "LUNR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4713,
+          "section": "LUNR",
+          "key": "Image",
+          "value": "LUNR"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4712,
+            "section": "LUNR",
+            "key": "Image",
+            "value": "LUNR"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Soldier",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4714,
+          "section": "LUNR",
+          "key": "Category",
+          "value": "Soldier"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4713,
+            "section": "LUNR",
+            "key": "Category",
+            "value": "Soldier"
+          }
+        ]
+      },
+      "JumpJet": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4715,
+          "section": "LUNR",
+          "key": "JumpJet",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4714,
+            "section": "LUNR",
+            "key": "JumpJet",
+            "value": "yes"
+          }
+        ]
+      },
+      "Primary": {
+        "value": "Lunarlaser",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4716,
+          "section": "LUNR",
+          "key": "Primary",
+          "value": "Lunarlaser"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4715,
+            "section": "LUNR",
+            "key": "Primary",
+            "value": "Lunarlaser"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "NAPILE,RADAR",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4717,
+          "section": "LUNR",
+          "key": "Prerequisite",
+          "value": "NAPILE,RADAR"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4716,
+            "section": "LUNR",
+            "key": "Prerequisite",
+            "value": "NAPILE,RADAR"
+          }
+        ]
+      },
+      "Crushable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4718,
+          "section": "LUNR",
+          "key": "Crushable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4717,
+            "section": "LUNR",
+            "key": "Crushable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "125",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4719,
+          "section": "LUNR",
+          "key": "Strength",
+          "value": "125"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4718,
+            "section": "LUNR",
+            "key": "Strength",
+            "value": "125"
+          }
+        ]
+      },
+      "Fearless": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4720,
+          "section": "LUNR",
+          "key": "Fearless",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4719,
+            "section": "LUNR",
+            "key": "Fearless",
+            "value": "yes"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "none",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4721,
+          "section": "LUNR",
+          "key": "Armor",
+          "value": "none"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4720,
+            "section": "LUNR",
+            "key": "Armor",
+            "value": "none"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "11",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4722,
+          "section": "LUNR",
+          "key": "TechLevel",
+          "value": "11"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4721,
+            "section": "LUNR",
+            "key": "TechLevel",
+            "value": "11"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4723,
+          "section": "LUNR",
+          "key": "Sight",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4722,
+            "section": "LUNR",
+            "key": "Sight",
+            "value": "8"
+          }
+        ]
+      },
+      "Pip": {
+        "value": "white",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4724,
+          "section": "LUNR",
+          "key": "Pip",
+          "value": "white"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4723,
+            "section": "LUNR",
+            "key": "Pip",
+            "value": "white"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "9",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4725,
+          "section": "LUNR",
+          "key": "Speed",
+          "value": "9"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4724,
+            "section": "LUNR",
+            "key": "Speed",
+            "value": "9"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "Russians,Confederation,Africans,Arabs",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4726,
+          "section": "LUNR",
+          "key": "Owner",
+          "value": "Russians,Confederation,Africans,Arabs"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4725,
+            "section": "LUNR",
+            "key": "Owner",
+            "value": "Russians,Confederation,Africans,Arabs"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4727,
+          "section": "LUNR",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4726,
+            "section": "LUNR",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "600",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4728,
+          "section": "LUNR",
+          "key": "Cost",
+          "value": "600"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4727,
+            "section": "LUNR",
+            "key": "Cost",
+            "value": "600"
+          }
+        ]
+      },
+      "Soylent": {
+        "value": "250",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4729,
+          "section": "LUNR",
+          "key": "Soylent",
+          "value": "250"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4728,
+            "section": "LUNR",
+            "key": "Soylent",
+            "value": "250"
+          }
+        ]
+      },
+      "Points": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4730,
+          "section": "LUNR",
+          "key": "Points",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4729,
+            "section": "LUNR",
+            "key": "Points",
+            "value": "15"
+          }
+        ]
+      },
+      "IsSelectableCombatant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4731,
+          "section": "LUNR",
+          "key": "IsSelectableCombatant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4730,
+            "section": "LUNR",
+            "key": "IsSelectableCombatant",
+            "value": "yes"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "LaserCosmoSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4732,
+          "section": "LUNR",
+          "key": "VoiceSelect",
+          "value": "LaserCosmoSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4731,
+            "section": "LUNR",
+            "key": "VoiceSelect",
+            "value": "LaserCosmoSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "LaserCosmoMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4733,
+          "section": "LUNR",
+          "key": "VoiceMove",
+          "value": "LaserCosmoMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4732,
+            "section": "LUNR",
+            "key": "VoiceMove",
+            "value": "LaserCosmoMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "LaserCosmoAttackCommand",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4734,
+          "section": "LUNR",
+          "key": "VoiceAttack",
+          "value": "LaserCosmoAttackCommand"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4733,
+            "section": "LUNR",
+            "key": "VoiceAttack",
+            "value": "LaserCosmoAttackCommand"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "LaserCosmoFear",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4735,
+          "section": "LUNR",
+          "key": "VoiceFeedback",
+          "value": "LaserCosmoFear"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4734,
+            "section": "LUNR",
+            "key": "VoiceFeedback",
+            "value": "LaserCosmoFear"
+          }
+        ]
+      },
+      "VoiceSpecialAttack": {
+        "value": "LaserCosmoMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4736,
+          "section": "LUNR",
+          "key": "VoiceSpecialAttack",
+          "value": "LaserCosmoMove"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4735,
+            "section": "LUNR",
+            "key": "VoiceSpecialAttack",
+            "value": "LaserCosmoMove"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4737,
+          "section": "LUNR",
+          "key": "DieSound",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4736,
+            "section": "LUNR",
+            "key": "DieSound",
+            "value": ""
+          }
+        ]
+      },
+      "CrashingSound": {
+        "value": "RocketeerDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4738,
+          "section": "LUNR",
+          "key": "CrashingSound",
+          "value": "RocketeerDie"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4737,
+            "section": "LUNR",
+            "key": "CrashingSound",
+            "value": "RocketeerDie"
+          }
+        ]
+      },
+      "ImpactLandSound": {
+        "value": "RocketeerCrash",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4739,
+          "section": "LUNR",
+          "key": "ImpactLandSound",
+          "value": "RocketeerCrash"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4738,
+            "section": "LUNR",
+            "key": "ImpactLandSound",
+            "value": "RocketeerCrash"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{92612C46-F71F-11d1-AC9F-006008055BB5}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4740,
+          "section": "LUNR",
+          "key": "Locomotor",
+          "value": "{92612C46-F71F-11d1-AC9F-006008055BB5}"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4739,
+            "section": "LUNR",
+            "key": "Locomotor",
+            "value": "{92612C46-F71F-11d1-AC9F-006008055BB5}"
+          }
+        ]
+      },
+      "PhysicalSize": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4741,
+          "section": "LUNR",
+          "key": "PhysicalSize",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4740,
+            "section": "LUNR",
+            "key": "PhysicalSize",
+            "value": "1"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Fly",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4742,
+          "section": "LUNR",
+          "key": "MovementZone",
+          "value": "Fly"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4741,
+            "section": "LUNR",
+            "key": "MovementZone",
+            "value": "Fly"
+          }
+        ]
+      },
+      "ConsideredAircraft": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4743,
+          "section": "LUNR",
+          "key": "ConsideredAircraft",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4742,
+            "section": "LUNR",
+            "key": "ConsideredAircraft",
+            "value": "yes"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4744,
+          "section": "LUNR",
+          "key": "ThreatPosed",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4743,
+            "section": "LUNR",
+            "key": "ThreatPosed",
+            "value": "15"
+          }
+        ]
+      },
+      "VeteranAbilities": {
+        "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4745,
+          "section": "LUNR",
+          "key": "VeteranAbilities",
+          "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4744,
+            "section": "LUNR",
+            "key": "VeteranAbilities",
+            "value": "STRONGER,FIREPOWER,ROF,SIGHT,FASTER"
+          }
+        ]
+      },
+      "EliteAbilities": {
+        "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4746,
+          "section": "LUNR",
+          "key": "EliteAbilities",
+          "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4745,
+            "section": "LUNR",
+            "key": "EliteAbilities",
+            "value": "SELF_HEAL,STRONGER,FIREPOWER,ROF"
+          }
+        ]
+      },
+      "JumpjetSpeed": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4747,
+          "section": "LUNR",
+          "key": "JumpjetSpeed",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4746,
+            "section": "LUNR",
+            "key": "JumpjetSpeed",
+            "value": "30"
+          }
+        ]
+      },
+      "JumpjetClimb": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4748,
+          "section": "LUNR",
+          "key": "JumpjetClimb",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4747,
+            "section": "LUNR",
+            "key": "JumpjetClimb",
+            "value": "20"
+          }
+        ]
+      },
+      "JumpjetCrash": {
+        "value": "25",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4749,
+          "section": "LUNR",
+          "key": "JumpjetCrash",
+          "value": "25"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4748,
+            "section": "LUNR",
+            "key": "JumpjetCrash",
+            "value": "25"
+          }
+        ]
+      },
+      "JumpJetAccel": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4750,
+          "section": "LUNR",
+          "key": "JumpJetAccel",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4749,
+            "section": "LUNR",
+            "key": "JumpJetAccel",
+            "value": "10"
+          }
+        ]
+      },
+      "JumpJetTurnRate": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4751,
+          "section": "LUNR",
+          "key": "JumpJetTurnRate",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4750,
+            "section": "LUNR",
+            "key": "JumpJetTurnRate",
+            "value": "10"
+          }
+        ]
+      },
+      "JumpjetHeight": {
+        "value": "500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4752,
+          "section": "LUNR",
+          "key": "JumpjetHeight",
+          "value": "500"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4751,
+            "section": "LUNR",
+            "key": "JumpjetHeight",
+            "value": "500"
+          }
+        ]
+      },
+      "JumpjetWobbles": {
+        "value": ".01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4753,
+          "section": "LUNR",
+          "key": "JumpjetWobbles",
+          "value": ".01"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4752,
+            "section": "LUNR",
+            "key": "JumpjetWobbles",
+            "value": ".01"
+          }
+        ]
+      },
+      "JumpjetDeviation": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4754,
+          "section": "LUNR",
+          "key": "JumpjetDeviation",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4753,
+            "section": "LUNR",
+            "key": "JumpjetDeviation",
+            "value": "1"
+          }
+        ]
+      },
+      "JumpjetNoWobbles": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4755,
+          "section": "LUNR",
+          "key": "JumpjetNoWobbles",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4754,
+            "section": "LUNR",
+            "key": "JumpjetNoWobbles",
+            "value": "yes"
+          }
+        ]
+      },
+      "Size": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4756,
+          "section": "LUNR",
+          "key": "Size",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4755,
+            "section": "LUNR",
+            "key": "Size",
+            "value": "1"
+          }
+        ]
+      },
+      "SpeedType": {
+        "value": "Hover",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4757,
+          "section": "LUNR",
+          "key": "SpeedType",
+          "value": "Hover"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4756,
+            "section": "LUNR",
+            "key": "SpeedType",
+            "value": "Hover"
+          }
+        ]
+      },
+      "HoverAttack": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4758,
+          "section": "LUNR",
+          "key": "HoverAttack",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4757,
+            "section": "LUNR",
+            "key": "HoverAttack",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crashable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4759,
+          "section": "LUNR",
+          "key": "Crashable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4758,
+            "section": "LUNR",
+            "key": "Crashable",
+            "value": "yes"
+          }
+        ]
+      },
+      "BalloonHover": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4760,
+          "section": "LUNR",
+          "key": "BalloonHover",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4759,
+            "section": "LUNR",
+            "key": "BalloonHover",
+            "value": "yes"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "RocketeerMoveLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4761,
+          "section": "LUNR",
+          "key": "MoveSound",
+          "value": "RocketeerMoveLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4760,
+            "section": "LUNR",
+            "key": "MoveSound",
+            "value": "RocketeerMoveLoop"
+          }
+        ]
+      },
+      "ElitePrimary": {
+        "value": "Lunarlaser",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4762,
+          "section": "LUNR",
+          "key": "ElitePrimary",
+          "value": "Lunarlaser"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4761,
+            "section": "LUNR",
+            "key": "ElitePrimary",
+            "value": "Lunarlaser"
+          }
+        ]
+      },
+      "JumpJetTurn": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 4763,
+          "section": "LUNR",
+          "key": "JumpJetTurn",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 4762,
+            "section": "LUNR",
+            "key": "JumpJetTurn",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Image": "LUNR",
+      "Cameo": "LUNRICON",
+      "AltCameo": "LUNRUICO",
+      "Sequence": "RocketeerSequence",
+      "Crawls": false,
+      "Remapable": true,
+      "FireUp": 2,
+      "PrimaryFireFLH": "75,-50,85"
+    },
+    "raw_values": {
+      "Image": "LUNR",
+      "Cameo": "LUNRICON",
+      "AltCameo": "LUNRUICO",
+      "Sequence": "RocketeerSequence",
+      "Crawls": "no",
+      "Remapable": "yes",
+      "FireUp": "2",
+      "PrimaryFireFLH": "75,-50,85"
+    },
+    "provenance": {
+      "Image": {
+        "value": "LUNR",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 122,
+          "section": "LUNR",
+          "key": "Image",
+          "value": "LUNR"
+        },
+        "history": []
+      },
+      "Cameo": {
+        "value": "LUNRICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 123,
+          "section": "LUNR",
+          "key": "Cameo",
+          "value": "LUNRICON"
+        },
+        "history": []
+      },
+      "AltCameo": {
+        "value": "LUNRUICO",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 124,
+          "section": "LUNR",
+          "key": "AltCameo",
+          "value": "LUNRUICO"
+        },
+        "history": []
+      },
+      "Sequence": {
+        "value": "RocketeerSequence",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 125,
+          "section": "LUNR",
+          "key": "Sequence",
+          "value": "RocketeerSequence"
+        },
+        "history": []
+      },
+      "Crawls": {
+        "value": "no",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 126,
+          "section": "LUNR",
+          "key": "Crawls",
+          "value": "no"
+        },
+        "history": []
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 127,
+          "section": "LUNR",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "FireUp": {
+        "value": "2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 128,
+          "section": "LUNR",
+          "key": "FireUp",
+          "value": "2"
+        },
+        "history": []
+      },
+      "PrimaryFireFLH": {
+        "value": "75,-50,85",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 129,
+          "section": "LUNR",
+          "key": "PrimaryFireFLH",
+          "value": "75,-50,85"
+        },
+        "history": []
+      }
+    }
+  }
+}

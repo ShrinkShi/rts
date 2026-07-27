@@ -1,0 +1,4155 @@
+{
+  "id": "GASPYSAT",
+  "category": "building",
+  "name_token": "Name:GASPYSAT",
+  "art_id": "GASPST",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [
+    "GATECH",
+    "GACNST"
+  ],
+  "tech_level": 9,
+  "cost": 1500,
+  "strength": 1000,
+  "armor": "wood",
+  "speed": 0,
+  "sight": 5,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "GASPST",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 386,
+          "pack": "ra2",
+          "relative_path": "generic/ggspst.shp",
+          "folder": "generic",
+          "filename": "ggspst.shp",
+          "stem": "ggspst",
+          "extension": ".shp",
+          "size": 19592,
+          "sha1": "20cf697299cf4101291bd55f1cfd55d1f8b4a68f"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 4941,
+          "pack": "ra2",
+          "relative_path": "snow/gaspst.shp",
+          "folder": "snow",
+          "filename": "gaspst.shp",
+          "stem": "gaspst",
+          "extension": ".shp",
+          "size": 19592,
+          "sha1": "36009a41f867ebb1f4e7de94eaf0831ffe64e96d"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 386,
+          "pack": "ra2",
+          "relative_path": "generic/ggspst.shp",
+          "folder": "generic",
+          "filename": "ggspst.shp",
+          "stem": "ggspst",
+          "extension": ".shp",
+          "size": 19592,
+          "sha1": "20cf697299cf4101291bd55f1cfd55d1f8b4a68f"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 386,
+          "pack": "ra2",
+          "relative_path": "generic/ggspst.shp",
+          "folder": "generic",
+          "filename": "ggspst.shp",
+          "stem": "ggspst",
+          "extension": ".shp",
+          "size": 19592,
+          "sha1": "20cf697299cf4101291bd55f1cfd55d1f8b4a68f"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 386,
+          "pack": "ra2",
+          "relative_path": "generic/ggspst.shp",
+          "folder": "generic",
+          "filename": "ggspst.shp",
+          "stem": "ggspst",
+          "extension": ".shp",
+          "size": 19592,
+          "sha1": "20cf697299cf4101291bd55f1cfd55d1f8b4a68f"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 386,
+          "pack": "ra2",
+          "relative_path": "generic/ggspst.shp",
+          "folder": "generic",
+          "filename": "ggspst.shp",
+          "stem": "ggspst",
+          "extension": ".shp",
+          "size": 19592,
+          "sha1": "20cf697299cf4101291bd55f1cfd55d1f8b4a68f"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {
+      "Buildup": {
+        "temperate": {
+          "art_id": "GASPSTMK",
+          "image": "GASPSTMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 2039,
+            "pack": "ra2",
+            "relative_path": "isotemp/gtspstmk.shp",
+            "folder": "isotemp",
+            "filename": "gtspstmk.shp",
+            "stem": "gtspstmk",
+            "extension": ".shp",
+            "size": 152040,
+            "sha1": "14454d91800c38fa27809196920e1c05a39af1a0"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "snow": {
+          "art_id": "GASPSTMK",
+          "image": "GASPSTMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 974,
+            "pack": "ra2",
+            "relative_path": "isosnow/gaspstmk.shp",
+            "folder": "isosnow",
+            "filename": "gaspstmk.shp",
+            "stem": "gaspstmk",
+            "extension": ".shp",
+            "size": 152040,
+            "sha1": "ca56ef5524d110a3f0c3064448834768790767b6"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "urban": {
+          "art_id": "GASPSTMK",
+          "image": "GASPSTMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 3140,
+            "pack": "ra2",
+            "relative_path": "isourb/guspstmk.shp",
+            "folder": "isourb",
+            "filename": "guspstmk.shp",
+            "stem": "guspstmk",
+            "extension": ".shp",
+            "size": 152040,
+            "sha1": "14454d91800c38fa27809196920e1c05a39af1a0"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "desert": {
+          "art_id": "GASPSTMK",
+          "image": "GASPSTMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 6676,
+            "pack": "ra2md",
+            "relative_path": "isodes/gdspstmk.shp",
+            "folder": "isodes",
+            "filename": "gdspstmk.shp",
+            "stem": "gdspstmk",
+            "extension": ".shp",
+            "size": 152040,
+            "sha1": "14454d91800c38fa27809196920e1c05a39af1a0"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "lunar": {
+          "art_id": "GASPSTMK",
+          "image": "GASPSTMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 8452,
+            "pack": "ra2md",
+            "relative_path": "isolun/glspstmk.shp",
+            "folder": "isolun",
+            "filename": "glspstmk.shp",
+            "stem": "glspstmk",
+            "extension": ".shp",
+            "size": 152040,
+            "sha1": "14454d91800c38fa27809196920e1c05a39af1a0"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        },
+        "newurban": {
+          "art_id": "GASPSTMK",
+          "image": "GASPSTMK",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 9646,
+            "pack": "ra2md",
+            "relative_path": "isoubn/gnspstmk.shp",
+            "folder": "isoubn",
+            "filename": "gnspstmk.shp",
+            "stem": "gnspstmk",
+            "extension": ".shp",
+            "size": 152040,
+            "sha1": "14454d91800c38fa27809196920e1c05a39af1a0"
+          },
+          "component_key": "Buildup",
+          "slot": "Buildup",
+          "damaged": false
+        }
+      },
+      "ActiveAnim": {
+        "temperate": {
+          "art_id": "GASPST_A",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 387,
+            "pack": "ra2",
+            "relative_path": "generic/ggspst_a.shp",
+            "folder": "generic",
+            "filename": "ggspst_a.shp",
+            "stem": "ggspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "5ac42e3f2222f7e155245119d3865ab19e0e616e"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4763,
+                "section": "GASPST_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3183,
+                  "section": "GASPST_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4764,
+                "section": "GASPST_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3184,
+                  "section": "GASPST_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4765,
+                "section": "GASPST_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3185,
+                  "section": "GASPST_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4766,
+                "section": "GASPST_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3186,
+                  "section": "GASPST_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4767,
+                "section": "GASPST_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3187,
+                  "section": "GASPST_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4768,
+                "section": "GASPST_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3188,
+                  "section": "GASPST_A",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4769,
+                "section": "GASPST_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3189,
+                  "section": "GASPST_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4770,
+                "section": "GASPST_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3190,
+                  "section": "GASPST_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362
+        },
+        "snow": {
+          "art_id": "GASPST_A",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 4942,
+            "pack": "ra2",
+            "relative_path": "snow/gaspst_a.shp",
+            "folder": "snow",
+            "filename": "gaspst_a.shp",
+            "stem": "gaspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "108341dd3cf13f900afeb5ab8250efe1f0fe2b70"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4763,
+                "section": "GASPST_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3183,
+                  "section": "GASPST_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4764,
+                "section": "GASPST_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3184,
+                  "section": "GASPST_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4765,
+                "section": "GASPST_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3185,
+                  "section": "GASPST_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4766,
+                "section": "GASPST_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3186,
+                  "section": "GASPST_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4767,
+                "section": "GASPST_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3187,
+                  "section": "GASPST_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4768,
+                "section": "GASPST_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3188,
+                  "section": "GASPST_A",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4769,
+                "section": "GASPST_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3189,
+                  "section": "GASPST_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4770,
+                "section": "GASPST_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3190,
+                  "section": "GASPST_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362
+        },
+        "urban": {
+          "art_id": "GASPST_A",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 387,
+            "pack": "ra2",
+            "relative_path": "generic/ggspst_a.shp",
+            "folder": "generic",
+            "filename": "ggspst_a.shp",
+            "stem": "ggspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "5ac42e3f2222f7e155245119d3865ab19e0e616e"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4763,
+                "section": "GASPST_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3183,
+                  "section": "GASPST_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4764,
+                "section": "GASPST_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3184,
+                  "section": "GASPST_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4765,
+                "section": "GASPST_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3185,
+                  "section": "GASPST_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4766,
+                "section": "GASPST_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3186,
+                  "section": "GASPST_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4767,
+                "section": "GASPST_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3187,
+                  "section": "GASPST_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4768,
+                "section": "GASPST_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3188,
+                  "section": "GASPST_A",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4769,
+                "section": "GASPST_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3189,
+                  "section": "GASPST_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4770,
+                "section": "GASPST_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3190,
+                  "section": "GASPST_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362
+        },
+        "desert": {
+          "art_id": "GASPST_A",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 387,
+            "pack": "ra2",
+            "relative_path": "generic/ggspst_a.shp",
+            "folder": "generic",
+            "filename": "ggspst_a.shp",
+            "stem": "ggspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "5ac42e3f2222f7e155245119d3865ab19e0e616e"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4763,
+                "section": "GASPST_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3183,
+                  "section": "GASPST_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4764,
+                "section": "GASPST_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3184,
+                  "section": "GASPST_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4765,
+                "section": "GASPST_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3185,
+                  "section": "GASPST_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4766,
+                "section": "GASPST_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3186,
+                  "section": "GASPST_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4767,
+                "section": "GASPST_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3187,
+                  "section": "GASPST_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4768,
+                "section": "GASPST_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3188,
+                  "section": "GASPST_A",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4769,
+                "section": "GASPST_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3189,
+                  "section": "GASPST_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4770,
+                "section": "GASPST_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3190,
+                  "section": "GASPST_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362
+        },
+        "lunar": {
+          "art_id": "GASPST_A",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 387,
+            "pack": "ra2",
+            "relative_path": "generic/ggspst_a.shp",
+            "folder": "generic",
+            "filename": "ggspst_a.shp",
+            "stem": "ggspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "5ac42e3f2222f7e155245119d3865ab19e0e616e"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4763,
+                "section": "GASPST_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3183,
+                  "section": "GASPST_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4764,
+                "section": "GASPST_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3184,
+                  "section": "GASPST_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4765,
+                "section": "GASPST_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3185,
+                  "section": "GASPST_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4766,
+                "section": "GASPST_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3186,
+                  "section": "GASPST_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4767,
+                "section": "GASPST_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3187,
+                  "section": "GASPST_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4768,
+                "section": "GASPST_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3188,
+                  "section": "GASPST_A",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4769,
+                "section": "GASPST_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3189,
+                  "section": "GASPST_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4770,
+                "section": "GASPST_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3190,
+                  "section": "GASPST_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362
+        },
+        "newurban": {
+          "art_id": "GASPST_A",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 387,
+            "pack": "ra2",
+            "relative_path": "generic/ggspst_a.shp",
+            "folder": "generic",
+            "filename": "ggspst_a.shp",
+            "stem": "ggspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "5ac42e3f2222f7e155245119d3865ab19e0e616e"
+          },
+          "Start": 0,
+          "LoopStart": 0,
+          "LoopEnd": 16,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4763,
+                "section": "GASPST_A",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3183,
+                  "section": "GASPST_A",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4764,
+                "section": "GASPST_A",
+                "key": "Start",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3184,
+                  "section": "GASPST_A",
+                  "key": "Start",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "0",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4765,
+                "section": "GASPST_A",
+                "key": "LoopStart",
+                "value": "0"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3185,
+                  "section": "GASPST_A",
+                  "key": "LoopStart",
+                  "value": "0"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4766,
+                "section": "GASPST_A",
+                "key": "LoopEnd",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3186,
+                  "section": "GASPST_A",
+                  "key": "LoopEnd",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4767,
+                "section": "GASPST_A",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3187,
+                  "section": "GASPST_A",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4768,
+                "section": "GASPST_A",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3188,
+                  "section": "GASPST_A",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4769,
+                "section": "GASPST_A",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3189,
+                  "section": "GASPST_A",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4770,
+                "section": "GASPST_A",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3190,
+                  "section": "GASPST_A",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnim",
+          "slot": "ActiveAnim",
+          "damaged": false,
+          "ZAdjust": -32,
+          "YSort": 362
+        }
+      },
+      "ActiveAnimDamaged": {
+        "temperate": {
+          "art_id": "GASPST_AD",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 387,
+            "pack": "ra2",
+            "relative_path": "generic/ggspst_a.shp",
+            "folder": "generic",
+            "filename": "ggspst_a.shp",
+            "stem": "ggspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "5ac42e3f2222f7e155245119d3865ab19e0e616e"
+          },
+          "Start": 16,
+          "LoopStart": 16,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "GASPST_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4775,
+                "section": "GASPST_AD",
+                "key": "Image",
+                "value": "GASPST_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3195,
+                  "section": "GASPST_AD",
+                  "key": "Image",
+                  "value": "GASPST_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4776,
+                "section": "GASPST_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3196,
+                  "section": "GASPST_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4777,
+                "section": "GASPST_AD",
+                "key": "Start",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3197,
+                  "section": "GASPST_AD",
+                  "key": "Start",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4778,
+                "section": "GASPST_AD",
+                "key": "LoopStart",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3198,
+                  "section": "GASPST_AD",
+                  "key": "LoopStart",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4779,
+                "section": "GASPST_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3199,
+                  "section": "GASPST_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4780,
+                "section": "GASPST_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3200,
+                  "section": "GASPST_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4781,
+                "section": "GASPST_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3201,
+                  "section": "GASPST_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4782,
+                "section": "GASPST_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3202,
+                  "section": "GASPST_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4783,
+                "section": "GASPST_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3203,
+                  "section": "GASPST_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362
+        },
+        "snow": {
+          "art_id": "GASPST_AD",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 4942,
+            "pack": "ra2",
+            "relative_path": "snow/gaspst_a.shp",
+            "folder": "snow",
+            "filename": "gaspst_a.shp",
+            "stem": "gaspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "108341dd3cf13f900afeb5ab8250efe1f0fe2b70"
+          },
+          "Start": 16,
+          "LoopStart": 16,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "GASPST_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4775,
+                "section": "GASPST_AD",
+                "key": "Image",
+                "value": "GASPST_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3195,
+                  "section": "GASPST_AD",
+                  "key": "Image",
+                  "value": "GASPST_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4776,
+                "section": "GASPST_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3196,
+                  "section": "GASPST_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4777,
+                "section": "GASPST_AD",
+                "key": "Start",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3197,
+                  "section": "GASPST_AD",
+                  "key": "Start",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4778,
+                "section": "GASPST_AD",
+                "key": "LoopStart",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3198,
+                  "section": "GASPST_AD",
+                  "key": "LoopStart",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4779,
+                "section": "GASPST_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3199,
+                  "section": "GASPST_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4780,
+                "section": "GASPST_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3200,
+                  "section": "GASPST_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4781,
+                "section": "GASPST_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3201,
+                  "section": "GASPST_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4782,
+                "section": "GASPST_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3202,
+                  "section": "GASPST_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4783,
+                "section": "GASPST_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3203,
+                  "section": "GASPST_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362
+        },
+        "urban": {
+          "art_id": "GASPST_AD",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 387,
+            "pack": "ra2",
+            "relative_path": "generic/ggspst_a.shp",
+            "folder": "generic",
+            "filename": "ggspst_a.shp",
+            "stem": "ggspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "5ac42e3f2222f7e155245119d3865ab19e0e616e"
+          },
+          "Start": 16,
+          "LoopStart": 16,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "GASPST_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4775,
+                "section": "GASPST_AD",
+                "key": "Image",
+                "value": "GASPST_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3195,
+                  "section": "GASPST_AD",
+                  "key": "Image",
+                  "value": "GASPST_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4776,
+                "section": "GASPST_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3196,
+                  "section": "GASPST_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4777,
+                "section": "GASPST_AD",
+                "key": "Start",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3197,
+                  "section": "GASPST_AD",
+                  "key": "Start",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4778,
+                "section": "GASPST_AD",
+                "key": "LoopStart",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3198,
+                  "section": "GASPST_AD",
+                  "key": "LoopStart",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4779,
+                "section": "GASPST_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3199,
+                  "section": "GASPST_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4780,
+                "section": "GASPST_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3200,
+                  "section": "GASPST_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4781,
+                "section": "GASPST_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3201,
+                  "section": "GASPST_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4782,
+                "section": "GASPST_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3202,
+                  "section": "GASPST_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4783,
+                "section": "GASPST_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3203,
+                  "section": "GASPST_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362
+        },
+        "desert": {
+          "art_id": "GASPST_AD",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 387,
+            "pack": "ra2",
+            "relative_path": "generic/ggspst_a.shp",
+            "folder": "generic",
+            "filename": "ggspst_a.shp",
+            "stem": "ggspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "5ac42e3f2222f7e155245119d3865ab19e0e616e"
+          },
+          "Start": 16,
+          "LoopStart": 16,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "GASPST_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4775,
+                "section": "GASPST_AD",
+                "key": "Image",
+                "value": "GASPST_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3195,
+                  "section": "GASPST_AD",
+                  "key": "Image",
+                  "value": "GASPST_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4776,
+                "section": "GASPST_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3196,
+                  "section": "GASPST_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4777,
+                "section": "GASPST_AD",
+                "key": "Start",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3197,
+                  "section": "GASPST_AD",
+                  "key": "Start",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4778,
+                "section": "GASPST_AD",
+                "key": "LoopStart",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3198,
+                  "section": "GASPST_AD",
+                  "key": "LoopStart",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4779,
+                "section": "GASPST_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3199,
+                  "section": "GASPST_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4780,
+                "section": "GASPST_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3200,
+                  "section": "GASPST_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4781,
+                "section": "GASPST_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3201,
+                  "section": "GASPST_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4782,
+                "section": "GASPST_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3202,
+                  "section": "GASPST_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4783,
+                "section": "GASPST_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3203,
+                  "section": "GASPST_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362
+        },
+        "lunar": {
+          "art_id": "GASPST_AD",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 387,
+            "pack": "ra2",
+            "relative_path": "generic/ggspst_a.shp",
+            "folder": "generic",
+            "filename": "ggspst_a.shp",
+            "stem": "ggspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "5ac42e3f2222f7e155245119d3865ab19e0e616e"
+          },
+          "Start": 16,
+          "LoopStart": 16,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "GASPST_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4775,
+                "section": "GASPST_AD",
+                "key": "Image",
+                "value": "GASPST_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3195,
+                  "section": "GASPST_AD",
+                  "key": "Image",
+                  "value": "GASPST_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4776,
+                "section": "GASPST_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3196,
+                  "section": "GASPST_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4777,
+                "section": "GASPST_AD",
+                "key": "Start",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3197,
+                  "section": "GASPST_AD",
+                  "key": "Start",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4778,
+                "section": "GASPST_AD",
+                "key": "LoopStart",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3198,
+                  "section": "GASPST_AD",
+                  "key": "LoopStart",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4779,
+                "section": "GASPST_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3199,
+                  "section": "GASPST_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4780,
+                "section": "GASPST_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3200,
+                  "section": "GASPST_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4781,
+                "section": "GASPST_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3201,
+                  "section": "GASPST_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4782,
+                "section": "GASPST_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3202,
+                  "section": "GASPST_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4783,
+                "section": "GASPST_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3203,
+                  "section": "GASPST_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362
+        },
+        "newurban": {
+          "art_id": "GASPST_AD",
+          "image": "GASPST_A",
+          "new_theater": true,
+          "asset": {
+            "asset_id": 387,
+            "pack": "ra2",
+            "relative_path": "generic/ggspst_a.shp",
+            "folder": "generic",
+            "filename": "ggspst_a.shp",
+            "stem": "ggspst_a",
+            "extension": ".shp",
+            "size": 36992,
+            "sha1": "5ac42e3f2222f7e155245119d3865ab19e0e616e"
+          },
+          "Start": 16,
+          "LoopStart": 16,
+          "LoopEnd": 32,
+          "LoopCount": -1,
+          "Rate": 200,
+          "Layer": "ground",
+          "provenance": {
+            "Image": {
+              "value": "GASPST_A",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4775,
+                "section": "GASPST_AD",
+                "key": "Image",
+                "value": "GASPST_A"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3195,
+                  "section": "GASPST_AD",
+                  "key": "Image",
+                  "value": "GASPST_A"
+                }
+              ]
+            },
+            "Normalized": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4776,
+                "section": "GASPST_AD",
+                "key": "Normalized",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3196,
+                  "section": "GASPST_AD",
+                  "key": "Normalized",
+                  "value": "yes"
+                }
+              ]
+            },
+            "Start": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4777,
+                "section": "GASPST_AD",
+                "key": "Start",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3197,
+                  "section": "GASPST_AD",
+                  "key": "Start",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopStart": {
+              "value": "16",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4778,
+                "section": "GASPST_AD",
+                "key": "LoopStart",
+                "value": "16"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3198,
+                  "section": "GASPST_AD",
+                  "key": "LoopStart",
+                  "value": "16"
+                }
+              ]
+            },
+            "LoopEnd": {
+              "value": "32",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4779,
+                "section": "GASPST_AD",
+                "key": "LoopEnd",
+                "value": "32"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3199,
+                  "section": "GASPST_AD",
+                  "key": "LoopEnd",
+                  "value": "32"
+                }
+              ]
+            },
+            "LoopCount": {
+              "value": "-1",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4780,
+                "section": "GASPST_AD",
+                "key": "LoopCount",
+                "value": "-1"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3200,
+                  "section": "GASPST_AD",
+                  "key": "LoopCount",
+                  "value": "-1"
+                }
+              ]
+            },
+            "Rate": {
+              "value": "200",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4781,
+                "section": "GASPST_AD",
+                "key": "Rate",
+                "value": "200"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3201,
+                  "section": "GASPST_AD",
+                  "key": "Rate",
+                  "value": "200"
+                }
+              ]
+            },
+            "Layer": {
+              "value": "ground",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4782,
+                "section": "GASPST_AD",
+                "key": "Layer",
+                "value": "ground"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3202,
+                  "section": "GASPST_AD",
+                  "key": "Layer",
+                  "value": "ground"
+                }
+              ]
+            },
+            "NewTheater": {
+              "value": "yes",
+              "origin": {
+                "layer": "ra2md",
+                "file": "artmd.ini",
+                "line": 4783,
+                "section": "GASPST_AD",
+                "key": "NewTheater",
+                "value": "yes"
+              },
+              "history": [
+                {
+                  "layer": "ra2",
+                  "file": "art.ini",
+                  "line": 3203,
+                  "section": "GASPST_AD",
+                  "key": "NewTheater",
+                  "value": "yes"
+                }
+              ]
+            }
+          },
+          "component_key": "ActiveAnimDamaged",
+          "slot": "ActiveAnim",
+          "damaged": true,
+          "ZAdjust": -32,
+          "YSort": 362
+        }
+      }
+    },
+    "foundation": "2x2",
+    "height": 5,
+    "occupy_height": 3,
+    "damage_fire_offsets": [
+      [
+        25.0,
+        37.0
+      ],
+      [
+        -26.0,
+        25.0
+      ]
+    ],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:GASPYSAT",
+      "Name": "Allied SpySat Uplink",
+      "Image": "GASPST",
+      "BuildCat": "Combat",
+      "Prerequisite": "GATECH,GACNST",
+      "Strength": 1000,
+      "Radar": true,
+      "SpySat": true,
+      "Armor": "wood",
+      "TechLevel": 9,
+      "Adjacent": 2,
+      "Sight": 5,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": 0,
+      "Cost": 1500,
+      "Points": 0,
+      "Power": -100,
+      "Powered": true,
+      "Capturable": true,
+      "Crewed": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG",
+      "MaxDebris": 8,
+      "MinDebris": 4,
+      "ThreatPosed": 0,
+      "DamageSmokeOffset": "800, 550, 400",
+      "AIBuildThis": false,
+      "SpecialThreatValue": 1
+    },
+    "raw_values": {
+      "UIName": "Name:GASPYSAT",
+      "Name": "Allied SpySat Uplink",
+      "Image": "GASPST",
+      "BuildCat": "Combat",
+      "Prerequisite": "GATECH,GACNST",
+      "Strength": "1000",
+      "Radar": "yes",
+      "SpySat": "yes",
+      "Armor": "wood",
+      "TechLevel": "9",
+      "Adjacent": "2",
+      "Sight": "5",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "AIBasePlanningSide": "0",
+      "Cost": "1500",
+      "Points": "0",
+      "Power": "-100",
+      "Powered": "true",
+      "Capturable": "true",
+      "Crewed": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "DebrisAnims": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG",
+      "MaxDebris": "8",
+      "MinDebris": "4",
+      "ThreatPosed": "0",
+      "DamageSmokeOffset": "800, 550, 400",
+      "AIBuildThis": "no",
+      "SpecialThreatValue": "1"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:GASPYSAT",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12188,
+          "section": "GASPYSAT",
+          "key": "UIName",
+          "value": "Name:GASPYSAT"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8826,
+            "section": "GASPYSAT",
+            "key": "UIName",
+            "value": "Name:GASPYSAT"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12182,
+            "section": "GASPYSAT",
+            "key": "UIName",
+            "value": "Name:GASPYSAT"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Allied SpySat Uplink",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12189,
+          "section": "GASPYSAT",
+          "key": "Name",
+          "value": "Allied SpySat Uplink"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8827,
+            "section": "GASPYSAT",
+            "key": "Name",
+            "value": "SpySat Uplink"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12183,
+            "section": "GASPYSAT",
+            "key": "Name",
+            "value": "Allied SpySat Uplink"
+          }
+        ]
+      },
+      "Image": {
+        "value": "GASPST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12190,
+          "section": "GASPYSAT",
+          "key": "Image",
+          "value": "GASPST"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8828,
+            "section": "GASPYSAT",
+            "key": "Image",
+            "value": "GASPST"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12184,
+            "section": "GASPYSAT",
+            "key": "Image",
+            "value": "GASPST"
+          }
+        ]
+      },
+      "BuildCat": {
+        "value": "Combat",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12191,
+          "section": "GASPYSAT",
+          "key": "BuildCat",
+          "value": "Combat"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8829,
+            "section": "GASPYSAT",
+            "key": "BuildCat",
+            "value": "Combat"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12185,
+            "section": "GASPYSAT",
+            "key": "BuildCat",
+            "value": "Combat"
+          }
+        ]
+      },
+      "Prerequisite": {
+        "value": "GATECH,GACNST",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12192,
+          "section": "GASPYSAT",
+          "key": "Prerequisite",
+          "value": "GATECH,GACNST"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8830,
+            "section": "GASPYSAT",
+            "key": "Prerequisite",
+            "value": "GATECH,GACNST"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12186,
+            "section": "GASPYSAT",
+            "key": "Prerequisite",
+            "value": "GATECH,GACNST"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12193,
+          "section": "GASPYSAT",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8831,
+            "section": "GASPYSAT",
+            "key": "Strength",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12187,
+            "section": "GASPYSAT",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Radar": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12194,
+          "section": "GASPYSAT",
+          "key": "Radar",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8832,
+            "section": "GASPYSAT",
+            "key": "Radar",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12188,
+            "section": "GASPYSAT",
+            "key": "Radar",
+            "value": "yes"
+          }
+        ]
+      },
+      "SpySat": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12195,
+          "section": "GASPYSAT",
+          "key": "SpySat",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8833,
+            "section": "GASPYSAT",
+            "key": "SpySat",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12189,
+            "section": "GASPYSAT",
+            "key": "SpySat",
+            "value": "yes"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "wood",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12196,
+          "section": "GASPYSAT",
+          "key": "Armor",
+          "value": "wood"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8834,
+            "section": "GASPYSAT",
+            "key": "Armor",
+            "value": "wood"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12190,
+            "section": "GASPYSAT",
+            "key": "Armor",
+            "value": "wood"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "9",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12197,
+          "section": "GASPYSAT",
+          "key": "TechLevel",
+          "value": "9"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8835,
+            "section": "GASPYSAT",
+            "key": "TechLevel",
+            "value": "9"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12191,
+            "section": "GASPYSAT",
+            "key": "TechLevel",
+            "value": "9"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12198,
+          "section": "GASPYSAT",
+          "key": "Adjacent",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8836,
+            "section": "GASPYSAT",
+            "key": "Adjacent",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12192,
+            "section": "GASPYSAT",
+            "key": "Adjacent",
+            "value": "2"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12199,
+          "section": "GASPYSAT",
+          "key": "Sight",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8837,
+            "section": "GASPYSAT",
+            "key": "Sight",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12193,
+            "section": "GASPYSAT",
+            "key": "Sight",
+            "value": "5"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12200,
+          "section": "GASPYSAT",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8838,
+            "section": "GASPYSAT",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12194,
+            "section": "GASPYSAT",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "AIBasePlanningSide": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12201,
+          "section": "GASPYSAT",
+          "key": "AIBasePlanningSide",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8839,
+            "section": "GASPYSAT",
+            "key": "AIBasePlanningSide",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12195,
+            "section": "GASPYSAT",
+            "key": "AIBasePlanningSide",
+            "value": "0"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1500",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12202,
+          "section": "GASPYSAT",
+          "key": "Cost",
+          "value": "1500"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8840,
+            "section": "GASPYSAT",
+            "key": "Cost",
+            "value": "1500"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12196,
+            "section": "GASPYSAT",
+            "key": "Cost",
+            "value": "1500"
+          }
+        ]
+      },
+      "Points": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12203,
+          "section": "GASPYSAT",
+          "key": "Points",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8841,
+            "section": "GASPYSAT",
+            "key": "Points",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12197,
+            "section": "GASPYSAT",
+            "key": "Points",
+            "value": "0"
+          }
+        ]
+      },
+      "Power": {
+        "value": "-100",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12204,
+          "section": "GASPYSAT",
+          "key": "Power",
+          "value": "-100"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8842,
+            "section": "GASPYSAT",
+            "key": "Power",
+            "value": "-100"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12198,
+            "section": "GASPYSAT",
+            "key": "Power",
+            "value": "-100"
+          }
+        ]
+      },
+      "Powered": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12205,
+          "section": "GASPYSAT",
+          "key": "Powered",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8843,
+            "section": "GASPYSAT",
+            "key": "Powered",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12199,
+            "section": "GASPYSAT",
+            "key": "Powered",
+            "value": "true"
+          }
+        ]
+      },
+      "Capturable": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12206,
+          "section": "GASPYSAT",
+          "key": "Capturable",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8844,
+            "section": "GASPYSAT",
+            "key": "Capturable",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12200,
+            "section": "GASPYSAT",
+            "key": "Capturable",
+            "value": "true"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12207,
+          "section": "GASPYSAT",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8845,
+            "section": "GASPYSAT",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12201,
+            "section": "GASPYSAT",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12209,
+          "section": "GASPYSAT",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8847,
+            "section": "GASPYSAT",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12203,
+            "section": "GASPYSAT",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "DebrisAnims": {
+        "value": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12210,
+          "section": "GASPYSAT",
+          "key": "DebrisAnims",
+          "value": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8848,
+            "section": "GASPYSAT",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12204,
+            "section": "GASPYSAT",
+            "key": "DebrisAnims",
+            "value": "DBRIS1LG,DBRIS1SM,DBRIS2LG,DBRIS4LG,DBRIS4SM,DBRIS5LG,DBRIS5SM,DBRIS6SM,DBRIS7LG"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "8",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12211,
+          "section": "GASPYSAT",
+          "key": "MaxDebris",
+          "value": "8"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8849,
+            "section": "GASPYSAT",
+            "key": "MaxDebris",
+            "value": "8"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12205,
+            "section": "GASPYSAT",
+            "key": "MaxDebris",
+            "value": "8"
+          }
+        ]
+      },
+      "MinDebris": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12212,
+          "section": "GASPYSAT",
+          "key": "MinDebris",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8850,
+            "section": "GASPYSAT",
+            "key": "MinDebris",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12206,
+            "section": "GASPYSAT",
+            "key": "MinDebris",
+            "value": "4"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12213,
+          "section": "GASPYSAT",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8851,
+            "section": "GASPYSAT",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12207,
+            "section": "GASPYSAT",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageSmokeOffset": {
+        "value": "800, 550, 400",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12215,
+          "section": "GASPYSAT",
+          "key": "DamageSmokeOffset",
+          "value": "800, 550, 400"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8853,
+            "section": "GASPYSAT",
+            "key": "DamageSmokeOffset",
+            "value": "800, 550, 400"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12209,
+            "section": "GASPYSAT",
+            "key": "DamageSmokeOffset",
+            "value": "800, 550, 400"
+          }
+        ]
+      },
+      "AIBuildThis": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12216,
+          "section": "GASPYSAT",
+          "key": "AIBuildThis",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8854,
+            "section": "GASPYSAT",
+            "key": "AIBuildThis",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12210,
+            "section": "GASPYSAT",
+            "key": "AIBuildThis",
+            "value": "no"
+          }
+        ]
+      },
+      "SpecialThreatValue": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 12217,
+          "section": "GASPYSAT",
+          "key": "SpecialThreatValue",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8855,
+            "section": "GASPYSAT",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 12211,
+            "section": "GASPYSAT",
+            "key": "SpecialThreatValue",
+            "value": "1"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Image": "GASPST",
+      "Remapable": true,
+      "Normalized": true,
+      "Cameo": "asaticon",
+      "Foundation": "2x2",
+      "Height": 5,
+      "Buildup": "GASPSTMK",
+      "DemandLoadBuildup": true,
+      "FreeBuildup": true,
+      "NewTheater": true,
+      "ActiveAnim": "GASPST_A",
+      "ActiveAnimDamaged": "GASPST_AD",
+      "ActiveAnimZAdjust": -32,
+      "ActiveAnimYSort": 362,
+      "CanHideThings": true,
+      "CanBeHidden": false,
+      "OccupyHeight": 3,
+      "AddOccupy1": "-2,-1",
+      "DamageFireOffset0": "25,37",
+      "DamageFireOffset1": "-26,25"
+    },
+    "raw_values": {
+      "Image": "GASPST",
+      "Remapable": "yes",
+      "Normalized": "yes",
+      "Cameo": "asaticon",
+      "Foundation": "2x2",
+      "Height": "5",
+      "Buildup": "GASPSTMK",
+      "DemandLoadBuildup": "true",
+      "FreeBuildup": "true",
+      "NewTheater": "yes",
+      "ActiveAnim": "GASPST_A",
+      "ActiveAnimDamaged": "GASPST_AD",
+      "ActiveAnimZAdjust": "-32",
+      "ActiveAnimYSort": "362",
+      "CanHideThings": "True",
+      "CanBeHidden": "False",
+      "OccupyHeight": "3",
+      "AddOccupy1": "-2,-1",
+      "DamageFireOffset0": "25,37",
+      "DamageFireOffset1": "-26,25"
+    },
+    "provenance": {
+      "Image": {
+        "value": "GASPST",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4740,
+          "section": "GASPST",
+          "key": "Image",
+          "value": "GASPST"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3160,
+            "section": "GASPST",
+            "key": "Image",
+            "value": "GASPST"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4741,
+          "section": "GASPST",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3161,
+            "section": "GASPST",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Normalized": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4742,
+          "section": "GASPST",
+          "key": "Normalized",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3162,
+            "section": "GASPST",
+            "key": "Normalized",
+            "value": "yes"
+          }
+        ]
+      },
+      "Cameo": {
+        "value": "asaticon",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4743,
+          "section": "GASPST",
+          "key": "Cameo",
+          "value": "asaticon"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3163,
+            "section": "GASPST",
+            "key": "Cameo",
+            "value": "asaticon"
+          }
+        ]
+      },
+      "Foundation": {
+        "value": "2x2",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4744,
+          "section": "GASPST",
+          "key": "Foundation",
+          "value": "2x2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3164,
+            "section": "GASPST",
+            "key": "Foundation",
+            "value": "2x2"
+          }
+        ]
+      },
+      "Height": {
+        "value": "5",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4745,
+          "section": "GASPST",
+          "key": "Height",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3165,
+            "section": "GASPST",
+            "key": "Height",
+            "value": "5"
+          }
+        ]
+      },
+      "Buildup": {
+        "value": "GASPSTMK",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4746,
+          "section": "GASPST",
+          "key": "Buildup",
+          "value": "GASPSTMK"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3166,
+            "section": "GASPST",
+            "key": "Buildup",
+            "value": "GASPSTMK"
+          }
+        ]
+      },
+      "DemandLoadBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4747,
+          "section": "GASPST",
+          "key": "DemandLoadBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3167,
+            "section": "GASPST",
+            "key": "DemandLoadBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "FreeBuildup": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4748,
+          "section": "GASPST",
+          "key": "FreeBuildup",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3168,
+            "section": "GASPST",
+            "key": "FreeBuildup",
+            "value": "true"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4749,
+          "section": "GASPST",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3169,
+            "section": "GASPST",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "ActiveAnim": {
+        "value": "GASPST_A",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4750,
+          "section": "GASPST",
+          "key": "ActiveAnim",
+          "value": "GASPST_A"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3170,
+            "section": "GASPST",
+            "key": "ActiveAnim",
+            "value": "GASPST_A"
+          }
+        ]
+      },
+      "ActiveAnimDamaged": {
+        "value": "GASPST_AD",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4751,
+          "section": "GASPST",
+          "key": "ActiveAnimDamaged",
+          "value": "GASPST_AD"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3171,
+            "section": "GASPST",
+            "key": "ActiveAnimDamaged",
+            "value": "GASPST_AD"
+          }
+        ]
+      },
+      "ActiveAnimZAdjust": {
+        "value": "-32",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4752,
+          "section": "GASPST",
+          "key": "ActiveAnimZAdjust",
+          "value": "-32"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3172,
+            "section": "GASPST",
+            "key": "ActiveAnimZAdjust",
+            "value": "-32"
+          }
+        ]
+      },
+      "ActiveAnimYSort": {
+        "value": "362",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4753,
+          "section": "GASPST",
+          "key": "ActiveAnimYSort",
+          "value": "362"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3173,
+            "section": "GASPST",
+            "key": "ActiveAnimYSort",
+            "value": "362"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "True",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4754,
+          "section": "GASPST",
+          "key": "CanHideThings",
+          "value": "True"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3174,
+            "section": "GASPST",
+            "key": "CanHideThings",
+            "value": "True"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4755,
+          "section": "GASPST",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3175,
+            "section": "GASPST",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      },
+      "OccupyHeight": {
+        "value": "3",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4756,
+          "section": "GASPST",
+          "key": "OccupyHeight",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3176,
+            "section": "GASPST",
+            "key": "OccupyHeight",
+            "value": "3"
+          }
+        ]
+      },
+      "AddOccupy1": {
+        "value": "-2,-1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4757,
+          "section": "GASPST",
+          "key": "AddOccupy1",
+          "value": "-2,-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3177,
+            "section": "GASPST",
+            "key": "AddOccupy1",
+            "value": "-2,-1"
+          }
+        ]
+      },
+      "DamageFireOffset0": {
+        "value": "25,37",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4758,
+          "section": "GASPST",
+          "key": "DamageFireOffset0",
+          "value": "25,37"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3178,
+            "section": "GASPST",
+            "key": "DamageFireOffset0",
+            "value": "25,37"
+          }
+        ]
+      },
+      "DamageFireOffset1": {
+        "value": "-26,25",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4759,
+          "section": "GASPST",
+          "key": "DamageFireOffset1",
+          "value": "-26,25"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 3179,
+            "section": "GASPST",
+            "key": "DamageFireOffset1",
+            "value": "-26,25"
+          }
+        ]
+      }
+    }
+  }
+}

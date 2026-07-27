@@ -1,0 +1,1169 @@
+{
+  "id": "CARGOPLANE",
+  "category": "aircraft",
+  "name_token": "Name:PDPLANE",
+  "art_id": "PDPLANE",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance",
+    "Russians",
+    "Confederation",
+    "Africans",
+    "Arabs",
+    "YuriCountry"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 400,
+  "armor": "light",
+  "speed": 15,
+  "sight": 0,
+  "locomotor": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Fly",
+  "weapons": {},
+  "sounds": {
+    "MoveSound": [
+      "PDPlaneMoveLoop"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "PDPLANE",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4272,
+      "pack": "ra2",
+      "relative_path": "local/pdplane.vxl",
+      "folder": "local",
+      "filename": "pdplane.vxl",
+      "stem": "pdplane",
+      "extension": ".vxl",
+      "size": 113270,
+      "sha1": "d3ff51ee4a8d7386d26b6ff5fc366fec95ab4493"
+    },
+    "body_hva": {
+      "asset_id": 4271,
+      "pack": "ra2",
+      "relative_path": "local/pdplane.hva",
+      "folder": "local",
+      "filename": "pdplane.hva",
+      "stem": "pdplane",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "dc856234c72b36f45dce42b775a62130ef1d10d7"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": [
+      0.0,
+      32.0,
+      0.0
+    ],
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "Image": "PDPLANE",
+      "UIName": "Name:PDPLANE",
+      "Name": "Transport Plane",
+      "Strength": 400,
+      "Category": "AirPower",
+      "Armor": "light",
+      "TechLevel": -1,
+      "LeadershipRating": 10,
+      "RadarInvisible": false,
+      "Sight": 0,
+      "Landable": false,
+      "MoveToShroud": true,
+      "PitchAngle": 0,
+      "Speed": 15,
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "Points": 30,
+      "ROT": 2,
+      "Crewed": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": 2,
+      "Locomotor": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Fly",
+      "ThreatPosed": 0,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "ImmuneToPsionics": true,
+      "CanPassiveAquire": false,
+      "CanRetaliate": false,
+      "MoveSound": "PDPlaneMoveLoop",
+      "DieSound": "",
+      "CrashingSound": "PDPlaneDie",
+      "ImpactLandSound": "GenAircraftCrash"
+    },
+    "raw_values": {
+      "Image": "PDPLANE",
+      "UIName": "Name:PDPLANE",
+      "Name": "Transport Plane",
+      "Strength": "400",
+      "Category": "AirPower",
+      "Armor": "light",
+      "TechLevel": "-1",
+      "LeadershipRating": "10",
+      "RadarInvisible": "no",
+      "Sight": "0",
+      "Landable": "no",
+      "MoveToShroud": "yes",
+      "PitchAngle": "0",
+      "Speed": "15",
+      "Owner": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+      "Points": "30",
+      "ROT": "2",
+      "Crewed": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "MaxDebris": "2",
+      "Locomotor": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+      "MovementZone": "Fly",
+      "ThreatPosed": "0",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "ImmuneToPsionics": "yes",
+      "CanPassiveAquire": "no",
+      "CanRetaliate": "no",
+      "MoveSound": "PDPlaneMoveLoop",
+      "DieSound": "",
+      "CrashingSound": "PDPlaneDie",
+      "ImpactLandSound": "GenAircraftCrash"
+    },
+    "provenance": {
+      "Image": {
+        "value": "PDPLANE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11573,
+          "section": "CARGOPLANE",
+          "key": "Image",
+          "value": "PDPLANE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8293,
+            "section": "CARGOPLANE",
+            "key": "Image",
+            "value": "PDPLANE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11567,
+            "section": "CARGOPLANE",
+            "key": "Image",
+            "value": "PDPLANE"
+          }
+        ]
+      },
+      "UIName": {
+        "value": "Name:PDPLANE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11574,
+          "section": "CARGOPLANE",
+          "key": "UIName",
+          "value": "Name:PDPLANE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8294,
+            "section": "CARGOPLANE",
+            "key": "UIName",
+            "value": "Name:PDPLANE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11568,
+            "section": "CARGOPLANE",
+            "key": "UIName",
+            "value": "Name:PDPLANE"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Transport Plane",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11575,
+          "section": "CARGOPLANE",
+          "key": "Name",
+          "value": "Transport Plane"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8295,
+            "section": "CARGOPLANE",
+            "key": "Name",
+            "value": "Transport Plane"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11569,
+            "section": "CARGOPLANE",
+            "key": "Name",
+            "value": "Transport Plane"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "400",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11576,
+          "section": "CARGOPLANE",
+          "key": "Strength",
+          "value": "400"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8296,
+            "section": "CARGOPLANE",
+            "key": "Strength",
+            "value": "400"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11570,
+            "section": "CARGOPLANE",
+            "key": "Strength",
+            "value": "400"
+          }
+        ]
+      },
+      "Category": {
+        "value": "AirPower",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11577,
+          "section": "CARGOPLANE",
+          "key": "Category",
+          "value": "AirPower"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8297,
+            "section": "CARGOPLANE",
+            "key": "Category",
+            "value": "AirPower"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11571,
+            "section": "CARGOPLANE",
+            "key": "Category",
+            "value": "AirPower"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "light",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11578,
+          "section": "CARGOPLANE",
+          "key": "Armor",
+          "value": "light"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8298,
+            "section": "CARGOPLANE",
+            "key": "Armor",
+            "value": "light"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11572,
+            "section": "CARGOPLANE",
+            "key": "Armor",
+            "value": "light"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11579,
+          "section": "CARGOPLANE",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8299,
+            "section": "CARGOPLANE",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11573,
+            "section": "CARGOPLANE",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "LeadershipRating": {
+        "value": "10",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11580,
+          "section": "CARGOPLANE",
+          "key": "LeadershipRating",
+          "value": "10"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8300,
+            "section": "CARGOPLANE",
+            "key": "LeadershipRating",
+            "value": "10"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11574,
+            "section": "CARGOPLANE",
+            "key": "LeadershipRating",
+            "value": "10"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11582,
+          "section": "CARGOPLANE",
+          "key": "RadarInvisible",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8302,
+            "section": "CARGOPLANE",
+            "key": "RadarInvisible",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11576,
+            "section": "CARGOPLANE",
+            "key": "RadarInvisible",
+            "value": "no"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11583,
+          "section": "CARGOPLANE",
+          "key": "Sight",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8303,
+            "section": "CARGOPLANE",
+            "key": "Sight",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11577,
+            "section": "CARGOPLANE",
+            "key": "Sight",
+            "value": "0"
+          }
+        ]
+      },
+      "Landable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11584,
+          "section": "CARGOPLANE",
+          "key": "Landable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8304,
+            "section": "CARGOPLANE",
+            "key": "Landable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11578,
+            "section": "CARGOPLANE",
+            "key": "Landable",
+            "value": "no"
+          }
+        ]
+      },
+      "MoveToShroud": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11585,
+          "section": "CARGOPLANE",
+          "key": "MoveToShroud",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8305,
+            "section": "CARGOPLANE",
+            "key": "MoveToShroud",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11579,
+            "section": "CARGOPLANE",
+            "key": "MoveToShroud",
+            "value": "yes"
+          }
+        ]
+      },
+      "PitchAngle": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11586,
+          "section": "CARGOPLANE",
+          "key": "PitchAngle",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8306,
+            "section": "CARGOPLANE",
+            "key": "PitchAngle",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11580,
+            "section": "CARGOPLANE",
+            "key": "PitchAngle",
+            "value": "0"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "15",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11587,
+          "section": "CARGOPLANE",
+          "key": "Speed",
+          "value": "15"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8307,
+            "section": "CARGOPLANE",
+            "key": "Speed",
+            "value": "15"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11581,
+            "section": "CARGOPLANE",
+            "key": "Speed",
+            "value": "15"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11588,
+          "section": "CARGOPLANE",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8308,
+            "section": "CARGOPLANE",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11582,
+            "section": "CARGOPLANE",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance,Russians,Confederation,Africans,Arabs,YuriCountry"
+          }
+        ]
+      },
+      "Points": {
+        "value": "30",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11589,
+          "section": "CARGOPLANE",
+          "key": "Points",
+          "value": "30"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8309,
+            "section": "CARGOPLANE",
+            "key": "Points",
+            "value": "30"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11583,
+            "section": "CARGOPLANE",
+            "key": "Points",
+            "value": "30"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11590,
+          "section": "CARGOPLANE",
+          "key": "ROT",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8310,
+            "section": "CARGOPLANE",
+            "key": "ROT",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11584,
+            "section": "CARGOPLANE",
+            "key": "ROT",
+            "value": "2"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11591,
+          "section": "CARGOPLANE",
+          "key": "Crewed",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8311,
+            "section": "CARGOPLANE",
+            "key": "Crewed",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11585,
+            "section": "CARGOPLANE",
+            "key": "Crewed",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11592,
+          "section": "CARGOPLANE",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8312,
+            "section": "CARGOPLANE",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11586,
+            "section": "CARGOPLANE",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11593,
+          "section": "CARGOPLANE",
+          "key": "MaxDebris",
+          "value": "2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8313,
+            "section": "CARGOPLANE",
+            "key": "Maxdebris",
+            "value": "2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11587,
+            "section": "CARGOPLANE",
+            "key": "MaxDebris",
+            "value": "2"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11594,
+          "section": "CARGOPLANE",
+          "key": "Locomotor",
+          "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8314,
+            "section": "CARGOPLANE",
+            "key": "Locomotor",
+            "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11588,
+            "section": "CARGOPLANE",
+            "key": "Locomotor",
+            "value": "{4A582746-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Fly",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11595,
+          "section": "CARGOPLANE",
+          "key": "MovementZone",
+          "value": "Fly"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8315,
+            "section": "CARGOPLANE",
+            "key": "MovementZone",
+            "value": "Fly"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11589,
+            "section": "CARGOPLANE",
+            "key": "MovementZone",
+            "value": "Fly"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11596,
+          "section": "CARGOPLANE",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8316,
+            "section": "CARGOPLANE",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11590,
+            "section": "CARGOPLANE",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11597,
+          "section": "CARGOPLANE",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8317,
+            "section": "CARGOPLANE",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11591,
+            "section": "CARGOPLANE",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "ImmuneToPsionics": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11598,
+          "section": "CARGOPLANE",
+          "key": "ImmuneToPsionics",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8318,
+            "section": "CARGOPLANE",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11592,
+            "section": "CARGOPLANE",
+            "key": "ImmuneToPsionics",
+            "value": "yes"
+          }
+        ]
+      },
+      "CanPassiveAquire": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11599,
+          "section": "CARGOPLANE",
+          "key": "CanPassiveAquire",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8319,
+            "section": "CARGOPLANE",
+            "key": "CanPassiveAquire",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11593,
+            "section": "CARGOPLANE",
+            "key": "CanPassiveAquire",
+            "value": "no"
+          }
+        ]
+      },
+      "CanRetaliate": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11600,
+          "section": "CARGOPLANE",
+          "key": "CanRetaliate",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8320,
+            "section": "CARGOPLANE",
+            "key": "CanRetaliate",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11594,
+            "section": "CARGOPLANE",
+            "key": "CanRetaliate",
+            "value": "no"
+          }
+        ]
+      },
+      "MoveSound": {
+        "value": "PDPlaneMoveLoop",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11601,
+          "section": "CARGOPLANE",
+          "key": "MoveSound",
+          "value": "PDPlaneMoveLoop"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8321,
+            "section": "CARGOPLANE",
+            "key": "MoveSound",
+            "value": "PDPlaneMoveLoop"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11595,
+            "section": "CARGOPLANE",
+            "key": "MoveSound",
+            "value": "PDPlaneMoveLoop"
+          }
+        ]
+      },
+      "DieSound": {
+        "value": "",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11602,
+          "section": "CARGOPLANE",
+          "key": "DieSound",
+          "value": ""
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8322,
+            "section": "CARGOPLANE",
+            "key": "DieSound",
+            "value": ""
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11596,
+            "section": "CARGOPLANE",
+            "key": "DieSound",
+            "value": ""
+          }
+        ]
+      },
+      "CrashingSound": {
+        "value": "PDPlaneDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11603,
+          "section": "CARGOPLANE",
+          "key": "CrashingSound",
+          "value": "PDPlaneDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8323,
+            "section": "CARGOPLANE",
+            "key": "CrashingSound",
+            "value": "PDPlaneDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11597,
+            "section": "CARGOPLANE",
+            "key": "CrashingSound",
+            "value": "PDPlaneDie"
+          }
+        ]
+      },
+      "ImpactLandSound": {
+        "value": "GenAircraftCrash",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 11604,
+          "section": "CARGOPLANE",
+          "key": "ImpactLandSound",
+          "value": "GenAircraftCrash"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 8324,
+            "section": "CARGOPLANE",
+            "key": "ImpactLandSound",
+            "value": "GenAircraftCrash"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 11598,
+            "section": "CARGOPLANE",
+            "key": "ImpactLandSound",
+            "value": "GenAircraftCrash"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Cameo": "OBMBICON",
+      "Voxel": true,
+      "PrimaryFireFLH": "0,32,0",
+      "DisableVoxelCache": true,
+      "DisableShadowCache": true
+    },
+    "raw_values": {
+      "Cameo": "OBMBICON",
+      "Voxel": "yes",
+      "PrimaryFireFLH": "0,32,0",
+      "DisableVoxelCache": "yes",
+      "DisableShadowCache": "yes"
+    },
+    "provenance": {
+      "Cameo": {
+        "value": "OBMBICON",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1105,
+          "section": "PDPLANE",
+          "key": "Cameo",
+          "value": "OBMBICON"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 772,
+            "section": "PDPLANE",
+            "key": "Cameo",
+            "value": "OBMBICON"
+          }
+        ]
+      },
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1106,
+          "section": "PDPLANE",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 773,
+            "section": "PDPLANE",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "PrimaryFireFLH": {
+        "value": "0,32,0",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1107,
+          "section": "PDPLANE",
+          "key": "PrimaryFireFLH",
+          "value": "0,32,0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 774,
+            "section": "PDPLANE",
+            "key": "PrimaryFireFLH",
+            "value": "0,32,0"
+          }
+        ]
+      },
+      "DisableVoxelCache": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1108,
+          "section": "PDPLANE",
+          "key": "DisableVoxelCache",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 775,
+            "section": "PDPLANE",
+            "key": "DisableVoxelCache",
+            "value": "yes"
+          }
+        ]
+      },
+      "DisableShadowCache": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 1109,
+          "section": "PDPLANE",
+          "key": "DisableShadowCache",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 776,
+            "section": "PDPLANE",
+            "key": "DisableShadowCache",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  }
+}

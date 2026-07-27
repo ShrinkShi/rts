@@ -1,0 +1,787 @@
+{
+  "id": "CABHUT",
+  "category": "building",
+  "name_token": "Name:CABHUT",
+  "art_id": "CABHUT",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 2000,
+  "armor": "",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CABHUT",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 5240,
+          "pack": "ra2",
+          "relative_path": "temperat/ctbhut.shp",
+          "folder": "temperat",
+          "filename": "ctbhut.shp",
+          "stem": "ctbhut",
+          "extension": ".shp",
+          "size": 6080,
+          "sha1": "ffaa48f2a09b2065f8b5859ef8c976c21984b174"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 4843,
+          "pack": "ra2",
+          "relative_path": "snow/cabhut.shp",
+          "folder": "snow",
+          "filename": "cabhut.shp",
+          "stem": "cabhut",
+          "extension": ".shp",
+          "size": 6080,
+          "sha1": "ffaa48f2a09b2065f8b5859ef8c976c21984b174"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 5480,
+          "pack": "ra2",
+          "relative_path": "urban/cubhut.shp",
+          "folder": "urban",
+          "filename": "cubhut.shp",
+          "stem": "cubhut",
+          "extension": ".shp",
+          "size": 6080,
+          "sha1": "ffaa48f2a09b2065f8b5859ef8c976c21984b174"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 5754,
+          "pack": "ra2md",
+          "relative_path": "desert/cdbhut.shp",
+          "folder": "desert",
+          "filename": "cdbhut.shp",
+          "stem": "cdbhut",
+          "extension": ".shp",
+          "size": 6080,
+          "sha1": "ffaa48f2a09b2065f8b5859ef8c976c21984b174"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 10894,
+          "pack": "ra2md",
+          "relative_path": "lunar/clbhut.shp",
+          "folder": "lunar",
+          "filename": "clbhut.shp",
+          "stem": "clbhut",
+          "extension": ".shp",
+          "size": 6080,
+          "sha1": "ffaa48f2a09b2065f8b5859ef8c976c21984b174"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 11300,
+          "pack": "ra2md",
+          "relative_path": "urbann/cnbhut.shp",
+          "folder": "urbann",
+          "filename": "cnbhut.shp",
+          "stem": "cnbhut",
+          "extension": ".shp",
+          "size": 6080,
+          "sha1": "ffaa48f2a09b2065f8b5859ef8c976c21984b174"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 1,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CABHUT",
+      "Name": "Bridge repair hut",
+      "Strength": 2000,
+      "Immune": true,
+      "LegalTarget": true,
+      "Nominal": true,
+      "TechLevel": -1,
+      "RadarInvisible": true,
+      "Repairable": true,
+      "Selectable": true,
+      "Insignificant": true,
+      "BridgeRepairHut": true,
+      "Adjacent": 0,
+      "BaseNormal": false,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "ThreatPosed": 0
+    },
+    "raw_values": {
+      "UIName": "Name:CABHUT",
+      "Name": "Bridge repair hut",
+      "Strength": "2000",
+      "Immune": "yes",
+      "LegalTarget": "yes",
+      "Nominal": "yes",
+      "TechLevel": "-1",
+      "RadarInvisible": "yes",
+      "Repairable": "true",
+      "Selectable": "yes",
+      "Insignificant": "yes",
+      "BridgeRepairHut": "yes",
+      "Adjacent": "0",
+      "BaseNormal": "no",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "ThreatPosed": "0"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CABHUT",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16337,
+          "section": "CABHUT",
+          "key": "UIName",
+          "value": "Name:CABHUT"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9449,
+            "section": "CABHUT",
+            "key": "UIName",
+            "value": "Name:CABHUT"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16329,
+            "section": "CABHUT",
+            "key": "UIName",
+            "value": "Name:CABHUT"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Bridge repair hut",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16338,
+          "section": "CABHUT",
+          "key": "Name",
+          "value": "Bridge repair hut"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9450,
+            "section": "CABHUT",
+            "key": "Name",
+            "value": "Bridge repair hut"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16330,
+            "section": "CABHUT",
+            "key": "Name",
+            "value": "Bridge repair hut"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "2000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16339,
+          "section": "CABHUT",
+          "key": "Strength",
+          "value": "2000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9451,
+            "section": "CABHUT",
+            "key": "Strength",
+            "value": "2000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16331,
+            "section": "CABHUT",
+            "key": "Strength",
+            "value": "2000"
+          }
+        ]
+      },
+      "Immune": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16340,
+          "section": "CABHUT",
+          "key": "Immune",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9452,
+            "section": "CABHUT",
+            "key": "Immune",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16332,
+            "section": "CABHUT",
+            "key": "Immune",
+            "value": "yes"
+          }
+        ]
+      },
+      "LegalTarget": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16341,
+          "section": "CABHUT",
+          "key": "LegalTarget",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9453,
+            "section": "CABHUT",
+            "key": "LegalTarget",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16333,
+            "section": "CABHUT",
+            "key": "LegalTarget",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16342,
+          "section": "CABHUT",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9454,
+            "section": "CABHUT",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16334,
+            "section": "CABHUT",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16343,
+          "section": "CABHUT",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9455,
+            "section": "CABHUT",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16335,
+            "section": "CABHUT",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 9456,
+          "section": "CABHUT",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Repairable": {
+        "value": "true",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16345,
+          "section": "CABHUT",
+          "key": "Repairable",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9457,
+            "section": "CABHUT",
+            "key": "Repairable",
+            "value": "true"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16337,
+            "section": "CABHUT",
+            "key": "Repairable",
+            "value": "true"
+          }
+        ]
+      },
+      "Selectable": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16346,
+          "section": "CABHUT",
+          "key": "Selectable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9458,
+            "section": "CABHUT",
+            "key": "Selectable",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16338,
+            "section": "CABHUT",
+            "key": "Selectable",
+            "value": "yes"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16347,
+          "section": "CABHUT",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9459,
+            "section": "CABHUT",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16339,
+            "section": "CABHUT",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "BridgeRepairHut": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16348,
+          "section": "CABHUT",
+          "key": "BridgeRepairHut",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9460,
+            "section": "CABHUT",
+            "key": "BridgeRepairHut",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16340,
+            "section": "CABHUT",
+            "key": "BridgeRepairHut",
+            "value": "yes"
+          }
+        ]
+      },
+      "Adjacent": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16349,
+          "section": "CABHUT",
+          "key": "Adjacent",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9461,
+            "section": "CABHUT",
+            "key": "Adjacent",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16341,
+            "section": "CABHUT",
+            "key": "Adjacent",
+            "value": "0"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16350,
+          "section": "CABHUT",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9462,
+            "section": "CABHUT",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16342,
+            "section": "CABHUT",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16351,
+          "section": "CABHUT",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9463,
+            "section": "CABHUT",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16343,
+            "section": "CABHUT",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 16352,
+          "section": "CABHUT",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 9464,
+            "section": "CABHUT",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 16344,
+            "section": "CABHUT",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "1x1",
+      "NewTheater": true,
+      "Height": 1,
+      "CanHideThings": false,
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Foundation": "1x1",
+      "NewTheater": "yes",
+      "Height": "1",
+      "CanHideThings": "False",
+      "CanBeHidden": "False"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4144,
+          "section": "CABHUT",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2689,
+            "section": "CABHUT",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4145,
+          "section": "CABHUT",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2690,
+            "section": "CABHUT",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "Height": {
+        "value": "1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4146,
+          "section": "CABHUT",
+          "key": "Height",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2691,
+            "section": "CABHUT",
+            "key": "Height",
+            "value": "1"
+          }
+        ]
+      },
+      "CanHideThings": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4147,
+          "section": "CABHUT",
+          "key": "CanHideThings",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2692,
+            "section": "CABHUT",
+            "key": "CanHideThings",
+            "value": "False"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 4148,
+          "section": "CABHUT",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 2693,
+            "section": "CABHUT",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      }
+    }
+  }
+}

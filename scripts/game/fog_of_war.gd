@@ -6,6 +6,7 @@ var enabled = true
 var visible_cells = PackedByteArray()
 var discovered_cells = PackedByteArray()
 var update_timer = 0.0
+var debug_reveal_all: bool = false
 
 func setup(next_match, next_map, is_enabled):
     match_ref = next_match
@@ -42,34 +43,38 @@ func _recalculate():
                     discovered_cells[idx] = 1
     queue_redraw()
 
+func set_debug_reveal_all(value: bool) -> void:
+    debug_reveal_all = value
+    queue_redraw()
+
 func is_world_visible(world_position):
-    if not enabled:
+    if not enabled or debug_reveal_all:
         return true
     var cell = map_ref.world_to_cell(world_position)
     return is_cell_visible(cell)
 
 func is_world_discovered(world_position):
-    if not enabled:
+    if not enabled or debug_reveal_all:
         return true
     var cell = map_ref.world_to_cell(world_position)
     return is_cell_discovered(cell)
 
 func is_cell_visible(cell):
-    if not enabled:
+    if not enabled or debug_reveal_all:
         return true
     if cell.x < 0 or cell.y < 0 or cell.x >= map_ref.map_width or cell.y >= map_ref.map_height:
         return false
     return visible_cells[cell.y * map_ref.map_width + cell.x] == 1
 
 func is_cell_discovered(cell):
-    if not enabled:
+    if not enabled or debug_reveal_all:
         return true
     if cell.x < 0 or cell.y < 0 or cell.x >= map_ref.map_width or cell.y >= map_ref.map_height:
         return false
     return discovered_cells[cell.y * map_ref.map_width + cell.x] == 1
 
 func get_cell_state(cell):
-    if not enabled:
+    if not enabled or debug_reveal_all:
         return 2
     if is_cell_visible(cell):
         return 2
@@ -78,7 +83,7 @@ func get_cell_state(cell):
     return 0
 
 func _draw():
-    if not enabled or not is_instance_valid(map_ref):
+    if not enabled or debug_reveal_all or not is_instance_valid(map_ref):
         return
     var tile_size = map_ref.tile_px
     for y in range(map_ref.map_height):

@@ -1,0 +1,857 @@
+{
+  "id": "CAMISC01",
+  "category": "building",
+  "name_token": "Name:CAMISC01",
+  "art_id": "CAMISC01",
+  "owners": [],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 0,
+  "strength": 5,
+  "armor": "concrete",
+  "speed": 0,
+  "sight": 0,
+  "locomotor": "",
+  "movement_zone": "",
+  "weapons": {},
+  "sounds": {},
+  "visuals": {
+    "kind": "building_shp",
+    "art_id": "CAMISC01",
+    "new_theater": true,
+    "theaters": {
+      "temperate": {
+        "body": {
+          "asset_id": 1682,
+          "pack": "ra2",
+          "relative_path": "isotemp/ctmisc01.shp",
+          "folder": "isotemp",
+          "filename": "ctmisc01.shp",
+          "stem": "ctmisc01",
+          "extension": ".shp",
+          "size": 2384,
+          "sha1": "4931989857e4633bfd5bc5067eb9fdff851892cb"
+        },
+        "palette": {
+          "asset_id": 37,
+          "pack": "ra2",
+          "relative_path": "cache/unittem.pal",
+          "folder": "cache",
+          "filename": "unittem.pal",
+          "stem": "unittem",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "snow": {
+        "body": {
+          "asset_id": 578,
+          "pack": "ra2",
+          "relative_path": "isosnow/camisc01.shp",
+          "folder": "isosnow",
+          "filename": "camisc01.shp",
+          "stem": "camisc01",
+          "extension": ".shp",
+          "size": 2384,
+          "sha1": "83d38306e0a69bab87461d244e7db4b65c34fa4e"
+        },
+        "palette": {
+          "asset_id": 36,
+          "pack": "ra2",
+          "relative_path": "cache/unitsno.pal",
+          "folder": "cache",
+          "filename": "unitsno.pal",
+          "stem": "unitsno",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "40f583ed1aec4dd8172b1f4acadc6f641c60509d"
+        }
+      },
+      "urban": {
+        "body": {
+          "asset_id": 2769,
+          "pack": "ra2",
+          "relative_path": "isourb/cumisc01.shp",
+          "folder": "isourb",
+          "filename": "cumisc01.shp",
+          "stem": "cumisc01",
+          "extension": ".shp",
+          "size": 2384,
+          "sha1": "4931989857e4633bfd5bc5067eb9fdff851892cb"
+        },
+        "palette": {
+          "asset_id": 38,
+          "pack": "ra2",
+          "relative_path": "cache/uniturb.pal",
+          "folder": "cache",
+          "filename": "uniturb.pal",
+          "stem": "uniturb",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "desert": {
+        "body": {
+          "asset_id": 6150,
+          "pack": "ra2md",
+          "relative_path": "isodes/cdmisc01.shp",
+          "folder": "isodes",
+          "filename": "cdmisc01.shp",
+          "stem": "cdmisc01",
+          "extension": ".shp",
+          "size": 2384,
+          "sha1": "4931989857e4633bfd5bc5067eb9fdff851892cb"
+        },
+        "palette": {
+          "asset_id": 5692,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitdes.pal",
+          "folder": "cachemd",
+          "filename": "unitdes.pal",
+          "stem": "unitdes",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "lunar": {
+        "body": {
+          "asset_id": 8218,
+          "pack": "ra2md",
+          "relative_path": "isolun/clmisc01.shp",
+          "folder": "isolun",
+          "filename": "clmisc01.shp",
+          "stem": "clmisc01",
+          "extension": ".shp",
+          "size": 2384,
+          "sha1": "4931989857e4633bfd5bc5067eb9fdff851892cb"
+        },
+        "palette": {
+          "asset_id": 5693,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitlun.pal",
+          "folder": "cachemd",
+          "filename": "unitlun.pal",
+          "stem": "unitlun",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      },
+      "newurban": {
+        "body": {
+          "asset_id": 9299,
+          "pack": "ra2md",
+          "relative_path": "isoubn/cnmisc01.shp",
+          "folder": "isoubn",
+          "filename": "cnmisc01.shp",
+          "stem": "cnmisc01",
+          "extension": ".shp",
+          "size": 2384,
+          "sha1": "4931989857e4633bfd5bc5067eb9fdff851892cb"
+        },
+        "palette": {
+          "asset_id": 5694,
+          "pack": "ra2md",
+          "relative_path": "cachemd/unitubn.pal",
+          "folder": "cachemd",
+          "filename": "unitubn.pal",
+          "stem": "unitubn",
+          "extension": ".pal",
+          "size": 768,
+          "sha1": "a52f513dc963f02c8c2811dcd48f043d36e30d2f"
+        }
+      }
+    },
+    "components": {},
+    "foundation": "1x1",
+    "height": 0,
+    "occupy_height": 0,
+    "damage_fire_offsets": [],
+    "zshape_point_move": null
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CAMISC01",
+      "Name": "Barrels",
+      "TechLevel": -1,
+      "Strength": 5,
+      "EligibleForDelayKill": true,
+      "Insignificant": true,
+      "Nominal": true,
+      "RadarInvisible": true,
+      "Points": 5,
+      "Armor": "concrete",
+      "Explosion": "BRRLEXP2",
+      "MaxDebris": 0,
+      "Selectable": false,
+      "BaseNormal": false,
+      "Explodes": true,
+      "DeathWeapon": "BarrelExplosion",
+      "Repairable": false,
+      "CanC4": false,
+      "DamageSound": "BuildingMetalDamaged"
+    },
+    "raw_values": {
+      "UIName": "Name:CAMISC01",
+      "Name": "Barrels",
+      "TechLevel": "-1",
+      "Strength": "5",
+      "EligibleForDelayKill": "yes",
+      "Insignificant": "yes",
+      "Nominal": "yes",
+      "RadarInvisible": "yes",
+      "Points": "5",
+      "Armor": "concrete",
+      "Explosion": "BRRLEXP2",
+      "MaxDebris": "0",
+      "Selectable": "no",
+      "BaseNormal": "no",
+      "Explodes": "yes",
+      "DeathWeapon": "BarrelExplosion",
+      "Repairable": "no",
+      "CanC4": "no",
+      "DamageSound": "BuildingMetalDamaged"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CAMISC01",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14931,
+          "section": "CAMISC01",
+          "key": "UIName",
+          "value": "Name:CAMISC01"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14974,
+            "section": "CAMISC01",
+            "key": "UIName",
+            "value": "Name:CAMISC01"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14924,
+            "section": "CAMISC01",
+            "key": "UIName",
+            "value": "Name:CAMISC01"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Barrels",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14932,
+          "section": "CAMISC01",
+          "key": "Name",
+          "value": "Barrels"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14975,
+            "section": "CAMISC01",
+            "key": "Name",
+            "value": "RA2 Barrels"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14925,
+            "section": "CAMISC01",
+            "key": "Name",
+            "value": "Barrels"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14933,
+          "section": "CAMISC01",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14976,
+            "section": "CAMISC01",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14926,
+            "section": "CAMISC01",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14934,
+          "section": "CAMISC01",
+          "key": "Strength",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14977,
+            "section": "CAMISC01",
+            "key": "Strength",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14927,
+            "section": "CAMISC01",
+            "key": "Strength",
+            "value": "5"
+          }
+        ]
+      },
+      "EligibleForDelayKill": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14935,
+          "section": "CAMISC01",
+          "key": "EligibleForDelayKill",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14978,
+            "section": "CAMISC01",
+            "key": "EligibleForDelayKill",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14928,
+            "section": "CAMISC01",
+            "key": "EligibleForDelayKill",
+            "value": "yes"
+          }
+        ]
+      },
+      "Insignificant": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14936,
+          "section": "CAMISC01",
+          "key": "Insignificant",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14979,
+            "section": "CAMISC01",
+            "key": "Insignificant",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14929,
+            "section": "CAMISC01",
+            "key": "Insignificant",
+            "value": "yes"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14937,
+          "section": "CAMISC01",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14980,
+            "section": "CAMISC01",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14930,
+            "section": "CAMISC01",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "RadarInvisible": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 14981,
+          "section": "CAMISC01",
+          "key": "RadarInvisible",
+          "value": "yes"
+        },
+        "history": []
+      },
+      "Points": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14939,
+          "section": "CAMISC01",
+          "key": "Points",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14982,
+            "section": "CAMISC01",
+            "key": "Points",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14932,
+            "section": "CAMISC01",
+            "key": "Points",
+            "value": "5"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "concrete",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14940,
+          "section": "CAMISC01",
+          "key": "Armor",
+          "value": "concrete"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14983,
+            "section": "CAMISC01",
+            "key": "Armor",
+            "value": "concrete"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14933,
+            "section": "CAMISC01",
+            "key": "Armor",
+            "value": "concrete"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "BRRLEXP2",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14941,
+          "section": "CAMISC01",
+          "key": "Explosion",
+          "value": "BRRLEXP2"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14984,
+            "section": "CAMISC01",
+            "key": "Explosion",
+            "value": "BRRLEXP2"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14934,
+            "section": "CAMISC01",
+            "key": "Explosion",
+            "value": "BRRLEXP2"
+          }
+        ]
+      },
+      "MaxDebris": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14942,
+          "section": "CAMISC01",
+          "key": "MaxDebris",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14985,
+            "section": "CAMISC01",
+            "key": "MaxDebris",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14935,
+            "section": "CAMISC01",
+            "key": "MaxDebris",
+            "value": "0"
+          }
+        ]
+      },
+      "Selectable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14943,
+          "section": "CAMISC01",
+          "key": "Selectable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14986,
+            "section": "CAMISC01",
+            "key": "Selectable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14936,
+            "section": "CAMISC01",
+            "key": "Selectable",
+            "value": "no"
+          }
+        ]
+      },
+      "BaseNormal": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14945,
+          "section": "CAMISC01",
+          "key": "BaseNormal",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14988,
+            "section": "CAMISC01",
+            "key": "BaseNormal",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14938,
+            "section": "CAMISC01",
+            "key": "BaseNormal",
+            "value": "no"
+          }
+        ]
+      },
+      "Explodes": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14946,
+          "section": "CAMISC01",
+          "key": "Explodes",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14989,
+            "section": "CAMISC01",
+            "key": "Explodes",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14939,
+            "section": "CAMISC01",
+            "key": "Explodes",
+            "value": "yes"
+          }
+        ]
+      },
+      "DeathWeapon": {
+        "value": "BarrelExplosion",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14947,
+          "section": "CAMISC01",
+          "key": "DeathWeapon",
+          "value": "BarrelExplosion"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14990,
+            "section": "CAMISC01",
+            "key": "DeathWeapon",
+            "value": "BarrelExplosion"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14940,
+            "section": "CAMISC01",
+            "key": "DeathWeapon",
+            "value": "BarrelExplosion"
+          }
+        ]
+      },
+      "Repairable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14948,
+          "section": "CAMISC01",
+          "key": "Repairable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14991,
+            "section": "CAMISC01",
+            "key": "Repairable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14941,
+            "section": "CAMISC01",
+            "key": "Repairable",
+            "value": "no"
+          }
+        ]
+      },
+      "CanC4": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14949,
+          "section": "CAMISC01",
+          "key": "CanC4",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14992,
+            "section": "CAMISC01",
+            "key": "CanC4",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14942,
+            "section": "CAMISC01",
+            "key": "CanC4",
+            "value": "no"
+          }
+        ]
+      },
+      "DamageSound": {
+        "value": "BuildingMetalDamaged",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 14950,
+          "section": "CAMISC01",
+          "key": "DamageSound",
+          "value": "BuildingMetalDamaged"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 14993,
+            "section": "CAMISC01",
+            "key": "DamageSound",
+            "value": "BuildingMetalDamaged"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 14943,
+            "section": "CAMISC01",
+            "key": "DamageSound",
+            "value": "BuildingMetalDamaged"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Foundation": "1x1",
+      "NewTheater": true,
+      "DemandLoad": true,
+      "CanBeHidden": false
+    },
+    "raw_values": {
+      "Foundation": "1x1",
+      "NewTheater": "yes",
+      "DemandLoad": "true",
+      "CanBeHidden": "False"
+    },
+    "provenance": {
+      "Foundation": {
+        "value": "1x1",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12157,
+          "section": "CAMISC01",
+          "key": "Foundation",
+          "value": "1x1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8165,
+            "section": "CAMISC01",
+            "key": "Foundation",
+            "value": "1x1"
+          }
+        ]
+      },
+      "NewTheater": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12158,
+          "section": "CAMISC01",
+          "key": "NewTheater",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8166,
+            "section": "CAMISC01",
+            "key": "NewTheater",
+            "value": "yes"
+          }
+        ]
+      },
+      "DemandLoad": {
+        "value": "true",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12159,
+          "section": "CAMISC01",
+          "key": "DemandLoad",
+          "value": "true"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8167,
+            "section": "CAMISC01",
+            "key": "DemandLoad",
+            "value": "true"
+          }
+        ]
+      },
+      "CanBeHidden": {
+        "value": "False",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 12161,
+          "section": "CAMISC01",
+          "key": "CanBeHidden",
+          "value": "False"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 8169,
+            "section": "CAMISC01",
+            "key": "CanBeHidden",
+            "value": "False"
+          }
+        ]
+      }
+    }
+  }
+}

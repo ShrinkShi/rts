@@ -1,0 +1,1403 @@
+{
+  "id": "CMON",
+  "category": "vehicle",
+  "name_token": "Name:CMIN",
+  "art_id": "CMON",
+  "owners": [
+    "British",
+    "French",
+    "Germans",
+    "Americans",
+    "Alliance"
+  ],
+  "required_houses": [],
+  "forbidden_houses": [],
+  "prerequisite": [],
+  "tech_level": -1,
+  "cost": 1400,
+  "strength": 1000,
+  "armor": "medium",
+  "speed": 4,
+  "sight": 4,
+  "locomotor": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+  "movement_zone": "Crusher",
+  "weapons": {},
+  "sounds": {
+    "VoiceSelect": [
+      "ChronoMinerSelect"
+    ],
+    "VoiceMove": [
+      "ChronoMinerMove"
+    ],
+    "VoiceAttack": [
+      "ChronoMinerMove"
+    ],
+    "DieSound": [
+      "GenVehicleDie"
+    ],
+    "CrushSound": [
+      "TankCrush"
+    ]
+  },
+  "visuals": {
+    "kind": "voxel",
+    "art_id": "CMON",
+    "new_theater": false,
+    "theaters": {},
+    "body": {
+      "asset_id": 4005,
+      "pack": "ra2",
+      "relative_path": "local/cmon.vxl",
+      "folder": "local",
+      "filename": "cmon.vxl",
+      "stem": "cmon",
+      "extension": ".vxl",
+      "size": 56110,
+      "sha1": "778c25380fd224b6a72f750eaa506770d68c921d"
+    },
+    "body_hva": {
+      "asset_id": 4004,
+      "pack": "ra2",
+      "relative_path": "local/cmon.hva",
+      "folder": "local",
+      "filename": "cmon.hva",
+      "stem": "cmon",
+      "extension": ".hva",
+      "size": 88,
+      "sha1": "b00372008c7de33413bd7bfe600bd3510f5339b3"
+    },
+    "turret": null,
+    "turret_hva": null,
+    "barrel": null,
+    "barrel_hva": null,
+    "turret_offset_leptons": 0,
+    "primary_fire_flh": null,
+    "secondary_fire_flh": null,
+    "shadow_index": 0,
+    "use_turret_shadow": false,
+    "no_spawn_alt": false
+  },
+  "rules": {
+    "values": {
+      "UIName": "Name:CMIN",
+      "Name": "Chrono Miner(noback)",
+      "Nominal": true,
+      "ToProtect": true,
+      "Category": "Support",
+      "Strength": 1000,
+      "Armor": "medium",
+      "Dock": "NAREFN,GAREFN",
+      "Harvester": true,
+      "ChronoInSound": "ChronoMinerTeleport",
+      "ChronoOutSound": "ChronoMinerTeleport",
+      "TechLevel": -1,
+      "Sight": 4,
+      "Speed": 4,
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "AllowedToStartInMultiplayer": false,
+      "Cost": 1400,
+      "Points": 20,
+      "ROT": 5,
+      "Crusher": true,
+      "Crewed": false,
+      "SelfHealing": true,
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "ChronoMinerSelect",
+      "VoiceMove": "ChronoMinerMove",
+      "VoiceAttack": "ChronoMinerMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "Maxdebris": 3,
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": 4,
+      "Locomotor": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": 3.5,
+      "MovementZone": "Crusher",
+      "ThreatPosed": 0,
+      "ThreatAvoidanceCoefficient": 1,
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "ImmuneToRadiation": true,
+      "Trainable": false,
+      "VoiceHarvest": "ChronoMinerHarvest",
+      "VoiceEnter": "ChronoMinerReturn",
+      "CrushSound": "TankCrush"
+    },
+    "raw_values": {
+      "UIName": "Name:CMIN",
+      "Name": "Chrono Miner(noback)",
+      "Nominal": "yes",
+      "ToProtect": "yes",
+      "Category": "Support",
+      "Strength": "1000",
+      "Armor": "medium",
+      "Dock": "NAREFN,GAREFN",
+      "Harvester": "yes",
+      "ChronoInSound": "ChronoMinerTeleport",
+      "ChronoOutSound": "ChronoMinerTeleport",
+      "TechLevel": "-1",
+      "Sight": "4",
+      "Speed": "4",
+      "Owner": "British,French,Germans,Americans,Alliance",
+      "AllowedToStartInMultiplayer": "no",
+      "Cost": "1400",
+      "Points": "20",
+      "ROT": "5",
+      "Crusher": "yes",
+      "Crewed": "no",
+      "SelfHealing": "yes",
+      "Explosion": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+      "VoiceSelect": "ChronoMinerSelect",
+      "VoiceMove": "ChronoMinerMove",
+      "VoiceAttack": "ChronoMinerMove",
+      "VoiceFeedback": "",
+      "DieSound": "GenVehicleDie",
+      "Maxdebris": "3",
+      "DebrisTypes": "TIRE",
+      "DebrisMaximums": "4",
+      "Locomotor": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+      "Weight": "3.5",
+      "MovementZone": "Crusher",
+      "ThreatPosed": "0",
+      "ThreatAvoidanceCoefficient": "1",
+      "DamageParticleSystems": "SparkSys,SmallGreySSys",
+      "ImmuneToRadiation": "yes",
+      "Trainable": "no",
+      "VoiceHarvest": "ChronoMinerHarvest",
+      "VoiceEnter": "ChronoMinerReturn",
+      "CrushSound": "TankCrush"
+    },
+    "provenance": {
+      "UIName": {
+        "value": "Name:CMIN",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7304,
+          "section": "CMON",
+          "key": "UIName",
+          "value": "Name:CMIN"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5983,
+            "section": "CMON",
+            "key": "UIName",
+            "value": "Name:CMON"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7302,
+            "section": "CMON",
+            "key": "UIName",
+            "value": "Name:CMIN"
+          }
+        ]
+      },
+      "Name": {
+        "value": "Chrono Miner(noback)",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7305,
+          "section": "CMON",
+          "key": "Name",
+          "value": "Chrono Miner(noback)"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5984,
+            "section": "CMON",
+            "key": "Name",
+            "value": "Chrono Miner(noback)"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7303,
+            "section": "CMON",
+            "key": "Name",
+            "value": "Chrono Miner(noback)"
+          }
+        ]
+      },
+      "Nominal": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7307,
+          "section": "CMON",
+          "key": "Nominal",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5986,
+            "section": "CMON",
+            "key": "Nominal",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7305,
+            "section": "CMON",
+            "key": "Nominal",
+            "value": "yes"
+          }
+        ]
+      },
+      "ToProtect": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7308,
+          "section": "CMON",
+          "key": "ToProtect",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5987,
+            "section": "CMON",
+            "key": "ToProtect",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7306,
+            "section": "CMON",
+            "key": "ToProtect",
+            "value": "yes"
+          }
+        ]
+      },
+      "Category": {
+        "value": "Support",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7309,
+          "section": "CMON",
+          "key": "Category",
+          "value": "Support"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5988,
+            "section": "CMON",
+            "key": "Category",
+            "value": "Support"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7307,
+            "section": "CMON",
+            "key": "Category",
+            "value": "Support"
+          }
+        ]
+      },
+      "Strength": {
+        "value": "1000",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7310,
+          "section": "CMON",
+          "key": "Strength",
+          "value": "1000"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5989,
+            "section": "CMON",
+            "key": "Strength",
+            "value": "1000"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7308,
+            "section": "CMON",
+            "key": "Strength",
+            "value": "1000"
+          }
+        ]
+      },
+      "Armor": {
+        "value": "medium",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7311,
+          "section": "CMON",
+          "key": "Armor",
+          "value": "medium"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5990,
+            "section": "CMON",
+            "key": "Armor",
+            "value": "medium"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7309,
+            "section": "CMON",
+            "key": "Armor",
+            "value": "medium"
+          }
+        ]
+      },
+      "Dock": {
+        "value": "NAREFN,GAREFN",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7313,
+          "section": "CMON",
+          "key": "Dock",
+          "value": "NAREFN,GAREFN"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5992,
+            "section": "CMON",
+            "key": "Dock",
+            "value": "NAREFN,GAREFN"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7311,
+            "section": "CMON",
+            "key": "Dock",
+            "value": "NAREFN,GAREFN"
+          }
+        ]
+      },
+      "Harvester": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7314,
+          "section": "CMON",
+          "key": "Harvester",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5993,
+            "section": "CMON",
+            "key": "Harvester",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7312,
+            "section": "CMON",
+            "key": "Harvester",
+            "value": "yes"
+          }
+        ]
+      },
+      "ChronoInSound": {
+        "value": "ChronoMinerTeleport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7315,
+          "section": "CMON",
+          "key": "ChronoInSound",
+          "value": "ChronoMinerTeleport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5994,
+            "section": "CMON",
+            "key": "ChronoInSound",
+            "value": "ChronoMinerTeleport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7313,
+            "section": "CMON",
+            "key": "ChronoInSound",
+            "value": "ChronoMinerTeleport"
+          }
+        ]
+      },
+      "ChronoOutSound": {
+        "value": "ChronoMinerTeleport",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7316,
+          "section": "CMON",
+          "key": "ChronoOutSound",
+          "value": "ChronoMinerTeleport"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5995,
+            "section": "CMON",
+            "key": "ChronoOutSound",
+            "value": "ChronoMinerTeleport"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7314,
+            "section": "CMON",
+            "key": "ChronoOutSound",
+            "value": "ChronoMinerTeleport"
+          }
+        ]
+      },
+      "TechLevel": {
+        "value": "-1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7317,
+          "section": "CMON",
+          "key": "TechLevel",
+          "value": "-1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5996,
+            "section": "CMON",
+            "key": "TechLevel",
+            "value": "-1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7315,
+            "section": "CMON",
+            "key": "TechLevel",
+            "value": "-1"
+          }
+        ]
+      },
+      "Sight": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7318,
+          "section": "CMON",
+          "key": "Sight",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5997,
+            "section": "CMON",
+            "key": "Sight",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7316,
+            "section": "CMON",
+            "key": "Sight",
+            "value": "4"
+          }
+        ]
+      },
+      "Speed": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7319,
+          "section": "CMON",
+          "key": "Speed",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5998,
+            "section": "CMON",
+            "key": "Speed",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7317,
+            "section": "CMON",
+            "key": "Speed",
+            "value": "4"
+          }
+        ]
+      },
+      "Owner": {
+        "value": "British,French,Germans,Americans,Alliance",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7320,
+          "section": "CMON",
+          "key": "Owner",
+          "value": "British,French,Germans,Americans,Alliance"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 5999,
+            "section": "CMON",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7318,
+            "section": "CMON",
+            "key": "Owner",
+            "value": "British,French,Germans,Americans,Alliance"
+          }
+        ]
+      },
+      "AllowedToStartInMultiplayer": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7321,
+          "section": "CMON",
+          "key": "AllowedToStartInMultiplayer",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6000,
+            "section": "CMON",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7319,
+            "section": "CMON",
+            "key": "AllowedToStartInMultiplayer",
+            "value": "no"
+          }
+        ]
+      },
+      "Cost": {
+        "value": "1400",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7322,
+          "section": "CMON",
+          "key": "Cost",
+          "value": "1400"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6001,
+            "section": "CMON",
+            "key": "Cost",
+            "value": "1400"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7320,
+            "section": "CMON",
+            "key": "Cost",
+            "value": "1400"
+          }
+        ]
+      },
+      "Points": {
+        "value": "20",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7323,
+          "section": "CMON",
+          "key": "Points",
+          "value": "20"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6002,
+            "section": "CMON",
+            "key": "Points",
+            "value": "20"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7321,
+            "section": "CMON",
+            "key": "Points",
+            "value": "20"
+          }
+        ]
+      },
+      "ROT": {
+        "value": "5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7324,
+          "section": "CMON",
+          "key": "ROT",
+          "value": "5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6003,
+            "section": "CMON",
+            "key": "ROT",
+            "value": "5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7322,
+            "section": "CMON",
+            "key": "ROT",
+            "value": "5"
+          }
+        ]
+      },
+      "Crusher": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7325,
+          "section": "CMON",
+          "key": "Crusher",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6004,
+            "section": "CMON",
+            "key": "Crusher",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7323,
+            "section": "CMON",
+            "key": "Crusher",
+            "value": "yes"
+          }
+        ]
+      },
+      "Crewed": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7326,
+          "section": "CMON",
+          "key": "Crewed",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6005,
+            "section": "CMON",
+            "key": "Crewed",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7324,
+            "section": "CMON",
+            "key": "Crewed",
+            "value": "no"
+          }
+        ]
+      },
+      "SelfHealing": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7327,
+          "section": "CMON",
+          "key": "SelfHealing",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6006,
+            "section": "CMON",
+            "key": "SelfHealing",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7325,
+            "section": "CMON",
+            "key": "SelfHealing",
+            "value": "yes"
+          }
+        ]
+      },
+      "Explosion": {
+        "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7328,
+          "section": "CMON",
+          "key": "Explosion",
+          "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6007,
+            "section": "CMON",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7326,
+            "section": "CMON",
+            "key": "Explosion",
+            "value": "TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60"
+          }
+        ]
+      },
+      "VoiceSelect": {
+        "value": "ChronoMinerSelect",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7329,
+          "section": "CMON",
+          "key": "VoiceSelect",
+          "value": "ChronoMinerSelect"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6008,
+            "section": "CMON",
+            "key": "VoiceSelect",
+            "value": "GenAllVehicleSelect"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7327,
+            "section": "CMON",
+            "key": "VoiceSelect",
+            "value": "ChronoMinerSelect"
+          }
+        ]
+      },
+      "VoiceMove": {
+        "value": "ChronoMinerMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7330,
+          "section": "CMON",
+          "key": "VoiceMove",
+          "value": "ChronoMinerMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6009,
+            "section": "CMON",
+            "key": "VoiceMove",
+            "value": "ChronoMinerMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7328,
+            "section": "CMON",
+            "key": "VoiceMove",
+            "value": "ChronoMinerMove"
+          }
+        ]
+      },
+      "VoiceAttack": {
+        "value": "ChronoMinerMove",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7331,
+          "section": "CMON",
+          "key": "VoiceAttack",
+          "value": "ChronoMinerMove"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6010,
+            "section": "CMON",
+            "key": "VoiceAttack",
+            "value": "ChronoMinerMove"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7329,
+            "section": "CMON",
+            "key": "VoiceAttack",
+            "value": "ChronoMinerMove"
+          }
+        ]
+      },
+      "VoiceFeedback": {
+        "value": "",
+        "origin": {
+          "layer": "ra2",
+          "file": "rules.ini",
+          "line": 6011,
+          "section": "CMON",
+          "key": "VoiceFeedback",
+          "value": ""
+        },
+        "history": []
+      },
+      "DieSound": {
+        "value": "GenVehicleDie",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7334,
+          "section": "CMON",
+          "key": "DieSound",
+          "value": "GenVehicleDie"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6012,
+            "section": "CMON",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7332,
+            "section": "CMON",
+            "key": "DieSound",
+            "value": "GenVehicleDie"
+          }
+        ]
+      },
+      "Maxdebris": {
+        "value": "3",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7336,
+          "section": "CMON",
+          "key": "Maxdebris",
+          "value": "3"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6013,
+            "section": "CMON",
+            "key": "Maxdebris",
+            "value": "3"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7334,
+            "section": "CMON",
+            "key": "Maxdebris",
+            "value": "3"
+          }
+        ]
+      },
+      "DebrisTypes": {
+        "value": "TIRE",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7337,
+          "section": "CMON",
+          "key": "DebrisTypes",
+          "value": "TIRE"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6014,
+            "section": "CMON",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7335,
+            "section": "CMON",
+            "key": "DebrisTypes",
+            "value": "TIRE"
+          }
+        ]
+      },
+      "DebrisMaximums": {
+        "value": "4",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7338,
+          "section": "CMON",
+          "key": "DebrisMaximums",
+          "value": "4"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6015,
+            "section": "CMON",
+            "key": "DebrisMaximums",
+            "value": "4"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7336,
+            "section": "CMON",
+            "key": "DebrisMaximums",
+            "value": "4"
+          }
+        ]
+      },
+      "Locomotor": {
+        "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7340,
+          "section": "CMON",
+          "key": "Locomotor",
+          "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6017,
+            "section": "CMON",
+            "key": "Locomotor",
+            "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7338,
+            "section": "CMON",
+            "key": "Locomotor",
+            "value": "{4A582747-9839-11d1-B709-00A024DDAFD1}"
+          }
+        ]
+      },
+      "Weight": {
+        "value": "3.5",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7341,
+          "section": "CMON",
+          "key": "Weight",
+          "value": "3.5"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6018,
+            "section": "CMON",
+            "key": "Weight",
+            "value": "3.5"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7339,
+            "section": "CMON",
+            "key": "Weight",
+            "value": "3.5"
+          }
+        ]
+      },
+      "MovementZone": {
+        "value": "Crusher",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7342,
+          "section": "CMON",
+          "key": "MovementZone",
+          "value": "Crusher"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6019,
+            "section": "CMON",
+            "key": "MovementZone",
+            "value": "Crusher"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7340,
+            "section": "CMON",
+            "key": "MovementZone",
+            "value": "Crusher"
+          }
+        ]
+      },
+      "ThreatPosed": {
+        "value": "0",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7343,
+          "section": "CMON",
+          "key": "ThreatPosed",
+          "value": "0"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6020,
+            "section": "CMON",
+            "key": "ThreatPosed",
+            "value": "0"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7341,
+            "section": "CMON",
+            "key": "ThreatPosed",
+            "value": "0"
+          }
+        ]
+      },
+      "ThreatAvoidanceCoefficient": {
+        "value": "1",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7344,
+          "section": "CMON",
+          "key": "ThreatAvoidanceCoefficient",
+          "value": "1"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6021,
+            "section": "CMON",
+            "key": "ThreatAvoidanceCoefficient",
+            "value": "1"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7342,
+            "section": "CMON",
+            "key": "ThreatAvoidanceCoefficient",
+            "value": "1"
+          }
+        ]
+      },
+      "DamageParticleSystems": {
+        "value": "SparkSys,SmallGreySSys",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7345,
+          "section": "CMON",
+          "key": "DamageParticleSystems",
+          "value": "SparkSys,SmallGreySSys"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6022,
+            "section": "CMON",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7343,
+            "section": "CMON",
+            "key": "DamageParticleSystems",
+            "value": "SparkSys,SmallGreySSys"
+          }
+        ]
+      },
+      "ImmuneToRadiation": {
+        "value": "yes",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7346,
+          "section": "CMON",
+          "key": "ImmuneToRadiation",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6023,
+            "section": "CMON",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7344,
+            "section": "CMON",
+            "key": "ImmuneToRadiation",
+            "value": "yes"
+          }
+        ]
+      },
+      "Trainable": {
+        "value": "no",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7347,
+          "section": "CMON",
+          "key": "Trainable",
+          "value": "no"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "rules.ini",
+            "line": 6024,
+            "section": "CMON",
+            "key": "Trainable",
+            "value": "no"
+          },
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7345,
+            "section": "CMON",
+            "key": "Trainable",
+            "value": "no"
+          }
+        ]
+      },
+      "VoiceHarvest": {
+        "value": "ChronoMinerHarvest",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7332,
+          "section": "CMON",
+          "key": "VoiceHarvest",
+          "value": "ChronoMinerHarvest"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7330,
+            "section": "CMON",
+            "key": "VoiceHarvest",
+            "value": "ChronoMinerHarvest"
+          }
+        ]
+      },
+      "VoiceEnter": {
+        "value": "ChronoMinerReturn",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7333,
+          "section": "CMON",
+          "key": "VoiceEnter",
+          "value": "ChronoMinerReturn"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7331,
+            "section": "CMON",
+            "key": "VoiceEnter",
+            "value": "ChronoMinerReturn"
+          }
+        ]
+      },
+      "CrushSound": {
+        "value": "TankCrush",
+        "origin": {
+          "layer": "expandmd01",
+          "file": "rulesmd.ini",
+          "line": 7335,
+          "section": "CMON",
+          "key": "CrushSound",
+          "value": "TankCrush"
+        },
+        "history": [
+          {
+            "layer": "ra2md",
+            "file": "rulesmd.ini",
+            "line": 7333,
+            "section": "CMON",
+            "key": "CrushSound",
+            "value": "TankCrush"
+          }
+        ]
+      }
+    }
+  },
+  "art": {
+    "values": {
+      "Voxel": true,
+      "Remapable": true
+    },
+    "raw_values": {
+      "Voxel": "yes",
+      "Remapable": "yes"
+    },
+    "provenance": {
+      "Voxel": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 649,
+          "section": "CMON",
+          "key": "Voxel",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 470,
+            "section": "CMON",
+            "key": "Voxel",
+            "value": "yes"
+          }
+        ]
+      },
+      "Remapable": {
+        "value": "yes",
+        "origin": {
+          "layer": "ra2md",
+          "file": "artmd.ini",
+          "line": 650,
+          "section": "CMON",
+          "key": "Remapable",
+          "value": "yes"
+        },
+        "history": [
+          {
+            "layer": "ra2",
+            "file": "art.ini",
+            "line": 471,
+            "section": "CMON",
+            "key": "Remapable",
+            "value": "yes"
+          }
+        ]
+      }
+    }
+  }
+}
