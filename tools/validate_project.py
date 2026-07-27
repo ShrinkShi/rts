@@ -37,10 +37,11 @@ def validate_json() -> dict[str, object]:
             result[name] = json.loads(path.read_text(encoding="utf-8"))
         except Exception as exc:
             error(f"Invalid JSON {path.name}: {exc}")
-    try:
-        json.loads((ROOT / "BUILD_INFO.json").read_text(encoding="utf-8"))
-    except Exception as exc:
-        error(f"Invalid JSON BUILD_INFO.json: {exc}")
+    for relative in ["BUILD_INFO.json", "data/ra2/runtime_profiles.json"]:
+        try:
+            json.loads((ROOT / relative).read_text(encoding="utf-8"))
+        except Exception as exc:
+            error(f"Invalid JSON {relative}: {exc}")
     return result
 
 
@@ -73,21 +74,21 @@ def validate_features(data: dict[str, object]) -> None:
     match = text("scripts/game/rts_match.gd")
     unit = text("scripts/game/unit.gd")
     building = text("scripts/game/building.gd")
-    # v0.16 keeps the mature rectangular-grid implementation in a compatibility
-    # base and layers Overlay/height metadata in grid_world.gd. Validate both as
-    # one logical GridWorld implementation.
-    grid = (
-        text("scripts/game/grid_world_base.gd")
-        + "\n"
-        + text("scripts/game/grid_world.gd")
-    )
+    grid = text("scripts/game/grid_world_base.gd") + "\n" + text("scripts/game/grid_world.gd")
+    runtime_tuning = text("scripts/core/runtime_tuning.gd")
+    combat_effect = text("scripts/game/combat_effect.gd")
+    layered_vehicle = text("scripts/ra2/ra2_layered_vehicle_visual.gd")
     hud = text("scripts/ui/match_hud.gd")
     tree = text("scripts/game/tree_entity.gd")
     campaign = text("scripts/ui/campaign_menu.gd")
     factory = text("scripts/game/sprite_sheet_factory.gd")
     asset_processor = text("tools/process_ai_assets.py")
 
-    require(project, ['config/version="0.16.0-dev.2"'], "Project version")
+    require(project, [
+        'config/version="0.16.0-dev.3"',
+        'RuntimeTuning="*res://scripts/core/runtime_tuning.gd"',
+        '2d/snap/snap_2d_transforms_to_pixel=true',
+    ], "Project version/runtime")
     require(match, [
         'structure_jobs = {"primary": {}, "defense": {}}',
         'func repair_entity_step',
@@ -130,32 +131,23 @@ def validate_features(data: dict[str, object]) -> None:
         'get_defense_head_frames',
     ], "Building")
     require(grid, [
-        'balanced_land',
-        'ore_centers',
-        'astar_infantry',
-        'astar_vehicle',
-        'func get_cover_multiplier',
-        'func get_movement_speed_multiplier',
-        'or has_ore(cell)',
-        'Generate one quadrant and mirror it across both axes',
-        'overlay_types',
-        'overlay_frames',
-        'height_levels',
-        'slope_types',
-        'land_types',
-        'func get_overlay_asset_id',
-        'func get_cell_snapshot',
-        'func get_ground_height',
+        'balanced_land', 'ore_centers', 'astar_infantry', 'astar_vehicle',
+        'func get_cover_multiplier', 'func get_movement_speed_multiplier',
+        'or has_ore(cell)', 'Generate one quadrant and mirror it across both axes',
+        'overlay_types', 'overlay_frames', 'height_levels', 'slope_types',
+        'land_types', 'func get_overlay_asset_id', 'func get_cell_snapshot',
+        'func get_ground_height', 'Extrude each tile',
     ], "Grid")
-    require(hud, [
-        'SidebarToolButton',
-        'repair_building',
-        'sell_building',
-        'repair_bay',
-        'force_attack',
-        'behavior',
-        'get_structure_status',
-    ], "HUD")
+    require(runtime_tuning, [
+        'collision_radius"] = 6.25',
+        'unit.stats["radius"] = 15.0',
+        'ore_harvest',
+        'building._update_damage_visual()',
+        '_remove_invalid_normal_tail',
+    ], "Runtime tuning")
+    require(combat_effect, ['effect_type == "ore_harvest"', '_spawn_ore_particles', 'effect_type == "muzzle"'], "Combat effects")
+    require(layered_vehicle, ['_shadow_center', 'draw_set_transform(_shadow_center', 'position = (Vector2'], "Layered vehicle shadow")
+    require(hud, ['SidebarToolButton', 'repair_building', 'sell_building', 'repair_bay', 'force_attack', 'behavior', 'get_structure_status'], "HUD")
     require(tree, ['dense', 'LAYER_TREE', '步兵可进入并获得25%减伤'], "Tree")
     require(campaign, ['MarginContainer.new()', 'size_flags_vertical = Control.SIZE_EXPAND_FILL'], "Campaign UI")
     require(factory, ['AtlasTexture.new()', 'filter_clip = true', 'tank_chassis.png', 'tank_turret.png', 'bunker_head', 'create_team_material'], "Sprite atlas")
@@ -164,6 +156,7 @@ def validate_features(data: dict[str, object]) -> None:
     visual_store = text('scripts/core/visual_profile_store.gd')
     require(visual_store, ['resources/visual_profiles', 'ResourceLoader.exists'], 'Visual tuning profiles')
     require(match, ['UNIT_SCENE_PATHS', 'BUILDING_SCENE_PATHS', 'PackedScene', '.instantiate()'], 'PackedScene spawning')
+
     for unit_id in ['rifle', 'rocket', 'tank', 'scout', 'harvester']:
         scene_path = ROOT / 'scenes' / 'entities' / 'units' / f'{unit_id}.tscn'
         if not scene_path.exists():
@@ -216,10 +209,7 @@ def validate_features(data: dict[str, object]) -> None:
             nearest_second: list[float] = []
             for raw_position in positions:
                 position = (float(raw_position[0]), float(raw_position[1]))
-                distances = sorted(
-                    math.dist(position, (float(center[0]), float(center[1])))
-                    for center in ore_centers
-                )
+                distances = sorted(math.dist(position, (float(center[0]), float(center[1]))) for center in ore_centers)
                 nearest_first.append(distances[0])
                 nearest_second.append(distances[1])
             if max(nearest_first) - min(nearest_first) > 1.0:
@@ -233,18 +223,12 @@ def validate_features(data: dict[str, object]) -> None:
             error(f"Missing generated building art: {building_id}.png")
 
     ai_assets = [
-        "assets/ai_generated/units/rifle.png",
-        "assets/ai_generated/units/tank_chassis.png",
-        "assets/ai_generated/units/tank_turret.png",
-        "assets/ai_generated/units/tank_death.png",
-        "assets/ai_generated/buildings/power.png",
-        "assets/ai_generated/buildings/barracks.png",
-        "assets/ai_generated/buildings/refinery.png",
-        "assets/ai_generated/buildings/turret_base.png",
-        "assets/ai_generated/buildings/turret_head.png",
-        "assets/ai_generated/buildings/bunker_base.png",
-        "assets/ai_generated/buildings/bunker_head.png",
-        "shaders/team_tint.gdshader",
+        "assets/ai_generated/units/rifle.png", "assets/ai_generated/units/tank_chassis.png",
+        "assets/ai_generated/units/tank_turret.png", "assets/ai_generated/units/tank_death.png",
+        "assets/ai_generated/buildings/power.png", "assets/ai_generated/buildings/barracks.png",
+        "assets/ai_generated/buildings/refinery.png", "assets/ai_generated/buildings/turret_base.png",
+        "assets/ai_generated/buildings/turret_head.png", "assets/ai_generated/buildings/bunker_base.png",
+        "assets/ai_generated/buildings/bunker_head.png", "shaders/team_tint.gdshader",
     ]
     for relative in ai_assets:
         if not (ROOT / relative).exists():

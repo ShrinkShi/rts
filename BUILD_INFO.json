@@ -1,9 +1,9 @@
 {
   "name": "Iron Meridian RTS",
-  "version": "0.16.0-dev.2",
+  "version": "0.16.0-dev.3",
   "engine": "Godot 4.7.1",
-  "release": "RA2 map-layer separation: independent ore overlays, visible fallback and height metadata foundation",
-  "base": "v0.16.0-dev.1",
+  "release": "Runtime visual correction pass: mining particles, collision tuning, seamless terrain borders, building damage recovery and layered vehicle shadows",
+  "base": "v0.16.0-dev.2",
   "source_asset_count": 11593,
   "entity_count": 559,
   "preview_entity_count": 177,
@@ -25,7 +25,7 @@
   "official_map_count": 13,
   "missing_preview_error_is_nonfatal": true,
   "godot_binary_validation": false,
-  "validation_note": "Python overlay converter compile and functional smoke test, JSON and source-structure checks passed. Godot 4.7.1 editor/runtime validation is still required.",
+  "validation_note": "JSON and source-structure validation is required after commit. Godot 4.7.1 editor/runtime validation is still required on the user's machine.",
   "preview_category_counts": {
     "infantry": 31,
     "vehicle": 78,
@@ -59,11 +59,13 @@
     "deployed",
     "deployed_attack",
     "projectile_flight",
-    "ai_construction"
+    "ai_construction",
+    "ore_harvest_effect"
   ],
   "runtime_layered_vehicle_visuals": true,
   "runtime_layered_vehicle_count": 8,
   "runtime_independent_turret_directions": 8,
+  "runtime_layered_vehicle_shadow": true,
   "runtime_ra2_eva_adjutants": [
     "allied",
     "soviet",
@@ -71,6 +73,8 @@
   ],
   "runtime_ra2_terrain": true,
   "runtime_ra2_terrain_bridge": "temperate TMP pixels adapted to the current 32px rectangular logical grid",
+  "runtime_terrain_border_extrusion": true,
+  "runtime_pixel_snap": true,
   "runtime_ballistic_shells": true,
   "runtime_gi_deployment": true,
   "runtime_ai_builds_structures": true,
@@ -83,8 +87,13 @@
   "runtime_ore_overlay_split": true,
   "runtime_ore_visible_fallback": true,
   "runtime_ore_exact_ra2_overlay_assets": false,
+  "runtime_ore_harvest_particles": true,
   "runtime_height_metadata": true,
   "runtime_isometric_height_rendering": false,
   "runtime_ra2_cursor_packed_frame_count": 63,
-  "runtime_minimap_overlay_resources": true
+  "runtime_minimap_overlay_resources": true,
+  "runtime_infantry_collision_tuning": true,
+  "runtime_building_damage_repair_sync": true,
+  "runtime_building_normal_tail_guard": true,
+  "runtime_defense_visual_tuning": true
 }
