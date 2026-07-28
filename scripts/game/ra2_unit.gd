@@ -1,12 +1,15 @@
 extends "res://scripts/game/unit.gd"
 
+const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")
+const RA2CombatAudioRouter = preload("res://scripts/ra2/ra2_combat_audio.gd")
+
 var inside_tank_bunker := false
 var tank_bunker_target
 
 
 func setup(next_match, next_map, next_unit_id, next_owner, world_position):
     super.setup(next_match, next_map, next_unit_id, next_owner, world_position)
-    stats = RA2RulesAdapter.build_runtime_stats(stats, ra2_entity_id, str(stats.get("category", "vehicle")))
+    stats = RA2Rules.build_runtime_stats(stats, ra2_entity_id, str(stats.get("category", "vehicle")))
     stats["armor"] = float(stats.get("armor_value", 0.0))
     max_hp = float(stats.get("hp", max_hp))
     hp = max_hp
@@ -14,7 +17,7 @@ func setup(next_match, next_map, next_unit_id, next_owner, world_position):
     shield = max_shield
     corpse_lifetime = 3.2 if str(stats.get("category", "infantry")) == "infantry" else 3.8
     guard_range = maxf(float(stats.get("range", 0.0)), float(stats.get("guard_range", guard_range)))
-    var category := str(stats.get("category", "vehicle"))
+    var category: String = str(stats.get("category", "vehicle"))
     if category == "infantry":
         stats["collision_radius"] = 6.25 if unit_id == "rifle" else 6.75
         safe_margin = 0.72
@@ -36,53 +39,51 @@ func _physics_process(delta):
 func take_damage(amount, source = null):
     if inside_tank_bunker:
         return 0.0
-    var resolved := RA2RulesAdapter.resolve_damage(source, self, float(amount))
+    var resolved: float = RA2Rules.resolve_damage(source, self, float(amount))
     if resolved <= 0.0:
         return 0.0
-    # `armor` remains visible in the HUD, but RA2RulesAdapter has already applied
-    # both Verses and numeric armor. Temporarily suppress the base flat subtraction.
-    var display_armor := float(stats.get("armor", 0.0))
+    var display_armor: float = float(stats.get("armor", 0.0))
     stats["armor"] = 0.0
-    var actual = super.take_damage(resolved, source)
+    var actual: Variant = super.take_damage(resolved, source)
     stats["armor"] = display_armor
     if float(actual) > 0.0 and hp > 0.0 and not ra2_entity_id.is_empty():
-        RA2CombatAudio.play_entity_role(ra2_entity_id, "VoiceFeedback", global_position, match_ref, 180)
+        RA2CombatAudioRouter.play_entity_role(ra2_entity_id, "VoiceFeedback", global_position, match_ref, 180)
     return actual
 
 
 func _fire_at(target):
-    var entity_id := ra2_entity_id
+    var entity_id: String = ra2_entity_id
     ra2_entity_id = ""
     super._fire_at(target)
     ra2_entity_id = entity_id
     if not entity_id.is_empty():
-        RA2CombatAudio.play_weapon_report(entity_id, global_position, match_ref)
+        RA2CombatAudioRouter.play_weapon_report(entity_id, global_position, match_ref)
 
 
 func _fire_at_position(target_position, forced_target = null):
-    var entity_id := ra2_entity_id
+    var entity_id: String = ra2_entity_id
     ra2_entity_id = ""
     super._fire_at_position(target_position, forced_target)
     ra2_entity_id = entity_id
     if not entity_id.is_empty():
-        RA2CombatAudio.play_weapon_report(entity_id, global_position, match_ref)
+        RA2CombatAudioRouter.play_weapon_report(entity_id, global_position, match_ref)
 
 
 func _begin_death(source = null):
     if dying:
         return
-    var entity_id := ra2_entity_id
-    var death_position := global_position
+    var entity_id: String = ra2_entity_id
+    var death_position: Vector2 = global_position
     ra2_entity_id = ""
     super._begin_death(source)
     ra2_entity_id = entity_id
     if not entity_id.is_empty():
-        RA2CombatAudio.play_entity_role(entity_id, "DieSound", death_position, match_ref, 80)
+        RA2CombatAudioRouter.play_entity_role(entity_id, "DieSound", death_position, match_ref, 80)
 
 
 func command_move(target_position, manual = true, queued = false):
     if str(stats.get("category", "")) == "vehicle" and unit_id == "tank" and is_instance_valid(match_ref):
-        var candidate = match_ref.get_entity_at(Vector2(target_position), true)
+        var candidate: Variant = match_ref.get_entity_at(Vector2(target_position), true)
         if is_instance_valid(candidate) and candidate.owner_id == owner_id and candidate.has_method("can_accept_tank") and candidate.can_accept_tank(self):
             _submit_order({"type": "tank_bunker", "target": candidate, "position": candidate.global_position, "manual": bool(manual)}, queued)
             return
@@ -100,7 +101,7 @@ func _activate_order(order):
     velocity = Vector2.ZERO
     tank_bunker_target = active_order.get("target")
     if is_instance_valid(tank_bunker_target):
-        var entry := tank_bunker_target.get_garrison_entry_position(global_position)
+        var entry: Vector2 = Vector2(tank_bunker_target.get_garrison_entry_position(global_position))
         active_order["position"] = entry
         _set_path_to(entry)
 
@@ -109,12 +110,12 @@ func _process_active_order(delta):
     if str(active_order.get("type", "")) != "tank_bunker":
         super._process_active_order(delta)
         return
-    var bunker = active_order.get("target")
+    var bunker: Variant = active_order.get("target")
     if not is_instance_valid(bunker) or not bunker.has_method("accept_tank"):
         tank_bunker_target = null
         _complete_active_order()
         return
-    var entry := bunker.get_garrison_entry_position(global_position)
+    var entry: Vector2 = Vector2(bunker.get_garrison_entry_position(global_position))
     active_order["position"] = entry
     if global_position.distance_to(entry) <= 24.0:
         velocity = Vector2.ZERO

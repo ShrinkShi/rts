@@ -1,15 +1,18 @@
 extends "res://scripts/game/building.gd"
 
+const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")
+const RA2CombatAudioRouter = preload("res://scripts/ra2/ra2_combat_audio.gd")
+
 var garrisoned_tank
 var target_domains: Array[String] = ["ground"]
 
 
 func setup(next_match, next_map, next_building_id, next_owner, cell, animate_construction = false):
     super.setup(next_match, next_map, next_building_id, next_owner, cell, animate_construction)
-    var previous_footprint := footprint
-    stats = RA2RulesAdapter.build_runtime_stats(stats, ra2_entity_id, "building")
+    var previous_footprint: Vector2i = footprint
+    stats = RA2Rules.build_runtime_stats(stats, ra2_entity_id, "building")
     stats["armor"] = float(stats.get("armor_value", 0.0))
-    var display_override := str(ra2_profile.get("display_name_override", ""))
+    var display_override: String = str(ra2_profile.get("display_name_override", ""))
     if not display_override.is_empty():
         stats["name"] = display_override
     if ra2_profile.has("cost_override"):
@@ -20,7 +23,7 @@ func setup(next_match, next_map, next_building_id, next_owner, cell, animate_con
     shield = max_shield
     destruction_lifetime = 3.8
     var footprint_data: Array = stats.get("footprint", [previous_footprint.x, previous_footprint.y])
-    var next_footprint := Vector2i(int(footprint_data[0]), int(footprint_data[1]))
+    var next_footprint: Vector2i = Vector2i(int(footprint_data[0]), int(footprint_data[1]))
     if next_footprint != previous_footprint:
         map_ref.vacate(self)
         footprint = next_footprint
@@ -29,10 +32,10 @@ func setup(next_match, next_map, next_building_id, next_owner, cell, animate_con
         _build_collision_shape()
         rally_point = global_position + Vector2((footprint.x + 2) * map_ref.tile_px, 0)
         if is_instance_valid(ra2_visual):
-            var runtime_width := float(ra2_profile.get("target_width", maxf(64.0, footprint.x * map_ref.tile_px * 1.42)))
-            var ground_y := float(ra2_profile.get("ground_y", footprint.y * map_ref.tile_px * 0.34))
+            var runtime_width: float = float(ra2_profile.get("target_width", maxf(64.0, footprint.x * map_ref.tile_px * 1.42)))
+            var ground_y: float = float(ra2_profile.get("ground_y", footprint.y * map_ref.tile_px * 0.34))
             var raw_offset: Variant = ra2_profile.get("offset", [0.0, 0.0])
-            var offset := Vector2.ZERO
+            var offset: Vector2 = Vector2.ZERO
             if raw_offset is Array and raw_offset.size() >= 2:
                 offset = Vector2(float(raw_offset[0]), float(raw_offset[1]))
             ra2_visual.configure_layout(runtime_width, ground_y, offset)
@@ -80,7 +83,7 @@ func can_accept_tank(unit) -> bool:
 func get_garrison_entry_position(from_position = Vector2.ZERO) -> Vector2:
     if is_instance_valid(service_anchor):
         return service_anchor.global_position
-    var direction := global_position.direction_to(Vector2(from_position))
+    var direction: Vector2 = global_position.direction_to(Vector2(from_position))
     if direction.length_squared() < 0.01:
         direction = Vector2.RIGHT
     return global_position + direction.normalized() * maxf(20.0, footprint.x * map_ref.tile_px * 0.55)
@@ -106,10 +109,15 @@ func eject_garrisoned_tank() -> void:
     if not is_instance_valid(garrisoned_tank):
         garrisoned_tank = null
         return
-    var tank = garrisoned_tank
+    var tank: Variant = garrisoned_tank
     garrisoned_tank = null
     set_special_active(false)
-    var exit_position := match_ref.find_clear_unit_position(get_garrison_entry_position(global_position + Vector2.RIGHT * 64.0), float(tank.stats.get("collision_radius", 16.0)), tank, "vehicle")
+    var exit_position: Vector2 = Vector2(match_ref.find_clear_unit_position(
+        get_garrison_entry_position(global_position + Vector2.RIGHT * 64.0),
+        float(tank.stats.get("collision_radius", 16.0)),
+        tank,
+        "vehicle"
+    ))
     if exit_position == Vector2.ZERO:
         exit_position = global_position + Vector2((footprint.x + 1) * map_ref.tile_px, 0.0)
     tank.exit_tank_bunker(exit_position)
@@ -126,21 +134,21 @@ func begin_sell(refund):
 func take_damage(amount, source = null):
     if destroyed:
         return 0.0
-    var resolved := RA2RulesAdapter.resolve_damage(source, self, float(amount))
-    var entity_id := ra2_entity_id
-    var was_destroyed := destroyed
-    var display_armor := float(stats.get("armor", 0.0))
+    var resolved: float = RA2Rules.resolve_damage(source, self, float(amount))
+    var entity_id: String = ra2_entity_id
+    var was_destroyed: bool = destroyed
+    var display_armor: float = float(stats.get("armor", 0.0))
     stats["armor"] = 0.0
     ra2_entity_id = ""
-    var actual = super.take_damage(resolved, source)
+    var actual: Variant = super.take_damage(resolved, source)
     ra2_entity_id = entity_id
     stats["armor"] = display_armor
     if not was_destroyed and destroyed:
         eject_garrisoned_tank()
         if not entity_id.is_empty():
-            RA2CombatAudio.play_entity_role(entity_id, "DieSound", global_position, match_ref, 80)
+            RA2CombatAudioRouter.play_entity_role(entity_id, "DieSound", global_position, match_ref, 80)
     elif float(actual) > 0.0 and not entity_id.is_empty():
-        RA2CombatAudio.play_entity_role(entity_id, "VoiceFeedback", global_position, match_ref, 220)
+        RA2CombatAudioRouter.play_entity_role(entity_id, "VoiceFeedback", global_position, match_ref, 220)
     return actual
 
 
@@ -149,17 +157,17 @@ func _is_valid_defense_target(candidate) -> bool:
         return false
     if not match_ref.are_enemies(owner_id, candidate.owner_id):
         return false
-    var domain := "air" if RA2RulesAdapter.is_air_target(candidate) else "ground"
+    var domain: String = "air" if RA2Rules.is_air_target(candidate) else "ground"
     return domain in target_domains
 
 
 func _nearest_valid_defense_target(max_range: float):
-    var best = null
-    var best_distance := max_range * max_range
+    var best: Variant = null
+    var best_distance: float = max_range * max_range
     for candidate in match_ref.units + match_ref.buildings:
         if not _is_valid_defense_target(candidate):
             continue
-        var distance := global_position.distance_squared_to(candidate.global_position)
+        var distance: float = global_position.distance_squared_to(candidate.global_position)
         if distance <= best_distance:
             best_distance = distance
             best = candidate
@@ -169,9 +177,9 @@ func _nearest_valid_defense_target(max_range: float):
 func _process_turret():
     if selling or is_under_construction() or target_domains.is_empty():
         return
-    var attack_point := Vector2.ZERO
+    var attack_point: Vector2 = Vector2.ZERO
     var has_attack_point := false
-    var damage_target = null
+    var damage_target: Variant = null
     if forced_attack_active:
         if forced_attack_target != null and not is_instance_valid(forced_attack_target):
             forced_attack_active = false
@@ -211,11 +219,11 @@ func _process_turret():
     if is_instance_valid(ra2_visual):
         ra2_visual.play_state("attack", turret_visual_direction, true)
     if not ra2_entity_id.is_empty():
-        RA2CombatAudio.play_weapon_report(ra2_entity_id, global_position, match_ref)
+        RA2CombatAudioRouter.play_weapon_report(ra2_entity_id, global_position, match_ref)
     fired.emit(global_position + turret_facing * 18.0 + Vector2(0, -22), attack_point, owner_id)
     match_ref.spawn_muzzle_flash(global_position + turret_facing * 25.0 + Vector2(0, -22), Color("#FFD46B"))
-    var shot_damage := float(stats.get("damage", 20.0))
-    var shot_aoe := float(stats.get("aoe_radius", 0.0))
+    var shot_damage: float = float(stats.get("damage", 20.0))
+    var shot_aoe: float = float(stats.get("aoe_radius", 0.0))
     if is_instance_valid(damage_target):
         match_ref.apply_weapon_damage(self, damage_target, shot_damage, shot_aoe)
     elif forced_attack_active:

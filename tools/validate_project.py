@@ -34,9 +34,16 @@ def require(source: str, tokens: list[str], label: str) -> None:
             error(f"{label} missing token: {token}")
 
 
+def forbid(source: str, tokens: list[str], label: str) -> None:
+    for token in tokens:
+        if token in source:
+            error(f"{label} contains forbidden token: {token}")
+
+
 def validate_gdscript_structure() -> None:
-    func_pattern = re.compile(r"^func\s+([A-Za-z0-9_]+)\s*\(", re.MULTILINE)
+    func_pattern = re.compile(r"^(?:static\s+)?func\s+([A-Za-z0-9_]+)\s*\(", re.MULTILINE)
     preload_pattern = re.compile(r'(?:preload|load)\("(res://[^"]+)"\)')
+    reserved_variable_pattern = re.compile(r"\bvar\s+(class_name|extends|signal|static)\b")
     for path in ROOT.rglob("*.gd"):
         source = path.read_text(encoding="utf-8")
         names = func_pattern.findall(source)
@@ -49,6 +56,9 @@ def validate_gdscript_structure() -> None:
         for resource in preload_pattern.findall(source):
             if not (ROOT / resource.removeprefix("res://")).exists():
                 error(f"Missing resource referenced by {path.relative_to(ROOT)}: {resource}")
+        reserved_match = reserved_variable_pattern.search(source)
+        if reserved_match:
+            error(f"Reserved keyword used as variable in {path.relative_to(ROOT)}: {reserved_match.group(1)}")
 
 
 def validate_json_and_ra2_data() -> None:
@@ -93,20 +103,25 @@ def validate_dev5_features() -> None:
     project = text("project.godot")
     require(project, [
         'config/version="0.16.0-dev.5"',
-        'RA2RulesAdapter="*res://scripts/ra2/ra2_rules_adapter.gd"',
-        'RA2CombatAudio="*res://scripts/ra2/ra2_combat_audio.gd"',
         'RuntimeAIRules="*res://scripts/core/runtime_ai_rules.gd"',
         'RuntimeMovementRules="*res://scripts/core/runtime_movement_rules.gd"',
         'RuntimeProductionRules="*res://scripts/core/runtime_production_rules.gd"',
     ], "Project dev5 autoloads")
+    forbid(project, [
+        'RA2RulesAdapter="*res://scripts/ra2/ra2_rules_adapter.gd"',
+        'RA2CombatAudio="*res://scripts/ra2/ra2_combat_audio.gd"',
+    ], "Static RA2 helper autoloads")
 
     rules = text("scripts/ra2/ra2_rules_adapter.gd")
     require(rules, [
+        'extends RefCounted',
         'WARHEADS_PATH := "res://data/ra2/warheads.json"',
-        'func build_runtime_stats', 'func parse_foundation',
+        'static func build_runtime_stats', 'static func parse_foundation',
         '"biological"', '"mechanical"', '"building"',
-        'func damage_multiplier', 'warhead_verses', 'armor_value',
+        'static func damage_multiplier', 'warhead_verses', 'armor_value',
+        'var armor_class_name: String',
     ], "RA2 rules adapter")
+    forbid(rules, ['var class_name'], "RA2 rules adapter reserved identifiers")
 
     audio = text("scripts/ra2/ra2_audio_service.gd")
     require(audio, [
@@ -114,7 +129,8 @@ def validate_dev5_features() -> None:
         'MIN_EDGE_VOLUME', 'panning_strength = 1.0', 'player.attenuation = 0.0',
     ], "Screen-space combat audio")
     require(text("scripts/ra2/ra2_combat_audio.gd"), [
-        'func play_weapon_report', 'play_event_spatial',
+        'extends RefCounted', 'static func play_weapon_report',
+        'audio_service.call("play_event_spatial"',
     ], "RA2 combat audio router")
 
     ai_rules = text("scripts/core/runtime_ai_rules.gd")
@@ -124,14 +140,18 @@ def validate_dev5_features() -> None:
 
     ra2_unit = text("scripts/game/ra2_unit.gd")
     require(ra2_unit, [
-        'RA2RulesAdapter.build_runtime_stats', 'RA2RulesAdapter.resolve_damage',
-        'RA2CombatAudio.play_weapon_report', 'corpse_lifetime = 3.2',
-        'func enter_tank_bunker', 'func exit_tank_bunker',
+        'const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")',
+        'const RA2CombatAudioRouter = preload("res://scripts/ra2/ra2_combat_audio.gd")',
+        'RA2Rules.build_runtime_stats', 'RA2Rules.resolve_damage',
+        'RA2CombatAudioRouter.play_weapon_report', 'corpse_lifetime = 3.2',
+        'var entry: Vector2', 'func enter_tank_bunker', 'func exit_tank_bunker',
     ], "RA2 unit runtime")
 
     ra2_building = text("scripts/game/ra2_building.gd")
     require(ra2_building, [
-        'RA2RulesAdapter.build_runtime_stats', 'RA2RulesAdapter.resolve_damage',
+        'const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")',
+        'const RA2CombatAudioRouter = preload("res://scripts/ra2/ra2_combat_audio.gd")',
+        'RA2Rules.build_runtime_stats', 'RA2Rules.resolve_damage',
         'destruction_lifetime = 3.8', 'func can_accept_tank',
         '"NAFLAK", "NASAM", "GAPATS"', '"YAGGUN"', '"NATBNK"',
         'target_domains = ["ground", "air"]',
@@ -146,8 +166,9 @@ def validate_dev5_features() -> None:
 
     production = text("scripts/core/runtime_production_rules.gd")
     require(production, [
+        'const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")',
         'MAX_PRODUCTION_QUEUE := 30', '5 if bool(event.shift_pressed) else 1',
-        'RA2RulesAdapter.build_runtime_stats', 'cost_override',
+        'RA2Rules.build_runtime_stats', 'cost_override',
         'GameConfig.buildings[building_id]["footprint"]',
         '"电力  %d / %d" % [consumed, produced]',
     ], "Production rules")
@@ -155,8 +176,9 @@ def validate_dev5_features() -> None:
     deployment = text("scripts/core/runtime_deployment_rules.gd")
     require(deployment, [
         'preload("res://scripts/game/ra2_unit.gd")',
+        'const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")',
         '_filter_deployed_units_from_right_click', '_pack_command_building',
-        '_command_footprint', '_unpack_mcv',
+        'RA2Rules.build_runtime_stats', '_command_footprint', '_unpack_mcv',
     ], "Deployment and MCV Foundation rules")
 
     require(text("scripts/core/runtime_defeat_rules.gd"), [
@@ -169,7 +191,8 @@ def validate_dev5_features() -> None:
     tree = text("scripts/game/tree_entity.gd")
     require(tree, [
         'TREE_COLLISION_FACTOR := 0.14', 'RA2_TREE_PATHS',
-        'ResourceLoader.exists(path)', '步兵可进入并获得25%减伤',
+        'ResourceLoader.exists(path)', 'var index: int',
+        '步兵可进入并获得25%减伤',
     ], "RA2 tree loader")
 
     match = text("scripts/game/rts_match.gd")
