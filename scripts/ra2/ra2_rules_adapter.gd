@@ -59,10 +59,18 @@ func _apply_primary_weapon(result: Dictionary, entity: Dictionary) -> void:
             break
     if weapon.is_empty():
         result["damage"] = 0.0 if not result.has("damage") else result["damage"]
+        result["weapon_id"] = ""
+        result["warhead_id"] = ""
+        result["weapon_name"] = "无"
+        result["damage_type"] = "无"
         return
     var values: Dictionary = weapon.get("values", {})
-    result["weapon_id"] = str(weapon.get("id", ""))
-    result["warhead_id"] = str(weapon.get("warhead", values.get("Warhead", ""))).to_upper()
+    var weapon_id := str(weapon.get("id", ""))
+    var warhead_id := str(weapon.get("warhead", values.get("Warhead", ""))).to_upper()
+    result["weapon_id"] = weapon_id
+    result["warhead_id"] = warhead_id
+    result["weapon_name"] = weapon_id if not weapon_id.is_empty() else "未命名武器"
+    result["damage_type"] = "弹头 %s" % warhead_id if not warhead_id.is_empty() else "未指定弹头"
     result["projectile_id"] = str(weapon.get("projectile", values.get("Projectile", "")))
     result["damage"] = float(values.get("Damage", result.get("damage", 0.0)))
     var rof := float(values.get("ROF", 0.0))
@@ -74,7 +82,7 @@ func _apply_primary_weapon(result: Dictionary, entity: Dictionary) -> void:
     var projectile_speed := float(values.get("Speed", 0.0))
     if projectile_speed > 0.0:
         result["projectile_speed"] = projectile_speed * 8.0
-    result["warhead_verses"] = get_warhead_verses(str(result.get("warhead_id", "")))
+    result["warhead_verses"] = get_warhead_verses(warhead_id)
 
 
 func _apply_building_rules(result: Dictionary, entity: Dictionary, generic_category: String) -> void:
@@ -92,6 +100,7 @@ func _apply_building_rules(result: Dictionary, entity: Dictionary, generic_categ
     var foundation := parse_foundation(art.get("Foundation", ""))
     if foundation != Vector2i.ZERO:
         result["footprint"] = [foundation.x, foundation.y]
+        result["foundation"] = "%dx%d" % [foundation.x, foundation.y]
 
 
 func parse_foundation(value: Variant) -> Vector2i:
@@ -119,14 +128,16 @@ func _apply_project_armor_model(result: Dictionary, armor_id: String, generic_ca
         armor_class = "mechanical"
     result["armor_class"] = armor_class
     result["armor_value"] = armor_value_for(armor_id, armor_class)
+    result["armor_rule_id"] = armor_id
     # The base scripts subtract `armor` as a flat number. RA2 damage is resolved in
     # this adapter, so the inherited flat subtraction must be disabled.
     result["armor"] = 0.0
-    result["armor_type"] = {
+    var class_name := str({
         "biological": "生物护甲",
         "mechanical": "机械护甲",
         "building": "建筑护甲"
-    }.get(armor_class, "护甲")
+    }.get(armor_class, "护甲"))
+    result["armor_type"] = "%s（%s，护甲值 %.0f）" % [class_name, armor_id, float(result["armor_value"])]
 
 
 func armor_value_for(armor_id: String, armor_class: String) -> float:
