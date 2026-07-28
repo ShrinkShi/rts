@@ -1,0 +1,141 @@
+name: Update dev6 version log
+
+on:
+  push:
+    branches:
+      - feature/v0.16.0-dev6-height-2_5d-foundation
+    paths:
+      - .github/workflows/dev6-update-version-log.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/v0.16.0-dev6-height-2_5d-foundation
+          fetch-depth: 0
+      - name: Insert version history
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("版本更新记录.md")
+          text = path.read_text(encoding="utf-8")
+          marker = "后续目标如下："
+          sentinel = "### v0.16.0-dev.6（2026-07-28）"
+          if sentinel not in text:
+              block = r'''
+### v0.16.0-dev.4（2026-07-28）
+
+**状态：已实现并进入后续实机验证**
+
+本轮完成：
+
+- 单位到达已被占用的目标点时停止收尾，减少围绕目标左右摇摆。
+- 缩小树木对车辆的碰撞范围，步兵可进入树林且不与树木发生物理碰撞。
+- `Shift + 左键` 在生产栏一次加入 5 个单位，单类生产队列上限提高到 30。
+- 部署单位保持部署状态；混合选择时按 `D` 优先部署未部署单位，再次按下才统一解除。
+- 基地可通过 `D` 收起为基地车，基地车可移动并重新展开，收起与展开继承生命值。
+- 胜负条件改为所有建筑被摧毁才判负，并显示玩家被击败通知。
+- 不满足前置条件的单位和建筑不再显示在建造栏。
+- 建筑血条提高到建筑视觉上方，避免被主体遮挡。
+- 修复战车工厂生产时错误丢失可通行坡道格的问题。
+- 矿车进入精炼厂服务格后调整方向，并接入卸矿视觉切换入口。
+- 电力显示改为“当前耗电量 / 总发电量”。
+
+### v0.16.0-dev.5（2026-07-28）
+
+**状态：已实现，随后经过 Parser 与运行时热修复**
+
+本轮完成：
+
+- 武器开火、单位受击和建筑受击改用视野内空间音频；屏幕外不播放，视野中心音量最高，左右位置影响声道。
+- 副官播报继续使用非空间音频，不受屏幕裁剪。
+- 电脑会消耗资金并显示扳手，自动维修生命比例最低的受损建筑。
+- 新增 RA2/YR `Weapon → Warhead → Verses` 伤害桥接。
+- 护甲在项目层归并为生物、机械和建筑三类，同时保留原版 Armor ID 和项目数字护甲值。
+- 单位和建筑读取原始 `Cost`、`Strength`、`Armor`、`Speed`、`Sight`、主武器、`Power` 与 `Foundation`。
+- 盟军保留 650 价格机枪碉堡，并增加爱国者兼容槽位。
+- 苏联增加防空炮和哨戒炮，尤里增加对地/对空盖特机炮和坦克碉堡。
+- 坦克可进入坦克碉堡并受到保护；碉堡出售或摧毁时坦克撤出。
+- 停止状态坦克保持最后稳定朝向，减少原地反复切换方向。
+- 步兵、车辆和建筑残骸存在时间缩短。
+- 建筑占格和基地车展开读取原版 `Foundation`。
+
+明确边界：
+
+- 当前爱国者使用仓库已有 `NASAM` 数据与视觉兼容实现，不是精确 `GAPATS` 复原。
+- 坦克碉堡当前提供进驻与保护，内部坦克尚不能向外开火。
+- 仓库未确认存在已转换的原版树木 PNG，缺失时仍回退程序化树木。
+
+### v0.16.0-dev.5 Parser Hotfix（2026-07-28）
+
+**状态：热修复，已通过用户实机启动验证**
+
+修复：
+
+- 将误用为局部变量名的 GDScript 关键字 `class_name` 改名。
+- `RA2RulesAdapter` 与 `RA2CombatAudio` 从不稳定的新 Autoload 全局标识符改为显式 `preload()` 静态工具脚本。
+- 为坦克碉堡入口、树木索引和其他动态返回值补充明确类型，消除 Godot 4.7 类型推断 Parser Error。
+
+### v0.16.0-dev.5 Runtime Hotfix（2026-07-28）
+
+**状态：热修复，用户已确认测试无异常**
+
+修复：
+
+- 修复建筑父类 `take_damage()` 无返回值，却被子类执行 `float(actual)` 导致持续报错和卡死的问题。
+- 改用攻击前后 HP 差值计算建筑实际受伤量。
+- 将运行时移动规则按坦克、矿车和一次性建筑任务分类，并使用固定间隔更新。
+- 将采矿粒子、建筑损伤同步和动画尾帧清理改为固定间隔与一次性任务。
+- 空间战斗音频改用最多 24 个 `AudioStreamPlayer2D` 的播放器池，减少密集交火时节点创建和回收。
+- 建造栏缓存 RA2 运行时数据，数据不变时不再重复赋值和强制重绘。
+- 用户在 Godot 4.7.1 中确认卡死消失且本轮测试无异常。
+
+### v0.16.0-dev.6（2026-07-28）
+
+**状态：开发分支，等待 Godot 4.7.1 实机验证**
+
+本轮完成：
+
+- 将 `height_levels` 与 `slope_types` 从纯数据字段接入运行时地面高度采样。
+- 新增八方向坡面和格内连续高度插值，每级高度为 16 px。
+- 高地区域可按配置自动生成北、东、南、西坡道。
+- 坡面降低移动速度，建筑 Foundation 必须位于同一高度层且不能覆盖坡面。
+- 增加临时高地轮廓、悬崖边缘和坡向调试绘制。
+- RA2 普通视觉与分层载具视觉支持地面高度、坡面梯度、腾空高度和翻滚角。
+- 车辆上下坡时车体逐渐倾斜，步兵只跟随高度而不进行明显车体旋转。
+- 建筑视觉和防御建筑枪口位置跟随所在高度层。
+- 炮弹根据起点与终点地面高度计算轨迹，高低地射击不再使用固定屏幕平面。
+- 带范围伤害的攻击可对车辆施加有限击退、抬升、翻滚、重力和高速落地伤害。
+- 分层载具腾空时阴影保持在地面附近。
+- 新增独立测试地图 `highland_trial / 高地试验场`，用于验证四向坡道、车辆姿态、炮弹高度、冲击掀起和建造限制。
+
+明确边界：
+
+- 当前仍是 32×32 矩形逻辑网格，不是 RA2 菱形等距坐标。
+- 高地轮廓是开发调试绘制，不是原版悬崖和坡面 TMP 素材。
+- 尚未限制单位只能通过坡道跨越高度边缘。
+- 尚未把高度纳入射程、视线遮挡和弹道碰撞。
+- 尚未解析 `IsoMapPack5`，也尚未完成真正的 VXL 运行时体素或 3D 网格渲染。
+- 树木和矿石实体尚未跟随高度层调整视觉位置。
+
+'''
+              text = text.replace(marker, block + marker, 1)
+              text = text.replace("文档整理日期：2026-07-27", "文档整理日期：2026-07-28", 1)
+              path.write_text(text, encoding="utf-8")
+          PY
+          rm -f .github/workflows/dev6-update-version-log.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "版本更新记录.md" .github/workflows/dev6-update-version-log.yml
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "docs: update complete version history through dev6"
+          git push origin HEAD:feature/v0.16.0-dev6-height-2_5d-foundation
