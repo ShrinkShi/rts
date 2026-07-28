@@ -41,8 +41,9 @@ func setup(
     if is_instance_valid(match_ref) and is_instance_valid(match_ref.grid) and match_ref.grid.has_method("get_ground_height"):
         start_ground_height = float(match_ref.grid.get_ground_height(start_position))
         target_ground_height = float(match_ref.grid.get_ground_height(target_position))
+    global_position = start_position + Vector2(0.0, -start_ground_height)
     z_index = 60 + int(start_ground_height / 4.0)
-    trail_points.append(global_position + Vector2(0.0, -start_ground_height))
+    trail_points.append(global_position)
     queue_redraw()
 
 func _process(delta: float) -> void:
