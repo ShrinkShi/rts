@@ -8,6 +8,7 @@ func setup(next_match, next_map, next_building_id, next_owner, cell, animate_con
     super.setup(next_match, next_map, next_building_id, next_owner, cell, animate_construction)
     var previous_footprint := footprint
     stats = RA2RulesAdapter.build_runtime_stats(stats, ra2_entity_id, "building")
+    stats["armor"] = float(stats.get("armor_value", 0.0))
     var display_override := str(ra2_profile.get("display_name_override", ""))
     if not display_override.is_empty():
         stats["name"] = display_override
@@ -128,9 +129,12 @@ func take_damage(amount, source = null):
     var resolved := RA2RulesAdapter.resolve_damage(source, self, float(amount))
     var entity_id := ra2_entity_id
     var was_destroyed := destroyed
+    var display_armor := float(stats.get("armor", 0.0))
+    stats["armor"] = 0.0
     ra2_entity_id = ""
     var actual = super.take_damage(resolved, source)
     ra2_entity_id = entity_id
+    stats["armor"] = display_armor
     if not was_destroyed and destroyed:
         eject_garrisoned_tank()
         if not entity_id.is_empty():
