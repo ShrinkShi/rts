@@ -11,6 +11,8 @@ func setup(next_match, next_map, next_building_id, next_owner, cell, animate_con
     var display_override := str(ra2_profile.get("display_name_override", ""))
     if not display_override.is_empty():
         stats["name"] = display_override
+    if ra2_profile.has("cost_override"):
+        stats["cost"] = int(ra2_profile.get("cost_override", stats.get("cost", 0)))
     max_hp = float(stats.get("hp", max_hp))
     hp = max_hp
     max_shield = float(stats.get("shield", max_shield))
