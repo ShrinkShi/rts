@@ -13,6 +13,14 @@ func setup(next_match, next_map, next_unit_id, next_owner, world_position):
     shield = max_shield
     corpse_lifetime = 3.2 if str(stats.get("category", "infantry")) == "infantry" else 3.8
     guard_range = maxf(float(stats.get("range", 0.0)), float(stats.get("guard_range", guard_range)))
+    var category := str(stats.get("category", "vehicle"))
+    if category == "infantry":
+        stats["collision_radius"] = 6.25 if unit_id == "rifle" else 6.75
+        safe_margin = 0.72
+    elif unit_id == "tank":
+        stats["collision_radius"] = 16.0
+        stats["radius"] = 15.0
+        safe_margin = 0.9
     _build_collision_shape()
     queue_redraw()
 
@@ -67,12 +75,7 @@ func command_move(target_position, manual = true, queued = false):
     if str(stats.get("category", "")) == "vehicle" and unit_id == "tank" and is_instance_valid(match_ref):
         var candidate = match_ref.get_entity_at(Vector2(target_position), true)
         if is_instance_valid(candidate) and candidate.owner_id == owner_id and candidate.has_method("can_accept_tank") and candidate.can_accept_tank(self):
-            _submit_order({
-                "type": "tank_bunker",
-                "target": candidate,
-                "position": candidate.global_position,
-                "manual": bool(manual)
-            }, queued)
+            _submit_order({"type": "tank_bunker", "target": candidate, "position": candidate.global_position, "manual": bool(manual)}, queued)
             return
     super.command_move(target_position, manual, queued)
 
