@@ -19,7 +19,8 @@ func _ready() -> void:
 
 func _register_existing(node: Node) -> void:
     _register_node(node)
-    for child in node.get_children(): _register_existing(child)
+    for child in node.get_children():
+        _register_existing(child)
 
 
 func _on_node_added(node: Node) -> void:
@@ -27,7 +28,8 @@ func _on_node_added(node: Node) -> void:
 
 
 func _register_node(node: Node) -> void:
-    if not is_instance_valid(node): return
+    if not is_instance_valid(node):
+        return
     var script := node.get_script() as Script
     if script != null and script.resource_path == MATCH_SCRIPT_PATH and not node in _matches:
         _matches.append(node)
@@ -35,16 +37,19 @@ func _register_node(node: Node) -> void:
 
 func _process(delta: float) -> void:
     _elapsed -= delta
-    if _elapsed > 0.0: return
+    if _elapsed > 0.0:
+        return
     _elapsed = UI_REFRESH_INTERVAL
     _matches = _matches.filter(func(value): return is_instance_valid(value))
-    for match_ref in _matches: _refresh_match_ui(match_ref)
+    for match_ref in _matches:
+        _refresh_match_ui(match_ref)
 
 
 func _input(event: InputEvent) -> void:
     if not (event is InputEventMouseButton) or not event.pressed or event.button_index != MOUSE_BUTTON_LEFT:
         return
-    if _handle_production_click(event): get_viewport().set_input_as_handled()
+    if _handle_production_click(event):
+        get_viewport().set_input_as_handled()
 
 
 func _handle_production_click(event: InputEventMouseButton) -> bool:
@@ -52,9 +57,11 @@ func _handle_production_click(event: InputEventMouseButton) -> bool:
     while is_instance_valid(control):
         var script := control.get_script() as Script
         if script != null and script.resource_path == PRODUCTION_TILE_SCRIPT_PATH:
-            if bool(control.get("disabled")) or not bool(control.get("visible")): return false
+            if bool(control.get("disabled")) or not bool(control.get("visible")):
+                return false
             var match_ref = _match_for_hud_control(control)
-            if not _match_accepts_input(match_ref): return false
+            if not _match_accepts_input(match_ref):
+                return false
             var kind := str(control.get("kind"))
             var id_value := str(control.get("id_value"))
             if kind == "unit":
@@ -93,13 +100,17 @@ func _runtime_data(match_ref, kind: String, id_value: String) -> Dictionary:
         base["ra2_id"] = ra2_id
         base["name"] = str(profile.get("display_name_override", RA2RuntimeDatabase.display_name(ra2_id)))
         base["ra2_team_color"] = match_ref.get_player_color(0).to_html(false)
+    if profile.has("cost_override"):
+        base["cost"] = int(profile.get("cost_override", base.get("cost", 0)))
     return base
 
 
 func _enqueue_units(match_ref, unit_id: String, requested_count: int) -> int:
-    if not GameConfig.units.has(unit_id): return 0
+    if not GameConfig.units.has(unit_id):
+        return 0
     var data := _runtime_data(match_ref, "unit", unit_id)
-    if bool(data.get("hidden_in_sidebar", false)) or not _requirements_met(match_ref, 0, data): return 0
+    if bool(data.get("hidden_in_sidebar", false)) or not _requirements_met(match_ref, 0, data):
+        return 0
     var added := 0
     var paused = match_ref._producer_with_paused_front(0, unit_id)
     if is_instance_valid(paused) and requested_count > 0:
@@ -109,10 +120,12 @@ func _enqueue_units(match_ref, unit_id: String, requested_count: int) -> int:
     var actual_cost := int(data.get("cost", 0))
     for _index in range(requested_count):
         if int(match_ref.get_unit_queue_count(0, unit_id)) >= MAX_PRODUCTION_QUEUE:
-            if added == 0: EventBus.notification_requested.emit("生产队列已满（上限 %d）" % MAX_PRODUCTION_QUEUE, "warning")
+            if added == 0:
+                EventBus.notification_requested.emit("生产队列已满（上限 %d）" % MAX_PRODUCTION_QUEUE, "warning")
             break
         var producer = _producer_with_capacity(match_ref, 0, unit_id)
-        if not is_instance_valid(producer): break
+        if not is_instance_valid(producer):
+            break
         if int(match_ref.credits.get(0, 0)) < actual_cost:
             EventBus.notification_requested.emit("资金不足，已加入 %d 个单位" % added, "warning")
             VoiceManager.speak_adjutant("insufficient_funds")
@@ -120,12 +133,14 @@ func _enqueue_units(match_ref, unit_id: String, requested_count: int) -> int:
         match_ref.add_credits(0, -actual_cost)
         producer.enqueue_unit(unit_id, actual_cost)
         added += 1
-    if added > 0: EventBus.notification_requested.emit("%s 已加入生产队列 ×%d" % [str(data.get("name", unit_id)), added], "info")
+    if added > 0:
+        EventBus.notification_requested.emit("%s 已加入生产队列 ×%d" % [str(data.get("name", unit_id)), added], "info")
     return added
 
 
 func _request_structure(match_ref, building_id: String) -> bool:
-    if not GameConfig.buildings.has(building_id): return false
+    if not GameConfig.buildings.has(building_id):
+        return false
     var category := str(match_ref._structure_category(building_id))
     var job: Dictionary = match_ref.get_structure_job(category)
     if not job.is_empty() and str(job.get("id", "")) == building_id and bool(job.get("paused", false)):
@@ -139,14 +154,16 @@ func _request_structure(match_ref, building_id: String) -> bool:
         EventBus.notification_requested.emit("该建筑分类的建造产能正在使用", "warning")
         return false
     var data := _runtime_data(match_ref, "structure", building_id)
-    if not _requirements_met(match_ref, 0, data): return false
+    if not _requirements_met(match_ref, 0, data):
+        return false
     var cost := int(data.get("cost", 0))
     if int(match_ref.credits.get(0, 0)) < cost:
         EventBus.notification_requested.emit("资金不足", "warning")
         VoiceManager.speak_adjutant("insufficient_funds")
         return false
-    if data.get("footprint", []) is Array and data.get("footprint", []).size() >= 2:
-        GameConfig.buildings[building_id]["footprint"] = data["footprint"].duplicate()
+    var footprint_variant: Variant = data.get("footprint", [])
+    if footprint_variant is Array and footprint_variant.size() >= 2:
+        GameConfig.buildings[building_id]["footprint"] = footprint_variant.duplicate()
     match_ref.add_credits(0, -cost)
     match_ref.structure_jobs[category] = {
         "id": building_id,
@@ -163,14 +180,16 @@ func _request_structure(match_ref, building_id: String) -> bool:
 func _producer_with_capacity(match_ref, owner_id: int, unit_id: String):
     var data: Dictionary = GameConfig.units.get(unit_id, {})
     var required := str(data.get("requires", ""))
-    if required.is_empty(): required = "barracks" if str(data.get("category", "infantry")) == "infantry" else "war_factory"
+    if required.is_empty():
+        required = "barracks" if str(data.get("category", "infantry")) == "infantry" else "war_factory"
     var primary = match_ref.primary_producers.get("%d:%s" % [owner_id, required])
     if is_instance_valid(primary) and int(primary.owner_id) == owner_id and str(primary.building_id) == required and not bool(primary.destroyed) and primary.production_queue.size() < MAX_PRODUCTION_QUEUE:
         return primary
     var best = null
     var smallest_queue := MAX_PRODUCTION_QUEUE + 1
     for building in match_ref.buildings:
-        if not is_instance_valid(building) or int(building.owner_id) != owner_id or str(building.building_id) != required or bool(building.destroyed): continue
+        if not is_instance_valid(building) or int(building.owner_id) != owner_id or str(building.building_id) != required or bool(building.destroyed):
+            continue
         var queue_size := int(building.production_queue.size())
         if queue_size < MAX_PRODUCTION_QUEUE and queue_size < smallest_queue:
             smallest_queue = queue_size
@@ -182,25 +201,29 @@ func _requirements_met(match_ref, owner_id: int, data: Dictionary) -> bool:
     var requirement: Variant = data.get("requires", "")
     if requirement is Array:
         for item in requirement:
-            if not match_ref.has_building(owner_id, str(item)): return false
+            if not match_ref.has_building(owner_id, str(item)):
+                return false
         return true
     var requirement_id := str(requirement)
     return requirement_id.is_empty() or match_ref.has_building(owner_id, requirement_id)
 
 
 func _refresh_match_ui(match_ref) -> void:
-    if not is_instance_valid(match_ref.hud): return
+    if not is_instance_valid(match_ref.hud):
+        return
     var hud = match_ref.hud
     for id_value in hud.structure_buttons.keys():
         var tile = hud.structure_buttons[id_value]
-        if not is_instance_valid(tile): continue
+        if not is_instance_valid(tile):
+            continue
         var data := _runtime_data(match_ref, "structure", str(id_value))
         tile.visible = not bool(data.get("hidden_in_sidebar", false)) and _requirements_met(match_ref, 0, data)
         tile.data = data
         tile.queue_redraw()
     for id_value in hud.unit_buttons.keys():
         var tile = hud.unit_buttons[id_value]
-        if not is_instance_valid(tile): continue
+        if not is_instance_valid(tile):
+            continue
         var data := _runtime_data(match_ref, "unit", str(id_value))
         tile.visible = not bool(data.get("hidden_in_sidebar", false)) and _requirements_met(match_ref, 0, data)
         tile.data = data
