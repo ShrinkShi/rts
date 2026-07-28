@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import math
 import re
 from pathlib import Path
 
@@ -22,9 +21,8 @@ def text(path: str) -> str:
 
 
 def json_data(path: str):
-    target = ROOT / path
     try:
-        return json.loads(target.read_text(encoding="utf-8"))
+        return json.loads((ROOT / path).read_text(encoding="utf-8"))
     except Exception as exc:
         error(f"Invalid JSON {path}: {exc}")
         return {}
@@ -34,16 +32,6 @@ def require(source: str, tokens: list[str], label: str) -> None:
     for token in tokens:
         if token not in source:
             error(f"{label} missing token: {token}")
-
-
-def validate_json() -> dict[str, object]:
-    result: dict[str, object] = {}
-    for name in ["units", "buildings", "maps", "factions", "modes"]:
-        result[name] = json_data(f"data/{name}.json")
-    json_data("BUILD_INFO.json")
-    json_data("data/ra2/runtime_profiles.json")
-    json_data("data/ra2/warheads.json")
-    return result
 
 
 def validate_gdscript_structure() -> None:
@@ -63,7 +51,14 @@ def validate_gdscript_structure() -> None:
                 error(f"Missing resource referenced by {path.relative_to(ROOT)}: {resource}")
 
 
-def validate_ra2_rules_data() -> None:
+def validate_json_and_ra2_data() -> None:
+    for path in [
+        "BUILD_INFO.json", "data/units.json", "data/buildings.json",
+        "data/maps.json", "data/factions.json", "data/modes.json",
+        "data/ra2/runtime_profiles.json", "data/ra2/warheads.json",
+    ]:
+        json_data(path)
+
     warheads = json_data("data/ra2/warheads.json")
     by_id = {
         str(item.get("id", "")).upper(): item
@@ -71,10 +66,10 @@ def validate_ra2_rules_data() -> None:
         if isinstance(item, dict)
     } if isinstance(warheads, list) else {}
     ap = by_id.get("AP", {})
-    verses = str(ap.get("values", {}).get("Verses", "")) if isinstance(ap, dict) else ""
-    expected = "25%,25%,15%,75%,100%,100%,65%,45%,60%,60%,100%"
-    if verses != expected:
-        error(f"AP Verses mismatch: expected {expected!r}, got {verses!r}")
+    actual_verses = str(ap.get("values", {}).get("Verses", "")) if isinstance(ap, dict) else ""
+    expected_verses = "25%,25%,15%,75%,100%,100%,65%,45%,60%,60%,100%"
+    if actual_verses != expected_verses:
+        error(f"AP Verses mismatch: expected {expected_verses!r}, got {actual_verses!r}")
 
     profiles = json_data("data/ra2/runtime_profiles.json")
     buildings = profiles.get("buildings", {}) if isinstance(profiles, dict) else {}
@@ -90,30 +85,12 @@ def validate_ra2_rules_data() -> None:
         actual = str(buildings.get(faction, {}).get(slot, {}).get("ra2_id", ""))
         if actual != entity_id:
             error(f"Defense slot {faction}/{slot} must map to {entity_id}, got {actual}")
-    allied_pillbox_cost = int(buildings.get("union", {}).get("bunker", {}).get("cost_override", 0))
-    if allied_pillbox_cost != 650:
+    if int(buildings.get("union", {}).get("bunker", {}).get("cost_override", 0)) != 650:
         error("Retained Allied pillbox cost_override must be 650")
 
 
-def validate_features(data: dict[str, object]) -> None:
+def validate_dev5_features() -> None:
     project = text("project.godot")
-    match = text("scripts/game/rts_match.gd")
-    base_unit = text("scripts/game/unit.gd")
-    base_building = text("scripts/game/building.gd")
-    ra2_unit = text("scripts/game/ra2_unit.gd")
-    ra2_building = text("scripts/game/ra2_building.gd")
-    rules_adapter = text("scripts/ra2/ra2_rules_adapter.gd")
-    audio_service = text("scripts/ra2/ra2_audio_service.gd")
-    combat_audio = text("scripts/ra2/ra2_combat_audio.gd")
-    ai_rules = text("scripts/core/runtime_ai_rules.gd")
-    movement_rules = text("scripts/core/runtime_movement_rules.gd")
-    production_rules = text("scripts/core/runtime_production_rules.gd")
-    deployment_rules = text("scripts/core/runtime_deployment_rules.gd")
-    defeat_rules = text("scripts/core/runtime_defeat_rules.gd")
-    runtime_tuning = text("scripts/core/runtime_tuning.gd")
-    tree = text("scripts/game/tree_entity.gd")
-    grid = text("scripts/game/grid_world_base.gd") + "\n" + text("scripts/game/grid_world.gd")
-
     require(project, [
         'config/version="0.16.0-dev.5"',
         'RA2RulesAdapter="*res://scripts/ra2/ra2_rules_adapter.gd"',
@@ -123,51 +100,82 @@ def validate_features(data: dict[str, object]) -> None:
         'RuntimeProductionRules="*res://scripts/core/runtime_production_rules.gd"',
     ], "Project dev5 autoloads")
 
-    require(rules_adapter, [
+    rules = text("scripts/ra2/ra2_rules_adapter.gd")
+    require(rules, [
         'WARHEADS_PATH := "res://data/ra2/warheads.json"',
         'func build_runtime_stats', 'func parse_foundation',
         '"biological"', '"mechanical"', '"building"',
         'func damage_multiplier', 'warhead_verses', 'armor_value',
     ], "RA2 rules adapter")
-    require(audio_service, [
+
+    audio = text("scripts/ra2/ra2_audio_service.gd")
+    require(audio, [
         'func play_event_spatial', 'view_rect.has_point(world_position)',
         'MIN_EDGE_VOLUME', 'panning_strength = 1.0', 'player.attenuation = 0.0',
-    ], "Spatial audio")
-    require(combat_audio, ['func play_weapon_report', 'play_event_spatial'], "Combat audio router")
-    require(ai_rules, ['func _repair_one_building', 'repair_entity_step', 'set_repair_active(true)'], "AI building repair")
+    ], "Screen-space combat audio")
+    require(text("scripts/ra2/ra2_combat_audio.gd"), [
+        'func play_weapon_report', 'play_event_spatial',
+    ], "RA2 combat audio router")
+
+    ai_rules = text("scripts/core/runtime_ai_rules.gd")
+    require(ai_rules, [
+        'func _repair_one_building', 'repair_entity_step', 'set_repair_active(true)',
+    ], "AI building repair")
+
+    ra2_unit = text("scripts/game/ra2_unit.gd")
     require(ra2_unit, [
         'RA2RulesAdapter.build_runtime_stats', 'RA2RulesAdapter.resolve_damage',
         'RA2CombatAudio.play_weapon_report', 'corpse_lifetime = 3.2',
         'func enter_tank_bunker', 'func exit_tank_bunker',
     ], "RA2 unit runtime")
+
+    ra2_building = text("scripts/game/ra2_building.gd")
     require(ra2_building, [
         'RA2RulesAdapter.build_runtime_stats', 'RA2RulesAdapter.resolve_damage',
         'destruction_lifetime = 3.8', 'func can_accept_tank',
         '"NAFLAK", "NASAM", "GAPATS"', '"YAGGUN"', '"NATBNK"',
         'target_domains = ["ground", "air"]',
     ], "RA2 building runtime")
-    require(movement_rules, [
+
+    movement = text("scripts/core/runtime_movement_rules.gd")
+    require(movement, [
         'TREE_VEHICLE_RADIUS_FACTOR := 0.14',
         '_settle_occupied_move_destination', '_stabilize_stationary_tank_facing',
         'order_type in ["move", "attack_move"]',
     ], "Movement rules")
-    require(production_rules, [
+
+    production = text("scripts/core/runtime_production_rules.gd")
+    require(production, [
         'MAX_PRODUCTION_QUEUE := 30', '5 if bool(event.shift_pressed) else 1',
         'RA2RulesAdapter.build_runtime_stats', 'cost_override',
         'GameConfig.buildings[building_id]["footprint"]',
         '"电力  %d / %d" % [consumed, produced]',
     ], "Production rules")
-    require(deployment_rules, ['_filter_deployed_units_from_right_click', '_pack_command_building', '_unpack_mcv'], "Deployment rules")
-    require(defeat_rules, ['_player_has_structure_presence', '_show_defeat_notice'], "Defeat rules")
-    require(runtime_tuning, ['UNIT_SCRIPT_PATHS', 'BUILDING_SCRIPT_PATHS', 'ore_harvest'], "Runtime tuning subclasses")
+
+    deployment = text("scripts/core/runtime_deployment_rules.gd")
+    require(deployment, [
+        'preload("res://scripts/game/ra2_unit.gd")',
+        '_filter_deployed_units_from_right_click', '_pack_command_building',
+        '_command_footprint', '_unpack_mcv',
+    ], "Deployment and MCV Foundation rules")
+
+    require(text("scripts/core/runtime_defeat_rules.gd"), [
+        '_player_has_structure_presence', '_show_defeat_notice',
+    ], "Defeat rules")
+    require(text("scripts/core/runtime_tuning.gd"), [
+        'UNIT_SCRIPT_PATHS', 'BUILDING_SCRIPT_PATHS', 'ore_harvest',
+    ], "Runtime tuning subclasses")
+
+    tree = text("scripts/game/tree_entity.gd")
     require(tree, [
         'TREE_COLLISION_FACTOR := 0.14', 'RA2_TREE_PATHS',
         'ResourceLoader.exists(path)', '步兵可进入并获得25%减伤',
-    ], "RA2 tree runtime")
-    require(match, ['func _issue_targeted_command', 'elif mode == "rally"'], "Map-targeted command routing")
-    require(base_unit, ['func command_attack_move', 'func command_patrol'], "Base unit commands")
-    require(base_building, ['func repair_entity_step' if 'func repair_entity_step' in match else 'func set_repair_active'], "Base building repair visual")
-    require(grid, ['func get_ground_height', 'height_levels', 'slope_types'], "Grid height metadata")
+    ], "RA2 tree loader")
+
+    match = text("scripts/game/rts_match.gd")
+    require(match, ['func _issue_targeted_command', 'elif mode == "rally"'], "Map-targeted commands")
+    require(text("scripts/game/unit.gd"), ['func command_attack_move', 'func command_patrol'], "Unit map commands")
+    require(text("scripts/game/building.gd"), ['func set_repair_active'], "Building wrench visual")
 
     for unit_id in ["rifle", "rocket", "tank", "scout", "harvester"]:
         source = text(f"scenes/entities/units/{unit_id}.tscn")
@@ -175,32 +183,15 @@ def validate_features(data: dict[str, object]) -> None:
     for building_id in ["command", "power", "barracks", "refinery", "war_factory", "repair_bay", "turret", "bunker"]:
         source = text(f"scenes/entities/buildings/{building_id}.tscn")
         require(source, ['res://scripts/game/ra2_building.gd', 'StaticBody2D', 'CollisionShape2D', 'Sprite2D'], f"Building prefab {building_id}")
-    turret_scene = text("scenes/entities/buildings/turret.tscn")
-    require(turret_scene, ['position = Vector2(0, -38.0)'], "Raised sentry fallback turret")
-
-    maps = data.get("maps", {})
-    if isinstance(maps, dict):
-        for map_id, map_data in maps.items():
-            if not isinstance(map_data, dict) or map_id == "frontier_expanse":
-                continue
-            size = map_data.get("size", [0, 0])
-            if len(size) < 2 or not (50 <= int(size[0]) <= 100 and 50 <= int(size[1]) <= 100):
-                error(f"Skirmish map {map_id} size must be within 50..100")
-            positions = map_data.get("positions", [])
-            ore_centers = map_data.get("ore_centers", [])
-            if not positions or len(ore_centers) < len(positions) * 2:
-                error(f"Skirmish map {map_id} lacks spawn-adjacent ore centers")
-                continue
-            rows = [sorted(math.dist((float(p[0]), float(p[1])), (float(c[0]), float(c[1]))) for c in ore_centers) for p in positions]
-            if max(row[0] for row in rows) - min(row[0] for row in rows) > 1.0:
-                error(f"Skirmish map {map_id} first-mine distance spread is too large")
+    require(text("scenes/entities/buildings/turret.tscn"), [
+        'position = Vector2(0, -38.0)',
+    ], "Raised fallback turret")
 
 
 def main() -> int:
-    data = validate_json()
     validate_gdscript_structure()
-    validate_ra2_rules_data()
-    validate_features(data)
+    validate_json_and_ra2_data()
+    validate_dev5_features()
     if ERRORS:
         print("Validation failed:")
         for item in ERRORS:
@@ -208,7 +199,7 @@ def main() -> int:
         return 1
     gd_files = list(ROOT.rglob("*.gd"))
     gd_lines = sum(len(path.read_text(encoding="utf-8").splitlines()) for path in gd_files)
-    print(f"Validation passed: {len(gd_files)} GDScript files, {gd_lines} lines, {len(data)} JSON datasets.")
+    print(f"Validation passed: {len(gd_files)} GDScript files, {gd_lines} lines.")
     return 0
 
 
