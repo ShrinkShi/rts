@@ -7,11 +7,18 @@ const UNIT_SCRIPT_PATHS := ["res://scripts/game/unit.gd", "res://scripts/game/ra
 const BUILDING_SCRIPT_PATHS := ["res://scripts/game/building.gd", "res://scripts/game/ra2_building.gd"]
 const TUNING_TAG := "v0_16_0_dev_3_tuned"
 const BUILDING_SANITIZED_TAG := "v0_16_0_dev_3_animation_sanitized"
+const HARVEST_UPDATE_INTERVAL := 0.08
+const BUILDING_DAMAGE_INTERVAL := 0.12
+const SANITIZE_INTERVAL := 0.25
 
-var _units: Array = []
+var _harvesters: Array = []
 var _buildings: Array = []
+var _pending_sanitize: Array = []
 var _harvest_effect_timers: Dictionary = {}
 var _building_damage_bands: Dictionary = {}
+var _harvest_elapsed := 0.0
+var _building_damage_elapsed := 0.0
+var _sanitize_elapsed := 0.0
 var _cleanup_timer: float = 1.0
 var _rng := RandomNumberGenerator.new()
 
@@ -40,32 +47,64 @@ func _register_node(node: Node) -> void:
     if script == null:
         return
     var script_path: String = script.resource_path
-    if script_path in UNIT_SCRIPT_PATHS and not node in _units:
-        _units.append(node)
-    elif script_path in BUILDING_SCRIPT_PATHS and not node in _buildings:
-        _buildings.append(node)
+    if script_path in UNIT_SCRIPT_PATHS:
+        call_deferred("_initialize_unit", node)
+    elif script_path in BUILDING_SCRIPT_PATHS:
+        if not node in _buildings:
+            _buildings.append(node)
+        if not node in _pending_sanitize:
+            _pending_sanitize.append(node)
+        call_deferred("_sanitize_building_animation_once", node)
+
+
+func _initialize_unit(unit) -> void:
+    if not is_instance_valid(unit) or unit.stats.is_empty():
+        return
+    _tune_unit_once(unit)
+    if str(unit.unit_id) == "harvester" and not unit in _harvesters:
+        _harvesters.append(unit)
 
 
 func _process(delta: float) -> void:
-    for unit in _units:
-        if not is_instance_valid(unit):
-            continue
-        _tune_unit_once(unit)
-        _process_harvest_effect(unit, delta)
+    _harvest_elapsed -= delta
+    if _harvest_elapsed <= 0.0:
+        var harvest_step := HARVEST_UPDATE_INTERVAL - _harvest_elapsed
+        _harvest_elapsed = HARVEST_UPDATE_INTERVAL
+        for harvester in _harvesters:
+            if is_instance_valid(harvester):
+                _process_harvest_effect(harvester, harvest_step)
 
-    for building in _buildings:
-        if not is_instance_valid(building):
-            continue
-        _synchronize_building_damage(building)
-        _sanitize_building_animation_once(building)
+    _building_damage_elapsed -= delta
+    if _building_damage_elapsed <= 0.0:
+        _building_damage_elapsed = BUILDING_DAMAGE_INTERVAL
+        for building in _buildings:
+            if is_instance_valid(building):
+                _synchronize_building_damage(building)
+
+    _sanitize_elapsed -= delta
+    if _sanitize_elapsed <= 0.0:
+        _sanitize_elapsed = SANITIZE_INTERVAL
+        _process_pending_sanitization()
 
     _cleanup_timer -= delta
     if _cleanup_timer <= 0.0:
         _cleanup_timer = 1.0
-        _units = _units.filter(func(value): return is_instance_valid(value))
+        _harvesters = _harvesters.filter(func(value): return is_instance_valid(value))
         _buildings = _buildings.filter(func(value): return is_instance_valid(value))
+        _pending_sanitize = _pending_sanitize.filter(func(value): return is_instance_valid(value))
         _prune_instance_dictionary(_harvest_effect_timers)
         _prune_instance_dictionary(_building_damage_bands)
+
+
+func _process_pending_sanitization() -> void:
+    var pending: Array = []
+    for building in _pending_sanitize:
+        if not is_instance_valid(building):
+            continue
+        _sanitize_building_animation_once(building)
+        if not is_instance_valid(building.ra2_visual) or not building.ra2_visual.has_meta(BUILDING_SANITIZED_TAG):
+            pending.append(building)
+    _pending_sanitize = pending
 
 
 func _tune_unit_once(unit) -> void:
@@ -91,8 +130,6 @@ func _tune_unit_once(unit) -> void:
 
 
 func _process_harvest_effect(unit, delta: float) -> void:
-    if str(unit.unit_id) != "harvester":
-        return
     var instance_id: int = int(unit.get_instance_id())
     var is_harvesting: bool = (
         not bool(unit.dying)
@@ -148,7 +185,7 @@ func _synchronize_building_damage(building) -> void:
 
 
 func _sanitize_building_animation_once(building) -> void:
-    if not is_instance_valid(building.ra2_visual):
+    if not is_instance_valid(building) or not is_instance_valid(building.ra2_visual):
         return
     var visual = building.ra2_visual
     if visual.has_meta(BUILDING_SANITIZED_TAG):
@@ -206,9 +243,9 @@ func _textures_are_identical(left: Texture2D, right: Texture2D) -> bool:
 
 func _prune_instance_dictionary(values: Dictionary) -> void:
     var live_ids: Dictionary = {}
-    for unit in _units:
-        if is_instance_valid(unit):
-            live_ids[int(unit.get_instance_id())] = true
+    for harvester in _harvesters:
+        if is_instance_valid(harvester):
+            live_ids[int(harvester.get_instance_id())] = true
     for building in _buildings:
         if is_instance_valid(building):
             live_ids[int(building.get_instance_id())] = true
