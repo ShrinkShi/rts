@@ -3,6 +3,7 @@ extends Node
 const MATCH_SCRIPT_PATH := "res://scripts/game/rts_match.gd"
 const PRODUCTION_TILE_SCRIPT_PATH := "res://scripts/ui/production_tile.gd"
 const MATCH_HUD_SCRIPT_PATH := "res://scripts/ui/match_hud.gd"
+const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")
 const MAX_PRODUCTION_QUEUE := 30
 const UI_REFRESH_INTERVAL := 0.18
 
@@ -91,12 +92,12 @@ func _match_accepts_input(match_ref) -> bool:
 
 func _runtime_data(match_ref, kind: String, id_value: String) -> Dictionary:
     var base: Dictionary = (GameConfig.buildings.get(id_value, {}) if kind == "structure" else GameConfig.units.get(id_value, {})).duplicate(true)
-    var faction := str(match_ref.get_player_data(0).get("faction", "union"))
-    var profile_kind := "buildings" if kind == "structure" else "units"
+    var faction: String = str(match_ref.get_player_data(0).get("faction", "union"))
+    var profile_kind: String = "buildings" if kind == "structure" else "units"
     var profile: Dictionary = RA2RuntimeDatabase.get_profile(profile_kind, faction, id_value)
-    var ra2_id := str(profile.get("ra2_id", "")).to_upper()
+    var ra2_id: String = str(profile.get("ra2_id", "")).to_upper()
     if not ra2_id.is_empty():
-        base = RA2RulesAdapter.build_runtime_stats(base, ra2_id, "building" if kind == "structure" else str(base.get("category", "vehicle")))
+        base = RA2Rules.build_runtime_stats(base, ra2_id, "building" if kind == "structure" else str(base.get("category", "vehicle")))
         base["ra2_id"] = ra2_id
         base["name"] = str(profile.get("display_name_override", RA2RuntimeDatabase.display_name(ra2_id)))
         base["ra2_team_color"] = match_ref.get_player_color(0).to_html(false)
@@ -108,7 +109,7 @@ func _runtime_data(match_ref, kind: String, id_value: String) -> Dictionary:
 func _enqueue_units(match_ref, unit_id: String, requested_count: int) -> int:
     if not GameConfig.units.has(unit_id):
         return 0
-    var data := _runtime_data(match_ref, "unit", unit_id)
+    var data: Dictionary = _runtime_data(match_ref, "unit", unit_id)
     if bool(data.get("hidden_in_sidebar", false)) or not _requirements_met(match_ref, 0, data):
         return 0
     var added := 0
@@ -153,7 +154,7 @@ func _request_structure(match_ref, building_id: String) -> bool:
     if str(match_ref.get_ready_structure(category)) != "" or not job.is_empty():
         EventBus.notification_requested.emit("该建筑分类的建造产能正在使用", "warning")
         return false
-    var data := _runtime_data(match_ref, "structure", building_id)
+    var data: Dictionary = _runtime_data(match_ref, "structure", building_id)
     if not _requirements_met(match_ref, 0, data):
         return false
     var cost := int(data.get("cost", 0))
@@ -216,7 +217,7 @@ func _refresh_match_ui(match_ref) -> void:
         var tile = hud.structure_buttons[id_value]
         if not is_instance_valid(tile):
             continue
-        var data := _runtime_data(match_ref, "structure", str(id_value))
+        var data: Dictionary = _runtime_data(match_ref, "structure", str(id_value))
         tile.visible = not bool(data.get("hidden_in_sidebar", false)) and _requirements_met(match_ref, 0, data)
         tile.data = data
         tile.queue_redraw()
@@ -224,7 +225,7 @@ func _refresh_match_ui(match_ref) -> void:
         var tile = hud.unit_buttons[id_value]
         if not is_instance_valid(tile):
             continue
-        var data := _runtime_data(match_ref, "unit", str(id_value))
+        var data: Dictionary = _runtime_data(match_ref, "unit", str(id_value))
         tile.visible = not bool(data.get("hidden_in_sidebar", false)) and _requirements_met(match_ref, 0, data)
         tile.data = data
         tile.queue_redraw()
