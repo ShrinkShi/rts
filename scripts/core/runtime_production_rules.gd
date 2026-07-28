@@ -5,9 +5,10 @@ const PRODUCTION_TILE_SCRIPT_PATH := "res://scripts/ui/production_tile.gd"
 const MATCH_HUD_SCRIPT_PATH := "res://scripts/ui/match_hud.gd"
 const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")
 const MAX_PRODUCTION_QUEUE := 30
-const UI_REFRESH_INTERVAL := 0.18
+const UI_REFRESH_INTERVAL := 0.25
 
 var _matches: Array = []
+var _runtime_data_cache: Dictionary = {}
 var _elapsed := 0.0
 
 
@@ -90,9 +91,16 @@ func _match_accepts_input(match_ref) -> bool:
     return is_instance_valid(match_ref) and not bool(match_ref.game_over) and not get_tree().paused
 
 
+func _runtime_cache_key(match_ref, faction: String, kind: String, id_value: String) -> String:
+    return "%d:%s:%s:%s" % [int(match_ref.get_instance_id()), faction, kind, id_value]
+
+
 func _runtime_data(match_ref, kind: String, id_value: String) -> Dictionary:
-    var base: Dictionary = (GameConfig.buildings.get(id_value, {}) if kind == "structure" else GameConfig.units.get(id_value, {})).duplicate(true)
     var faction: String = str(match_ref.get_player_data(0).get("faction", "union"))
+    var cache_key: String = _runtime_cache_key(match_ref, faction, kind, id_value)
+    if _runtime_data_cache.has(cache_key):
+        return _runtime_data_cache[cache_key]
+    var base: Dictionary = (GameConfig.buildings.get(id_value, {}) if kind == "structure" else GameConfig.units.get(id_value, {})).duplicate(true)
     var profile_kind: String = "buildings" if kind == "structure" else "units"
     var profile: Dictionary = RA2RuntimeDatabase.get_profile(profile_kind, faction, id_value)
     var ra2_id: String = str(profile.get("ra2_id", "")).to_upper()
@@ -103,6 +111,7 @@ func _runtime_data(match_ref, kind: String, id_value: String) -> Dictionary:
         base["ra2_team_color"] = match_ref.get_player_color(0).to_html(false)
     if profile.has("cost_override"):
         base["cost"] = int(profile.get("cost_override", base.get("cost", 0)))
+    _runtime_data_cache[cache_key] = base
     return base
 
 
@@ -209,29 +218,40 @@ func _requirements_met(match_ref, owner_id: int, data: Dictionary) -> bool:
     return requirement_id.is_empty() or match_ref.has_building(owner_id, requirement_id)
 
 
+func _apply_tile_state(tile, is_visible: bool, data: Dictionary, cache_key: String) -> void:
+    if bool(tile.visible) != is_visible:
+        tile.visible = is_visible
+    if str(tile.get_meta("runtime_data_key", "")) == cache_key:
+        return
+    tile.data = data
+    tile.set_meta("runtime_data_key", cache_key)
+    tile.queue_redraw()
+
+
 func _refresh_match_ui(match_ref) -> void:
     if not is_instance_valid(match_ref.hud):
         return
     var hud = match_ref.hud
+    var faction: String = str(match_ref.get_player_data(0).get("faction", "union"))
     for id_value in hud.structure_buttons.keys():
         var tile = hud.structure_buttons[id_value]
         if not is_instance_valid(tile):
             continue
         var data: Dictionary = _runtime_data(match_ref, "structure", str(id_value))
-        tile.visible = not bool(data.get("hidden_in_sidebar", false)) and _requirements_met(match_ref, 0, data)
-        tile.data = data
-        tile.queue_redraw()
+        var is_visible: bool = not bool(data.get("hidden_in_sidebar", false)) and _requirements_met(match_ref, 0, data)
+        _apply_tile_state(tile, is_visible, data, _runtime_cache_key(match_ref, faction, "structure", str(id_value)))
     for id_value in hud.unit_buttons.keys():
         var tile = hud.unit_buttons[id_value]
         if not is_instance_valid(tile):
             continue
         var data: Dictionary = _runtime_data(match_ref, "unit", str(id_value))
-        tile.visible = not bool(data.get("hidden_in_sidebar", false)) and _requirements_met(match_ref, 0, data)
-        tile.data = data
-        tile.queue_redraw()
+        var is_visible: bool = not bool(data.get("hidden_in_sidebar", false)) and _requirements_met(match_ref, 0, data)
+        _apply_tile_state(tile, is_visible, data, _runtime_cache_key(match_ref, faction, "unit", str(id_value)))
     var power_data: Dictionary = match_ref.power_state.get(0, {"produced": 0, "consumed": 0})
     var produced := int(power_data.get("produced", 0))
     var consumed := int(power_data.get("consumed", 0))
     if is_instance_valid(hud.power_label):
-        hud.power_label.text = "电力  %d / %d" % [consumed, produced]
+        var next_text := "电力  %d / %d" % [consumed, produced]
+        if hud.power_label.text != next_text:
+            hud.power_label.text = next_text
         hud.power_label.add_theme_color_override("font_color", Color("#73D586") if produced >= consumed else Color("#EF6B63"))
