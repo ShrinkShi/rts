@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/game/building.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/game/ra2_building.gd" id="1_script"]
 [ext_resource type="Texture2D" path="res://assets/ai_generated/buildings/bunker_base.png" id="2_texture"]
 [ext_resource type="Shader" path="res://shaders/team_tint.gdshader" id="3_shader"]
 [ext_resource type="SpriteFrames" path="res://resources/sprite_frames/bunker_head.tres" id="4_head_frames"]
@@ -60,5 +60,4 @@ editor_description = "建筑重度受损烟雾生成点。"
 
 [node name="ServiceAnchor" type="Marker2D" parent="."]
 position = Vector2(32.0, 0)
-editor_description = "生产出口或维修服务入口的可视参考点；当前逻辑仍按网格计算。"
-
+editor_description = "生产出口、进驻或维修服务入口的可视参考点。"

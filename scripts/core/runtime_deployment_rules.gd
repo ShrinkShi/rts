@@ -1,7 +1,7 @@
 extends Node
 
 const MATCH_SCRIPT_PATH := "res://scripts/game/rts_match.gd"
-const UnitEntity = preload("res://scripts/game/unit.gd")
+const UnitEntity = preload("res://scripts/game/ra2_unit.gd")
 
 var _matches: Array = []
 var _selection_restore_guard: Dictionary = {}
@@ -195,17 +195,32 @@ func _spawn_mcv(match_ref, owner_id: int, world_position: Vector2):
     return unit
 
 
+func _command_footprint(match_ref, owner_id: int) -> Vector2i:
+    var base: Dictionary = GameConfig.buildings.get("command", {}).duplicate(true)
+    var faction := str(match_ref.get_player_data(owner_id).get("faction", "union"))
+    var profile: Dictionary = RA2RuntimeDatabase.get_profile("buildings", faction, "command")
+    var entity_id := str(profile.get("ra2_id", "")).to_upper()
+    var runtime: Dictionary = RA2RulesAdapter.build_runtime_stats(base, entity_id, "building")
+    var raw: Variant = runtime.get("footprint", base.get("footprint", [3, 3]))
+    if raw is Array and raw.size() >= 2:
+        return Vector2i(maxi(1, int(raw[0])), maxi(1, int(raw[1])))
+    return Vector2i(3, 3)
+
+
 func _unpack_mcv(match_ref, mcv):
     if not is_instance_valid(mcv) or bool(mcv.dying):
         return null
+    var footprint := _command_footprint(match_ref, int(mcv.owner_id))
     var center_cell: Vector2i = match_ref.grid.world_to_cell(mcv.global_position)
-    var origin := center_cell - Vector2i(1, 1)
-    var footprint := Vector2i(3, 3)
+    var origin := center_cell - Vector2i(int(floor(float(footprint.x) * 0.5)), int(floor(float(footprint.y) * 0.5)))
     if not match_ref.grid.can_place(origin, footprint):
         EventBus.notification_requested.emit("当前位置无法展开基地", "warning")
         return null
     var first_center := Vector2(match_ref.grid.cell_to_world(origin))
-    var placement_rect := Rect2(first_center - Vector2(match_ref.grid.tile_px * 0.5, match_ref.grid.tile_px * 0.5), Vector2(footprint.x * match_ref.grid.tile_px, footprint.y * match_ref.grid.tile_px))
+    var placement_rect := Rect2(
+        first_center - Vector2(match_ref.grid.tile_px * 0.5, match_ref.grid.tile_px * 0.5),
+        Vector2(footprint.x * match_ref.grid.tile_px, footprint.y * match_ref.grid.tile_px)
+    )
     for other in match_ref.units:
         if not is_instance_valid(other) or other == mcv or bool(other.inside_refinery):
             continue
@@ -213,6 +228,7 @@ func _unpack_mcv(match_ref, mcv):
         if placement_rect.grow(radius).has_point(other.global_position):
             EventBus.notification_requested.emit("展开区域内存在单位", "warning")
             return null
+    GameConfig.buildings["command"]["footprint"] = [footprint.x, footprint.y]
     var command = match_ref.spawn_building(int(mcv.owner_id), "command", origin, false)
     if not is_instance_valid(command):
         EventBus.notification_requested.emit("基地展开失败", "warning")
