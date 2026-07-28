@@ -64,10 +64,15 @@ def validate_gdscript_structure() -> None:
 def validate_json_and_ra2_data() -> None:
     for path in [
         "BUILD_INFO.json", "data/units.json", "data/buildings.json",
-        "data/maps.json", "data/factions.json", "data/modes.json",
-        "data/ra2/runtime_profiles.json", "data/ra2/warheads.json",
+        "data/maps.json", "data/maps_height.json", "data/factions.json",
+        "data/modes.json", "data/ra2/runtime_profiles.json",
+        "data/ra2/warheads.json",
     ]:
         json_data(path)
+
+    build_info = json_data("BUILD_INFO.json")
+    if str(build_info.get("version", "")) != "0.16.0-dev.6":
+        error("BUILD_INFO version must be 0.16.0-dev.6")
 
     warheads = json_data("data/ra2/warheads.json")
     by_id = {
@@ -98,15 +103,28 @@ def validate_json_and_ra2_data() -> None:
     if int(buildings.get("union", {}).get("bunker", {}).get("cost_override", 0)) != 650:
         error("Retained Allied pillbox cost_override must be 650")
 
+    height_maps = json_data("data/maps_height.json")
+    highland = height_maps.get("highland_trial", {}) if isinstance(height_maps, dict) else {}
+    if not isinstance(highland, dict) or not highland:
+        error("Missing highland_trial height test map")
+    else:
+        zones = highland.get("height_zones", [])
+        if not zones or not bool(zones[0].get("auto_ramps", False)):
+            error("highland_trial must include an auto-ramp height zone")
+        positions = highland.get("positions", [])
+        ore_centers = highland.get("ore_centers", [])
+        if len(positions) < 2 or len(ore_centers) < len(positions) * 2:
+            error("highland_trial lacks valid player positions or ore centers")
+
 
 def validate_dev5_features() -> None:
     project = text("project.godot")
     require(project, [
-        'config/version="0.16.0-dev.5"',
+        'config/version="0.16.0-dev.6"',
         'RuntimeAIRules="*res://scripts/core/runtime_ai_rules.gd"',
         'RuntimeMovementRules="*res://scripts/core/runtime_movement_rules.gd"',
         'RuntimeProductionRules="*res://scripts/core/runtime_production_rules.gd"',
-    ], "Project dev5 autoloads")
+    ], "Project dev6 autoloads")
     forbid(project, [
         'RA2RulesAdapter="*res://scripts/ra2/ra2_rules_adapter.gd"',
         'RA2CombatAudio="*res://scripts/ra2/ra2_combat_audio.gd"',
@@ -226,10 +244,74 @@ def validate_dev5_features() -> None:
     ], "Raised fallback turret")
 
 
+def validate_dev6_height_features() -> None:
+    game_config = text("scripts/core/game_config.gd")
+    require(game_config, [
+        'res://data/maps_height.json', 'for map_id in height_maps.keys()',
+    ], "Height map catalog")
+
+    grid = text("scripts/game/grid_world.gd")
+    require(grid, [
+        'const HEIGHT_STEP_PIXELS := 16.0',
+        'const SLOPE_NW = 8',
+        'func _stamp_zone_ramps',
+        'func get_ground_sample',
+        'func get_ground_gradient',
+        'SLOPE_SPEED_MULTIPLIER := 0.78',
+        'func can_place',
+        'get_slope_type(cell) != SLOPE_NONE',
+        'func _draw()',
+    ], "Height-aware grid runtime")
+
+    flat_visual = text("scripts/ra2/ra2_visual_player.gd")
+    layered_visual = text("scripts/ra2/ra2_layered_vehicle_visual.gd")
+    for source, label in [
+        (flat_visual, "Flat RA2 terrain pose"),
+        (layered_visual, "Layered RA2 terrain pose"),
+    ]:
+        require(source, [
+            'var _layout_position: Vector2',
+            'func set_terrain_pose(',
+            '_terrain_ground_height',
+            '_terrain_airborne_height',
+        ], label)
+    require(layered_visual, [
+        'shadow_air_offset', 'draw_set_transform(_shadow_center + shadow_air_offset',
+    ], "Grounded airborne shadow")
+
+    ra2_unit = text("scripts/game/ra2_unit.gd")
+    require(ra2_unit, [
+        'const AIRBORNE_GRAVITY := 420.0',
+        'var terrain_ground_height: float',
+        'var airborne_height: float',
+        'func _update_terrain_pose',
+        'func apply_terrain_impulse',
+        'var landing_damage :=',
+        'ra2_visual.set_terrain_pose(',
+        'external_impulse.move_toward',
+    ], "Vehicle elevation and airborne runtime")
+
+    ra2_building = text("scripts/game/ra2_building.gd")
+    require(ra2_building, [
+        'func _apply_terrain_pose',
+        'terrain_ground_height = float(map_ref.get_ground_height(global_position))',
+        'ra2_visual.set_terrain_pose(',
+    ], "Building elevation runtime")
+
+    projectile = text("scripts/game/projectile.gd")
+    require(projectile, [
+        'var start_ground_height: float',
+        'var target_ground_height: float',
+        'var terrain_height: float = lerpf(',
+        '-terrain_height + vertical_offset',
+    ], "Height-aware projectile runtime")
+
+
 def main() -> int:
     validate_gdscript_structure()
     validate_json_and_ra2_data()
     validate_dev5_features()
+    validate_dev6_height_features()
     if ERRORS:
         print("Validation failed:")
         for item in ERRORS:
