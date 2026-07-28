@@ -8,6 +8,9 @@ func setup(next_match, next_map, next_building_id, next_owner, cell, animate_con
     super.setup(next_match, next_map, next_building_id, next_owner, cell, animate_construction)
     var previous_footprint := footprint
     stats = RA2RulesAdapter.build_runtime_stats(stats, ra2_entity_id, "building")
+    var display_override := str(ra2_profile.get("display_name_override", ""))
+    if not display_override.is_empty():
+        stats["name"] = display_override
     max_hp = float(stats.get("hp", max_hp))
     hp = max_hp
     max_shield = float(stats.get("shield", max_shield))
@@ -130,6 +133,8 @@ func take_damage(amount, source = null):
         eject_garrisoned_tank()
         if not entity_id.is_empty():
             RA2CombatAudio.play_entity_role(entity_id, "DieSound", global_position, match_ref, 80)
+    elif float(actual) > 0.0 and not entity_id.is_empty():
+        RA2CombatAudio.play_entity_role(entity_id, "VoiceFeedback", global_position, match_ref, 220)
     return actual
 
 
