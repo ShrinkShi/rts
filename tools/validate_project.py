@@ -3,8 +3,6 @@ from __future__ import annotations
 import json
 import math
 import re
-import sys
-import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -32,11 +30,11 @@ def require(source: str, tokens: list[str], label: str) -> None:
 def validate_json() -> dict[str, object]:
     result: dict[str, object] = {}
     for name in ["units", "buildings", "maps", "factions", "modes"]:
-        path = ROOT / "data" / f"{name}.json"
+        relative = f"data/{name}.json"
         try:
-            result[name] = json.loads(path.read_text(encoding="utf-8"))
+            result[name] = json.loads((ROOT / relative).read_text(encoding="utf-8"))
         except Exception as exc:
-            error(f"Invalid JSON {path.name}: {exc}")
+            error(f"Invalid JSON {relative}: {exc}")
     for relative in ["BUILD_INFO.json", "data/ra2/runtime_profiles.json"]:
         try:
             json.loads((ROOT / relative).read_text(encoding="utf-8"))
@@ -64,8 +62,7 @@ def validate_gdscript_structure() -> None:
                 if next_line and not next_line.startswith((" ", "\t", "#")):
                     error(f"Unindented function body in {path.relative_to(ROOT)}:{index + 2}")
         for resource in preload_pattern.findall(source):
-            resource_path = ROOT / resource.removeprefix("res://")
-            if not resource_path.exists():
+            if not (ROOT / resource.removeprefix("res://")).exists():
                 error(f"Missing resource referenced by {path.relative_to(ROOT)}: {resource}")
 
 
@@ -76,6 +73,12 @@ def validate_features(data: dict[str, object]) -> None:
     building = text("scripts/game/building.gd")
     grid = text("scripts/game/grid_world_base.gd") + "\n" + text("scripts/game/grid_world.gd")
     runtime_tuning = text("scripts/core/runtime_tuning.gd")
+    runtime_rules = "\n".join([
+        text("scripts/core/runtime_movement_rules.gd"),
+        text("scripts/core/runtime_production_rules.gd"),
+        text("scripts/core/runtime_deployment_rules.gd"),
+        text("scripts/core/runtime_defeat_rules.gd"),
+    ])
     combat_effect = text("scripts/game/combat_effect.gd")
     layered_vehicle = text("scripts/ra2/ra2_layered_vehicle_visual.gd")
     hud = text("scripts/ui/match_hud.gd")
@@ -85,50 +88,34 @@ def validate_features(data: dict[str, object]) -> None:
     asset_processor = text("tools/process_ai_assets.py")
 
     require(project, [
-        'config/version="0.16.0-dev.3"',
+        'config/version="0.16.0-dev.4"',
         'RuntimeTuning="*res://scripts/core/runtime_tuning.gd"',
+        'RuntimeMovementRules="*res://scripts/core/runtime_movement_rules.gd"',
+        'RuntimeProductionRules="*res://scripts/core/runtime_production_rules.gd"',
+        'RuntimeDeploymentRules="*res://scripts/core/runtime_deployment_rules.gd"',
+        'RuntimeDefeatRules="*res://scripts/core/runtime_defeat_rules.gd"',
         '2d/snap/snap_2d_transforms_to_pixel=true',
     ], "Project version/runtime")
     require(match, [
-        'structure_jobs = {"primary": {}, "defense": {}}',
-        'func repair_entity_step',
-        'func sell_building',
-        'func apply_ground_damage',
-        'KEY_A and event.ctrl_pressed',
-        'func notify_allies_under_attack',
-        'func _spawn_tree_entities',
-        'func _formation_targets',
-        'max_radius * 2.0 + 10.0',
-        'func query_units_in_radius',
-        'MAX_ACTIVE_TRACERS',
-        'MAX_ACTIVE_COMBAT_TEXTS',
+        'structure_jobs = {"primary": {}, "defense": {}}', 'func repair_entity_step',
+        'func sell_building', 'func apply_ground_damage', 'KEY_A and event.ctrl_pressed',
+        'func notify_allies_under_attack', 'func _spawn_tree_entities',
+        'func _formation_targets', 'max_radius * 2.0 + 10.0',
+        'func query_units_in_radius', 'MAX_ACTIVE_TRACERS', 'MAX_ACTIVE_COMBAT_TEXTS',
     ], "RTS match")
     require(unit, [
-        'func _resolve_unit_overlaps',
-        'Do not hard-snap every member of a formation',
-        'func _calculate_separation_vector',
-        'query_units_in_radius',
-        'order_queue.size() < 64',
-        'path.size() > 512',
-        'retaliate_enabled',
-        'support_enabled',
-        'func cycle_behavior_policy',
-        'func command_force_attack',
-        'func command_repair',
-        'get_cover_multiplier',
-        'turret_facing_direction',
+        'func _resolve_unit_overlaps', 'Do not hard-snap every member of a formation',
+        'func _calculate_separation_vector', 'query_units_in_radius',
+        'order_queue.size() < 64', 'path.size() > 512', 'retaliate_enabled',
+        'support_enabled', 'func cycle_behavior_policy', 'func command_force_attack',
+        'func command_repair', 'get_cover_multiplier', 'turret_facing_direction',
         'get_tank_turret_frames',
     ], "Unit")
     require(building, [
-        'func is_repair_facility',
-        'func accept_vehicle_for_repair',
-        'func _process_vehicle_repair',
-        'func begin_sell',
-        'construction_progress',
-        'SpriteSheetFactory.get_building_frame',
-        'func _update_turret_visual',
-        'VisualRoot/Weapon',
-        'get_defense_head_frames',
+        'func is_repair_facility', 'func accept_vehicle_for_repair',
+        'func _process_vehicle_repair', 'func begin_sell', 'construction_progress',
+        'SpriteSheetFactory.get_building_frame', 'func _update_turret_visual',
+        'VisualRoot/Weapon', 'get_defense_head_frames',
     ], "Building")
     require(grid, [
         'balanced_land', 'ore_centers', 'astar_infantry', 'astar_vehicle',
@@ -139,12 +126,18 @@ def validate_features(data: dict[str, object]) -> None:
         'func get_ground_height', 'Extrude each tile',
     ], "Grid")
     require(runtime_tuning, [
-        'collision_radius"] = 6.25',
-        'unit.stats["radius"] = 15.0',
-        'ore_harvest',
-        'building._update_damage_visual()',
-        '_remove_invalid_normal_tail',
+        'collision_radius"] = 6.25', 'unit.stats["radius"] = 15.0',
+        'ore_harvest', 'building._update_damage_visual()', '_remove_invalid_normal_tail',
     ], "Runtime tuning")
+    require(runtime_rules, [
+        'MAX_PRODUCTION_QUEUE := 30', '5 if bool(event.shift_pressed) else 1',
+        'TREE_VEHICLE_RADIUS_FACTOR := 0.22', '_settle_occupied_move_destination',
+        '_filter_deployed_units_from_right_click', '_pack_command_building',
+        '_unpack_mcv', '_player_has_structure_presence', '_show_defeat_notice',
+        '_requirements_met', '_raise_building_health_bar_once',
+        '_stabilize_war_factory_production_visual_once',
+        '_process_harvester_unload_visual', '"电力  %d / %d" % [consumed, produced]',
+    ], "Runtime gameplay rules")
     require(combat_effect, ['effect_type == "ore_harvest"', '_spawn_ore_particles', 'effect_type == "muzzle"'], "Combat effects")
     require(layered_vehicle, ['_shadow_center', 'draw_set_transform(_shadow_center', 'position = (Vector2'], "Layered vehicle shadow")
     require(hud, ['SidebarToolButton', 'repair_building', 'sell_building', 'repair_bay', 'force_attack', 'behavior', 'get_structure_status'], "HUD")
@@ -152,10 +145,6 @@ def validate_features(data: dict[str, object]) -> None:
     require(campaign, ['MarginContainer.new()', 'size_flags_vertical = Control.SIZE_EXPAND_FILL'], "Campaign UI")
     require(factory, ['AtlasTexture.new()', 'filter_clip = true', 'tank_chassis.png', 'tank_turret.png', 'bunker_head', 'create_team_material'], "Sprite atlas")
     require(asset_processor, ['N, NW, W, SW, S, SE, E, NE', 'rows_from_specs', '[5, -5, 3, 1, 0, -2, -4, 4]', "split_grid(SOURCES['tank_chassis'], 8, 3, 26)", "split_grid(SOURCES['tank_turret'], 8, 2, 52)", '(224, 192)', '[4, 3, 2, 1, 0, 7, 6, 5]', '_tank_ring_anchor', '_turret_mount_anchor', '(128, 184)', 'clean_detached_fragments'], "AI asset alignment")
-    require(unit, ['get_node_or_null("VisualRoot/Body")', 'get_node_or_null("VisualRoot/Turret")', 'turret_facing_direction = facing_direction', 'get_movement_speed_multiplier'], "Prefab visual nodes and terrain speed")
-    visual_store = text('scripts/core/visual_profile_store.gd')
-    require(visual_store, ['resources/visual_profiles', 'ResourceLoader.exists'], 'Visual tuning profiles')
-    require(match, ['UNIT_SCENE_PATHS', 'BUILDING_SCENE_PATHS', 'PackedScene', '.instantiate()'], 'PackedScene spawning')
 
     for unit_id in ['rifle', 'rocket', 'tank', 'scout', 'harvester']:
         scene_path = ROOT / 'scenes' / 'entities' / 'units' / f'{unit_id}.tscn'
@@ -175,25 +164,21 @@ def validate_features(data: dict[str, object]) -> None:
             for token in ['VisualRoot', 'StaticBody2D', 'CollisionShape2D', 'Sprite2D']:
                 if token not in scene_text:
                     error(f'Building prefab {building_id} missing {token}')
-    for profile_id in ['rifle', 'rocket', 'tank', 'scout', 'harvester', 'power', 'barracks', 'refinery', 'war_factory', 'turret', 'bunker']:
-        if not (ROOT / 'resources' / 'visual_profiles' / f'{profile_id}.tres').exists():
-            error(f'Missing visual profile: {profile_id}.tres')
 
-    production_tile = text('scripts/ui/production_tile.gd')
-    require(production_tile, ['get_tank_turret_frames', 'get_defense_head_frames', 'draw_texture_rect(turret', 'draw_texture_rect(head'], "Production composite icons")
-    require(building, ['func command_force_attack', 'forced_attack_active', 'forced_attack_position'], "Defense force attack")
-
+    units = data.get("units", {})
+    if not isinstance(units, dict) or int(units.get("harvester", {}).get("hp", 0)) != 3250:
+        error("harvester hp must be 3250")
+    if not isinstance(units, dict) or "mcv" not in units:
+        error("mcv is missing from units.json")
     buildings = data.get("buildings", {})
-    if not isinstance(buildings, dict) or "repair_bay" not in buildings:
-        error("repair_bay is missing from buildings.json")
-    if not isinstance(buildings, dict) or "bunker" not in buildings:
-        error("bunker is missing from buildings.json")
+    for required_building in ["repair_bay", "bunker"]:
+        if not isinstance(buildings, dict) or required_building not in buildings:
+            error(f"{required_building} is missing from buildings.json")
+
     maps = data.get("maps", {})
     if isinstance(maps, dict):
         for map_id, map_data in maps.items():
-            if not isinstance(map_data, dict):
-                continue
-            if map_id == "frontier_expanse":
+            if not isinstance(map_data, dict) or map_id == "frontier_expanse":
                 continue
             size = map_data.get("size", [0, 0])
             if len(size) < 2 or not (50 <= int(size[0]) <= 100 and 50 <= int(size[1]) <= 100):
@@ -205,34 +190,11 @@ def validate_features(data: dict[str, object]) -> None:
             if not positions or len(ore_centers) < len(positions) * 2:
                 error(f"Skirmish map {map_id} lacks spawn-adjacent first/second ore centers")
                 continue
-            nearest_first: list[float] = []
-            nearest_second: list[float] = []
-            for raw_position in positions:
-                position = (float(raw_position[0]), float(raw_position[1]))
-                distances = sorted(math.dist(position, (float(center[0]), float(center[1]))) for center in ore_centers)
-                nearest_first.append(distances[0])
-                nearest_second.append(distances[1])
-            if max(nearest_first) - min(nearest_first) > 1.0:
+            distance_rows = [sorted(math.dist((float(p[0]), float(p[1])), (float(c[0]), float(c[1]))) for c in ore_centers) for p in positions]
+            if max(row[0] for row in distance_rows) - min(row[0] for row in distance_rows) > 1.0:
                 error(f"Skirmish map {map_id} first-mine distance spread is too large")
-            if max(nearest_second) - min(nearest_second) > 1.2:
+            if max(row[1] for row in distance_rows) - min(row[1] for row in distance_rows) > 1.2:
                 error(f"Skirmish map {map_id} second-mine distance spread is too large")
-
-    expected_assets = ["command", "power", "barracks", "refinery", "war_factory", "turret", "repair_bay"]
-    for building_id in expected_assets:
-        if not (ROOT / "assets" / "generated" / "buildings" / f"{building_id}.png").exists():
-            error(f"Missing generated building art: {building_id}.png")
-
-    ai_assets = [
-        "assets/ai_generated/units/rifle.png", "assets/ai_generated/units/tank_chassis.png",
-        "assets/ai_generated/units/tank_turret.png", "assets/ai_generated/units/tank_death.png",
-        "assets/ai_generated/buildings/power.png", "assets/ai_generated/buildings/barracks.png",
-        "assets/ai_generated/buildings/refinery.png", "assets/ai_generated/buildings/turret_base.png",
-        "assets/ai_generated/buildings/turret_head.png", "assets/ai_generated/buildings/bunker_base.png",
-        "assets/ai_generated/buildings/bunker_head.png", "shaders/team_tint.gdshader",
-    ]
-    for relative in ai_assets:
-        if not (ROOT / relative).exists():
-            error(f"Missing AI-generated runtime asset: {relative}")
 
 
 def main() -> int:

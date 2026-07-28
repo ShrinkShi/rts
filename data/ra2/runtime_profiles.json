@@ -1,177 +1,75 @@
 {
   "units": {
     "union": {
-      "rifle": {
-        "ra2_id": "E1",
-        "target_width": 24.0,
-        "ground_y": 2.0
-      },
-      "rocket": {
-        "ra2_id": "GGI",
-        "target_width": 26.0,
-        "ground_y": 2.0
-      },
-      "tank": {
-        "ra2_id": "MTNK",
-        "target_width": 51.0,
-        "ground_y": 6.0,
-        "offset": [0.0, 0.0]
-      },
-      "scout": {
-        "ra2_id": "FV",
-        "target_width": 48.0,
-        "ground_y": 2.0
-      },
+      "rifle": {"ra2_id": "E1", "target_width": 24.0, "ground_y": 2.0},
+      "rocket": {"ra2_id": "GGI", "target_width": 26.0, "ground_y": 2.0},
+      "tank": {"ra2_id": "MTNK", "target_width": 51.0, "ground_y": 6.0, "offset": [0.0, 0.0]},
+      "scout": {"ra2_id": "FV", "target_width": 48.0, "ground_y": 2.0},
       "harvester": {
         "ra2_id": "CMIN",
         "target_width": 62.0,
-        "ground_y": 3.0
-      }
+        "ground_y": 3.0,
+        "unload_ra2_ids": ["CMINWO", "CMIN"]
+      },
+      "mcv": {"ra2_id": "AMCV", "target_width": 66.0, "ground_y": 5.0}
     },
     "dominion": {
-      "rifle": {
-        "ra2_id": "E2",
-        "target_width": 24.0,
-        "ground_y": 2.0
-      },
-      "rocket": {
-        "ra2_id": "FLAKT",
-        "target_width": 26.0,
-        "ground_y": 2.0
-      },
-      "tank": {
-        "ra2_id": "HTNK",
-        "target_width": 52.0,
-        "ground_y": 6.0,
-        "offset": [0.0, 0.0]
-      },
-      "scout": {
-        "ra2_id": "HTK",
-        "target_width": 50.0,
-        "ground_y": 2.0
-      },
+      "rifle": {"ra2_id": "E2", "target_width": 24.0, "ground_y": 2.0},
+      "rocket": {"ra2_id": "FLAKT", "target_width": 26.0, "ground_y": 2.0},
+      "tank": {"ra2_id": "HTNK", "target_width": 52.0, "ground_y": 6.0, "offset": [0.0, 0.0]},
+      "scout": {"ra2_id": "HTK", "target_width": 50.0, "ground_y": 2.0},
       "harvester": {
         "ra2_id": "HARV",
         "target_width": 64.0,
-        "ground_y": 3.0
-      }
+        "ground_y": 3.0,
+        "unload_ra2_ids": ["HARVWO", "HARV"]
+      },
+      "mcv": {"ra2_id": "SMCV", "target_width": 68.0, "ground_y": 5.0}
     },
     "republic": {
-      "rifle": {
-        "ra2_id": "INIT",
-        "target_width": 24.0,
-        "ground_y": 2.0
-      },
-      "rocket": {
-        "ra2_id": "VIRUS",
-        "target_width": 26.0,
-        "ground_y": 2.0
-      },
-      "tank": {
-        "ra2_id": "LTNK",
-        "target_width": 50.0,
-        "ground_y": 6.0,
-        "offset": [0.0, 0.0]
-      },
-      "scout": {
-        "ra2_id": "YTNK",
-        "target_width": 54.0,
-        "ground_y": 2.0
-      },
+      "rifle": {"ra2_id": "INIT", "target_width": 24.0, "ground_y": 2.0},
+      "rocket": {"ra2_id": "VIRUS", "target_width": 26.0, "ground_y": 2.0},
+      "tank": {"ra2_id": "LTNK", "target_width": 50.0, "ground_y": 6.0, "offset": [0.0, 0.0]},
+      "scout": {"ra2_id": "YTNK", "target_width": 54.0, "ground_y": 2.0},
       "harvester": {
         "ra2_id": "SMIN",
         "target_width": 68.0,
-        "ground_y": 3.0
-      }
+        "ground_y": 3.0,
+        "unload_ra2_ids": ["SMIN"]
+      },
+      "mcv": {"ra2_id": "PCV", "target_width": 68.0, "ground_y": 5.0}
     }
   },
   "buildings": {
     "union": {
-      "command": {
-        "ra2_id": "GACNST"
-      },
-      "power": {
-        "ra2_id": "GAPOWR"
-      },
-      "barracks": {
-        "ra2_id": "GAPILE"
-      },
-      "refinery": {
-        "ra2_id": "GAREFN"
-      },
-      "war_factory": {
-        "ra2_id": "GAWEAP"
-      },
-      "repair_bay": {
-        "ra2_id": "GADEPT"
-      },
-      "turret": {
-        "ra2_id": "GAPILL",
-        "target_width": 48.0,
-        "ground_y": 13.0,
-        "offset": [0.0, 1.0]
-      },
-      "bunker": {
-        "ra2_id": "GAPILL"
-      }
+      "command": {"ra2_id": "GACNST"},
+      "power": {"ra2_id": "GAPOWR"},
+      "barracks": {"ra2_id": "GAPILE"},
+      "refinery": {"ra2_id": "GAREFN"},
+      "war_factory": {"ra2_id": "GAWEAP"},
+      "repair_bay": {"ra2_id": "GADEPT"},
+      "turret": {"ra2_id": "GAPILL", "target_width": 48.0, "ground_y": 13.0, "offset": [0.0, 1.0]},
+      "bunker": {"ra2_id": "GAPILL"}
     },
     "dominion": {
-      "command": {
-        "ra2_id": "NACNST"
-      },
-      "power": {
-        "ra2_id": "NAPOWR"
-      },
-      "barracks": {
-        "ra2_id": "NAHAND"
-      },
-      "refinery": {
-        "ra2_id": "NAREFN"
-      },
-      "war_factory": {
-        "ra2_id": "NAWEAP"
-      },
-      "repair_bay": {
-        "ra2_id": "NADEPT"
-      },
-      "turret": {
-        "ra2_id": "NALASR",
-        "target_width": 44.0,
-        "ground_y": 13.0,
-        "offset": [0.0, 1.0]
-      },
-      "bunker": {
-        "ra2_id": "NATBNK"
-      }
+      "command": {"ra2_id": "NACNST"},
+      "power": {"ra2_id": "NAPOWR"},
+      "barracks": {"ra2_id": "NAHAND"},
+      "refinery": {"ra2_id": "NAREFN"},
+      "war_factory": {"ra2_id": "NAWEAP"},
+      "repair_bay": {"ra2_id": "NADEPT"},
+      "turret": {"ra2_id": "NALASR", "target_width": 44.0, "ground_y": 13.0, "offset": [0.0, 1.0]},
+      "bunker": {"ra2_id": "NATBNK"}
     },
     "republic": {
-      "command": {
-        "ra2_id": "YACNST"
-      },
-      "power": {
-        "ra2_id": "YAPOWR"
-      },
-      "barracks": {
-        "ra2_id": "YABRCK"
-      },
-      "refinery": {
-        "ra2_id": "YAREFN"
-      },
-      "war_factory": {
-        "ra2_id": "YAWEAP"
-      },
-      "repair_bay": {
-        "ra2_id": "YAGRND"
-      },
-      "turret": {
-        "ra2_id": "YAGGUN",
-        "target_width": 50.0,
-        "ground_y": 13.0,
-        "offset": [0.0, 1.0]
-      },
-      "bunker": {
-        "ra2_id": "NATBNK"
-      }
+      "command": {"ra2_id": "YACNST"},
+      "power": {"ra2_id": "YAPOWR"},
+      "barracks": {"ra2_id": "YABRCK"},
+      "refinery": {"ra2_id": "YAREFN"},
+      "war_factory": {"ra2_id": "YAWEAP"},
+      "repair_bay": {"ra2_id": "YAGRND"},
+      "turret": {"ra2_id": "YAGGUN", "target_width": 50.0, "ground_y": 13.0, "offset": [0.0, 1.0]},
+      "bunker": {"ra2_id": "NATBNK"}
     }
   }
 }
