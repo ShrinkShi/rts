@@ -15,6 +15,9 @@ func load_all():
     units = _load_json("res://data/units.json")
     buildings = _load_json("res://data/buildings.json")
     maps = _load_json("res://data/maps.json")
+    var height_maps: Dictionary = _load_json("res://data/maps_height.json")
+    for map_id in height_maps.keys():
+        maps[str(map_id)] = height_maps[map_id]
     modes = _load_json("res://data/modes.json")
 
 func _load_json(path):

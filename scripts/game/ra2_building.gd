@@ -5,6 +5,8 @@ const RA2CombatAudioRouter = preload("res://scripts/ra2/ra2_combat_audio.gd")
 
 var garrisoned_tank
 var target_domains: Array[String] = ["ground"]
+var terrain_ground_height: float = 0.0
+var fallback_visual_base_position: Vector2 = Vector2.ZERO
 
 
 func setup(next_match, next_map, next_building_id, next_owner, cell, animate_construction = false):
@@ -39,8 +41,21 @@ func setup(next_match, next_map, next_building_id, next_owner, cell, animate_con
             if raw_offset is Array and raw_offset.size() >= 2:
                 offset = Vector2(float(raw_offset[0]), float(raw_offset[1]))
             ra2_visual.configure_layout(runtime_width, ground_y, offset)
+    if is_instance_valid(visual_root):
+        fallback_visual_base_position = visual_root.position
     _configure_defense_role()
+    _apply_terrain_pose()
     queue_redraw()
+
+
+func _apply_terrain_pose() -> void:
+    terrain_ground_height = 0.0
+    if is_instance_valid(map_ref) and map_ref.has_method("get_ground_height"):
+        terrain_ground_height = float(map_ref.get_ground_height(global_position))
+    if is_instance_valid(ra2_visual) and ra2_visual.has_method("set_terrain_pose"):
+        ra2_visual.set_terrain_pose(terrain_ground_height, Vector2.ZERO, 0.0, 0.0)
+    elif is_instance_valid(visual_root):
+        visual_root.position = fallback_visual_base_position + Vector2(0.0, -terrain_ground_height)
 
 
 func _configure_defense_role() -> void:
@@ -232,8 +247,12 @@ func _process_turret():
         ra2_visual.play_state("attack", turret_visual_direction, true)
     if not ra2_entity_id.is_empty():
         RA2CombatAudioRouter.play_weapon_report(ra2_entity_id, global_position, match_ref)
-    fired.emit(global_position + turret_facing * 18.0 + Vector2(0, -22), attack_point, owner_id)
-    match_ref.spawn_muzzle_flash(global_position + turret_facing * 25.0 + Vector2(0, -22), Color("#FFD46B"))
+    var elevated_origin := global_position + turret_facing * 18.0 + Vector2(0.0, -22.0 - terrain_ground_height)
+    fired.emit(elevated_origin, attack_point, owner_id)
+    match_ref.spawn_muzzle_flash(
+        global_position + turret_facing * 25.0 + Vector2(0.0, -22.0 - terrain_ground_height),
+        Color("#FFD46B")
+    )
     var shot_damage: float = float(stats.get("damage", 20.0))
     var shot_aoe: float = float(stats.get("aoe_radius", 0.0))
     if is_instance_valid(damage_target):

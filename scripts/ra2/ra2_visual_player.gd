@@ -11,6 +11,11 @@ var content_rect: Rect2i = Rect2i()
 var current_state: String = ""
 var current_direction: int = 0
 var current_animation: String = ""
+var _layout_position: Vector2 = Vector2.ZERO
+var _layout_scale: Vector2 = Vector2.ONE
+var _terrain_ground_height: float = 0.0
+var _terrain_airborne_height: float = 0.0
+
 
 func setup(next_entity_id: String, team_color: Color, next_theater: String = "temperate") -> bool:
     entity_id = next_entity_id.to_upper()
@@ -41,16 +46,33 @@ func setup(next_entity_id: String, team_color: Color, next_theater: String = "te
     add_child(remap_sprite)
     return true
 
+
 func configure_layout(target_width: float, ground_y: float = 0.0, extra_offset: Vector2 = Vector2.ZERO) -> void:
     var width: float = maxf(1.0, float(content_rect.size.x))
     var scale_value: float = target_width / width
-    scale = Vector2.ONE * scale_value
+    _layout_scale = Vector2.ONE * scale_value
+    scale = _layout_scale
     var content_center_x: float = float(content_rect.position.x) + float(content_rect.size.x) * 0.5
     var content_bottom_y: float = float(content_rect.position.y + content_rect.size.y)
-    position = Vector2(
+    _layout_position = Vector2(
         -(content_center_x - canvas_size.x * 0.5) * scale_value,
         ground_y - (content_bottom_y - canvas_size.y * 0.5) * scale_value
     ) + extra_offset
+    position = _layout_position
+
+
+func set_terrain_pose(
+    ground_height: float,
+    slope_gradient: Vector2 = Vector2.ZERO,
+    airborne_height: float = 0.0,
+    airborne_roll: float = 0.0
+) -> void:
+    _terrain_ground_height = maxf(0.0, ground_height)
+    _terrain_airborne_height = maxf(0.0, airborne_height)
+    position = _layout_position + Vector2(0.0, -_terrain_ground_height - _terrain_airborne_height)
+    rotation = clampf(-slope_gradient.x * 0.18 + airborne_roll, -0.48, 0.48)
+    skew = clampf(slope_gradient.y * 0.12, -0.20, 0.20)
+
 
 func play_state(state_name: String, direction: int = 0, restart: bool = false) -> void:
     current_state = state_name
@@ -68,6 +90,7 @@ func play_state(state_name: String, direction: int = 0, restart: bool = false) -
         base_sprite.play(runtime_name)
         remap_sprite.play(runtime_name)
         current_animation = runtime_name
+
 
 func set_progress(state_name: String, progress: float, direction: int = 0) -> void:
     current_state = state_name
@@ -98,9 +121,11 @@ func set_progress(state_name: String, progress: float, direction: int = 0) -> vo
     base_sprite.frame = frame_index
     remap_sprite.frame = frame_index
 
+
 func set_team_color(color: Color) -> void:
     if is_instance_valid(remap_sprite):
         remap_sprite.self_modulate = color
+
 
 func set_alpha(value: float) -> void:
     var alpha: float = clampf(value, 0.0, 1.0)
@@ -109,11 +134,14 @@ func set_alpha(value: float) -> void:
     if is_instance_valid(remap_sprite):
         remap_sprite.modulate.a = alpha
 
+
 func has_state(state_name: String) -> bool:
     return not _resolve_animation(state_name).is_empty()
 
+
 func visual_top_y() -> float:
     return position.y + (float(content_rect.position.y) - canvas_size.y * 0.5) * scale.y
+
 
 func _resolve_animation(state_name: String) -> String:
     var candidates: Array[String] = []
