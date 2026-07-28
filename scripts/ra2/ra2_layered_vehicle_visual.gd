@@ -18,6 +18,10 @@ var _transparent_texture: Texture2D
 var _shadow_center: Vector2 = Vector2.ZERO
 var _shadow_radius: float = 16.0
 var _shadow_alpha: float = 1.0
+var _layout_position: Vector2 = Vector2.ZERO
+var _layout_scale: Vector2 = Vector2.ONE
+var _terrain_ground_height: float = 0.0
+var _terrain_airborne_height: float = 0.0
 
 
 func setup(next_entity_id: String, next_team_color: Color, next_theater: String = "temperate") -> bool:
@@ -148,7 +152,8 @@ func _load_texture(path: String, transparent_fallback: bool = false) -> Texture2
 func configure_layout(target_width: float, ground_y: float = 0.0, extra_offset: Vector2 = Vector2.ZERO) -> void:
     var width: float = maxf(1.0, float(content_rect.size.x))
     var scale_value: float = target_width / width
-    scale = Vector2.ONE * scale_value
+    _layout_scale = Vector2.ONE * scale_value
+    scale = _layout_scale
     var center_x: float = float(content_rect.position.x) + float(content_rect.size.x) * 0.5
     var bottom_y: float = float(content_rect.position.y + content_rect.size.y)
     _shadow_center = Vector2(
@@ -156,10 +161,25 @@ func configure_layout(target_width: float, ground_y: float = 0.0, extra_offset: 
         bottom_y - canvas_size.y * 0.5 + 1.0
     )
     _shadow_radius = maxf(8.0, float(content_rect.size.x) * 0.34)
-    position = (Vector2(
+    _layout_position = (Vector2(
         -(center_x - canvas_size.x * 0.5) * scale_value,
         ground_y - (bottom_y - canvas_size.y * 0.5) * scale_value
     ) + extra_offset).round()
+    position = _layout_position
+    queue_redraw()
+
+
+func set_terrain_pose(
+    ground_height: float,
+    slope_gradient: Vector2 = Vector2.ZERO,
+    airborne_height: float = 0.0,
+    airborne_roll: float = 0.0
+) -> void:
+    _terrain_ground_height = maxf(0.0, ground_height)
+    _terrain_airborne_height = maxf(0.0, airborne_height)
+    position = (_layout_position + Vector2(0.0, -_terrain_ground_height - _terrain_airborne_height)).round()
+    rotation = clampf(-slope_gradient.x * 0.18 + airborne_roll, -0.52, 0.52)
+    skew = clampf(slope_gradient.y * 0.12, -0.20, 0.20)
     queue_redraw()
 
 
@@ -217,7 +237,9 @@ func visual_top_y() -> float:
 func _draw() -> void:
     if current_state == "death" or _shadow_alpha <= 0.01:
         return
-    draw_set_transform(_shadow_center, 0.0, Vector2(1.0, 0.30))
+    var inverse_scale_y: float = 1.0 / maxf(0.001, absf(scale.y))
+    var shadow_air_offset := Vector2(0.0, _terrain_airborne_height * inverse_scale_y)
+    draw_set_transform(_shadow_center + shadow_air_offset, -rotation, Vector2(1.0, 0.30))
     draw_circle(
         Vector2.ZERO,
         _shadow_radius,
