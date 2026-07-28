@@ -103,13 +103,16 @@ func play_path_spatial(resource_path: String, world_position: Vector2, match_ref
     var player := AudioStreamPlayer2D.new()
     player.name = "RA2SpatialOneShot"
     player.stream = stream
-    player.global_position = world_position
     player.volume_db = linear_to_db(maxf(_master_volume_linear * distance_volume, 0.0001))
-    player.max_distance = maxf(view_rect.size.x, view_rect.size.y) * 1.25
-    player.attenuation = 1.0
+    # Volume attenuation is computed against the visible battlefield rectangle.
+    # Keep AudioStreamPlayer2D only for stereo panning so camera zoom does not add
+    # a second, inconsistent distance curve.
+    player.attenuation = 0.0
+    player.max_distance = maxf(view_rect.size.x, view_rect.size.y) * 4.0
     player.panning_strength = 1.0
     var parent: Node = match_ref.effect_layer if is_instance_valid(match_ref.get("effect_layer")) else match_ref
     parent.add_child(player)
+    player.global_position = world_position
     _spatial_players.append(player)
     player.finished.connect(_on_spatial_finished.bind(player))
     player.play()
