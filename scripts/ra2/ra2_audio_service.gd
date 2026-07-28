@@ -6,13 +6,15 @@ signal playback_stopped
 
 const RA2AudioLibrary = preload("res://scripts/ra2/ra2_audio_library.gd")
 const PLAYER_POOL_SIZE: int = 12
+const SPATIAL_POOL_SIZE: int = 24
 const MIN_EDGE_VOLUME := 0.34
 
 var _players: Array[AudioStreamPlayer] = []
 var _next_player_index: int = 0
+var _spatial_players: Array[AudioStreamPlayer2D] = []
+var _next_spatial_player_index: int = 0
 var _master_volume_linear: float = 0.85
 var _random: RandomNumberGenerator = RandomNumberGenerator.new()
-var _spatial_players: Array[AudioStreamPlayer2D] = []
 
 
 func _ready() -> void:
@@ -100,21 +102,16 @@ func play_path_spatial(resource_path: String, world_position: Vector2, match_ref
         absf(world_position.y - center.y) / maxf(1.0, half_size.y)
     ).length() / sqrt(2.0)
     var distance_volume := lerpf(1.0, MIN_EDGE_VOLUME, clampf(normalized_distance, 0.0, 1.0))
-    var player := AudioStreamPlayer2D.new()
-    player.name = "RA2SpatialOneShot"
+    var parent: Node = match_ref.effect_layer if is_instance_valid(match_ref.get("effect_layer")) else match_ref
+    var player := _acquire_spatial_player(parent)
     player.stream = stream
     player.volume_db = linear_to_db(maxf(_master_volume_linear * distance_volume, 0.0001))
     # Volume attenuation is computed against the visible battlefield rectangle.
-    # Keep AudioStreamPlayer2D only for stereo panning so camera zoom does not add
-    # a second, inconsistent distance curve.
+    # AudioStreamPlayer2D is retained only for stereo panning.
     player.attenuation = 0.0
     player.max_distance = maxf(view_rect.size.x, view_rect.size.y) * 4.0
     player.panning_strength = 1.0
-    var parent: Node = match_ref.effect_layer if is_instance_valid(match_ref.get("effect_layer")) else match_ref
-    parent.add_child(player)
     player.global_position = world_position
-    _spatial_players.append(player)
-    player.finished.connect(_on_spatial_finished.bind(player))
     player.play()
     _emit_started(event_id, sample_name, resource_path)
     return true
@@ -126,8 +123,7 @@ func stop_all() -> void:
     for player in _spatial_players:
         if is_instance_valid(player):
             player.stop()
-            player.queue_free()
-    _spatial_players.clear()
+            player.stream = null
     playback_stopped.emit()
 
 
@@ -146,12 +142,6 @@ func _emit_started(event_id: String, sample_name: String, resource_path: String)
     sample_started.emit(event_id, resolved_name, resource_path)
 
 
-func _on_spatial_finished(player: AudioStreamPlayer2D) -> void:
-    _spatial_players.erase(player)
-    if is_instance_valid(player):
-        player.queue_free()
-
-
 func _acquire_player() -> AudioStreamPlayer:
     for player in _players:
         if not player.playing:
@@ -160,3 +150,24 @@ func _acquire_player() -> AudioStreamPlayer:
     _next_player_index = (_next_player_index + 1) % _players.size()
     player.stop()
     return player
+
+
+func _acquire_spatial_player(parent: Node) -> AudioStreamPlayer2D:
+    _spatial_players = _spatial_players.filter(func(value): return is_instance_valid(value))
+    for player in _spatial_players:
+        if not player.playing:
+            if player.get_parent() != parent:
+                player.reparent(parent, false)
+            return player
+    if _spatial_players.size() < SPATIAL_POOL_SIZE:
+        var new_player := AudioStreamPlayer2D.new()
+        new_player.name = "RA2SpatialAudio%d" % _spatial_players.size()
+        parent.add_child(new_player)
+        _spatial_players.append(new_player)
+        return new_player
+    var recycled := _spatial_players[_next_spatial_player_index]
+    _next_spatial_player_index = (_next_spatial_player_index + 1) % _spatial_players.size()
+    recycled.stop()
+    if recycled.get_parent() != parent:
+        recycled.reparent(parent, false)
+    return recycled
