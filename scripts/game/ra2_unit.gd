@@ -38,7 +38,10 @@ func take_damage(amount, source = null):
     var resolved := RA2RulesAdapter.resolve_damage(source, self, float(amount))
     if resolved <= 0.0:
         return 0.0
-    return super.take_damage(resolved, source)
+    var actual = super.take_damage(resolved, source)
+    if float(actual) > 0.0 and hp > 0.0 and not ra2_entity_id.is_empty():
+        RA2CombatAudio.play_entity_role(ra2_entity_id, "VoiceFeedback", global_position, match_ref, 180)
+    return actual
 
 
 func _fire_at(target):
