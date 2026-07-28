@@ -106,8 +106,6 @@ func play_path_spatial(resource_path: String, world_position: Vector2, match_ref
     var player := _acquire_spatial_player(parent)
     player.stream = stream
     player.volume_db = linear_to_db(maxf(_master_volume_linear * distance_volume, 0.0001))
-    # Volume attenuation is computed against the visible battlefield rectangle.
-    # AudioStreamPlayer2D is retained only for stereo panning.
     player.attenuation = 0.0
     player.max_distance = maxf(view_rect.size.x, view_rect.size.y) * 4.0
     player.panning_strength = 1.0
@@ -152,8 +150,18 @@ func _acquire_player() -> AudioStreamPlayer:
     return player
 
 
+func _prune_spatial_players() -> void:
+    for index in range(_spatial_players.size() - 1, -1, -1):
+        if not is_instance_valid(_spatial_players[index]):
+            _spatial_players.remove_at(index)
+    if _spatial_players.is_empty():
+        _next_spatial_player_index = 0
+    else:
+        _next_spatial_player_index %= _spatial_players.size()
+
+
 func _acquire_spatial_player(parent: Node) -> AudioStreamPlayer2D:
-    _spatial_players = _spatial_players.filter(func(value): return is_instance_valid(value))
+    _prune_spatial_players()
     for player in _spatial_players:
         if not player.playing:
             if player.get_parent() != parent:
