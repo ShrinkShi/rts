@@ -137,19 +137,21 @@ func take_damage(amount, source = null):
     var resolved: float = RA2Rules.resolve_damage(source, self, float(amount))
     var entity_id: String = ra2_entity_id
     var was_destroyed: bool = destroyed
+    var previous_hp: float = hp
     var display_armor: float = float(stats.get("armor", 0.0))
     stats["armor"] = 0.0
     ra2_entity_id = ""
-    var actual: Variant = super.take_damage(resolved, source)
+    super.take_damage(resolved, source)
     ra2_entity_id = entity_id
     stats["armor"] = display_armor
+    var actual_damage: float = maxf(0.0, previous_hp - hp)
     if not was_destroyed and destroyed:
         eject_garrisoned_tank()
         if not entity_id.is_empty():
             RA2CombatAudioRouter.play_entity_role(entity_id, "DieSound", global_position, match_ref, 80)
-    elif float(actual) > 0.0 and not entity_id.is_empty():
+    elif actual_damage > 0.0 and not entity_id.is_empty():
         RA2CombatAudioRouter.play_entity_role(entity_id, "VoiceFeedback", global_position, match_ref, 220)
-    return actual
+    return actual_damage
 
 
 func _is_valid_defense_target(candidate) -> bool:
@@ -161,17 +163,27 @@ func _is_valid_defense_target(candidate) -> bool:
     return domain in target_domains
 
 
+func _consider_defense_candidates(candidates: Array, best_target: Variant, best_distance: float) -> Array:
+    var current_target: Variant = best_target
+    var current_distance: float = best_distance
+    for candidate in candidates:
+        if not _is_valid_defense_target(candidate):
+            continue
+        var distance_squared: float = global_position.distance_squared_to(candidate.global_position)
+        if distance_squared <= current_distance:
+            current_distance = distance_squared
+            current_target = candidate
+    return [current_target, current_distance]
+
+
 func _nearest_valid_defense_target(max_range: float):
     var best: Variant = null
     var best_distance: float = max_range * max_range
-    for candidate in match_ref.units + match_ref.buildings:
-        if not _is_valid_defense_target(candidate):
-            continue
-        var distance: float = global_position.distance_squared_to(candidate.global_position)
-        if distance <= best_distance:
-            best_distance = distance
-            best = candidate
-    return best
+    var result: Array = _consider_defense_candidates(match_ref.units, best, best_distance)
+    best = result[0]
+    best_distance = float(result[1])
+    result = _consider_defense_candidates(match_ref.buildings, best, best_distance)
+    return result[0]
 
 
 func _process_turret():
