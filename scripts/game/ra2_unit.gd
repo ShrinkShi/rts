@@ -7,6 +7,7 @@ var tank_bunker_target
 func setup(next_match, next_map, next_unit_id, next_owner, world_position):
     super.setup(next_match, next_map, next_unit_id, next_owner, world_position)
     stats = RA2RulesAdapter.build_runtime_stats(stats, ra2_entity_id, str(stats.get("category", "vehicle")))
+    stats["armor"] = float(stats.get("armor_value", 0.0))
     max_hp = float(stats.get("hp", max_hp))
     hp = max_hp
     max_shield = float(stats.get("shield", max_shield))
@@ -38,7 +39,12 @@ func take_damage(amount, source = null):
     var resolved := RA2RulesAdapter.resolve_damage(source, self, float(amount))
     if resolved <= 0.0:
         return 0.0
+    # `armor` remains visible in the HUD, but RA2RulesAdapter has already applied
+    # both Verses and numeric armor. Temporarily suppress the base flat subtraction.
+    var display_armor := float(stats.get("armor", 0.0))
+    stats["armor"] = 0.0
     var actual = super.take_damage(resolved, source)
+    stats["armor"] = display_armor
     if float(actual) > 0.0 and hp > 0.0 and not ra2_entity_id.is_empty():
         RA2CombatAudio.play_entity_role(ra2_entity_id, "VoiceFeedback", global_position, match_ref, 180)
     return actual
