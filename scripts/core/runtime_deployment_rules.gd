@@ -2,6 +2,7 @@ extends Node
 
 const MATCH_SCRIPT_PATH := "res://scripts/game/rts_match.gd"
 const UnitEntity = preload("res://scripts/game/ra2_unit.gd")
+const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")
 
 var _matches: Array = []
 var _selection_restore_guard: Dictionary = {}
@@ -200,7 +201,7 @@ func _command_footprint(match_ref, owner_id: int) -> Vector2i:
     var faction := str(match_ref.get_player_data(owner_id).get("faction", "union"))
     var profile: Dictionary = RA2RuntimeDatabase.get_profile("buildings", faction, "command")
     var entity_id := str(profile.get("ra2_id", "")).to_upper()
-    var runtime: Dictionary = RA2RulesAdapter.build_runtime_stats(base, entity_id, "building")
+    var runtime: Dictionary = RA2Rules.build_runtime_stats(base, entity_id, "building")
     var raw: Variant = runtime.get("footprint", base.get("footprint", [3, 3]))
     if raw is Array and raw.size() >= 2:
         return Vector2i(maxi(1, int(raw[0])), maxi(1, int(raw[1])))
