@@ -3,8 +3,8 @@ extends Node
 # Runtime corrections that depend on the final RA2 visual/content bounds. Keeping
 # them here avoids duplicating tuning code across every unit and building scene.
 const CombatEffect = preload("res://scripts/game/combat_effect.gd")
-const UNIT_SCRIPT_PATH := "res://scripts/game/unit.gd"
-const BUILDING_SCRIPT_PATH := "res://scripts/game/building.gd"
+const UNIT_SCRIPT_PATHS := ["res://scripts/game/unit.gd", "res://scripts/game/ra2_unit.gd"]
+const BUILDING_SCRIPT_PATHS := ["res://scripts/game/building.gd", "res://scripts/game/ra2_building.gd"]
 const TUNING_TAG := "v0_16_0_dev_3_tuned"
 const BUILDING_SANITIZED_TAG := "v0_16_0_dev_3_animation_sanitized"
 
@@ -40,9 +40,9 @@ func _register_node(node: Node) -> void:
     if script == null:
         return
     var script_path: String = script.resource_path
-    if script_path == UNIT_SCRIPT_PATH and not node in _units:
+    if script_path in UNIT_SCRIPT_PATHS and not node in _units:
         _units.append(node)
-    elif script_path == BUILDING_SCRIPT_PATH and not node in _buildings:
+    elif script_path in BUILDING_SCRIPT_PATHS and not node in _buildings:
         _buildings.append(node)
 
 
@@ -75,16 +75,11 @@ func _tune_unit_once(unit) -> void:
     var category: String = str(unit.stats.get("category", ""))
     var unit_id: String = str(unit.unit_id)
     if category == "infantry":
-        # The old 10–11 px physical circles made two infantry occupy almost a
-        # complete 32 px cell. RA2 infantry need smaller physical footprints while
-        # retaining the existing selection and click areas.
         unit.stats["collision_radius"] = 6.25 if unit_id == "rifle" else 6.75
         unit.safe_margin = 0.72
         if unit.has_method("_build_collision_shape"):
             unit._build_collision_shape()
     elif unit_id == "tank":
-        # Reduce both the physical footprint and the cyan selection ellipse without
-        # shrinking the actual RA2 sprite into an infantry-sized vehicle.
         unit.stats["collision_radius"] = 16.0
         unit.stats["radius"] = 15.0
         unit.safe_margin = 0.9
@@ -143,9 +138,6 @@ func _synchronize_building_damage(building) -> void:
     var previous_band: int = int(_building_damage_bands.get(instance_id, -1))
     if band != previous_band or int(building.damage_stage) != band:
         _building_damage_bands[instance_id] = band
-        # heal() previously changed HP without refreshing damage_stage. Calling the
-        # existing state function makes repaired buildings return to normal visuals
-        # and removes low-health smoke at the exact threshold crossing.
         if building.has_method("_update_damage_visual"):
             building._update_damage_visual()
 
