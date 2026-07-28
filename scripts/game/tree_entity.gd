@@ -55,13 +55,15 @@ func setup(next_match, next_map, next_cell, is_dense = false):
 
 func _build_ra2_tree_visual() -> void:
     var available: Array[String] = []
-    for path in RA2_TREE_PATHS:
+    for path_variant: Variant in RA2_TREE_PATHS:
+        var path: String = str(path_variant)
         if ResourceLoader.exists(path):
             available.append(path)
     if available.is_empty():
         return
-    var index := abs(cell.x * 17 + cell.y * 31 + (1 if dense else 0)) % available.size()
-    var texture := load(available[index]) as Texture2D
+    var hash_value: int = cell.x * 17 + cell.y * 31 + (1 if dense else 0)
+    var index: int = int(abs(hash_value)) % available.size()
+    var texture: Texture2D = load(available[index]) as Texture2D
     if texture == null:
         return
     ra2_tree_sprite = Sprite2D.new()
@@ -69,9 +71,9 @@ func _build_ra2_tree_visual() -> void:
     ra2_tree_sprite.texture = texture
     ra2_tree_sprite.centered = true
     ra2_tree_sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-    ra2_tree_sprite.position = Vector2(0.0, -texture.get_height() * 0.36)
-    var target_width := 48.0 if dense else 38.0
-    var scale_value := target_width / maxf(1.0, float(texture.get_width()))
+    ra2_tree_sprite.position = Vector2(0.0, -float(texture.get_height()) * 0.36)
+    var target_width: float = 48.0 if dense else 38.0
+    var scale_value: float = target_width / maxf(1.0, float(texture.get_width()))
     ra2_tree_sprite.scale = Vector2.ONE * scale_value
     add_child(ra2_tree_sprite)
 
@@ -80,10 +82,10 @@ func _build_vehicle_collision():
     static_body = StaticBody2D.new()
     static_body.collision_layer = LAYER_TREE
     static_body.collision_mask = LAYER_VEHICLE
-    var shape_node = CollisionShape2D.new()
+    var shape_node: CollisionShape2D = CollisionShape2D.new()
     shape_node.name = "CollisionShape2D"
-    var circle = CircleShape2D.new()
-    circle.radius = map_ref.tile_px * TREE_COLLISION_FACTOR
+    var circle: CircleShape2D = CircleShape2D.new()
+    circle.radius = float(map_ref.tile_px) * TREE_COLLISION_FACTOR
     shape_node.shape = circle
     static_body.add_child(shape_node)
     add_child(static_body)
@@ -98,7 +100,7 @@ func is_force_attack_target():
 
 
 func get_selection_rect():
-    var half = map_ref.tile_px * 0.48
+    var half: float = float(map_ref.tile_px) * 0.48
     return Rect2(global_position - Vector2(half, half * 1.6), Vector2(half * 2.0, half * 2.2))
 
 
@@ -117,7 +119,7 @@ func get_sight_radius_cells():
 
 
 func take_damage(amount, source = null):
-    var actual = max(1.0, float(amount))
+    var actual: float = maxf(1.0, float(amount))
     hp -= actual
     if is_instance_valid(match_ref):
         match_ref.spawn_combat_text(global_position + Vector2(0, -22), "-%d" % int(round(actual)), "damage")
@@ -140,24 +142,24 @@ func take_damage(amount, source = null):
 
 func _draw():
     if not is_instance_valid(ra2_tree_sprite):
-        var trunk = Color("#5A3E29")
-        var leaf = Color("#3F6D39") if dense else Color("#5B8247")
-        var leaf_light = leaf.lightened(0.18)
+        var trunk: Color = Color("#5A3E29")
+        var leaf: Color = Color("#3F6D39") if dense else Color("#5B8247")
+        var leaf_light: Color = leaf.lightened(0.18)
         draw_set_transform(Vector2(0, 10), 0.0, Vector2(1.0, 0.38))
         draw_circle(Vector2.ZERO, 15.0 if dense else 11.0, Color(0.02, 0.03, 0.02, 0.35))
         draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
         draw_rect(Rect2(Vector2(-3, -24), Vector2(6, 30)), trunk)
-        var count = 5 if dense else 3
+        var count: int = 5 if dense else 3
         for index in range(count):
-            var angle = TAU * float(index) / float(count) + (0.22 if dense else 0.0)
-            var offset = Vector2(cos(angle) * (8.0 if dense else 6.0), sin(angle) * 5.0 - 28.0)
+            var angle: float = TAU * float(index) / float(count) + (0.22 if dense else 0.0)
+            var offset: Vector2 = Vector2(cos(angle) * (8.0 if dense else 6.0), sin(angle) * 5.0 - 28.0)
             draw_circle(offset, 12.5 if dense else 10.0, leaf if index % 2 == 0 else leaf_light)
         draw_circle(Vector2(0, -35), 13.5 if dense else 10.5, leaf_light)
     if selected or hover_state != "":
-        var color = Color("#75E6FF") if selected else Color("#E9CC66")
+        var color: Color = Color("#75E6FF") if selected else Color("#E9CC66")
         draw_arc(Vector2(0, 5), 18.0, 0, TAU, 32, color, 2.0)
     if selected or hp < max_hp:
-        var width = 40.0
-        var y = -54.0
+        var width: float = 40.0
+        var y: float = -54.0
         draw_rect(Rect2(Vector2(-width * 0.5, y), Vector2(width, 5)), Color("#311D1D"))
-        draw_rect(Rect2(Vector2(-width * 0.5, y), Vector2(width * clamp(hp / max_hp, 0.0, 1.0), 5)), Color("#61C46E"))
+        draw_rect(Rect2(Vector2(-width * 0.5, y), Vector2(width * clampf(hp / max_hp, 0.0, 1.0), 5)), Color("#61C46E"))
