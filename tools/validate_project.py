@@ -127,7 +127,9 @@ def validate_dev5_features() -> None:
     require(audio, [
         'func play_event_spatial', 'view_rect.has_point(world_position)',
         'MIN_EDGE_VOLUME', 'panning_strength = 1.0', 'player.attenuation = 0.0',
-    ], "Screen-space combat audio")
+        'SPATIAL_POOL_SIZE: int = 24', 'func _acquire_spatial_player',
+        'func _prune_spatial_players',
+    ], "Screen-space pooled combat audio")
     require(text("scripts/ra2/ra2_combat_audio.gd"), [
         'extends RefCounted', 'static func play_weapon_report',
         'audio_service.call("play_event_spatial"',
@@ -155,14 +157,19 @@ def validate_dev5_features() -> None:
         'destruction_lifetime = 3.8', 'func can_accept_tank',
         '"NAFLAK", "NASAM", "GAPATS"', '"YAGGUN"', '"NATBNK"',
         'target_domains = ["ground", "air"]',
+        'var previous_hp: float = hp',
+        'var actual_damage: float = maxf(0.0, previous_hp - hp)',
     ], "RA2 building runtime")
+    forbid(ra2_building, ['float(actual)'], "RA2 building null damage conversion")
 
     movement = text("scripts/core/runtime_movement_rules.gd")
     require(movement, [
         'TREE_VEHICLE_RADIUS_FACTOR := 0.14',
+        'SETTLE_INTERVAL := 0.10', 'UNLOAD_INTERVAL := 0.05',
+        'var _tanks: Array = []', 'var _harvesters: Array = []',
         '_settle_occupied_move_destination', '_stabilize_stationary_tank_facing',
         'order_type in ["move", "attack_move"]',
-    ], "Movement rules")
+    ], "Fixed-rate categorized movement rules")
 
     production = text("scripts/core/runtime_production_rules.gd")
     require(production, [
@@ -171,7 +178,9 @@ def validate_dev5_features() -> None:
         'RA2Rules.build_runtime_stats', 'cost_override',
         'GameConfig.buildings[building_id]["footprint"]',
         '"电力  %d / %d" % [consumed, produced]',
-    ], "Production rules")
+        'var _runtime_data_cache: Dictionary = {}',
+        'func _apply_tile_state',
+    ], "Cached production rules")
 
     deployment = text("scripts/core/runtime_deployment_rules.gd")
     require(deployment, [
@@ -184,9 +193,15 @@ def validate_dev5_features() -> None:
     require(text("scripts/core/runtime_defeat_rules.gd"), [
         '_player_has_structure_presence', '_show_defeat_notice',
     ], "Defeat rules")
-    require(text("scripts/core/runtime_tuning.gd"), [
+
+    runtime_tuning = text("scripts/core/runtime_tuning.gd")
+    require(runtime_tuning, [
         'UNIT_SCRIPT_PATHS', 'BUILDING_SCRIPT_PATHS', 'ore_harvest',
-    ], "Runtime tuning subclasses")
+        'HARVEST_UPDATE_INTERVAL := 0.08',
+        'BUILDING_DAMAGE_INTERVAL := 0.12',
+        'SANITIZE_INTERVAL := 0.25',
+        'func _process_pending_sanitization',
+    ], "Fixed-rate runtime tuning")
 
     tree = text("scripts/game/tree_entity.gd")
     require(tree, [
