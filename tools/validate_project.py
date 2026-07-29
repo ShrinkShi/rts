@@ -162,6 +162,26 @@ def validate_runtime_integration() -> None:
         'draw_circle(direction * 1.0',
     ], "Soviet sentry custom turret")
 
+    layered_visual = text("scripts/ra2/ra2_layered_vehicle_visual.gd")
+    require(layered_visual, [
+        'func _play_pair(base: AnimatedSprite2D, remap_sprite: AnimatedSprite2D',
+        'remap_sprite.play(animation_name)',
+    ], "Layered vehicle remap naming")
+    forbid(layered_visual, [
+        'func _play_pair(base: AnimatedSprite2D, remap: AnimatedSprite2D',
+    ], "Built-in remap shadowing")
+
+    movement = text("scripts/core/runtime_movement_rules.gd")
+    require(movement, [
+        'var alternate: Variant',
+        'if manifest.has("layered_vehicle"):',
+        'alternate = RA2LayeredVehicleVisual.new()',
+        'alternate = RA2VisualPlayer.new()',
+    ], "Explicit unload visual construction")
+    forbid(movement, [
+        'RA2LayeredVehicleVisual.new() if manifest.has("layered_vehicle") else RA2VisualPlayer.new()',
+    ], "Incompatible visual ternary")
+
     grid = text("scripts/game/grid_world.gd")
     require(grid, [
         'func get_ground_sample', 'func get_ground_gradient',
