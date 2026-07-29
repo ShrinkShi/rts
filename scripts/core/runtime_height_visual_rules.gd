@@ -4,7 +4,7 @@ const GRID_SCRIPT_PATH := "res://scripts/game/grid_world.gd"
 const HeightTerrainOverlay = preload("res://scripts/game/height_terrain_overlay.gd")
 
 var _maps: Array = []
-var _refresh_elapsed := 0.0
+var _refresh_elapsed: float = 0.0
 
 
 func _ready() -> void:
@@ -27,7 +27,7 @@ func _on_node_added(node: Node) -> void:
 func _register_node(node: Node) -> void:
     if not is_instance_valid(node):
         return
-    var script := node.get_script() as Script
+    var script: Script = node.get_script() as Script
     if script != null and script.resource_path == GRID_SCRIPT_PATH and not node in _maps:
         _maps.append(node)
 
@@ -68,14 +68,16 @@ func _apply_rect_height_zones(map_ref) -> void:
         var zone: Dictionary = zone_variant
         var raw_origin: Variant = zone.get("origin", [0, 0])
         var raw_size: Variant = zone.get("size", [1, 1])
-        if not raw_origin is Array or not raw_size is Array or raw_origin.size() < 2 or raw_size.size() < 2:
+        if not raw_origin is Array or not raw_size is Array:
             continue
-        var origin := Vector2i(int(raw_origin[0]), int(raw_origin[1]))
-        var size := Vector2i(maxi(1, int(raw_size[0])), maxi(1, int(raw_size[1])))
+        if raw_origin.size() < 2 or raw_size.size() < 2:
+            continue
+        var origin: Vector2i = Vector2i(int(raw_origin[0]), int(raw_origin[1]))
+        var size: Vector2i = Vector2i(maxi(1, int(raw_size[0])), maxi(1, int(raw_size[1])))
         var level: int = maxi(1, int(zone.get("level", 1)))
         for y in range(origin.y, origin.y + size.y):
             for x in range(origin.x, origin.x + size.x):
-                var cell := Vector2i(x, y)
+                var cell: Vector2i = Vector2i(x, y)
                 if not map_ref._inside(cell):
                     continue
                 var index: int = int(map_ref._index(cell))
@@ -93,7 +95,7 @@ func _stamp_rect_ramps(map_ref, zone: Dictionary, origin: Vector2i, size: Vector
     for ramp_variant in ramp_names:
         var ramp_name: String = str(ramp_variant).to_lower()
         for offset in range(-ramp_width, ramp_width + 1):
-            var cell := Vector2i.ZERO
+            var cell: Vector2i = Vector2i.ZERO
             var slope: int = 0
             match ramp_name:
                 "north":
@@ -122,7 +124,7 @@ func _stamp_rect_ramps(map_ref, zone: Dictionary, origin: Vector2i, size: Vector
 func _install_overlay(map_ref) -> void:
     if is_instance_valid(map_ref.get_node_or_null("RA2HeightTerrainOverlay")):
         return
-    var overlay = HeightTerrainOverlay.new()
+    var overlay: Node2D = HeightTerrainOverlay.new()
     map_ref.add_child(overlay)
     overlay.setup(map_ref)
 
@@ -133,13 +135,14 @@ func _enforce_cliff_constraints(map_ref) -> void:
     var cliff_cells: Dictionary = {}
     for y in range(int(map_ref.map_height)):
         for x in range(int(map_ref.map_width)):
-            var cell := Vector2i(x, y)
+            var cell: Vector2i = Vector2i(x, y)
             var level: int = int(map_ref.get_height_level(cell))
             if level <= 0 or int(map_ref.get_slope_type(cell)) != 0:
                 continue
             var has_ramp_access: bool = false
             var borders_drop: bool = false
-            for direction in [Vector2i.UP, Vector2i.RIGHT, Vector2i.DOWN, Vector2i.LEFT]:
+            for direction_variant in [Vector2i.UP, Vector2i.RIGHT, Vector2i.DOWN, Vector2i.LEFT]:
+                var direction: Vector2i = Vector2i(direction_variant)
                 var neighbor: Vector2i = cell + direction
                 if int(map_ref.get_slope_type(neighbor)) != 0:
                     has_ramp_access = true
