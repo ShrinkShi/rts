@@ -44,23 +44,76 @@ func setup(next_match, next_map, next_unit_id, next_owner, world_position):
     queue_redraw()
 
 
+func _set_path_to(target_position):
+    destination = Vector2(target_position)
+    var category: String = str(stats.get("category", "vehicle"))
+    if is_instance_valid(map_ref) and RuntimeHeightVisualRules.is_height_pathing_active(map_ref):
+        path = RuntimeHeightVisualRules.find_path_for_unit(
+            map_ref,
+            global_position,
+            destination,
+            category
+        )
+    else:
+        path = map_ref.find_path_for_unit(global_position, destination, category)
+    path_index = 0
+
+
 func _physics_process(delta):
     if inside_tank_bunker:
         velocity = Vector2.ZERO
         _update_terrain_pose(float(delta))
         return
+
+    var movement_origin: Vector2 = global_position
     super._physics_process(delta)
+    _guard_grounded_cliff_transition(movement_origin)
     _process_external_impulse(float(delta))
     _update_terrain_pose(float(delta))
+
+
+func _guard_grounded_cliff_transition(movement_origin: Vector2) -> void:
+    if airborne_height > 1.0 or not is_instance_valid(map_ref):
+        return
+    if not RuntimeHeightVisualRules.is_height_pathing_active(map_ref):
+        return
+    var category: String = str(stats.get("category", "vehicle"))
+    if RuntimeHeightVisualRules.is_world_transition_walkable(
+        map_ref,
+        movement_origin,
+        global_position,
+        category
+    ):
+        return
+
+    # Separation steering and move_and_slide can push a unit a few pixels outside
+    # its planned path. Never let that correction cross a cliff edge. Revert only
+    # this frame's movement and immediately request a legal route through a ramp.
+    global_position = movement_origin
+    velocity = Vector2.ZERO
+    if destination != Vector2.ZERO and repath_cooldown <= 0.0:
+        _set_path_to(destination)
+        repath_cooldown = 0.18
 
 
 func _process_external_impulse(delta: float) -> void:
     if external_impulse.length_squared() <= 1.0:
         external_impulse = Vector2.ZERO
         return
-    var candidate: Vector2 = global_position + external_impulse * delta
+    var origin: Vector2 = global_position
+    var candidate: Vector2 = origin + external_impulse * delta
     var category: String = str(stats.get("category", "vehicle"))
-    if not is_instance_valid(map_ref) or map_ref.is_cell_walkable(map_ref.world_to_cell(candidate), category):
+    var can_move: bool = true
+    if is_instance_valid(map_ref):
+        can_move = bool(map_ref.is_cell_walkable(map_ref.world_to_cell(candidate), category))
+        if can_move and airborne_height <= 1.0 and RuntimeHeightVisualRules.is_height_pathing_active(map_ref):
+            can_move = RuntimeHeightVisualRules.is_world_transition_walkable(
+                map_ref,
+                origin,
+                candidate,
+                category
+            )
+    if can_move:
         global_position = candidate
     else:
         external_impulse *= 0.32
