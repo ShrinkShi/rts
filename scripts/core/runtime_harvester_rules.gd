@@ -31,7 +31,9 @@ func _register_node(node: Node) -> void:
     if not is_instance_valid(node):
         return
     var script: Script = node.get_script() as Script
-    if script == null or not script.resource_path in UNIT_SCRIPT_PATHS:
+    if script == null:
+        return
+    if not UNIT_SCRIPT_PATHS.has(script.resource_path):
         return
     call_deferred("_try_register_harvester", node)
 
@@ -41,7 +43,7 @@ func _try_register_harvester(unit) -> void:
         return
     if str(unit.unit_id) != "harvester" or str(unit.ra2_entity_id) != SOVIET_HARVESTER_ID:
         return
-    if not unit in _soviet_harvesters:
+    if not _soviet_harvesters.has(unit):
         _soviet_harvesters.append(unit)
     unit.stats["strategic_role"] = "economy"
     unit.stats["ai_attack_unit"] = false
