@@ -269,12 +269,12 @@ func _generate_height_metadata():
 
 func _stamp_zone_ramps(zone: Dictionary, center: Vector2i, radius: int, level: int) -> void:
     var ramp_names: Array = zone.get("ramps", ["north", "south"])
-    var ramp_width := maxi(1, int(zone.get("ramp_width", 2)))
+    var ramp_width: int = maxi(1, int(zone.get("ramp_width", 2)))
     for ramp_name_variant in ramp_names:
-        var ramp_name := str(ramp_name_variant).to_lower()
+        var ramp_name: String = str(ramp_name_variant).to_lower()
         for offset in range(-ramp_width, ramp_width + 1):
-            var cell := center
-            var slope := SLOPE_NONE
+            var cell: Vector2i = center
+            var slope: int = SLOPE_NONE
             match ramp_name:
                 "north":
                     cell = Vector2i(center.x + offset, center.y - radius)
@@ -292,7 +292,7 @@ func _stamp_zone_ramps(zone: Dictionary, center: Vector2i, radius: int, level: i
                     continue
             if not _inside(cell):
                 continue
-            var idx := _index(cell)
+            var idx: int = int(_index(cell))
             height_levels[idx] = maxi(0, level - 1)
             slope_types[idx] = slope
             dense_tree_cells.erase(cell)
@@ -352,7 +352,7 @@ func get_slope_direction(slope_type: int) -> Vector2:
 
 
 func get_ground_sample(world_position: Vector2) -> Dictionary:
-    var cell := world_to_cell(world_position)
+    var cell: Vector2i = Vector2i(world_to_cell(world_position))
     if not _inside(cell):
         return {
             "cell": cell,
@@ -361,22 +361,22 @@ func get_ground_sample(world_position: Vector2) -> Dictionary:
             "slope": SLOPE_NONE,
             "gradient": Vector2.ZERO,
         }
-    var level := get_height_level(cell)
-    var slope := get_slope_type(cell)
-    var base_height := float(level) * HEIGHT_STEP_PIXELS
-    var direction := get_slope_direction(slope)
-    var slope_fraction := 0.0
+    var level: int = get_height_level(cell)
+    var slope: int = get_slope_type(cell)
+    var base_height: float = float(level) * HEIGHT_STEP_PIXELS
+    var direction: Vector2 = get_slope_direction(slope)
+    var slope_fraction: float = 0.0
     if slope != SLOPE_NONE:
-        var center_local := map_to_local(cell)
-        var local_offset := to_local(world_position) - center_local
-        var normalized := Vector2(
+        var center_local: Vector2 = Vector2(map_to_local(cell))
+        var local_offset: Vector2 = to_local(world_position) - center_local
+        var normalized: Vector2 = Vector2(
             clampf(local_offset.x / float(tile_px) + 0.5, 0.0, 1.0),
             clampf(local_offset.y / float(tile_px) + 0.5, 0.0, 1.0)
         )
-        var north_amount := 1.0 - normalized.y
-        var south_amount := normalized.y
-        var east_amount := normalized.x
-        var west_amount := 1.0 - normalized.x
+        var north_amount: float = 1.0 - normalized.y
+        var south_amount: float = normalized.y
+        var east_amount: float = normalized.x
+        var west_amount: float = 1.0 - normalized.x
         match slope:
             SLOPE_N:
                 slope_fraction = north_amount
@@ -394,7 +394,7 @@ func get_ground_sample(world_position: Vector2) -> Dictionary:
                 slope_fraction = west_amount
             SLOPE_NW:
                 slope_fraction = (north_amount + west_amount) * 0.5
-    var gradient := direction * (HEIGHT_STEP_PIXELS / maxf(1.0, float(tile_px)))
+    var gradient: Vector2 = direction * (HEIGHT_STEP_PIXELS / maxf(1.0, float(tile_px)))
     return {
         "cell": cell,
         "height": base_height + slope_fraction * HEIGHT_STEP_PIXELS,
@@ -413,7 +413,7 @@ func get_ground_gradient(world_position) -> Vector2:
 
 
 func get_movement_speed_multiplier(world_position):
-    var multiplier := float(super.get_movement_speed_multiplier(world_position))
+    var multiplier: float = float(super.get_movement_speed_multiplier(world_position))
     if get_slope_type(world_to_cell(world_position)) != SLOPE_NONE:
         multiplier *= SLOPE_SPEED_MULTIPLIER
     return multiplier
@@ -422,11 +422,11 @@ func get_movement_speed_multiplier(world_position):
 func can_place(origin, footprint):
     if not super.can_place(origin, footprint):
         return false
-    var reference_level := -1
+    var reference_level: int = -1
     for cell in get_footprint_cells(origin, footprint):
         if get_slope_type(cell) != SLOPE_NONE:
             return false
-        var level := get_height_level(cell)
+        var level: int = get_height_level(cell)
         if reference_level < 0:
             reference_level = level
         elif level != reference_level:
@@ -455,24 +455,24 @@ func get_cell_snapshot(cell) -> Dictionary:
 func _draw() -> void:
     if height_levels.is_empty():
         return
-    var half_tile := float(tile_px) * 0.5
-    var raised_tint := Color(0.16, 0.12, 0.06, 0.055)
-    var cliff_color := Color(0.08, 0.065, 0.045, 0.70)
-    var contour_color := Color(0.82, 0.70, 0.42, 0.28)
-    var ramp_color := Color(0.92, 0.78, 0.44, 0.34)
+    var half_tile: float = float(tile_px) * 0.5
+    var raised_tint: Color = Color(0.16, 0.12, 0.06, 0.055)
+    var cliff_color: Color = Color(0.08, 0.065, 0.045, 0.70)
+    var contour_color: Color = Color(0.82, 0.70, 0.42, 0.28)
+    var ramp_color: Color = Color(0.92, 0.78, 0.44, 0.34)
     for y in range(map_height):
         for x in range(map_width):
-            var cell := Vector2i(x, y)
-            var level := get_height_level(cell)
-            var slope := get_slope_type(cell)
+            var cell: Vector2i = Vector2i(x, y)
+            var level: int = get_height_level(cell)
+            var slope: int = get_slope_type(cell)
             if level <= 0 and slope == SLOPE_NONE:
                 continue
-            var center := map_to_local(cell)
-            var rect := Rect2(center - Vector2.ONE * half_tile, Vector2.ONE * float(tile_px))
+            var center: Vector2 = Vector2(map_to_local(cell))
+            var rect: Rect2 = Rect2(center - Vector2.ONE * half_tile, Vector2.ONE * float(tile_px))
             if level > 0:
                 draw_rect(rect, raised_tint)
-            var east_level := get_height_level(cell + Vector2i.RIGHT)
-            var south_level := get_height_level(cell + Vector2i.DOWN)
+            var east_level: int = get_height_level(cell + Vector2i.RIGHT)
+            var south_level: int = get_height_level(cell + Vector2i.DOWN)
             if level > east_level:
                 draw_line(
                     Vector2(rect.end.x - 1.0, rect.position.y + 1.0),
@@ -490,6 +490,6 @@ func _draw() -> void:
             if level > 0:
                 draw_rect(rect.grow(-1.0), contour_color, false, 1.0)
             if slope != SLOPE_NONE:
-                var direction := get_slope_direction(slope)
+                var direction: Vector2 = get_slope_direction(slope)
                 draw_line(center - direction * 9.0, center + direction * 9.0, ramp_color, 2.0)
                 draw_circle(center + direction * 9.0, 2.2, ramp_color)

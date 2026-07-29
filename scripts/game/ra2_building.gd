@@ -205,7 +205,7 @@ func _process_turret():
     if selling or is_under_construction() or target_domains.is_empty():
         return
     var attack_point: Vector2 = Vector2.ZERO
-    var has_attack_point := false
+    var has_attack_point: bool = false
     var damage_target: Variant = null
     if forced_attack_active:
         if forced_attack_target != null and not is_instance_valid(forced_attack_target):
@@ -247,7 +247,7 @@ func _process_turret():
         ra2_visual.play_state("attack", turret_visual_direction, true)
     if not ra2_entity_id.is_empty():
         RA2CombatAudioRouter.play_weapon_report(ra2_entity_id, global_position, match_ref)
-    var elevated_origin := global_position + turret_facing * 18.0 + Vector2(0.0, -22.0 - terrain_ground_height)
+    var elevated_origin: Vector2 = global_position + turret_facing * 18.0 + Vector2(0.0, -22.0 - terrain_ground_height)
     fired.emit(elevated_origin, attack_point, owner_id)
     match_ref.spawn_muzzle_flash(
         global_position + turret_facing * 25.0 + Vector2(0.0, -22.0 - terrain_ground_height),

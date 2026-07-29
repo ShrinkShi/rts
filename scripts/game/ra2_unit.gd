@@ -58,8 +58,8 @@ func _process_external_impulse(delta: float) -> void:
     if external_impulse.length_squared() <= 1.0:
         external_impulse = Vector2.ZERO
         return
-    var candidate := global_position + external_impulse * delta
-    var category := str(stats.get("category", "vehicle"))
+    var candidate: Vector2 = global_position + external_impulse * delta
+    var category: String = str(stats.get("category", "vehicle"))
     if not is_instance_valid(map_ref) or map_ref.is_cell_walkable(map_ref.world_to_cell(candidate), category):
         global_position = candidate
     else:
@@ -70,8 +70,8 @@ func _process_external_impulse(delta: float) -> void:
 func _update_terrain_pose(delta: float, snap_immediately: bool = false) -> void:
     if not is_instance_valid(map_ref):
         return
-    var target_height := 0.0
-    var target_gradient := Vector2.ZERO
+    var target_height: float = 0.0
+    var target_gradient: Vector2 = Vector2.ZERO
     if map_ref.has_method("get_ground_sample"):
         var sample: Dictionary = map_ref.get_ground_sample(global_position)
         target_height = float(sample.get("height", 0.0))
@@ -86,14 +86,14 @@ func _update_terrain_pose(delta: float, snap_immediately: bool = false) -> void:
         airborne_roll += airborne_roll_velocity * delta
         airborne_roll_velocity = move_toward(airborne_roll_velocity, 0.0, 1.7 * delta)
         if airborne_height <= 0.0:
-            var landing_speed := maxf(0.0, -airborne_velocity)
+            var landing_speed: float = maxf(0.0, -airborne_velocity)
             airborne_height = 0.0
             airborne_velocity = 0.0
             airborne_roll_velocity = 0.0
             airborne_roll = lerpf(airborne_roll, 0.0, 0.72)
             if landing_speed > 245.0 and not dying:
                 var landing_damage := (landing_speed - 245.0) * 0.16
-                var display_armor := float(stats.get("armor", 0.0))
+                var display_armor: float = float(stats.get("armor", 0.0))
                 stats["armor"] = 0.0
                 super.take_damage(landing_damage, null)
                 stats["armor"] = display_armor
@@ -104,7 +104,7 @@ func _update_terrain_pose(delta: float, snap_immediately: bool = false) -> void:
         terrain_ground_height = target_height
         terrain_gradient = target_gradient
     else:
-        var response := clampf(delta * TERRAIN_POSE_RESPONSE, 0.0, 1.0)
+        var response: float = clampf(delta * TERRAIN_POSE_RESPONSE, 0.0, 1.0)
         terrain_ground_height = lerpf(terrain_ground_height, target_height, response)
         terrain_gradient = terrain_gradient.lerp(target_gradient, response)
 
@@ -142,18 +142,21 @@ func take_damage(amount, source = null):
         return 0.0
     var display_armor: float = float(stats.get("armor", 0.0))
     stats["armor"] = 0.0
-    var actual: float = float(super.take_damage(resolved, source))
+    var previous_total: float = hp + shield
+    super.take_damage(resolved, source)
+    var actual: float = maxf(0.0, previous_total - (hp + shield))
     stats["armor"] = display_armor
     if actual > 0.0 and hp > 0.0 and not ra2_entity_id.is_empty():
         RA2CombatAudioRouter.play_entity_role(ra2_entity_id, "VoiceFeedback", global_position, match_ref, 180)
     if actual > 0.0 and is_instance_valid(source) and source.get("stats") is Dictionary:
         var source_stats: Dictionary = source.stats
-        var blast_radius := float(source_stats.get("aoe_radius", 0.0))
+        var blast_radius: float = float(source_stats.get("aoe_radius", 0.0))
         if blast_radius > 0.0 and str(stats.get("category", "")) == "vehicle":
-            var away := source.global_position.direction_to(global_position)
+            var source_position: Vector2 = Vector2(source.get("global_position"))
+            var away: Vector2 = source_position.direction_to(global_position)
             if away.length_squared() < 0.001:
                 away = Vector2.RIGHT
-            var instance_sign := -1.0 if int(get_instance_id()) % 2 == 0 else 1.0
+            var instance_sign: float = -1.0 if int(get_instance_id()) % 2 == 0 else 1.0
             apply_terrain_impulse(
                 away * clampf(actual * 0.72, 24.0, 125.0),
                 clampf(actual * 0.86, 18.0, 150.0),
