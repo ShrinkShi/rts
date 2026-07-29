@@ -238,7 +238,7 @@ func _draw() -> void:
     if current_state == "death" or _shadow_alpha <= 0.01:
         return
     var inverse_scale_y: float = 1.0 / maxf(0.001, absf(scale.y))
-    var shadow_air_offset := Vector2(0.0, _terrain_airborne_height * inverse_scale_y)
+    var shadow_air_offset: Vector2 = Vector2(0.0, _terrain_airborne_height * inverse_scale_y)
     draw_set_transform(_shadow_center + shadow_air_offset, -rotation, Vector2(1.0, 0.30))
     draw_circle(
         Vector2.ZERO,

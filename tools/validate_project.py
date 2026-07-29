@@ -179,6 +179,7 @@ def validate_dev5_features() -> None:
         'var actual_damage: float = maxf(0.0, previous_hp - hp)',
     ], "RA2 building runtime")
     forbid(ra2_building, ['float(actual)'], "RA2 building null damage conversion")
+    forbid(ra2_unit, ['float(super.take_damage', 'var away := source.global_position'], "RA2 unit dynamic inference and null damage conversion")
 
     movement = text("scripts/core/runtime_movement_rules.gd")
     require(movement, [
