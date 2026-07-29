@@ -204,12 +204,12 @@ func play_state(
     _play_pair(turret_base, turret_remap, turret_animation, restart)
 
 
-func _play_pair(base: AnimatedSprite2D, remap: AnimatedSprite2D, animation_name: String, restart: bool) -> void:
+func _play_pair(base: AnimatedSprite2D, remap_sprite: AnimatedSprite2D, animation_name: String, restart: bool) -> void:
     if not base.sprite_frames.has_animation(animation_name):
         return
     if restart or base.animation != animation_name:
         base.play(animation_name)
-        remap.play(animation_name)
+        remap_sprite.play(animation_name)
 
 
 func set_team_color(color: Color) -> void:

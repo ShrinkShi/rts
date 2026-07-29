@@ -150,7 +150,7 @@ func _draw_height_surfaces(atlas: Texture2D) -> void:
                 var rect: Rect2 = _cell_rect(cell)
                 rect.position.y -= float(level) * HEIGHT_STEP_PIXELS
                 if atlas != null:
-                    draw_texture_rect_region(rect, atlas, _terrain_region(cell), Color.WHITE)
+                    draw_texture_rect_region(atlas, rect, _terrain_region(cell), Color.WHITE)
                 else:
                     draw_rect(rect, _terrain_color(cell, true))
                 _draw_top_edge_marks(cell, rect, level)

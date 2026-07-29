@@ -138,10 +138,13 @@ def validate_runtime_integration() -> None:
         'func _draw_east_edge',
         'func _draw_height_surfaces',
         'func _draw_ramp',
-        'draw_texture_rect_region',
+        'draw_texture_rect_region(atlas, rect, _terrain_region(cell), Color.WHITE)',
         'draw_colored_polygon',
         'HEIGHT_STEP_PIXELS := 16.0',
     ], "Visible height terrain overlay")
+    forbid(overlay, [
+        'draw_texture_rect_region(rect, atlas',
+    ], "CanvasItem texture-region argument order")
 
     sentry_rules = text("scripts/core/runtime_sentry_visual_rules.gd")
     require(sentry_rules, [
@@ -158,6 +161,26 @@ def validate_runtime_integration() -> None:
         'draw_line(direction * 2.0, direction * 18.0',
         'draw_circle(direction * 1.0',
     ], "Soviet sentry custom turret")
+
+    layered_visual = text("scripts/ra2/ra2_layered_vehicle_visual.gd")
+    require(layered_visual, [
+        'func _play_pair(base: AnimatedSprite2D, remap_sprite: AnimatedSprite2D',
+        'remap_sprite.play(animation_name)',
+    ], "Layered vehicle remap naming")
+    forbid(layered_visual, [
+        'func _play_pair(base: AnimatedSprite2D, remap: AnimatedSprite2D',
+    ], "Built-in remap shadowing")
+
+    movement = text("scripts/core/runtime_movement_rules.gd")
+    require(movement, [
+        'var alternate: Variant',
+        'if manifest.has("layered_vehicle"):',
+        'alternate = RA2LayeredVehicleVisual.new()',
+        'alternate = RA2VisualPlayer.new()',
+    ], "Explicit unload visual construction")
+    forbid(movement, [
+        'RA2LayeredVehicleVisual.new() if manifest.has("layered_vehicle") else RA2VisualPlayer.new()',
+    ], "Incompatible visual ternary")
 
     grid = text("scripts/game/grid_world.gd")
     require(grid, [
