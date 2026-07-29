@@ -5,7 +5,9 @@
     "size": [64, 64],
     "seed": 51627,
     "style": "balanced_land",
+    "theater": "temperate",
     "tree_density": 0.0,
+    "ore_pillar_count": 2,
     "positions": [
       [9, 9],
       [54, 54]
@@ -26,6 +28,28 @@
         "ramps": ["north", "east", "south", "west"],
         "ramp_width": 2
       }
+    ]
+  },
+  "temperate_coast_trial": {
+    "name": "温带海岸试验场",
+    "description": "双人温带海岸测试地图。使用 RA2 原版 WATER 与 SHORE TMP 转换素材，验证水面、陆水交界、矿柱扩散和陆地寻路。",
+    "size": [72, 64],
+    "seed": 73129,
+    "style": "coast",
+    "theater": "temperate",
+    "tree_density": 0.035,
+    "ore_pillar_count": 2,
+    "positions": [
+      [10, 10],
+      [10, 53]
+    ],
+    "ore_centers": [
+      [18, 14],
+      [25, 22],
+      [18, 49],
+      [25, 41],
+      [40, 24],
+      [40, 40]
     ]
   }
 }

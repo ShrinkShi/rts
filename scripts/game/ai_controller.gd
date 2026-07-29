@@ -126,7 +126,7 @@ func _process_build_job(delta: float) -> void:
     build_job = {}
 
 func _emergency_economy_support() -> void:
-    # Normal income must come from harvesters.  A small anti-deadlock grant is
+    # Normal income must come from harvesters. A small anti-deadlock grant is
     # only used when the AI has lost every economy unit and cannot rebuild one.
     var harvester_count: int = 0
     for unit in match_ref.units:
@@ -230,6 +230,10 @@ func _available_attackers():
     var result = []
     for unit in match_ref.units:
         if not is_instance_valid(unit) or unit.owner_id != owner_id or not unit.is_combat_unit():
+            continue
+        # Armed harvesters can defend themselves, but they are economic units and
+        # must never be consumed by the AI attack-wave or local-response planners.
+        if str(unit.unit_id) == "harvester" or not bool(unit.stats.get("ai_attack_unit", true)):
             continue
         if unit.dying or unit.inside_repair_bay or unit.inside_refinery:
             continue
