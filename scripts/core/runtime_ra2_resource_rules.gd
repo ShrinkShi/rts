@@ -94,8 +94,13 @@ func _spawn_ore_pillars(match_ref) -> void:
         var pillar: Node2D = OrePillarEntity.new()
         match_ref.entity_layer.add_child(pillar)
         pillar.setup(match_ref, match_ref.grid, pillar_cell)
+        pillar.spread_requested.connect(_on_pillar_spread_requested.bind(match_ref))
         match_ref.grid.astar_infantry.set_point_solid(pillar_cell, true)
         match_ref.grid.astar_vehicle.set_point_solid(pillar_cell, true)
+
+
+func _on_pillar_spread_requested(origin: Vector2i, match_ref) -> void:
+    spread_ore(match_ref, origin)
 
 
 func _find_pillar_cell(match_ref, center: Vector2i, existing: Dictionary) -> Vector2i:
