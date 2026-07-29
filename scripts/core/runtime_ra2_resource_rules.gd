@@ -95,6 +95,9 @@ func _spawn_ore_pillars(match_ref) -> void:
         match_ref.entity_layer.add_child(pillar)
         pillar.setup(match_ref, match_ref.grid, pillar_cell)
         pillar.spread_requested.connect(_on_pillar_spread_requested.bind(match_ref))
+        # A pillar is a persistent terrain object. Register it in both occupancy
+        # and AStar so buildings cannot be placed over it and units route around it.
+        match_ref.grid.occupied[pillar_cell] = pillar
         match_ref.grid.astar_infantry.set_point_solid(pillar_cell, true)
         match_ref.grid.astar_vehicle.set_point_solid(pillar_cell, true)
 
