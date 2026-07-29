@@ -1,7 +1,7 @@
 {
   "highland_trial": {
     "name": "高地试验场",
-    "description": "双人高度机制测试地图。中央一级高地设置四向坡道，用于验证车辆倾斜、炮弹高度、冲击掀起和高地建造限制。",
+    "description": "双人高度机制测试地图。中央矩形高地具有四向坡道、可见悬崖立面和非坡道边缘阻挡，用于验证车辆倾斜、炮弹高度、冲击掀起与高地建造限制。",
     "size": [64, 64],
     "seed": 51627,
     "style": "balanced_land",
@@ -15,17 +15,16 @@
       [22, 20],
       [47, 50],
       [41, 43],
-      [32, 19],
-      [32, 45]
+      [32, 17],
+      [32, 47]
     ],
-    "height_zones": [
+    "height_rects": [
       {
-        "center": [32, 32],
-        "radius": 10,
+        "origin": [21, 24],
+        "size": [22, 16],
         "level": 1,
-        "auto_ramps": true,
         "ramps": ["north", "east", "south", "west"],
-        "ramp_width": 1
+        "ramp_width": 2
       }
     ]
   }
