@@ -5,10 +5,10 @@ const RA2WaterOverlay = preload("res://scripts/game/ra2_water_overlay.gd")
 const OrePillarEntity = preload("res://scripts/game/ore_pillar_entity.gd")
 const OreEntity = preload("res://scripts/game/ore_entity.gd")
 
-const TILE_DIRT := 1
 const TILE_WATER := 2
-const TILE_ORE := 3
 const TILE_ROCK := 4
+const OVERLAY_NONE := -1
+const OVERLAY_ORE := 0
 const DEFAULT_ORE_CAPACITY := 1800
 const ORE_GROWTH_PER_PULSE := 150
 
@@ -123,8 +123,10 @@ func _clear_ore_for_pillar(match_ref, cell: Vector2i) -> void:
     var index: int = int(match_ref.grid._index(cell))
     match_ref.grid.ore_amount[index] = 0
     match_ref.grid.ore_capacity[index] = 0
-    match_ref.grid.terrain[index] = TILE_DIRT
-    _refresh_grid_cell(match_ref.grid, cell)
+    match_ref.grid.overlay_types[index] = OVERLAY_NONE
+    match_ref.grid.overlay_frames[index] = -1
+    match_ref.grid.ore_changed.emit(cell, 0)
+    match_ref.grid.overlay_changed.emit(cell, OVERLAY_NONE, -1)
     for ore in match_ref.ore_entities.duplicate():
         if is_instance_valid(ore) and Vector2i(ore.cell) == cell:
             match_ref.ore_entities.erase(ore)
@@ -161,9 +163,15 @@ func spread_ore(match_ref, origin: Vector2i) -> bool:
         int(match_ref.grid.ore_capacity[index]),
         int(match_ref.grid.ore_amount[index]) + ORE_GROWTH_PER_PULSE
     )
-    match_ref.grid.terrain[index] = TILE_ORE
-    _refresh_grid_cell(match_ref.grid, target)
+    match_ref.grid.overlay_types[index] = OVERLAY_ORE
+    var ratio: float = float(match_ref.grid.ore_amount[index]) / float(maxi(1, int(match_ref.grid.ore_capacity[index])))
+    match_ref.grid.overlay_frames[index] = int(match_ref.grid._ore_overlay_frame(target, ratio))
     match_ref.grid.ore_changed.emit(target, int(match_ref.grid.ore_amount[index]))
+    match_ref.grid.overlay_changed.emit(
+        target,
+        OVERLAY_ORE,
+        int(match_ref.grid.overlay_frames[index])
+    )
     _ensure_ore_entity(match_ref, target)
     return true
 
@@ -190,10 +198,3 @@ func _ensure_ore_entity(match_ref, cell: Vector2i) -> void:
     match_ref.entity_layer.add_child(ore)
     ore.setup(match_ref, match_ref.grid, cell)
     match_ref.ore_entities.append(ore)
-
-
-func _refresh_grid_cell(grid, cell: Vector2i) -> void:
-    var terrain_type: int = int(grid.get_terrain(cell))
-    var seed_value: int = int(grid.map_config.get("seed", 1))
-    var variant: int = posmod(cell.x * 17 + cell.y * 31 + seed_value * 13, 8)
-    grid.set_cell(cell, grid.source_id, Vector2i(terrain_type * 8 + variant, 0), 0)
