@@ -68,8 +68,8 @@ func _draw() -> void:
         1.5
     )
 
-    draw_circle(direction + Vector2(0.0, -1.0), 3.0, team_color.darkened(0.18))
-    draw_circle(direction + Vector2(0.0, -1.0), 1.4, team_color.lightened(0.16))
+    draw_circle(direction * 1.0 + Vector2(0.0, -1.0), 3.0, team_color.darkened(0.18))
+    draw_circle(direction * 1.0 + Vector2(0.0, -1.0), 1.4, team_color.lightened(0.16))
 
     if damaged:
         draw_line(Vector2(-4.0, -3.0), Vector2(2.0, 4.0), Color("#171719"), 1.3)
