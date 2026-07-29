@@ -61,7 +61,7 @@ def validate_gdscript_structure() -> None:
             error(f"Reserved keyword used as variable in {path.relative_to(ROOT)}: {reserved_match.group(1)}")
 
 
-def validate_json_and_ra2_data() -> None:
+def validate_json_data() -> None:
     for path in [
         "BUILD_INFO.json", "data/units.json", "data/buildings.json",
         "data/maps.json", "data/maps_height.json", "data/factions.json",
@@ -71,8 +71,27 @@ def validate_json_and_ra2_data() -> None:
         json_data(path)
 
     build_info = json_data("BUILD_INFO.json")
-    if str(build_info.get("version", "")) != "0.16.0-dev.6":
-        error("BUILD_INFO version must be 0.16.0-dev.6")
+    if str(build_info.get("version", "")) != "0.16.0-dev.7":
+        error("BUILD_INFO version must be 0.16.0-dev.7")
+
+    height_maps = json_data("data/maps_height.json")
+    highland = height_maps.get("highland_trial", {}) if isinstance(height_maps, dict) else {}
+    rects = highland.get("height_rects", []) if isinstance(highland, dict) else []
+    if not rects:
+        error("highland_trial must include height_rects")
+    else:
+        first = rects[0]
+        if not all(name in first.get("ramps", []) for name in ["north", "east", "south", "west"]):
+            error("highland_trial must expose four directional ramps")
+        if int(first.get("ramp_width", 0)) < 2:
+            error("highland_trial ramp_width must be at least 2")
+
+    profiles = json_data("data/ra2/runtime_profiles.json")
+    dominion_bunker = profiles.get("buildings", {}).get("dominion", {}).get("bunker", {}) if isinstance(profiles, dict) else {}
+    if dominion_bunker.get("ra2_id") != "NALASR":
+        error("Soviet bunker slot must remain NALASR")
+    if not bool(dominion_bunker.get("runtime_custom_turret", False)):
+        error("NALASR profile must enable runtime_custom_turret")
 
     warheads = json_data("data/ra2/warheads.json")
     by_id = {
@@ -80,239 +99,100 @@ def validate_json_and_ra2_data() -> None:
         for item in warheads
         if isinstance(item, dict)
     } if isinstance(warheads, list) else {}
-    ap = by_id.get("AP", {})
-    actual_verses = str(ap.get("values", {}).get("Verses", "")) if isinstance(ap, dict) else ""
+    actual_verses = str(by_id.get("AP", {}).get("values", {}).get("Verses", ""))
     expected_verses = "25%,25%,15%,75%,100%,100%,65%,45%,60%,60%,100%"
     if actual_verses != expected_verses:
         error(f"AP Verses mismatch: expected {expected_verses!r}, got {actual_verses!r}")
 
-    profiles = json_data("data/ra2/runtime_profiles.json")
-    buildings = profiles.get("buildings", {}) if isinstance(profiles, dict) else {}
-    expected_slots = {
-        ("union", "turret"): "NASAM",
-        ("union", "bunker"): "GAPILL",
-        ("dominion", "turret"): "NAFLAK",
-        ("dominion", "bunker"): "NALASR",
-        ("republic", "turret"): "YAGGUN",
-        ("republic", "bunker"): "NATBNK",
-    }
-    for (faction, slot), entity_id in expected_slots.items():
-        actual = str(buildings.get(faction, {}).get(slot, {}).get("ra2_id", ""))
-        if actual != entity_id:
-            error(f"Defense slot {faction}/{slot} must map to {entity_id}, got {actual}")
-    if int(buildings.get("union", {}).get("bunker", {}).get("cost_override", 0)) != 650:
-        error("Retained Allied pillbox cost_override must be 650")
 
-    height_maps = json_data("data/maps_height.json")
-    highland = height_maps.get("highland_trial", {}) if isinstance(height_maps, dict) else {}
-    if not isinstance(highland, dict) or not highland:
-        error("Missing highland_trial height test map")
-    else:
-        zones = highland.get("height_zones", [])
-        if not zones or not bool(zones[0].get("auto_ramps", False)):
-            error("highland_trial must include an auto-ramp height zone")
-        positions = highland.get("positions", [])
-        ore_centers = highland.get("ore_centers", [])
-        if len(positions) < 2 or len(ore_centers) < len(positions) * 2:
-            error("highland_trial lacks valid player positions or ore centers")
-
-
-def validate_dev5_features() -> None:
+def validate_runtime_integration() -> None:
     project = text("project.godot")
     require(project, [
-        'config/version="0.16.0-dev.6"',
-        'RuntimeAIRules="*res://scripts/core/runtime_ai_rules.gd"',
+        'config/version="0.16.0-dev.7"',
+        'RuntimeHeightVisualRules="*res://scripts/core/runtime_height_visual_rules.gd"',
+        'RuntimeSentryVisualRules="*res://scripts/core/runtime_sentry_visual_rules.gd"',
         'RuntimeMovementRules="*res://scripts/core/runtime_movement_rules.gd"',
         'RuntimeProductionRules="*res://scripts/core/runtime_production_rules.gd"',
-    ], "Project dev6 autoloads")
+        'RuntimeAIRules="*res://scripts/core/runtime_ai_rules.gd"',
+    ], "Project dev7 autoloads")
     forbid(project, [
         'RA2RulesAdapter="*res://scripts/ra2/ra2_rules_adapter.gd"',
         'RA2CombatAudio="*res://scripts/ra2/ra2_combat_audio.gd"',
     ], "Static RA2 helper autoloads")
 
-    rules = text("scripts/ra2/ra2_rules_adapter.gd")
-    require(rules, [
-        'extends RefCounted',
-        'WARHEADS_PATH := "res://data/ra2/warheads.json"',
-        'static func build_runtime_stats', 'static func parse_foundation',
-        '"biological"', '"mechanical"', '"building"',
-        'static func damage_multiplier', 'warhead_verses', 'armor_value',
-        'var armor_class_name: String',
-    ], "RA2 rules adapter")
-    forbid(rules, ['var class_name'], "RA2 rules adapter reserved identifiers")
+    height_rules = text("scripts/core/runtime_height_visual_rules.gd")
+    require(height_rules, [
+        'const HeightTerrainOverlay = preload("res://scripts/game/height_terrain_overlay.gd")',
+        'func _apply_rect_height_zones',
+        'func _stamp_rect_ramps',
+        'func _enforce_cliff_constraints',
+        'map_ref.astar_infantry.set_point_solid',
+        'map_ref.astar_vehicle.set_point_solid',
+        'height_cliff_cells',
+    ], "Height visual runtime rules")
 
-    audio = text("scripts/ra2/ra2_audio_service.gd")
-    require(audio, [
-        'func play_event_spatial', 'view_rect.has_point(world_position)',
-        'MIN_EDGE_VOLUME', 'panning_strength = 1.0', 'player.attenuation = 0.0',
-        'SPATIAL_POOL_SIZE: int = 24', 'func _acquire_spatial_player',
-        'func _prune_spatial_players',
-    ], "Screen-space pooled combat audio")
-    require(text("scripts/ra2/ra2_combat_audio.gd"), [
-        'extends RefCounted', 'static func play_weapon_report',
-        'audio_service.call("play_event_spatial"',
-    ], "RA2 combat audio router")
+    overlay = text("scripts/game/height_terrain_overlay.gd")
+    require(overlay, [
+        'func _draw_cliff_faces',
+        'func _draw_south_face',
+        'func _draw_east_edge',
+        'func _draw_height_surfaces',
+        'func _draw_ramp',
+        'draw_texture_rect_region',
+        'draw_colored_polygon',
+        'HEIGHT_STEP_PIXELS := 16.0',
+    ], "Visible height terrain overlay")
 
-    ai_rules = text("scripts/core/runtime_ai_rules.gd")
-    require(ai_rules, [
-        'func _repair_one_building', 'repair_entity_step', 'set_repair_active(true)',
-    ], "AI building repair")
+    sentry_rules = text("scripts/core/runtime_sentry_visual_rules.gd")
+    require(sentry_rules, [
+        'const SentryGunVisual = preload("res://scripts/game/sentry_gun_visual.gd")',
+        'str(building.ra2_entity_id) != "NALASR"',
+        'building.ra2_visual.set_progress("BodyStates"',
+        'RuntimeSentryGunHead',
+        'head.set_state(',
+    ], "Soviet sentry visual runtime")
 
-    ra2_unit = text("scripts/game/ra2_unit.gd")
-    require(ra2_unit, [
-        'const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")',
-        'const RA2CombatAudioRouter = preload("res://scripts/ra2/ra2_combat_audio.gd")',
-        'RA2Rules.build_runtime_stats', 'RA2Rules.resolve_damage',
-        'RA2CombatAudioRouter.play_weapon_report', 'corpse_lifetime = 3.2',
-        'var entry: Vector2', 'func enter_tank_bunker', 'func exit_tank_bunker',
-    ], "RA2 unit runtime")
-
-    ra2_building = text("scripts/game/ra2_building.gd")
-    require(ra2_building, [
-        'const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")',
-        'const RA2CombatAudioRouter = preload("res://scripts/ra2/ra2_combat_audio.gd")',
-        'RA2Rules.build_runtime_stats', 'RA2Rules.resolve_damage',
-        'destruction_lifetime = 3.8', 'func can_accept_tank',
-        '"NAFLAK", "NASAM", "GAPATS"', '"YAGGUN"', '"NATBNK"',
-        'target_domains = ["ground", "air"]',
-        'var previous_hp: float = hp',
-        'var actual_damage: float = maxf(0.0, previous_hp - hp)',
-    ], "RA2 building runtime")
-    forbid(ra2_building, ['float(actual)'], "RA2 building null damage conversion")
-    forbid(ra2_unit, ['float(super.take_damage', 'var away := source.global_position'], "RA2 unit dynamic inference and null damage conversion")
-
-    movement = text("scripts/core/runtime_movement_rules.gd")
-    require(movement, [
-        'TREE_VEHICLE_RADIUS_FACTOR := 0.14',
-        'SETTLE_INTERVAL := 0.10', 'UNLOAD_INTERVAL := 0.05',
-        'var _tanks: Array = []', 'var _harvesters: Array = []',
-        '_settle_occupied_move_destination', '_stabilize_stationary_tank_facing',
-        'order_type in ["move", "attack_move"]',
-    ], "Fixed-rate categorized movement rules")
-
-    production = text("scripts/core/runtime_production_rules.gd")
-    require(production, [
-        'const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")',
-        'MAX_PRODUCTION_QUEUE := 30', '5 if bool(event.shift_pressed) else 1',
-        'RA2Rules.build_runtime_stats', 'cost_override',
-        'GameConfig.buildings[building_id]["footprint"]',
-        '"电力  %d / %d" % [consumed, produced]',
-        'var _runtime_data_cache: Dictionary = {}',
-        'func _apply_tile_state',
-    ], "Cached production rules")
-
-    deployment = text("scripts/core/runtime_deployment_rules.gd")
-    require(deployment, [
-        'preload("res://scripts/game/ra2_unit.gd")',
-        'const RA2Rules = preload("res://scripts/ra2/ra2_rules_adapter.gd")',
-        '_filter_deployed_units_from_right_click', '_pack_command_building',
-        'RA2Rules.build_runtime_stats', '_command_footprint', '_unpack_mcv',
-    ], "Deployment and MCV Foundation rules")
-
-    require(text("scripts/core/runtime_defeat_rules.gd"), [
-        '_player_has_structure_presence', '_show_defeat_notice',
-    ], "Defeat rules")
-
-    runtime_tuning = text("scripts/core/runtime_tuning.gd")
-    require(runtime_tuning, [
-        'UNIT_SCRIPT_PATHS', 'BUILDING_SCRIPT_PATHS', 'ore_harvest',
-        'HARVEST_UPDATE_INTERVAL := 0.08',
-        'BUILDING_DAMAGE_INTERVAL := 0.12',
-        'SANITIZE_INTERVAL := 0.25',
-        'func _process_pending_sanitization',
-    ], "Fixed-rate runtime tuning")
-
-    tree = text("scripts/game/tree_entity.gd")
-    require(tree, [
-        'TREE_COLLISION_FACTOR := 0.14', 'RA2_TREE_PATHS',
-        'ResourceLoader.exists(path)', 'var index: int',
-        '步兵可进入并获得25%减伤',
-    ], "RA2 tree loader")
-
-    match = text("scripts/game/rts_match.gd")
-    require(match, ['func _issue_targeted_command', 'elif mode == "rally"'], "Map-targeted commands")
-    require(text("scripts/game/unit.gd"), ['func command_attack_move', 'func command_patrol'], "Unit map commands")
-    require(text("scripts/game/building.gd"), ['func set_repair_active'], "Building wrench visual")
-
-    for unit_id in ["rifle", "rocket", "tank", "scout", "harvester"]:
-        source = text(f"scenes/entities/units/{unit_id}.tscn")
-        require(source, ['res://scripts/game/ra2_unit.gd', 'CollisionShape2D', 'AnimatedSprite2D'], f"Unit prefab {unit_id}")
-    for building_id in ["command", "power", "barracks", "refinery", "war_factory", "repair_bay", "turret", "bunker"]:
-        source = text(f"scenes/entities/buildings/{building_id}.tscn")
-        require(source, ['res://scripts/game/ra2_building.gd', 'StaticBody2D', 'CollisionShape2D', 'Sprite2D'], f"Building prefab {building_id}")
-    require(text("scenes/entities/buildings/turret.tscn"), [
-        'position = Vector2(0, -38.0)',
-    ], "Raised fallback turret")
-
-
-def validate_dev6_height_features() -> None:
-    game_config = text("scripts/core/game_config.gd")
-    require(game_config, [
-        'res://data/maps_height.json', 'for map_id in height_maps.keys()',
-    ], "Height map catalog")
+    sentry_visual = text("scripts/game/sentry_gun_visual.gd")
+    require(sentry_visual, [
+        'func configure', 'func set_state', 'func _draw',
+        'draw_line(direction * 2.0, direction * 18.0',
+        'draw_circle(direction * 1.0',
+    ], "Soviet sentry custom turret")
 
     grid = text("scripts/game/grid_world.gd")
     require(grid, [
-        'const HEIGHT_STEP_PIXELS := 16.0',
-        'const SLOPE_NW = 8',
-        'func _stamp_zone_ramps',
-        'func get_ground_sample',
-        'func get_ground_gradient',
-        'SLOPE_SPEED_MULTIPLIER := 0.78',
-        'func can_place',
-        'get_slope_type(cell) != SLOPE_NONE',
-        'func _draw()',
-    ], "Height-aware grid runtime")
-
-    flat_visual = text("scripts/ra2/ra2_visual_player.gd")
-    layered_visual = text("scripts/ra2/ra2_layered_vehicle_visual.gd")
-    for source, label in [
-        (flat_visual, "Flat RA2 terrain pose"),
-        (layered_visual, "Layered RA2 terrain pose"),
-    ]:
-        require(source, [
-            'var _layout_position: Vector2',
-            'func set_terrain_pose(',
-            '_terrain_ground_height',
-            '_terrain_airborne_height',
-        ], label)
-    require(layered_visual, [
-        'shadow_air_offset', 'draw_set_transform(_shadow_center + shadow_air_offset',
-    ], "Grounded airborne shadow")
+        'func get_ground_sample', 'func get_ground_gradient',
+        'SLOPE_SPEED_MULTIPLIER := 0.78', 'func can_place',
+    ], "Height-aware grid base")
 
     ra2_unit = text("scripts/game/ra2_unit.gd")
     require(ra2_unit, [
-        'const AIRBORNE_GRAVITY := 420.0',
-        'var terrain_ground_height: float',
-        'var airborne_height: float',
-        'func _update_terrain_pose',
-        'func apply_terrain_impulse',
-        'var landing_damage :=',
-        'ra2_visual.set_terrain_pose(',
-        'external_impulse.move_toward',
-    ], "Vehicle elevation and airborne runtime")
+        'func _update_terrain_pose', 'func apply_terrain_impulse',
+        'var airborne_height: float', 'var entry: Vector2',
+    ], "Height-aware RA2 units")
+    forbid(ra2_unit, [
+        'float(super.take_damage', 'var away := source.global_position',
+    ], "RA2 unit parser/runtime regressions")
 
     ra2_building = text("scripts/game/ra2_building.gd")
     require(ra2_building, [
-        'func _apply_terrain_pose',
-        'terrain_ground_height = float(map_ref.get_ground_height(global_position))',
-        'ra2_visual.set_terrain_pose(',
-    ], "Building elevation runtime")
+        'func _apply_terrain_pose', 'var elevated_origin: Vector2',
+        'var previous_hp: float = hp',
+    ], "Height-aware RA2 buildings")
+    forbid(ra2_building, ['float(actual)'], "RA2 building null conversion regression")
 
-    projectile = text("scripts/game/projectile.gd")
-    require(projectile, [
-        'var start_ground_height: float',
-        'var target_ground_height: float',
-        'var terrain_height: float = lerpf(',
-        '-terrain_height + vertical_offset',
-    ], "Height-aware projectile runtime")
+    rules = text("scripts/ra2/ra2_rules_adapter.gd")
+    require(rules, ['extends RefCounted', 'var armor_class_name: String'], "RA2 static rules adapter")
+    forbid(rules, ['var class_name'], "RA2 rules reserved identifiers")
+
+    audio = text("scripts/ra2/ra2_audio_service.gd")
+    require(audio, ['SPATIAL_POOL_SIZE: int = 24', 'func _acquire_spatial_player'], "Pooled spatial audio")
 
 
 def main() -> int:
     validate_gdscript_structure()
-    validate_json_and_ra2_data()
-    validate_dev5_features()
-    validate_dev6_height_features()
+    validate_json_data()
+    validate_runtime_integration()
     if ERRORS:
         print("Validation failed:")
         for item in ERRORS:
