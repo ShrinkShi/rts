@@ -51,7 +51,7 @@ func _terrain_region(cell: Vector2i) -> Rect2:
 
 func _terrain_color(cell: Vector2i, raised: bool = false) -> Color:
     var terrain_type: int = int(map_ref.get_terrain(cell))
-    var color: Color
+    var color: Color = Color("#6F8245")
     match terrain_type:
         1:
             color = Color("#81704A")
@@ -59,8 +59,6 @@ func _terrain_color(cell: Vector2i, raised: bool = false) -> Color:
             color = Color("#315E70")
         4:
             color = Color("#565A52")
-        _:
-            color = Color("#6F8245")
     return color.lightened(0.08) if raised else color
 
 
@@ -75,15 +73,15 @@ func _draw() -> void:
 func _draw_cliff_faces() -> void:
     for y in range(int(map_ref.map_height)):
         for x in range(int(map_ref.map_width)):
-            var cell := Vector2i(x, y)
+            var cell: Vector2i = Vector2i(x, y)
             var level: int = int(map_ref.get_height_level(cell))
             if level <= 0 or int(map_ref.get_slope_type(cell)) != SLOPE_NONE:
                 continue
-            var south := cell + Vector2i.DOWN
+            var south: Vector2i = cell + Vector2i.DOWN
             var south_level: int = int(map_ref.get_height_level(south))
             if south_level < level and int(map_ref.get_slope_type(south)) == SLOPE_NONE:
                 _draw_south_face(cell, level, south_level)
-            var east := cell + Vector2i.RIGHT
+            var east: Vector2i = cell + Vector2i.RIGHT
             var east_level: int = int(map_ref.get_height_level(east))
             if east_level < level and int(map_ref.get_slope_type(east)) == SLOPE_NONE:
                 _draw_east_edge(cell, level, east_level)
@@ -93,7 +91,7 @@ func _draw_south_face(cell: Vector2i, level: int, lower_level: int) -> void:
     var rect: Rect2 = _cell_rect(cell)
     var top_y: float = rect.end.y - float(level) * HEIGHT_STEP_PIXELS
     var bottom_y: float = rect.end.y - float(lower_level) * HEIGHT_STEP_PIXELS
-    var points := PackedVector2Array([
+    var points: PackedVector2Array = PackedVector2Array([
         Vector2(rect.position.x, top_y),
         Vector2(rect.end.x, top_y),
         Vector2(rect.end.x, bottom_y),
@@ -127,12 +125,12 @@ func _draw_east_edge(cell: Vector2i, level: int, lower_level: int) -> void:
     var rect: Rect2 = _cell_rect(cell)
     var top_y: float = rect.position.y - float(level) * HEIGHT_STEP_PIXELS
     var bottom_y: float = rect.end.y - float(lower_level) * HEIGHT_STEP_PIXELS
-    var x: float = rect.end.x
-    var points := PackedVector2Array([
-        Vector2(x - 1.0, top_y),
-        Vector2(x + 3.0, top_y + 3.0),
-        Vector2(x + 3.0, bottom_y),
-        Vector2(x - 1.0, bottom_y - 2.0)
+    var edge_x: float = rect.end.x
+    var points: PackedVector2Array = PackedVector2Array([
+        Vector2(edge_x - 1.0, top_y),
+        Vector2(edge_x + 3.0, top_y + 3.0),
+        Vector2(edge_x + 3.0, bottom_y),
+        Vector2(edge_x - 1.0, bottom_y - 2.0)
     ])
     draw_colored_polygon(points, Color("#3B3023"))
     draw_line(points[0], points[3], Color("#201A15"), 1.5)
@@ -141,7 +139,7 @@ func _draw_east_edge(cell: Vector2i, level: int, lower_level: int) -> void:
 func _draw_height_surfaces(atlas: Texture2D) -> void:
     for y in range(int(map_ref.map_height)):
         for x in range(int(map_ref.map_width)):
-            var cell := Vector2i(x, y)
+            var cell: Vector2i = Vector2i(x, y)
             var level: int = int(map_ref.get_height_level(cell))
             var slope: int = int(map_ref.get_slope_type(cell))
             if level <= 0 and slope == SLOPE_NONE:
@@ -159,8 +157,8 @@ func _draw_height_surfaces(atlas: Texture2D) -> void:
 
 
 func _draw_top_edge_marks(cell: Vector2i, rect: Rect2, level: int) -> void:
-    var edge_light := Color("#C6B26A")
-    var edge_dark := Color("#372B20")
+    var edge_light: Color = Color("#C6B26A")
+    var edge_dark: Color = Color("#372B20")
     if int(map_ref.get_height_level(cell + Vector2i.UP)) < level:
         draw_line(rect.position, Vector2(rect.end.x, rect.position.y), edge_light, 1.5)
     if int(map_ref.get_height_level(cell + Vector2i.LEFT)) < level:
@@ -174,36 +172,57 @@ func _draw_top_edge_marks(cell: Vector2i, rect: Rect2, level: int) -> void:
 func _draw_ramp(cell: Vector2i, slope: int, base_level: int) -> void:
     var rect: Rect2 = _cell_rect(cell)
     var base_offset: float = float(base_level) * HEIGHT_STEP_PIXELS
-    var tl := rect.position + Vector2(0.0, -base_offset)
-    var tr := Vector2(rect.end.x, rect.position.y - base_offset)
-    var br := rect.end + Vector2(0.0, -base_offset)
-    var bl := Vector2(rect.position.x, rect.end.y - base_offset)
+    var top_left: Vector2 = rect.position + Vector2(0.0, -base_offset)
+    var top_right: Vector2 = Vector2(rect.end.x, rect.position.y - base_offset)
+    var bottom_right: Vector2 = rect.end + Vector2(0.0, -base_offset)
+    var bottom_left: Vector2 = Vector2(rect.position.x, rect.end.y - base_offset)
     match slope:
         SLOPE_N:
-            tl.y -= HEIGHT_STEP_PIXELS; tr.y -= HEIGHT_STEP_PIXELS
+            top_left.y -= HEIGHT_STEP_PIXELS
+            top_right.y -= HEIGHT_STEP_PIXELS
         SLOPE_NE:
-            tr.y -= HEIGHT_STEP_PIXELS; tl.y -= HEIGHT_STEP_PIXELS * 0.5; br.y -= HEIGHT_STEP_PIXELS * 0.5
+            top_right.y -= HEIGHT_STEP_PIXELS
+            top_left.y -= HEIGHT_STEP_PIXELS * 0.5
+            bottom_right.y -= HEIGHT_STEP_PIXELS * 0.5
         SLOPE_E:
-            tr.y -= HEIGHT_STEP_PIXELS; br.y -= HEIGHT_STEP_PIXELS
+            top_right.y -= HEIGHT_STEP_PIXELS
+            bottom_right.y -= HEIGHT_STEP_PIXELS
         SLOPE_SE:
-            br.y -= HEIGHT_STEP_PIXELS; tr.y -= HEIGHT_STEP_PIXELS * 0.5; bl.y -= HEIGHT_STEP_PIXELS * 0.5
+            bottom_right.y -= HEIGHT_STEP_PIXELS
+            top_right.y -= HEIGHT_STEP_PIXELS * 0.5
+            bottom_left.y -= HEIGHT_STEP_PIXELS * 0.5
         SLOPE_S:
-            bl.y -= HEIGHT_STEP_PIXELS; br.y -= HEIGHT_STEP_PIXELS
+            bottom_left.y -= HEIGHT_STEP_PIXELS
+            bottom_right.y -= HEIGHT_STEP_PIXELS
         SLOPE_SW:
-            bl.y -= HEIGHT_STEP_PIXELS; tl.y -= HEIGHT_STEP_PIXELS * 0.5; br.y -= HEIGHT_STEP_PIXELS * 0.5
+            bottom_left.y -= HEIGHT_STEP_PIXELS
+            top_left.y -= HEIGHT_STEP_PIXELS * 0.5
+            bottom_right.y -= HEIGHT_STEP_PIXELS * 0.5
         SLOPE_W:
-            tl.y -= HEIGHT_STEP_PIXELS; bl.y -= HEIGHT_STEP_PIXELS
+            top_left.y -= HEIGHT_STEP_PIXELS
+            bottom_left.y -= HEIGHT_STEP_PIXELS
         SLOPE_NW:
-            tl.y -= HEIGHT_STEP_PIXELS; tr.y -= HEIGHT_STEP_PIXELS * 0.5; bl.y -= HEIGHT_STEP_PIXELS * 0.5
-    var points := PackedVector2Array([tl, tr, br, bl])
+            top_left.y -= HEIGHT_STEP_PIXELS
+            top_right.y -= HEIGHT_STEP_PIXELS * 0.5
+            bottom_left.y -= HEIGHT_STEP_PIXELS * 0.5
+    var points: PackedVector2Array = PackedVector2Array([top_left, top_right, bottom_right, bottom_left])
     draw_colored_polygon(points, _terrain_color(cell, true))
-    draw_polyline(PackedVector2Array([tl, tr, br, bl, tl]), Color("#3C3122"), 1.5)
+    draw_polyline(
+        PackedVector2Array([top_left, top_right, bottom_right, bottom_left, top_left]),
+        Color("#3C3122"),
+        1.5
+    )
     var direction: Vector2 = Vector2(map_ref.get_slope_direction(slope))
-    var center: Vector2 = (tl + tr + br + bl) * 0.25
-    var perpendicular := Vector2(-direction.y, direction.x)
+    var center: Vector2 = (top_left + top_right + bottom_right + bottom_left) * 0.25
+    var perpendicular: Vector2 = Vector2(-direction.y, direction.x)
     for side in [-1.0, 1.0]:
-        var track_center: Vector2 = center + perpendicular * 6.0 * side
-        draw_line(track_center - direction * 10.0, track_center + direction * 10.0, Color(0.24, 0.19, 0.12, 0.58), 2.0)
+        var track_center: Vector2 = center + perpendicular * 6.0 * float(side)
+        draw_line(
+            track_center - direction * 10.0,
+            track_center + direction * 10.0,
+            Color(0.24, 0.19, 0.12, 0.58),
+            2.0
+        )
     var arrow_tip: Vector2 = center + direction * 9.0
     draw_line(center - direction * 6.0, arrow_tip, Color("#D8C276"), 1.5)
     draw_line(arrow_tip, arrow_tip - direction * 4.0 + perpendicular * 3.0, Color("#D8C276"), 1.5)
