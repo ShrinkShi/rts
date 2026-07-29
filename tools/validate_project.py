@@ -138,10 +138,13 @@ def validate_runtime_integration() -> None:
         'func _draw_east_edge',
         'func _draw_height_surfaces',
         'func _draw_ramp',
-        'draw_texture_rect_region',
+        'draw_texture_rect_region(atlas, rect, _terrain_region(cell), Color.WHITE)',
         'draw_colored_polygon',
         'HEIGHT_STEP_PIXELS := 16.0',
     ], "Visible height terrain overlay")
+    forbid(overlay, [
+        'draw_texture_rect_region(rect, atlas',
+    ], "CanvasItem texture-region argument order")
 
     sentry_rules = text("scripts/core/runtime_sentry_visual_rules.gd")
     require(sentry_rules, [
