@@ -26,7 +26,7 @@ func _on_node_added(node: Node) -> void:
 func _register_node(node: Node) -> void:
     if not is_instance_valid(node):
         return
-    var script := node.get_script() as Script
+    var script: Script = node.get_script() as Script
     if script != null and script.resource_path == BUILDING_SCRIPT_PATH and not node in _buildings:
         _buildings.append(node)
 
@@ -40,12 +40,12 @@ func _process(_delta: float) -> void:
 
 
 func _update_sentry(building) -> void:
-    var head = building.get_node_or_null("RuntimeSentryGunHead")
+    var head: Node = building.get_node_or_null("RuntimeSentryGunHead")
     if not is_instance_valid(head):
         head = SentryGunVisual.new()
         head.name = "RuntimeSentryGunHead"
         building.add_child(head)
-        head.configure(building.team_color)
+        head.configure(Color(building.team_color))
     var visible_now: bool = (
         not bool(building.destroyed)
         and not bool(building.selling)
