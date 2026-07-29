@@ -5,6 +5,10 @@ const RA2WaterOverlay = preload("res://scripts/game/ra2_water_overlay.gd")
 const OrePillarEntity = preload("res://scripts/game/ore_pillar_entity.gd")
 const OreEntity = preload("res://scripts/game/ore_entity.gd")
 
+const TILE_DIRT := 1
+const TILE_WATER := 2
+const TILE_ORE := 3
+const TILE_ROCK := 4
 const DEFAULT_ORE_CAPACITY := 1800
 const ORE_GROWTH_PER_PULSE := 150
 
@@ -33,7 +37,7 @@ func _on_node_added(node: Node) -> void:
 func _register_node(node: Node) -> void:
     if not is_instance_valid(node):
         return
-    var script := node.get_script() as Script
+    var script: Script = node.get_script() as Script
     if script != null and script.resource_path == MATCH_SCRIPT_PATH and not node in _matches:
         _matches.append(node)
 
@@ -41,7 +45,7 @@ func _register_node(node: Node) -> void:
 func _process(_delta: float) -> void:
     _matches = _matches.filter(func(value): return is_instance_valid(value))
     for match_ref in _matches:
-        var key := int(match_ref.get_instance_id())
+        var key: int = int(match_ref.get_instance_id())
         if _initialized_matches.has(key):
             continue
         if not is_instance_valid(match_ref.grid) or not is_instance_valid(match_ref.entity_layer):
@@ -63,22 +67,26 @@ func _spawn_ore_pillars(match_ref) -> void:
     var raw_centers: Variant = match_ref.grid.map_config.get("ore_centers", [])
     if not raw_centers is Array or raw_centers.is_empty():
         return
-    var requested_count := clampi(
-        int(match_ref.grid.map_config.get("ore_pillar_count", maxi(1, raw_centers.size() / 5))),
+    var default_count: int = maxi(1, int(raw_centers.size() / 5))
+    var requested_count: int = clampi(
+        int(match_ref.grid.map_config.get("ore_pillar_count", default_count)),
         1,
         4
     )
-    var stride := maxf(1.0, float(raw_centers.size()) / float(requested_count))
-    var match_key := int(match_ref.get_instance_id())
+    var stride: float = maxf(1.0, float(raw_centers.size()) / float(requested_count))
+    var match_key: int = int(match_ref.get_instance_id())
     var cells: Dictionary = {}
     _pillar_cells[match_key] = cells
     for pillar_index in range(requested_count):
-        var source_index := mini(raw_centers.size() - 1, int(floor(float(pillar_index) * stride + stride * 0.5)))
+        var source_index: int = mini(
+            raw_centers.size() - 1,
+            int(floor(float(pillar_index) * stride + stride * 0.5))
+        )
         var raw_center: Variant = raw_centers[source_index]
         if not raw_center is Array or raw_center.size() < 2:
             continue
-        var center := Vector2i(int(raw_center[0]), int(raw_center[1]))
-        var pillar_cell := _find_pillar_cell(match_ref, center, cells)
+        var center: Vector2i = Vector2i(int(raw_center[0]), int(raw_center[1]))
+        var pillar_cell: Vector2i = _find_pillar_cell(match_ref, center, cells)
         if pillar_cell.x < 0:
             continue
         cells[pillar_cell] = true
@@ -94,11 +102,11 @@ func _find_pillar_cell(match_ref, center: Vector2i, existing: Dictionary) -> Vec
     for radius in range(0, 4):
         for y in range(center.y - radius, center.y + radius + 1):
             for x in range(center.x - radius, center.x + radius + 1):
-                var cell := Vector2i(x, y)
+                var cell: Vector2i = Vector2i(x, y)
                 if not match_ref.grid._inside(cell) or existing.has(cell):
                     continue
-                var terrain_type := int(match_ref.grid.get_terrain(cell))
-                if terrain_type in [int(match_ref.grid.TILE_WATER), int(match_ref.grid.TILE_ROCK)]:
+                var terrain_type: int = int(match_ref.grid.get_terrain(cell))
+                if terrain_type in [TILE_WATER, TILE_ROCK]:
                     continue
                 if match_ref.grid.has_tree(cell) or match_ref.grid.occupied.has(cell):
                     continue
@@ -107,10 +115,10 @@ func _find_pillar_cell(match_ref, center: Vector2i, existing: Dictionary) -> Vec
 
 
 func _clear_ore_for_pillar(match_ref, cell: Vector2i) -> void:
-    var index := int(match_ref.grid._index(cell))
+    var index: int = int(match_ref.grid._index(cell))
     match_ref.grid.ore_amount[index] = 0
     match_ref.grid.ore_capacity[index] = 0
-    match_ref.grid.terrain[index] = int(match_ref.grid.TILE_DIRT)
+    match_ref.grid.terrain[index] = TILE_DIRT
     _refresh_grid_cell(match_ref.grid, cell)
     for ore in match_ref.ore_entities.duplicate():
         if is_instance_valid(ore) and Vector2i(ore.cell) == cell:
@@ -121,13 +129,13 @@ func _clear_ore_for_pillar(match_ref, cell: Vector2i) -> void:
 func spread_ore(match_ref, origin: Vector2i) -> bool:
     if not is_instance_valid(match_ref) or not is_instance_valid(match_ref.grid):
         return false
-    var match_key := int(match_ref.get_instance_id())
+    var match_key: int = int(match_ref.get_instance_id())
     var pillar_cells: Dictionary = _pillar_cells.get(match_key, {})
     var candidates: Array[Vector2i] = []
     for radius in range(1, 4):
         for y in range(origin.y - radius, origin.y + radius + 1):
             for x in range(origin.x - radius, origin.x + radius + 1):
-                var cell := Vector2i(x, y)
+                var cell: Vector2i = Vector2i(x, y)
                 if maxi(absi(x - origin.x), absi(y - origin.y)) != radius:
                     continue
                 if _can_grow_ore(match_ref, origin, cell, pillar_cells):
@@ -136,16 +144,19 @@ func spread_ore(match_ref, origin: Vector2i) -> bool:
             break
     if candidates.is_empty():
         return false
-    var pick_index := posmod(int(Time.get_ticks_msec() / 1000) + origin.x * 17 + origin.y * 31, candidates.size())
-    var target := candidates[pick_index]
-    var index := int(match_ref.grid._index(target))
+    var pick_index: int = posmod(
+        int(Time.get_ticks_msec() / 1000) + origin.x * 17 + origin.y * 31,
+        candidates.size()
+    )
+    var target: Vector2i = candidates[pick_index]
+    var index: int = int(match_ref.grid._index(target))
     if int(match_ref.grid.ore_capacity[index]) <= 0:
         match_ref.grid.ore_capacity[index] = DEFAULT_ORE_CAPACITY
     match_ref.grid.ore_amount[index] = mini(
         int(match_ref.grid.ore_capacity[index]),
         int(match_ref.grid.ore_amount[index]) + ORE_GROWTH_PER_PULSE
     )
-    match_ref.grid.terrain[index] = int(match_ref.grid.TILE_ORE)
+    match_ref.grid.terrain[index] = TILE_ORE
     _refresh_grid_cell(match_ref.grid, target)
     match_ref.grid.ore_changed.emit(target, int(match_ref.grid.ore_amount[index]))
     _ensure_ore_entity(match_ref, target)
@@ -155,8 +166,8 @@ func spread_ore(match_ref, origin: Vector2i) -> bool:
 func _can_grow_ore(match_ref, origin: Vector2i, cell: Vector2i, pillar_cells: Dictionary) -> bool:
     if not match_ref.grid._inside(cell) or pillar_cells.has(cell):
         return false
-    var terrain_type := int(match_ref.grid.get_terrain(cell))
-    if terrain_type in [int(match_ref.grid.TILE_WATER), int(match_ref.grid.TILE_ROCK)]:
+    var terrain_type: int = int(match_ref.grid.get_terrain(cell))
+    if terrain_type in [TILE_WATER, TILE_ROCK]:
         return false
     if match_ref.grid.has_tree(cell) or match_ref.grid.occupied.has(cell):
         return false
@@ -177,7 +188,7 @@ func _ensure_ore_entity(match_ref, cell: Vector2i) -> void:
 
 
 func _refresh_grid_cell(grid, cell: Vector2i) -> void:
-    var terrain_type := int(grid.get_terrain(cell))
-    var seed_value := int(grid.map_config.get("seed", 1))
-    var variant := posmod(cell.x * 17 + cell.y * 31 + seed_value * 13, 8)
+    var terrain_type: int = int(grid.get_terrain(cell))
+    var seed_value: int = int(grid.map_config.get("seed", 1))
+    var variant: int = posmod(cell.x * 17 + cell.y * 31 + seed_value * 13, 8)
     grid.set_cell(cell, grid.source_id, Vector2i(terrain_type * 8 + variant, 0), 0)
