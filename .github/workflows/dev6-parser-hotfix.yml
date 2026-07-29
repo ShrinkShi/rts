@@ -1,0 +1,128 @@
+name: Apply dev6 parser hotfix
+
+on:
+  push:
+    branches:
+      - feature/v0.16.0-dev6-height-2_5d-foundation
+    paths:
+      - .github/workflows/dev6-parser-hotfix.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply-hotfix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/v0.16.0-dev6-height-2_5d-foundation
+          fetch-depth: 0
+
+      - name: Patch GDScript parser failures
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          def replace(path: str, old: str, new: str) -> None:
+              target = Path(path)
+              source = target.read_text(encoding="utf-8")
+              if old not in source:
+                  raise SystemExit(f"missing expected token in {path}: {old!r}")
+              target.write_text(source.replace(old, new), encoding="utf-8")
+
+          unit = "scripts/game/ra2_unit.gd"
+          replacements = [
+              ("var candidate := global_position + external_impulse * delta", "var candidate: Vector2 = global_position + external_impulse * delta"),
+              ("var category := str(stats.get(\"category\", \"vehicle\"))", "var category: String = str(stats.get(\"category\", \"vehicle\"))"),
+              ("var target_height := 0.0", "var target_height: float = 0.0"),
+              ("var target_gradient := Vector2.ZERO", "var target_gradient: Vector2 = Vector2.ZERO"),
+              ("var landing_speed := maxf(0.0, -airborne_velocity)", "var landing_speed: float = maxf(0.0, -airborne_velocity)"),
+              ("var display_armor := float(stats.get(\"armor\", 0.0))", "var display_armor: float = float(stats.get(\"armor\", 0.0))"),
+              ("var response := clampf(delta * TERRAIN_POSE_RESPONSE, 0.0, 1.0)", "var response: float = clampf(delta * TERRAIN_POSE_RESPONSE, 0.0, 1.0)"),
+              ("var actual: float = float(super.take_damage(resolved, source))", "var previous_total: float = hp + shield\n    super.take_damage(resolved, source)\n    var actual: float = maxf(0.0, previous_total - (hp + shield))"),
+              ("var blast_radius := float(source_stats.get(\"aoe_radius\", 0.0))", "var blast_radius: float = float(source_stats.get(\"aoe_radius\", 0.0))"),
+              ("var away := source.global_position.direction_to(global_position)", "var source_position: Vector2 = Vector2(source.get(\"global_position\"))\n            var away: Vector2 = source_position.direction_to(global_position)"),
+              ("var instance_sign := -1.0 if int(get_instance_id()) % 2 == 0 else 1.0", "var instance_sign: float = -1.0 if int(get_instance_id()) % 2 == 0 else 1.0"),
+          ]
+          for old, new in replacements:
+              replace(unit, old, new)
+
+          grid = "scripts/game/grid_world.gd"
+          replacements = [
+              ("var ramp_width := maxi(1, int(zone.get(\"ramp_width\", 2)))", "var ramp_width: int = maxi(1, int(zone.get(\"ramp_width\", 2)))"),
+              ("var ramp_name := str(ramp_name_variant).to_lower()", "var ramp_name: String = str(ramp_name_variant).to_lower()"),
+              ("var cell := center", "var cell: Vector2i = center"),
+              ("var slope := SLOPE_NONE", "var slope: int = SLOPE_NONE"),
+              ("var idx := _index(cell)", "var idx: int = int(_index(cell))"),
+              ("var cell := world_to_cell(world_position)", "var cell: Vector2i = Vector2i(world_to_cell(world_position))"),
+              ("var level := get_height_level(cell)", "var level: int = get_height_level(cell)"),
+              ("var slope := get_slope_type(cell)", "var slope: int = get_slope_type(cell)"),
+              ("var base_height := float(level) * HEIGHT_STEP_PIXELS", "var base_height: float = float(level) * HEIGHT_STEP_PIXELS"),
+              ("var direction := get_slope_direction(slope)", "var direction: Vector2 = get_slope_direction(slope)"),
+              ("var slope_fraction := 0.0", "var slope_fraction: float = 0.0"),
+              ("var center_local := map_to_local(cell)", "var center_local: Vector2 = Vector2(map_to_local(cell))"),
+              ("var local_offset := to_local(world_position) - center_local", "var local_offset: Vector2 = to_local(world_position) - center_local"),
+              ("var normalized := Vector2(", "var normalized: Vector2 = Vector2("),
+              ("var north_amount := 1.0 - normalized.y", "var north_amount: float = 1.0 - normalized.y"),
+              ("var south_amount := normalized.y", "var south_amount: float = normalized.y"),
+              ("var east_amount := normalized.x", "var east_amount: float = normalized.x"),
+              ("var west_amount := 1.0 - normalized.x", "var west_amount: float = 1.0 - normalized.x"),
+              ("var gradient := direction * (HEIGHT_STEP_PIXELS / maxf(1.0, float(tile_px)))", "var gradient: Vector2 = direction * (HEIGHT_STEP_PIXELS / maxf(1.0, float(tile_px)))"),
+              ("var multiplier := float(super.get_movement_speed_multiplier(world_position))", "var multiplier: float = float(super.get_movement_speed_multiplier(world_position))"),
+              ("var reference_level := -1", "var reference_level: int = -1"),
+              ("var half_tile := float(tile_px) * 0.5", "var half_tile: float = float(tile_px) * 0.5"),
+              ("var raised_tint := Color(", "var raised_tint: Color = Color("),
+              ("var cliff_color := Color(", "var cliff_color: Color = Color("),
+              ("var contour_color := Color(", "var contour_color: Color = Color("),
+              ("var ramp_color := Color(", "var ramp_color: Color = Color("),
+              ("var cell := Vector2i(x, y)", "var cell: Vector2i = Vector2i(x, y)"),
+              ("var center := map_to_local(cell)", "var center: Vector2 = Vector2(map_to_local(cell))"),
+              ("var rect := Rect2(", "var rect: Rect2 = Rect2("),
+              ("var east_level := get_height_level(cell + Vector2i.RIGHT)", "var east_level: int = get_height_level(cell + Vector2i.RIGHT)"),
+              ("var south_level := get_height_level(cell + Vector2i.DOWN)", "var south_level: int = get_height_level(cell + Vector2i.DOWN)"),
+          ]
+          for old, new in replacements:
+              replace(grid, old, new)
+
+          building = "scripts/game/ra2_building.gd"
+          replace(building, "var has_attack_point := false", "var has_attack_point: bool = false")
+          replace(building, "var elevated_origin := global_position + turret_facing * 18.0 + Vector2(0.0, -22.0 - terrain_ground_height)", "var elevated_origin: Vector2 = global_position + turret_facing * 18.0 + Vector2(0.0, -22.0 - terrain_ground_height)")
+
+          layered = "scripts/ra2/ra2_layered_vehicle_visual.gd"
+          replace(layered, "var shadow_air_offset := Vector2(0.0, _terrain_airborne_height * inverse_scale_y)", "var shadow_air_offset: Vector2 = Vector2(0.0, _terrain_airborne_height * inverse_scale_y)")
+
+          validator = "tools/validate_project.py"
+          source = Path(validator).read_text(encoding="utf-8")
+          marker = "    forbid(ra2_building, ['float(actual)'], \"RA2 building null damage conversion\")\n"
+          addition = marker + "    forbid(ra2_unit, ['float(super.take_damage', 'var away := source.global_position'], \"RA2 unit dynamic inference and null damage conversion\")\n"
+          if addition not in source:
+              if marker not in source:
+                  raise SystemExit("validator insertion marker missing")
+              source = source.replace(marker, addition)
+              Path(validator).write_text(source, encoding="utf-8")
+
+          log_path = Path("版本更新记录.md")
+          log = log_path.read_text(encoding="utf-8")
+          hotfix = '''\n### v0.16.0-dev.6 Parser Hotfix 1（2026-07-29）\n\n用户在 Godot 4.7.1 实机导入时发现四处静态类型推断失败：\n\n- `ra2_unit.gd` 的冲击方向 `away` 来自动态来源对象。\n- `grid_world.gd` 的 `_index()` 与 `world_to_cell()` 继承自未标注返回类型的兼容基类。\n- `ra2_building.gd` 的高程枪口坐标由动态属性表达式生成。\n\n修复内容：\n\n- 对动态对象、继承自未类型化基类的返回值和高程坐标增加显式 `Vector2`、`Vector2i`、`int`、`float` 类型。\n- 移除 RA2 单位对子类父类空返回值执行 `float()` 的潜在运行时错误，改为用受击前后 `HP + 护盾` 差值计算实际伤害。\n- 静态验证器新增对应回归检查。\n- `.uid` 缺失信息属于 Godot 编辑器重新生成缓存的警告，不作为 Parser Error 处理。\n\n当前仍需用户重新导入并执行 F5 验证。\n\n'''
+          marker = "## 尚缺失的历史资料"
+          if "### v0.16.0-dev.6 Parser Hotfix 1" not in log:
+              if marker not in log:
+                  raise SystemExit("version log insertion marker missing")
+              log = log.replace(marker, hotfix + marker)
+              log_path.write_text(log, encoding="utf-8")
+          PY
+
+      - name: Commit hotfix
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/game/ra2_unit.gd scripts/game/grid_world.gd scripts/game/ra2_building.gd scripts/ra2/ra2_layered_vehicle_visual.gd tools/validate_project.py "版本更新记录.md"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "fix: resolve dev6 Godot 4.7 type inference errors"
+          git push origin HEAD:feature/v0.16.0-dev6-height-2_5d-foundation
