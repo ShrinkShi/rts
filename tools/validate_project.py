@@ -126,10 +126,18 @@ def validate_runtime_integration() -> None:
         'func _apply_rect_height_zones',
         'func _stamp_rect_ramps',
         'func _enforce_cliff_constraints',
-        'map_ref.astar_infantry.set_point_solid',
-        'map_ref.astar_vehicle.set_point_solid',
-        'height_cliff_cells',
-    ], "Height visual runtime rules")
+        'func _restore_legacy_cliff_solids',
+        'func find_path_for_unit',
+        'func _find_edge_aware_path',
+        'func is_height_transition_allowed',
+        'func is_world_transition_walkable',
+        'height_cliff_edges',
+        'map_ref.set_meta("height_cliff_cells", {})',
+    ], "Height edge-aware runtime rules")
+    forbid(height_rules, [
+        'if borders_drop and not has_ramp_access:',
+        'cliff_cells[cell] = true',
+    ], "Legacy solid cliff-cell pathing")
 
     overlay = text("scripts/game/height_terrain_overlay.gd")
     require(overlay, [
@@ -192,6 +200,10 @@ def validate_runtime_integration() -> None:
     require(ra2_unit, [
         'func _update_terrain_pose', 'func apply_terrain_impulse',
         'var airborne_height: float', 'var entry: Vector2',
+        'func _set_path_to',
+        'RuntimeHeightVisualRules.find_path_for_unit',
+        'func _guard_grounded_cliff_transition',
+        'RuntimeHeightVisualRules.is_world_transition_walkable',
     ], "Height-aware RA2 units")
     forbid(ra2_unit, [
         'float(super.take_damage', 'var away := source.global_position',
