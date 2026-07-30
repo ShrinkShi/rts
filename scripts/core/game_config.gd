@@ -18,6 +18,9 @@ func load_all():
     var height_maps: Dictionary = _load_json("res://data/maps_height.json")
     for map_id in height_maps.keys():
         maps[str(map_id)] = height_maps[map_id]
+    var ra2_maps: Dictionary = _load_json("res://data/maps_ra2.json")
+    for map_id in ra2_maps.keys():
+        maps[str(map_id)] = ra2_maps[map_id]
     modes = _load_json("res://data/modes.json")
 
 func _load_json(path):
