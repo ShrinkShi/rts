@@ -1,0 +1,35 @@
+name: Validate RA2 map formats
+
+on:
+  pull_request:
+    paths:
+      - "tools/ra2_ini.py"
+      - "tools/ra2_lzo.py"
+      - "tools/ra2_pack_codecs.py"
+      - "tools/ra2_map_importer.py"
+      - "tools/ra2_map_enrichment.py"
+      - "tools/ra2_palette.py"
+      - "tools/ra2_theater.py"
+      - "tools/ra2_tmp.py"
+      - "tools/test_ra2_map_importer.py"
+      - "tools/test_ra2_theater_tmp.py"
+      - ".github/workflows/ra2-format-tests.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tools/ra2_*.py"
+      - "tools/test_ra2_map_importer.py"
+      - "tools/test_ra2_theater_tmp.py"
+      - ".github/workflows/ra2-format-tests.yml"
+
+jobs:
+  ra2-format-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run map and TMP reader tests
+        working-directory: tools
+        run: python -m unittest -v test_ra2_map_importer.py test_ra2_theater_tmp.py
