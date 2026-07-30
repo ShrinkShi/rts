@@ -6,7 +6,7 @@ const CHUNK_COUNT := 4
 
 const RESOURCE_MANIFEST_PATH := "res://data/ra2_embedded/temperate_resources_v2.json"
 const RESOURCE_CHUNK_TEMPLATE := "res://data/ra2_embedded/temperate_resources_v2_%02d.b64"
-const RESOURCE_CHUNK_COUNT := 1
+const RESOURCE_CHUNK_COUNT := 4
 
 static var _loaded: bool = false
 static var _atlas: Texture2D
