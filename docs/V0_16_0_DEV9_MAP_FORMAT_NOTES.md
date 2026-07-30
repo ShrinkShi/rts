@@ -93,6 +93,11 @@ TMP 子格中的数据偏移以当前子格头为基准，不是以整个文件�
 - IsoTemp + Temperat 可选资源查找。
 - 地图 Level 与 TMP Height 分离。
 
+GitHub Actions：
+
+- `Validate RA2 map formats`：通过。
+- `Validate project`：通过。
+
 ## 当前边界
 
 本阶段是读取核心，不是完整地图兼容完成版：
