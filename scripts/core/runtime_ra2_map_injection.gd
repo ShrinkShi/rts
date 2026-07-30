@@ -2,7 +2,7 @@ extends Node
 
 const GRID_SCRIPT_PATH := "res://scripts/game/grid_world.gd"
 const MATCH_SCRIPT_PATH := "res://scripts/game/rts_match.gd"
-const RA2IsoGridWorld = preload("res://scripts/game/ra2_iso_grid_world.gd")
+const RA2IsoGridWorld = preload("res://scripts/game/ra2_iso_grid_world_v2.gd")
 
 
 func _ready() -> void:
@@ -31,9 +31,9 @@ func _on_node_added(node: Node) -> void:
     if str(map_definition.get("format", "")) != "ra2_runtime_v1":
         return
 
-    # The SceneTree node_added signal is synchronous. rts_match adds GridWorld and
-    # calls generate() on the next line, so replacing the compatible script here
-    # makes that same node execute the RA2 isometric generate() implementation.
+    # SceneTree.node_added is emitted synchronously. rts_match adds GridWorld and
+    # calls generate() on the next line, so this replacement happens before the
+    # procedural generator can run.
     node.set_script(RA2IsoGridWorld)
     if bool(map_definition.get("force_disable_fog", false)):
         match_config["fog_of_war"] = false
