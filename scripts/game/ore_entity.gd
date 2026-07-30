@@ -20,7 +20,7 @@ var stats: Dictionary = {
     "resource_type": "矿石资源",
     "armor": 0,
     "armor_type": "无敌资源",
-    "description": "使用《红色警戒2》温带 TIB Overlay。采矿车持续消耗储量，储量归零后矿石消失。"
+    "description": "使用《红色警戒2》原始 TIB/GEM Overlay 与正确剧院调色板。采矿车持续消耗储量，储量归零后矿石消失。"
 }
 
 
@@ -61,8 +61,11 @@ func _refresh_overlay_texture() -> void:
         0.0,
         1.0
     )
-    var stage: int = clampi(int(round(ratio * 11.0)), 0, 11)
-    overlay_asset_id = "ore_%02d" % stage
+    if map_ref.has_method("get_ore_texture_asset_id"):
+        overlay_asset_id = str(map_ref.get_ore_texture_asset_id(cell, ratio))
+    if overlay_asset_id.is_empty():
+        var stage: int = clampi(int(round(ratio * 11.0)), 0, 11)
+        overlay_asset_id = "ore_%02d" % stage
     overlay_texture = RA2OriginalTextures.texture(overlay_asset_id)
 
 
