@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Import RA2/YR .map/.mpr/.yrm files into disposable runtime JSON caches.
 
-The original map remains the canonical editable source. This tool does not
-rewrite the map and never pretends the JSON cache is Final Alert 2 compatible.
+The original map remains the canonical editable source. JSON is a derived runtime
+cache only. When theater inputs are supplied, every IsoMapPack5 record is resolved
+through Temperat.ini and its exact TMP cell metadata is attached.
 """
 from __future__ import annotations
 
@@ -19,6 +20,8 @@ from ra2_pack_codecs import (
     OVERLAY_DIMENSION,
     decode_format5_blocks,
 )
+from ra2_map_enrichment import enrich_imported_map
+from ra2_theater import ArchiveStack, CaseInsensitiveZip, TheaterCatalog
 
 SUPPORTED_EXTENSIONS = {".map", ".mpr", ".yrm"}
 
@@ -41,9 +44,7 @@ def parse_iso_tiles(document: IniDocument, width: int, height: int) -> list[dict
     maximum_size = maximum_records * ISO_TILE_SIZE + 4
     decoded = decode_format5_blocks(encoded)
     if len(decoded) < 4 or (len(decoded) - 4) % ISO_TILE_SIZE != 0:
-        raise RA2MapError(
-            f"IsoMapPack5 decoded length is invalid: {len(decoded)} bytes"
-        )
+        raise RA2MapError(f"IsoMapPack5 decoded length is invalid: {len(decoded)} bytes")
     if len(decoded) > maximum_size:
         raise RA2MapError(
             f"IsoMapPack5 contains too many cells: {len(decoded)} > {maximum_size}"
@@ -228,19 +229,48 @@ def import_map(source_path: Path) -> dict[str, object]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Import an RA2/YR .map/.mpr/.yrm file into a disposable runtime JSON cache"
+        description="Import an RA2/YR map into a disposable runtime JSON cache"
     )
     parser.add_argument("source", type=Path)
     parser.add_argument("output", type=Path, nargs="?")
     parser.add_argument("--indent", type=int, default=2)
+    parser.add_argument(
+        "--theater-ini",
+        type=Path,
+        help="Temperat.ini used to resolve TileIndex into exact TMP filenames",
+    )
+    parser.add_argument(
+        "--theater-archive",
+        type=Path,
+        action="append",
+        default=[],
+        help="Extracted theater ZIP; repeat for IsoTemp then optional Temperat",
+    )
+    parser.add_argument("--theater-extension", default=".tem")
     arguments = parser.parse_args()
     output_path = arguments.output or arguments.source.with_suffix(
         arguments.source.suffix + ".runtime.json"
     )
+    if bool(arguments.theater_ini) != bool(arguments.theater_archive):
+        parser.error("--theater-ini and at least one --theater-archive must be supplied together")
+
+    archives: ArchiveStack | None = None
     try:
         imported = import_map(arguments.source)
+        if arguments.theater_ini:
+            catalog = TheaterCatalog.from_path(
+                arguments.theater_ini, arguments.theater_extension
+            )
+            archives = ArchiveStack(
+                CaseInsensitiveZip(path) for path in arguments.theater_archive
+            )
+            imported = enrich_imported_map(imported, catalog, archives)
     except (OSError, RA2MapError) as exc:
         parser.error(str(exc))
+    finally:
+        if archives is not None:
+            archives.close()
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(
         json.dumps(imported, ensure_ascii=False, indent=arguments.indent), encoding="utf-8"
