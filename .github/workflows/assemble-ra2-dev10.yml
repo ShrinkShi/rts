@@ -35,8 +35,8 @@ jobs:
           repo = Path.cwd().resolve()
           staging = repo / ".dev10_bundle"
           parts = sorted(staging.glob("part_*"))
-          if len(parts) != 34:
-              raise SystemExit(f"Expected 34 payload parts, found {len(parts)}")
+          if len(parts) != 18:
+              raise SystemExit(f"Expected 18 payload parts, found {len(parts)}")
           encoded = "".join(path.read_text(encoding="ascii") for path in parts)
           payload = base64.b64decode(encoded, validate=True)
           expected = "bb665637b4f0cefbde9d90561136a7849dfc1f945380fe599ad882f7c46aa810"
