@@ -35,18 +35,18 @@ jobs:
           repo = Path.cwd().resolve()
           staging = repo / ".dev10_bundle"
           parts = sorted(staging.glob("part_*"))
-          if len(parts) != 38:
-              raise SystemExit(f"Expected 38 payload parts, found {len(parts)}")
+          if len(parts) != 34:
+              raise SystemExit(f"Expected 34 payload parts, found {len(parts)}")
           encoded = "".join(path.read_text(encoding="ascii") for path in parts)
           payload = base64.b64decode(encoded, validate=True)
-          expected = "06f41c80cdfaa39d9c0113ac358baca8dd6a9d54e959b557ae213ebe7e6de7c6"
+          expected = "bb665637b4f0cefbde9d90561136a7849dfc1f945380fe599ad882f7c46aa810"
           actual = hashlib.sha256(payload).hexdigest()
           if actual != expected:
               raise SystemExit(f"Payload SHA-256 mismatch: expected {expected}, got {actual}")
 
-          archive_path = staging / "payload.tar.gz"
+          archive_path = staging / "payload.tar.xz"
           archive_path.write_bytes(payload)
-          with tarfile.open(archive_path, "r:gz") as archive:
+          with tarfile.open(archive_path, "r:xz") as archive:
               for member in archive.getmembers():
                   target = (repo / member.name).resolve()
                   if repo != target and repo not in target.parents:
