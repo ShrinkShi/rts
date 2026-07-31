@@ -28,6 +28,13 @@ func generate(config):
         push_error("RA2 runtime map manifest could not be loaded: %s" % manifest_path)
         super.generate(config)
         return
+    if str(ra2_runtime_manifest.get("format", "")) != "ra2-godot-runtime-v2":
+        push_error(
+            "Unsupported RA2 runtime map format: %s"
+            % str(ra2_runtime_manifest.get("format", ""))
+        )
+        super.generate(config)
+        return
 
     var logical_size: Array = ra2_runtime_manifest.get("logical_size", [200, 200])
     map_width = int(logical_size[0])
@@ -40,7 +47,9 @@ func generate(config):
     height_step = float(ra2_runtime_manifest.get("cell_height", DEFAULT_HEIGHT_STEP))
     map_baseline = float(ra2_runtime_manifest.get("baseline", 180.0))
     render_crop = _vector2_from_array(ra2_runtime_manifest.get("render_crop", [0, 0]))
-    render_size = _vector2_from_array(ra2_runtime_manifest.get("render_size", [6000, 3075]))
+    render_size = _vector2_from_array(
+        ra2_runtime_manifest.get("render_size", [6000, 3075])
+    )
 
     var cell_count: int = map_width * map_height
     terrain.resize(cell_count)
@@ -100,6 +109,9 @@ func _decode_cell_records() -> void:
     var chunk_count: int = int(definition.get("chunk_count", 0))
     var bytes: PackedByteArray = _decode_base64_chunks(chunk_template, chunk_count)
     var expected_records: int = int(definition.get("count", 0))
+    if int(definition.get("record_size", 0)) != CELL_RECORD_SIZE:
+        push_error("RA2 cell record size is not %d" % CELL_RECORD_SIZE)
+        return
     if bytes.size() != expected_records * CELL_RECORD_SIZE:
         push_error(
             "RA2 cell cache size mismatch: expected %d bytes, got %d"
@@ -110,14 +122,14 @@ func _decode_cell_records() -> void:
         var offset: int = record_index * CELL_RECORD_SIZE
         var rx: int = int(bytes.decode_u16(offset))
         var ry: int = int(bytes.decode_u16(offset + 2))
-        var level: int = int(bytes[offset + 4])
-        var terrain_type: int = int(bytes[offset + 5])
-        var ramp_type: int = int(bytes[offset + 6])
         var cell: Vector2i = Vector2i(rx, ry)
-        if not _inside(cell):
+        if not _inside_bounds(cell):
             continue
         var index: int = int(_index(cell))
         valid_cells[index] = 1
+        var level: int = int(bytes[offset + 4])
+        var terrain_type: int = int(bytes[offset + 5])
+        var ramp_type: int = int(bytes[offset + 6])
         raw_terrain_types[index] = terrain_type
         raw_ramp_types[index] = ramp_type
         height_levels[index] = level
@@ -131,6 +143,9 @@ func _decode_resource_records() -> void:
     var encoded: String = str(definition.get("encoded", ""))
     var bytes: PackedByteArray = Marshalls.base64_to_raw(encoded)
     var expected_records: int = int(definition.get("count", 0))
+    if int(definition.get("record_size", 0)) != RESOURCE_RECORD_SIZE:
+        push_error("RA2 resource record size is not %d" % RESOURCE_RECORD_SIZE)
+        return
     if bytes.size() != expected_records * RESOURCE_RECORD_SIZE:
         push_error(
             "RA2 resource cache size mismatch: expected %d bytes, got %d"
@@ -145,14 +160,17 @@ func _decode_resource_records() -> void:
         var frame: int = int(bytes[offset + 6])
         var kind: int = int(bytes[offset + 7])
         var cell: Vector2i = Vector2i(rx, ry)
-        if not _inside(cell) or valid_cells[_index(cell)] == 0:
+        if not _inside(cell):
             continue
         var index: int = int(_index(cell))
         source_overlay_ids[index] = overlay_id
         overlay_types[index] = OVERLAY_GEM if kind == 2 else OVERLAY_ORE
         overlay_frames[index] = clampi(frame, 0, 11)
         ore_capacity[index] = 1800
-        ore_amount[index] = maxi(150, int(round(float(frame + 1) / 12.0 * 1800.0)))
+        ore_amount[index] = maxi(
+            150,
+            int(round(float(frame + 1) / 12.0 * 1800.0))
+        )
 
 
 func _decode_terrain_objects() -> void:
@@ -164,7 +182,7 @@ func _decode_terrain_objects() -> void:
         if not raw_cell is Array or raw_cell.size() < 2:
             continue
         var cell: Vector2i = Vector2i(int(raw_cell[0]), int(raw_cell[1]))
-        if _inside(cell) and valid_cells[_index(cell)] == 1:
+        if _inside(cell):
             sparse_tree_cells[cell] = true
 
 
@@ -177,15 +195,39 @@ func _install_background() -> void:
         push_error("RA2 runtime terrain background is empty")
         return
     var image: Image = Image.new()
-    var result: Error = image.load_webp_from_buffer(bytes)
+    var image_format: String = str(definition.get("format", "png")).to_lower()
+    var result: Error = ERR_FILE_UNRECOGNIZED
+    match image_format:
+        "png":
+            result = image.load_png_from_buffer(bytes)
+        "webp":
+            result = image.load_webp_from_buffer(bytes)
+        _:
+            push_error("Unsupported RA2 terrain image format: %s" % image_format)
+            return
     if result != OK:
-        push_error("RA2 runtime terrain WebP decode failed: %s" % error_string(result))
+        push_error(
+            "RA2 runtime terrain image decode failed: %s" % error_string(result)
+        )
+        return
+    if image.get_width() != int(render_size.x) or image.get_height() != int(render_size.y):
+        push_error(
+            "RA2 terrain image size %dx%d does not match manifest %.0fx%.0f"
+            % [
+                image.get_width(),
+                image.get_height(),
+                render_size.x,
+                render_size.y
+            ]
+        )
         return
     background_sprite = Sprite2D.new()
     background_sprite.name = "RA2OriginalTerrain"
     background_sprite.centered = false
     background_sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
     background_sprite.texture = ImageTexture.create_from_image(image)
+    var scale_value: float = maxf(0.01, float(definition.get("scale", 1.0)))
+    background_sprite.scale = Vector2.ONE * scale_value
     background_sprite.z_index = -1000
     add_child(background_sprite)
 
@@ -258,26 +300,34 @@ func _runtime_slope_type(raw_type: int) -> int:
             return SLOPE_NONE
 
 
+func _inside_bounds(cell: Vector2i) -> bool:
+    return (
+        cell.x >= 0 and cell.y >= 0
+        and cell.x < map_width and cell.y < map_height
+    )
+
+
 func _inside(cell) -> bool:
-    if cell.x < 0 or cell.y < 0 or cell.x >= map_width or cell.y >= map_height:
+    var typed_cell: Vector2i = Vector2i(cell)
+    if not _inside_bounds(typed_cell):
         return false
     if valid_cells.is_empty():
         return true
-    return valid_cells[_index(cell)] == 1
+    return valid_cells[_index(typed_cell)] == 1
 
 
 func cell_to_world(cell):
     var typed_cell: Vector2i = Vector2i(cell)
-    if typed_cell.x < 0 or typed_cell.y < 0 or typed_cell.x >= map_width or typed_cell.y >= map_height:
+    if not _inside_bounds(typed_cell):
         return Vector2.ZERO
     var level: int = int(height_levels[_index(typed_cell)])
     var x: float = (
-        float(typed_cell.x - typed_cell.y + source_map_width - 1) *
-        (LOGICAL_CELL_WIDTH * 0.5)
+        float(typed_cell.x - typed_cell.y + source_map_width - 1)
+        * (LOGICAL_CELL_WIDTH * 0.5)
     ) + LOGICAL_CELL_WIDTH * 0.5 - render_crop.x
     var y: float = (
-        float(typed_cell.x + typed_cell.y - source_map_width - 1) *
-        (LOGICAL_CELL_HEIGHT * 0.5)
+        float(typed_cell.x + typed_cell.y - source_map_width - 1)
+        * (LOGICAL_CELL_HEIGHT * 0.5)
     ) + map_baseline - float(level) * height_step + LOGICAL_CELL_HEIGHT * 0.5 - render_crop.y
     return to_global(Vector2(x, y))
 
@@ -285,25 +335,31 @@ func cell_to_world(cell):
 func world_to_cell(world_position):
     var local_position: Vector2 = to_local(Vector2(world_position))
     var difference: float = (
-        (local_position.x + render_crop.x - LOGICAL_CELL_WIDTH * 0.5) /
-        (LOGICAL_CELL_WIDTH * 0.5)
+        (local_position.x + render_crop.x - LOGICAL_CELL_WIDTH * 0.5)
+        / (LOGICAL_CELL_WIDTH * 0.5)
     ) - float(source_map_width - 1)
     var best_cell: Vector2i = Vector2i(-1, -1)
     var best_distance: float = INF
     var maximum_height: int = int(ra2_runtime_manifest.get("max_height", 12))
     for level in range(maximum_height + 1):
+        var height_units: float = float(level) * height_step / (LOGICAL_CELL_HEIGHT * 0.5)
         var sum_value: float = (
-            (local_position.y + render_crop.y - LOGICAL_CELL_HEIGHT * 0.5 - map_baseline) /
-            (LOGICAL_CELL_HEIGHT * 0.5)
-        ) + float(source_map_width + 1 + level)
+            (local_position.y + render_crop.y - LOGICAL_CELL_HEIGHT * 0.5 - map_baseline)
+            / (LOGICAL_CELL_HEIGHT * 0.5)
+        ) + float(source_map_width + 1) + height_units
         var estimated_x: int = int(round((difference + sum_value) * 0.5))
         var estimated_y: int = int(round((sum_value - difference) * 0.5))
         for offset_y in range(-1, 2):
             for offset_x in range(-1, 2):
-                var candidate: Vector2i = Vector2i(estimated_x + offset_x, estimated_y + offset_y)
+                var candidate: Vector2i = Vector2i(
+                    estimated_x + offset_x,
+                    estimated_y + offset_y
+                )
                 if not _inside(candidate):
                     continue
-                var distance: float = local_position.distance_squared_to(to_local(cell_to_world(candidate)))
+                var distance: float = local_position.distance_squared_to(
+                    to_local(cell_to_world(candidate))
+                )
                 if distance < best_distance:
                     best_distance = distance
                     best_cell = candidate
@@ -325,7 +381,11 @@ func find_path_for_unit(from_world, to_world, category = "vehicle"):
     return _find_square_astar_path(from_world, to_world, category)
 
 
-func _find_square_astar_path(from_world, to_world, category = "vehicle") -> PackedVector2Array:
+func _find_square_astar_path(
+    from_world,
+    to_world,
+    category = "vehicle"
+) -> PackedVector2Array:
     var path_grid: AStarGrid2D = _astar_for_category(category)
     var start: Vector2i = Vector2i(world_to_cell(from_world))
     var finish: Vector2i = Vector2i(world_to_cell(to_world))
@@ -335,8 +395,8 @@ func _find_square_astar_path(from_world, to_world, category = "vehicle") -> Pack
     if not _inside(finish) or path_grid.is_point_solid(finish):
         return PackedVector2Array()
     var result: PackedVector2Array = PackedVector2Array()
-    for cell in path_grid.get_id_path(start, finish):
-        result.append(Vector2(cell_to_world(cell)))
+    for path_cell in path_grid.get_id_path(start, finish):
+        result.append(Vector2(cell_to_world(path_cell)))
     return result
 
 
@@ -366,11 +426,19 @@ func footprint_center(origin, footprint):
                 continue
             sum += Vector2(cell_to_world(cell))
             count += 1
-    return sum / float(count) if count > 0 else Vector2(cell_to_world(typed_origin))
+    return (
+        sum / float(count)
+        if count > 0
+        else Vector2(cell_to_world(typed_origin))
+    )
 
 
 func can_place(origin, footprint):
-    for cell in get_footprint_cells(Vector2i(origin), Vector2i(footprint)):
+    var typed_origin: Vector2i = Vector2i(origin)
+    if not _inside(typed_origin):
+        return false
+    var origin_height: int = int(height_levels[_index(typed_origin)])
+    for cell in get_footprint_cells(typed_origin, Vector2i(footprint)):
         if not _inside(cell):
             return false
         var index: int = int(_index(cell))
@@ -378,7 +446,9 @@ func can_place(origin, footprint):
             return false
         if occupied.has(cell) or has_tree(cell) or has_ore(cell):
             return false
-        if height_levels[index] != height_levels[_index(Vector2i(origin))]:
+        if int(height_levels[index]) != origin_height:
+            return false
+        if int(slope_types[index]) != SLOPE_NONE:
             return false
     return true
 
@@ -387,7 +457,11 @@ func get_ore_texture_asset_id(cell: Vector2i, ratio: float) -> String:
     if not _inside(cell):
         return ""
     var overlay_id: int = int(source_overlay_ids[_index(cell)])
-    var stage: int = clampi(int(round(clampf(ratio, 0.0, 1.0) * 11.0)), 0, 11)
+    var stage: int = clampi(
+        int(round(clampf(ratio, 0.0, 1.0) * 11.0)),
+        0,
+        11
+    )
     if overlay_id >= 105 and overlay_id <= 124:
         return "tib_%02d_%02d" % [overlay_id - 104, stage]
     if overlay_id >= 28 and overlay_id <= 39:
