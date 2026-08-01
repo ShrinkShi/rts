@@ -25,7 +25,17 @@ class ShpTsTests(unittest.TestCase):
         payload = bytearray()
         payload += FILE_HEADER.pack(0, 4, 3, 1)
         payload += FRAME_HEADER.pack(
-            1, 1, 2, 1, FLAG_HAS_TRANSPARENCY, 0, 0, 0, data_offset
+            1,
+            1,
+            2,
+            1,
+            FLAG_HAS_TRANSPARENCY,
+            0,
+            0,
+            0,
+            0,
+            0,
+            data_offset,
         )
         payload += bytes([7, 8])
         shp = ShpTsFile.from_bytes(bytes(payload), "test.shp")
@@ -50,6 +60,8 @@ class ShpTsTests(unittest.TestCase):
             0,
             0,
             0,
+            0,
+            0,
             data_offset,
         )
         payload += encoded_line
@@ -58,9 +70,11 @@ class ShpTsTests(unittest.TestCase):
 
     def test_invalid_bounds_are_rejected(self) -> None:
         data_offset = FILE_HEADER.size + FRAME_HEADER.size
-        payload = FILE_HEADER.pack(0, 2, 2, 1) + FRAME_HEADER.pack(
-            1, 1, 2, 2, 0, 0, 0, 0, data_offset
-        ) + bytes(4)
+        payload = (
+            FILE_HEADER.pack(0, 2, 2, 1)
+            + FRAME_HEADER.pack(1, 1, 2, 2, 0, 0, 0, 0, 0, 0, data_offset)
+            + bytes(4)
+        )
         with self.assertRaises(ShpTsError):
             ShpTsFile.from_bytes(payload, "bad.shp")
 
