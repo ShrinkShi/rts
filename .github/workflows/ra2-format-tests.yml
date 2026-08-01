@@ -3,23 +3,24 @@ name: Validate RA2 map formats
 on:
   pull_request:
     paths:
-      - "tools/ra2_ini.py"
-      - "tools/ra2_lzo.py"
-      - "tools/ra2_pack_codecs.py"
-      - "tools/ra2_map_importer.py"
-      - "tools/ra2_map_enrichment.py"
-      - "tools/ra2_palette.py"
-      - "tools/ra2_theater.py"
-      - "tools/ra2_tmp.py"
+      - "tools/ra2_*.py"
+      - "tools/build_ra2_runtime_bundle.py"
+      - "tools/validate_ra2_runtime_bundle.py"
       - "tools/test_ra2_map_importer.py"
       - "tools/test_ra2_theater_tmp.py"
+      - "tests/python/test_ra2_*.py"
+      - "tests/python/test_validate_ra2_runtime_bundle.py"
       - ".github/workflows/ra2-format-tests.yml"
   push:
     branches: [main]
     paths:
       - "tools/ra2_*.py"
+      - "tools/build_ra2_runtime_bundle.py"
+      - "tools/validate_ra2_runtime_bundle.py"
       - "tools/test_ra2_map_importer.py"
       - "tools/test_ra2_theater_tmp.py"
+      - "tests/python/test_ra2_*.py"
+      - "tests/python/test_validate_ra2_runtime_bundle.py"
       - ".github/workflows/ra2-format-tests.yml"
 
 jobs:
@@ -33,3 +34,7 @@ jobs:
       - name: Run map and TMP reader tests
         working-directory: tools
         run: python -m unittest -v test_ra2_map_importer.py test_ra2_theater_tmp.py
+      - name: Run runtime bundle tests
+        env:
+          PYTHONPATH: tools
+        run: python -m unittest discover -s tests/python -v

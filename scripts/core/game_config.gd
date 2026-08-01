@@ -1,5 +1,7 @@
 extends Node
 
+const RA2_RESOURCE_MANIFEST := "res://data/ra2_embedded/temperate_resources_v2.json"
+
 var factions = {}
 var units = {}
 var buildings = {}
@@ -7,8 +9,10 @@ var maps = {}
 var modes = {}
 var current_match = {}
 
+
 func _ready():
     load_all()
+
 
 func load_all():
     factions = _load_json("res://data/factions.json")
@@ -18,7 +22,59 @@ func load_all():
     var height_maps: Dictionary = _load_json("res://data/maps_height.json")
     for map_id in height_maps.keys():
         maps[str(map_id)] = height_maps[map_id]
+    var ra2_maps: Dictionary = _load_json("res://data/maps_ra2.json")
+    for map_id in ra2_maps.keys():
+        var definition_variant: Variant = ra2_maps[map_id]
+        if not definition_variant is Dictionary:
+            push_warning("Ignoring invalid RA2 map definition: %s" % str(map_id))
+            continue
+        var definition: Dictionary = definition_variant
+        if _ra2_map_bundle_ready(definition):
+            maps[str(map_id)] = definition
+        else:
+            push_warning(
+                "RA2 map bundle is incomplete and will not appear in the map list: %s"
+                % str(map_id)
+            )
     modes = _load_json("res://data/modes.json")
+
+
+func _ra2_map_bundle_ready(definition: Dictionary) -> bool:
+    var format_name: String = str(definition.get("format", ""))
+    if format_name != "ra2_runtime_v2":
+        return false
+    var manifest_path: String = str(definition.get("runtime_manifest", ""))
+    var manifest: Dictionary = _load_json_quiet(manifest_path)
+    if manifest.is_empty():
+        return false
+    if str(manifest.get("format", "")) != "ra2-godot-runtime-v2":
+        return false
+    if not _chunk_definition_ready(manifest.get("cells", {})):
+        return false
+    if not _chunk_definition_ready(manifest.get("background", {})):
+        return false
+
+    var resource_manifest: Dictionary = _load_json_quiet(RA2_RESOURCE_MANIFEST)
+    if resource_manifest.is_empty():
+        return false
+    if str(resource_manifest.get("format", "")) != "ra2-resource-atlas-v2":
+        return false
+    return _chunk_definition_ready(resource_manifest)
+
+
+func _chunk_definition_ready(definition_variant: Variant) -> bool:
+    if not definition_variant is Dictionary:
+        return false
+    var definition: Dictionary = definition_variant
+    var chunk_template: String = str(definition.get("chunk_template", ""))
+    var chunk_count: int = int(definition.get("chunk_count", 0))
+    if chunk_template.is_empty() or chunk_count <= 0:
+        return false
+    for index in range(chunk_count):
+        if not FileAccess.file_exists(chunk_template % index):
+            return false
+    return true
+
 
 func _load_json(path):
     if not FileAccess.file_exists(path):
@@ -30,6 +86,14 @@ func _load_json(path):
         push_error("Invalid JSON: " + path)
         return {}
     return parsed
+
+
+func _load_json_quiet(path: String) -> Dictionary:
+    if path.is_empty() or not FileAccess.file_exists(path):
+        return {}
+    var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
+    return parsed if parsed is Dictionary else {}
+
 
 func make_default_skirmish():
     return {
@@ -43,6 +107,7 @@ func make_default_skirmish():
             {"controller": "ai", "faction": "dominion", "color": "E14B4B", "position": 1, "team": 2, "difficulty": "normal"}
         ]
     }
+
 
 func make_training_campaign():
     return {
@@ -58,6 +123,7 @@ func make_training_campaign():
         ]
     }
 
+
 func make_training_campaign_02():
     return {
         "kind": "campaign",
@@ -72,8 +138,10 @@ func make_training_campaign_02():
         ]
     }
 
+
 func faction_name(faction_id):
     return factions.get(faction_id, {}).get("name", faction_id)
+
 
 func get_player_color(player_id):
     if not current_match.has("players") or player_id >= current_match.players.size():
